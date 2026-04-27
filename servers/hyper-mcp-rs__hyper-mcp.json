@@ -4,13 +4,13 @@
   "language": "Rust",
   "license": "Apache-2.0",
   "description": "📦️ A fast, secure MCP server that extends its capabilities through WebAssembly plugins.",
-  "pushed_at": "2026-04-27T19:35:30Z",
-  "composite": 79,
-  "composite_raw": 79,
+  "pushed_at": "2026-04-27T20:43:06Z",
+  "composite": 90,
+  "composite_raw": 90,
   "axes": {
     "reliability": {
-      "score": 57,
-      "passing": 4,
+      "score": 100,
+      "passing": 7,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,19 +27,19 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 tag(s) (no GH releases)"
+          "note": "5 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 1d ago"
         },
         "version_follows_semver": {
-          "pass": false,
-          "note": "no releases"
+          "pass": true,
+          "note": "latest tag: v0.5.5"
         },
         "release_communication": {
-          "pass": false,
-          "note": "no CHANGELOG, no release-notes substitute"
+          "pass": true,
+          "note": "5 releases with notes"
         }
       }
     },
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

@@ -4,7 +4,7 @@
   "language": "Python",
   "license": "MIT",
   "description": "BPS Indonesia Statistical Data Agent — 62 MCP tools for BPS WebAPI & AllStats Search Engine. Query inflasi, PDB, IPM, pengangguran, kemiskinan data.",
-  "pushed_at": "2026-04-27T20:32:39Z",
+  "pushed_at": "2026-04-27T20:46:04Z",
   "composite": 90,
   "composite_raw": 90,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

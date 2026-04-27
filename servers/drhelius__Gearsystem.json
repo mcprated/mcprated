@@ -4,7 +4,7 @@
   "language": "C++",
   "license": "GPL-3.0",
   "description": "Sega Master System / Game Gear / SG-1000 emulator, debugger and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
-  "pushed_at": "2026-04-27T20:22:55Z",
+  "pushed_at": "2026-04-27T20:35:04Z",
   "composite": 73,
   "composite_raw": 73,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

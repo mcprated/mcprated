@@ -5,12 +5,12 @@
   "license": "AGPL-3.0",
   "description": "Describe it or draw it. Kiln makes it real. — 742 MCP tools for AI agents to design, generate, slice, and print 3D models. Supports Bambu Lab, OctoPrint, Moonraker/Klipper, Prusa Link, Elegoo, and Direct USB.",
   "pushed_at": "2026-04-27T20:02:51Z",
-  "composite": 80,
-  "composite_raw": 80,
+  "composite": 87,
+  "composite_raw": 87,
   "axes": {
     "reliability": {
-      "score": 71,
-      "passing": 5,
+      "score": 100,
+      "passing": 7,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,15 +27,15 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 tag(s) (no GH releases)"
+          "note": "5 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 37d ago"
         },
         "version_follows_semver": {
-          "pass": false,
-          "note": "no releases"
+          "pass": true,
+          "note": "latest tag: v0.5.0"
         },
         "release_communication": {
           "pass": true,
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

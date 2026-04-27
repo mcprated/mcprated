@@ -4,7 +4,7 @@
   "language": "Go",
   "license": "NOASSERTION",
   "description": "High-performance code intelligence engine that indexes repositories into an in-memory knowledge graph and exposes it via CLI, MCP Server, and web UI.  Built for AI coding agents - expose only needed information - one get_editing_context call replaces 5-10 file reads, cutting token usage by ~94%.",
-  "pushed_at": "2026-04-27T20:34:35Z",
+  "pushed_at": "2026-04-27T20:54:46Z",
   "composite": 82,
   "composite_raw": 82,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

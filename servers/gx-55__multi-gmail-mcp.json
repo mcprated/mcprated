@@ -1,10 +1,10 @@
 {
   "repo": "gx-55/multi-gmail-mcp",
-  "stars": 1,
+  "stars": 2,
   "language": "JavaScript",
   "license": null,
   "description": null,
-  "pushed_at": "2026-04-27T20:17:59Z",
+  "pushed_at": "2026-04-27T20:38:52Z",
   "composite": 54,
   "composite_raw": 54,
   "axes": {
@@ -104,7 +104,7 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "0 open / 3 commits (ratio 0.00)"
+          "note": "0 open / 4 commits (ratio 0.00)"
         },
         "merged_prs_recent": {
           "pass": false,
@@ -124,5 +124,5 @@
     }
   ],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

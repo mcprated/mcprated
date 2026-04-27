@@ -4,7 +4,7 @@
   "language": "Python",
   "license": "MIT",
   "description": "Modern TypeScript and Python Katana Manufacturing MRP API clients with automatic retries, rate limiting, and smart pagination. Now with an alpha MCP implementation!",
-  "pushed_at": "2026-04-27T20:29:13Z",
+  "pushed_at": "2026-04-27T20:49:27Z",
   "composite": 83,
   "composite_raw": 83,
   "axes": {
@@ -100,7 +100,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "2 unique committers in 90d"
+          "note": "3 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

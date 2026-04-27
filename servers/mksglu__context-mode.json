@@ -1,10 +1,10 @@
 {
   "repo": "mksglu/context-mode",
-  "stars": 10648,
+  "stars": 10654,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 14 platforms",
-  "pushed_at": "2026-04-27T20:31:42Z",
+  "pushed_at": "2026-04-27T20:44:50Z",
   "composite": 92,
   "composite_raw": 92,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

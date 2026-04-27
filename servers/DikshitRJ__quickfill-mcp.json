@@ -1,0 +1,123 @@
+{
+  "repo": "DikshitRJ/quickfill-mcp",
+  "stars": 4,
+  "language": "TypeScript",
+  "license": "MIT",
+  "description": "Instant Generative UI MCP Server for AI Agents. Turn static AI chats into live, hot-reloading browser experiences with local file access. Tailwind, Alpine.js, and WASM-powered data parsers.",
+  "pushed_at": "2026-04-27T19:19:22Z",
+  "composite": 77,
+  "composite_raw": 77,
+  "axes": {
+    "reliability": {
+      "score": 100,
+      "passing": 7,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "3 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 0d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: v1.2.5"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "3 releases with notes"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 4299 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "install section detected"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "6 unique snake_case identifiers"
+        },
+        "examples": {
+          "pass": false,
+          "note": "1 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://www.npmjs.com/package/@dikshitrj/quickfill"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "9 topics: ['ai-agents', 'alpinejs', 'gemini-cli-extension', 'mcp', 'mcp-server']"
+        }
+      }
+    },
+    "community": {
+      "score": 60,
+      "passing": 3,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 0 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "no closed PRs"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:55:41+00:00"
+}

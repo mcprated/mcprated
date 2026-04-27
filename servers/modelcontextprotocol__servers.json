@@ -5,12 +5,12 @@
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers",
   "pushed_at": "2026-04-17T22:59:54Z",
-  "composite": 76,
-  "composite_raw": 76,
+  "composite": 87,
+  "composite_raw": 87,
   "axes": {
     "reliability": {
-      "score": 57,
-      "passing": 4,
+      "score": 100,
+      "passing": 7,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,19 +27,19 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 tag(s) (no GH releases)"
+          "note": "5 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 90d ago"
         },
         "version_follows_semver": {
-          "pass": false,
-          "note": "no releases"
+          "pass": true,
+          "note": "latest tag: 2026.1.26"
         },
         "release_communication": {
-          "pass": false,
-          "note": "no CHANGELOG, no release-notes substitute"
+          "pass": true,
+          "note": "5 releases with notes"
         }
       }
     },
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

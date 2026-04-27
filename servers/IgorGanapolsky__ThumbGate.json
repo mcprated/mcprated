@@ -5,12 +5,12 @@
   "license": "MIT",
   "description": "Agent governance for ThumbGate: 👍/👎 become Pre-Action Checks that block repeat mistakes before code, money, or customer systems change.",
   "pushed_at": "2026-04-27T20:15:21Z",
-  "composite": 74,
-  "composite_raw": 74,
+  "composite": 82,
+  "composite_raw": 82,
   "axes": {
     "reliability": {
-      "score": 71,
-      "passing": 5,
+      "score": 100,
+      "passing": 7,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,15 +27,15 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 tag(s) (no GH releases)"
+          "note": "5 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 1d ago"
         },
         "version_follows_semver": {
-          "pass": false,
-          "note": "no releases"
+          "pass": true,
+          "note": "latest tag: v1.16.8"
         },
         "release_communication": {
           "pass": true,
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:41+00:00"
 }

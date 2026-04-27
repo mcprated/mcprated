@@ -4,13 +4,13 @@
   "language": "Go",
   "license": "MIT",
   "description": "MCP server for Git with local Ollama — zero tokens for git operations",
-  "pushed_at": "2026-04-27T19:38:25Z",
-  "composite": 79,
-  "composite_raw": 79,
+  "pushed_at": "2026-04-27T20:46:54Z",
+  "composite": 90,
+  "composite_raw": 90,
   "axes": {
     "reliability": {
-      "score": 57,
-      "passing": 4,
+      "score": 100,
+      "passing": 7,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,19 +27,19 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 tag(s) (no GH releases)"
+          "note": "5 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 1d ago"
         },
         "version_follows_semver": {
-          "pass": false,
-          "note": "no releases"
+          "pass": true,
+          "note": "latest tag: v1.4.3"
         },
         "release_communication": {
-          "pass": false,
-          "note": "no CHANGELOG, no release-notes substitute"
+          "pass": true,
+          "note": "5 releases with notes"
         }
       }
     },
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:41+00:00"
 }

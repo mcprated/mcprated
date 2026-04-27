@@ -1,22 +1,8 @@
 {
-  "generated_at": "2026-04-27T20:37:04+00:00",
+  "generated_at": "2026-04-27T20:55:42+00:00",
   "rule_set_version": "1.0.0",
-  "count": 188,
+  "count": 125,
   "servers": [
-    {
-      "repo": "Azure/data-api-builder",
-      "slug": "Azure__data-api-builder",
-      "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 1376,
-      "language": "C#",
-      "hard_flags": []
-    },
     {
       "repo": "IBM/mcp-context-forge",
       "slug": "IBM__mcp-context-forge",
@@ -32,8 +18,8 @@
       "hard_flags": []
     },
     {
-      "repo": "anipotts/claude-code-tips",
-      "slug": "anipotts__claude-code-tips",
+      "repo": "JKHeadley/instar",
+      "slug": "JKHeadley__instar",
       "composite": 100,
       "axes": {
         "reliability": 100,
@@ -41,36 +27,8 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 20,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "comma-compliance/arc-relay",
-      "slug": "comma-compliance__arc-relay",
-      "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 7,
-      "language": "Go",
-      "hard_flags": []
-    },
-    {
-      "repo": "erikdarlingdata/PerformanceStudio",
-      "slug": "erikdarlingdata__PerformanceStudio",
-      "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 175,
-      "language": "C#",
+      "stars": 59,
+      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -83,22 +41,8 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 29299,
+      "stars": 29300,
       "language": "Go",
-      "hard_flags": []
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "slug": "google-gemini__gemini-cli",
-      "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 102556,
-      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -158,8 +102,8 @@
       "hard_flags": []
     },
     {
-      "repo": "modelcontextprotocol/kotlin-sdk",
-      "slug": "modelcontextprotocol__kotlin-sdk",
+      "repo": "msaad00/agent-bom",
+      "slug": "msaad00__agent-bom",
       "composite": 100,
       "axes": {
         "reliability": 100,
@@ -167,13 +111,13 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 1347,
-      "language": "Kotlin",
+      "stars": 15,
+      "language": "Python",
       "hard_flags": []
     },
     {
-      "repo": "modelcontextprotocol/registry",
-      "slug": "modelcontextprotocol__registry",
+      "repo": "nikolai-vysotskyi/trace-mcp",
+      "slug": "nikolai-vysotskyi__trace-mcp",
       "composite": 100,
       "axes": {
         "reliability": 100,
@@ -181,8 +125,8 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 6740,
-      "language": "Go",
+      "stars": 54,
+      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -200,6 +144,20 @@
       "hard_flags": []
     },
     {
+      "repo": "s-morgan-jeffries/apple-mail-mcp",
+      "slug": "s-morgan-jeffries__apple-mail-mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "stars": 54,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
       "repo": "statespace-tech/statespace",
       "slug": "statespace-tech__statespace",
       "composite": 100,
@@ -214,34 +172,6 @@
       "hard_flags": []
     },
     {
-      "repo": "uchebnick/unch",
-      "slug": "uchebnick__unch",
-      "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 10,
-      "language": "Go",
-      "hard_flags": []
-    },
-    {
-      "repo": "yvgude/lean-ctx",
-      "slug": "yvgude__lean-ctx",
-      "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 891,
-      "language": "Rust",
-      "hard_flags": []
-    },
-    {
       "repo": "ChromeDevTools/chrome-devtools-mcp",
       "slug": "ChromeDevTools__chrome-devtools-mcp",
       "composite": 96,
@@ -251,41 +181,13 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 37396,
+      "stars": 37397,
       "language": "TypeScript",
       "hard_flags": []
     },
     {
-      "repo": "moltis-org/moltis",
-      "slug": "moltis-org__moltis",
-      "composite": 96,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 2615,
-      "language": "Rust",
-      "hard_flags": []
-    },
-    {
-      "repo": "oguzhankir/fmtly",
-      "slug": "oguzhankir__fmtly",
-      "composite": 96,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 4,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "Alex8791-cyber/cognithor",
-      "slug": "Alex8791-cyber__cognithor",
+      "repo": "Celestialchris/SoulPrint-Canonical",
+      "slug": "Celestialchris__SoulPrint-Canonical",
       "composite": 95,
       "axes": {
         "reliability": 100,
@@ -293,7 +195,7 @@
         "trust": 100,
         "community": 80
       },
-      "stars": 115,
+      "stars": 0,
       "language": "Python",
       "hard_flags": []
     },
@@ -312,6 +214,20 @@
       "hard_flags": []
     },
     {
+      "repo": "MrCipherSmith/helyx",
+      "slug": "MrCipherSmith__helyx",
+      "composite": 95,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "stars": 0,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
       "repo": "ProfessionalWiki/MediaWiki-MCP-Server",
       "slug": "ProfessionalWiki__MediaWiki-MCP-Server",
       "composite": 95,
@@ -322,6 +238,20 @@
         "community": 80
       },
       "stars": 82,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "RideMatch1/a.e.g.i.s",
+      "slug": "RideMatch1__a.e.g.i.s",
+      "composite": 95,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "stars": 3,
       "language": "TypeScript",
       "hard_flags": []
     },
@@ -354,45 +284,17 @@
       "hard_flags": []
     },
     {
-      "repo": "bacharSalleh/archik",
-      "slug": "bacharSalleh__archik",
+      "repo": "bug-ops/pyhdb-rs",
+      "slug": "bug-ops__pyhdb-rs",
       "composite": 95,
       "axes": {
         "reliability": 100,
-        "documentation": 100,
+        "documentation": 80,
         "trust": 100,
-        "community": 80
+        "community": 100
       },
-      "stars": 0,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "bug-ops/zeph",
-      "slug": "bug-ops__zeph",
-      "composite": 95,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 30,
+      "stars": 1,
       "language": "Rust",
-      "hard_flags": []
-    },
-    {
-      "repo": "chopratejas/headroom",
-      "slug": "chopratejas__headroom",
-      "composite": 95,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 1574,
-      "language": "Python",
       "hard_flags": []
     },
     {
@@ -452,36 +354,8 @@
       "hard_flags": []
     },
     {
-      "repo": "heygen-com/hyperframes",
-      "slug": "heygen-com__hyperframes",
-      "composite": 95,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 11880,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "open-metadata/OpenMetadata",
-      "slug": "open-metadata__OpenMetadata",
-      "composite": 95,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 13684,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "paiml/bashrs",
-      "slug": "paiml__bashrs",
+      "repo": "joe-broadhead/open-cowork",
+      "slug": "joe-broadhead__open-cowork",
       "composite": 95,
       "axes": {
         "reliability": 100,
@@ -489,8 +363,22 @@
         "trust": 100,
         "community": 80
       },
-      "stars": 32,
-      "language": "Rust",
+      "stars": 2,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "robotrocketscience/aelfrice",
+      "slug": "robotrocketscience__aelfrice",
+      "composite": 95,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "stars": 2,
+      "language": "Python",
       "hard_flags": []
     },
     {
@@ -508,62 +396,6 @@
       "hard_flags": []
     },
     {
-      "repo": "superradcompany/microsandbox",
-      "slug": "superradcompany__microsandbox",
-      "composite": 95,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 5848,
-      "language": "Rust",
-      "hard_flags": []
-    },
-    {
-      "repo": "msaad00/agent-bom",
-      "slug": "msaad00__agent-bom",
-      "composite": 93,
-      "axes": {
-        "reliability": 71,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 15,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "SolaceLabs/solace-agent-mesh",
-      "slug": "SolaceLabs__solace-agent-mesh",
-      "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 3331,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "TabularisDB/tabularis",
-      "slug": "TabularisDB__tabularis",
-      "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 1237,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
       "repo": "apify/apify-mcp-server",
       "slug": "apify__apify-mcp-server",
       "composite": 92,
@@ -578,34 +410,6 @@
       "hard_flags": []
     },
     {
-      "repo": "danilokhury/Synabun",
-      "slug": "danilokhury__Synabun",
-      "composite": 92,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 47,
-      "language": "JavaScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "maximhq/bifrost",
-      "slug": "maximhq__bifrost",
-      "composite": 92,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 4369,
-      "language": "Go",
-      "hard_flags": []
-    },
-    {
       "repo": "mksglu/context-mode",
       "slug": "mksglu__context-mode",
       "composite": 92,
@@ -615,7 +419,7 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 10648,
+      "stars": 10654,
       "language": "TypeScript",
       "hard_flags": []
     },
@@ -629,13 +433,13 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 2647,
+      "stars": 2648,
       "language": "TypeScript",
       "hard_flags": []
     },
     {
-      "repo": "OpenScribbler/syllago",
-      "slug": "OpenScribbler__syllago",
+      "repo": "Alejandro-M-P/git-courer",
+      "slug": "Alejandro-M-P__git-courer",
       "composite": 90,
       "axes": {
         "reliability": 100,
@@ -643,50 +447,8 @@
         "trust": 100,
         "community": 80
       },
-      "stars": 2,
+      "stars": 16,
       "language": "Go",
-      "hard_flags": []
-    },
-    {
-      "repo": "Pratiyush/llm-wiki",
-      "slug": "Pratiyush__llm-wiki",
-      "composite": 90,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 177,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "Rovemark/logicahome",
-      "slug": "Rovemark__logicahome",
-      "composite": 90,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 60
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "Ultraivanov/deus-in-machina",
-      "slug": "Ultraivanov__deus-in-machina",
-      "composite": 90,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 60
-      },
-      "stars": 2,
-      "language": "JavaScript",
       "hard_flags": []
     },
     {
@@ -704,6 +466,20 @@
       "hard_flags": []
     },
     {
+      "repo": "hyper-mcp-rs/hyper-mcp",
+      "slug": "hyper-mcp-rs__hyper-mcp",
+      "composite": 90,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 100,
+        "community": 80
+      },
+      "stars": 874,
+      "language": "Rust",
+      "hard_flags": []
+    },
+    {
       "repo": "juliochwd/bps-stat-agent",
       "slug": "juliochwd__bps-stat-agent",
       "composite": 90,
@@ -714,34 +490,6 @@
         "community": 80
       },
       "stars": 1,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "obot-platform/obot",
-      "slug": "obot-platform__obot",
-      "composite": 90,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 729,
-      "language": "Go",
-      "hard_flags": []
-    },
-    {
-      "repo": "robotrocketscience/aelfrice",
-      "slug": "robotrocketscience__aelfrice",
-      "composite": 90,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 2,
       "language": "Python",
       "hard_flags": []
     },
@@ -757,34 +505,6 @@
       },
       "stars": 142,
       "language": "C#",
-      "hard_flags": []
-    },
-    {
-      "repo": "stacklok/toolhive-catalog",
-      "slug": "stacklok__toolhive-catalog",
-      "composite": 90,
-      "axes": {
-        "reliability": 100,
-        "documentation": 60,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 19,
-      "language": "Go",
-      "hard_flags": []
-    },
-    {
-      "repo": "stacklok/toolhive",
-      "slug": "stacklok__toolhive",
-      "composite": 90,
-      "axes": {
-        "reliability": 100,
-        "documentation": 60,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 1732,
-      "language": "Go",
       "hard_flags": []
     },
     {
@@ -816,78 +536,8 @@
       "hard_flags": []
     },
     {
-      "repo": "veerps57/memento",
-      "slug": "veerps57__memento",
-      "composite": 89,
-      "axes": {
-        "reliability": 57,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 0,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "BrainDriveAI/BrainDrive",
-      "slug": "BrainDriveAI__BrainDrive",
-      "composite": 88,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 4,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "Celestialchris/SoulPrint-Canonical",
-      "slug": "Celestialchris__SoulPrint-Canonical",
-      "composite": 88,
-      "axes": {
-        "reliability": 71,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "n8n-io/n8n",
-      "slug": "n8n-io__n8n",
-      "composite": 88,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 185849,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "speakeasy-api/gram",
-      "slug": "speakeasy-api__gram",
-      "composite": 88,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 231,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "Brain2k-0005/Lumeo",
-      "slug": "Brain2k-0005__Lumeo",
+      "repo": "EtanHey/brainlayer",
+      "slug": "EtanHey__brainlayer",
       "composite": 87,
       "axes": {
         "reliability": 100,
@@ -895,8 +545,8 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 5,
-      "language": "C#",
+      "stars": 6,
+      "language": "Python",
       "hard_flags": []
     },
     {
@@ -928,8 +578,22 @@
       "hard_flags": []
     },
     {
-      "repo": "ironbee-ai/ironbee-cli",
-      "slug": "ironbee-ai__ironbee-cli",
+      "repo": "andresharpe/dotbot",
+      "slug": "andresharpe__dotbot",
+      "composite": 87,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 67,
+        "community": 100
+      },
+      "stars": 48,
+      "language": "PowerShell",
+      "hard_flags": []
+    },
+    {
+      "repo": "codeofaxel/Kiln",
+      "slug": "codeofaxel__Kiln",
       "composite": 87,
       "axes": {
         "reliability": 100,
@@ -937,13 +601,27 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 17,
+      "stars": 18,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 80
+      },
+      "stars": 84637,
       "language": "TypeScript",
       "hard_flags": []
     },
     {
-      "repo": "lemonade-sdk/lemonade",
-      "slug": "lemonade-sdk__lemonade",
+      "repo": "silverstein/minutes",
+      "slug": "silverstein__minutes",
       "composite": 87,
       "axes": {
         "reliability": 100,
@@ -951,21 +629,7 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 3692,
-      "language": "C++",
-      "hard_flags": []
-    },
-    {
-      "repo": "pawurb/hotpath-rs",
-      "slug": "pawurb__hotpath-rs",
-      "composite": 87,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 80
-      },
-      "stars": 1450,
+      "stars": 1139,
       "language": "Rust",
       "hard_flags": []
     },
@@ -984,6 +648,20 @@
       "hard_flags": []
     },
     {
+      "repo": "Yassinello/kebab-mcp",
+      "slug": "Yassinello__kebab-mcp",
+      "composite": 86,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 100,
+        "community": 60
+      },
+      "stars": 0,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
       "repo": "aaif-goose/goose",
       "slug": "aaif-goose__goose",
       "composite": 86,
@@ -998,129 +676,17 @@
       "hard_flags": []
     },
     {
-      "repo": "mastra-ai/mastra",
-      "slug": "mastra-ai__mastra",
+      "repo": "factorial-io/imap-mcp",
+      "slug": "factorial-io__imap-mcp",
       "composite": 86,
       "axes": {
         "reliability": 86,
-        "documentation": 60,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 23366,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "mnw/A2AChannel",
-      "slug": "mnw__A2AChannel",
-      "composite": 86,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 60
-      },
-      "stars": 0,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "witwave-ai/witwave",
-      "slug": "witwave-ai__witwave",
-      "composite": 85,
-      "axes": {
-        "reliability": 100,
         "documentation": 80,
-        "trust": 100,
-        "community": 60
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "ascending-llc/jarvis-registry",
-      "slug": "ascending-llc__jarvis-registry",
-      "composite": 84,
-      "axes": {
-        "reliability": 57,
-        "documentation": 80,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 398,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "ockham-sh/parsimony-connectors",
-      "slug": "ockham-sh__parsimony-connectors",
-      "composite": 84,
-      "axes": {
-        "reliability": 57,
-        "documentation": 100,
         "trust": 100,
         "community": 80
       },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "onecli/onecli",
-      "slug": "onecli__onecli",
-      "composite": 84,
-      "axes": {
-        "reliability": 71,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 2028,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "voidly-ai/voidly-pay",
-      "slug": "voidly-ai__voidly-pay",
-      "composite": 84,
-      "axes": {
-        "reliability": 57,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 0,
-      "language": "JavaScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "AstrBotDevs/AstrBot",
-      "slug": "AstrBotDevs__AstrBot",
-      "composite": 83,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 33,
-        "community": 100
-      },
-      "stars": 30810,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "BrainBlend-AI/tesseron",
-      "slug": "BrainBlend-AI__tesseron",
-      "composite": 83,
-      "axes": {
-        "reliability": 86,
-        "documentation": 80,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 12,
-      "language": "JavaScript",
+      "stars": 2,
+      "language": "Rust",
       "hard_flags": []
     },
     {
@@ -1166,8 +732,22 @@
       "hard_flags": []
     },
     {
-      "repo": "Tangerine-Teams-Intelligence/tangerine-teams-app",
-      "slug": "Tangerine-Teams-Intelligence__tangerine-teams-app",
+      "repo": "marmar9615-cloud/agentbridge-protocol",
+      "slug": "marmar9615-cloud__agentbridge-protocol",
+      "composite": 83,
+      "axes": {
+        "reliability": 71,
+        "documentation": 80,
+        "trust": 100,
+        "community": 80
+      },
+      "stars": 0,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "IgorGanapolsky/ThumbGate",
+      "slug": "IgorGanapolsky__ThumbGate",
       "composite": 82,
       "axes": {
         "reliability": 100,
@@ -1175,8 +755,50 @@
         "trust": 67,
         "community": 60
       },
-      "stars": 0,
-      "language": "TypeScript",
+      "stars": 18,
+      "language": "JavaScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "MadGapun/PBP",
+      "slug": "MadGapun__PBP",
+      "composite": 82,
+      "axes": {
+        "reliability": 86,
+        "documentation": 60,
+        "trust": 100,
+        "community": 80
+      },
+      "stars": 1,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 60
+      },
+      "stars": 1371,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "ralfbecher/orionbelt-semantic-layer-mcp",
+      "slug": "ralfbecher__orionbelt-semantic-layer-mcp",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 60
+      },
+      "stars": 2,
+      "language": "Python",
       "hard_flags": []
     },
     {
@@ -1222,6 +844,20 @@
       "hard_flags": []
     },
     {
+      "repo": "timescale/pg-aiguide",
+      "slug": "timescale__pg-aiguide",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 67,
+        "community": 80
+      },
+      "stars": 1703,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
       "repo": "zzet/gortex",
       "slug": "zzet__gortex",
       "composite": 82,
@@ -1236,87 +872,17 @@
       "hard_flags": []
     },
     {
-      "repo": "avivsinai/skills-marketplace",
-      "slug": "avivsinai__skills-marketplace",
-      "composite": 81,
+      "repo": "Djtony707/TITAN",
+      "slug": "Djtony707__TITAN",
+      "composite": 80,
       "axes": {
-        "reliability": 43,
-        "documentation": 100,
+        "reliability": 100,
+        "documentation": 60,
         "trust": 100,
-        "community": 80
+        "community": 60
       },
-      "stars": 2,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "seranking/seo-skills",
-      "slug": "seranking__seo-skills",
-      "composite": 81,
-      "axes": {
-        "reliability": 57,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 0,
-      "language": null,
-      "hard_flags": []
-    },
-    {
-      "repo": "supertrained/rhumb",
-      "slug": "supertrained__rhumb",
-      "composite": 81,
-      "axes": {
-        "reliability": 43,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 1,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "andresharpe/dotbot",
-      "slug": "andresharpe__dotbot",
-      "composite": 80,
-      "axes": {
-        "reliability": 71,
-        "documentation": 80,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 48,
-      "language": "PowerShell",
-      "hard_flags": []
-    },
-    {
-      "repo": "cmeans/mcp-awareness",
-      "slug": "cmeans__mcp-awareness",
-      "composite": 80,
-      "axes": {
-        "reliability": 71,
-        "documentation": 80,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 3,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "codeofaxel/Kiln",
-      "slug": "codeofaxel__Kiln",
-      "composite": 80,
-      "axes": {
-        "reliability": 71,
-        "documentation": 100,
-        "trust": 67,
-        "community": 80
-      },
-      "stars": 18,
-      "language": "Python",
+      "stars": 12,
+      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -1348,73 +914,17 @@
       "hard_flags": []
     },
     {
-      "repo": "superset-sh/superset",
-      "slug": "superset-sh__superset",
-      "composite": 80,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 33,
-        "community": 100
-      },
-      "stars": 10056,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "Alejandro-M-P/git-courer",
-      "slug": "Alejandro-M-P__git-courer",
-      "composite": 79,
-      "axes": {
-        "reliability": 57,
-        "documentation": 80,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 16,
-      "language": "Go",
-      "hard_flags": []
-    },
-    {
-      "repo": "NumstackPtyLtd/supaproxy-server",
-      "slug": "NumstackPtyLtd__supaproxy-server",
-      "composite": 79,
-      "axes": {
-        "reliability": 57,
-        "documentation": 80,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 0,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "hyper-mcp-rs/hyper-mcp",
-      "slug": "hyper-mcp-rs__hyper-mcp",
-      "composite": 79,
-      "axes": {
-        "reliability": 57,
-        "documentation": 80,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 874,
-      "language": "Rust",
-      "hard_flags": []
-    },
-    {
-      "repo": "Aureliolo/synthorg",
-      "slug": "Aureliolo__synthorg",
+      "repo": "EtanHey/cmuxlayer",
+      "slug": "EtanHey__cmuxlayer",
       "composite": 78,
       "axes": {
-        "reliability": 100,
+        "reliability": 43,
         "documentation": 100,
-        "trust": 33,
-        "community": 80
+        "trust": 67,
+        "community": 100
       },
-      "stars": 7,
-      "language": "Python",
+      "stars": 4,
+      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -1432,8 +942,8 @@
       "hard_flags": []
     },
     {
-      "repo": "aj47/dotagents-mono",
-      "slug": "aj47__dotagents-mono",
+      "repo": "JoyciAkira/memento",
+      "slug": "JoyciAkira__memento",
       "composite": 78,
       "axes": {
         "reliability": 100,
@@ -1441,36 +951,8 @@
         "trust": 33,
         "community": 80
       },
-      "stars": 7,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "alibaizhanov/mengram",
-      "slug": "alibaizhanov__mengram",
-      "composite": 78,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 67,
-        "community": 60
-      },
-      "stars": 160,
+      "stars": 1,
       "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "decocms/studio",
-      "slug": "decocms__studio",
-      "composite": 78,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 33,
-        "community": 80
-      },
-      "stars": 362,
-      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -1488,22 +970,8 @@
       "hard_flags": []
     },
     {
-      "repo": "h3rb3rn/moe-sovereign",
-      "slug": "h3rb3rn__moe-sovereign",
-      "composite": 78,
-      "axes": {
-        "reliability": 43,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 4,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "useorgx/orgx-mcp",
-      "slug": "useorgx__orgx-mcp",
+      "repo": "systempromptio/systemprompt-template",
+      "slug": "systempromptio__systemprompt-template",
       "composite": 78,
       "axes": {
         "reliability": 86,
@@ -1511,8 +979,36 @@
         "trust": 67,
         "community": 60
       },
-      "stars": 1,
+      "stars": 9,
+      "language": "Rust",
+      "hard_flags": []
+    },
+    {
+      "repo": "DikshitRJ/quickfill-mcp",
+      "slug": "DikshitRJ__quickfill-mcp",
+      "composite": 77,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 67,
+        "community": 60
+      },
+      "stars": 4,
       "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "JLugagne/go-surgeon",
+      "slug": "JLugagne__go-surgeon",
+      "composite": 77,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 67,
+        "community": 60
+      },
+      "stars": 3,
+      "language": "Go",
       "hard_flags": []
     },
     {
@@ -1530,22 +1026,22 @@
       "hard_flags": []
     },
     {
-      "repo": "Bryanh9111/Compost",
-      "slug": "Bryanh9111__Compost",
-      "composite": 76,
+      "repo": "apecloud/ApeRAG",
+      "slug": "apecloud__ApeRAG",
+      "composite": 77,
       "axes": {
-        "reliability": 43,
+        "reliability": 100,
         "documentation": 80,
-        "trust": 100,
-        "community": 80
+        "trust": 67,
+        "community": 60
       },
-      "stars": 1,
-      "language": "TypeScript",
+      "stars": 1153,
+      "language": "Python",
       "hard_flags": []
     },
     {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
+      "repo": "PlanExeOrg/PlanExe",
+      "slug": "PlanExeOrg__PlanExe",
       "composite": 76,
       "axes": {
         "reliability": 57,
@@ -1553,22 +1049,8 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 84637,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "IgorGanapolsky/ThumbGate",
-      "slug": "IgorGanapolsky__ThumbGate",
-      "composite": 74,
-      "axes": {
-        "reliability": 71,
-        "documentation": 100,
-        "trust": 67,
-        "community": 60
-      },
-      "stars": 18,
-      "language": "JavaScript",
+      "stars": 375,
+      "language": "Python",
       "hard_flags": []
     },
     {
@@ -1582,20 +1064,6 @@
         "community": 60
       },
       "stars": 0,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "florian-strasser/LocalBoards",
-      "slug": "florian-strasser__LocalBoards",
-      "composite": 74,
-      "axes": {
-        "reliability": 57,
-        "documentation": 100,
-        "trust": 100,
-        "community": 40
-      },
-      "stars": 1,
       "language": "TypeScript",
       "hard_flags": []
     },
@@ -1614,8 +1082,8 @@
       "hard_flags": []
     },
     {
-      "repo": "drhelius/Gearcoleco",
-      "slug": "drhelius__Gearcoleco",
+      "repo": "drhelius/Geargrafx",
+      "slug": "drhelius__Geargrafx",
       "composite": 73,
       "axes": {
         "reliability": 100,
@@ -1623,7 +1091,7 @@
         "trust": 33,
         "community": 60
       },
-      "stars": 125,
+      "stars": 206,
       "language": "C++",
       "hard_flags": []
     },
@@ -1684,8 +1152,8 @@
       "hard_flags": []
     },
     {
-      "repo": "dremio/dremio-mcp",
-      "slug": "dremio__dremio-mcp",
+      "repo": "FrkAk/mymir",
+      "slug": "FrkAk__mymir",
       "composite": 72,
       "axes": {
         "reliability": 43,
@@ -1693,78 +1161,78 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 49,
-      "language": "Python",
+      "stars": 52,
+      "language": "TypeScript",
       "hard_flags": []
     },
     {
-      "repo": "phasespace-labs/palinode",
-      "slug": "phasespace-labs__palinode",
-      "composite": 71,
+      "repo": "ayhammouda/python-docs-mcp-server",
+      "slug": "ayhammouda__python-docs-mcp-server",
+      "composite": 72,
       "axes": {
-        "reliability": 57,
-        "documentation": 100,
-        "trust": 67,
-        "community": 60
-      },
-      "stars": 19,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 71,
-      "axes": {
-        "reliability": 57,
-        "documentation": 100,
-        "trust": 67,
-        "community": 60
-      },
-      "stars": 1371,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "timescale/pg-aiguide",
-      "slug": "timescale__pg-aiguide",
-      "composite": 71,
-      "axes": {
-        "reliability": 57,
+        "reliability": 43,
         "documentation": 80,
         "trust": 67,
-        "community": 80
+        "community": 100
       },
-      "stars": 1703,
+      "stars": 1,
       "language": "Python",
       "hard_flags": []
     },
     {
-      "repo": "Sarapakistan0/eShopLite",
-      "slug": "Sarapakistan0__eShopLite",
-      "composite": 70,
+      "repo": "kasssandr/archilles",
+      "slug": "kasssandr__archilles",
+      "composite": 72,
       "axes": {
-        "reliability": 71,
+        "reliability": 43,
         "documentation": 80,
         "trust": 67,
-        "community": 60
+        "community": 100
       },
-      "stars": 1,
-      "language": "C#",
+      "stars": 2,
+      "language": "Python",
       "hard_flags": []
     },
     {
-      "repo": "adityaarsharma/perch",
-      "slug": "adityaarsharma__perch",
-      "composite": 70,
+      "repo": "ockham-sh/parsimony-mcp",
+      "slug": "ockham-sh__parsimony-mcp",
+      "composite": 71,
       "axes": {
-        "reliability": 86,
+        "reliability": 57,
         "documentation": 100,
-        "trust": 33,
+        "trust": 67,
         "community": 60
       },
-      "stars": 1,
-      "language": "JavaScript",
+      "stars": 0,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "strale-io/strale",
+      "slug": "strale-io__strale",
+      "composite": 71,
+      "axes": {
+        "reliability": 57,
+        "documentation": 100,
+        "trust": 67,
+        "community": 60
+      },
+      "stars": 2,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "tomer-bdbd/soti-mcp",
+      "slug": "tomer-bdbd__soti-mcp",
+      "composite": 71,
+      "axes": {
+        "reliability": 43,
+        "documentation": 100,
+        "trust": 100,
+        "community": 40
+      },
+      "stars": 0,
+      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -1798,143 +1266,45 @@
       "hard_flags": []
     },
     {
-      "repo": "jessburnett/ai-classy",
-      "slug": "jessburnett__ai-classy",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "axes": {
+        "reliability": 29,
+        "documentation": 100,
+        "trust": 67,
+        "community": 80
+      },
+      "stars": 4341,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "mario-hernandez/google-seo-mcp-claude-code",
+      "slug": "mario-hernandez__google-seo-mcp-claude-code",
       "composite": 69,
       "axes": {
         "reliability": 57,
-        "documentation": 40,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "aalises/catalunya-opendata-mcp",
-      "slug": "aalises__catalunya-opendata-mcp",
-      "composite": 68,
-      "axes": {
-        "reliability": 86,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "dougborg/frontapp-openapi-client",
-      "slug": "dougborg__frontapp-openapi-client",
-      "composite": 68,
-      "axes": {
-        "reliability": 43,
-        "documentation": 80,
-        "trust": 67,
-        "community": 80
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "nunaszek/mcp-streamable-http-server",
-      "slug": "nunaszek__mcp-streamable-http-server",
-      "composite": 66,
-      "axes": {
-        "reliability": 43,
         "documentation": 80,
         "trust": 100,
         "community": 40
       },
-      "stars": 2,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "archestra-ai/archestra",
-      "slug": "archestra-ai__archestra",
-      "composite": 65,
-      "axes": {
-        "reliability": 86,
-        "documentation": 60,
-        "trust": 33,
-        "community": 80
-      },
-      "stars": 3603,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "kilian-ai/traits.build",
-      "slug": "kilian-ai__traits.build",
-      "composite": 65,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 33,
-        "community": 40
-      },
-      "stars": 1,
-      "language": "HTML",
-      "hard_flags": []
-    },
-    {
-      "repo": "Lichens-Innovation/ai-dev-tools",
-      "slug": "Lichens-Innovation__ai-dev-tools",
-      "composite": 64,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 67,
-        "community": 80
-      },
       "stars": 0,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "ai-boost/awesome-harness-engineering",
-      "slug": "ai-boost__awesome-harness-engineering",
-      "composite": 64,
-      "axes": {
-        "reliability": 29,
-        "documentation": 60,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 606,
       "language": "Python",
       "hard_flags": []
     },
     {
-      "repo": "pdugan20/rewind",
-      "slug": "pdugan20__rewind",
+      "repo": "Rubentxu/chronos",
+      "slug": "Rubentxu__chronos",
       "composite": 63,
       "axes": {
-        "reliability": 86,
-        "documentation": 40,
-        "trust": 67,
-        "community": 60
-      },
-      "stars": 2,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "Agent-Hellboy/mcp-runtime",
-      "slug": "Agent-Hellboy__mcp-runtime",
-      "composite": 62,
-      "axes": {
-        "reliability": 43,
+        "reliability": 100,
         "documentation": 80,
-        "trust": 67,
-        "community": 60
+        "trust": 33,
+        "community": 40
       },
-      "stars": 4,
-      "language": "Go",
+      "stars": 0,
+      "language": "Rust",
       "hard_flags": []
     },
     {
@@ -1952,22 +1322,22 @@
       "hard_flags": []
     },
     {
-      "repo": "EBISPOT/GrEBI",
-      "slug": "EBISPOT__GrEBI",
+      "repo": "Paola3stefania/openRundown",
+      "slug": "Paola3stefania__openRundown",
       "composite": 62,
       "axes": {
-        "reliability": 43,
+        "reliability": 29,
         "documentation": 80,
-        "trust": 67,
-        "community": 60
+        "trust": 100,
+        "community": 40
       },
-      "stars": 4,
-      "language": "Jupyter Notebook",
+      "stars": 2,
+      "language": "TypeScript",
       "hard_flags": []
     },
     {
-      "repo": "TangoBeee/servus",
-      "slug": "TangoBeee__servus",
+      "repo": "nchemb/whoop-mcp",
+      "slug": "nchemb__whoop-mcp",
       "composite": 62,
       "axes": {
         "reliability": 43,
@@ -1977,20 +1347,6 @@
       },
       "stars": 0,
       "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "drhelius/Geargrafx",
-      "slug": "drhelius__Geargrafx",
-      "composite": 62,
-      "axes": {
-        "reliability": 57,
-        "documentation": 100,
-        "trust": 33,
-        "community": 60
-      },
-      "stars": 206,
-      "language": "C++",
       "hard_flags": []
     },
     {
@@ -2008,50 +1364,8 @@
       "hard_flags": []
     },
     {
-      "repo": "PrefectHQ/fastmcp-ts",
-      "slug": "PrefectHQ__fastmcp-ts",
-      "composite": 61,
-      "axes": {
-        "reliability": 71,
-        "documentation": 80,
-        "trust": 33,
-        "community": 60
-      },
-      "stars": 2,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "mpress001/mcp-claude-hackernews",
-      "slug": "mpress001__mcp-claude-hackernews",
-      "composite": 61,
-      "axes": {
-        "reliability": 57,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 1,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "TensorBlock/awesome-mcp-servers",
-      "slug": "TensorBlock__awesome-mcp-servers",
-      "composite": 59,
-      "axes": {
-        "reliability": 29,
-        "documentation": 60,
-        "trust": 67,
-        "community": 80
-      },
-      "stars": 643,
-      "language": null,
-      "hard_flags": []
-    },
-    {
-      "repo": "Tlalvarez/Auxiliar-ai",
-      "slug": "Tlalvarez__Auxiliar-ai",
+      "repo": "maorcc/gimp-mcp",
+      "slug": "maorcc__gimp-mcp",
       "composite": 59,
       "axes": {
         "reliability": 43,
@@ -2059,22 +1373,8 @@
         "trust": 33,
         "community": 80
       },
-      "stars": 2,
+      "stars": 80,
       "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "tre-systems/delta-v",
-      "slug": "tre-systems__delta-v",
-      "composite": 59,
-      "axes": {
-        "reliability": 43,
-        "documentation": 80,
-        "trust": 33,
-        "community": 80
-      },
-      "stars": 0,
-      "language": "TypeScript",
       "hard_flags": []
     },
     {
@@ -2092,104 +1392,6 @@
       "hard_flags": []
     },
     {
-      "repo": "matthewidavis/ClaudeJournal",
-      "slug": "matthewidavis__ClaudeJournal",
-      "composite": 58,
-      "axes": {
-        "reliability": 43,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "rohailamalik/matlab-simulink-mcp",
-      "slug": "rohailamalik__matlab-simulink-mcp",
-      "composite": 58,
-      "axes": {
-        "reliability": 43,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "vivekkeditz/Awesome-MCP-ZH",
-      "slug": "vivekkeditz__Awesome-MCP-ZH",
-      "composite": 58,
-      "axes": {
-        "reliability": 43,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 0,
-      "language": null,
-      "hard_flags": []
-    },
-    {
-      "repo": "voidly-ai/voidly-pay-cookbook",
-      "slug": "voidly-ai__voidly-pay-cookbook",
-      "composite": 57,
-      "axes": {
-        "reliability": 29,
-        "documentation": 60,
-        "trust": 100,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "FreddyZeta1847/Jarvis",
-      "slug": "FreddyZeta1847__Jarvis",
-      "composite": 54,
-      "axes": {
-        "reliability": 43,
-        "documentation": 100,
-        "trust": 33,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "JavaScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "ZakRowton/OpenJarvisDashboard",
-      "slug": "ZakRowton__OpenJarvisDashboard",
-      "composite": 54,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 2,
-      "language": "PHP",
-      "hard_flags": []
-    },
-    {
-      "repo": "estebamod/osmmcp",
-      "slug": "estebamod__osmmcp",
-      "composite": 54,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 2,
-      "language": "Go",
-      "hard_flags": []
-    },
-    {
       "repo": "gx-55/multi-gmail-mcp",
       "slug": "gx-55__multi-gmail-mcp",
       "composite": 54,
@@ -2199,67 +1401,11 @@
         "trust": 67,
         "community": 40
       },
-      "stars": 1,
+      "stars": 2,
       "language": "JavaScript",
       "hard_flags": [
         "empty_description"
       ]
-    },
-    {
-      "repo": "last-26/SMTbot",
-      "slug": "last-26__SMTbot",
-      "composite": 54,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "pipulate/pipulate",
-      "slug": "pipulate__pipulate",
-      "composite": 54,
-      "axes": {
-        "reliability": 43,
-        "documentation": 100,
-        "trust": 33,
-        "community": 40
-      },
-      "stars": 10,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "Valennmg/solscan-mcp",
-      "slug": "Valennmg__solscan-mcp",
-      "composite": 52,
-      "axes": {
-        "reliability": 57,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
-      "stars": 2,
-      "language": "Rust",
-      "hard_flags": []
-    },
-    {
-      "repo": "MabelHsu/sponsorship-bridge-public",
-      "slug": "MabelHsu__sponsorship-bridge-public",
-      "composite": 50,
-      "axes": {
-        "reliability": 29,
-        "documentation": 100,
-        "trust": 33,
-        "community": 40
-      },
-      "stars": 3,
-      "language": "Python",
-      "hard_flags": []
     },
     {
       "repo": "dandeliongold/mcp-time",
@@ -2306,34 +1452,6 @@
       "hard_flags": []
     },
     {
-      "repo": "clacasse/k8s-cluster-bootstrap",
-      "slug": "clacasse__k8s-cluster-bootstrap",
-      "composite": 49,
-      "axes": {
-        "reliability": 43,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "dppalukuri/BlackHole",
-      "slug": "dppalukuri__BlackHole",
-      "composite": 49,
-      "axes": {
-        "reliability": 29,
-        "documentation": 40,
-        "trust": 67,
-        "community": 60
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
       "composite": 49,
@@ -2348,22 +1466,8 @@
       "hard_flags": []
     },
     {
-      "repo": "metorial/metorial-platform",
-      "slug": "metorial__metorial-platform",
-      "composite": 49,
-      "axes": {
-        "reliability": 43,
-        "documentation": 60,
-        "trust": 33,
-        "community": 60
-      },
-      "stars": 206,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "shieldspprt/solhunt-recovery",
-      "slug": "shieldspprt__solhunt-recovery",
+      "repo": "sohail123op/markitdown-mcp",
+      "slug": "sohail123op__markitdown-mcp",
       "composite": 49,
       "axes": {
         "reliability": 29,
@@ -2371,8 +1475,36 @@
         "trust": 67,
         "community": 60
       },
+      "stars": 2,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "ermermermermidk/mcp-ai-memory",
+      "slug": "ermermermermidk__mcp-ai-memory",
+      "composite": 48,
+      "axes": {
+        "reliability": 14,
+        "documentation": 20,
+        "trust": 100,
+        "community": 60
+      },
       "stars": 0,
       "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "Qizhan7/wda-mcp",
+      "slug": "Qizhan7__wda-mcp",
+      "composite": 46,
+      "axes": {
+        "reliability": 29,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 2,
+      "language": "Python",
       "hard_flags": []
     },
     {
@@ -2390,48 +1522,6 @@
       "hard_flags": [
         "empty_description"
       ]
-    },
-    {
-      "repo": "comparedge/mcp-server-comparedge",
-      "slug": "comparedge__mcp-server-comparedge",
-      "composite": 46,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "JavaScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "1Dark134/arxiv-mcp-server",
-      "slug": "1Dark134__arxiv-mcp-server",
-      "composite": 44,
-      "axes": {
-        "reliability": 29,
-        "documentation": 40,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 14,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "JeroenPieksma/claude-computer",
-      "slug": "JeroenPieksma__claude-computer",
-      "composite": 44,
-      "axes": {
-        "reliability": 29,
-        "documentation": 20,
-        "trust": 67,
-        "community": 60
-      },
-      "stars": 2,
-      "language": "Python",
-      "hard_flags": []
     },
     {
       "repo": "zcebupelka/graphql-mcp-bridge",
@@ -2476,22 +1566,8 @@
       "hard_flags": []
     },
     {
-      "repo": "COBACOBAINI/vibe",
-      "slug": "COBACOBAINI__vibe",
-      "composite": 39,
-      "axes": {
-        "reliability": 29,
-        "documentation": 20,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 6,
-      "language": "TypeScript",
-      "hard_flags": []
-    },
-    {
-      "repo": "Johnza06/advance-fraud-analyst",
-      "slug": "Johnza06__advance-fraud-analyst",
+      "repo": "Muhaastok/DBJavaGenix",
+      "slug": "Muhaastok__DBJavaGenix",
       "composite": 39,
       "axes": {
         "reliability": 29,
@@ -2532,17 +1608,17 @@
       "hard_flags": []
     },
     {
-      "repo": "SCEAU-Corp-Ltd/Agent-Illustrtator-Tools",
-      "slug": "SCEAU-Corp-Ltd__Agent-Illustrtator-Tools",
-      "composite": 36,
+      "repo": "sadkid12345/mcp-vscode-dev-days-2025-09-spcapital",
+      "slug": "sadkid12345__mcp-vscode-dev-days-2025-09-spcapital",
+      "composite": 39,
       "axes": {
         "reliability": 29,
-        "documentation": 40,
-        "trust": 33,
+        "documentation": 20,
+        "trust": 67,
         "community": 40
       },
       "stars": 0,
-      "language": "Python",
+      "language": null,
       "hard_flags": []
     },
     {
@@ -2574,8 +1650,8 @@
       "hard_flags": []
     },
     {
-      "repo": "Dragon0003/awesome-x402",
-      "slug": "Dragon0003__awesome-x402",
+      "repo": "Dannycalvin/exchange-rate-mcp",
+      "slug": "Dannycalvin__exchange-rate-mcp",
       "composite": 30,
       "axes": {
         "reliability": 29,
@@ -2584,10 +1660,36 @@
         "community": 40
       },
       "stars": 0,
-      "language": null,
-      "hard_flags": [
-        "empty_description"
-      ]
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "Luis13-source/jira-simple-mcp",
+      "slug": "Luis13-source__jira-simple-mcp",
+      "composite": 30,
+      "axes": {
+        "reliability": 29,
+        "documentation": 20,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 0,
+      "language": "JavaScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "fub05/MCP---Agent-Starter-Kit",
+      "slug": "fub05__MCP---Agent-Starter-Kit",
+      "composite": 30,
+      "axes": {
+        "reliability": 29,
+        "documentation": 20,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 4,
+      "language": "Python",
+      "hard_flags": []
     },
     {
       "repo": "godwinraj-ai/FastApply-MCP",
@@ -2601,6 +1703,34 @@
       },
       "stars": 1,
       "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "FezAreCool/mcp-claude-hackernews",
+      "slug": "FezAreCool__mcp-claude-hackernews",
+      "composite": 26,
+      "axes": {
+        "reliability": 29,
+        "documentation": 0,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 0,
+      "language": null,
+      "hard_flags": []
+    },
+    {
+      "repo": "Nikil11/stacks-clarity-mcp",
+      "slug": "Nikil11__stacks-clarity-mcp",
+      "composite": 26,
+      "axes": {
+        "reliability": 29,
+        "documentation": 0,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 0,
+      "language": null,
       "hard_flags": []
     },
     {
@@ -2620,20 +1750,6 @@
     {
       "repo": "jithinolickal/mcp-client-server",
       "slug": "jithinolickal__mcp-client-server",
-      "composite": 17,
-      "axes": {
-        "reliability": 14,
-        "documentation": 0,
-        "trust": 33,
-        "community": 20
-      },
-      "stars": 0,
-      "language": "Python",
-      "hard_flags": []
-    },
-    {
-      "repo": "mddaniya1/weather",
-      "slug": "mddaniya1__weather",
       "composite": 17,
       "axes": {
         "reliability": 14,

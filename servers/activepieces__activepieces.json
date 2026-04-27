@@ -4,7 +4,7 @@
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-  "pushed_at": "2026-04-27T19:57:39Z",
+  "pushed_at": "2026-04-27T20:44:47Z",
   "composite": 77,
   "composite_raw": 77,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

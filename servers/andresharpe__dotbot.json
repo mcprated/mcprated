@@ -5,12 +5,12 @@
   "license": "MIT",
   "description": "Structured, auditable AI-assisted development for teams. Zero-dependency MCP server, web dashboard, and multi-provider AI CLI support.",
   "pushed_at": "2026-04-27T20:27:33Z",
-  "composite": 80,
-  "composite_raw": 80,
+  "composite": 87,
+  "composite_raw": 87,
   "axes": {
     "reliability": {
-      "score": 71,
-      "passing": 5,
+      "score": 100,
+      "passing": 7,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,15 +27,15 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "2 tag(s) (no GH releases)"
+          "note": "1 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 10d ago"
         },
         "version_follows_semver": {
-          "pass": false,
-          "note": "no releases"
+          "pass": true,
+          "note": "latest tag: v3.5.0"
         },
         "release_communication": {
           "pass": true,
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

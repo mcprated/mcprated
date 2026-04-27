@@ -4,7 +4,7 @@
   "language": "Python",
   "license": "MIT",
   "description": "Auditable memory for agent teams. Self-hosted, deterministic retrieval, no LLM in the critical path. Python + MCP + Docker.",
-  "pushed_at": "2026-04-27T19:59:12Z",
+  "pushed_at": "2026-04-27T20:31:54Z",
   "composite": 90,
   "composite_raw": 90,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

@@ -4,7 +4,7 @@
   "language": "Rust",
   "license": "AGPL-3.0",
   "description": "Embedded temporal property graph database — bi-temporal facts as a first-class engine primitive. Rust-native, iOS/Android/WASM.",
-  "pushed_at": "2026-04-27T20:05:32Z",
+  "pushed_at": "2026-04-27T20:47:01Z",
   "composite": 83,
   "composite_raw": 83,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

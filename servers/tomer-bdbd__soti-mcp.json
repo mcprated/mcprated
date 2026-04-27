@@ -1,0 +1,123 @@
+{
+  "repo": "tomer-bdbd/soti-mcp",
+  "stars": 0,
+  "language": "TypeScript",
+  "license": "MIT",
+  "description": "Model Context Protocol server for SOTI MobiControl — operate Android/iOS/Windows/rugged MDM fleets with AI agents (Claude Code, Cursor, Cline, Continue).",
+  "pushed_at": "2026-04-27T20:31:16Z",
+  "composite": 71,
+  "composite_raw": 71,
+  "axes": {
+    "reliability": {
+      "score": 43,
+      "passing": 3,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 10257 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Tool reference', '### Tool result envelope']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "11 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://github.com/tomer-bdbd/soti-mcp"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "security section in README"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "10 topics: ['anthropic', 'claude-code', 'cursor', 'devops', 'mcp']"
+        }
+      }
+    },
+    "community": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "0 open / 2 commits (ratio 0.00)"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "no closed PRs"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:55:42+00:00"
+}

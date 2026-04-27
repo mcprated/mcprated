@@ -4,13 +4,13 @@
   "language": "C++",
   "license": "GPL-3.0",
   "description": "PC Engine / TurboGrafx-16 / SuperGrafx / PCE CD-ROM² emulator, debugger, and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
-  "pushed_at": "2026-04-27T20:23:09Z",
-  "composite": 62,
-  "composite_raw": 62,
+  "pushed_at": "2026-04-27T20:35:25Z",
+  "composite": 73,
+  "composite_raw": 73,
   "axes": {
     "reliability": {
-      "score": 57,
-      "passing": 4,
+      "score": 100,
+      "passing": 7,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,19 +27,19 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 tag(s) (no GH releases)"
+          "note": "5 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 28d ago"
         },
         "version_follows_semver": {
-          "pass": false,
-          "note": "no releases"
+          "pass": true,
+          "note": "latest tag: 1.7.4"
         },
         "release_communication": {
-          "pass": false,
-          "note": "no CHANGELOG, no release-notes substitute"
+          "pass": true,
+          "note": "5 releases with notes"
         }
       }
     },
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

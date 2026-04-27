@@ -1,0 +1,123 @@
+{
+  "repo": "Nikil11/stacks-clarity-mcp",
+  "stars": 0,
+  "language": null,
+  "license": null,
+  "description": "🚀 Build robust Clarity smart contracts with the Stacks Clarity MCP server, offering 30+ tools for security, compliance, and performance optimization.",
+  "pushed_at": "2026-04-27T20:48:12Z",
+  "composite": 26,
+  "composite_raw": 26,
+  "axes": {
+    "reliability": {
+      "score": 29,
+      "passing": 2,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": false,
+          "note": "no .github/workflows/"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no package metadata (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 0,
+      "passing": 0,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": false,
+          "note": "README 0 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": false,
+          "note": "no install hints, no install section"
+        },
+        "tools_documented": {
+          "pass": false,
+          "note": "no Tools/API section, no tool-like patterns"
+        },
+        "examples": {
+          "pass": false,
+          "note": "0 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 33,
+      "passing": 1,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": false,
+          "note": "no commercial-friendly license"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "10 topics: ['blockchain', 'clarity', 'mcp', 'mcp-server', 'nft']"
+        }
+      }
+    },
+    "community": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "0 open / 1 commits (ratio 0.00)"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "no closed PRs"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:55:41+00:00"
+}

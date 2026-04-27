@@ -1,0 +1,123 @@
+{
+  "repo": "strale-io/strale",
+  "stars": 2,
+  "language": "TypeScript",
+  "license": "MIT",
+  "description": "Trust and quality infrastructure for AI agents. 225+ quality-scored capabilities, SQS scoring, EU AI Act support.",
+  "pushed_at": "2026-04-27T20:33:25Z",
+  "composite": 71,
+  "composite_raw": 71,
+  "axes": {
+    "reliability": {
+      "score": 57,
+      "passing": 4,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "3 tag(s) (no GH releases)"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 7489 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"', 'pip install']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "13 sub-sections (overview README)"
+        },
+        "examples": {
+          "pass": true,
+          "note": "8 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://strale.dev"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "18 topics: ['agentic-payments', 'ai-agents', 'api', 'compliance', 'crewai']"
+        }
+      }
+    },
+    "community": {
+      "score": 60,
+      "passing": 3,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 15 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "15 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:55:42+00:00"
+}

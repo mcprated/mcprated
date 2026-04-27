@@ -1,6 +1,6 @@
 {
   "repo": "github/github-mcp-server",
-  "stars": 29299,
+  "stars": 29300,
   "language": "Go",
   "license": "MIT",
   "description": "GitHub's official MCP Server",
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }

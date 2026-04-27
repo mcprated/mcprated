@@ -4,7 +4,7 @@
   "language": "Go",
   "license": "MIT",
   "description": "Multi-LLM agent orchestration TUI — parallel Claude/Gemini/Codex sessions, 222 MCP tools",
-  "pushed_at": "2026-04-27T20:26:15Z",
+  "pushed_at": "2026-04-27T20:51:08Z",
   "composite": 100,
   "composite_raw": 100,
   "axes": {
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:37:04+00:00"
+  "scored_at": "2026-04-27T20:55:42+00:00"
 }
