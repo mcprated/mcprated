@@ -1,0 +1,123 @@
+{
+  "repo": "executeautomation/mcp-playwright",
+  "stars": 5470,
+  "language": "TypeScript",
+  "license": "MIT",
+  "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
+  "pushed_at": "2025-12-13T04:28:38Z",
+  "composite": 49,
+  "composite_raw": 49,
+  "axes": {
+    "reliability": {
+      "score": 43,
+      "passing": 3,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": false,
+          "note": "pushed 135d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "CHANGELOG file present"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 11214 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['claude_desktop_config', 'mcpservers', '\"mcpservers\"', 'npx ']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "20 sub-sections (overview README)"
+        },
+        "examples": {
+          "pass": true,
+          "note": "18 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://executeautomation.github.io/mcp-playwright"
+        }
+      }
+    },
+    "trust": {
+      "score": 33,
+      "passing": 1,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": false,
+          "note": "0 topics: []"
+        }
+      }
+    },
+    "community": {
+      "score": 20,
+      "passing": 1,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "0 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": false,
+          "note": "no recent commits, 29 open issues"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T19:53:48+00:00"
+}

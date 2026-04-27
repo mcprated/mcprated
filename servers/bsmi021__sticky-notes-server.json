@@ -1,0 +1,128 @@
+{
+  "repo": "bsmi021/sticky-notes-server",
+  "stars": 1,
+  "language": "JavaScript",
+  "license": null,
+  "description": null,
+  "pushed_at": "2025-02-18T19:01:50Z",
+  "composite": 46,
+  "composite_raw": 46,
+  "axes": {
+    "reliability": {
+      "score": 29,
+      "passing": 2,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": false,
+          "note": "no .github/workflows/"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": false,
+          "note": "pushed 433d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "CHANGELOG file present"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 14257 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['claude_desktop_config', 'mcpservers', '\"mcpservers\"', 'npx ']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Features', '### Method 1: Direct Integration', '### Method 2: NPX Integration']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "24 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 33,
+      "passing": 1,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": false,
+          "note": "no commercial-friendly license"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "6 topics: ['cool-stuff', 'mcp', 'mcp-server', 'mcp-servers', 'modelcontextprotocol']"
+        }
+      }
+    },
+    "community": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "0 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "no recent commits, 0 open issues"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [
+    {
+      "key": "empty_description",
+      "msg": "Repo has no description"
+    }
+  ],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T19:53:48+00:00"
+}

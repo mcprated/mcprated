@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-04-27T19:53:48+00:00",
+  "rule_set_version": "1.0.0",
+  "count": 18,
+  "servers": [
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "stars": 29299,
+      "language": "Go",
+      "hard_flags": []
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "stars": 31509,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 95,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 100,
+        "community": 100
+      },
+      "stars": 5045,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "stars": 2646,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 80
+      },
+      "stars": 84636,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 60
+      },
+      "stars": 1371,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "cloudflare/mcp-server-cloudflare",
+      "slug": "cloudflare__mcp-server-cloudflare",
+      "composite": 70,
+      "axes": {
+        "reliability": 86,
+        "documentation": 60,
+        "trust": 33,
+        "community": 100
+      },
+      "stars": 3663,
+      "language": "TypeScript",
+      "hard_flags": [
+        "empty_description"
+      ]
+    },
+    {
+      "repo": "dandeliongold/mcp-time",
+      "slug": "dandeliongold__mcp-time",
+      "composite": 50,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 67,
+        "community": 40
+      },
+      "stars": 2,
+      "language": "TypeScript",
+      "hard_flags": [
+        "empty_description"
+      ]
+    },
+    {
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 50,
+      "axes": {
+        "reliability": 29,
+        "documentation": 80,
+        "trust": 33,
+        "community": 60
+      },
+      "stars": 743,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 49,
+      "axes": {
+        "reliability": 43,
+        "documentation": 100,
+        "trust": 33,
+        "community": 20
+      },
+      "stars": 5470,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 46,
+      "axes": {
+        "reliability": 29,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 1,
+      "language": "JavaScript",
+      "hard_flags": [
+        "empty_description"
+      ]
+    },
+    {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 1,
+      "language": "JavaScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 401,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "boysoai/Claude-Code-MCP",
+      "slug": "boysoai__Claude-Code-MCP",
+      "composite": 32,
+      "axes": {
+        "reliability": 14,
+        "documentation": 40,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 0,
+      "language": null,
+      "hard_flags": []
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "axes": {
+        "reliability": 14,
+        "documentation": 40,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 0,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "ogulcanarbc/mock-assistant-mcp-server",
+      "slug": "ogulcanarbc__mock-assistant-mcp-server",
+      "composite": 22,
+      "axes": {
+        "reliability": 14,
+        "documentation": 0,
+        "trust": 33,
+        "community": 40
+      },
+      "stars": 0,
+      "language": "TypeScript",
+      "hard_flags": []
+    },
+    {
+      "repo": "jithinolickal/mcp-client-server",
+      "slug": "jithinolickal__mcp-client-server",
+      "composite": 17,
+      "axes": {
+        "reliability": 14,
+        "documentation": 0,
+        "trust": 33,
+        "community": 20
+      },
+      "stars": 0,
+      "language": "Python",
+      "hard_flags": []
+    },
+    {
+      "repo": "mddaniya1/weather",
+      "slug": "mddaniya1__weather",
+      "composite": 17,
+      "axes": {
+        "reliability": 14,
+        "documentation": 0,
+        "trust": 33,
+        "community": 20
+      },
+      "stars": 0,
+      "language": "Python",
+      "hard_flags": []
+    }
+  ]
+}
