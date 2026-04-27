@@ -1,0 +1,123 @@
+{
+  "repo": "dppalukuri/BlackHole",
+  "stars": 0,
+  "language": "Python",
+  "license": "MIT",
+  "description": "MCP servers for AI agents — Google Maps lead gen, SERP scraper, LinkedIn scraper, CAPTCHA solver, UAE real estate. Free, open-source, no API keys needed.",
+  "pushed_at": "2026-04-27T20:19:43Z",
+  "composite": 49,
+  "composite_raw": 49,
+  "axes": {
+    "reliability": {
+      "score": 29,
+      "passing": 2,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": false,
+          "note": "no .github/workflows/"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no package metadata (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 3344 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": false,
+          "note": "no install hints, no install section"
+        },
+        "tools_documented": {
+          "pass": false,
+          "note": "no Tools/API section, no tool-like patterns"
+        },
+        "examples": {
+          "pass": false,
+          "note": "0 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://github.com/dppalukuri/BlackHole#readme"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "12 topics: ['ai-agents', 'captcha-solver', 'claude-desktop', 'email-finder', 'google-maps']"
+        }
+      }
+    },
+    "community": {
+      "score": 60,
+      "passing": 3,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 1 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "1 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

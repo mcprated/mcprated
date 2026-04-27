@@ -1,0 +1,123 @@
+{
+  "repo": "timescale/pg-aiguide",
+  "stars": 1703,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "description": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
+  "pushed_at": "2026-04-27T19:56:48Z",
+  "composite": 71,
+  "composite_raw": 71,
+  "axes": {
+    "reliability": {
+      "score": 57,
+      "passing": 4,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 tag(s) (no GH releases)"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 9982 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"', 'npx ']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Features']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "11 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=Apache-2.0"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "16 topics: ['ai', 'ai-agents', 'ai-coding', 'claude-code-plugin', 'claude-code-plugins']"
+        }
+      }
+    },
+    "community": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "7 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 22 commits, 10 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "10 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

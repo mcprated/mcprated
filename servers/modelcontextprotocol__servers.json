@@ -1,16 +1,16 @@
 {
   "repo": "modelcontextprotocol/servers",
-  "stars": 84636,
+  "stars": 84637,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers",
   "pushed_at": "2026-04-17T22:59:54Z",
-  "composite": 87,
-  "composite_raw": 87,
+  "composite": 76,
+  "composite_raw": 76,
   "axes": {
     "reliability": {
-      "score": 100,
-      "passing": 7,
+      "score": 57,
+      "passing": 4,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,19 +27,19 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 GH release(s)"
+          "note": "5 tag(s) (no GH releases)"
         },
         "tagged_release_recent": {
-          "pass": true,
-          "note": "latest release 90d ago"
+          "pass": false,
+          "note": "no GH release"
         },
         "version_follows_semver": {
-          "pass": true,
-          "note": "latest tag: 2026.1.26"
+          "pass": false,
+          "note": "no releases"
         },
         "release_communication": {
-          "pass": true,
-          "note": "5 releases with notes"
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
         }
       }
     },
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T19:53:48+00:00"
+  "scored_at": "2026-04-27T20:37:04+00:00"
 }

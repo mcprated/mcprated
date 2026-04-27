@@ -1,0 +1,123 @@
+{
+  "repo": "systempromptio/systemprompt-core",
+  "stars": 1,
+  "language": "Rust",
+  "license": "NOASSERTION",
+  "description": "AI governance infrastructure for agentic systems. Rust library behind systemprompt.io — MCP, A2A, OAuth2, audit trails, compile-time extensions. Evaluate with systemprompt-template.",
+  "pushed_at": "2026-04-27T20:23:39Z",
+  "composite": 82,
+  "composite_raw": 82,
+  "axes": {
+    "reliability": {
+      "score": 100,
+      "passing": 7,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 3d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: v0.4.0"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "CHANGELOG file present"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 36259 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"', 'curl -']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Capabilities']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "17 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://systemprompt.io"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": false,
+          "note": "no commercial-friendly license"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "20 topics: ['a2a', 'agent-orchestration', 'agentic-ai', 'ai-agents', 'ai-governance']"
+        }
+      }
+    },
+    "community": {
+      "score": 60,
+      "passing": 3,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 11 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "11 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

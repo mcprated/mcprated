@@ -1,0 +1,123 @@
+{
+  "repo": "ascending-llc/jarvis-registry",
+  "stars": 398,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "description": "Connect any AI copilot or autonomous agent to your enterprise tools — through a single, secure MCP/Agent gateway with built-in identity, access control, and full observability.",
+  "pushed_at": "2026-04-27T20:22:28Z",
+  "composite": 84,
+  "composite_raw": 84,
+  "axes": {
+    "reliability": {
+      "score": 57,
+      "passing": 4,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 tag(s) (no GH releases)"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 5035 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "install section detected"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "7 sub-sections (overview README)"
+        },
+        "examples": {
+          "pass": false,
+          "note": "1 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://ascending-llc.github.io/jarvis-registry/"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=Apache-2.0"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "6 topics: ['agent', 'agent-gateway', 'agent-orchestration', 'mcp', 'mcp-gateway']"
+        }
+      }
+    },
+    "community": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "7 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 13 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "13 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

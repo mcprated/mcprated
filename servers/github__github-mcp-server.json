@@ -4,7 +4,7 @@
   "language": "Go",
   "license": "MIT",
   "description": "GitHub's official MCP Server",
-  "pushed_at": "2026-04-24T18:08:26Z",
+  "pushed_at": "2026-04-27T20:26:03Z",
   "composite": 100,
   "composite_raw": 100,
   "axes": {
@@ -23,7 +23,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 3d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -104,11 +104,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 8 merged PRs in 90d"
+          "note": "active: 30 commits, 7 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "8 merged PR(s) in 90d"
+          "note": "7 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T19:53:48+00:00"
+  "scored_at": "2026-04-27T20:37:04+00:00"
 }

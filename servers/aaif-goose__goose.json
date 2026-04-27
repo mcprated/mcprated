@@ -1,0 +1,123 @@
+{
+  "repo": "aaif-goose/goose",
+  "stars": 43395,
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+  "pushed_at": "2026-04-27T20:11:56Z",
+  "composite": 86,
+  "composite_raw": 86,
+  "axes": {
+    "reliability": {
+      "score": 86,
+      "passing": 6,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 0d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: v2.0.0-rc-04-27-0"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 60,
+      "passing": 3,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 3209 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['curl -']"
+        },
+        "tools_documented": {
+          "pass": false,
+          "note": "no Tools/API section, no tool-like patterns"
+        },
+        "examples": {
+          "pass": false,
+          "note": "1 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://goose-docs.ai/"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=Apache-2.0"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "4 topics: ['acp', 'ai', 'ai-agents', 'mcp']"
+        }
+      }
+    },
+    "community": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "11 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 13 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "13 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

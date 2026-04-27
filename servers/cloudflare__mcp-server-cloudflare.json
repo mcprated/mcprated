@@ -1,6 +1,6 @@
 {
   "repo": "cloudflare/mcp-server-cloudflare",
-  "stars": 3663,
+  "stars": 3664,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": null,
@@ -124,5 +124,5 @@
     }
   ],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T19:53:48+00:00"
+  "scored_at": "2026-04-27T20:37:04+00:00"
 }

@@ -1,0 +1,123 @@
+{
+  "repo": "Valennmg/solscan-mcp",
+  "stars": 2,
+  "language": "Rust",
+  "license": null,
+  "description": "An MCP server for querying Solana transactions using natural language with Solscan API",
+  "pushed_at": "2026-04-27T18:34:32Z",
+  "composite": 52,
+  "composite_raw": 52,
+  "axes": {
+    "reliability": {
+      "score": 57,
+      "passing": 4,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": false,
+          "note": "no .github/workflows/"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "1 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "latest release 373d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: 1.3.2-alpha.3"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 4657 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "install section detected"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Features 🌟', '### API Endpoints', '## API Reference 📖']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "8 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 33,
+      "passing": 1,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": false,
+          "note": "no commercial-friendly license"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "10 topics: ['crate', 'crates', 'mcp', 'mcp-client', 'mcp-server']"
+        }
+      }
+    },
+    "community": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "0 open / 3 commits (ratio 0.00)"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "no closed PRs"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

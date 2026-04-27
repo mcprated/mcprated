@@ -1,0 +1,123 @@
+{
+  "repo": "Celestialchris/SoulPrint-Canonical",
+  "stars": 0,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "description": "Local-first AI conversation archive. Import from ChatGPT, Claude, and Gemini. Browse, search, ask, distill, export.",
+  "pushed_at": "2026-04-27T20:27:18Z",
+  "composite": 88,
+  "composite_raw": 88,
+  "axes": {
+    "reliability": {
+      "score": 71,
+      "passing": 5,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 tag(s) (no GH releases)"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "CHANGELOG file present"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 10200 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"', 'pip install']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "12 sub-sections (overview README)"
+        },
+        "examples": {
+          "pass": true,
+          "note": "6 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://soulprint.dev"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=Apache-2.0"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "19 topics: ['ai', 'chatgpt', 'claude', 'conversation-import', 'distill']"
+        }
+      }
+    },
+    "community": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 15 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "15 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

@@ -1,0 +1,123 @@
+{
+  "repo": "gizmax/memee",
+  "stars": 5,
+  "language": "Python",
+  "license": "MIT",
+  "description": "Cross-model shared memory for AI agents. One canon every model reads. Free OSS via pipx install memee. memee.eu hosts the Team edition with shared scope, SSO, audit log.",
+  "pushed_at": "2026-04-27T20:19:18Z",
+  "composite": 83,
+  "composite_raw": 83,
+  "axes": {
+    "reliability": {
+      "score": 71,
+      "passing": 5,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 tag(s) (no GH releases)"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "CHANGELOG file present"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 12414 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"', 'pip install']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "17 sub-sections (overview README)"
+        },
+        "examples": {
+          "pass": true,
+          "note": "6 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://memee.eu"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "10 topics: ['agent-infrastructure', 'ai-agents', 'claude-code', 'cross-model', 'cursor']"
+        }
+      }
+    },
+    "community": {
+      "score": 60,
+      "passing": 3,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "0 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 0 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "no closed PRs"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

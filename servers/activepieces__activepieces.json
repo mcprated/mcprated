@@ -1,0 +1,123 @@
+{
+  "repo": "activepieces/activepieces",
+  "stars": 21939,
+  "language": "TypeScript",
+  "license": "NOASSERTION",
+  "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+  "pushed_at": "2026-04-27T19:57:39Z",
+  "composite": 77,
+  "composite_raw": 77,
+  "axes": {
+    "reliability": {
+      "score": 100,
+      "passing": 7,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 2d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: 0.82.1"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "5 releases with notes"
+        }
+      }
+    },
+    "documentation": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 86810 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": false,
+          "note": "no install hints, no install section"
+        },
+        "tools_documented": {
+          "pass": false,
+          "note": "no Tools/API section, no tool-like patterns"
+        },
+        "examples": {
+          "pass": false,
+          "note": "0 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://www.activepieces.com"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": false,
+          "note": "no commercial-friendly license"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "13 topics: ['ai-agent', 'ai-agent-tools', 'ai-agents', 'ai-agents-framework', 'mcp']"
+        }
+      }
+    },
+    "community": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "10 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 13 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "13 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

@@ -1,0 +1,123 @@
+{
+  "repo": "Bryanh9111/Compost",
+  "stars": 1,
+  "language": "TypeScript",
+  "license": "MIT",
+  "description": "Local-first personal knowledge base with decay-based recall. Ingests markdown, code context, and AI tool events into structured memory with time-aware ranking.",
+  "pushed_at": "2026-04-27T18:35:32Z",
+  "composite": 76,
+  "composite_raw": 76,
+  "axes": {
+    "reliability": {
+      "score": 43,
+      "passing": 3,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 10305 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "install section detected"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## What it does']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "4 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "10 topics: ['bun', 'claude-code', 'cognitive-architecture', 'knowledge-base', 'local-first']"
+        }
+      }
+    },
+    "community": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 3 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "3 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}

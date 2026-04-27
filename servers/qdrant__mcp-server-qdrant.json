@@ -5,12 +5,12 @@
   "license": "Apache-2.0",
   "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
   "pushed_at": "2026-04-27T12:25:02Z",
-  "composite": 82,
-  "composite_raw": 82,
+  "composite": 71,
+  "composite_raw": 71,
   "axes": {
     "reliability": {
-      "score": 100,
-      "passing": 7,
+      "score": 57,
+      "passing": 4,
       "total": 7,
       "signals": {
         "has_ci": {
@@ -27,19 +27,19 @@
         },
         "has_releases": {
           "pass": true,
-          "note": "5 GH release(s)"
+          "note": "5 tag(s) (no GH releases)"
         },
         "tagged_release_recent": {
-          "pass": true,
-          "note": "latest release 138d ago"
+          "pass": false,
+          "note": "no GH release"
         },
         "version_follows_semver": {
-          "pass": true,
-          "note": "latest tag: v0.8.1"
+          "pass": false,
+          "note": "no releases"
         },
         "release_communication": {
-          "pass": true,
-          "note": "5 releases with notes"
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
         }
       }
     },
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T19:53:48+00:00"
+  "scored_at": "2026-04-27T20:37:04+00:00"
 }

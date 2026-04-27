@@ -1,0 +1,123 @@
+{
+  "repo": "Kochava/kochava-k4a-mcp-server",
+  "stars": 1,
+  "language": null,
+  "license": null,
+  "description": "Kochava Analytics MCP Server — query mobile attribution data, campaigns, and reports from any MCP-compatible AI tool.",
+  "pushed_at": "2026-04-27T19:07:02Z",
+  "composite": 69,
+  "composite_raw": 69,
+  "axes": {
+    "reliability": {
+      "score": 29,
+      "passing": 2,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": false,
+          "note": "no .github/workflows/"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no package metadata (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 5711 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['claude_desktop_config', 'mcpservers', '\"mcpservers\"']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Tools']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "3 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://analytics.mcp.kochava.com"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": false,
+          "note": "no commercial-friendly license"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "security section in README"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "6 topics: ['attribution', 'kochava', 'mcp', 'mcp-server', 'mobile-analytics']"
+        }
+      }
+    },
+    "community": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "2 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 25 commits, 10 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "10 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T20:37:04+00:00"
+}
