@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 """MCPRated render_badges — generate SVG badges from lint data.
 
-Outputs (to build/site/badges/v1/):
-  <owner>__<repo>.svg              — compact composite (e.g. "MCPRated · 92/100")
-  <owner>__<repo>_reliability.svg  — per-axis
-  <owner>__<repo>_documentation.svg
-  <owner>__<repo>_trust.svg
-  <owner>__<repo>_community.svg
+Outputs (to build/site/badges/):
+  <owner>__<repo>.svg   — compact composite badge (e.g. "MCPRated · 92/100")
 
-Versioned URL path (`/badges/v1/...`) so embedded badges keep style/algorithm
-even when ruleset bumps to v2.
+Always reflects the latest score for the latest rule-set version. Maintainers
+who embed don't have to chase URL changes when ruleset bumps — the badge
+auto-updates as the score evolves with new rules.
 
-Pure stdlib. SVG hand-built (~100 LOC). Shields.io-style metrics: 20px high.
+Pure stdlib. SVG hand-built. Shields.io-style metrics: 20px high.
 """
 from __future__ import annotations
 import argparse, html, json, sys
@@ -95,34 +92,20 @@ def composite_badge(score: int, hard_flags: list) -> str:
     return _badge("MCPRated", f"{score}/100", color_for(score))
 
 
-def axis_badge(axis_name: str, score: int) -> str:
-    label = axis_name.capitalize()
-    return _badge(f"MCPRated {label}", f"{score}/100", color_for(score))
-
-
-def render_for_server(server: dict) -> dict[str, str]:
-    """Return {filename_suffix: svg_text} for one server."""
-    out = {}
+def render_for_server(server: dict) -> str:
+    """Return composite SVG badge for one server."""
     flags = server.get("hard_flags", [])
     if isinstance(flags, list) and flags and isinstance(flags[0], dict):
         flag_keys = [f.get("key") for f in flags]
     else:
         flag_keys = flags or []
-    out[""] = composite_badge(server["composite"], flag_keys)
-    axes = server.get("axes", {})
-    if isinstance(axes, dict):
-        for axis_name in ("reliability", "documentation", "trust", "community"):
-            ax_data = axes.get(axis_name, {})
-            score = ax_data["score"] if isinstance(ax_data, dict) else ax_data
-            if isinstance(score, int):
-                out[f"_{axis_name}"] = axis_badge(axis_name, score)
-    return out
+    return composite_badge(server["composite"], flag_keys)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data", help="dir containing index.json + servers/")
-    ap.add_argument("--out", default="build/site/badges/v1", help="output dir")
+    ap.add_argument("--out", default="build/site/badges", help="output dir")
     args = ap.parse_args()
 
     data_dir = Path(args.data)
@@ -137,32 +120,17 @@ def main():
     idx = json.loads(idx_path.read_text())
     servers = idx.get("servers", [])
 
-    # For composite + axes we need per-server data (full lint detail), not just index summary
-    servers_dir = data_dir / "servers"
     count = 0
     for s in servers:
         slug = s.get("slug") or s["repo"].replace("/", "__")
-        full_path = servers_dir / f"{slug}.json"
-        if full_path.exists():
-            full = json.loads(full_path.read_text())
-            # Ensure composite and axes available — index.json has axes but we want consistent shape
-            full_data = {
-                "composite": full["composite"],
-                "axes": full["axes"],
-                "hard_flags": full.get("hard_flags", []),
-            }
-        else:
-            # Fallback: derive from index entry (axes are flat ints there)
-            full_data = {
-                "composite": s["composite"],
-                "axes": {a: {"score": v} for a, v in s["axes"].items()},
-                "hard_flags": s.get("hard_flags", []),
-            }
-        for suffix, svg in render_for_server(full_data).items():
-            (out_dir / f"{slug}{suffix}.svg").write_text(svg)
-            count += 1
+        svg = render_for_server({
+            "composite": s["composite"],
+            "hard_flags": s.get("hard_flags", []),
+        })
+        (out_dir / f"{slug}.svg").write_text(svg)
+        count += 1
 
-    print(f"Rendered {count} SVG badges to {out_dir}/", file=sys.stderr)
+    print(f"Rendered {count} composite SVG badges to {out_dir}/", file=sys.stderr)
     return 0
 
 

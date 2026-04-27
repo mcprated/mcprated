@@ -383,6 +383,30 @@ GET https://github.com/{repo_url}/releases</pre>
 </section>
 
 <section>
+  <h2>Embed your badge</h2>
+  <p class="lead">If you maintain an MCP server, drop this into your README. Always reflects the latest score.</p>
+
+  <div class="agent-block">
+    <pre><code># Markdown</code>
+[![MCPRated](https://mcprated.github.io/mcprated/badges/&lt;owner&gt;__&lt;repo&gt;.svg)](https://mcprated.github.io/mcprated/)
+
+<code># Example: microsoft/playwright-mcp</code>
+[![MCPRated](https://mcprated.github.io/mcprated/badges/microsoft__playwright-mcp.svg)](https://mcprated.github.io/mcprated/)</pre>
+  </div>
+
+  <p style="margin-top:1.5rem;">
+    Renders as:
+    <a href="https://mcprated.github.io/mcprated/" style="margin-left:0.5rem;vertical-align:middle;">
+      <img src="./badges/microsoft__playwright-mcp.svg" alt="MCPRated badge example" style="vertical-align:middle;">
+    </a>
+  </p>
+
+  <p style="color:var(--fg-mute);margin-top:1rem;font-size:0.95rem;">
+    Replace <code>&lt;owner&gt;__&lt;repo&gt;</code> with your repo path using double underscore as separator (e.g. <code>microsoft__playwright-mcp</code>). The badge auto-updates daily — no URL pinning to maintain.
+  </p>
+</section>
+
+<section>
   <h2>Status</h2>
   <p>v0.1 — pre-launch. Linter works, daily snapshots running, {count} reference servers indexed. Full topic-search crawl, embeddable badges, and search UI shipping in upcoming sessions.</p>
 

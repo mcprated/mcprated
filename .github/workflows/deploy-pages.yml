@@ -48,8 +48,8 @@ jobs:
       - name: Render landing page (HTML + llms.txt)
         run: python linter/render_pages.py --data build --out build/site
 
-      - name: Render SVG badges (versioned /badges/v1/)
-        run: python linter/render_badges.py --data build --out build/site/badges/v1
+      - name: Render SVG badges (composite, latest)
+        run: python linter/render_badges.py --data build --out build/site/badges
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4

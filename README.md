@@ -29,6 +29,22 @@ curl https://mcprated.github.io/mcprated/llms.txt                            # L
 
 Daily snapshots: [Releases](https://github.com/mcprated/mcprated/releases).
 
+## Embed badge in your README
+
+```markdown
+[![MCPRated](https://mcprated.github.io/mcprated/badges/<owner>__<repo>.svg)](https://mcprated.github.io/mcprated/)
+```
+
+Replace `<owner>__<repo>` with double-underscore-encoded path. Example:
+
+```markdown
+[![MCPRated](https://mcprated.github.io/mcprated/badges/microsoft__playwright-mcp.svg)](https://mcprated.github.io/mcprated/)
+```
+
+Renders as: ![MCPRated](https://mcprated.github.io/mcprated/badges/microsoft__playwright-mcp.svg)
+
+Badge always reflects the latest score. No URL pinning, no stale embeds.
+
 ## Run lint locally
 
 ```bash
