@@ -62,5 +62,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/site
           publish_branch: gh-pages
-          force_orphan: ${{ github.event.schedule != '' && fromJSON('[true, false]')[github.run_number % 30] || false }}
+          # Force-orphan monthly to prune gh-pages history; V1 keeps it simple = always false.
+          # Periodic prune can be done via separate workflow when branch grows >200MB.
+          force_orphan: false
           commit_message: "Deploy from ${{ github.sha }}"
