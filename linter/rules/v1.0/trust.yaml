@@ -1,0 +1,34 @@
+axis: trust
+question: Safe to depend on?
+description: |
+  Signals the project is legally usable, security-conscious, and properly
+  positioned within the ecosystem. The "should I take this seriously" axis.
+
+  V1.0 has only 3 signals here — V1.1+ will expand with: signed releases,
+  CODEOWNERS, organization-owned, OpenSSF Scorecard integration.
+weight: 1.0
+since_rule_version: "1.0.0"
+
+signals:
+  - id: license_commercial
+    title: Commercial-friendly license
+    description: |
+      SPDX is one of {MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, MPL-2.0,
+      ISC, Unlicense, CC0-1.0, 0BSD}. Fallback: LICENSE file with recognizable
+      permissive language. GPL/AGPL/proprietary → fail (still usable for
+      hobbyists; this signal flags commercial-deployment friction).
+    fix_link: https://choosealicense.com
+
+  - id: has_security_policy
+    title: Security policy declared
+    description: |
+      SECURITY.md present in root or .github/, OR README has a section titled
+      Security/Permissions/Auth/Trust/Risk.
+    fix_link: https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository
+
+  - id: has_repo_topics
+    title: Repo properly tagged (≥2 topics)
+    description: |
+      `topics` array on the repo contains at least 2 tags. Indicates author
+      cares about discoverability and categorization.
+    fix_link: https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics

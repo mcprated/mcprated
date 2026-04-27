@@ -1,0 +1,66 @@
+name: deploy-pages
+
+# Deploy the built site (data/ + badges/ + rendered HTML) to gh-pages branch.
+# Triggered after lint-daily completes successfully, or manually.
+
+on:
+  workflow_run:
+    workflows: ["lint-daily"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download latest snapshot from Releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p build
+          DATE=$(date -u +%Y-%m-%d)
+          # Try today's snapshot, fall back to most recent
+          gh release download snapshot-${DATE} --pattern '*.tar.gz' --dir . 2>/dev/null \
+            || gh release list --limit 1 --json tagName --jq '.[0].tagName' \
+               | xargs -I {} gh release download {} --pattern '*.tar.gz' --dir .
+          tar -xzf snapshot-*.tar.gz -C build/
+
+      - name: Render site (Jinja2 → HTML)
+        run: |
+          # Stub for V1 — render_pages.py to be added next commit
+          if [ -f linter/render_pages.py ]; then
+            python linter/render_pages.py --data build --templates site/templates --out build/site
+          else
+            echo "render_pages.py not yet implemented — deploying raw JSON only"
+            mkdir -p build/site
+            cp -r build/* build/site/ 2>/dev/null || true
+          fi
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/site
+          publish_branch: gh-pages
+          force_orphan: ${{ github.event.schedule != '' && fromJSON('[true, false]')[github.run_number % 30] || false }}
+          commit_message: "Deploy from ${{ github.sha }}"

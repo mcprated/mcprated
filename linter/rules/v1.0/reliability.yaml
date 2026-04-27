@@ -1,0 +1,46 @@
+axis: reliability
+question: Will it work and keep working?
+description: |
+  Signals that the server actually runs, that breaking changes are managed,
+  and that maintenance hasn't stalled. The first thing a dev cares about
+  before spending an hour wiring it into their agent.
+weight: 1.0
+since_rule_version: "1.0.0"
+
+signals:
+  - id: has_ci
+    title: Has CI workflows
+    description: .github/workflows/ contains at least one workflow file.
+    fix_link: https://docs.github.com/actions/quickstart
+
+  - id: no_floating_sdk
+    title: MCP SDK pinned (not floating)
+    description: |
+      Pass unless we positively detect a TRULY floating MCP SDK dep ('*' or 'latest')
+      in package.json / pyproject.toml / Cargo.toml / go.mod. Workspace internal
+      '*' deps and standard semver ranges (^x.y.z, ~x.y.z) accepted.
+    fix_link: https://semver.org
+
+  - id: recently_maintained
+    title: Recently pushed (≤90 days)
+    description: Most recent push to default branch is within 90 days.
+
+  - id: has_releases
+    title: Has releases or tags
+    description: Repo has ≥1 GitHub release OR ≥1 git tag.
+
+  - id: tagged_release_recent
+    title: Latest release ≤180 days
+    description: Most recent GitHub release published within 180 days.
+
+  - id: version_follows_semver
+    title: Versions follow semver
+    description: Latest release tag matches `vX.Y.Z` or `X.Y.Z` pattern.
+    fix_link: https://semver.org
+
+  - id: release_communication
+    title: Release communication
+    description: |
+      CHANGELOG.md / CHANGES.md / HISTORY.md present, OR ≥3 recent GitHub
+      releases have substantive notes (≥80 chars body).
+    fix_link: https://keepachangelog.com

@@ -1,0 +1,123 @@
+{
+  "repo": "supabase-community/supabase-mcp",
+  "stars": 2645,
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "description": "Connect Supabase to your AI assistants",
+  "pushed_at": "2026-04-21T20:32:30Z",
+  "composite": 92,
+  "composite_raw": 92,
+  "axes": {
+    "reliability": {
+      "score": 100,
+      "passing": 7,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 5d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 55d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: v0.7.0"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "5 releases with notes"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 16220 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['### Feature groups', '## Tools']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "6 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://supabase.com/mcp"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=Apache-2.0"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "security section in README"
+        },
+        "has_repo_topics": {
+          "pass": false,
+          "note": "0 topics: []"
+        }
+      }
+    },
+    "community": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "4 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 23 commits, 11 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "11 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T18:10:31+00:00"
+}

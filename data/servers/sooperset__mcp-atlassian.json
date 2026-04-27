@@ -1,0 +1,123 @@
+{
+  "repo": "sooperset/mcp-atlassian",
+  "stars": 5040,
+  "language": "Python",
+  "license": "MIT",
+  "description": "MCP server for Atlassian tools (Confluence, Jira)",
+  "pushed_at": "2026-04-10T09:37:10Z",
+  "composite": 95,
+  "composite_raw": 95,
+  "axes": {
+    "reliability": {
+      "score": 100,
+      "passing": 7,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 17d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 17d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: v0.21.1"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "5 releases with notes"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 4520 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "10 unique snake_case identifiers"
+        },
+        "examples": {
+          "pass": false,
+          "note": "1 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://mcp-atlassian.soomiles.com"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "4 topics: ['atlassian', 'confluence', 'jira', 'mcp']"
+        }
+      }
+    },
+    "community": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "5 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 2 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "2 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T18:10:31+00:00"
+}

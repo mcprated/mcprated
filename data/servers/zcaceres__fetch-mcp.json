@@ -1,0 +1,123 @@
+{
+  "repo": "zcaceres/fetch-mcp",
+  "stars": 743,
+  "language": "TypeScript",
+  "license": "MIT",
+  "description": "A flexible HTTP fetching Model Context Protocol server.",
+  "pushed_at": "2026-03-12T17:17:24Z",
+  "composite": 50,
+  "composite_raw": 50,
+  "axes": {
+    "reliability": {
+      "score": 29,
+      "passing": 2,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": false,
+          "note": "no .github/workflows/"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 46d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 4561 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"', 'npx ']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Tools', '### Commands', '## Features']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "7 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 33,
+      "passing": 1,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": false,
+          "note": "0 topics: []"
+        }
+      }
+    },
+    "community": {
+      "score": 60,
+      "passing": 3,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "1 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 28 commits, 8 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "8 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T18:10:31+00:00"
+}

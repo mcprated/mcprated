@@ -1,0 +1,32 @@
+axis: community
+question: Are people caring for it?
+description: |
+  Signals that the project has more than one person attached and that
+  maintenance is alive. A solo unmaintained repo can still be Reliable
+  on day 1 but won't be when you need a fix.
+weight: 1.0
+since_rule_version: "1.0.0"
+
+signals:
+  - id: has_contributing
+    title: CONTRIBUTING file
+    description: CONTRIBUTING.md / CONTRIBUTING.rst present in root or .github/.
+
+  - id: multiple_contributors
+    title: ≥2 unique committers in 90 days
+    description: At least 2 distinct GitHub usernames authored commits in the last 90 days.
+
+  - id: responsive_issues
+    title: Active maintenance signal
+    description: |
+      Active project: ≥10 commits OR ≥3 merged PRs in the last 90 days.
+      Otherwise, open_issues_count / commits_recent < 5.0 ratio.
+      Goal: distinguish "alive" from "graveyard".
+
+  - id: merged_prs_recent
+    title: ≥1 merged PR in 90 days
+    description: At least one pull request merged in the last 90 days (proxy for collaboration).
+
+  - id: not_solo_initial
+    title: Beyond initial commit
+    description: Repo has more than 1 commit in history (rules out one-shot dumps).

@@ -1,0 +1,123 @@
+{
+  "repo": "runekaagaard/mcp-alchemy",
+  "stars": 401,
+  "language": "Python",
+  "license": "MPL-2.0",
+  "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+  "pushed_at": "2025-08-15T07:18:27Z",
+  "composite": 42,
+  "composite_raw": 42,
+  "axes": {
+    "reliability": {
+      "score": 14,
+      "passing": 1,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": false,
+          "note": "no .github/workflows/"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "1 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": false,
+          "note": "pushed 255d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 9386 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['claude_desktop_config', 'mcpservers', '\"mcpservers\"', 'pip install']…"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## API', '### Tools']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "15 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 33,
+      "passing": 1,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MPL-2.0"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": false,
+          "note": "0 topics: []"
+        }
+      }
+    },
+    "community": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "0 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "no recent commits, 0 open issues"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.0.0",
+  "scored_at": "2026-04-27T18:10:31+00:00"
+}

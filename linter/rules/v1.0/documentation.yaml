@@ -1,0 +1,37 @@
+axis: documentation
+question: Can a stranger figure this out?
+description: |
+  Signals that someone unfamiliar with the project can install it, understand
+  what it does, and use it without reading the source. Documentation is the
+  difference between a tool that gets adopted and one that gets forked.
+weight: 1.0
+since_rule_version: "1.0.0"
+
+signals:
+  - id: readme_substantive
+    title: README ≥500 characters
+    description: README has at least 500 characters (rules out stubs).
+
+  - id: install_instructions
+    title: Install instructions present
+    description: |
+      README contains an install command (npx, uvx, pip install, cargo install,
+      go install, docker run, brew install, etc.) OR an install-style section
+      (Installation / Setup / Quick Start) with substantive content.
+
+  - id: tools_documented
+    title: Tools/API documented
+    description: |
+      README has a Tools/API/Capabilities/Features/Functions/Reference section,
+      OR ≥3 tool definitions in code blocks, OR ≥5 unique snake_case identifiers
+      in backticks, OR (for mono-repo overview READMEs) ≥5 sub-section headings.
+
+  - id: examples
+    title: Has examples (≥2 code blocks)
+    description: README contains at least 2 fenced code blocks.
+
+  - id: external_docs
+    title: External docs or homepage
+    description: |
+      Repo has a homepage URL set, OR README contains a [docs](...) /
+      [documentation](...) / [website](...) link.

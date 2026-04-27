@@ -1,0 +1,27 @@
+# MCPRated reference seed list — used for regression testing + initial catalog seed.
+#
+# Tier A: known-good, used as gold-standard regression targets.
+# Tier B: low-quality / sample / abandoned, used to verify downside differentiation.
+# Format: owner/repo, one per line. Comments with #.
+
+# Tier A — known-good (regression must not drop these below their baseline grades)
+modelcontextprotocol/servers
+cloudflare/mcp-server-cloudflare
+github/github-mcp-server
+sooperset/mcp-atlassian
+executeautomation/mcp-playwright
+microsoft/playwright-mcp
+supabase-community/supabase-mcp
+qdrant/mcp-server-qdrant
+runekaagaard/mcp-alchemy
+zcaceres/fetch-mcp
+
+# Tier B — low quality / sample / abandoned (must score ≤ Tier A)
+jithinolickal/mcp-client-server
+nikolaypavlov/mcp-myip
+mddaniya1/weather
+boysoai/Claude-Code-MCP
+bsmi021/sticky-notes-server
+gbti-network/mcp-whats-the-passphrase
+dandeliongold/mcp-time
+ogulcanarbc/mock-assistant-mcp-server
