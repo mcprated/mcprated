@@ -495,6 +495,11 @@ def main():
 
     # Copy raw JSON API into output (so /index.json + /servers/* still work alongside HTML)
     (out_dir / "index.json").write_text(idx_path.read_text())
+
+    # Copy excluded.json if exists (transparency)
+    excluded_path = data_dir / "excluded.json"
+    if excluded_path.exists():
+        (out_dir / "excluded.json").write_text(excluded_path.read_text())
     servers_in = data_dir / "servers"
     servers_out = out_dir / "servers"
     servers_out.mkdir(exist_ok=True)

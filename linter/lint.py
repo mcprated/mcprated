@@ -19,6 +19,64 @@ from typing import Any
 
 RULE_SET_VERSION = "1.0.0"
 
+
+# =====================================================================
+# Prefilter — is this actually an MCP server? (added v1.0.1)
+# =====================================================================
+#
+# Topic-search results often contain repos tagged `mcp-server` / `mcp` that
+# are NOT MCP servers (general AI tools, CLIs, libraries). Pass = any of:
+#   A) package metadata declares MCP SDK dependency
+#   B) README contains MCP config block ("mcpServers" or claude_desktop_config)
+#   C) repo description explicitly says "MCP server" or similar
+#
+# Excluded repos are kept in cache but written to data/excluded/ instead of
+# data/servers/, so the index stays clean while the decision is auditable.
+
+_MCP_SDK_HINTS = (
+    '@modelcontextprotocol/',          # npm packages
+    'modelcontextprotocol-sdk',        # PyPI normalized
+    '"mcp"',                           # exact pyproject dep
+    "'mcp'",
+    'mcp-go',                          # go module convention
+    'mark3labs/mcp-go',
+    'rmcp',                            # Rust SDK
+    'mcp-rs',
+    'mcp-sdk',
+)
+
+_MCP_DESC_RX = __import__("re").compile(
+    r"\b(mcp\s+server|model\s+context\s+protocol|@modelcontextprotocol)\b",
+    __import__("re").I,
+)
+
+
+def is_mcp_server(d: dict) -> tuple[bool, str]:
+    """Return (is_mcp, reason). Used to filter topic-search false positives."""
+    # A — MCP SDK in package metadata
+    pkg_blob = "\n".join(d.get("pkg", {}).values()).lower() if d.get("pkg") else ""
+    if pkg_blob:
+        for hint in _MCP_SDK_HINTS:
+            if hint.lower() in pkg_blob:
+                return True, f"sdk_dep: {hint}"
+
+    # B — README config block
+    readme = d.get("readme", "")
+    if '"mcpservers"' in readme.lower() or "claude_desktop_config" in readme.lower():
+        return True, "readme_mentions_mcp_config"
+
+    # C — Description explicitly says MCP server
+    desc = (d["repo"].get("description") or "")
+    if _MCP_DESC_RX.search(desc):
+        return True, f"description: '{desc[:60]}'"
+
+    # Repo name as last resort (very loose, but catches obvious like "*-mcp", "mcp-*")
+    name = (d["repo"].get("name") or "").lower()
+    if name.startswith("mcp-") or name.endswith("-mcp") or "/mcp-" in name or name == "mcp":
+        return True, f"name_pattern: {name}"
+
+    return False, "no MCP SDK dep, no mcpServers in README, no MCP in description/name"
+
 GH = "https://api.github.com"
 HEADERS = {"User-Agent": "mcprated-linter/0.1", "Accept": "application/vnd.github+json"}
 
@@ -442,6 +500,8 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
     servers_dir = out_dir / "servers"
     servers_dir.mkdir(exist_ok=True)
+    excluded_dir = out_dir / "excluded"
+    excluded_dir.mkdir(exist_ok=True)
 
     repos = load_cache_dir(cache_dir)
     if not repos:
@@ -449,10 +509,34 @@ def main():
         return 1
 
     index = []
+    excluded = []
     for r in repos:
-        result = lint(r)
-        full_name = result["repo"]
+        is_mcp, mcp_reason = is_mcp_server(r)
+        repo = r["repo"]
+        full_name = f"{repo.get('owner', {}).get('login', '?')}/{repo.get('name', '?')}"
         slug = full_name.replace("/", "__")
+
+        if not is_mcp:
+            excluded.append({
+                "repo": full_name,
+                "slug": slug,
+                "reason": "not_mcp_server",
+                "detail": mcp_reason,
+                "stars": repo.get("stargazers_count"),
+                "description": (repo.get("description") or "")[:120],
+                "language": repo.get("language"),
+            })
+            (excluded_dir / f"{slug}.json").write_text(json.dumps({
+                "repo": full_name,
+                "excluded": True,
+                "reason": "not_mcp_server",
+                "detail": mcp_reason,
+                "rule_set_version": RULE_SET_VERSION,
+                "scored_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            }, ensure_ascii=False, indent=2))
+            continue
+
+        result = lint(r)
         (servers_dir / f"{slug}.json").write_text(
             json.dumps(result, ensure_ascii=False, indent=2)
         )
@@ -472,9 +556,16 @@ def main():
         "count": len(index),
         "servers": index,
     }, ensure_ascii=False, indent=2))
+    (out_dir / "excluded.json").write_text(json.dumps({
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "rule_set_version": RULE_SET_VERSION,
+        "count": len(excluded),
+        "reason_summary": "Tagged with mcp-server / mcp topic but failed prefilter (no SDK dep, no mcpServers config in README, no MCP in description/name).",
+        "servers": sorted(excluded, key=lambda x: -(x.get("stars") or 0)),
+    }, ensure_ascii=False, indent=2))
 
     # Console summary
-    print(f"\nLinted {len(index)} repos · rule_set v{RULE_SET_VERSION}")
+    print(f"\nLinted {len(index)} repos, excluded {len(excluded)} (not MCP servers) · rule_set v{RULE_SET_VERSION}")
     print(f"{'Repo':50s} {'Stars':>6} {'Comp':>5} {'Rel':>4} {'Doc':>4} {'Trs':>4} {'Com':>4}  Flags")
     print("-" * 105)
     for r in index[:30]:
