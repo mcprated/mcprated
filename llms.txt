@@ -1,0 +1,33 @@
+# MCPRated
+
+> Open, daily-updated quality ratings for Model Context Protocol servers. Every MCP server on GitHub is lint-checked across four axes: Reliability, Documentation, Trust, Community. Composite score 0–100, fully transparent ruleset.
+
+## Stats
+- Servers rated: 18
+- Rule set: v1.0.0
+- Last update: 2026-04-27T19:53:48+00:00
+
+## API (static JSON, public, free, no auth)
+
+- [Catalog index](https://mcprated.github.io/mcprated/index.json): list of all servers with composite + per-axis scores
+- [Per-server detail](https://mcprated.github.io/mcprated/servers/microsoft__playwright-mcp.json): full lint output for one repo (replace path with `<owner>__<repo>.json`)
+- [Daily snapshot archive](https://github.com/mcprated/mcprated/releases): tarballs of historical state, retained forever
+
+## Score model
+
+- 4 axes, each 0–100: Reliability, Documentation, Trust, Community
+- Composite = mean of axes
+- Hard flags cap composite (archived → 30, empty_description → 75, etc.)
+- Color hints: 90+ green, 50–89 yellow, <50 red
+
+## Source
+
+- Repo: https://github.com/mcprated/mcprated
+- Methodology: https://github.com/mcprated/mcprated/blob/main/methodology.md
+- Ruleset (YAML, MIT): https://github.com/mcprated/mcprated/tree/main/linter/rules/v1.0
+- Changelog: https://github.com/mcprated/mcprated/blob/main/CHANGELOG.md
+
+## License
+
+- Code: MIT
+- Data: CC-BY-4.0 (attribution: "Quality data from MCPRated, https://mcprated.github.io/mcprated/")

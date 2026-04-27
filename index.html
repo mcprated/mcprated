@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MCPRated — Quality ratings for Model Context Protocol servers</title>
+  <meta name="description" content="Open, daily-updated quality ratings for every MCP server on GitHub. Four axes: Reliability, Documentation, Trust, Community.">
+  <meta property="og:title" content="MCPRated">
+  <meta property="og:description" content="Quality ratings for Model Context Protocol servers — open, transparent, daily.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mcprated.github.io/mcprated/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://mcprated.github.io/mcprated/">
+  <link rel="alternate" type="application/json" title="Catalog index (JSON)" href="./index.json">
+  <link rel="alternate" type="text/plain" title="LLM-friendly summary" href="./llms.txt">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --bg-soft: #161b22;
+      --bg-row: #1c2128;
+      --fg: #e6edf3;
+      --fg-mute: #8b949e;
+      --fg-faint: #6e7681;
+      --accent: #58a6ff;
+      --good: #3fb950;
+      --ok: #d29922;
+      --weak: #f85149;
+      --border: #30363d;
+      --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 4rem 1.5rem; }
+    header { margin-bottom: 4rem; }
+    .brand {
+      font-family: var(--mono);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--fg);
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      margin: 0 0 1rem 0;
+    }
+    .tagline {
+      font-size: 1.25rem;
+      color: var(--fg-mute);
+      max-width: 60ch;
+      margin: 0 0 2rem 0;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .stat { font-family: var(--mono); }
+    .stat-num { color: var(--fg); font-size: 1.6rem; font-weight: 600; }
+    .stat-label { color: var(--fg-faint); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    section { margin: 5rem 0; }
+    h2 {
+      font-size: 1.6rem;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.5rem 0;
+      font-weight: 600;
+    }
+    .axes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .axis-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+    .axis-card h3 {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin: 0 0 0.5rem 0;
+    }
+    .axis-card p { margin: 0; color: var(--fg-mute); font-size: 0.95rem; }
+    .axis-card .q { color: var(--fg); font-weight: 500; margin-bottom: 0.4rem; }
+    .principle {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .principle:last-child { border-bottom: none; }
+    .principle .p-num {
+      font-family: var(--mono);
+      color: var(--accent);
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+    .principle .p-text { font-size: 1.05rem; margin-top: 0.3rem; }
+    .principle .p-detail { color: var(--fg-mute); font-size: 0.95rem; margin-top: 0.4rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--mono);
+      font-size: 0.9rem;
+    }
+    thead th {
+      text-align: left;
+      padding: 0.6rem 0.5rem;
+      color: var(--fg-faint);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid var(--border);
+      font-weight: 500;
+    }
+    tbody td {
+      padding: 0.6rem 0.5rem;
+      border-bottom: 1px solid var(--bg-row);
+    }
+    tbody tr:hover { background: var(--bg-soft); }
+    td.rank { color: var(--fg-faint); width: 1ch; }
+    td.repo a { color: var(--fg); text-decoration: none; }
+    td.repo a:hover { color: var(--accent); }
+    td.composite { font-weight: 600; text-align: right; padding-right: 1rem; }
+    .axis, .composite { text-align: right; }
+    .composite-good, .axis-good { color: var(--good); }
+    .composite-ok, .axis-ok { color: var(--ok); }
+    .composite-weak, .axis-weak { color: var(--weak); }
+    td.meta { color: var(--fg-faint); font-size: 0.8rem; }
+    .flag { color: var(--ok); margin-left: 0.3rem; cursor: help; }
+    .agent-block {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      overflow-x: auto;
+    }
+    .agent-block pre { margin: 0; color: var(--fg-mute); }
+    .agent-block code { color: var(--accent); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    p { max-width: 70ch; }
+    p.lead { font-size: 1.05rem; color: var(--fg-mute); }
+    footer {
+      margin-top: 6rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--fg-faint);
+      font-size: 0.85rem;
+      font-family: var(--mono);
+    }
+    footer a { color: var(--fg-faint); }
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      font-family: var(--mono);
+      font-size: 0.9rem;
+    }
+    .links a { color: var(--fg-mute); }
+    .links a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main class="wrap">
+
+<header>
+  <span class="brand">mcprated</span>
+  <h1>Quality ratings for<br>Model Context Protocol servers.</h1>
+  <p class="tagline">Open, daily-updated, deterministic. Every MCP server on GitHub, lint-checked across four axes. No magic. Read the rules, fork the linter, run it yourself.</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">18</div>
+      <div class="stat-label">servers rated</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2</div>
+      <div class="stat-label">scoring 100</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">50</div>
+      <div class="stat-label">median composite</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">v1.0.0</div>
+      <div class="stat-label">rule set</div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>What we measure</h2>
+  <p class="lead">Four axes. Twenty signals. One composite score, 0–100. Each axis answers a single question a developer asks before installing an MCP server.</p>
+  <div class="axes">
+    <div class="axis-card">
+      <h3>Reliability</h3>
+      <div class="q">Will it work and keep working?</div>
+      <p>CI present, no floating SDK deps, recently maintained, has releases, semver tags, release notes.</p>
+    </div>
+    <div class="axis-card">
+      <h3>Documentation</h3>
+      <div class="q">Can a stranger figure this out?</div>
+      <p>Substantive README, install instructions, tools documented, code examples, external docs link.</p>
+    </div>
+    <div class="axis-card">
+      <h3>Trust</h3>
+      <div class="q">Safe to depend on?</div>
+      <p>Commercial-friendly license, security policy, properly tagged for discovery.</p>
+    </div>
+    <div class="axis-card">
+      <h3>Community</h3>
+      <div class="q">Are people caring for it?</div>
+      <p>Multiple contributors, responsive issues, recent merged PRs, history beyond initial commit, contributing guide.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Top 10 today</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Repo</th>
+        <th style="text-align:right">Score</th>
+        <th style="text-align:right">Rel</th>
+        <th style="text-align:right">Doc</th>
+        <th style="text-align:right">Trs</th>
+        <th style="text-align:right">Com</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="rank">1</td>
+          <td class="repo">
+            <a href="https://github.com/github/github-mcp-server">github/github-mcp-server</a>
+            
+          </td>
+          <td class="composite composite-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">Go · ★29,299</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="repo">
+            <a href="https://github.com/microsoft/playwright-mcp">microsoft/playwright-mcp</a>
+            
+          </td>
+          <td class="composite composite-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">TypeScript · ★31,509</td>
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="repo">
+            <a href="https://github.com/sooperset/mcp-atlassian">sooperset/mcp-atlassian</a>
+            
+          </td>
+          <td class="composite composite-good">95</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-ok">80</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">Python · ★5,045</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
+          <td class="repo">
+            <a href="https://github.com/supabase-community/supabase-mcp">supabase-community/supabase-mcp</a>
+            
+          </td>
+          <td class="composite composite-good">92</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-ok">67</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">TypeScript · ★2,646</td>
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="repo">
+            <a href="https://github.com/modelcontextprotocol/servers">modelcontextprotocol/servers</a>
+            
+          </td>
+          <td class="composite composite-ok">87</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-ok">67</td>
+          <td class="axis axis-ok">80</td>
+          <td class="meta">TypeScript · ★84,636</td>
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="repo">
+            <a href="https://github.com/qdrant/mcp-server-qdrant">qdrant/mcp-server-qdrant</a>
+            
+          </td>
+          <td class="composite composite-ok">82</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-ok">67</td>
+          <td class="axis axis-ok">60</td>
+          <td class="meta">Python · ★1,371</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="repo">
+            <a href="https://github.com/cloudflare/mcp-server-cloudflare">cloudflare/mcp-server-cloudflare</a>
+            <span class="flag" title="empty_description">⚑</span>
+          </td>
+          <td class="composite composite-ok">70</td>
+          <td class="axis axis-ok">86</td>
+          <td class="axis axis-ok">60</td>
+          <td class="axis axis-weak">33</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">TypeScript · ★3,663</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
+          <td class="repo">
+            <a href="https://github.com/dandeliongold/mcp-time">dandeliongold/mcp-time</a>
+            <span class="flag" title="empty_description">⚑</span>
+          </td>
+          <td class="composite composite-ok">50</td>
+          <td class="axis axis-weak">14</td>
+          <td class="axis axis-ok">80</td>
+          <td class="axis axis-ok">67</td>
+          <td class="axis axis-weak">40</td>
+          <td class="meta">TypeScript · ★2</td>
+        </tr>
+        <tr>
+          <td class="rank">9</td>
+          <td class="repo">
+            <a href="https://github.com/zcaceres/fetch-mcp">zcaceres/fetch-mcp</a>
+            
+          </td>
+          <td class="composite composite-ok">50</td>
+          <td class="axis axis-weak">29</td>
+          <td class="axis axis-ok">80</td>
+          <td class="axis axis-weak">33</td>
+          <td class="axis axis-ok">60</td>
+          <td class="meta">TypeScript · ★743</td>
+        </tr>
+        <tr>
+          <td class="rank">10</td>
+          <td class="repo">
+            <a href="https://github.com/executeautomation/mcp-playwright">executeautomation/mcp-playwright</a>
+            
+          </td>
+          <td class="composite composite-weak">49</td>
+          <td class="axis axis-weak">43</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-weak">33</td>
+          <td class="axis axis-weak">20</td>
+          <td class="meta">TypeScript · ★5,470</td>
+        </tr>
+    </tbody>
+  </table>
+  <p style="margin-top:1.5rem;font-size:0.9rem;color:var(--fg-mute);">
+    Full catalog: <a href="./index.json">index.json</a> ·
+    Per-server: <a href="./servers/microsoft__playwright-mcp.json">servers/&lt;owner&gt;__&lt;repo&gt;.json</a>
+  </p>
+</section>
+
+<section>
+  <h2>Manifesto</h2>
+
+  <div class="principle">
+    <div class="p-num">001 / Open by default</div>
+    <div class="p-text">The full ruleset is YAML in a public repo.</div>
+    <div class="p-detail">No "trust us" scoring. Anyone can read every signal definition, fork the linter, dispute a result with evidence, propose a change via pull request. Trust comes from auditability, not authority.</div>
+  </div>
+
+  <div class="principle">
+    <div class="p-num">002 / Deterministic over clever</div>
+    <div class="p-text">Twenty binary signals. Same input, same score. Forever.</div>
+    <div class="p-detail">No machine-learned weights. No LLM-as-judge in the core score. No popularity contests. A signal either passes or it doesn't, and the rule that decided is published. Reproducibility is the whole point.</div>
+  </div>
+
+  <div class="principle">
+    <div class="p-num">003 / Versioned, never silently changed</div>
+    <div class="p-text">Every score carries the rule-set version that produced it.</div>
+    <div class="p-detail">When the bar rises, we tag a new major version, publish a delta report explaining what shifted and why, and keep old versions queryable for at least a year. Embedded badges don't break under your feet.</div>
+  </div>
+
+  <div class="principle">
+    <div class="p-num">004 / The data is the product</div>
+    <div class="p-text">Daily snapshots in GitHub Releases under CC-BY-4.0.</div>
+    <div class="p-detail">Pull the JSON, build your own catalog, train your own classifier, embed badges. Attribution is the only ask. The site is the demo; the data is the artifact.</div>
+  </div>
+
+  <div class="principle">
+    <div class="p-num">005 / Maintainers deserve specifics</div>
+    <div class="p-text">Every failed signal links to the exact fix.</div>
+    <div class="p-detail">"Score 60 because we don't like you" is a non-answer. We tell you which signal failed, why it failed for your repo specifically, and how to make it pass. Disagreement gets a public reply, never silence.</div>
+  </div>
+</section>
+
+<section>
+  <h2>For agents</h2>
+  <p class="lead">MCPRated is built agent-first. The site is a UI; the API is JSON files served from GitHub's CDN.</p>
+
+  <div class="agent-block">
+    <pre><code># Catalog index — minimal list of all servers with composite + axis scores</code>
+GET https://mcprated.github.io/mcprated/index.json
+
+<code># Per-server full lint detail</code>
+GET https://mcprated.github.io/mcprated/servers/&lt;owner&gt;__&lt;repo&gt;.json
+
+<code># LLM-friendly summary (Anthropic /llms.txt convention)</code>
+GET https://mcprated.github.io/mcprated/llms.txt
+
+<code># Daily snapshot archive (full history)</code>
+GET https://github.com/mcprated/mcprated/releases</pre>
+  </div>
+
+  <p style="margin-top:1.5rem;color:var(--fg-mute);">
+    Coming in v2.x: <code>@mcprated/mcp-server</code> as an npm package — stdio MCP server you install once, queries the catalog directly from your agent. Until then, fetch the JSON.
+  </p>
+</section>
+
+<section>
+  <h2>Status</h2>
+  <p>v0.1 — pre-launch. Linter works, daily snapshots running, 18 reference servers indexed. Full topic-search crawl, embeddable badges, and search UI shipping in upcoming sessions.</p>
+
+  <div class="links">
+    <a href="https://github.com/mcprated/mcprated">GitHub →</a>
+    <a href="https://github.com/mcprated/mcprated/blob/main/methodology.md">Methodology →</a>
+    <a href="https://github.com/mcprated/mcprated/blob/main/CHANGELOG.md">Changelog →</a>
+    <a href="https://github.com/mcprated/mcprated/tree/main/linter/rules/v1.0">Ruleset (YAML) →</a>
+    <a href="https://github.com/mcprated/mcprated/releases">Snapshot archive →</a>
+  </div>
+</section>
+
+<footer>
+  <div>Generated 2026-04-27T19:53:48+00:00 · rule_set v1.0.0 · 18 servers</div>
+  <div style="margin-top:0.5rem;">Code MIT · Data CC-BY-4.0 · <a href="https://github.com/mcprated/mcprated">github.com/mcprated/mcprated</a></div>
+</footer>
+
+</main>
+</body>
+</html>
