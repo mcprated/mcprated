@@ -45,16 +45,11 @@ jobs:
                | xargs -I {} gh release download {} --pattern '*.tar.gz' --dir .
           tar -xzf snapshot-*.tar.gz -C build/
 
-      - name: Render site (Jinja2 → HTML)
-        run: |
-          # Stub for V1 — render_pages.py to be added next commit
-          if [ -f linter/render_pages.py ]; then
-            python linter/render_pages.py --data build --templates site/templates --out build/site
-          else
-            echo "render_pages.py not yet implemented — deploying raw JSON only"
-            mkdir -p build/site
-            cp -r build/* build/site/ 2>/dev/null || true
-          fi
+      - name: Render landing page (HTML + llms.txt)
+        run: python linter/render_pages.py --data build --out build/site
+
+      - name: Render SVG badges (versioned /badges/v1/)
+        run: python linter/render_badges.py --data build --out build/site/badges/v1
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
