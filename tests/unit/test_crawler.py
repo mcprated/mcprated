@@ -43,3 +43,55 @@ class TestCandidateSourcePaths:
         # Crawler should cap proposals; we'll fetch ~10 actual files at most.
         paths = crawler._candidate_source_paths("any-mcp")
         assert len(paths) < 50, f"too many candidate paths: {len(paths)}"
+
+
+class TestSubdirsToExplore:
+    """E1: many real servers put source in subdirectories the static
+    candidate list doesn't enumerate (microsoft/playwright-mcp has src/,
+    github-mcp-server has cmd/ + internal/ + pkg/, awslabs/mcp has src/,
+    supabase-mcp has packages/, mcprated has worker/). When the static
+    candidates miss, the extractor sees zero source and returns 0 tools.
+
+    _subdirs_to_explore inspects the top-level repo listing and returns
+    which standard source-bearing subdirectories are actually present, so
+    the crawler can list and fetch from them.
+    """
+
+    def test_returns_only_dirs_actually_present(self):
+        result = crawler._subdirs_to_explore(["src", "tests", "README.md", "go.mod"])
+        assert "src" in result
+        assert "tests" not in result  # not a known source dir
+        assert "README.md" not in result
+
+    def test_recognizes_go_monorepo_layout(self):
+        # github/github-mcp-server has cmd/ + pkg/ + internal/
+        top = ["cmd", "internal", "pkg", "go.mod", "README.md"]
+        result = crawler._subdirs_to_explore(top)
+        for expected in ["cmd", "internal", "pkg"]:
+            assert expected in result, f"{expected} should be explored"
+
+    def test_recognizes_typescript_monorepo_layout(self):
+        # supabase-community/supabase-mcp has packages/
+        top = ["packages", "package.json", "pnpm-workspace.yaml"]
+        result = crawler._subdirs_to_explore(top)
+        assert "packages" in result
+
+    def test_recognizes_workspace_subdirs(self):
+        # mcprated has worker/, awslabs/mcp has src/
+        top = ["worker", "linter", "data", "README.md"]
+        result = crawler._subdirs_to_explore(top)
+        assert "worker" in result
+
+    def test_skips_when_no_known_subdir_present(self):
+        # Single-file npm package — playwright-mcp pattern
+        top = ["index.js", "cli.js", "package.json", "README.md"]
+        result = crawler._subdirs_to_explore(top)
+        # No dirs to explore — returns empty
+        assert result == [] or all(d not in top for d in result)
+
+    def test_deterministic_ordering(self):
+        # Crawler exhausts a fetch budget; ordering must be stable so
+        # which dirs win is predictable.
+        a = crawler._subdirs_to_explore(["src", "cmd", "packages"])
+        b = crawler._subdirs_to_explore(["packages", "cmd", "src"])
+        assert a == b

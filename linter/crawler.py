@@ -56,6 +56,21 @@ def gh_get(path: str, params: dict | None = None) -> dict | list | None:
             return None
 
 
+# Top-level subdirectories worth exploring when present. Order matters — earlier
+# dirs win the fetch budget. `src` first because it's the most common pattern;
+# packages last because monorepos are noisier and we'd rather pull a single
+# clean src/index.ts than 20 packages/foo/src/index.ts in nested suites.
+_SOURCE_SUBDIRS = ["src", "cmd", "internal", "pkg", "worker", "mcp-server", "server", "lib", "packages"]
+
+
+def _subdirs_to_explore(top_paths: list[str]) -> list[str]:
+    """Filter the known source-bearing subdirectory list to ones that
+    actually exist at the top level of this repo. Pure function for testing.
+    """
+    present = set(top_paths)
+    return [d for d in _SOURCE_SUBDIRS if d in present]
+
+
 def _candidate_source_paths(name: str) -> list[str]:
     """Likely server-entry / tool-definition file paths for a repo.
 
@@ -131,9 +146,15 @@ def fetch_repo(owner: str, name: str) -> dict | None:
         if body:
             source_files[path] = body[:30_000]
 
+    # We need top_paths from the contents listing for the next step (subdir
+    # exploration), so fetch it now even though it'll be re-fetched below.
+    # The contents endpoint is GH-cached so the cost is sub-100ms.
+    early_tree = gh_get(f"/repos/{owner}/{name}/contents") or []
+    early_top_paths = [item.get("path", "") for item in early_tree if isinstance(item, dict)]
+
     # Tools-directory expansion: if /tools or /src/tools exists, list its
-    # contents and pull every file (within budget). This is the single
-    # biggest extraction-coverage improvement.
+    # contents and pull every file (within budget). Catches FastMCP-style
+    # layouts that group tool defs in a tools/ submodule.
     for tools_dir in ("tools", "src/tools", f"src/{name.replace('-', '_')}/tools"):
         if len(source_files) >= fetch_budget:
             break
@@ -153,6 +174,61 @@ def fetch_repo(owner: str, name: str) -> dict | None:
             body = fetch_file(owner, name, ipath)
             if body:
                 source_files[ipath] = body[:30_000]
+
+    # Phase E1: dynamic source-subdir exploration. The static candidate list
+    # misses real-world layouts:
+    #   - microsoft/playwright-mcp has src/ but our hardcoded "src/index.ts"
+    #     names didn't match its actual file layout
+    #   - github/github-mcp-server is Go with cmd/ + pkg/ + internal/
+    #   - supabase-mcp / awslabs/mcp are monorepos with packages/ or src/
+    #   - mcprated itself has worker/
+    # Without these, find_tool reports 21 tools across the whole catalog —
+    # broken. Now we list each present source dir and pull source files
+    # within budget.
+    for sub in _subdirs_to_explore(early_top_paths):
+        if len(source_files) >= fetch_budget:
+            break
+        listing = gh_get(f"/repos/{owner}/{name}/contents/{sub}")
+        if not isinstance(listing, list):
+            continue
+        for item in listing:
+            if len(source_files) >= fetch_budget:
+                break
+            if not isinstance(item, dict):
+                continue
+            ipath = item.get("path") or ""
+            itype = item.get("type") or ""
+            if not ipath or ipath in source_files:
+                continue
+            if itype == "file" and any(ipath.endswith(ext) for ext in (".ts", ".tsx", ".js", ".mjs", ".py", ".go", ".rs")):
+                body = fetch_file(owner, name, ipath)
+                if body:
+                    source_files[ipath] = body[:30_000]
+            elif itype == "dir":
+                # One level of recursion: e.g., packages/<pkg>/src/index.ts
+                inner = gh_get(f"/repos/{owner}/{name}/contents/{ipath}")
+                if not isinstance(inner, list):
+                    continue
+                for item2 in inner:
+                    if len(source_files) >= fetch_budget:
+                        break
+                    if not isinstance(item2, dict):
+                        continue
+                    p2 = item2.get("path") or ""
+                    t2 = item2.get("type") or ""
+                    if t2 != "file" or p2 in source_files:
+                        continue
+                    if not any(p2.endswith(ext) for ext in (".ts", ".tsx", ".js", ".mjs", ".py", ".go", ".rs")):
+                        continue
+                    # Prefer entry-point names; skip test files
+                    leaf = p2.rsplit("/", 1)[-1].lower()
+                    if any(t in leaf for t in ("test", "spec", ".d.ts")):
+                        continue
+                    if leaf in ("index.ts", "index.js", "main.ts", "main.go", "main.py",
+                               "server.ts", "server.py", "server.go", "tools.ts", "tools.py"):
+                        body = fetch_file(owner, name, p2)
+                        if body:
+                            source_files[p2] = body[:30_000]
 
     license_text = None
     spdx = (repo.get("license") or {}).get("spdx_id")

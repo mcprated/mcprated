@@ -11,6 +11,11 @@
 # Tier A — known-good (regression must not drop these below their baseline grade)
 # =============================================================================
 
+# Self-listing — eat your own dogfood. MCPRated must score well in its own
+# catalog. Specifically opted into Tier A: any change that drops this below
+# the established baseline is a regression and must be discussed in the PR.
+mcprated/mcprated
+
 # Anthropic-maintained reference servers (active monorepo)
 modelcontextprotocol/servers
 
