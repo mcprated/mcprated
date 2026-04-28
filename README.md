@@ -2,24 +2,76 @@
 
 **Agent-readable index of every MCP server. Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse.**
 
-Open ruleset, daily-updated, deterministic. Trust scores today; capability index and `@mcprated/mcp-server` next.
+Open ruleset, daily-updated, deterministic. Static catalog + remote MCP endpoint, both live.
 
-**🌐 Live: [mcprated.github.io/mcprated](https://mcprated.github.io/mcprated/)**
+**🌐 Live**
+- MCP server: `https://mcp.mcprated.workers.dev` (streamable HTTP)
+- Static catalog: [mcprated.github.io/mcprated](https://mcprated.github.io/mcprated/)
 
-## For agents
+## Add to your client in one line
 
-Static JSON, no auth, stable URLs, daily refresh. Hit these from your system prompt or runtime.
+**Claude Code / Claude Desktop:**
+
+```bash
+claude mcp add --transport http mcprated https://mcp.mcprated.workers.dev
+```
+
+**Cursor / Cline / Continue / any client supporting remote MCP:** paste into your config:
+
+```json
+{"mcpServers": {"mcprated": {"url": "https://mcp.mcprated.workers.dev"}}}
+```
+
+The agent then has access to **8 tools**:
+
+| Tool | When to call |
+|---|---|
+| `find_server` | Map your need to a capability category (12 of them) and rank servers by quality |
+| `search` | Free-text search when the capability enum doesn't fit |
+| `find_tool` | Discover a specific tool by name (`browser_navigate`, `read_file`, …) across all servers |
+| `vet` | Trust verdict for one server (verified / caution / low_quality) before installing |
+| `alternatives` | Capability-similar fallbacks when a server is unavailable |
+| `by_kind` | Filter classifier output (server / client / framework / tool / ambiguous) |
+| `top` | Top servers by composite, stars, or recency |
+| `server_detail` | Full lint signal breakdown — every signal, every reason |
+
+See `https://mcp.mcprated.workers.dev` for a live tool list, or [`/api/v1/manifest.json`](https://mcprated.github.io/mcprated/api/v1/manifest.json) for the JSON schema.
+
+## Static catalog API
+
+Fallback for agents without remote-MCP support, or for direct integration without an MCP client. No auth, stable URLs, daily refresh.
 
 ```bash
 curl https://mcprated.github.io/mcprated/llms.txt                            # discovery + endpoint map
+curl https://mcprated.github.io/mcprated/api/v1/manifest.json                # full endpoint schema
+curl https://mcprated.github.io/mcprated/api/v1/by-capability/database.json  # one shard per category
+curl https://mcprated.github.io/mcprated/api/v1/vet/<owner>__<repo>.json     # trust subset
+curl https://mcprated.github.io/mcprated/api/v1/tools-index.json             # flat list of every extracted tool
 curl https://mcprated.github.io/mcprated/index.json                          # full catalog
 curl https://mcprated.github.io/mcprated/servers/<owner>__<repo>.json        # per-server detail
-curl https://mcprated.github.io/mcprated/excluded.json                       # transparency: what we filtered out and why
+curl https://mcprated.github.io/mcprated/excluded.json                       # transparency
 ```
 
-Per server we publish: composite score, four axis scores, `kind` (server / client / framework / tool / ambiguous), `subkind` (integration / aggregator / prompt-tool / agent-product), `capabilities[]` (taxonomy v1: database, web, search, devtools, comms, …), `distribution`, hard flags, license, language, recency.
+Per server we publish: composite score, four axis scores, `kind` (server / client / framework / tool / ambiguous), `subkind` (integration / aggregator / prompt-tool / agent-product), `capabilities[]`, `distribution`, `tool_count`, `tool_names_preview`, hard flags, license, language, recency.
 
 Daily snapshots in [Releases](https://github.com/mcprated/mcprated/releases) — historical state retained.
+
+## Run locally (for development)
+
+```bash
+# In one terminal — local Worker
+cd worker
+npm install
+npm run dev      # starts MCP server on http://localhost:8787
+
+# In another terminal — connect a client
+claude mcp add --transport http mcprated-local http://localhost:8787
+
+# Or test interactively with the official MCP Inspector
+npx @modelcontextprotocol/inspector@latest http://localhost:8787
+```
+
+The local Worker uses the same source as production. Test changes locally; auto-deploy fires on push to `main` (gated by 230+ tests).
 
 ## What we catalog
 

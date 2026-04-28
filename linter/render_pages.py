@@ -253,7 +253,15 @@ def render_index(idx: dict, repo_url: str) -> str:
 <header>
   <span class="brand">mcprated</span>
   <h1>Agent-readable index of<br>every MCP server.</h1>
-  <p class="tagline">Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. Trust scores today; capability index and <code>@mcprated/mcp-server</code> next.</p>
+  <p class="tagline">Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. Live MCP endpoint + static JSON catalog. Eight agent-shaped tools.</p>
+
+  <div class="agent-block" style="margin-top:2rem;">
+    <pre><code># Claude Code / Claude Desktop — one line</code>
+claude mcp add --transport http mcprated https://mcp.mcprated.workers.dev
+
+<code># Cursor / Cline / Continue — paste into config</code>
+{"mcpServers": {"mcprated": {"url": "https://mcp.mcprated.workers.dev"}}}</pre>
+  </div>
 
   <div class="stats">
     <div class="stat">
@@ -447,6 +455,21 @@ def render_llms_txt(idx: dict, repo_url: str) -> str:
     return f"""# MCPRated
 
 > Agent-readable index of every MCP server. Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. We catalog runnable artifacts that implement Model Context Protocol; we do not catalog frameworks for building MCP servers, MCP clients/inspectors, or end-user apps that consume MCP without exposing it.
+
+## Use as MCP server (recommended for agents)
+
+Endpoint: `https://mcp.mcprated.workers.dev` (streamable HTTP)
+
+Install in your MCP client:
+```
+# Claude Code / Claude Desktop
+claude mcp add --transport http mcprated https://mcp.mcprated.workers.dev
+
+# Cursor / Cline / Continue — paste into mcp config
+{{"mcpServers": {{"mcprated": {{"url": "https://mcp.mcprated.workers.dev"}}}}}}
+```
+
+8 tools: `find_server`, `search`, `find_tool`, `vet`, `alternatives`, `by_kind`, `top`, `server_detail`. Live tool schemas at https://mcprated.github.io/mcprated/api/v1/manifest.json.
 
 ## Stats
 
