@@ -43,6 +43,16 @@ GLips/Figma-Context-MCP
 # Earlier reference (kept for continuity even though microsoft/playwright-mcp now leads)
 executeautomation/mcp-playwright
 
+# Coverage backfill (added 2026-04-28 after cross-LLM testing flagged
+# `find_server(comms)` returning zero results and no Postgres-specific
+# server in the catalog). These cover messaging + database + filesystem +
+# memory categories that were under-represented.
+korotovsky/slack-mcp-server
+modelcontextprotocol/servers-archived
+crystaldba/postgres-mcp
+modelcontextprotocol/python-sdk
+modelcontextprotocol/typescript-sdk
+
 # =============================================================================
 # Tier B — low quality / sample / abandoned (must score <= Tier A)
 # =============================================================================
