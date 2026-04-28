@@ -215,7 +215,9 @@ class CatalogUnavailable extends Error {}
 // ---------------------------------------------------------------------------
 
 // Bumped per-deploy to bust any stale CF colo cache entries.
-const CATALOG_CACHE_VERSION = "3";
+// v4: bumped after slim-payload (Bug #4) + description-in-index changes —
+// Worker had cached the pre-slim /index.json so search returned empty descs.
+const CATALOG_CACHE_VERSION = "4";
 
 async function fetchCatalog(
   env: Env,
