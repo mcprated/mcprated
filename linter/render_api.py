@@ -32,23 +32,25 @@ ALTERNATIVES_LIMIT = 10
 
 
 def _slim(s: dict) -> dict:
-    """Project an index entry down to fields useful for ranking + linking.
+    """Project an index entry to the minimum useful for ranking + selection.
 
-    Keeps response shards small. Agent fetches /servers/<slug>.json for full
-    detail when it actually needs signal-level data.
+    v1.0.1 trims the shape to fight token bloat: nested axes were dropped
+    (agents who care about axis breakdown call `vet`), and the relative
+    `detail_url` was dropped (agents have the full URL pattern from llms.txt
+    or manifest.json — no need to repeat it on every list item). Description
+    was added so an agent can disambiguate "supabase-mcp" from "mcp-alchemy"
+    without a second roundtrip.
     """
     return {
         "repo": s["repo"],
         "slug": s["slug"],
         "composite": s["composite"],
-        "axes": s["axes"],
+        "description": s.get("description"),
         "kind": s.get("kind"),
         "subkind": s.get("subkind") or "",
         "capabilities": s.get("capabilities") or [],
         "stars": s.get("stars"),
         "language": s.get("language"),
-        "url": f"https://github.com/{s['repo']}",
-        "detail_url": f"/servers/{s['slug']}.json",
     }
 
 
@@ -145,7 +147,7 @@ def render_manifest(idx: dict) -> dict:
         "mcp_tools": [
             {
                 "name": "find_server",
-                "description": "Find MCP servers tagged with a capability (database, web, search, ...). Returns ranked list.",
+                "description": "Find MCP servers tagged with a controlled capability category. Use when your need maps to one of the 12 categories; if not, use 'search'.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -153,6 +155,18 @@ def render_manifest(idx: dict) -> dict:
                         "limit": {"type": "integer", "default": 10, "minimum": 1, "maximum": 50},
                     },
                     "required": ["capability"],
+                },
+            },
+            {
+                "name": "search",
+                "description": "Free-text search when 'find_server' enum doesn't fit. Matches repo name + description + capabilities, ranked by relevance × quality.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "query": {"type": "string", "minLength": 2},
+                        "limit": {"type": "integer", "default": 10, "minimum": 1, "maximum": 25},
+                    },
+                    "required": ["query"],
                 },
             },
             {
@@ -297,8 +311,30 @@ def render_vet(idx_entry: dict, full: dict) -> dict:
     }
 
 
+def _alt_score(similarity: float, composite: int) -> float:
+    """Composite-weighted similarity for alternatives ranking.
+
+    Pure Jaccard (v1.0) ranked junk repos with perfect tag overlap above
+    high-quality fallbacks with partial overlap. v1.0.1 multiplies similarity
+    by the square root of normalized composite — keeps similarity dominant
+    (we still want capability fit) but penalizes low-quality alternatives.
+
+    Examples:
+      sim=1.00, comp=30  ->  0.55
+      sim=0.67, comp=88  ->  0.63   (preferred — quality fallback)
+      sim=0.50, comp=100 ->  0.50
+    """
+    quality = (max(0, min(100, composite)) / 100.0) ** 0.5
+    return similarity * quality
+
+
 def render_alternatives(idx_entry: dict, all_entries: list) -> dict:
-    """Jaccard similarity over capabilities; tie-break by composite."""
+    """Capability-similar servers, weighted by quality.
+
+    For "X is unavailable, what else?" we rank by `_alt_score`: Jaccard
+    similarity dominated, but a pure-overlap junk repo loses to a strong
+    partial-overlap repo. See _alt_score for the formula and rationale.
+    """
     target_caps = idx_entry.get("capabilities") or []
     target_slug = idx_entry["slug"]
 
@@ -311,17 +347,18 @@ def render_alternatives(idx_entry: dict, all_entries: list) -> dict:
         sim = _jaccard(target_caps, s.get("capabilities") or [])
         if sim <= 0:
             continue
-        candidates.append((sim, s))
+        score = _alt_score(sim, s.get("composite", 0))
+        candidates.append((score, sim, s))
 
-    candidates.sort(key=lambda x: (-x[0], -x[1]["composite"]))
+    candidates.sort(key=lambda x: (-x[0], -x[2]["composite"]))
     return {
         "for": idx_entry["repo"],
         "slug": target_slug,
         "of_capabilities": target_caps,
         "alternatives": [
-            {**_slim(s), "similarity": round(sim, 3),
+            {**_slim(s), "similarity": round(sim, 3), "score": round(score, 3),
              "shared_capabilities": sorted(set(target_caps) & set(s.get("capabilities") or []))}
-            for sim, s in candidates[:ALTERNATIVES_LIMIT]
+            for score, sim, s in candidates[:ALTERNATIVES_LIMIT]
         ],
     }
 

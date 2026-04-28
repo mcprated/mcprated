@@ -32,7 +32,21 @@ const TOOLS = [
   {
     name: "find_server",
     description:
-      "Find MCP servers tagged with a capability. Returns ranked list (top by composite score). Use this when an agent needs an MCP server for a specific category like database, web, search, devtools.",
+      "Find MCP servers tagged with a controlled capability category. Use when you can map your need to one of the 12 categories below; if you can't, use 'search' instead.\n\n" +
+      "Mapping examples:\n" +
+      "  Postgres / MySQL / SQLite / any SQL or NoSQL DB → 'database'\n" +
+      "  Local files, read/write filesystem → 'filesystem'\n" +
+      "  Browser automation, scraping, HTTP fetch → 'web'\n" +
+      "  Vector search, RAG, retrieval, search engines → 'search'\n" +
+      "  Notion, Jira, Linear, calendar, docs → 'productivity'\n" +
+      "  Slack, Discord, SMTP, Twilio → 'comms'\n" +
+      "  GitHub, GitLab, Docker, Kubernetes, CI → 'devtools'\n" +
+      "  AWS, GCP, Azure, Cloudflare, Vercel → 'cloud'\n" +
+      "  OpenAI, Anthropic, image-gen, transcription → 'ai'\n" +
+      "  Knowledge graph, notes, Obsidian → 'memory'\n" +
+      "  Stripe, payments, blockchain → 'finance'\n" +
+      "  FFmpeg, OCR, image/video processing → 'media'\n\n" +
+      "Returns up to 'limit' servers ranked by composite quality score.",
     inputSchema: {
       type: "object",
       properties: {
@@ -43,7 +57,9 @@ const TOOLS = [
             "comms", "devtools", "cloud", "ai", "memory", "finance", "media",
             "unknown",
           ],
-          description: "Capability tag to filter by (taxonomy v1.0).",
+          description:
+            "Controlled vocabulary tag from taxonomy v1.0. " +
+            "If your need doesn't fit (e.g. 'crypto trading bot'), use 'search' tool with free text.",
         },
         limit: {
           type: "integer",
@@ -54,6 +70,28 @@ const TOOLS = [
         },
       },
       required: ["capability"],
+    },
+  },
+  {
+    name: "search",
+    description:
+      "Free-text search across the catalog when 'find_server' enum doesn't fit. Matches against repo name, description, and capability tags. Returns up to 'limit' servers, ranked by relevance and quality. Use this for natural-language needs like 'postgres mcp', 'browser automation', 'github operations' — the matcher will translate.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        query: {
+          type: "string",
+          minLength: 2,
+          description: "Free-text search term (e.g. 'postgres', 'browser automation').",
+        },
+        limit: {
+          type: "integer",
+          default: 10,
+          minimum: 1,
+          maximum: 25,
+        },
+      },
+      required: ["query"],
     },
   },
   {
@@ -138,13 +176,46 @@ const TOOLS = [
 ];
 
 // ---------------------------------------------------------------------------
+// Typed errors — every error path through this Worker raises one of these.
+// rpcError() in handleRpc() converts them to JSON-RPC envelopes.
+//
+// Bug #1 fix: messages are agent-facing only. They MUST NOT contain the
+// upstream URL, internal paths, query strings, or anything that leaks how
+// the catalog is hosted.
+// ---------------------------------------------------------------------------
+
+class JsonRpcError extends Error {
+  constructor(public code: number, message: string) {
+    super(message);
+    this.name = "JsonRpcError";
+  }
+}
+
+function invalidParams(msg: string): never {
+  throw new JsonRpcError(-32602, msg);
+}
+
+function notFound(msg: string): never {
+  // We use -32602 for "not found" rather than a custom server-error code:
+  // from the agent's POV, asking for a non-existent slug IS bad input.
+  // The agent should retry with a valid slug, not back off thinking the
+  // server is broken (which -32603 implies).
+  throw new JsonRpcError(-32602, msg);
+}
+
+function internal(msg: string): never {
+  throw new JsonRpcError(-32603, msg);
+}
+
+class CatalogNotFound extends Error {}
+class CatalogUnavailable extends Error {}
+
+// ---------------------------------------------------------------------------
 // HTTP / cache helpers
 // ---------------------------------------------------------------------------
 
-// Bumped per-deploy to bust any stale CF colo cache entries (e.g. when an
-// earlier deploy accidentally pinned a 404). Increment when redeploying after
-// changing fetch semantics.
-const CATALOG_CACHE_VERSION = "2";
+// Bumped per-deploy to bust any stale CF colo cache entries.
+const CATALOG_CACHE_VERSION = "3";
 
 async function fetchCatalog(
   env: Env,
@@ -155,17 +226,19 @@ async function fetchCatalog(
   const cache = caches.default;
   const cacheKey = new Request(url, { method: "GET" });
 
-  // Workers Cache API is the ONLY layer we control. CF colo cache is left to
-  // honour origin Cache-Control headers from gh-pages — no cf hints here, so
-  // a transient 404 can't pin itself.
   let cached = await cache.match(cacheKey);
   if (cached) {
     return cached.json();
   }
 
   const upstream = await fetch(url);
+  if (upstream.status === 404) {
+    // Throw a typed error; tools attach their own context (slug, capability)
+    // before re-raising as JsonRpcError. The URL never reaches the agent.
+    throw new CatalogNotFound();
+  }
   if (!upstream.ok) {
-    throw new Error(`upstream ${upstream.status}: ${url}`);
+    throw new CatalogUnavailable();
   }
 
   const body = await upstream.text();
@@ -181,6 +254,49 @@ async function fetchCatalog(
 }
 
 // ---------------------------------------------------------------------------
+// Schema-driven argument validation (Bug #2 fix)
+//
+// MCP clients are expected to validate args against the inputSchema we declare
+// in tools/list, but we never trust the client. Every enum and required field
+// is enforced server-side here, with helpful error messages that tell the
+// agent what went wrong AND what it could try next.
+// ---------------------------------------------------------------------------
+
+function validateArgs(toolName: string, rawArgs: unknown): Record<string, unknown> {
+  const tool = TOOLS.find((t) => t.name === toolName);
+  if (!tool) {
+    invalidParams(
+      `unknown tool '${toolName}'. Valid tools: ${TOOLS.map((t) => t.name).join(", ")}`
+    );
+  }
+  const args: Record<string, unknown> =
+    rawArgs && typeof rawArgs === "object" ? { ...(rawArgs as object) } : {};
+  const schema = tool.inputSchema as unknown as {
+    properties?: Record<string, { type?: string; enum?: unknown[] }>;
+    required?: string[];
+  };
+
+  for (const req of schema.required ?? []) {
+    if (args[req] === undefined || args[req] === null || args[req] === "") {
+      invalidParams(`missing required field '${req}' for tool '${toolName}'`);
+    }
+  }
+
+  for (const [key, propSchema] of Object.entries(schema.properties ?? {})) {
+    if (args[key] === undefined) continue;
+    if (propSchema.enum && !propSchema.enum.includes(args[key])) {
+      invalidParams(
+        `invalid '${key}': ${JSON.stringify(args[key])}. Valid values: ${propSchema.enum
+          .map((v) => JSON.stringify(v))
+          .join(", ")}`
+      );
+    }
+  }
+
+  return args;
+}
+
+// ---------------------------------------------------------------------------
 // Tool implementations — each is a passthrough to one /api/v1/* shard.
 // Returns MCP `content` envelope. JSON.stringify keeps the response shape
 // simple; callers parse as needed.
@@ -190,71 +306,164 @@ async function callTool(
   env: Env,
   ctx: ExecutionContext,
   name: string,
-  args: any
+  rawArgs: any
 ): Promise<any> {
-  const a = args ?? {};
+  // Validate first — never fetch with bad input. validateArgs throws -32602
+  // before we'd hit upstream and 404 (which would leak via Bug #1).
+  const a = validateArgs(name, rawArgs);
 
   switch (name) {
     case "find_server": {
-      const cap = String(a.capability ?? "").trim();
+      const cap = String(a.capability).trim();
       const limit = Math.max(1, Math.min(50, Number(a.limit ?? 10)));
-      if (!cap) throw new Error("missing 'capability'");
-      const data = await fetchCatalog(env, ctx, `/api/v1/by-capability/${cap}.json`);
-      const servers = (data.servers ?? []).slice(0, limit);
-      return contentEnvelope({
-        capability: cap,
-        total_matches: data.count,
-        returned: servers.length,
-        servers,
-      });
+      try {
+        const data = await fetchCatalog(env, ctx, `/api/v1/by-capability/${cap}.json`);
+        const servers = (data.servers ?? []).slice(0, limit);
+        return contentEnvelope({
+          capability: cap,
+          total_matches: data.count,
+          returned: servers.length,
+          servers,
+        });
+      } catch (e) {
+        if (e instanceof CatalogNotFound) {
+          // Capability passed enum validation, so this means catalog hasn't
+          // been published yet (or capability shard is missing).
+          notFound(`no servers indexed for capability '${cap}' yet. Try 'top' or another capability.`);
+        }
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
+    }
+
+    case "search": {
+      const query = String(a.query).trim().toLowerCase();
+      const limit = Math.max(1, Math.min(25, Number(a.limit ?? 10)));
+      try {
+        const data = await fetchCatalog(env, ctx, `/index.json`);
+        const tokens = query.split(/\s+/).filter((t) => t.length >= 2);
+        const scored = (data.servers ?? [])
+          .filter((s: any) => s.kind === "server")
+          .map((s: any) => {
+            const hay = [
+              s.repo, s.description, ...(s.capabilities ?? []), s.language,
+            ].filter(Boolean).join(" ").toLowerCase();
+            const hits = tokens.reduce((n, t) => n + (hay.includes(t) ? 1 : 0), 0);
+            // Score: hit-fraction × sqrt(composite/100). Same shape as
+            // alternatives ranking — quality matters but relevance dominates.
+            const relevance = tokens.length ? hits / tokens.length : 0;
+            const quality = Math.sqrt((s.composite ?? 0) / 100);
+            return { s, score: relevance * quality, hits, relevance };
+          })
+          .filter((x: any) => x.hits > 0)
+          .sort((a: any, b: any) => b.score - a.score || b.s.composite - a.s.composite);
+        const top = scored.slice(0, limit).map((x: any) => ({
+          ...x.s,
+          search_score: Number(x.score.toFixed(3)),
+          token_hits: x.hits,
+        }));
+        return contentEnvelope({
+          query,
+          tokens,
+          total_matches: scored.length,
+          returned: top.length,
+          servers: top,
+        });
+      } catch (e) {
+        if (e instanceof CatalogNotFound) internal("catalog index missing");
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
     }
 
     case "vet": {
-      const slug = String(a.slug ?? "").trim();
-      if (!slug) throw new Error("missing 'slug'");
-      const data = await fetchCatalog(env, ctx, `/api/v1/vet/${slug}.json`);
-      return contentEnvelope(data);
+      const slug = String(a.slug).trim();
+      try {
+        const data = await fetchCatalog(env, ctx, `/api/v1/vet/${slug}.json`);
+        return contentEnvelope(data);
+      } catch (e) {
+        if (e instanceof CatalogNotFound) {
+          notFound(
+            `no server with slug '${slug}'. Use 'top' or 'find_server' to discover valid slugs (format: <owner>__<repo>).`
+          );
+        }
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
     }
 
     case "alternatives": {
-      const slug = String(a.slug ?? "").trim();
-      if (!slug) throw new Error("missing 'slug'");
-      const data = await fetchCatalog(env, ctx, `/api/v1/alternatives/${slug}.json`);
-      return contentEnvelope(data);
+      const slug = String(a.slug).trim();
+      try {
+        const data = await fetchCatalog(env, ctx, `/api/v1/alternatives/${slug}.json`);
+        return contentEnvelope(data);
+      } catch (e) {
+        if (e instanceof CatalogNotFound) {
+          notFound(
+            `no server with slug '${slug}'. Use 'top' or 'find_server' to discover valid slugs.`
+          );
+        }
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
     }
 
     case "by_kind": {
-      const kind = String(a.kind ?? "").trim();
-      if (!kind) throw new Error("missing 'kind'");
-      const data = await fetchCatalog(env, ctx, `/api/v1/by-kind/${kind}.json`);
-      return contentEnvelope(data);
+      const kind = String(a.kind).trim();
+      try {
+        const data = await fetchCatalog(env, ctx, `/api/v1/by-kind/${kind}.json`);
+        return contentEnvelope(data);
+      } catch (e) {
+        if (e instanceof CatalogNotFound) {
+          notFound(`no entries indexed for kind '${kind}' yet.`);
+        }
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
     }
 
     case "top": {
       const ranking = String(a.ranking ?? "composite");
       const limit = Math.max(1, Math.min(25, Number(a.limit ?? 10)));
-      const data = await fetchCatalog(env, ctx, `/api/v1/top.json`);
-      const key =
-        ranking === "stars" ? "by_stars"
-        : ranking === "recency" ? "by_recency"
-        : "by_composite";
-      const servers = (data[key] ?? []).slice(0, limit);
-      return contentEnvelope({
-        ranking,
-        returned: servers.length,
-        servers,
-      });
+      try {
+        const data = await fetchCatalog(env, ctx, `/api/v1/top.json`);
+        const key =
+          ranking === "stars" ? "by_stars"
+          : ranking === "recency" ? "by_recency"
+          : "by_composite";
+        const servers = (data[key] ?? []).slice(0, limit);
+        return contentEnvelope({
+          ranking,
+          returned: servers.length,
+          servers,
+        });
+      } catch (e) {
+        if (e instanceof CatalogNotFound) internal("catalog top.json missing");
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
     }
 
     case "server_detail": {
-      const slug = String(a.slug ?? "").trim();
-      if (!slug) throw new Error("missing 'slug'");
-      const data = await fetchCatalog(env, ctx, `/servers/${slug}.json`);
-      return contentEnvelope(data);
+      const slug = String(a.slug).trim();
+      try {
+        const data = await fetchCatalog(env, ctx, `/servers/${slug}.json`);
+        return contentEnvelope(data);
+      } catch (e) {
+        if (e instanceof CatalogNotFound) {
+          notFound(
+            `no server with slug '${slug}'. Use 'top' or 'find_server' to discover valid slugs.`
+          );
+        }
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
     }
 
     default:
-      throw new Error(`unknown tool: ${name}`);
+      // validateArgs already rejects unknown tools, so this is unreachable —
+      // keep it for type narrowing and as a defense-in-depth fallback.
+      invalidParams(`unknown tool '${name}'`);
   }
 }
 
@@ -313,7 +522,12 @@ async function handleRpc(
         const result = await callTool(env, ctx, name, args);
         return rpcResult(body.id, result);
       } catch (e: any) {
-        return rpcError(body.id, -32603, e?.message ?? "tool error");
+        if (e instanceof JsonRpcError) {
+          return rpcError(body.id, e.code, e.message);
+        }
+        // Last-resort: unexpected runtime error. Don't leak `e.message` —
+        // it might contain stack-trace fragments or upstream URLs.
+        return rpcError(body.id, -32603, "internal error");
       }
     }
 

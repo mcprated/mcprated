@@ -569,6 +569,7 @@ def main():
             "axes": {a: result["axes"][a]["score"] for a in result["axes"]},
             "stars": result["stars"],
             "language": result["language"],
+            "description": result.get("description"),
             "kind": result["kind"],
             "subkind": result["subkind"],
             "capabilities": result["capabilities"],

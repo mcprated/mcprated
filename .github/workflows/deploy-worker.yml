@@ -1,7 +1,7 @@
 name: deploy-worker
 
 # Deploy the Cloudflare Worker that wraps the static catalog as MCP Streamable HTTP.
-# Triggered when worker/ files change on main, or manually.
+# Hard-gated: tests MUST pass before deploy.
 
 on:
   push:
@@ -17,7 +17,35 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test-python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements-dev.txt
+      - run: pytest -v
+
+  test-worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: worker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: worker/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+
   deploy:
+    needs: [test-python, test-worker]
     runs-on: ubuntu-latest
     timeout-minutes: 5
     defaults:
@@ -25,21 +53,13 @@ jobs:
         working-directory: worker
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
           cache-dependency-path: worker/package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Typecheck
-        run: npm run typecheck
-
-      - name: Deploy to Cloudflare
-        uses: cloudflare/wrangler-action@v3
+      - run: npm ci
+      - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

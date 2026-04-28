@@ -44,8 +44,12 @@ categories:
     description: "Productivity / task / docs / calendar tools."
 
   comms:
-    keywords: [slack, discord, telegram, whatsapp, twilio, email, smtp, imap,
-               "matrix protocol", mattermost, "send message", messaging]
+    # v1.0.1: removed bare "email" and "messaging" — they false-matched in
+    # design tools (Figma "messaging between team members") and databases
+    # (BigQuery examples SELECT email FROM users). Genuine comms servers
+    # almost always cite a specific platform (Slack/Discord/SMTP) too.
+    keywords: [slack, discord, telegram, whatsapp, twilio, smtp, imap,
+               "matrix protocol", mattermost, "send message", "instant messaging"]
     description: "Messaging, chat, email, SMS."
 
   devtools:

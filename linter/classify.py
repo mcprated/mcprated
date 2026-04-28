@@ -53,8 +53,13 @@ _TAXONOMY: dict[str, list[str]] = {
                      "google calendar", "gmail", "outlook", "google docs",
                      "google sheets", "confluence", "airtable", "monday.com"],
     "comms":        ["slack", "discord", "telegram", "whatsapp", "twilio",
-                     "email", "smtp", "imap", "matrix protocol", "mattermost",
-                     "send message", "messaging"],
+                     "smtp", "imap", "matrix protocol", "mattermost",
+                     "send message", "instant messaging"],
+    # NOTE: standalone "email" and "messaging" were removed in v1.0.1 — they
+    # leaked into design tools (Figma "messaging between team members") and
+    # databases (BigQuery example queries that SELECT email FROM users).
+    # If a server is genuinely email/messaging-focused, it almost always
+    # mentions a specific platform (Slack/Discord/SMTP) too.
     "devtools":     ["github", "gitlab", "bitbucket", "sentry", "datadog",
                      "ci/cd", "docker", "kubernetes", "terraform", "ansible",
                      "deployment", "code review", "git operations"],
