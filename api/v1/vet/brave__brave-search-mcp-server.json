@@ -1,0 +1,44 @@
+{
+  "repo": "brave/brave-search-mcp-server",
+  "slug": "brave__brave-search-mcp-server",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 73,
+  "axes": {
+    "reliability": 100,
+    "documentation": 80,
+    "trust": 33,
+    "community": 80
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "ai",
+    "devtools",
+    "search"
+  ],
+  "license": "MIT",
+  "stars": 948,
+  "pushed_at": "2026-04-27T01:16:39Z",
+  "language": "TypeScript",
+  "hard_flags": [
+    "empty_description"
+  ],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "SPDX=MIT"
+    },
+    "has_security_policy": {
+      "passed": false,
+      "note": "no SECURITY.md, no security section"
+    },
+    "has_repo_topics": {
+      "passed": false,
+      "note": "0 topics: []"
+    }
+  },
+  "verdict": "caution",
+  "url": "https://github.com/brave/brave-search-mcp-server",
+  "detail_url": "/servers/brave__brave-search-mcp-server.json"
+}

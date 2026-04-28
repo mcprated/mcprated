@@ -1,0 +1,167 @@
+{
+  "for": "bsmi021/sticky-notes-server",
+  "slug": "bsmi021__sticky-notes-server",
+  "of_capabilities": [
+    "database",
+    "search"
+  ],
+  "alternatives": [
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 60
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1372,
+      "language": "Python",
+      "url": "https://github.com/qdrant/mcp-server-qdrant",
+      "detail_url": "/servers/qdrant__mcp-server-qdrant.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "database",
+        "search"
+      ]
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "devtools",
+        "cloud",
+        "database"
+      ],
+      "stars": 8898,
+      "language": "Python",
+      "url": "https://github.com/awslabs/mcp",
+      "detail_url": "/servers/awslabs__mcp.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "comms"
+      ],
+      "stars": 14847,
+      "language": "Go",
+      "url": "https://github.com/googleapis/mcp-toolbox",
+      "detail_url": "/servers/googleapis__mcp-toolbox.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database",
+        "devtools"
+      ],
+      "stars": 2649,
+      "language": "TypeScript",
+      "url": "https://github.com/supabase-community/supabase-mcp",
+      "detail_url": "/servers/supabase-community__supabase-mcp.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 33,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools",
+        "search"
+      ],
+      "stars": 948,
+      "language": "TypeScript",
+      "url": "https://github.com/brave/brave-search-mcp-server",
+      "detail_url": "/servers/brave__brave-search-mcp-server.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "search"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai",
+        "devtools"
+      ],
+      "stars": 401,
+      "language": "Python",
+      "url": "https://github.com/runekaagaard/mcp-alchemy",
+      "detail_url": "/servers/runekaagaard__mcp-alchemy.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "database"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "repo": "modelcontextprotocol/servers",
+  "slug": "modelcontextprotocol__servers",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 87,
+  "axes": {
+    "reliability": 100,
+    "documentation": 100,
+    "trust": 67,
+    "community": 80
+  },
+  "kind": "server",
+  "subkind": "agent-product",
+  "capabilities": [
+    "devtools"
+  ],
+  "license": "NOASSERTION",
+  "stars": 84694,
+  "pushed_at": "2026-04-17T22:59:54Z",
+  "language": "TypeScript",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "LICENSE file (mit license)"
+    },
+    "has_security_policy": {
+      "passed": true,
+      "note": "SECURITY.md present"
+    },
+    "has_repo_topics": {
+      "passed": false,
+      "note": "0 topics: []"
+    }
+  },
+  "verdict": "caution",
+  "url": "https://github.com/modelcontextprotocol/servers",
+  "detail_url": "/servers/modelcontextprotocol__servers.json"
+}

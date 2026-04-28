@@ -1,0 +1,260 @@
+{
+  "for": "eyaltoledano/claude-task-master",
+  "slug": "eyaltoledano__claude-task-master",
+  "of_capabilities": [
+    "comms",
+    "devtools"
+  ],
+  "alternatives": [
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "stars": 14544,
+      "language": "TypeScript",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "detail_url": "/servers/GLips__Figma-Context-MCP.json",
+      "similarity": 1.0,
+      "shared_capabilities": [
+        "comms",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 95,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity",
+        "comms",
+        "devtools"
+      ],
+      "stars": 5052,
+      "language": "Python",
+      "url": "https://github.com/sooperset/mcp-atlassian",
+      "detail_url": "/servers/sooperset__mcp-atlassian.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "comms",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "devtools"
+      ],
+      "stars": 23536,
+      "language": "Python",
+      "url": "https://github.com/oraios/serena",
+      "detail_url": "/servers/oraios__serena.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "comms",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 29317,
+      "language": "Go",
+      "url": "https://github.com/github/github-mcp-server",
+      "detail_url": "/servers/github__github-mcp-server.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 84694,
+      "language": "TypeScript",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "detail_url": "/servers/modelcontextprotocol__servers.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 50,
+      "axes": {
+        "reliability": 29,
+        "documentation": 80,
+        "trust": 33,
+        "community": 60
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 744,
+      "language": "TypeScript",
+      "url": "https://github.com/zcaceres/fetch-mcp",
+      "detail_url": "/servers/zcaceres__fetch-mcp.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "url": "https://github.com/gbti-network/mcp-whats-the-passphrase",
+      "detail_url": "/servers/gbti-network__mcp-whats-the-passphrase.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "boysoai/Claude-Code-MCP",
+      "slug": "boysoai__Claude-Code-MCP",
+      "composite": 32,
+      "axes": {
+        "reliability": 14,
+        "documentation": 40,
+        "trust": 33,
+        "community": 40
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
+      "language": null,
+      "url": "https://github.com/boysoai/Claude-Code-MCP",
+      "detail_url": "/servers/boysoai__Claude-Code-MCP.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 53970,
+      "language": "TypeScript",
+      "url": "https://github.com/upstash/context7",
+      "detail_url": "/servers/upstash__context7.json",
+      "similarity": 0.333,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "axes": {
+        "reliability": 86,
+        "documentation": 80,
+        "trust": 67,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 661,
+      "language": "Python",
+      "url": "https://github.com/rusiaaman/wcgw",
+      "detail_url": "/servers/rusiaaman__wcgw.json",
+      "similarity": 0.333,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    }
+  ]
+}

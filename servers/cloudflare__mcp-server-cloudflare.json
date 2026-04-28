@@ -1,10 +1,19 @@
 {
   "repo": "cloudflare/mcp-server-cloudflare",
-  "stars": 3665,
+  "stars": 3666,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": null,
   "pushed_at": "2026-04-23T20:48:16Z",
+  "kind": "server",
+  "subkind": "integration",
+  "kind_confidence": 0.55,
+  "kind_reason": "mcpServers config in README (default)",
+  "capabilities": [
+    "cloud"
+  ],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
   "composite": 70,
   "composite_raw": 70,
   "axes": {
@@ -123,6 +132,6 @@
       "msg": "Repo has no description"
     }
   ],
-  "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-28T06:38:40+00:00"
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00"
 }

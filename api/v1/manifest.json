@@ -1,0 +1,244 @@
+{
+  "version": "1.0",
+  "rule_set_version": "1.1.0",
+  "taxonomy_version": "1.0",
+  "generated_at": "2026-04-28T13:30:07+00:00",
+  "base_url": "https://mcprated.github.io/mcprated",
+  "description": "Agent-readable index of MCP servers. Static JSON, no auth, daily refresh. Each endpoint answers one question; agents should fetch the relevant shard rather than the full index.json.",
+  "enums": {
+    "capabilities": [
+      "database",
+      "filesystem",
+      "web",
+      "search",
+      "productivity",
+      "comms",
+      "devtools",
+      "cloud",
+      "ai",
+      "memory",
+      "finance",
+      "media"
+    ],
+    "kinds": [
+      "server",
+      "client",
+      "framework",
+      "tool",
+      "ambiguous"
+    ],
+    "subkinds": [
+      "integration",
+      "aggregator",
+      "prompt-tool",
+      "agent-product"
+    ]
+  },
+  "endpoints": [
+    {
+      "name": "by_capability",
+      "url_template": "/api/v1/by-capability/{capability}.json",
+      "params": {
+        "capability": [
+          "database",
+          "filesystem",
+          "web",
+          "search",
+          "productivity",
+          "comms",
+          "devtools",
+          "cloud",
+          "ai",
+          "memory",
+          "finance",
+          "media",
+          "unknown"
+        ]
+      },
+      "description": "Servers tagged with the given capability, ranked by composite score."
+    },
+    {
+      "name": "by_kind",
+      "url_template": "/api/v1/by-kind/{kind}.json",
+      "params": {
+        "kind": [
+          "server",
+          "client",
+          "framework",
+          "tool",
+          "ambiguous"
+        ]
+      },
+      "description": "Filter by classifier verdict; default catalog views show kind=server."
+    },
+    {
+      "name": "top",
+      "url": "/api/v1/top.json",
+      "description": "Three rankings: by composite, by stars, by recency. Top 25 each."
+    },
+    {
+      "name": "vet",
+      "url_template": "/api/v1/vet/{slug}.json",
+      "params": {
+        "slug": "<owner>__<repo>"
+      },
+      "description": "Trust-focused subset: composite, axes, license, hard flags, plus a derived verdict (verified / caution / low_quality)."
+    },
+    {
+      "name": "alternatives",
+      "url_template": "/api/v1/alternatives/{slug}.json",
+      "params": {
+        "slug": "<owner>__<repo>"
+      },
+      "description": "Servers with overlapping capabilities, ranked by Jaccard similarity then composite. Up to 10."
+    },
+    {
+      "name": "server_detail",
+      "url_template": "/servers/{slug}.json",
+      "params": {
+        "slug": "<owner>__<repo>"
+      },
+      "description": "Full lint output for one server: every signal, every reason, every flag."
+    },
+    {
+      "name": "index",
+      "url": "/index.json",
+      "description": "The full catalog as one document. Use shards for targeted queries."
+    },
+    {
+      "name": "excluded",
+      "url": "/excluded.json",
+      "description": "Repos rejected by prefilter, with reason. Transparency."
+    }
+  ],
+  "mcp_tools": [
+    {
+      "name": "find_server",
+      "description": "Find MCP servers tagged with a capability (database, web, search, ...). Returns ranked list.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capability": {
+            "type": "string",
+            "enum": [
+              "database",
+              "filesystem",
+              "web",
+              "search",
+              "productivity",
+              "comms",
+              "devtools",
+              "cloud",
+              "ai",
+              "memory",
+              "finance",
+              "media",
+              "unknown"
+            ]
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 50
+          }
+        },
+        "required": [
+          "capability"
+        ]
+      }
+    },
+    {
+      "name": "vet",
+      "description": "Trust-focused summary of one server: composite, axes, license, hard flags, verdict.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "<owner>__<repo>"
+          }
+        },
+        "required": [
+          "slug"
+        ]
+      }
+    },
+    {
+      "name": "alternatives",
+      "description": "Capability-similar servers to a given one, for fallback or comparison.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug"
+        ]
+      }
+    },
+    {
+      "name": "by_kind",
+      "description": "List servers (or clients / frameworks / tools) by classifier kind.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "server",
+              "client",
+              "framework",
+              "tool",
+              "ambiguous"
+            ]
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      }
+    },
+    {
+      "name": "top",
+      "description": "Top servers by composite score, stars, or recency.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ranking": {
+            "type": "string",
+            "enum": [
+              "composite",
+              "stars",
+              "recency"
+            ],
+            "default": "composite"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 25
+          }
+        }
+      }
+    },
+    {
+      "name": "server_detail",
+      "description": "Full lint output for one server: every signal pass/fail with reason.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug"
+        ]
+      }
+    }
+  ]
+}

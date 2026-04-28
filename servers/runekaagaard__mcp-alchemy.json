@@ -5,6 +5,17 @@
   "license": "MPL-2.0",
   "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
   "pushed_at": "2025-08-15T07:18:27Z",
+  "kind": "server",
+  "subkind": "integration",
+  "kind_confidence": 0.95,
+  "kind_reason": "server-run pattern in source (default)",
+  "capabilities": [
+    "database",
+    "ai",
+    "devtools"
+  ],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
   "composite": 42,
   "composite_raw": 42,
   "axes": {
@@ -23,7 +34,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 255d ago"
+          "note": "pushed 256d ago"
         },
         "has_releases": {
           "pass": false,
@@ -118,6 +129,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-28T06:38:40+00:00"
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00"
 }

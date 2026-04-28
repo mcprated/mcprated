@@ -1,0 +1,43 @@
+{
+  "repo": "bsmi021/sticky-notes-server",
+  "slug": "bsmi021__sticky-notes-server",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 46,
+  "axes": {
+    "reliability": 29,
+    "documentation": 80,
+    "trust": 33,
+    "community": 40
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "database",
+    "search"
+  ],
+  "license": null,
+  "stars": 1,
+  "pushed_at": "2025-02-18T19:01:50Z",
+  "language": "JavaScript",
+  "hard_flags": [
+    "empty_description"
+  ],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": false,
+      "note": "no commercial-friendly license"
+    },
+    "has_security_policy": {
+      "passed": false,
+      "note": "no SECURITY.md, no security section"
+    },
+    "has_repo_topics": {
+      "passed": true,
+      "note": "6 topics: ['cool-stuff', 'mcp', 'mcp-server', 'mcp-servers', 'modelcontextprotocol']"
+    }
+  },
+  "verdict": "low_quality",
+  "url": "https://github.com/bsmi021/sticky-notes-server",
+  "detail_url": "/servers/bsmi021__sticky-notes-server.json"
+}

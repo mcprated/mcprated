@@ -1,0 +1,41 @@
+{
+  "repo": "upstash/context7",
+  "slug": "upstash__context7",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 92,
+  "axes": {
+    "reliability": 86,
+    "documentation": 100,
+    "trust": 100,
+    "community": 80
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "ai",
+    "devtools"
+  ],
+  "license": "MIT",
+  "stars": 53970,
+  "pushed_at": "2026-04-28T11:25:11Z",
+  "language": "TypeScript",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "SPDX=MIT"
+    },
+    "has_security_policy": {
+      "passed": true,
+      "note": "SECURITY.md present"
+    },
+    "has_repo_topics": {
+      "passed": true,
+      "note": "4 topics: ['llm', 'mcp', 'mcp-server', 'vibe-coding']"
+    }
+  },
+  "verdict": "verified",
+  "url": "https://github.com/upstash/context7",
+  "detail_url": "/servers/upstash__context7.json"
+}

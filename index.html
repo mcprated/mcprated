@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MCPRated — Quality ratings for Model Context Protocol servers</title>
-  <meta name="description" content="Open, daily-updated quality ratings for every MCP server on GitHub. Four axes: Reliability, Documentation, Trust, Community.">
-  <meta property="og:title" content="MCPRated">
-  <meta property="og:description" content="Quality ratings for Model Context Protocol servers — open, transparent, daily.">
+  <title>MCPRated — Agent-readable index of every MCP server</title>
+  <meta name="description" content="Agent-readable index of every MCP server. Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic.">
+  <meta property="og:title" content="MCPRated — agent-first MCP catalog">
+  <meta property="og:description" content="Built for LLMs to discover, vet, and choose MCP servers at runtime. Open ruleset, daily-updated, deterministic.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mcprated.github.io/mcprated/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://mcprated.github.io/mcprated/">
   <link rel="alternate" type="application/json" title="Catalog index (JSON)" href="./index.json">
+  <link rel="alternate" type="application/json" title="Agent API manifest" href="./api/v1/manifest.json">
   <link rel="alternate" type="text/plain" title="LLM-friendly summary" href="./llms.txt">
   <style>
     :root {
@@ -190,24 +191,24 @@
 
 <header>
   <span class="brand">mcprated</span>
-  <h1>Quality ratings for<br>Model Context Protocol servers.</h1>
-  <p class="tagline">Open, daily-updated, deterministic. Every MCP server on GitHub, lint-checked across four axes. No magic. Read the rules, fork the linter, run it yourself.</p>
+  <h1>Agent-readable index of<br>every MCP server.</h1>
+  <p class="tagline">Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. Trust scores today; capability index and <code>@mcprated/mcp-server</code> next.</p>
 
   <div class="stats">
     <div class="stat">
-      <div class="stat-num">17</div>
+      <div class="stat-num">26</div>
       <div class="stat-label">servers rated</div>
     </div>
     <div class="stat">
-      <div class="stat-num">2</div>
+      <div class="stat-num">4</div>
       <div class="stat-label">scoring 100</div>
     </div>
     <div class="stat">
-      <div class="stat-num">50</div>
+      <div class="stat-num">78</div>
       <div class="stat-label">median composite</div>
     </div>
     <div class="stat">
-      <div class="stat-num">v1.0.0</div>
+      <div class="stat-num">v1.1.0</div>
       <div class="stat-label">rule set</div>
     </div>
   </div>
@@ -259,6 +260,19 @@
         <tr>
           <td class="rank">1</td>
           <td class="repo">
+            <a href="https://github.com/awslabs/mcp">awslabs/mcp</a>
+            
+          </td>
+          <td class="composite composite-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">Python · ★8,898</td>
+        </tr>
+        <tr>
+          <td class="rank">2</td>
+          <td class="repo">
             <a href="https://github.com/github/github-mcp-server">github/github-mcp-server</a>
             
           </td>
@@ -267,10 +281,23 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">Go · ★29,304</td>
+          <td class="meta">Go · ★29,317</td>
         </tr>
         <tr>
-          <td class="rank">2</td>
+          <td class="rank">3</td>
+          <td class="repo">
+            <a href="https://github.com/googleapis/mcp-toolbox">googleapis/mcp-toolbox</a>
+            
+          </td>
+          <td class="composite composite-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">Go · ★14,847</td>
+        </tr>
+        <tr>
+          <td class="rank">4</td>
           <td class="repo">
             <a href="https://github.com/microsoft/playwright-mcp">microsoft/playwright-mcp</a>
             
@@ -280,10 +307,10 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">TypeScript · ★31,534</td>
+          <td class="meta">TypeScript · ★31,575</td>
         </tr>
         <tr>
-          <td class="rank">3</td>
+          <td class="rank">5</td>
           <td class="repo">
             <a href="https://github.com/sooperset/mcp-atlassian">sooperset/mcp-atlassian</a>
             
@@ -293,10 +320,36 @@
           <td class="axis axis-ok">80</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">Python · ★5,047</td>
+          <td class="meta">Python · ★5,052</td>
         </tr>
         <tr>
-          <td class="rank">4</td>
+          <td class="rank">6</td>
+          <td class="repo">
+            <a href="https://github.com/GLips/Figma-Context-MCP">GLips/Figma-Context-MCP</a>
+            
+          </td>
+          <td class="composite composite-good">92</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-ok">67</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">TypeScript · ★14,544</td>
+        </tr>
+        <tr>
+          <td class="rank">7</td>
+          <td class="repo">
+            <a href="https://github.com/oraios/serena">oraios/serena</a>
+            
+          </td>
+          <td class="composite composite-good">92</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-ok">67</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">Python · ★23,536</td>
+        </tr>
+        <tr>
+          <td class="rank">8</td>
           <td class="repo">
             <a href="https://github.com/supabase-community/supabase-mcp">supabase-community/supabase-mcp</a>
             
@@ -309,82 +362,30 @@
           <td class="meta">TypeScript · ★2,649</td>
         </tr>
         <tr>
-          <td class="rank">5</td>
-          <td class="repo">
-            <a href="https://github.com/modelcontextprotocol/servers">modelcontextprotocol/servers</a>
-            
-          </td>
-          <td class="composite composite-ok">87</td>
-          <td class="axis axis-good">100</td>
-          <td class="axis axis-good">100</td>
-          <td class="axis axis-ok">67</td>
-          <td class="axis axis-ok">80</td>
-          <td class="meta">TypeScript · ★84,667</td>
-        </tr>
-        <tr>
-          <td class="rank">6</td>
-          <td class="repo">
-            <a href="https://github.com/qdrant/mcp-server-qdrant">qdrant/mcp-server-qdrant</a>
-            
-          </td>
-          <td class="composite composite-ok">82</td>
-          <td class="axis axis-good">100</td>
-          <td class="axis axis-good">100</td>
-          <td class="axis axis-ok">67</td>
-          <td class="axis axis-ok">60</td>
-          <td class="meta">Python · ★1,372</td>
-        </tr>
-        <tr>
-          <td class="rank">7</td>
-          <td class="repo">
-            <a href="https://github.com/cloudflare/mcp-server-cloudflare">cloudflare/mcp-server-cloudflare</a>
-            <span class="flag" title="empty_description">⚑</span>
-          </td>
-          <td class="composite composite-ok">70</td>
-          <td class="axis axis-ok">86</td>
-          <td class="axis axis-ok">60</td>
-          <td class="axis axis-weak">33</td>
-          <td class="axis axis-good">100</td>
-          <td class="meta">TypeScript · ★3,665</td>
-        </tr>
-        <tr>
-          <td class="rank">8</td>
-          <td class="repo">
-            <a href="https://github.com/dandeliongold/mcp-time">dandeliongold/mcp-time</a>
-            <span class="flag" title="empty_description">⚑</span>
-          </td>
-          <td class="composite composite-ok">50</td>
-          <td class="axis axis-weak">14</td>
-          <td class="axis axis-ok">80</td>
-          <td class="axis axis-ok">67</td>
-          <td class="axis axis-weak">40</td>
-          <td class="meta">TypeScript · ★2</td>
-        </tr>
-        <tr>
           <td class="rank">9</td>
           <td class="repo">
-            <a href="https://github.com/zcaceres/fetch-mcp">zcaceres/fetch-mcp</a>
+            <a href="https://github.com/upstash/context7">upstash/context7</a>
             
           </td>
-          <td class="composite composite-ok">50</td>
-          <td class="axis axis-weak">29</td>
+          <td class="composite composite-good">92</td>
+          <td class="axis axis-ok">86</td>
+          <td class="axis axis-good">100</td>
+          <td class="axis axis-good">100</td>
           <td class="axis axis-ok">80</td>
-          <td class="axis axis-weak">33</td>
-          <td class="axis axis-ok">60</td>
-          <td class="meta">TypeScript · ★743</td>
+          <td class="meta">TypeScript · ★53,970</td>
         </tr>
         <tr>
           <td class="rank">10</td>
           <td class="repo">
-            <a href="https://github.com/executeautomation/mcp-playwright">executeautomation/mcp-playwright</a>
+            <a href="https://github.com/eyaltoledano/claude-task-master">eyaltoledano/claude-task-master</a>
             
           </td>
-          <td class="composite composite-weak">49</td>
-          <td class="axis axis-weak">43</td>
+          <td class="composite composite-ok">88</td>
+          <td class="axis axis-ok">86</td>
           <td class="axis axis-good">100</td>
-          <td class="axis axis-weak">33</td>
-          <td class="axis axis-weak">20</td>
-          <td class="meta">TypeScript · ★5,473</td>
+          <td class="axis axis-ok">67</td>
+          <td class="axis axis-good">100</td>
+          <td class="meta">JavaScript · ★26,906</td>
         </tr>
     </tbody>
   </table>
@@ -430,24 +431,31 @@
 
 <section>
   <h2>For agents</h2>
-  <p class="lead">MCPRated is built agent-first. The site is a UI; the API is JSON files served from GitHub's CDN.</p>
+  <p class="lead">MCPRated is built agent-first. The site is a UI; the API is JSON files served from GitHub's CDN. No auth, stable URLs, daily refresh.</p>
 
   <div class="agent-block">
-    <pre><code># Catalog index — minimal list of all servers with composite + axis scores</code>
+    <pre><code># Discovery — start here. Lists every endpoint and what it contains.</code>
+GET https://mcprated.github.io/mcprated/llms.txt
+
+<code># Catalog index — every server with composite, axes, kind, capabilities, distribution</code>
 GET https://mcprated.github.io/mcprated/index.json
 
-<code># Per-server full lint detail</code>
+<code># Per-server full lint detail (kind, subkind, capabilities, all signal results)</code>
 GET https://mcprated.github.io/mcprated/servers/&lt;owner&gt;__&lt;repo&gt;.json
 
-<code># LLM-friendly summary (Anthropic /llms.txt convention)</code>
-GET https://mcprated.github.io/mcprated/llms.txt
+<code># Transparency: what we filtered out and why</code>
+GET https://mcprated.github.io/mcprated/excluded.json
 
 <code># Daily snapshot archive (full history)</code>
 GET https://github.com/mcprated/mcprated/releases</pre>
   </div>
 
   <p style="margin-top:1.5rem;color:var(--fg-mute);">
-    Coming in v2.x: <code>@mcprated/mcp-server</code> as an npm package — stdio MCP server you install once, queries the catalog directly from your agent. Until then, fetch the JSON.
+    Each server JSON carries <code>kind</code> (server / client / framework / tool / ambiguous), <code>subkind</code> (integration / aggregator / prompt-tool / agent-product), <code>capabilities[]</code> from a versioned <a href="https://github.com/mcprated/mcprated/blob/main/linter/taxonomy/v1.yaml">taxonomy</a>, and <code>distribution</code>. Use these to answer "what does this server do" and "is it actually a server" without re-reading the README.
+  </p>
+
+  <p style="margin-top:1rem;color:var(--fg-mute);">
+    Coming next: agent-shaped endpoints (<code>/api/v1/find?capability=…</code>, <code>/vet/&lt;slug&gt;</code>, <code>/by-capability/&lt;cap&gt;.json</code>) and <code>@mcprated/mcp-server</code> as an installable npm package — query the catalog directly from your agent.
   </p>
 </section>
 
@@ -477,7 +485,7 @@ GET https://github.com/mcprated/mcprated/releases</pre>
 
 <section>
   <h2>Status</h2>
-  <p>v0.1 — pre-launch. Linter works, daily snapshots running, 17 reference servers indexed. Full topic-search crawl, embeddable badges, and search UI shipping in upcoming sessions.</p>
+  <p>v0.2 — agent-first core. Linter + classifier + capability taxonomy live, daily snapshots running, 26 servers indexed. Coming next: agent-shaped endpoints (<code>find</code>, <code>vet</code>, <code>by-capability</code>) and <code>@mcprated/mcp-server</code> npm package.</p>
 
   <div class="links">
     <a href="https://github.com/mcprated/mcprated">GitHub →</a>
@@ -489,7 +497,7 @@ GET https://github.com/mcprated/mcprated/releases</pre>
 </section>
 
 <footer>
-  <div>Generated 2026-04-28T06:38:40+00:00 · rule_set v1.0.0 · 17 servers</div>
+  <div>Generated 2026-04-28T13:30:07+00:00 · rule_set v1.1.0 · 26 servers</div>
   <div style="margin-top:0.5rem;">Code MIT · Data CC-BY-4.0 · <a href="https://github.com/mcprated/mcprated">github.com/mcprated/mcprated</a></div>
 </footer>
 

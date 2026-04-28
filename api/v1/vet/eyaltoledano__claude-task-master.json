@@ -1,0 +1,41 @@
+{
+  "repo": "eyaltoledano/claude-task-master",
+  "slug": "eyaltoledano__claude-task-master",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 88,
+  "axes": {
+    "reliability": 86,
+    "documentation": 100,
+    "trust": 67,
+    "community": 100
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "comms",
+    "devtools"
+  ],
+  "license": "NOASSERTION",
+  "stars": 26906,
+  "pushed_at": "2026-04-28T13:27:12Z",
+  "language": "JavaScript",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "LICENSE file (mit license)"
+    },
+    "has_security_policy": {
+      "passed": false,
+      "note": "no SECURITY.md, no security section"
+    },
+    "has_repo_topics": {
+      "passed": true,
+      "note": "12 topics: ['ai', 'cursor', 'cursor-ai', 'cursorai', 'lovable']"
+    }
+  },
+  "verdict": "caution",
+  "url": "https://github.com/eyaltoledano/claude-task-master",
+  "detail_url": "/servers/eyaltoledano__claude-task-master.json"
+}

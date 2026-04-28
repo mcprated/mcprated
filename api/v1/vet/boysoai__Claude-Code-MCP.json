@@ -1,0 +1,40 @@
+{
+  "repo": "boysoai/Claude-Code-MCP",
+  "slug": "boysoai__Claude-Code-MCP",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 32,
+  "axes": {
+    "reliability": 14,
+    "documentation": 40,
+    "trust": 33,
+    "community": 40
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "devtools"
+  ],
+  "license": null,
+  "stars": 0,
+  "pushed_at": "2025-03-02T17:03:44Z",
+  "language": null,
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": false,
+      "note": "no commercial-friendly license"
+    },
+    "has_security_policy": {
+      "passed": false,
+      "note": "no SECURITY.md, no security section"
+    },
+    "has_repo_topics": {
+      "passed": true,
+      "note": "3 topics: ['claude', 'mcp', 'mcp-server']"
+    }
+  },
+  "verdict": "low_quality",
+  "url": "https://github.com/boysoai/Claude-Code-MCP",
+  "detail_url": "/servers/boysoai__Claude-Code-MCP.json"
+}

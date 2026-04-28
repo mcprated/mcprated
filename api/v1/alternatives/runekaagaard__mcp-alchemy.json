@@ -1,0 +1,277 @@
+{
+  "for": "runekaagaard/mcp-alchemy",
+  "slug": "runekaagaard__mcp-alchemy",
+  "of_capabilities": [
+    "database",
+    "ai",
+    "devtools"
+  ],
+  "alternatives": [
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database",
+        "devtools"
+      ],
+      "stars": 2649,
+      "language": "TypeScript",
+      "url": "https://github.com/supabase-community/supabase-mcp",
+      "detail_url": "/servers/supabase-community__supabase-mcp.json",
+      "similarity": 1.0,
+      "shared_capabilities": [
+        "ai",
+        "database",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 53970,
+      "language": "TypeScript",
+      "url": "https://github.com/upstash/context7",
+      "detail_url": "/servers/upstash__context7.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "axes": {
+        "reliability": 86,
+        "documentation": 80,
+        "trust": 67,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 661,
+      "language": "Python",
+      "url": "https://github.com/rusiaaman/wcgw",
+      "detail_url": "/servers/rusiaaman__wcgw.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "devtools",
+        "cloud",
+        "database"
+      ],
+      "stars": 8898,
+      "language": "Python",
+      "url": "https://github.com/awslabs/mcp",
+      "detail_url": "/servers/awslabs__mcp.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "database",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "comms"
+      ],
+      "stars": 14847,
+      "language": "Go",
+      "url": "https://github.com/googleapis/mcp-toolbox",
+      "detail_url": "/servers/googleapis__mcp-toolbox.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "database"
+      ]
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web",
+        "ai",
+        "devtools"
+      ],
+      "stars": 31575,
+      "language": "TypeScript",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "detail_url": "/servers/microsoft__playwright-mcp.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "devtools"
+      ],
+      "stars": 23536,
+      "language": "Python",
+      "url": "https://github.com/oraios/serena",
+      "detail_url": "/servers/oraios__serena.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 60
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1372,
+      "language": "Python",
+      "url": "https://github.com/qdrant/mcp-server-qdrant",
+      "detail_url": "/servers/qdrant__mcp-server-qdrant.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "database"
+      ]
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 33,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools",
+        "search"
+      ],
+      "stars": 948,
+      "language": "TypeScript",
+      "url": "https://github.com/brave/brave-search-mcp-server",
+      "detail_url": "/servers/brave__brave-search-mcp-server.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 29317,
+      "language": "Go",
+      "url": "https://github.com/github/github-mcp-server",
+      "detail_url": "/servers/github__github-mcp-server.json",
+      "similarity": 0.333,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    }
+  ]
+}

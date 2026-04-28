@@ -1,0 +1,26 @@
+{
+  "kind": "client",
+  "rule_set_version": "1.1.0",
+  "generated_at": "2026-04-28T13:30:07+00:00",
+  "count": 1,
+  "servers": [
+    {
+      "repo": "jithinolickal/mcp-client-server",
+      "slug": "jithinolickal__mcp-client-server",
+      "composite": 17,
+      "axes": {
+        "reliability": 14,
+        "documentation": 0,
+        "trust": 33,
+        "community": 20
+      },
+      "kind": "client",
+      "subkind": "",
+      "capabilities": [],
+      "stars": 0,
+      "language": "Python",
+      "url": "https://github.com/jithinolickal/mcp-client-server",
+      "detail_url": "/servers/jithinolickal__mcp-client-server.json"
+    }
+  ]
+}

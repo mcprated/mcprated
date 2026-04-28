@@ -1,17 +1,39 @@
 # MCPRated
 
-> Open, daily-updated quality ratings for Model Context Protocol servers. Every MCP server on GitHub is lint-checked across four axes: Reliability, Documentation, Trust, Community. Composite score 0–100, fully transparent ruleset.
+> Agent-readable index of every MCP server. Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. We catalog runnable artifacts that implement Model Context Protocol; we do not catalog frameworks for building MCP servers, MCP clients/inspectors, or end-user apps that consume MCP without exposing it.
 
 ## Stats
-- Servers rated: 17
-- Rule set: v1.0.0
-- Last update: 2026-04-28T06:38:40+00:00
+
+- Servers rated: 26
+- Rule set: v1.1.0
+- Taxonomy: v1.0
+- Last update: 2026-04-28T13:30:07+00:00
 
 ## API (static JSON, public, free, no auth)
 
-- [Catalog index](https://mcprated.github.io/mcprated/index.json): list of all servers with composite + per-axis scores
+**Start here:**
+- [Manifest](https://mcprated.github.io/mcprated/api/v1/manifest.json): endpoint map, valid enum values (capabilities, kinds), MCP tool definitions. **Fetch this first to learn the shape.**
+
+**Sharded answers (one question per file, agent-friendly):**
+- `/api/v1/by-capability/<cap>.json` — servers tagged with capability X (database, web, search, ...)
+- `/api/v1/by-kind/<kind>.json` — server / client / framework / tool / ambiguous
+- `/api/v1/top.json` — top-by-composite, top-by-stars, top-by-recency (25 each)
+- `/api/v1/vet/<owner>__<repo>.json` — trust-focused subset + verdict (verified / caution / low_quality)
+- `/api/v1/alternatives/<owner>__<repo>.json` — capability-similar servers, ranked
+
+**Full views:**
+- [Catalog index](https://mcprated.github.io/mcprated/index.json): every server with composite, axes, `kind`, `subkind`, `capabilities`, `distribution`
 - [Per-server detail](https://mcprated.github.io/mcprated/servers/microsoft__playwright-mcp.json): full lint output for one repo (replace path with `<owner>__<repo>.json`)
+- [Excluded list](https://mcprated.github.io/mcprated/excluded.json): repos filtered out by prefilter, with reason — transparency
 - [Daily snapshot archive](https://github.com/mcprated/mcprated/releases): tarballs of historical state, retained forever
+
+## Per-server fields agents care about
+
+- `kind`: server | client | framework | tool | ambiguous
+- `subkind` (when `kind=server`): integration | aggregator | prompt-tool | agent-product
+- `capabilities[]`: top tags from taxonomy v1.0: database, filesystem, web, search, productivity, comms, devtools, cloud, ai, memory, finance, media (or empty if no match)
+- `distribution`: how the artifact reaches a client (`repo` for v1; `npm`/`pypi`/`docker`/`hosted` reserved for upcoming ingest)
+- `composite` 0–100 + 4 axis scores; `hard_flags[]` for caps (archived → 30, etc.)
 
 ## Score model
 
@@ -20,11 +42,17 @@
 - Hard flags cap composite (archived → 30, empty_description → 75, etc.)
 - Color hints: 90+ green, 50–89 yellow, <50 red
 
+## Coming next (planned)
+
+- Agent-shaped endpoints: `/api/v1/find?capability=<cap>`, `/vet/<slug>`, `/by-capability/<cap>.json`, `/api/v1/manifest.json`
+- `@mcprated/mcp-server` (npm) — installable MCP server that queries the catalog from your client
+
 ## Source
 
 - Repo: https://github.com/mcprated/mcprated
-- Methodology: https://github.com/mcprated/mcprated/blob/main/methodology.md
+- Methodology + operational definition of "MCP server": https://github.com/mcprated/mcprated/blob/main/methodology.md
 - Ruleset (YAML, MIT): https://github.com/mcprated/mcprated/tree/main/linter/rules/v1.0
+- Capability taxonomy: https://github.com/mcprated/mcprated/blob/main/linter/taxonomy/v1.yaml
 - Changelog: https://github.com/mcprated/mcprated/blob/main/CHANGELOG.md
 
 ## License

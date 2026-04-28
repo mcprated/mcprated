@@ -1,0 +1,133 @@
+{
+  "repo": "upstash/context7",
+  "stars": 53970,
+  "language": "TypeScript",
+  "license": "MIT",
+  "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+  "pushed_at": "2026-04-28T11:25:11Z",
+  "kind": "server",
+  "subkind": "integration",
+  "kind_confidence": 0.7,
+  "kind_reason": "sdk dep in package metadata (default)",
+  "capabilities": [
+    "ai",
+    "devtools"
+  ],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
+  "composite": 92,
+  "composite_raw": 92,
+  "axes": {
+    "reliability": {
+      "score": 86,
+      "passing": 6,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 0d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 0d ago"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "latest tag: @upstash/context7-mcp@2.2.1"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "5 releases with notes"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 9173 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['npx ']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['## Available Tools']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "7 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://context7.com"
+        }
+      }
+    },
+    "trust": {
+      "score": 100,
+      "passing": 3,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": true,
+          "note": "4 topics: ['llm', 'mcp', 'mcp-server', 'vibe-coding']"
+        }
+      }
+    },
+    "community": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "7 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 15 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "15 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00"
+}

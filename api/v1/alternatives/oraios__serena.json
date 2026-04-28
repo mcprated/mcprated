@@ -1,0 +1,277 @@
+{
+  "for": "oraios/serena",
+  "slug": "oraios__serena",
+  "of_capabilities": [
+    "ai",
+    "comms",
+    "devtools"
+  ],
+  "alternatives": [
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "stars": 14544,
+      "language": "TypeScript",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "detail_url": "/servers/GLips__Figma-Context-MCP.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "comms",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 53970,
+      "language": "TypeScript",
+      "url": "https://github.com/upstash/context7",
+      "detail_url": "/servers/upstash__context7.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 88,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "stars": 26906,
+      "language": "JavaScript",
+      "url": "https://github.com/eyaltoledano/claude-task-master",
+      "detail_url": "/servers/eyaltoledano__claude-task-master.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "comms",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "axes": {
+        "reliability": 86,
+        "documentation": 80,
+        "trust": 67,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 661,
+      "language": "Python",
+      "url": "https://github.com/rusiaaman/wcgw",
+      "detail_url": "/servers/rusiaaman__wcgw.json",
+      "similarity": 0.667,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "comms"
+      ],
+      "stars": 14847,
+      "language": "Go",
+      "url": "https://github.com/googleapis/mcp-toolbox",
+      "detail_url": "/servers/googleapis__mcp-toolbox.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "comms"
+      ]
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web",
+        "ai",
+        "devtools"
+      ],
+      "stars": 31575,
+      "language": "TypeScript",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "detail_url": "/servers/microsoft__playwright-mcp.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 95,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity",
+        "comms",
+        "devtools"
+      ],
+      "stars": 5052,
+      "language": "Python",
+      "url": "https://github.com/sooperset/mcp-atlassian",
+      "detail_url": "/servers/sooperset__mcp-atlassian.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "comms",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database",
+        "devtools"
+      ],
+      "stars": 2649,
+      "language": "TypeScript",
+      "url": "https://github.com/supabase-community/supabase-mcp",
+      "detail_url": "/servers/supabase-community__supabase-mcp.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 33,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools",
+        "search"
+      ],
+      "stars": 948,
+      "language": "TypeScript",
+      "url": "https://github.com/brave/brave-search-mcp-server",
+      "detail_url": "/servers/brave__brave-search-mcp-server.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai",
+        "devtools"
+      ],
+      "stars": 401,
+      "language": "Python",
+      "url": "https://github.com/runekaagaard/mcp-alchemy",
+      "detail_url": "/servers/runekaagaard__mcp-alchemy.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "devtools"
+      ]
+    }
+  ]
+}

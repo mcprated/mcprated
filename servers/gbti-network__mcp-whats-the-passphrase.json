@@ -5,6 +5,15 @@
   "license": null,
   "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
   "pushed_at": "2025-02-22T01:21:56Z",
+  "kind": "server",
+  "subkind": "integration",
+  "kind_confidence": 0.55,
+  "kind_reason": "mcpServers config in README (default)",
+  "capabilities": [
+    "devtools"
+  ],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
   "composite": 42,
   "composite_raw": 42,
   "axes": {
@@ -118,6 +127,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-28T06:38:40+00:00"
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00"
 }

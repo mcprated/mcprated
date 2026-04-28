@@ -1,8 +1,31 @@
 {
-  "generated_at": "2026-04-28T06:38:40+00:00",
-  "rule_set_version": "1.0.0",
-  "count": 17,
+  "generated_at": "2026-04-28T13:30:07+00:00",
+  "rule_set_version": "1.1.0",
+  "taxonomy_version": "1.0",
+  "count": 26,
   "servers": [
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "stars": 8898,
+      "language": "Python",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "devtools",
+        "cloud",
+        "database"
+      ],
+      "distribution": "repo",
+      "hard_flags": []
+    },
     {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
@@ -13,8 +36,36 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 29304,
+      "stars": 29317,
       "language": "Go",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "distribution": "repo",
+      "hard_flags": []
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "stars": 14847,
+      "language": "Go",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "comms"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -27,8 +78,16 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 31534,
+      "stars": 31575,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web",
+        "ai",
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -41,8 +100,59 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 5047,
+      "stars": 5052,
       "language": "Python",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity",
+        "comms",
+        "devtools"
+      ],
+      "distribution": "repo",
+      "hard_flags": []
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "stars": 14544,
+      "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "distribution": "repo",
+      "hard_flags": []
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "stars": 23536,
+      "language": "Python",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -57,6 +167,56 @@
       },
       "stars": 2649,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database",
+        "devtools"
+      ],
+      "distribution": "repo",
+      "hard_flags": []
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "stars": 53970,
+      "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "distribution": "repo",
+      "hard_flags": []
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 88,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "stars": 26906,
+      "language": "JavaScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -69,8 +229,14 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 84667,
+      "stars": 84694,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -85,7 +251,60 @@
       },
       "stars": 1372,
       "language": "Python",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "distribution": "repo",
       "hard_flags": []
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "axes": {
+        "reliability": 86,
+        "documentation": 80,
+        "trust": 67,
+        "community": 80
+      },
+      "stars": 661,
+      "language": "Python",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "distribution": "repo",
+      "hard_flags": []
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 33,
+        "community": 80
+      },
+      "stars": 948,
+      "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools",
+        "search"
+      ],
+      "distribution": "repo",
+      "hard_flags": [
+        "empty_description"
+      ]
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -97,11 +316,35 @@
         "trust": 33,
         "community": 100
       },
-      "stars": 3665,
+      "stars": 3666,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "cloud"
+      ],
+      "distribution": "repo",
       "hard_flags": [
         "empty_description"
       ]
+    },
+    {
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "axes": {
+        "reliability": 29,
+        "documentation": 100,
+        "trust": 67,
+        "community": 80
+      },
+      "stars": 4348,
+      "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "distribution": "repo",
+      "hard_flags": []
     },
     {
       "repo": "dandeliongold/mcp-time",
@@ -115,6 +358,10 @@
       },
       "stars": 2,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "distribution": "repo",
       "hard_flags": [
         "empty_description"
       ]
@@ -129,8 +376,14 @@
         "trust": 33,
         "community": 60
       },
-      "stars": 743,
+      "stars": 744,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -143,8 +396,14 @@
         "trust": 33,
         "community": 20
       },
-      "stars": 5473,
+      "stars": 5475,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -159,6 +418,13 @@
       },
       "stars": 1,
       "language": "JavaScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "distribution": "repo",
       "hard_flags": [
         "empty_description"
       ]
@@ -175,6 +441,12 @@
       },
       "stars": 1,
       "language": "JavaScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -189,6 +461,14 @@
       },
       "stars": 401,
       "language": "Python",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai",
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -203,6 +483,12 @@
       },
       "stars": 0,
       "language": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -217,6 +503,12 @@
       },
       "stars": 0,
       "language": "Python",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -231,6 +523,10 @@
       },
       "stars": 0,
       "language": "TypeScript",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "distribution": "repo",
       "hard_flags": []
     },
     {
@@ -245,6 +541,10 @@
       },
       "stars": 0,
       "language": "Python",
+      "kind": "client",
+      "subkind": "",
+      "capabilities": [],
+      "distribution": "repo",
       "hard_flags": []
     }
   ]

@@ -1,0 +1,40 @@
+{
+  "repo": "gbti-network/mcp-whats-the-passphrase",
+  "slug": "gbti-network__mcp-whats-the-passphrase",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 42,
+  "axes": {
+    "reliability": 14,
+    "documentation": 80,
+    "trust": 33,
+    "community": 40
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "devtools"
+  ],
+  "license": null,
+  "stars": 1,
+  "pushed_at": "2025-02-22T01:21:56Z",
+  "language": "JavaScript",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": false,
+      "note": "no commercial-friendly license"
+    },
+    "has_security_policy": {
+      "passed": false,
+      "note": "no SECURITY.md, no security section"
+    },
+    "has_repo_topics": {
+      "passed": true,
+      "note": "5 topics: ['boilerplate', 'mcp', 'mcp-server', 'model-context-protocol', 'node-js']"
+    }
+  },
+  "verdict": "low_quality",
+  "url": "https://github.com/gbti-network/mcp-whats-the-passphrase",
+  "detail_url": "/servers/gbti-network__mcp-whats-the-passphrase.json"
+}

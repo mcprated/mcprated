@@ -1,0 +1,35 @@
+{
+  "for": "cloudflare/mcp-server-cloudflare",
+  "slug": "cloudflare__mcp-server-cloudflare",
+  "of_capabilities": [
+    "cloud"
+  ],
+  "alternatives": [
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "devtools",
+        "cloud",
+        "database"
+      ],
+      "stars": 8898,
+      "language": "Python",
+      "url": "https://github.com/awslabs/mcp",
+      "detail_url": "/servers/awslabs__mcp.json",
+      "similarity": 0.333,
+      "shared_capabilities": [
+        "cloud"
+      ]
+    }
+  ]
+}

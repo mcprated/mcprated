@@ -1,0 +1,268 @@
+{
+  "for": "googleapis/mcp-toolbox",
+  "slug": "googleapis__mcp-toolbox",
+  "of_capabilities": [
+    "database",
+    "ai",
+    "comms"
+  ],
+  "alternatives": [
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "devtools"
+      ],
+      "stars": 23536,
+      "language": "Python",
+      "url": "https://github.com/oraios/serena",
+      "detail_url": "/servers/oraios__serena.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "comms"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database",
+        "devtools"
+      ],
+      "stars": 2649,
+      "language": "TypeScript",
+      "url": "https://github.com/supabase-community/supabase-mcp",
+      "detail_url": "/servers/supabase-community__supabase-mcp.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "database"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 60
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1372,
+      "language": "Python",
+      "url": "https://github.com/qdrant/mcp-server-qdrant",
+      "detail_url": "/servers/qdrant__mcp-server-qdrant.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "database"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai",
+        "devtools"
+      ],
+      "stars": 401,
+      "language": "Python",
+      "url": "https://github.com/runekaagaard/mcp-alchemy",
+      "detail_url": "/servers/runekaagaard__mcp-alchemy.json",
+      "similarity": 0.5,
+      "shared_capabilities": [
+        "ai",
+        "database"
+      ]
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "axes": {
+        "reliability": 14,
+        "documentation": 40,
+        "trust": 33,
+        "community": 40
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "url": "https://github.com/nikolaypavlov/mcp-myip",
+      "detail_url": "/servers/nikolaypavlov__mcp-myip.json",
+      "similarity": 0.333,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 92,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "stars": 14544,
+      "language": "TypeScript",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "detail_url": "/servers/GLips__Figma-Context-MCP.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "comms"
+      ]
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 100,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 53970,
+      "language": "TypeScript",
+      "url": "https://github.com/upstash/context7",
+      "detail_url": "/servers/upstash__context7.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 88,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 67,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "stars": 26906,
+      "language": "JavaScript",
+      "url": "https://github.com/eyaltoledano/claude-task-master",
+      "detail_url": "/servers/eyaltoledano__claude-task-master.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "comms"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "axes": {
+        "reliability": 86,
+        "documentation": 80,
+        "trust": 67,
+        "community": 80
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "devtools"
+      ],
+      "stars": 661,
+      "language": "Python",
+      "url": "https://github.com/rusiaaman/wcgw",
+      "detail_url": "/servers/rusiaaman__wcgw.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 46,
+      "axes": {
+        "reliability": 29,
+        "documentation": 80,
+        "trust": 33,
+        "community": 40
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "url": "https://github.com/bsmi021/sticky-notes-server",
+      "detail_url": "/servers/bsmi021__sticky-notes-server.json",
+      "similarity": 0.25,
+      "shared_capabilities": [
+        "database"
+      ]
+    }
+  ]
+}

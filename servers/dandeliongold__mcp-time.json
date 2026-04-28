@@ -5,6 +5,13 @@
   "license": "MIT",
   "description": null,
   "pushed_at": "2025-03-02T23:00:34Z",
+  "kind": "server",
+  "subkind": "integration",
+  "kind_confidence": 0.95,
+  "kind_reason": "server-run pattern in source (default)",
+  "capabilities": [],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
   "composite": 50,
   "composite_raw": 50,
   "axes": {
@@ -123,6 +130,6 @@
       "msg": "Repo has no description"
     }
   ],
-  "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-28T06:38:40+00:00"
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00"
 }

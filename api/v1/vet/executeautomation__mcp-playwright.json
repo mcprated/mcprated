@@ -1,0 +1,40 @@
+{
+  "repo": "executeautomation/mcp-playwright",
+  "slug": "executeautomation__mcp-playwright",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 49,
+  "axes": {
+    "reliability": 43,
+    "documentation": 100,
+    "trust": 33,
+    "community": 20
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "web"
+  ],
+  "license": "MIT",
+  "stars": 5475,
+  "pushed_at": "2025-12-13T04:28:38Z",
+  "language": "TypeScript",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "SPDX=MIT"
+    },
+    "has_security_policy": {
+      "passed": false,
+      "note": "no SECURITY.md, no security section"
+    },
+    "has_repo_topics": {
+      "passed": false,
+      "note": "0 topics: []"
+    }
+  },
+  "verdict": "low_quality",
+  "url": "https://github.com/executeautomation/mcp-playwright",
+  "detail_url": "/servers/executeautomation__mcp-playwright.json"
+}

@@ -1,0 +1,31 @@
+{
+  "capability": "productivity",
+  "rule_set_version": "1.1.0",
+  "taxonomy_version": "1.0",
+  "generated_at": "2026-04-28T13:30:07+00:00",
+  "count": 1,
+  "servers": [
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 95,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 100,
+        "community": 100
+      },
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity",
+        "comms",
+        "devtools"
+      ],
+      "stars": 5052,
+      "language": "Python",
+      "url": "https://github.com/sooperset/mcp-atlassian",
+      "detail_url": "/servers/sooperset__mcp-atlassian.json"
+    }
+  ]
+}

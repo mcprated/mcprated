@@ -1,0 +1,42 @@
+{
+  "repo": "qdrant/mcp-server-qdrant",
+  "slug": "qdrant__mcp-server-qdrant",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T13:30:07+00:00",
+  "composite": 82,
+  "axes": {
+    "reliability": 100,
+    "documentation": 100,
+    "trust": 67,
+    "community": 60
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "search",
+    "ai",
+    "database"
+  ],
+  "license": "Apache-2.0",
+  "stars": 1372,
+  "pushed_at": "2026-04-27T12:25:02Z",
+  "language": "Python",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "SPDX=Apache-2.0"
+    },
+    "has_security_policy": {
+      "passed": false,
+      "note": "no SECURITY.md, no security section"
+    },
+    "has_repo_topics": {
+      "passed": true,
+      "note": "7 topics: ['claude', 'cursor', 'llm', 'mcp', 'mcp-server']"
+    }
+  },
+  "verdict": "caution",
+  "url": "https://github.com/qdrant/mcp-server-qdrant",
+  "detail_url": "/servers/qdrant__mcp-server-qdrant.json"
+}
