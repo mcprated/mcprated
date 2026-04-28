@@ -13,13 +13,12 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 53978,
+      "stars": 53979,
       "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.48,
+      "similarity": 1.0,
+      "score": 0.959,
       "shared_capabilities": [
         "ai"
       ]
@@ -32,13 +31,88 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 661,
       "language": "Python",
+      "similarity": 1.0,
+      "score": 0.883,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 100,
+      "description": "Playwright MCP server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web",
+        "ai"
+      ],
+      "stars": 31596,
+      "language": "TypeScript",
       "similarity": 0.5,
-      "score": 0.442,
+      "score": 0.5,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 23539,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.48,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2651,
+      "language": "TypeScript",
+      "similarity": 0.5,
+      "score": 0.48,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 949,
+      "language": "TypeScript",
+      "similarity": 0.5,
+      "score": 0.427,
       "shared_capabilities": [
         "ai"
       ]
@@ -53,9 +127,9 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.333,
@@ -64,61 +138,20 @@
       ]
     },
     {
-      "repo": "microsoft/playwright-mcp",
-      "slug": "microsoft__playwright-mcp",
-      "composite": 100,
-      "description": "Playwright MCP server",
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "web",
-        "ai",
-        "devtools"
-      ],
-      "stars": 31593,
-      "language": "TypeScript",
-      "similarity": 0.333,
-      "score": 0.333,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 92,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "comms",
-        "devtools"
-      ],
-      "stars": 23538,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.32,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 92,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
         "database",
-        "devtools"
+        "ai"
       ],
-      "stars": 2650,
-      "language": "TypeScript",
-      "similarity": 0.333,
-      "score": 0.32,
+      "stars": 401,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.324,
       "shared_capabilities": [
         "ai"
       ]
@@ -139,46 +172,6 @@
       "language": "Python",
       "similarity": 0.333,
       "score": 0.302,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "brave/brave-search-mcp-server",
-      "slug": "brave__brave-search-mcp-server",
-      "composite": 73,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "devtools",
-        "search"
-      ],
-      "stars": 949,
-      "language": "TypeScript",
-      "similarity": 0.333,
-      "score": 0.285,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai",
-        "devtools"
-      ],
-      "stars": 401,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.216,
       "shared_capabilities": [
         "ai"
       ]

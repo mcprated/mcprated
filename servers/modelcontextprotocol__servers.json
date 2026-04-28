@@ -9,9 +9,7 @@
   "subkind": "agent-product",
   "kind_confidence": 1.0,
   "kind_reason": "known multi-server suite repo",
-  "capabilities": [
-    "devtools"
-  ],
+  "capabilities": [],
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "composite": 87,
@@ -128,5 +126,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:47:17+00:00"
+  "scored_at": "2026-04-28T14:57:26+00:00"
 }

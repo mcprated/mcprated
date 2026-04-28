@@ -2,7 +2,7 @@
   "repo": "zcaceres/fetch-mcp",
   "slug": "zcaceres__fetch-mcp",
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:47:17+00:00",
+  "scored_at": "2026-04-28T14:57:26+00:00",
   "composite": 50,
   "axes": {
     "reliability": 29,
@@ -12,9 +12,7 @@
   },
   "kind": "server",
   "subkind": "integration",
-  "capabilities": [
-    "devtools"
-  ],
+  "capabilities": [],
   "license": "MIT",
   "stars": 744,
   "pushed_at": "2026-03-12T17:17:24Z",

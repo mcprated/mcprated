@@ -7,6 +7,27 @@
   ],
   "alternatives": [
     {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "search"
+      ],
+      "stars": 14849,
+      "language": "Go",
+      "similarity": 0.667,
+      "score": 0.667,
+      "shared_capabilities": [
+        "database",
+        "search"
+      ]
+    },
+    {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
       "composite": 82,
@@ -28,43 +49,22 @@
       ]
     },
     {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 100,
-      "description": "Official MCP Servers for AWS",
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
-      "subkind": "agent-product",
+      "subkind": "integration",
       "capabilities": [
-        "devtools",
-        "cloud",
-        "database"
-      ],
-      "stars": 8899,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.25,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "googleapis/mcp-toolbox",
-      "slug": "googleapis__mcp-toolbox",
-      "composite": 100,
-      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
-      "language": "Go",
-      "similarity": 0.25,
-      "score": 0.25,
+      "stars": 23539,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.32,
       "shared_capabilities": [
-        "database"
+        "search"
       ]
     },
     {
@@ -76,13 +76,12 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript",
-      "similarity": 0.25,
-      "score": 0.24,
+      "similarity": 0.333,
+      "score": 0.32,
       "shared_capabilities": [
         "database"
       ]
@@ -96,15 +95,34 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "stars": 949,
       "language": "TypeScript",
-      "similarity": 0.25,
-      "score": 0.214,
+      "similarity": 0.333,
+      "score": 0.285,
       "shared_capabilities": [
         "search"
+      ]
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "description": "Official MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "cloud",
+        "database",
+        "devtools"
+      ],
+      "stars": 8899,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.25,
+      "shared_capabilities": [
+        "database"
       ]
     },
     {
@@ -116,13 +134,12 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python",
-      "similarity": 0.25,
-      "score": 0.162,
+      "similarity": 0.333,
+      "score": 0.216,
       "shared_capabilities": [
         "database"
       ]

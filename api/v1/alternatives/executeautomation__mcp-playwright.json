@@ -14,13 +14,12 @@
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript",
-      "similarity": 0.333,
-      "score": 0.333,
+      "similarity": 0.5,
+      "score": 0.5,
       "shared_capabilities": [
         "web"
       ]

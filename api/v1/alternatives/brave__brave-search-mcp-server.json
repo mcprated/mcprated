@@ -3,71 +3,9 @@
   "slug": "brave__brave-search-mcp-server",
   "of_capabilities": [
     "ai",
-    "devtools",
     "search"
   ],
   "alternatives": [
-    {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 92,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "devtools"
-      ],
-      "stars": 53978,
-      "language": "TypeScript",
-      "similarity": 0.667,
-      "score": 0.639,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "rusiaaman/wcgw",
-      "slug": "rusiaaman__wcgw",
-      "composite": 78,
-      "description": "Shell and coding agent on mcp clients",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "devtools"
-      ],
-      "stars": 661,
-      "language": "Python",
-      "similarity": 0.667,
-      "score": 0.589,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "microsoft/playwright-mcp",
-      "slug": "microsoft__playwright-mcp",
-      "composite": 100,
-      "description": "Playwright MCP server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "web",
-        "ai",
-        "devtools"
-      ],
-      "stars": 31593,
-      "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.5,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
@@ -77,37 +15,36 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python",
-      "similarity": 0.5,
-      "score": 0.48,
+      "similarity": 1.0,
+      "score": 0.959,
       "shared_capabilities": [
         "ai",
-        "devtools"
+        "search"
       ]
     },
     {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 92,
-      "description": "Connect Supabase to your AI assistants",
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
-      "subkind": "integration",
+      "subkind": "agent-product",
       "capabilities": [
-        "ai",
         "database",
-        "devtools"
+        "ai",
+        "search"
       ],
-      "stars": 2650,
-      "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.48,
+      "stars": 14849,
+      "language": "Go",
+      "similarity": 0.667,
+      "score": 0.667,
       "shared_capabilities": [
         "ai",
-        "devtools"
+        "search"
       ]
     },
     {
@@ -124,29 +61,122 @@
       ],
       "stars": 1372,
       "language": "Python",
-      "similarity": 0.5,
-      "score": 0.453,
+      "similarity": 0.667,
+      "score": 0.604,
       "shared_capabilities": [
         "ai",
         "search"
       ]
     },
     {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 100,
-      "description": "GitHub's official MCP Server",
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "devtools"
+        "ai"
       ],
-      "stars": 29320,
-      "language": "Go",
+      "stars": 53979,
+      "language": "TypeScript",
+      "similarity": 0.5,
+      "score": 0.48,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "description": "Shell and coding agent on mcp clients",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 661,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.442,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 100,
+      "description": "Playwright MCP server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web",
+        "ai"
+      ],
+      "stars": 31596,
+      "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.333,
       "shared_capabilities": [
-        "devtools"
+        "ai"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2651,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.32,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.283,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 46,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.226,
+      "shared_capabilities": [
+        "search"
       ]
     },
     {
@@ -158,53 +188,14 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python",
-      "similarity": 0.5,
-      "score": 0.324,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 87,
-      "description": "Model Context Protocol Servers",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 84698,
-      "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.311,
+      "score": 0.216,
       "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 95,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity",
-        "devtools"
-      ],
-      "stars": 5052,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.244,
-      "shared_capabilities": [
-        "devtools"
+        "ai"
       ]
     }
   ]

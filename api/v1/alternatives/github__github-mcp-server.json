@@ -6,42 +6,6 @@
   ],
   "alternatives": [
     {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 87,
-      "description": "Model Context Protocol Servers",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 84698,
-      "language": "TypeScript",
-      "similarity": 1.0,
-      "score": 0.933,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 50,
-      "description": "A flexible HTTP fetching Model Context Protocol server.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 744,
-      "language": "TypeScript",
-      "similarity": 1.0,
-      "score": 0.707,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
       "composite": 42,
@@ -78,101 +42,6 @@
       ]
     },
     {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 95,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity",
-        "devtools"
-      ],
-      "stars": 5052,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.487,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 92,
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 14546,
-      "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.48,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 92,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "devtools"
-      ],
-      "stars": 53978,
-      "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.48,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 88,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 26907,
-      "language": "JavaScript",
-      "similarity": 0.5,
-      "score": 0.469,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "rusiaaman/wcgw",
-      "slug": "rusiaaman__wcgw",
-      "composite": 78,
-      "description": "Shell and coding agent on mcp clients",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "devtools"
-      ],
-      "stars": 661,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.442,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
       "composite": 100,
@@ -180,9 +49,9 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools",
         "cloud",
-        "database"
+        "database",
+        "devtools"
       ],
       "stars": 8899,
       "language": "Python",

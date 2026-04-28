@@ -2,7 +2,7 @@
   "capability": "database",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T14:47:17+00:00",
+  "generated_at": "2026-04-28T14:57:26+00:00",
   "count": 6,
   "servers": [
     {
@@ -13,9 +13,9 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools",
         "cloud",
-        "database"
+        "database",
+        "devtools"
       ],
       "stars": 8899,
       "language": "Python"
@@ -30,9 +30,9 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go"
     },
     {
@@ -44,10 +44,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript"
     },
     {
@@ -88,8 +87,7 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python"

@@ -2,7 +2,7 @@
   "repo": "rusiaaman/wcgw",
   "slug": "rusiaaman__wcgw",
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:47:17+00:00",
+  "scored_at": "2026-04-28T14:57:26+00:00",
   "composite": 78,
   "axes": {
     "reliability": 86,
@@ -13,8 +13,7 @@
   "kind": "server",
   "subkind": "integration",
   "capabilities": [
-    "ai",
-    "devtools"
+    "ai"
   ],
   "license": "Apache-2.0",
   "stars": 661,

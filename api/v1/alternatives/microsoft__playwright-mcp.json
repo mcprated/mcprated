@@ -3,8 +3,7 @@
   "slug": "microsoft__playwright-mcp",
   "of_capabilities": [
     "web",
-    "ai",
-    "devtools"
+    "ai"
   ],
   "alternatives": [
     {
@@ -15,16 +14,14 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 53978,
+      "stars": 53979,
       "language": "TypeScript",
-      "similarity": 0.667,
-      "score": 0.639,
+      "similarity": 0.5,
+      "score": 0.48,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -35,16 +32,32 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 661,
       "language": "Python",
-      "similarity": 0.667,
-      "score": 0.589,
+      "similarity": 0.5,
+      "score": 0.442,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
+      ]
+    },
+    {
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 49,
+      "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "stars": 5475,
+      "language": "TypeScript",
+      "similarity": 0.5,
+      "score": 0.35,
+      "shared_capabilities": [
+        "web"
       ]
     },
     {
@@ -56,16 +69,14 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python",
-      "similarity": 0.5,
-      "score": 0.48,
+      "similarity": 0.333,
+      "score": 0.32,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -77,16 +88,14 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.48,
+      "similarity": 0.333,
+      "score": 0.32,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -98,34 +107,72 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "stars": 949,
       "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.427,
+      "similarity": 0.333,
+      "score": 0.285,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 100,
-      "description": "GitHub's official MCP Server",
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "devtools"
+        "ai"
       ],
-      "stars": 29320,
-      "language": "Go",
-      "similarity": 0.333,
-      "score": 0.333,
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.283,
       "shared_capabilities": [
-        "devtools"
+        "ai"
+      ]
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "search"
+      ],
+      "stars": 14849,
+      "language": "Go",
+      "similarity": 0.25,
+      "score": 0.25,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1372,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.226,
+      "shared_capabilities": [
+        "ai"
       ]
     },
     {
@@ -137,72 +184,14 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python",
-      "similarity": 0.5,
-      "score": 0.324,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 87,
-      "description": "Model Context Protocol Servers",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 84698,
-      "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.311,
+      "score": 0.216,
       "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 95,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity",
-        "devtools"
-      ],
-      "stars": 5052,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.244,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 92,
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 14546,
-      "language": "TypeScript",
-      "similarity": 0.25,
-      "score": 0.24,
-      "shared_capabilities": [
-        "devtools"
+        "ai"
       ]
     }
   ]

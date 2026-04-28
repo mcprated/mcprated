@@ -3,88 +3,27 @@
   "slug": "oraios__serena",
   "of_capabilities": [
     "ai",
-    "comms",
-    "devtools"
+    "search"
   ],
   "alternatives": [
     {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 92,
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "comms",
-        "devtools"
+        "ai",
+        "search"
       ],
-      "stars": 14546,
+      "stars": 949,
       "language": "TypeScript",
-      "similarity": 0.667,
-      "score": 0.639,
-      "shared_capabilities": [
-        "comms",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 92,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "devtools"
-      ],
-      "stars": 53978,
-      "language": "TypeScript",
-      "similarity": 0.667,
-      "score": 0.639,
+      "similarity": 1.0,
+      "score": 0.854,
       "shared_capabilities": [
         "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 88,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 26907,
-      "language": "JavaScript",
-      "similarity": 0.667,
-      "score": 0.625,
-      "shared_capabilities": [
-        "comms",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "rusiaaman/wcgw",
-      "slug": "rusiaaman__wcgw",
-      "composite": 78,
-      "description": "Shell and coding agent on mcp clients",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "devtools"
-      ],
-      "stars": 661,
-      "language": "Python",
-      "similarity": 0.667,
-      "score": 0.589,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
+        "search"
       ]
     },
     {
@@ -97,15 +36,72 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go",
-      "similarity": 0.5,
-      "score": 0.5,
+      "similarity": 0.667,
+      "score": 0.667,
       "shared_capabilities": [
         "ai",
-        "comms"
+        "search"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1372,
+      "language": "Python",
+      "similarity": 0.667,
+      "score": 0.604,
+      "shared_capabilities": [
+        "ai",
+        "search"
+      ]
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 53979,
+      "language": "TypeScript",
+      "similarity": 0.5,
+      "score": 0.48,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "description": "Shell and coding agent on mcp clients",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 661,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.442,
+      "shared_capabilities": [
+        "ai"
       ]
     },
     {
@@ -117,16 +113,14 @@
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.5,
+      "similarity": 0.333,
+      "score": 0.333,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -138,55 +132,51 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.48,
+      "similarity": 0.333,
+      "score": 0.32,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
-      "repo": "brave/brave-search-mcp-server",
-      "slug": "brave__brave-search-mcp-server",
-      "composite": 73,
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.283,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 46,
       "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools",
+        "database",
         "search"
       ],
-      "stars": 949,
-      "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.427,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 100,
-      "description": "GitHub's official MCP Server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 29320,
-      "language": "Go",
+      "stars": 1,
+      "language": "JavaScript",
       "similarity": 0.333,
-      "score": 0.333,
+      "score": 0.226,
       "shared_capabilities": [
-        "devtools"
+        "search"
       ]
     },
     {
@@ -198,16 +188,14 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python",
-      "similarity": 0.5,
-      "score": 0.324,
+      "similarity": 0.333,
+      "score": 0.216,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     }
   ]

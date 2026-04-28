@@ -13,9 +13,9 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools",
         "cloud",
-        "database"
+        "database",
+        "devtools"
       ],
       "stars": 8899,
       "language": "Python",

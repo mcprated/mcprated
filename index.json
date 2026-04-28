@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T14:47:17+00:00",
+  "generated_at": "2026-04-28T14:57:26+00:00",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
   "count": 26,
@@ -20,9 +20,9 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools",
         "cloud",
-        "database"
+        "database",
+        "devtools"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -58,7 +58,7 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -66,7 +66,7 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -81,15 +81,14 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -104,14 +103,13 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 5052,
+      "stars": 5053,
       "language": "Python",
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "productivity",
-        "devtools"
+        "productivity"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -126,15 +124,12 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 14546,
+      "stars": 14547,
       "language": "TypeScript",
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
+      "capabilities": [],
       "distribution": "repo",
       "hard_flags": []
     },
@@ -148,15 +143,14 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python",
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -171,15 +165,14 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -194,14 +187,13 @@
         "trust": 100,
         "community": 80
       },
-      "stars": 53978,
+      "stars": 53979,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -216,15 +208,12 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 26907,
+      "stars": 26908,
       "language": "JavaScript",
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
+      "capabilities": [],
       "distribution": "repo",
       "hard_flags": []
     },
@@ -243,9 +232,7 @@
       "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "distribution": "repo",
       "hard_flags": []
     },
@@ -288,8 +275,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "distribution": "repo",
       "hard_flags": []
@@ -311,7 +297,6 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "distribution": "repo",
@@ -397,9 +382,7 @@
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "distribution": "repo",
       "hard_flags": []
     },
@@ -486,8 +469,7 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "distribution": "repo",
       "hard_flags": []

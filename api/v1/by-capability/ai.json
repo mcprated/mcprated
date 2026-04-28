@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T14:47:17+00:00",
+  "generated_at": "2026-04-28T14:57:26+00:00",
   "count": 10,
   "servers": [
     {
@@ -15,9 +15,9 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go"
     },
     {
@@ -29,10 +29,9 @@
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript"
     },
     {
@@ -44,10 +43,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python"
     },
     {
@@ -59,10 +57,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript"
     },
     {
@@ -73,10 +70,9 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 53978,
+      "stars": 53979,
       "language": "TypeScript"
     },
     {
@@ -102,8 +98,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 661,
       "language": "Python"
@@ -117,7 +112,6 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "stars": 949,
@@ -132,8 +126,7 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python"

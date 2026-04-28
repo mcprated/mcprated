@@ -2,9 +2,42 @@
   "capability": "unknown",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T14:47:17+00:00",
-  "count": 4,
+  "generated_at": "2026-04-28T14:57:26+00:00",
+  "count": 8,
   "servers": [
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 92,
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 14547,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 88,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 26908,
+      "language": "JavaScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "description": "Model Context Protocol Servers",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "stars": 84698,
+      "language": "TypeScript"
+    },
     {
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
@@ -25,6 +58,17 @@
       "subkind": "integration",
       "capabilities": [],
       "stars": 2,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 50,
+      "description": "A flexible HTTP fetching Model Context Protocol server.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 744,
       "language": "TypeScript"
     },
     {

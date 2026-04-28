@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.1.0",
-  "generated_at": "2026-04-28T14:47:17+00:00",
+  "generated_at": "2026-04-28T14:57:26+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -10,9 +10,9 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools",
         "cloud",
-        "database"
+        "database",
+        "devtools"
       ],
       "stars": 8899,
       "language": "Python"
@@ -40,9 +40,9 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go"
     },
     {
@@ -54,10 +54,9 @@
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript"
     },
     {
@@ -68,10 +67,9 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "productivity",
-        "devtools"
+        "productivity"
       ],
-      "stars": 5052,
+      "stars": 5053,
       "language": "Python"
     },
     {
@@ -81,11 +79,8 @@
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 14546,
+      "capabilities": [],
+      "stars": 14547,
       "language": "TypeScript"
     },
     {
@@ -97,10 +92,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python"
     },
     {
@@ -112,10 +106,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript"
     },
     {
@@ -126,10 +119,9 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 53978,
+      "stars": 53979,
       "language": "TypeScript"
     },
     {
@@ -139,11 +131,8 @@
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 26907,
+      "capabilities": [],
+      "stars": 26908,
       "language": "JavaScript"
     },
     {
@@ -153,9 +142,7 @@
       "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "stars": 84698,
       "language": "TypeScript"
     },
@@ -182,8 +169,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 661,
       "language": "Python"
@@ -197,7 +183,6 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "stars": 949,
@@ -245,9 +230,7 @@
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "stars": 744,
       "language": "TypeScript"
     },
@@ -300,8 +283,7 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python"
@@ -352,9 +334,7 @@
       "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "stars": 84698,
       "language": "TypeScript"
     },
@@ -366,10 +346,9 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 53978,
+      "stars": 53979,
       "language": "TypeScript"
     },
     {
@@ -381,10 +360,9 @@
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript"
     },
     {
@@ -407,11 +385,8 @@
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 26907,
+      "capabilities": [],
+      "stars": 26908,
       "language": "JavaScript"
     },
     {
@@ -423,10 +398,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python"
     },
     {
@@ -439,9 +413,9 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go"
     },
     {
@@ -451,11 +425,8 @@
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 14546,
+      "capabilities": [],
+      "stars": 14547,
       "language": "TypeScript"
     },
     {
@@ -466,9 +437,9 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools",
         "cloud",
-        "database"
+        "database",
+        "devtools"
       ],
       "stars": 8899,
       "language": "Python"
@@ -494,10 +465,9 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "productivity",
-        "devtools"
+        "productivity"
       ],
-      "stars": 5052,
+      "stars": 5053,
       "language": "Python"
     },
     {
@@ -533,10 +503,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript"
     },
     {
@@ -563,7 +532,6 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "stars": 949,
@@ -576,9 +544,7 @@
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "stars": 744,
       "language": "TypeScript"
     },
@@ -590,8 +556,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 661,
       "language": "Python"
@@ -605,8 +570,7 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python"
@@ -698,9 +662,9 @@
       "capabilities": [
         "database",
         "ai",
-        "comms"
+        "search"
       ],
-      "stars": 14848,
+      "stars": 14849,
       "language": "Go"
     },
     {
@@ -711,10 +675,9 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 53978,
+      "stars": 53979,
       "language": "TypeScript"
     },
     {
@@ -724,11 +687,8 @@
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 26907,
+      "capabilities": [],
+      "stars": 26908,
       "language": "JavaScript"
     },
     {
@@ -739,9 +699,9 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools",
         "cloud",
-        "database"
+        "database",
+        "devtools"
       ],
       "stars": 8899,
       "language": "Python"
@@ -766,10 +726,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python"
     },
     {
@@ -781,10 +740,9 @@
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript"
     },
     {
@@ -824,7 +782,6 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "stars": 949,
@@ -837,11 +794,8 @@
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 14546,
+      "capabilities": [],
+      "stars": 14547,
       "language": "TypeScript"
     },
     {
@@ -866,10 +820,9 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript"
     },
     {
@@ -879,9 +832,7 @@
       "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "stars": 84698,
       "language": "TypeScript"
     },
@@ -893,10 +844,9 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "productivity",
-        "devtools"
+        "productivity"
       ],
-      "stars": 5052,
+      "stars": 5053,
       "language": "Python"
     },
     {
@@ -907,8 +857,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 661,
       "language": "Python"
@@ -920,9 +869,7 @@
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
+      "capabilities": [],
       "stars": 744,
       "language": "TypeScript"
     },
@@ -948,8 +895,7 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python"

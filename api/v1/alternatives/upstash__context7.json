@@ -2,8 +2,7 @@
   "for": "upstash/context7",
   "slug": "upstash__context7",
   "of_capabilities": [
-    "ai",
-    "devtools"
+    "ai"
   ],
   "alternatives": [
     {
@@ -14,16 +13,32 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 661,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.883,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
+      ]
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 1.0,
+      "score": 0.566,
+      "shared_capabilities": [
+        "ai"
       ]
     },
     {
@@ -35,16 +50,14 @@
       "subkind": "integration",
       "capabilities": [
         "web",
-        "ai",
-        "devtools"
+        "ai"
       ],
-      "stars": 31593,
+      "stars": 31596,
       "language": "TypeScript",
-      "similarity": 0.667,
-      "score": 0.667,
+      "similarity": 0.5,
+      "score": 0.5,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -56,16 +69,14 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "comms",
-        "devtools"
+        "search"
       ],
-      "stars": 23538,
+      "stars": 23539,
       "language": "Python",
-      "similarity": 0.667,
-      "score": 0.639,
+      "similarity": 0.5,
+      "score": 0.48,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -77,16 +88,14 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "database",
-        "devtools"
+        "database"
       ],
-      "stars": 2650,
+      "stars": 2651,
       "language": "TypeScript",
-      "similarity": 0.667,
-      "score": 0.639,
+      "similarity": 0.5,
+      "score": 0.48,
       "shared_capabilities": [
-        "ai",
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -98,52 +107,34 @@
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "devtools",
         "search"
       ],
       "stars": 949,
       "language": "TypeScript",
-      "similarity": 0.667,
-      "score": 0.57,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 100,
-      "description": "GitHub's official MCP Server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 29320,
-      "language": "Go",
       "similarity": 0.5,
-      "score": 0.5,
+      "score": 0.427,
       "shared_capabilities": [
-        "devtools"
+        "ai"
       ]
     },
     {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 87,
-      "description": "Model Context Protocol Servers",
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
-        "devtools"
+        "database",
+        "ai",
+        "search"
       ],
-      "stars": 84698,
-      "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.466,
+      "stars": 14849,
+      "language": "Go",
+      "similarity": 0.333,
+      "score": 0.333,
       "shared_capabilities": [
-        "devtools"
+        "ai"
       ]
     },
     {
@@ -155,53 +146,34 @@
       "subkind": "integration",
       "capabilities": [
         "database",
-        "ai",
-        "devtools"
+        "ai"
       ],
       "stars": 401,
       "language": "Python",
-      "similarity": 0.667,
-      "score": 0.432,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 50,
-      "description": "A flexible HTTP fetching Model Context Protocol server.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 744,
-      "language": "TypeScript",
       "similarity": 0.5,
-      "score": 0.354,
+      "score": 0.324,
       "shared_capabilities": [
-        "devtools"
+        "ai"
       ]
     },
     {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 95,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "productivity",
-        "devtools"
+        "search",
+        "ai",
+        "database"
       ],
-      "stars": 5052,
+      "stars": 1372,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.325,
+      "score": 0.302,
       "shared_capabilities": [
-        "devtools"
+        "ai"
       ]
     }
   ]
