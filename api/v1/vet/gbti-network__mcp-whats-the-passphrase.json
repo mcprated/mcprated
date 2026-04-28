@@ -2,7 +2,7 @@
   "repo": "gbti-network/mcp-whats-the-passphrase",
   "slug": "gbti-network__mcp-whats-the-passphrase",
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:57:26+00:00",
+  "scored_at": "2026-04-28T17:51:09+00:00",
   "composite": 42,
   "axes": {
     "reliability": 14,

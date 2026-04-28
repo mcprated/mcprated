@@ -2,7 +2,7 @@
   "version": "1.0",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T14:57:26+00:00",
+  "generated_at": "2026-04-28T17:51:09+00:00",
   "base_url": "https://mcprated.github.io/mcprated",
   "description": "Agent-readable index of MCP servers. Static JSON, no auth, daily refresh. Each endpoint answers one question; agents should fetch the relevant shard rather than the full index.json.",
   "enums": {
@@ -101,6 +101,19 @@
       "description": "Full lint output for one server: every signal, every reason, every flag."
     },
     {
+      "name": "tools_index",
+      "url": "/api/v1/tools-index.json",
+      "description": "Flat list of every extracted tool across every server. Use to find a tool by name when you don't know which server exposes it."
+    },
+    {
+      "name": "tools_detail",
+      "url_template": "/tools/{slug}.json",
+      "params": {
+        "slug": "<owner>__<repo>"
+      },
+      "description": "Full extracted tool inventory for one server (names, descriptions, input keys)."
+    },
+    {
       "name": "index",
       "url": "/index.json",
       "description": "The full catalog as one document. Use shards for targeted queries."
@@ -150,7 +163,7 @@
     },
     {
       "name": "search",
-      "description": "Free-text search when 'find_server' enum doesn't fit. Matches repo name + description + capabilities, ranked by relevance × quality.",
+      "description": "Free-text search when 'find_server' enum doesn't fit. Matches repo name + description + capabilities + extracted tool names, ranked by relevance × quality.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -167,6 +180,29 @@
         },
         "required": [
           "query"
+        ]
+      }
+    },
+    {
+      "name": "find_tool",
+      "description": "Find a specific MCP tool by name or intent. Searches the flat tools-index across every server. Use this when the agent needs a specific capability at the tool level (e.g., 'browser_navigate', 'read_file', 'send_message') rather than choosing a whole server.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "intent": {
+            "type": "string",
+            "minLength": 2,
+            "description": "Tool name or natural-language intent."
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 25
+          }
+        },
+        "required": [
+          "intent"
         ]
       }
     },

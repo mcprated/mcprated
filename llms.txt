@@ -2,12 +2,27 @@
 
 > Agent-readable index of every MCP server. Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. We catalog runnable artifacts that implement Model Context Protocol; we do not catalog frameworks for building MCP servers, MCP clients/inspectors, or end-user apps that consume MCP without exposing it.
 
+## Use as MCP server (recommended for agents)
+
+Endpoint: `https://mcp.mcprated.workers.dev` (streamable HTTP)
+
+Install in your MCP client:
+```
+# Claude Code / Claude Desktop
+claude mcp add --transport http mcprated https://mcp.mcprated.workers.dev
+
+# Cursor / Cline / Continue — paste into mcp config
+{"mcpServers": {"mcprated": {"url": "https://mcp.mcprated.workers.dev"}}}
+```
+
+8 tools: `find_server`, `search`, `find_tool`, `vet`, `alternatives`, `by_kind`, `top`, `server_detail`. Live tool schemas at https://mcprated.github.io/mcprated/api/v1/manifest.json.
+
 ## Stats
 
 - Servers rated: 26
 - Rule set: v1.1.0
 - Taxonomy: v1.0
-- Last update: 2026-04-28T14:57:26+00:00
+- Last update: 2026-04-28T17:51:09+00:00
 
 ## API (static JSON, public, free, no auth)
 

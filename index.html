@@ -192,7 +192,15 @@
 <header>
   <span class="brand">mcprated</span>
   <h1>Agent-readable index of<br>every MCP server.</h1>
-  <p class="tagline">Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. Trust scores today; capability index and <code>@mcprated/mcp-server</code> next.</p>
+  <p class="tagline">Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. Live MCP endpoint + static JSON catalog. Eight agent-shaped tools.</p>
+
+  <div class="agent-block" style="margin-top:2rem;">
+    <pre><code># Claude Code / Claude Desktop — one line</code>
+claude mcp add --transport http mcprated https://mcp.mcprated.workers.dev
+
+<code># Cursor / Cline / Continue — paste into config</code>
+{"mcpServers": {"mcprated": {"url": "https://mcp.mcprated.workers.dev"}}}</pre>
+  </div>
 
   <div class="stats">
     <div class="stat">
@@ -268,7 +276,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">Python · ★8,899</td>
+          <td class="meta">Python · ★8,900</td>
         </tr>
         <tr>
           <td class="rank">2</td>
@@ -281,7 +289,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">Go · ★29,320</td>
+          <td class="meta">Go · ★29,323</td>
         </tr>
         <tr>
           <td class="rank">3</td>
@@ -294,7 +302,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">Go · ★14,849</td>
+          <td class="meta">Go · ★14,851</td>
         </tr>
         <tr>
           <td class="rank">4</td>
@@ -307,7 +315,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">TypeScript · ★31,596</td>
+          <td class="meta">TypeScript · ★31,625</td>
         </tr>
         <tr>
           <td class="rank">5</td>
@@ -333,7 +341,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-ok">67</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">TypeScript · ★14,547</td>
+          <td class="meta">TypeScript · ★14,550</td>
         </tr>
         <tr>
           <td class="rank">7</td>
@@ -346,7 +354,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-ok">67</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">Python · ★23,539</td>
+          <td class="meta">Python · ★23,541</td>
         </tr>
         <tr>
           <td class="rank">8</td>
@@ -359,7 +367,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-ok">67</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">TypeScript · ★2,651</td>
+          <td class="meta">TypeScript · ★2,652</td>
         </tr>
         <tr>
           <td class="rank">9</td>
@@ -372,7 +380,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-good">100</td>
           <td class="axis axis-ok">80</td>
-          <td class="meta">TypeScript · ★53,979</td>
+          <td class="meta">TypeScript · ★53,995</td>
         </tr>
         <tr>
           <td class="rank">10</td>
@@ -385,7 +393,7 @@
           <td class="axis axis-good">100</td>
           <td class="axis axis-ok">67</td>
           <td class="axis axis-good">100</td>
-          <td class="meta">JavaScript · ★26,908</td>
+          <td class="meta">JavaScript · ★26,914</td>
         </tr>
     </tbody>
   </table>
@@ -497,7 +505,7 @@ GET https://github.com/mcprated/mcprated/releases</pre>
 </section>
 
 <footer>
-  <div>Generated 2026-04-28T14:57:26+00:00 · rule_set v1.1.0 · 26 servers</div>
+  <div>Generated 2026-04-28T17:51:09+00:00 · rule_set v1.1.0 · 26 servers</div>
   <div style="margin-top:0.5rem;">Code MIT · Data CC-BY-4.0 · <a href="https://github.com/mcprated/mcprated">github.com/mcprated/mcprated</a></div>
 </footer>
 

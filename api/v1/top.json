@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.1.0",
-  "generated_at": "2026-04-28T14:57:26+00:00",
+  "generated_at": "2026-04-28T17:51:09+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -14,7 +14,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8899,
+      "stars": 8900,
       "language": "Python"
     },
     {
@@ -27,7 +27,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29320,
+      "stars": 29323,
       "language": "Go"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 14849,
+      "stars": 14851,
       "language": "Go"
     },
     {
@@ -56,7 +56,7 @@
         "web",
         "ai"
       ],
-      "stars": 31596,
+      "stars": 31625,
       "language": "TypeScript"
     },
     {
@@ -80,7 +80,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14547,
+      "stars": 14550,
       "language": "TypeScript"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 23539,
+      "stars": 23541,
       "language": "Python"
     },
     {
@@ -108,7 +108,7 @@
         "ai",
         "database"
       ],
-      "stars": 2651,
+      "stars": 2652,
       "language": "TypeScript"
     },
     {
@@ -121,7 +121,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 53979,
+      "stars": 53995,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26908,
+      "stars": 26914,
       "language": "JavaScript"
     },
     {
@@ -143,7 +143,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84698,
+      "stars": 84712,
       "language": "TypeScript"
     },
     {
@@ -158,7 +158,7 @@
         "ai",
         "database"
       ],
-      "stars": 1372,
+      "stars": 1373,
       "language": "Python"
     },
     {
@@ -198,7 +198,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3666,
+      "stars": 3667,
       "language": "TypeScript"
     },
     {
@@ -209,7 +209,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4348,
+      "stars": 4351,
       "language": "TypeScript"
     },
     {
@@ -335,7 +335,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84698,
+      "stars": 84712,
       "language": "TypeScript"
     },
     {
@@ -348,7 +348,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 53979,
+      "stars": 53995,
       "language": "TypeScript"
     },
     {
@@ -362,7 +362,7 @@
         "web",
         "ai"
       ],
-      "stars": 31596,
+      "stars": 31625,
       "language": "TypeScript"
     },
     {
@@ -375,7 +375,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29320,
+      "stars": 29323,
       "language": "Go"
     },
     {
@@ -386,7 +386,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26908,
+      "stars": 26914,
       "language": "JavaScript"
     },
     {
@@ -400,7 +400,7 @@
         "ai",
         "search"
       ],
-      "stars": 23539,
+      "stars": 23541,
       "language": "Python"
     },
     {
@@ -415,7 +415,7 @@
         "ai",
         "search"
       ],
-      "stars": 14849,
+      "stars": 14851,
       "language": "Go"
     },
     {
@@ -426,7 +426,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14547,
+      "stars": 14550,
       "language": "TypeScript"
     },
     {
@@ -441,7 +441,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8899,
+      "stars": 8900,
       "language": "Python"
     },
     {
@@ -478,7 +478,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4348,
+      "stars": 4351,
       "language": "TypeScript"
     },
     {
@@ -491,7 +491,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3666,
+      "stars": 3667,
       "language": "TypeScript"
     },
     {
@@ -505,7 +505,7 @@
         "ai",
         "database"
       ],
-      "stars": 2651,
+      "stars": 2652,
       "language": "TypeScript"
     },
     {
@@ -520,7 +520,7 @@
         "ai",
         "database"
       ],
-      "stars": 1372,
+      "stars": 1373,
       "language": "Python"
     },
     {
@@ -653,6 +653,19 @@
   ],
   "by_recency": [
     {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 100,
+      "description": "GitHub's official MCP Server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 29323,
+      "language": "Go"
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 100,
@@ -664,47 +677,8 @@
         "ai",
         "search"
       ],
-      "stars": 14849,
+      "stars": 14851,
       "language": "Go"
-    },
-    {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 92,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 53979,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 88,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 26908,
-      "language": "JavaScript"
-    },
-    {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 100,
-      "description": "Official MCP Servers for AWS",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "cloud",
-        "database",
-        "devtools"
-      ],
-      "stars": 8899,
-      "language": "Python"
     },
     {
       "repo": "exa-labs/exa-mcp-server",
@@ -714,7 +688,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4348,
+      "stars": 4351,
       "language": "TypeScript"
     },
     {
@@ -728,8 +702,47 @@
         "ai",
         "search"
       ],
-      "stars": 23539,
+      "stars": 23541,
       "language": "Python"
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "description": "Official MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "cloud",
+        "database",
+        "devtools"
+      ],
+      "stars": 8900,
+      "language": "Python"
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 53995,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 88,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 26914,
+      "language": "JavaScript"
     },
     {
       "repo": "microsoft/playwright-mcp",
@@ -742,21 +755,8 @@
         "web",
         "ai"
       ],
-      "stars": 31596,
+      "stars": 31625,
       "language": "TypeScript"
-    },
-    {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 100,
-      "description": "GitHub's official MCP Server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 29320,
-      "language": "Go"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
@@ -770,7 +770,7 @@
         "ai",
         "database"
       ],
-      "stars": 1372,
+      "stars": 1373,
       "language": "Python"
     },
     {
@@ -795,7 +795,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14547,
+      "stars": 14550,
       "language": "TypeScript"
     },
     {
@@ -808,7 +808,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3666,
+      "stars": 3667,
       "language": "TypeScript"
     },
     {
@@ -822,7 +822,7 @@
         "ai",
         "database"
       ],
-      "stars": 2651,
+      "stars": 2652,
       "language": "TypeScript"
     },
     {
@@ -833,7 +833,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84698,
+      "stars": 84712,
       "language": "TypeScript"
     },
     {

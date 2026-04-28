@@ -2,7 +2,7 @@
   "capability": "database",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T14:57:26+00:00",
+  "generated_at": "2026-04-28T17:51:09+00:00",
   "count": 6,
   "servers": [
     {
@@ -17,7 +17,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8899,
+      "stars": 8900,
       "language": "Python"
     },
     {
@@ -32,7 +32,7 @@
         "ai",
         "search"
       ],
-      "stars": 14849,
+      "stars": 14851,
       "language": "Go"
     },
     {
@@ -46,7 +46,7 @@
         "ai",
         "database"
       ],
-      "stars": 2651,
+      "stars": 2652,
       "language": "TypeScript"
     },
     {
@@ -61,7 +61,7 @@
         "ai",
         "database"
       ],
-      "stars": 1372,
+      "stars": 1373,
       "language": "Python"
     },
     {

@@ -14,6 +14,12 @@
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 0,
+    "tool_names_preview": [],
+    "extraction_method": "regex_typescript",
+    "extraction_confidence": 0.3
+  },
   "composite": 49,
   "composite_raw": 49,
   "axes": {
@@ -128,5 +134,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:57:26+00:00"
+  "scored_at": "2026-04-28T17:51:09+00:00"
 }

@@ -15,6 +15,14 @@
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 1,
+    "tool_names_preview": [
+      "sticky-notes-server"
+    ],
+    "extraction_method": "regex_typescript",
+    "extraction_confidence": 0.7
+  },
   "composite": 46,
   "composite_raw": 46,
   "axes": {
@@ -134,5 +142,5 @@
     }
   ],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:57:26+00:00"
+  "scored_at": "2026-04-28T17:51:09+00:00"
 }

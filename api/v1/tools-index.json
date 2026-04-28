@@ -1,0 +1,239 @@
+{
+  "rule_set_version": "1.1.0",
+  "generated_at": "2026-04-28T17:51:09+00:00",
+  "total_tools": 21,
+  "tools": [
+    {
+      "name": "brave-search-mcp-server",
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "company_research_exa",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "deep_researcher_check",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "deep_researcher_start",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "deep_search_exa",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "exa-search-server",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_code_context_exa",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "linkedin_search_exa",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "people_search_exa",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "web_search_advanced_exa",
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "time-server",
+      "repo": "dandeliongold/mcp-time",
+      "slug": "dandeliongold__mcp-time",
+      "composite": 50,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "sticky-notes-server",
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 46,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "all_table_names",
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "execute_query",
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "filter_table_names",
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "schema_definitions",
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "super-secret-server",
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "GetIP",
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "get-deliveries-in-journey",
+      "repo": "ogulcanarbc/mock-assistant-mcp-server",
+      "slug": "ogulcanarbc__mock-assistant-mcp-server",
+      "composite": 22,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get-incident-owner-team",
+      "repo": "ogulcanarbc/mock-assistant-mcp-server",
+      "slug": "ogulcanarbc__mock-assistant-mcp-server",
+      "composite": 22,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "mock-delivery-support-assistant",
+      "repo": "ogulcanarbc/mock-assistant-mcp-server",
+      "slug": "ogulcanarbc__mock-assistant-mcp-server",
+      "composite": 22,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    }
+  ]
+}

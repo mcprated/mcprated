@@ -1,6 +1,6 @@
 {
   "repo": "modelcontextprotocol/servers",
-  "stars": 84698,
+  "stars": 84712,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers",
@@ -12,6 +12,12 @@
   "capabilities": [],
   "distribution": "repo",
   "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 0,
+    "tool_names_preview": [],
+    "extraction_method": "none",
+    "extraction_confidence": 0.0
+  },
   "composite": 87,
   "composite_raw": 87,
   "axes": {
@@ -126,5 +132,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:57:26+00:00"
+  "scored_at": "2026-04-28T17:51:09+00:00"
 }

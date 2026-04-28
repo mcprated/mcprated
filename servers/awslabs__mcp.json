@@ -1,10 +1,10 @@
 {
   "repo": "awslabs/mcp",
-  "stars": 8899,
+  "stars": 8900,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "Official MCP Servers for AWS",
-  "pushed_at": "2026-04-28T13:20:45Z",
+  "pushed_at": "2026-04-28T16:29:22Z",
   "kind": "server",
   "subkind": "agent-product",
   "kind_confidence": 1.0,
@@ -16,6 +16,12 @@
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 0,
+    "tool_names_preview": [],
+    "extraction_method": "none",
+    "extraction_confidence": 0.0
+  },
   "composite": 100,
   "composite_raw": 100,
   "axes": {
@@ -111,7 +117,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "18 unique committers in 90d"
+          "note": "20 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -130,5 +136,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:57:26+00:00"
+  "scored_at": "2026-04-28T17:51:09+00:00"
 }

@@ -1,20 +1,26 @@
 {
   "repo": "oraios/serena",
-  "stars": 23539,
+  "stars": 23541,
   "language": "Python",
   "license": "MIT",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-  "pushed_at": "2026-04-28T11:18:25Z",
+  "pushed_at": "2026-04-28T16:30:47Z",
   "kind": "server",
   "subkind": "integration",
-  "kind_confidence": 0.7,
-  "kind_reason": "sdk dep in package metadata (default)",
+  "kind_confidence": 0.95,
+  "kind_reason": "server-run pattern in source (default)",
   "capabilities": [
     "ai",
     "search"
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 0,
+    "tool_names_preview": [],
+    "extraction_method": "ast_python",
+    "extraction_confidence": 0.4
+  },
   "composite": 92,
   "composite_raw": 92,
   "axes": {
@@ -129,5 +135,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:57:26+00:00"
+  "scored_at": "2026-04-28T17:51:09+00:00"
 }

@@ -1,17 +1,33 @@
 {
   "repo": "exa-labs/exa-mcp-server",
-  "stars": 4348,
+  "stars": 4351,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Exa MCP for web search and web crawling!",
-  "pushed_at": "2026-04-28T12:10:19Z",
+  "pushed_at": "2026-04-28T17:24:10Z",
   "kind": "server",
   "subkind": "integration",
-  "kind_confidence": 0.7,
-  "kind_reason": "sdk dep in package metadata (default)",
+  "kind_confidence": 0.95,
+  "kind_reason": "server-run pattern in source (default)",
   "capabilities": [],
   "distribution": "repo",
   "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 9,
+    "tool_names_preview": [
+      "exa-search-server",
+      "company_research_exa",
+      "deep_researcher_check",
+      "deep_researcher_start",
+      "deep_search_exa",
+      "get_code_context_exa",
+      "linkedin_search_exa",
+      "people_search_exa",
+      "web_search_advanced_exa"
+    ],
+    "extraction_method": "regex_typescript",
+    "extraction_confidence": 0.7
+  },
   "composite": 69,
   "composite_raw": 69,
   "axes": {
@@ -111,11 +127,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 15 merged PRs in 90d"
+          "note": "active: 30 commits, 13 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "15 merged PR(s) in 90d"
+          "note": "13 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -126,5 +142,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T14:57:26+00:00"
+  "scored_at": "2026-04-28T17:51:09+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T14:57:26+00:00",
+  "generated_at": "2026-04-28T17:51:09+00:00",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
   "count": 26,
@@ -14,7 +14,7 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 8899,
+      "stars": 8900,
       "language": "Python",
       "description": "Official MCP Servers for AWS",
       "kind": "server",
@@ -25,6 +25,8 @@
         "devtools"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -37,7 +39,7 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 29320,
+      "stars": 29323,
       "language": "Go",
       "description": "GitHub's official MCP Server",
       "kind": "server",
@@ -46,6 +48,8 @@
         "devtools"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -58,7 +62,7 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 14849,
+      "stars": 14851,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -69,6 +73,8 @@
         "search"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -81,7 +87,7 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 31596,
+      "stars": 31625,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -91,6 +97,8 @@
         "ai"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -112,6 +120,8 @@
         "productivity"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -124,13 +134,15 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 14547,
+      "stars": 14550,
       "language": "TypeScript",
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -143,7 +155,7 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 23539,
+      "stars": 23541,
       "language": "Python",
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
@@ -153,6 +165,8 @@
         "search"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -165,7 +179,7 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 2651,
+      "stars": 2652,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "server",
@@ -175,6 +189,8 @@
         "database"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -187,7 +203,7 @@
         "trust": 100,
         "community": 80
       },
-      "stars": 53979,
+      "stars": 53995,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
@@ -196,6 +212,8 @@
         "ai"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -208,13 +226,15 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 26908,
+      "stars": 26914,
       "language": "JavaScript",
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -227,13 +247,15 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 84698,
+      "stars": 84712,
       "language": "TypeScript",
       "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -246,7 +268,7 @@
         "trust": 67,
         "community": 60
       },
-      "stars": 1372,
+      "stars": 1373,
       "language": "Python",
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
@@ -257,6 +279,8 @@
         "database"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -278,6 +302,8 @@
         "ai"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -300,6 +326,10 @@
         "search"
       ],
       "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "brave-search-mcp-server"
+      ],
       "hard_flags": [
         "empty_description"
       ]
@@ -314,7 +344,7 @@
         "trust": 33,
         "community": 100
       },
-      "stars": 3666,
+      "stars": 3667,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -323,6 +353,8 @@
         "cloud"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": [
         "empty_description"
       ]
@@ -337,13 +369,25 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 4348,
+      "stars": 4351,
       "language": "TypeScript",
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 9,
+      "tool_names_preview": [
+        "exa-search-server",
+        "company_research_exa",
+        "deep_researcher_check",
+        "deep_researcher_start",
+        "deep_search_exa",
+        "get_code_context_exa",
+        "linkedin_search_exa",
+        "people_search_exa",
+        "web_search_advanced_exa"
+      ],
       "hard_flags": []
     },
     {
@@ -363,6 +407,10 @@
       "subkind": "integration",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "time-server"
+      ],
       "hard_flags": [
         "empty_description"
       ]
@@ -384,6 +432,8 @@
       "subkind": "integration",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -405,6 +455,8 @@
         "web"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -427,6 +479,10 @@
         "search"
       ],
       "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "sticky-notes-server"
+      ],
       "hard_flags": [
         "empty_description"
       ]
@@ -450,6 +506,10 @@
         "devtools"
       ],
       "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "super-secret-server"
+      ],
       "hard_flags": []
     },
     {
@@ -472,6 +532,13 @@
         "ai"
       ],
       "distribution": "repo",
+      "tool_count": 4,
+      "tool_names_preview": [
+        "all_table_names",
+        "filter_table_names",
+        "schema_definitions",
+        "execute_query"
+      ],
       "hard_flags": []
     },
     {
@@ -493,6 +560,8 @@
         "devtools"
       ],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     },
     {
@@ -514,6 +583,10 @@
         "ai"
       ],
       "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "GetIP"
+      ],
       "hard_flags": []
     },
     {
@@ -533,6 +606,12 @@
       "subkind": "integration",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 3,
+      "tool_names_preview": [
+        "get-deliveries-in-journey",
+        "get-incident-owner-team",
+        "mock-delivery-support-assistant"
+      ],
       "hard_flags": []
     },
     {
@@ -552,6 +631,8 @@
       "subkind": "",
       "capabilities": [],
       "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
       "hard_flags": []
     }
   ]
