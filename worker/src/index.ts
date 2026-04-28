@@ -141,24 +141,29 @@ const TOOLS = [
 // HTTP / cache helpers
 // ---------------------------------------------------------------------------
 
+// Bumped per-deploy to bust any stale CF colo cache entries (e.g. when an
+// earlier deploy accidentally pinned a 404). Increment when redeploying after
+// changing fetch semantics.
+const CATALOG_CACHE_VERSION = "2";
+
 async function fetchCatalog(
   env: Env,
   ctx: ExecutionContext,
   path: string
 ): Promise<any> {
-  const url = `${env.CATALOG_BASE}${path}`;
+  const url = `${env.CATALOG_BASE}${path}?_v=${CATALOG_CACHE_VERSION}`;
   const cache = caches.default;
   const cacheKey = new Request(url, { method: "GET" });
 
+  // Workers Cache API is the ONLY layer we control. CF colo cache is left to
+  // honour origin Cache-Control headers from gh-pages — no cf hints here, so
+  // a transient 404 can't pin itself.
   let cached = await cache.match(cacheKey);
   if (cached) {
     return cached.json();
   }
 
-  const upstream = await fetch(url, {
-    cf: { cacheTtl: 3600, cacheEverything: true },
-  } as any);
-
+  const upstream = await fetch(url);
   if (!upstream.ok) {
     throw new Error(`upstream ${upstream.status}: ${url}`);
   }
