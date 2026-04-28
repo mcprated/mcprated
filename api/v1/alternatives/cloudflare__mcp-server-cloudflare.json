@@ -17,10 +17,30 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.333,
+      "shared_capabilities": [
+        "cloud"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.183,
       "shared_capabilities": [
         "cloud"
       ]

@@ -1,0 +1,44 @@
+{
+  "repo": "modelcontextprotocol/servers-archived",
+  "slug": "modelcontextprotocol__servers-archived",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T20:05:05+00:00",
+  "composite": 30,
+  "axes": {
+    "reliability": 29,
+    "documentation": 40,
+    "trust": 67,
+    "community": 40
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "database",
+    "devtools",
+    "cloud"
+  ],
+  "license": "MIT",
+  "stars": 254,
+  "pushed_at": "2025-05-28T17:57:12Z",
+  "language": "JavaScript",
+  "hard_flags": [
+    "archived"
+  ],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "SPDX=MIT"
+    },
+    "has_security_policy": {
+      "passed": true,
+      "note": "SECURITY.md present"
+    },
+    "has_repo_topics": {
+      "passed": false,
+      "note": "0 topics: []"
+    }
+  },
+  "verdict": "low_quality",
+  "url": "https://github.com/modelcontextprotocol/servers-archived",
+  "detail_url": "/servers/modelcontextprotocol__servers-archived.json"
+}

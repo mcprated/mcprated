@@ -1,0 +1,156 @@
+{
+  "repo": "modelcontextprotocol/servers-archived",
+  "stars": 254,
+  "language": "JavaScript",
+  "license": "MIT",
+  "description": "Reference MCP servers that are no longer maintained",
+  "pushed_at": "2025-05-28T17:57:12Z",
+  "kind": "server",
+  "subkind": "integration",
+  "kind_confidence": 0.95,
+  "kind_reason": "server-run pattern in source (default)",
+  "capabilities": [
+    "database",
+    "devtools",
+    "cloud"
+  ],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 30,
+    "tool_names_preview": [
+      "aws-kb-retrieval-server",
+      "github-mcp-server",
+      "create_or_update_file",
+      "search_repositories",
+      "create_repository",
+      "get_file_contents",
+      "push_files",
+      "create_issue",
+      "create_pull_request",
+      "fork_repository"
+    ],
+    "extraction_method": "regex_typescript",
+    "extraction_confidence": 0.7
+  },
+  "composite": 30,
+  "composite_raw": 44,
+  "axes": {
+    "reliability": {
+      "score": 29,
+      "passing": 2,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "workspace mono-repo, 10 internal `*` deps (ok)"
+        },
+        "recently_maintained": {
+          "pass": false,
+          "note": "pushed 335d ago"
+        },
+        "has_releases": {
+          "pass": false,
+          "note": "no releases, no tags"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "no GH release"
+        },
+        "version_follows_semver": {
+          "pass": false,
+          "note": "no releases"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 1458 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": false,
+          "note": "no install hints, no install section"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "5 sub-sections (overview README)"
+        },
+        "examples": {
+          "pass": false,
+          "note": "0 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": false,
+          "note": "0 topics: []"
+        }
+      }
+    },
+    "community": {
+      "score": 40,
+      "passing": 2,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "0 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "no recent commits, 0 open issues"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "no closed PRs"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [
+    {
+      "key": "archived",
+      "msg": "Repo is archived (read-only)"
+    }
+  ],
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T20:05:05+00:00"
+}

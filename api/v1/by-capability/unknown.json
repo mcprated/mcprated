@@ -2,8 +2,8 @@
   "capability": "unknown",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T17:51:09+00:00",
-  "count": 8,
+  "generated_at": "2026-04-28T20:05:06+00:00",
+  "count": 9,
   "servers": [
     {
       "repo": "GLips/Figma-Context-MCP",
@@ -17,6 +17,17 @@
       "language": "TypeScript"
     },
     {
+      "repo": "modelcontextprotocol/python-sdk",
+      "slug": "modelcontextprotocol__python-sdk",
+      "composite": 92,
+      "description": "The official Python SDK for Model Context Protocol servers and clients",
+      "kind": "framework",
+      "subkind": "",
+      "capabilities": [],
+      "stars": 22809,
+      "language": "Python"
+    },
+    {
       "repo": "eyaltoledano/claude-task-master",
       "slug": "eyaltoledano__claude-task-master",
       "composite": 88,
@@ -24,7 +35,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26914,
+      "stars": 26917,
       "language": "JavaScript"
     },
     {
@@ -35,7 +46,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84712,
+      "stars": 84717,
       "language": "TypeScript"
     },
     {

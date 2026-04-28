@@ -1,8 +1,120 @@
 {
   "rule_set_version": "1.1.0",
-  "generated_at": "2026-04-28T17:51:09+00:00",
-  "total_tools": 21,
+  "generated_at": "2026-04-28T20:05:06+00:00",
+  "total_tools": 50,
   "tools": [
+    {
+      "name": "create_directory",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "directory_tree",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "edit_file",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "list_directory",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "list_directory_with_sizes",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "read_file",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "read_media_file",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "read_multiple_files",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "read_text_file",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "write_file",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 87,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "mcprated",
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 86,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
     {
       "name": "brave-search-mcp-server",
       "repo": "brave/brave-search-mcp-server",
@@ -117,6 +229,110 @@
       "extraction_method": "regex_typescript"
     },
     {
+      "name": "analyze_db_health",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "analyze_query_indexes",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "analyze_workload_indexes",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "explain_query",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "get_object_details",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "get_top_queries",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "list_objects",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "list_schemas",
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
       "name": "sticky-notes-server",
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
@@ -204,6 +420,146 @@
         "ai"
       ],
       "extraction_method": "ast_python"
+    },
+    {
+      "name": "aws-kb-retrieval-server",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_issue",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_or_update_file",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_pull_request",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_repository",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fork_repository",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_file_contents",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "github-mcp-server",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "push_files",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "search_repositories",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
     },
     {
       "name": "get-deliveries-in-journey",

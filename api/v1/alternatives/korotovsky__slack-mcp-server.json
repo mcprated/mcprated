@@ -1,0 +1,200 @@
+{
+  "for": "korotovsky/slack-mcp-server",
+  "slug": "korotovsky__slack-mcp-server",
+  "of_capabilities": [
+    "ai",
+    "comms",
+    "web"
+  ],
+  "alternatives": [
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 100,
+      "description": "Playwright MCP server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web",
+        "ai"
+      ],
+      "stars": 31650,
+      "language": "TypeScript",
+      "similarity": 0.667,
+      "score": 0.667,
+      "shared_capabilities": [
+        "ai",
+        "web"
+      ]
+    },
+    {
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 49,
+      "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "stars": 5475,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.233,
+      "shared_capabilities": [
+        "web"
+      ]
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 92,
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 54005,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.128,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 78,
+      "description": "Shell and coding agent on mcp clients",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 661,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.118,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 23544,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.096,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2652,
+      "language": "TypeScript",
+      "similarity": 0.25,
+      "score": 0.096,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 73,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 949,
+      "language": "TypeScript",
+      "similarity": 0.25,
+      "score": 0.085,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 100,
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "search"
+      ],
+      "stars": 14855,
+      "language": "Go",
+      "similarity": 0.2,
+      "score": 0.08,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 32,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.075,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 82,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1373,
+      "language": "Python",
+      "similarity": 0.2,
+      "score": 0.072,
+      "shared_capabilities": [
+        "ai"
+      ]
+    }
+  ]
+}

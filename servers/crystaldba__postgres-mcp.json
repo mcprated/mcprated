@@ -1,0 +1,148 @@
+{
+  "repo": "crystaldba/postgres-mcp",
+  "stars": 2650,
+  "language": "Python",
+  "license": "MIT",
+  "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+  "pushed_at": "2026-01-22T16:24:36Z",
+  "kind": "server",
+  "subkind": "integration",
+  "kind_confidence": 0.95,
+  "kind_reason": "server-run pattern in source (default)",
+  "capabilities": [
+    "database",
+    "devtools"
+  ],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 8,
+    "tool_names_preview": [
+      "list_schemas",
+      "list_objects",
+      "get_object_details",
+      "explain_query",
+      "analyze_workload_indexes",
+      "analyze_query_indexes",
+      "analyze_db_health",
+      "get_top_queries"
+    ],
+    "extraction_method": "ast_python",
+    "extraction_confidence": 0.9
+  },
+  "composite": 48,
+  "composite_raw": 48,
+  "axes": {
+    "reliability": {
+      "score": 57,
+      "passing": 4,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "no MCP SDK dep tracked here (n/a)"
+        },
+        "recently_maintained": {
+          "pass": false,
+          "note": "pushed 96d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "4 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": false,
+          "note": "latest release 347d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: v0.3.0"
+        },
+        "release_communication": {
+          "pass": false,
+          "note": "no CHANGELOG, no release-notes substitute"
+        }
+      }
+    },
+    "documentation": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 37460 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['claude_desktop_config', 'mcpservers', '\"mcpservers\"', 'pip install']…"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "12 unique snake_case identifiers"
+        },
+        "examples": {
+          "pass": true,
+          "note": "16 code blocks"
+        },
+        "external_docs": {
+          "pass": false,
+          "note": "no homepage, no docs link"
+        }
+      }
+    },
+    "trust": {
+      "score": 33,
+      "passing": 1,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": false,
+          "note": "no SECURITY.md, no security section"
+        },
+        "has_repo_topics": {
+          "pass": false,
+          "note": "0 topics: []"
+        }
+      }
+    },
+    "community": {
+      "score": 20,
+      "passing": 1,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": false,
+          "note": "no CONTRIBUTING file"
+        },
+        "multiple_contributors": {
+          "pass": false,
+          "note": "0 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": false,
+          "note": "no recent commits, 55 open issues"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T20:05:05+00:00"
+}

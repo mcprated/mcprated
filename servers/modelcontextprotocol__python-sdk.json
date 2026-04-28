@@ -1,0 +1,136 @@
+{
+  "repo": "modelcontextprotocol/python-sdk",
+  "stars": 22809,
+  "language": "Python",
+  "license": "MIT",
+  "description": "The official Python SDK for Model Context Protocol servers and clients",
+  "pushed_at": "2026-04-25T22:14:31Z",
+  "kind": "framework",
+  "subkind": "",
+  "kind_confidence": 1.0,
+  "kind_reason": "official MCP SDK repo",
+  "capabilities": [],
+  "distribution": "repo",
+  "taxonomy_version": "1.0",
+  "tools": {
+    "tool_count": 0,
+    "tool_names_preview": [],
+    "extraction_method": "none",
+    "extraction_confidence": 0.0
+  },
+  "composite": 92,
+  "composite_raw": 92,
+  "axes": {
+    "reliability": {
+      "score": 100,
+      "passing": 7,
+      "total": 7,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "2 MCP dep(s), all pinned"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 2d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 26d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: v1.27.0"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "5 releases with notes"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 88162 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['npx ', 'pip install']"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "sections=['### Tools', '# Method 1: Configure mount paths via settings (recommended for persistent configuration)', '# Method 2: Pass mount path directly to sse_app (preferred for ad-hoc mounting)']"
+        },
+        "examples": {
+          "pass": true,
+          "note": "51 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://modelcontextprotocol.github.io/python-sdk/"
+        }
+      }
+    },
+    "trust": {
+      "score": 67,
+      "passing": 2,
+      "total": 3,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "SPDX=MIT"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "has_repo_topics": {
+          "pass": false,
+          "note": "0 topics: []"
+        }
+      }
+    },
+    "community": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "8 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 3 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": true,
+          "note": "3 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "hard_flags": [],
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T20:05:05+00:00"
+}

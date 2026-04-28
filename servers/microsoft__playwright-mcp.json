@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/playwright-mcp",
-  "stars": 31625,
+  "stars": 31650,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Playwright MCP server",
@@ -120,11 +120,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 10 merged PRs in 90d"
+          "note": "active: 30 commits, 9 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "10 merged PR(s) in 90d"
+          "note": "9 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -135,5 +135,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T17:51:09+00:00"
+  "scored_at": "2026-04-28T20:05:05+00:00"
 }

@@ -1,10 +1,10 @@
 {
   "repo": "googleapis/mcp-toolbox",
-  "stars": 14851,
+  "stars": 14855,
   "language": "Go",
   "license": "Apache-2.0",
   "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-  "pushed_at": "2026-04-28T17:32:14Z",
+  "pushed_at": "2026-04-28T18:04:37Z",
   "kind": "server",
   "subkind": "agent-product",
   "kind_confidence": 1.0,
@@ -136,5 +136,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T17:51:09+00:00"
+  "scored_at": "2026-04-28T20:05:05+00:00"
 }

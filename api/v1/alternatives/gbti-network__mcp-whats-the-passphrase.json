@@ -15,10 +15,28 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29323,
+      "stars": 29327,
       "language": "Go",
       "similarity": 1.0,
-      "score": 1.0,
+      "score": 0.4,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 86,
+      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 1.0,
+      "score": 0.371,
       "shared_capabilities": [
         "devtools"
       ]
@@ -36,7 +54,26 @@
       "stars": 0,
       "language": null,
       "similarity": 1.0,
-      "score": 0.566,
+      "score": 0.226,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2650,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.139,
       "shared_capabilities": [
         "devtools"
       ]
@@ -53,10 +90,30 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.333,
+      "score": 0.133,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.073,
       "shared_capabilities": [
         "devtools"
       ]

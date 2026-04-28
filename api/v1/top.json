@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.1.0",
-  "generated_at": "2026-04-28T17:51:09+00:00",
+  "generated_at": "2026-04-28T20:05:06+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -14,7 +14,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python"
     },
     {
@@ -27,7 +27,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29323,
+      "stars": 29327,
       "language": "Go"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 14851,
+      "stars": 14855,
       "language": "Go"
     },
     {
@@ -56,7 +56,7 @@
         "web",
         "ai"
       ],
-      "stars": 31625,
+      "stars": 31650,
       "language": "TypeScript"
     },
     {
@@ -69,7 +69,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5053,
+      "stars": 5054,
       "language": "Python"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 23541,
+      "stars": 23544,
       "language": "Python"
     },
     {
@@ -121,7 +121,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 53995,
+      "stars": 54005,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26914,
+      "stars": 26917,
       "language": "JavaScript"
     },
     {
@@ -143,8 +143,36 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84712,
+      "stars": 84717,
       "language": "TypeScript"
+    },
+    {
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 86,
+      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
+      "language": "Python"
+    },
+    {
+      "repo": "korotovsky/slack-mcp-server",
+      "slug": "korotovsky__slack-mcp-server",
+      "composite": 85,
+      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "web"
+      ],
+      "stars": 1562,
+      "language": "Go"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
@@ -248,6 +276,20 @@
       "language": "TypeScript"
     },
     {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2650,
+      "language": "Python"
+    },
+    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 46,
@@ -287,43 +329,6 @@
       ],
       "stars": 401,
       "language": "Python"
-    },
-    {
-      "repo": "boysoai/Claude-Code-MCP",
-      "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
-      "description": "Claude Code MCP servers",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 0,
-      "language": null
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 32,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python"
-    },
-    {
-      "repo": "ogulcanarbc/mock-assistant-mcp-server",
-      "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
-      "description": "mcp server assistant for mock data",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 0,
-      "language": "TypeScript"
     }
   ],
   "by_stars": [
@@ -335,7 +340,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84712,
+      "stars": 84717,
       "language": "TypeScript"
     },
     {
@@ -348,7 +353,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 53995,
+      "stars": 54005,
       "language": "TypeScript"
     },
     {
@@ -362,7 +367,7 @@
         "web",
         "ai"
       ],
-      "stars": 31625,
+      "stars": 31650,
       "language": "TypeScript"
     },
     {
@@ -375,7 +380,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29323,
+      "stars": 29327,
       "language": "Go"
     },
     {
@@ -386,7 +391,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26914,
+      "stars": 26917,
       "language": "JavaScript"
     },
     {
@@ -400,7 +405,7 @@
         "ai",
         "search"
       ],
-      "stars": 23541,
+      "stars": 23544,
       "language": "Python"
     },
     {
@@ -415,7 +420,7 @@
         "ai",
         "search"
       ],
-      "stars": 14851,
+      "stars": 14855,
       "language": "Go"
     },
     {
@@ -441,7 +446,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python"
     },
     {
@@ -467,7 +472,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5053,
+      "stars": 5054,
       "language": "Python"
     },
     {
@@ -507,6 +512,35 @@
       ],
       "stars": 2652,
       "language": "TypeScript"
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2650,
+      "language": "Python"
+    },
+    {
+      "repo": "korotovsky/slack-mcp-server",
+      "slug": "korotovsky__slack-mcp-server",
+      "composite": 85,
+      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "web"
+      ],
+      "stars": 1562,
+      "language": "Go"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
@@ -576,6 +610,21 @@
       "language": "Python"
     },
     {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript"
+    },
+    {
       "repo": "dandeliongold/mcp-time",
       "slug": "dandeliongold__mcp-time",
       "composite": 50,
@@ -612,58 +661,49 @@
       ],
       "stars": 1,
       "language": "JavaScript"
-    },
+    }
+  ],
+  "by_recency": [
     {
-      "repo": "boysoai/Claude-Code-MCP",
-      "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
-      "description": "Claude Code MCP servers",
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 86,
+      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "devtools"
-      ],
-      "stars": 0,
-      "language": null
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 32,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
       ],
       "stars": 0,
       "language": "Python"
     },
     {
-      "repo": "ogulcanarbc/mock-assistant-mcp-server",
-      "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
-      "description": "mcp server assistant for mock data",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 0,
-      "language": "TypeScript"
-    }
-  ],
-  "by_recency": [
-    {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 100,
-      "description": "GitHub's official MCP Server",
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 92,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "devtools"
+        "ai",
+        "search"
       ],
-      "stars": 29323,
-      "language": "Go"
+      "stars": 23544,
+      "language": "Python"
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 92,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2652,
+      "language": "TypeScript"
     },
     {
       "repo": "googleapis/mcp-toolbox",
@@ -677,7 +717,20 @@
         "ai",
         "search"
       ],
-      "stars": 14851,
+      "stars": 14855,
+      "language": "Go"
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 100,
+      "description": "GitHub's official MCP Server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 29327,
       "language": "Go"
     },
     {
@@ -692,20 +745,6 @@
       "language": "TypeScript"
     },
     {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 92,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 23541,
-      "language": "Python"
-    },
-    {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
       "composite": 100,
@@ -717,7 +756,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python"
     },
     {
@@ -730,7 +769,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 53995,
+      "stars": 54005,
       "language": "TypeScript"
     },
     {
@@ -741,7 +780,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26914,
+      "stars": 26917,
       "language": "JavaScript"
     },
     {
@@ -755,7 +794,7 @@
         "web",
         "ai"
       ],
-      "stars": 31625,
+      "stars": 31650,
       "language": "TypeScript"
     },
     {
@@ -809,20 +848,6 @@
         "cloud"
       ],
       "stars": 3667,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 92,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2652,
       "language": "TypeScript"
     },
     {
@@ -833,8 +858,23 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84712,
+      "stars": 84717,
       "language": "TypeScript"
+    },
+    {
+      "repo": "korotovsky/slack-mcp-server",
+      "slug": "korotovsky__slack-mcp-server",
+      "composite": 85,
+      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "web"
+      ],
+      "stars": 1562,
+      "language": "Go"
     },
     {
       "repo": "sooperset/mcp-atlassian",
@@ -846,7 +886,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5053,
+      "stars": 5054,
       "language": "Python"
     },
     {
@@ -872,6 +912,20 @@
       "capabilities": [],
       "stars": 744,
       "language": "TypeScript"
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2650,
+      "language": "Python"
     },
     {
       "repo": "executeautomation/mcp-playwright",
@@ -901,6 +955,21 @@
       "language": "Python"
     },
     {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript"
+    },
+    {
       "repo": "dandeliongold/mcp-time",
       "slug": "dandeliongold__mcp-time",
       "composite": 50,
@@ -923,57 +992,6 @@
       ],
       "stars": 0,
       "language": null
-    },
-    {
-      "repo": "ogulcanarbc/mock-assistant-mcp-server",
-      "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
-      "description": "mcp server assistant for mock data",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 0,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 46,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 32,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python"
     }
   ]
 }

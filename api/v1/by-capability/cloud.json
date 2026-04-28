@@ -2,8 +2,8 @@
   "capability": "cloud",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T17:51:09+00:00",
-  "count": 2,
+  "generated_at": "2026-04-28T20:05:06+00:00",
+  "count": 3,
   "servers": [
     {
       "repo": "awslabs/mcp",
@@ -17,7 +17,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python"
     },
     {
@@ -32,6 +32,21 @@
       ],
       "stars": 3667,
       "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript"
     }
   ]
 }

@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 14851,
+      "stars": 14855,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.667,
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 23541,
+      "stars": 23544,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.32,
@@ -117,10 +117,29 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.25,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2650,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.231,
       "shared_capabilities": [
         "database"
       ]
@@ -140,6 +159,26 @@
       "language": "Python",
       "similarity": 0.333,
       "score": 0.216,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript",
+      "similarity": 0.25,
+      "score": 0.137,
       "shared_capabilities": [
         "database"
       ]

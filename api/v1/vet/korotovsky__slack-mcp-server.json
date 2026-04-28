@@ -1,0 +1,42 @@
+{
+  "repo": "korotovsky/slack-mcp-server",
+  "slug": "korotovsky__slack-mcp-server",
+  "rule_set_version": "1.1.0",
+  "scored_at": "2026-04-28T20:05:05+00:00",
+  "composite": 85,
+  "axes": {
+    "reliability": 100,
+    "documentation": 60,
+    "trust": 100,
+    "community": 80
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [
+    "ai",
+    "comms",
+    "web"
+  ],
+  "license": "MIT",
+  "stars": 1562,
+  "pushed_at": "2026-04-16T17:16:15Z",
+  "language": "Go",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "SPDX=MIT"
+    },
+    "has_security_policy": {
+      "passed": true,
+      "note": "SECURITY.md present"
+    },
+    "has_repo_topics": {
+      "passed": true,
+      "note": "7 topics: ['assistants', 'govslack', 'llm', 'mcp', 'mcp-server']"
+    }
+  },
+  "verdict": "caution",
+  "url": "https://github.com/korotovsky/slack-mcp-server",
+  "detail_url": "/servers/korotovsky__slack-mcp-server.json"
+}

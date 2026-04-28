@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 23541,
+      "stars": 23544,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.639,
@@ -130,6 +130,45 @@
       ]
     },
     {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "description": "Official MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "cloud",
+        "database",
+        "devtools"
+      ],
+      "stars": 8901,
+      "language": "Python",
+      "similarity": 0.2,
+      "score": 0.2,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2650,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.173,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 92,
@@ -139,10 +178,10 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 53995,
+      "stars": 54005,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.32,
+      "score": 0.128,
       "shared_capabilities": [
         "ai"
       ]
@@ -160,48 +199,9 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.294,
+      "score": 0.118,
       "shared_capabilities": [
         "ai"
-      ]
-    },
-    {
-      "repo": "microsoft/playwright-mcp",
-      "slug": "microsoft__playwright-mcp",
-      "composite": 100,
-      "description": "Playwright MCP server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "web",
-        "ai"
-      ],
-      "stars": 31625,
-      "language": "TypeScript",
-      "similarity": 0.25,
-      "score": 0.25,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 100,
-      "description": "Official MCP Servers for AWS",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "cloud",
-        "database",
-        "devtools"
-      ],
-      "stars": 8900,
-      "language": "Python",
-      "similarity": 0.2,
-      "score": 0.2,
-      "shared_capabilities": [
-        "database"
       ]
     }
   ]

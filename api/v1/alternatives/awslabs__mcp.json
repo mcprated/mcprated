@@ -8,20 +8,44 @@
   ],
   "alternatives": [
     {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 100,
-      "description": "GitHub's official MCP Server",
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript",
+      "similarity": 1.0,
+      "score": 0.548,
+      "shared_capabilities": [
+        "cloud",
+        "database",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
         "devtools"
       ],
-      "stars": 29323,
-      "language": "Go",
-      "similarity": 0.333,
-      "score": 0.333,
+      "stars": 2650,
+      "language": "Python",
+      "similarity": 0.667,
+      "score": 0.462,
       "shared_capabilities": [
+        "database",
         "devtools"
       ]
     },
@@ -63,24 +87,6 @@
       ]
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.333,
-      "score": 0.216,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 100,
@@ -92,30 +98,12 @@
         "ai",
         "search"
       ],
-      "stars": 14851,
+      "stars": 14855,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.2,
       "shared_capabilities": [
         "database"
-      ]
-    },
-    {
-      "repo": "boysoai/Claude-Code-MCP",
-      "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
-      "description": "Claude Code MCP servers",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 0,
-      "language": null,
-      "similarity": 0.333,
-      "score": 0.189,
-      "shared_capabilities": [
-        "devtools"
       ]
     },
     {
@@ -174,6 +162,42 @@
       "score": 0.162,
       "shared_capabilities": [
         "database"
+      ]
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 100,
+      "description": "GitHub's official MCP Server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 29327,
+      "language": "Go",
+      "similarity": 0.333,
+      "score": 0.133,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 86,
+      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.124,
+      "shared_capabilities": [
+        "devtools"
       ]
     }
   ]

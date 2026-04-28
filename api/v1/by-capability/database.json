@@ -2,8 +2,8 @@
   "capability": "database",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T17:51:09+00:00",
-  "count": 6,
+  "generated_at": "2026-04-28T20:05:06+00:00",
+  "count": 8,
   "servers": [
     {
       "repo": "awslabs/mcp",
@@ -17,7 +17,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8900,
+      "stars": 8901,
       "language": "Python"
     },
     {
@@ -32,7 +32,7 @@
         "ai",
         "search"
       ],
-      "stars": 14851,
+      "stars": 14855,
       "language": "Go"
     },
     {
@@ -65,6 +65,20 @@
       "language": "Python"
     },
     {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 48,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2650,
+      "language": "Python"
+    },
+    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 46,
@@ -91,6 +105,21 @@
       ],
       "stars": 401,
       "language": "Python"
+    },
+    {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "stars": 254,
+      "language": "JavaScript"
     }
   ]
 }

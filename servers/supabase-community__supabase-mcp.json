@@ -4,7 +4,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Connect Supabase to your AI assistants",
-  "pushed_at": "2026-04-21T20:32:30Z",
+  "pushed_at": "2026-04-28T18:57:59Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.55,
@@ -39,7 +39,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 6d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -47,7 +47,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 56d ago"
+          "note": "latest release 57d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -135,5 +135,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T17:51:09+00:00"
+  "scored_at": "2026-04-28T20:05:06+00:00"
 }
