@@ -164,12 +164,42 @@ _PROMPT_TOOL_PHRASES = (
 )
 
 
+def _strip_readme_noise(text: str) -> str:
+    """Remove decorative markup that produces false-positive capability matches.
+
+    Real-world bugs this fixes:
+      - GLips/Figma-Context-MCP tagged 'comms' because <img alt="discord">
+        from a community-link badge bar matched the discord keyword.
+      - googleapis/genai-toolbox tagged 'comms' for the same badge reason
+        (img.shields.io/badge/discord-...).
+
+    We strip image references, HTML img/a tags, and known badge-host URLs.
+    Inner link text is preserved — a body sentence "Use with Discord"
+    SHOULD still match comms; only decorations are stripped.
+    """
+    # Markdown image references: ![alt](url) — alt text is a label, not content
+    text = re.sub(r"!\[[^\]]*\]\([^\)]*\)", " ", text)
+    # HTML img tags (decorative)
+    text = re.sub(r"<img[^>]*>", " ", text, flags=re.I)
+    # HTML anchor tags — keep inner text, drop href attribute noise
+    text = re.sub(r"<a[^>]*>", " ", text, flags=re.I)
+    text = re.sub(r"</a>", " ", text, flags=re.I)
+    # All URLs — paths often contain platform names ("framelink.ai/discord")
+    # which trigger keyword matches without being content.
+    text = re.sub(r"https?://[^\s\)\"'<>]+", " ", text)
+    return text
+
+
 def _haystack(d: dict) -> str:
-    """Lowercased blob: description + topics + first 2KB of README."""
+    """Lowercased blob: description + topics + first 2KB of README.
+
+    README is sanitized of decorative markup before keyword matching to
+    avoid false positives from badge bars and link decorations.
+    """
     repo = d.get("repo", {})
     desc = (repo.get("description") or "").lower()
     topics = " ".join(repo.get("topics", []) if isinstance(repo, dict) else []).lower()
-    readme = (d.get("readme") or "")[:2000].lower()
+    readme = _strip_readme_noise((d.get("readme") or "")[:2000]).lower()
     return f"{desc}\n{topics}\n{readme}"
 
 

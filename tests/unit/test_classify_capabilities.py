@@ -165,3 +165,41 @@ class TestKnownMistakes:
             readme="Use SMTP to send emails. Supports TLS.",
         )
         assert "comms" in caps(d)
+
+
+class TestReadmeNoiseStripping:
+    """Bug #3 round 2: capability keywords inside markdown image badges
+    (`![discord](https://img.shields.io/badge/discord-...)`) and HTML
+    decorations (`<img alt="discord">`) caused false-positive comms tags
+    on Figma-Context-MCP and googleapis/genai-toolbox.
+    """
+
+    def test_markdown_image_badge_does_not_trigger(self, make_repo):
+        d = make_repo(
+            description="MCP server for Figma layout info to AI agents",
+            readme=(
+                "[![discord](https://img.shields.io/badge/discord-join-blue)]"
+                "(https://framelink.ai/discord)\n"
+                "Figma design tokens and components."
+            ),
+        )
+        assert "comms" not in caps(d), (
+            "discord in a badge image should not trigger comms"
+        )
+
+    def test_html_img_alt_does_not_trigger(self, make_repo):
+        d = make_repo(
+            description="Database toolbox",
+            readme='<a href="x"><img alt="discord" src="badge.png"></a>\nQuery databases.',
+        )
+        assert "comms" not in caps(d), (
+            "discord in <img alt> should not trigger comms"
+        )
+
+    def test_body_mention_still_triggers(self, make_repo):
+        # Genuine prose mention SHOULD still match — we only strip decorations.
+        d = make_repo(
+            description="MCP server for Discord bot operations",
+            readme="This server connects to Discord channels and posts messages.",
+        )
+        assert "comms" in caps(d)
