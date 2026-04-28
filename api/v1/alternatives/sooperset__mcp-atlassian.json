@@ -3,109 +3,23 @@
   "slug": "sooperset__mcp-atlassian",
   "of_capabilities": [
     "productivity",
-    "comms",
     "devtools"
   ],
   "alternatives": [
     {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 14544,
-      "language": "TypeScript",
-      "url": "https://github.com/GLips/Figma-Context-MCP",
-      "detail_url": "/servers/GLips__Figma-Context-MCP.json",
-      "similarity": 0.667,
-      "shared_capabilities": [
-        "comms",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 88,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "comms",
-        "devtools"
-      ],
-      "stars": 26906,
-      "language": "JavaScript",
-      "url": "https://github.com/eyaltoledano/claude-task-master",
-      "detail_url": "/servers/eyaltoledano__claude-task-master.json",
-      "similarity": 0.667,
-      "shared_capabilities": [
-        "comms",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "comms",
-        "devtools"
-      ],
-      "stars": 23536,
-      "language": "Python",
-      "url": "https://github.com/oraios/serena",
-      "detail_url": "/servers/oraios__serena.json",
-      "similarity": 0.5,
-      "shared_capabilities": [
-        "comms",
-        "devtools"
-      ]
-    },
-    {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "devtools"
       ],
-      "stars": 29317,
+      "stars": 29320,
       "language": "Go",
-      "url": "https://github.com/github/github-mcp-server",
-      "detail_url": "/servers/github__github-mcp-server.json",
-      "similarity": 0.333,
+      "similarity": 0.5,
+      "score": 0.5,
       "shared_capabilities": [
         "devtools"
       ]
@@ -114,22 +28,16 @@
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
       "composite": 87,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
         "devtools"
       ],
-      "stars": 84694,
+      "stars": 84698,
       "language": "TypeScript",
-      "url": "https://github.com/modelcontextprotocol/servers",
-      "detail_url": "/servers/modelcontextprotocol__servers.json",
-      "similarity": 0.333,
+      "similarity": 0.5,
+      "score": 0.466,
       "shared_capabilities": [
         "devtools"
       ]
@@ -138,12 +46,7 @@
       "repo": "zcaceres/fetch-mcp",
       "slug": "zcaceres__fetch-mcp",
       "composite": 50,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 33,
-        "community": 60
-      },
+      "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -151,9 +54,8 @@
       ],
       "stars": 744,
       "language": "TypeScript",
-      "url": "https://github.com/zcaceres/fetch-mcp",
-      "detail_url": "/servers/zcaceres__fetch-mcp.json",
-      "similarity": 0.333,
+      "similarity": 0.5,
+      "score": 0.354,
       "shared_capabilities": [
         "devtools"
       ]
@@ -162,12 +64,7 @@
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
       "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -175,33 +72,27 @@
       ],
       "stars": 1,
       "language": "JavaScript",
-      "url": "https://github.com/gbti-network/mcp-whats-the-passphrase",
-      "detail_url": "/servers/gbti-network__mcp-whats-the-passphrase.json",
-      "similarity": 0.333,
+      "similarity": 0.5,
+      "score": 0.324,
       "shared_capabilities": [
         "devtools"
       ]
     },
     {
-      "repo": "boysoai/Claude-Code-MCP",
-      "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
-      "axes": {
-        "reliability": 14,
-        "documentation": 40,
-        "trust": 33,
-        "community": 40
-      },
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 92,
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
+        "comms",
         "devtools"
       ],
-      "stars": 0,
-      "language": null,
-      "url": "https://github.com/boysoai/Claude-Code-MCP",
-      "detail_url": "/servers/boysoai__Claude-Code-MCP.json",
+      "stars": 14546,
+      "language": "TypeScript",
       "similarity": 0.333,
+      "score": 0.32,
       "shared_capabilities": [
         "devtools"
       ]
@@ -210,23 +101,36 @@
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 92,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
         "devtools"
       ],
-      "stars": 53970,
+      "stars": 53978,
       "language": "TypeScript",
-      "url": "https://github.com/upstash/context7",
-      "detail_url": "/servers/upstash__context7.json",
-      "similarity": 0.25,
+      "similarity": 0.333,
+      "score": 0.32,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 88,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "stars": 26907,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.313,
       "shared_capabilities": [
         "devtools"
       ]
@@ -235,12 +139,7 @@
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 78,
-      "axes": {
-        "reliability": 86,
-        "documentation": 80,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -249,9 +148,46 @@
       ],
       "stars": 661,
       "language": "Python",
-      "url": "https://github.com/rusiaaman/wcgw",
-      "detail_url": "/servers/rusiaaman__wcgw.json",
+      "similarity": 0.333,
+      "score": 0.294,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "boysoai/Claude-Code-MCP",
+      "slug": "boysoai__Claude-Code-MCP",
+      "composite": 32,
+      "description": "Claude Code MCP servers",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
+      "language": null,
+      "similarity": 0.5,
+      "score": 0.283,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 100,
+      "description": "Official MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "devtools",
+        "cloud",
+        "database"
+      ],
+      "stars": 8899,
+      "language": "Python",
       "similarity": 0.25,
+      "score": 0.25,
       "shared_capabilities": [
         "devtools"
       ]

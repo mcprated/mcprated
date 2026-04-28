@@ -1,6 +1,6 @@
 {
   "repo": "oraios/serena",
-  "stars": 23536,
+  "stars": 23538,
   "language": "Python",
   "license": "MIT",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
@@ -130,5 +130,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T13:30:07+00:00"
+  "scored_at": "2026-04-28T14:47:17+00:00"
 }

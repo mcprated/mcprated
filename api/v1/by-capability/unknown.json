@@ -2,80 +2,52 @@
   "capability": "unknown",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T13:30:07+00:00",
+  "generated_at": "2026-04-28T14:47:17+00:00",
   "count": 4,
   "servers": [
     {
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
       "composite": 69,
-      "axes": {
-        "reliability": 29,
-        "documentation": 100,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
       "stars": 4348,
-      "language": "TypeScript",
-      "url": "https://github.com/exa-labs/exa-mcp-server",
-      "detail_url": "/servers/exa-labs__exa-mcp-server.json"
+      "language": "TypeScript"
     },
     {
       "repo": "dandeliongold/mcp-time",
       "slug": "dandeliongold__mcp-time",
       "composite": 50,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
       "stars": 2,
-      "language": "TypeScript",
-      "url": "https://github.com/dandeliongold/mcp-time",
-      "detail_url": "/servers/dandeliongold__mcp-time.json"
+      "language": "TypeScript"
     },
     {
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
       "composite": 22,
-      "axes": {
-        "reliability": 14,
-        "documentation": 0,
-        "trust": 33,
-        "community": 40
-      },
+      "description": "mcp server assistant for mock data",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
       "stars": 0,
-      "language": "TypeScript",
-      "url": "https://github.com/ogulcanarbc/mock-assistant-mcp-server",
-      "detail_url": "/servers/ogulcanarbc__mock-assistant-mcp-server.json"
+      "language": "TypeScript"
     },
     {
       "repo": "jithinolickal/mcp-client-server",
       "slug": "jithinolickal__mcp-client-server",
       "composite": 17,
-      "axes": {
-        "reliability": 14,
-        "documentation": 0,
-        "trust": 33,
-        "community": 20
-      },
+      "description": "Sample on how mcp client and server can be created and used using python.",
       "kind": "client",
       "subkind": "",
       "capabilities": [],
       "stars": 0,
-      "language": "Python",
-      "url": "https://github.com/jithinolickal/mcp-client-server",
-      "detail_url": "/servers/jithinolickal__mcp-client-server.json"
+      "language": "Python"
     }
   ]
 }

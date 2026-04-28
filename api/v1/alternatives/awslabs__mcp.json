@@ -11,12 +11,7 @@
       "repo": "supabase-community/supabase-mcp",
       "slug": "supabase-community__supabase-mcp",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -24,38 +19,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2649,
+      "stars": 2650,
       "language": "TypeScript",
-      "url": "https://github.com/supabase-community/supabase-mcp",
-      "detail_url": "/servers/supabase-community__supabase-mcp.json",
       "similarity": 0.5,
-      "shared_capabilities": [
-        "database",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai",
-        "devtools"
-      ],
-      "stars": 401,
-      "language": "Python",
-      "url": "https://github.com/runekaagaard/mcp-alchemy",
-      "detail_url": "/servers/runekaagaard__mcp-alchemy.json",
-      "similarity": 0.5,
+      "score": 0.48,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -65,23 +32,38 @@
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "devtools"
       ],
-      "stars": 29317,
+      "stars": 29320,
       "language": "Go",
-      "url": "https://github.com/github/github-mcp-server",
-      "detail_url": "/servers/github__github-mcp-server.json",
       "similarity": 0.333,
+      "score": 0.333,
       "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai",
+        "devtools"
+      ],
+      "stars": 401,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.324,
+      "shared_capabilities": [
+        "database",
         "devtools"
       ]
     },
@@ -89,22 +71,16 @@
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
       "composite": 87,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
         "devtools"
       ],
-      "stars": 84694,
+      "stars": 84698,
       "language": "TypeScript",
-      "url": "https://github.com/modelcontextprotocol/servers",
-      "detail_url": "/servers/modelcontextprotocol__servers.json",
       "similarity": 0.333,
+      "score": 0.311,
       "shared_capabilities": [
         "devtools"
       ]
@@ -113,12 +89,7 @@
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
       "composite": 70,
-      "axes": {
-        "reliability": 86,
-        "documentation": 60,
-        "trust": 33,
-        "community": 100
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -126,81 +97,27 @@
       ],
       "stars": 3666,
       "language": "TypeScript",
-      "url": "https://github.com/cloudflare/mcp-server-cloudflare",
-      "detail_url": "/servers/cloudflare__mcp-server-cloudflare.json",
       "similarity": 0.333,
+      "score": 0.279,
       "shared_capabilities": [
         "cloud"
       ]
     },
     {
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 50,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 33,
-        "community": 60
-      },
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 95,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
+        "productivity",
         "devtools"
       ],
-      "stars": 744,
-      "language": "TypeScript",
-      "url": "https://github.com/zcaceres/fetch-mcp",
-      "detail_url": "/servers/zcaceres__fetch-mcp.json",
-      "similarity": 0.333,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "url": "https://github.com/gbti-network/mcp-whats-the-passphrase",
-      "detail_url": "/servers/gbti-network__mcp-whats-the-passphrase.json",
-      "similarity": 0.333,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "boysoai/Claude-Code-MCP",
-      "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
-      "axes": {
-        "reliability": 14,
-        "documentation": 40,
-        "trust": 33,
-        "community": 40
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 0,
-      "language": null,
-      "url": "https://github.com/boysoai/Claude-Code-MCP",
-      "detail_url": "/servers/boysoai__Claude-Code-MCP.json",
-      "similarity": 0.333,
+      "stars": 5052,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.244,
       "shared_capabilities": [
         "devtools"
       ]
@@ -209,23 +126,17 @@
       "repo": "GLips/Figma-Context-MCP",
       "slug": "GLips__Figma-Context-MCP",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "comms",
         "devtools"
       ],
-      "stars": 14544,
+      "stars": 14546,
       "language": "TypeScript",
-      "url": "https://github.com/GLips/Figma-Context-MCP",
-      "detail_url": "/servers/GLips__Figma-Context-MCP.json",
       "similarity": 0.25,
+      "score": 0.24,
       "shared_capabilities": [
         "devtools"
       ]
@@ -234,23 +145,54 @@
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 92,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
         "devtools"
       ],
-      "stars": 53970,
+      "stars": 53978,
       "language": "TypeScript",
-      "url": "https://github.com/upstash/context7",
-      "detail_url": "/servers/upstash__context7.json",
       "similarity": 0.25,
+      "score": 0.24,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 50,
+      "description": "A flexible HTTP fetching Model Context Protocol server.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 744,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.236,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 88,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "comms",
+        "devtools"
+      ],
+      "stars": 26907,
+      "language": "JavaScript",
+      "similarity": 0.25,
+      "score": 0.235,
       "shared_capabilities": [
         "devtools"
       ]

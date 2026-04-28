@@ -10,12 +10,7 @@
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 78,
-      "axes": {
-        "reliability": 86,
-        "documentation": 80,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -24,9 +19,8 @@
       ],
       "stars": 661,
       "language": "Python",
-      "url": "https://github.com/rusiaaman/wcgw",
-      "detail_url": "/servers/rusiaaman__wcgw.json",
       "similarity": 1.0,
+      "score": 0.883,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -36,12 +30,7 @@
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -49,11 +38,10 @@
         "ai",
         "devtools"
       ],
-      "stars": 31575,
+      "stars": 31593,
       "language": "TypeScript",
-      "url": "https://github.com/microsoft/playwright-mcp",
-      "detail_url": "/servers/microsoft__playwright-mcp.json",
       "similarity": 0.667,
+      "score": 0.667,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -63,12 +51,7 @@
       "repo": "oraios/serena",
       "slug": "oraios__serena",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -76,11 +59,10 @@
         "comms",
         "devtools"
       ],
-      "stars": 23536,
+      "stars": 23538,
       "language": "Python",
-      "url": "https://github.com/oraios/serena",
-      "detail_url": "/servers/oraios__serena.json",
       "similarity": 0.667,
+      "score": 0.639,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -90,12 +72,7 @@
       "repo": "supabase-community/supabase-mcp",
       "slug": "supabase-community__supabase-mcp",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -103,11 +80,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2649,
+      "stars": 2650,
       "language": "TypeScript",
-      "url": "https://github.com/supabase-community/supabase-mcp",
-      "detail_url": "/servers/supabase-community__supabase-mcp.json",
       "similarity": 0.667,
+      "score": 0.639,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -117,12 +93,7 @@
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
       "composite": 73,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 33,
-        "community": 80
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -130,38 +101,10 @@
         "devtools",
         "search"
       ],
-      "stars": 948,
+      "stars": 949,
       "language": "TypeScript",
-      "url": "https://github.com/brave/brave-search-mcp-server",
-      "detail_url": "/servers/brave__brave-search-mcp-server.json",
       "similarity": 0.667,
-      "shared_capabilities": [
-        "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai",
-        "devtools"
-      ],
-      "stars": 401,
-      "language": "Python",
-      "url": "https://github.com/runekaagaard/mcp-alchemy",
-      "detail_url": "/servers/runekaagaard__mcp-alchemy.json",
-      "similarity": 0.667,
+      "score": 0.57,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -171,22 +114,16 @@
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "devtools"
       ],
-      "stars": 29317,
+      "stars": 29320,
       "language": "Go",
-      "url": "https://github.com/github/github-mcp-server",
-      "detail_url": "/servers/github__github-mcp-server.json",
       "similarity": 0.5,
+      "score": 0.5,
       "shared_capabilities": [
         "devtools"
       ]
@@ -195,23 +132,38 @@
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
       "composite": 87,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
         "devtools"
       ],
-      "stars": 84694,
+      "stars": 84698,
       "language": "TypeScript",
-      "url": "https://github.com/modelcontextprotocol/servers",
-      "detail_url": "/servers/modelcontextprotocol__servers.json",
       "similarity": 0.5,
+      "score": 0.466,
       "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai",
+        "devtools"
+      ],
+      "stars": 401,
+      "language": "Python",
+      "similarity": 0.667,
+      "score": 0.432,
+      "shared_capabilities": [
+        "ai",
         "devtools"
       ]
     },
@@ -219,12 +171,7 @@
       "repo": "zcaceres/fetch-mcp",
       "slug": "zcaceres__fetch-mcp",
       "composite": 50,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 33,
-        "community": 60
-      },
+      "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -232,33 +179,27 @@
       ],
       "stars": 744,
       "language": "TypeScript",
-      "url": "https://github.com/zcaceres/fetch-mcp",
-      "detail_url": "/servers/zcaceres__fetch-mcp.json",
       "similarity": 0.5,
+      "score": 0.354,
       "shared_capabilities": [
         "devtools"
       ]
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 95,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
+        "productivity",
         "devtools"
       ],
-      "stars": 1,
-      "language": "JavaScript",
-      "url": "https://github.com/gbti-network/mcp-whats-the-passphrase",
-      "detail_url": "/servers/gbti-network__mcp-whats-the-passphrase.json",
-      "similarity": 0.5,
+      "stars": 5052,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.325,
       "shared_capabilities": [
         "devtools"
       ]

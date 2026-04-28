@@ -1,6 +1,6 @@
 {
   "repo": "GLips/Figma-Context-MCP",
-  "stars": 14544,
+  "stars": 14546,
   "language": "TypeScript",
   "license": "MIT",
   "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
@@ -33,7 +33,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 2d ago"
         },
         "has_releases": {
           "pass": true,
@@ -129,5 +129,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T13:30:07+00:00"
+  "scored_at": "2026-04-28T14:47:17+00:00"
 }

@@ -9,12 +9,7 @@
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -22,11 +17,10 @@
         "ai",
         "devtools"
       ],
-      "stars": 31575,
+      "stars": 31593,
       "language": "TypeScript",
-      "url": "https://github.com/microsoft/playwright-mcp",
-      "detail_url": "/servers/microsoft__playwright-mcp.json",
       "similarity": 0.333,
+      "score": 0.333,
       "shared_capabilities": [
         "web"
       ]

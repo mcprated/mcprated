@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/servers",
   "slug": "modelcontextprotocol__servers",
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T13:30:07+00:00",
+  "scored_at": "2026-04-28T14:47:17+00:00",
   "composite": 87,
   "axes": {
     "reliability": 100,
@@ -16,7 +16,7 @@
     "devtools"
   ],
   "license": "NOASSERTION",
-  "stars": 84694,
+  "stars": 84698,
   "pushed_at": "2026-04-17T22:59:54Z",
   "language": "TypeScript",
   "hard_flags": [],

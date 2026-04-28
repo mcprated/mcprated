@@ -9,12 +9,7 @@
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "Official MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -22,11 +17,10 @@
         "cloud",
         "database"
       ],
-      "stars": 8898,
+      "stars": 8899,
       "language": "Python",
-      "url": "https://github.com/awslabs/mcp",
-      "detail_url": "/servers/awslabs__mcp.json",
       "similarity": 0.333,
+      "score": 0.333,
       "shared_capabilities": [
         "cloud"
       ]

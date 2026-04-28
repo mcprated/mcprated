@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T13:30:07+00:00",
+  "generated_at": "2026-04-28T14:47:17+00:00",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
   "count": 26,
@@ -14,8 +14,9 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 8898,
+      "stars": 8899,
       "language": "Python",
+      "description": "Official MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -36,8 +37,9 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 29317,
+      "stars": 29320,
       "language": "Go",
+      "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -56,8 +58,9 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 14847,
+      "stars": 14848,
       "language": "Go",
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -78,8 +81,9 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 31575,
+      "stars": 31593,
       "language": "TypeScript",
+      "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -102,11 +106,11 @@
       },
       "stars": 5052,
       "language": "Python",
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity",
-        "comms",
         "devtools"
       ],
       "distribution": "repo",
@@ -122,8 +126,9 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 14544,
+      "stars": 14546,
       "language": "TypeScript",
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -143,8 +148,9 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 23536,
+      "stars": 23538,
       "language": "Python",
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -165,8 +171,9 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 2649,
+      "stars": 2650,
       "language": "TypeScript",
+      "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -187,8 +194,9 @@
         "trust": 100,
         "community": 80
       },
-      "stars": 53970,
+      "stars": 53978,
       "language": "TypeScript",
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -208,8 +216,9 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 26906,
+      "stars": 26907,
       "language": "JavaScript",
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -229,8 +238,9 @@
         "trust": 67,
         "community": 80
       },
-      "stars": 84694,
+      "stars": 84698,
       "language": "TypeScript",
+      "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -251,6 +261,7 @@
       },
       "stars": 1372,
       "language": "Python",
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -273,6 +284,7 @@
       },
       "stars": 661,
       "language": "Python",
+      "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -292,8 +304,9 @@
         "trust": 33,
         "community": 80
       },
-      "stars": 948,
+      "stars": 949,
       "language": "TypeScript",
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -318,6 +331,7 @@
       },
       "stars": 3666,
       "language": "TypeScript",
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -340,6 +354,7 @@
       },
       "stars": 4348,
       "language": "TypeScript",
+      "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -358,6 +373,7 @@
       },
       "stars": 2,
       "language": "TypeScript",
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -378,6 +394,7 @@
       },
       "stars": 744,
       "language": "TypeScript",
+      "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -398,6 +415,7 @@
       },
       "stars": 5475,
       "language": "TypeScript",
+      "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -418,6 +436,7 @@
       },
       "stars": 1,
       "language": "JavaScript",
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -441,6 +460,7 @@
       },
       "stars": 1,
       "language": "JavaScript",
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -461,6 +481,7 @@
       },
       "stars": 401,
       "language": "Python",
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -483,6 +504,7 @@
       },
       "stars": 0,
       "language": null,
+      "description": "Claude Code MCP servers",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -503,6 +525,7 @@
       },
       "stars": 0,
       "language": "Python",
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -523,6 +546,7 @@
       },
       "stars": 0,
       "language": "TypeScript",
+      "description": "mcp server assistant for mock data",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -541,6 +565,7 @@
       },
       "stars": 0,
       "language": "Python",
+      "description": "Sample on how mcp client and server can be created and used using python.",
       "kind": "client",
       "subkind": "",
       "capabilities": [],

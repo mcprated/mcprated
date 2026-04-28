@@ -2,7 +2,7 @@
   "version": "1.0",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T13:30:07+00:00",
+  "generated_at": "2026-04-28T14:47:17+00:00",
   "base_url": "https://mcprated.github.io/mcprated",
   "description": "Agent-readable index of MCP servers. Static JSON, no auth, daily refresh. Each endpoint answers one question; agents should fetch the relevant shard rather than the full index.json.",
   "enums": {
@@ -114,7 +114,7 @@
   "mcp_tools": [
     {
       "name": "find_server",
-      "description": "Find MCP servers tagged with a capability (database, web, search, ...). Returns ranked list.",
+      "description": "Find MCP servers tagged with a controlled capability category. Use when your need maps to one of the 12 categories; if not, use 'search'.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -145,6 +145,28 @@
         },
         "required": [
           "capability"
+        ]
+      }
+    },
+    {
+      "name": "search",
+      "description": "Free-text search when 'find_server' enum doesn't fit. Matches repo name + description + capabilities, ranked by relevance × quality.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 2
+          },
+          "limit": {
+            "type": "integer",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 25
+          }
+        },
+        "required": [
+          "query"
         ]
       }
     },

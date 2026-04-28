@@ -2,19 +2,14 @@
   "capability": "database",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T13:30:07+00:00",
+  "generated_at": "2026-04-28T14:47:17+00:00",
   "count": 6,
   "servers": [
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "Official MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -22,21 +17,14 @@
         "cloud",
         "database"
       ],
-      "stars": 8898,
-      "language": "Python",
-      "url": "https://github.com/awslabs/mcp",
-      "detail_url": "/servers/awslabs__mcp.json"
+      "stars": 8899,
+      "language": "Python"
     },
     {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -44,21 +32,14 @@
         "ai",
         "comms"
       ],
-      "stars": 14847,
-      "language": "Go",
-      "url": "https://github.com/googleapis/mcp-toolbox",
-      "detail_url": "/servers/googleapis__mcp-toolbox.json"
+      "stars": 14848,
+      "language": "Go"
     },
     {
       "repo": "supabase-community/supabase-mcp",
       "slug": "supabase-community__supabase-mcp",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -66,21 +47,14 @@
         "database",
         "devtools"
       ],
-      "stars": 2649,
-      "language": "TypeScript",
-      "url": "https://github.com/supabase-community/supabase-mcp",
-      "detail_url": "/servers/supabase-community__supabase-mcp.json"
+      "stars": 2650,
+      "language": "TypeScript"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
       "composite": 82,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 60
-      },
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -89,20 +63,13 @@
         "database"
       ],
       "stars": 1372,
-      "language": "Python",
-      "url": "https://github.com/qdrant/mcp-server-qdrant",
-      "detail_url": "/servers/qdrant__mcp-server-qdrant.json"
+      "language": "Python"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 46,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -110,20 +77,13 @@
         "search"
       ],
       "stars": 1,
-      "language": "JavaScript",
-      "url": "https://github.com/bsmi021/sticky-notes-server",
-      "detail_url": "/servers/bsmi021__sticky-notes-server.json"
+      "language": "JavaScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
       "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -132,9 +92,7 @@
         "devtools"
       ],
       "stars": 401,
-      "language": "Python",
-      "url": "https://github.com/runekaagaard/mcp-alchemy",
-      "detail_url": "/servers/runekaagaard__mcp-alchemy.json"
+      "language": "Python"
     }
   ]
 }

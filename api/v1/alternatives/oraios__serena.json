@@ -11,23 +11,17 @@
       "repo": "GLips/Figma-Context-MCP",
       "slug": "GLips__Figma-Context-MCP",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "comms",
         "devtools"
       ],
-      "stars": 14544,
+      "stars": 14546,
       "language": "TypeScript",
-      "url": "https://github.com/GLips/Figma-Context-MCP",
-      "detail_url": "/servers/GLips__Figma-Context-MCP.json",
       "similarity": 0.667,
+      "score": 0.639,
       "shared_capabilities": [
         "comms",
         "devtools"
@@ -37,23 +31,17 @@
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 92,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
         "devtools"
       ],
-      "stars": 53970,
+      "stars": 53978,
       "language": "TypeScript",
-      "url": "https://github.com/upstash/context7",
-      "detail_url": "/servers/upstash__context7.json",
       "similarity": 0.667,
+      "score": 0.639,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -63,23 +51,17 @@
       "repo": "eyaltoledano/claude-task-master",
       "slug": "eyaltoledano__claude-task-master",
       "composite": 88,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "comms",
         "devtools"
       ],
-      "stars": 26906,
+      "stars": 26907,
       "language": "JavaScript",
-      "url": "https://github.com/eyaltoledano/claude-task-master",
-      "detail_url": "/servers/eyaltoledano__claude-task-master.json",
       "similarity": 0.667,
+      "score": 0.625,
       "shared_capabilities": [
         "comms",
         "devtools"
@@ -89,12 +71,7 @@
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 78,
-      "axes": {
-        "reliability": 86,
-        "documentation": 80,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -103,9 +80,8 @@
       ],
       "stars": 661,
       "language": "Python",
-      "url": "https://github.com/rusiaaman/wcgw",
-      "detail_url": "/servers/rusiaaman__wcgw.json",
       "similarity": 0.667,
+      "score": 0.589,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -115,12 +91,7 @@
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -128,11 +99,10 @@
         "ai",
         "comms"
       ],
-      "stars": 14847,
+      "stars": 14848,
       "language": "Go",
-      "url": "https://github.com/googleapis/mcp-toolbox",
-      "detail_url": "/servers/googleapis__mcp-toolbox.json",
       "similarity": 0.5,
+      "score": 0.5,
       "shared_capabilities": [
         "ai",
         "comms"
@@ -142,12 +112,7 @@
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -155,40 +120,12 @@
         "ai",
         "devtools"
       ],
-      "stars": 31575,
+      "stars": 31593,
       "language": "TypeScript",
-      "url": "https://github.com/microsoft/playwright-mcp",
-      "detail_url": "/servers/microsoft__playwright-mcp.json",
       "similarity": 0.5,
+      "score": 0.5,
       "shared_capabilities": [
         "ai",
-        "devtools"
-      ]
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 95,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 100
-      },
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity",
-        "comms",
-        "devtools"
-      ],
-      "stars": 5052,
-      "language": "Python",
-      "url": "https://github.com/sooperset/mcp-atlassian",
-      "detail_url": "/servers/sooperset__mcp-atlassian.json",
-      "similarity": 0.5,
-      "shared_capabilities": [
-        "comms",
         "devtools"
       ]
     },
@@ -196,12 +133,7 @@
       "repo": "supabase-community/supabase-mcp",
       "slug": "supabase-community__supabase-mcp",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -209,11 +141,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2649,
+      "stars": 2650,
       "language": "TypeScript",
-      "url": "https://github.com/supabase-community/supabase-mcp",
-      "detail_url": "/servers/supabase-community__supabase-mcp.json",
       "similarity": 0.5,
+      "score": 0.48,
       "shared_capabilities": [
         "ai",
         "devtools"
@@ -223,12 +154,7 @@
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
       "composite": 73,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 33,
-        "community": 80
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -236,13 +162,30 @@
         "devtools",
         "search"
       ],
-      "stars": 948,
+      "stars": 949,
       "language": "TypeScript",
-      "url": "https://github.com/brave/brave-search-mcp-server",
-      "detail_url": "/servers/brave__brave-search-mcp-server.json",
       "similarity": 0.5,
+      "score": 0.427,
       "shared_capabilities": [
         "ai",
+        "devtools"
+      ]
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 100,
+      "description": "GitHub's official MCP Server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 29320,
+      "language": "Go",
+      "similarity": 0.333,
+      "score": 0.333,
+      "shared_capabilities": [
         "devtools"
       ]
     },
@@ -250,12 +193,7 @@
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
       "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -265,9 +203,8 @@
       ],
       "stars": 401,
       "language": "Python",
-      "url": "https://github.com/runekaagaard/mcp-alchemy",
-      "detail_url": "/servers/runekaagaard__mcp-alchemy.json",
       "similarity": 0.5,
+      "score": 0.324,
       "shared_capabilities": [
         "ai",
         "devtools"

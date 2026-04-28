@@ -2,19 +2,14 @@
   "capability": "search",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T13:30:07+00:00",
+  "generated_at": "2026-04-28T14:47:17+00:00",
   "count": 3,
   "servers": [
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
       "composite": 82,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 60
-      },
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -23,20 +18,13 @@
         "database"
       ],
       "stars": 1372,
-      "language": "Python",
-      "url": "https://github.com/qdrant/mcp-server-qdrant",
-      "detail_url": "/servers/qdrant__mcp-server-qdrant.json"
+      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
       "composite": 73,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 33,
-        "community": 80
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -44,21 +32,14 @@
         "devtools",
         "search"
       ],
-      "stars": 948,
-      "language": "TypeScript",
-      "url": "https://github.com/brave/brave-search-mcp-server",
-      "detail_url": "/servers/brave__brave-search-mcp-server.json"
+      "stars": 949,
+      "language": "TypeScript"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 46,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -66,9 +47,7 @@
         "search"
       ],
       "stars": 1,
-      "language": "JavaScript",
-      "url": "https://github.com/bsmi021/sticky-notes-server",
-      "detail_url": "/servers/bsmi021__sticky-notes-server.json"
+      "language": "JavaScript"
     }
   ]
 }

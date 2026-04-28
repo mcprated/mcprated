@@ -2,19 +2,14 @@
   "capability": "ai",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T13:30:07+00:00",
+  "generated_at": "2026-04-28T14:47:17+00:00",
   "count": 10,
   "servers": [
     {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
@@ -22,21 +17,14 @@
         "ai",
         "comms"
       ],
-      "stars": 14847,
-      "language": "Go",
-      "url": "https://github.com/googleapis/mcp-toolbox",
-      "detail_url": "/servers/googleapis__mcp-toolbox.json"
+      "stars": 14848,
+      "language": "Go"
     },
     {
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
       "composite": 100,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 100,
-        "community": 100
-      },
+      "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -44,21 +32,14 @@
         "ai",
         "devtools"
       ],
-      "stars": 31575,
-      "language": "TypeScript",
-      "url": "https://github.com/microsoft/playwright-mcp",
-      "detail_url": "/servers/microsoft__playwright-mcp.json"
+      "stars": 31593,
+      "language": "TypeScript"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -66,21 +47,14 @@
         "comms",
         "devtools"
       ],
-      "stars": 23536,
-      "language": "Python",
-      "url": "https://github.com/oraios/serena",
-      "detail_url": "/servers/oraios__serena.json"
+      "stars": 23538,
+      "language": "Python"
     },
     {
       "repo": "supabase-community/supabase-mcp",
       "slug": "supabase-community__supabase-mcp",
       "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
+      "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -88,42 +62,28 @@
         "database",
         "devtools"
       ],
-      "stars": 2649,
-      "language": "TypeScript",
-      "url": "https://github.com/supabase-community/supabase-mcp",
-      "detail_url": "/servers/supabase-community__supabase-mcp.json"
+      "stars": 2650,
+      "language": "TypeScript"
     },
     {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 92,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
         "devtools"
       ],
-      "stars": 53970,
-      "language": "TypeScript",
-      "url": "https://github.com/upstash/context7",
-      "detail_url": "/servers/upstash__context7.json"
+      "stars": 53978,
+      "language": "TypeScript"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
       "composite": 82,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 60
-      },
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -132,20 +92,13 @@
         "database"
       ],
       "stars": 1372,
-      "language": "Python",
-      "url": "https://github.com/qdrant/mcp-server-qdrant",
-      "detail_url": "/servers/qdrant__mcp-server-qdrant.json"
+      "language": "Python"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 78,
-      "axes": {
-        "reliability": 86,
-        "documentation": 80,
-        "trust": 67,
-        "community": 80
-      },
+      "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -153,20 +106,13 @@
         "devtools"
       ],
       "stars": 661,
-      "language": "Python",
-      "url": "https://github.com/rusiaaman/wcgw",
-      "detail_url": "/servers/rusiaaman__wcgw.json"
+      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
       "composite": 73,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 33,
-        "community": 80
-      },
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -174,21 +120,14 @@
         "devtools",
         "search"
       ],
-      "stars": 948,
-      "language": "TypeScript",
-      "url": "https://github.com/brave/brave-search-mcp-server",
-      "detail_url": "/servers/brave__brave-search-mcp-server.json"
+      "stars": 949,
+      "language": "TypeScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
       "composite": 42,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 33,
-        "community": 40
-      },
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -197,29 +136,20 @@
         "devtools"
       ],
       "stars": 401,
-      "language": "Python",
-      "url": "https://github.com/runekaagaard/mcp-alchemy",
-      "detail_url": "/servers/runekaagaard__mcp-alchemy.json"
+      "language": "Python"
     },
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
       "composite": 32,
-      "axes": {
-        "reliability": 14,
-        "documentation": 40,
-        "trust": 33,
-        "community": 40
-      },
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
       "stars": 0,
-      "language": "Python",
-      "url": "https://github.com/nikolaypavlov/mcp-myip",
-      "detail_url": "/servers/nikolaypavlov__mcp-myip.json"
+      "language": "Python"
     }
   ]
 }
