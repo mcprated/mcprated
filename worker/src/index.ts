@@ -215,9 +215,68 @@ class CatalogUnavailable extends Error {}
 // ---------------------------------------------------------------------------
 
 // Bumped per-deploy to bust any stale CF colo cache entries.
-// v4: bumped after slim-payload (Bug #4) + description-in-index changes —
-// Worker had cached the pre-slim /index.json so search returned empty descs.
-const CATALOG_CACHE_VERSION = "4";
+const CATALOG_CACHE_VERSION = "5";
+
+// ---------------------------------------------------------------------------
+// Search synonym expansion — local-test feedback: query="browser" missed
+// microsoft/playwright-mcp because its description doesn't contain "browser",
+// only "Playwright". Map common natural-language tokens to capability tags;
+// servers tagged with the matched capability join the candidate set with
+// 0.5 weight (literal hits still dominate at 1.0).
+//
+// Sourced from linter/taxonomy/v1.yaml — keep in sync. We deliberately don't
+// fetch the taxonomy at runtime: the mapping is small (one-token → capability)
+// and bundling it makes search work even if the catalog index is partially
+// stale.
+// ---------------------------------------------------------------------------
+const TAXONOMY_TOKEN_TO_CAPABILITY: Record<string, string> = {
+  // database
+  postgres: "database", postgresql: "database", mysql: "database",
+  sqlite: "database", mongo: "database", mongodb: "database", redis: "database",
+  neo4j: "database", sql: "database", duckdb: "database", supabase: "database",
+  firestore: "database", dynamodb: "database", clickhouse: "database",
+  bigquery: "database", snowflake: "database", database: "database", rdbms: "database",
+  // web
+  browser: "web", playwright: "web", puppeteer: "web", chromium: "web",
+  scraping: "web", "web-scraping": "web",
+  // search
+  retrieval: "search", elasticsearch: "search", rag: "search", embeddings: "search",
+  // productivity
+  notion: "productivity", todoist: "productivity", asana: "productivity",
+  jira: "productivity", gmail: "productivity", outlook: "productivity",
+  confluence: "productivity", airtable: "productivity",
+  // comms
+  slack: "comms", discord: "comms", telegram: "comms", whatsapp: "comms",
+  twilio: "comms", smtp: "comms", imap: "comms", mattermost: "comms",
+  // devtools
+  github: "devtools", gitlab: "devtools", bitbucket: "devtools",
+  sentry: "devtools", datadog: "devtools", docker: "devtools",
+  kubernetes: "devtools", terraform: "devtools", ansible: "devtools",
+  // cloud
+  aws: "cloud", gcp: "cloud", azure: "cloud", cloudflare: "cloud",
+  vercel: "cloud", netlify: "cloud", heroku: "cloud", lambda: "cloud", s3: "cloud",
+  // ai
+  openai: "ai", anthropic: "ai", llm: "ai", whisper: "ai",
+  replicate: "ai", huggingface: "ai", gemini: "ai",
+  // memory
+  obsidian: "memory", anki: "memory",
+  // finance
+  stripe: "finance", plaid: "finance", payments: "finance", blockchain: "finance",
+  ethereum: "finance", bitcoin: "finance", coinbase: "finance",
+  // media
+  ffmpeg: "media", ocr: "media",
+};
+
+// Cap on how much of the offending input we echo back in error messages.
+// 80 chars is enough to tell the agent which slug it tried; longer is noise
+// and risks log/UI bloat if the input is malicious or runaway-generated.
+const ERROR_INPUT_ECHO_MAX = 80;
+
+function safeQuote(value: unknown): string {
+  const s = String(value);
+  if (s.length <= ERROR_INPUT_ECHO_MAX) return JSON.stringify(s);
+  return JSON.stringify(s.slice(0, ERROR_INPUT_ECHO_MAX) + "…");
+}
 
 async function fetchCatalog(
   env: Env,
@@ -274,7 +333,7 @@ function validateArgs(toolName: string, rawArgs: unknown): Record<string, unknow
   const args: Record<string, unknown> =
     rawArgs && typeof rawArgs === "object" ? { ...(rawArgs as object) } : {};
   const schema = tool.inputSchema as unknown as {
-    properties?: Record<string, { type?: string; enum?: unknown[] }>;
+    properties?: Record<string, { type?: string; enum?: unknown[]; minLength?: number }>;
     required?: string[];
   };
 
@@ -288,9 +347,18 @@ function validateArgs(toolName: string, rawArgs: unknown): Record<string, unknow
     if (args[key] === undefined) continue;
     if (propSchema.enum && !propSchema.enum.includes(args[key])) {
       invalidParams(
-        `invalid '${key}': ${JSON.stringify(args[key])}. Valid values: ${propSchema.enum
+        `invalid '${key}': ${safeQuote(args[key])}. Valid values: ${propSchema.enum
           .map((v) => JSON.stringify(v))
           .join(", ")}`
+      );
+    }
+    if (
+      propSchema.minLength !== undefined &&
+      typeof args[key] === "string" &&
+      (args[key] as string).length < propSchema.minLength
+    ) {
+      invalidParams(
+        `'${key}' must be at least ${propSchema.minLength} characters; got ${(args[key] as string).length}`
       );
     }
   }
@@ -344,29 +412,56 @@ async function callTool(
       try {
         const data = await fetchCatalog(env, ctx, `/index.json`);
         const tokens = query.split(/\s+/).filter((t) => t.length >= 2);
+
+        // Synonym expansion: any token that matches a known taxonomy keyword
+        // (postgres, browser, slack, ...) maps to its capability tag (database,
+        // web, comms, ...). Servers tagged with that capability join the
+        // candidate set with reduced weight. Local-test feedback flagged the
+        // miss: query="browser" missed microsoft/playwright-mcp because its
+        // description was "Playwright Model Context Protocol Server" — no
+        // literal "browser". With expansion, web-tagged servers are surfaced.
+        const expandedCapabilities = new Set<string>();
+        for (const t of tokens) {
+          const cap = TAXONOMY_TOKEN_TO_CAPABILITY[t];
+          if (cap) expandedCapabilities.add(cap);
+        }
+
         const scored = (data.servers ?? [])
           .filter((s: any) => s.kind === "server")
           .map((s: any) => {
             const hay = [
               s.repo, s.description, ...(s.capabilities ?? []), s.language,
             ].filter(Boolean).join(" ").toLowerCase();
-            const hits = tokens.reduce((n, t) => n + (hay.includes(t) ? 1 : 0), 0);
-            // Score: hit-fraction × sqrt(composite/100). Same shape as
-            // alternatives ranking — quality matters but relevance dominates.
-            const relevance = tokens.length ? hits / tokens.length : 0;
+            // Direct hits: literal substring match against the haystack.
+            const directHits = tokens.reduce(
+              (n, t) => n + (hay.includes(t) ? 1 : 0), 0
+            );
+            // Expansion match: server tagged with one of the capabilities
+            // implied by the query. Half-weight so direct hits still win.
+            const caps = new Set<string>(s.capabilities ?? []);
+            const expansionHit = [...expandedCapabilities].some((c) => caps.has(c));
+            const directRelevance = tokens.length ? directHits / tokens.length : 0;
+            const expansionRelevance = expansionHit ? 0.5 : 0;
+            const relevance = Math.max(directRelevance, expansionRelevance);
             const quality = Math.sqrt((s.composite ?? 0) / 100);
-            return { s, score: relevance * quality, hits, relevance };
+            return {
+              s, score: relevance * quality,
+              direct_hits: directHits, relevance,
+              matched_via_expansion: expansionHit && directRelevance === 0,
+            };
           })
-          .filter((x: any) => x.hits > 0)
+          .filter((x: any) => x.relevance > 0)
           .sort((a: any, b: any) => b.score - a.score || b.s.composite - a.s.composite);
         const top = scored.slice(0, limit).map((x: any) => ({
           ...x.s,
           search_score: Number(x.score.toFixed(3)),
-          token_hits: x.hits,
+          token_hits: x.direct_hits,
+          matched_via: x.matched_via_expansion ? "capability_expansion" : "direct",
         }));
         return contentEnvelope({
           query,
           tokens,
+          expanded_capabilities: [...expandedCapabilities],
           total_matches: scored.length,
           returned: top.length,
           servers: top,
@@ -386,7 +481,7 @@ async function callTool(
       } catch (e) {
         if (e instanceof CatalogNotFound) {
           notFound(
-            `no server with slug '${slug}'. Use 'top' or 'find_server' to discover valid slugs (format: <owner>__<repo>).`
+            `no server with slug ${safeQuote(slug)}. Use 'top' or 'find_server' to discover valid slugs (format: <owner>__<repo>).`
           );
         }
         if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
@@ -402,7 +497,7 @@ async function callTool(
       } catch (e) {
         if (e instanceof CatalogNotFound) {
           notFound(
-            `no server with slug '${slug}'. Use 'top' or 'find_server' to discover valid slugs.`
+            `no server with slug ${safeQuote(slug)}. Use 'top' or 'find_server' to discover valid slugs.`
           );
         }
         if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
@@ -454,7 +549,7 @@ async function callTool(
       } catch (e) {
         if (e instanceof CatalogNotFound) {
           notFound(
-            `no server with slug '${slug}'. Use 'top' or 'find_server' to discover valid slugs.`
+            `no server with slug ${safeQuote(slug)}. Use 'top' or 'find_server' to discover valid slugs.`
           );
         }
         if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
