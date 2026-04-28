@@ -237,7 +237,10 @@ class CatalogUnavailable extends Error {}
 // ---------------------------------------------------------------------------
 
 // Bumped per-deploy to bust any stale CF colo cache entries.
-const CATALOG_CACHE_VERSION = "5";
+// v6: bump to flush 1h-stale post-E3 data (broad-cap penalty + slack server
+// in catalog + tools-index growth from 21 to 50). Worker cache had 1h TTL
+// from before the E3 render_api re-generation.
+const CATALOG_CACHE_VERSION = "6";
 
 // ---------------------------------------------------------------------------
 // Search synonym expansion — local-test feedback: query="browser" missed
