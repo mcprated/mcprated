@@ -260,7 +260,7 @@ def render_index(idx: dict, repo_url: str) -> str:
 claude mcp add --transport http mcprated https://mcp.mcprated.workers.dev
 
 <code># Cursor / Cline / Continue — paste into config</code>
-{"mcpServers": {"mcprated": {"url": "https://mcp.mcprated.workers.dev"}}}</pre>
+{{"mcpServers": {{"mcprated": {{"url": "https://mcp.mcprated.workers.dev"}}}}}}</pre>
   </div>
 
   <div class="stats">
