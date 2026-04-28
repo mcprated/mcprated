@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.1.0",
-  "generated_at": "2026-04-28T20:05:06+00:00",
+  "generated_at": "2026-04-28T20:09:44+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -56,7 +56,7 @@
         "web",
         "ai"
       ],
-      "stars": 31650,
+      "stars": 31651,
       "language": "TypeScript"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 23544,
+      "stars": 23545,
       "language": "Python"
     },
     {
@@ -121,7 +121,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54005,
+      "stars": 54006,
       "language": "TypeScript"
     },
     {
@@ -353,7 +353,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54005,
+      "stars": 54006,
       "language": "TypeScript"
     },
     {
@@ -367,7 +367,7 @@
         "web",
         "ai"
       ],
-      "stars": 31650,
+      "stars": 31651,
       "language": "TypeScript"
     },
     {
@@ -405,7 +405,7 @@
         "ai",
         "search"
       ],
-      "stars": 23544,
+      "stars": 23545,
       "language": "Python"
     },
     {
@@ -665,19 +665,6 @@
   ],
   "by_recency": [
     {
-      "repo": "mcprated/mcprated",
-      "slug": "mcprated__mcprated",
-      "composite": 86,
-      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 0,
-      "language": "Python"
-    },
-    {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
       "composite": 92,
@@ -688,7 +675,20 @@
         "ai",
         "search"
       ],
-      "stars": 23544,
+      "stars": 23545,
+      "language": "Python"
+    },
+    {
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 86,
+      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
       "language": "Python"
     },
     {
@@ -769,7 +769,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54005,
+      "stars": 54006,
       "language": "TypeScript"
     },
     {
@@ -794,7 +794,7 @@
         "web",
         "ai"
       ],
-      "stars": 31650,
+      "stars": 31651,
       "language": "TypeScript"
     },
     {

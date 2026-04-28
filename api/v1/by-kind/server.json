@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.1.0",
-  "generated_at": "2026-04-28T20:05:06+00:00",
+  "generated_at": "2026-04-28T20:09:44+00:00",
   "count": 29,
   "servers": [
     {
@@ -58,7 +58,7 @@
         "web",
         "ai"
       ],
-      "stars": 31650,
+      "stars": 31651,
       "language": "TypeScript"
     },
     {
@@ -96,7 +96,7 @@
         "ai",
         "search"
       ],
-      "stars": 23544,
+      "stars": 23545,
       "language": "Python"
     },
     {
@@ -123,7 +123,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54005,
+      "stars": 54006,
       "language": "TypeScript"
     },
     {

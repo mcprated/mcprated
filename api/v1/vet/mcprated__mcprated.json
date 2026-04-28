@@ -2,7 +2,7 @@
   "repo": "mcprated/mcprated",
   "slug": "mcprated__mcprated",
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:05:05+00:00",
+  "scored_at": "2026-04-28T20:09:44+00:00",
   "composite": 86,
   "axes": {
     "reliability": 86,
@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "stars": 0,
-  "pushed_at": "2026-04-28T20:00:43Z",
+  "pushed_at": "2026-04-28T20:05:43Z",
   "language": "Python",
   "hard_flags": [],
   "trust_signals": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T20:05:06+00:00",
+  "generated_at": "2026-04-28T20:09:44+00:00",
   "rule_set_version": "1.1.0",
   "count": 2,
   "reason_summary": "Tagged with mcp-server / mcp topic but failed prefilter (no SDK dep, no mcpServers config in README, no MCP in description/name).",

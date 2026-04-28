@@ -4,7 +4,7 @@
   "language": "Python",
   "license": "MIT",
   "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
-  "pushed_at": "2026-04-28T20:00:43Z",
+  "pushed_at": "2026-04-28T20:05:43Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.55,
@@ -136,5 +136,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:05:05+00:00"
+  "scored_at": "2026-04-28T20:09:44+00:00"
 }

@@ -2,7 +2,7 @@
   "repo": "supabase-community/supabase-mcp",
   "slug": "supabase-community__supabase-mcp",
   "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:05:06+00:00",
+  "scored_at": "2026-04-28T20:09:44+00:00",
   "composite": 92,
   "axes": {
     "reliability": 100,

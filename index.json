@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T20:05:06+00:00",
+  "generated_at": "2026-04-28T20:09:44+00:00",
   "rule_set_version": "1.1.0",
   "taxonomy_version": "1.0",
   "count": 32,
@@ -87,7 +87,7 @@
         "trust": 100,
         "community": 100
       },
-      "stars": 31650,
+      "stars": 31651,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -176,7 +176,7 @@
         "trust": 67,
         "community": 100
       },
-      "stars": 23544,
+      "stars": 23545,
       "language": "Python",
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
@@ -224,7 +224,7 @@
         "trust": 100,
         "community": 80
       },
-      "stars": 54005,
+      "stars": 54006,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
