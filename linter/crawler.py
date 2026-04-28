@@ -56,6 +56,31 @@ def gh_get(path: str, params: dict | None = None) -> dict | list | None:
             return None
 
 
+def _candidate_source_paths(name: str) -> list[str]:
+    """Likely server-entry / tool-definition file paths for a repo.
+
+    Pure function; tested in isolation. Extending this list raises extractor
+    coverage but each entry costs one Contents API call when missing.
+    """
+    pkg = name.replace("-", "_")
+    return [
+        # TypeScript / JavaScript entry points
+        "index.ts", "src/index.ts", "src/server.ts", "src/main.ts",
+        "index.js", "src/index.js",
+        # Common TS tool-definition layouts (extractor needs these)
+        "src/tools.ts", "src/tools/index.ts",
+        # Python entry points + package layouts
+        "main.py", "server.py", "src/main.py", "src/server.py",
+        f"src/{pkg}/server.py", f"src/{pkg}/__main__.py",
+        f"src/{pkg}/main.py", f"src/{pkg}/tools.py",
+        f"{pkg}/server.py", f"{pkg}/main.py", f"{pkg}/tools.py",
+        # Go entry points
+        "main.go", "cmd/server/main.go", "server/main.go",
+        # Rust
+        "src/main.rs", "src/server.rs",
+    ]
+
+
 def fetch_file(owner: str, name: str, path: str) -> str | None:
     data = gh_get(f"/repos/{owner}/{name}/contents/{path}")
     if not data or not isinstance(data, dict) or "content" not in data:
@@ -85,28 +110,49 @@ def fetch_repo(owner: str, name: str) -> dict | None:
         if body:
             pkg_meta[fn] = body
 
-    # Layer 2 (rule_set v1.1) — fetch likely server-entry source files so the
-    # classifier can detect server-run patterns (new Server(...).run, @mcp.tool,
-    # FastMCP(...).run, etc.) without false positives from name/desc heuristics.
-    # We cap at 8 candidate paths, ~30KB each, total ~250KB per repo. Anything
-    # beyond is server-specific and out of scope for v1.1.
+    # Layer 2 (rule_set v1.1+) — fetch likely server-entry source files so
+    # the classifier can detect server-run patterns AND the AST extractor
+    # can enumerate registered tools.
+    #
+    # v1.1.1: also probe tools/ subdirectories — many TS servers split tool
+    # defs across src/tools/<feature>.ts, and Python servers across
+    # <pkg>/tools/<feature>.py. Without this the extractor misses ~60% of
+    # the tools real servers expose.
     source_files: dict[str, str] = {}
-    source_candidates = [
-        "index.ts", "src/index.ts", "src/server.ts", "src/main.ts",
-        "index.js", "src/index.js",
-        "main.py", "server.py", "src/main.py", "src/server.py",
-        f"src/{name.replace('-', '_')}/server.py",
-        f"src/{name.replace('-', '_')}/__main__.py",
-        f"{name.replace('-', '_')}/server.py",
-        "main.go", "cmd/server/main.go", "server/main.go",
-        "src/main.rs", "src/server.rs",
-    ]
-    for path in source_candidates:
-        if len(source_files) >= 4:
+    candidates = _candidate_source_paths(name)
+    # Soft cap on actual fetches (each costs a Contents API call). Higher
+    # than v1.0's 4 — extractor benefits from broader source coverage, and
+    # we have ~5000/h authenticated quota.
+    fetch_budget = 12
+    for path in candidates:
+        if len(source_files) >= fetch_budget:
             break
         body = fetch_file(owner, name, path)
         if body:
             source_files[path] = body[:30_000]
+
+    # Tools-directory expansion: if /tools or /src/tools exists, list its
+    # contents and pull every file (within budget). This is the single
+    # biggest extraction-coverage improvement.
+    for tools_dir in ("tools", "src/tools", f"src/{name.replace('-', '_')}/tools"):
+        if len(source_files) >= fetch_budget:
+            break
+        listing = gh_get(f"/repos/{owner}/{name}/contents/{tools_dir}")
+        if not isinstance(listing, list):
+            continue
+        for item in listing:
+            if len(source_files) >= fetch_budget:
+                break
+            if not isinstance(item, dict):
+                continue
+            ipath = item.get("path") or ""
+            if not ipath or ipath in source_files:
+                continue
+            if not any(ipath.endswith(ext) for ext in (".ts", ".tsx", ".js", ".mjs", ".py", ".go", ".rs")):
+                continue
+            body = fetch_file(owner, name, ipath)
+            if body:
+                source_files[ipath] = body[:30_000]
 
     license_text = None
     spdx = (repo.get("license") or {}).get("spdx_id")

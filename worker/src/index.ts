@@ -173,6 +173,28 @@ const TOOLS = [
       required: ["slug"],
     },
   },
+  {
+    name: "find_tool",
+    description:
+      "Find a specific MCP tool by name or natural-language intent. Searches the flat tools-index across every cataloged server. Returns matched tools with their owning server. Use when you know what tool you need (e.g. 'browser_navigate', 'read_file', 'send_message') rather than which server.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        intent: {
+          type: "string",
+          minLength: 2,
+          description: "Tool name or natural-language description.",
+        },
+        limit: {
+          type: "integer",
+          default: 10,
+          minimum: 1,
+          maximum: 25,
+        },
+      },
+      required: ["intent"],
+    },
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -429,8 +451,13 @@ async function callTool(
         const scored = (data.servers ?? [])
           .filter((s: any) => s.kind === "server")
           .map((s: any) => {
+            // Phase A4: include extracted tool names in the searchable
+            // haystack. query='browser_navigate' now finds playwright-mcp
+            // even when the description doesn't literally say 'browser'.
             const hay = [
-              s.repo, s.description, ...(s.capabilities ?? []), s.language,
+              s.repo, s.description, ...(s.capabilities ?? []),
+              ...(s.tool_names_preview ?? []),
+              s.language,
             ].filter(Boolean).join(" ").toLowerCase();
             // Direct hits: literal substring match against the haystack.
             const directHits = tokens.reduce(
@@ -552,6 +579,46 @@ async function callTool(
             `no server with slug ${safeQuote(slug)}. Use 'top' or 'find_server' to discover valid slugs.`
           );
         }
+        if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
+        throw e;
+      }
+    }
+
+    case "find_tool": {
+      const intent = String(a.intent).trim().toLowerCase();
+      const limit = Math.max(1, Math.min(25, Number(a.limit ?? 10)));
+      try {
+        const data = await fetchCatalog(env, ctx, `/api/v1/tools-index.json`);
+        const tokens = intent.split(/[\s_\-]+/).filter((t) => t.length >= 2);
+
+        const scored = (data.tools ?? [])
+          .map((t: any) => {
+            const hay = [t.name, ...(t.capabilities ?? [])]
+              .filter(Boolean).join(" ").toLowerCase();
+            const directHits = tokens.reduce(
+              (n, tok) => n + (hay.includes(tok) ? 1 : 0), 0
+            );
+            const relevance = tokens.length ? directHits / tokens.length : 0;
+            const quality = Math.sqrt((t.composite ?? 0) / 100);
+            return { t, score: relevance * quality, hits: directHits };
+          })
+          .filter((x: any) => x.hits > 0)
+          .sort((a: any, b: any) => b.score - a.score || b.t.composite - a.t.composite)
+          .slice(0, limit)
+          .map((x: any) => ({
+            ...x.t,
+            match_score: Number(x.score.toFixed(3)),
+            token_hits: x.hits,
+          }));
+        return contentEnvelope({
+          intent,
+          tokens,
+          total_indexed: (data.tools ?? []).length,
+          returned: scored.length,
+          matches: scored,
+        });
+      } catch (e) {
+        if (e instanceof CatalogNotFound) internal("tools-index missing — run lint pipeline");
         if (e instanceof CatalogUnavailable) internal("catalog upstream unavailable");
         throw e;
       }

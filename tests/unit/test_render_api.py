@@ -149,10 +149,13 @@ class TestManifest:
         assert set(m["enums"]["kinds"]) == set(render_api.KINDS)
         assert set(m["enums"]["subkinds"]) == set(render_api.SUBKINDS)
 
-    def test_manifest_lists_all_seven_tools(self):
+    def test_manifest_lists_all_eight_tools(self):
         m = render_api.render_manifest(make_index())
         names = {t["name"] for t in m["mcp_tools"]}
-        assert names == {"find_server", "search", "vet", "alternatives", "by_kind", "top", "server_detail"}
+        assert names == {
+            "find_server", "find_tool", "search", "vet",
+            "alternatives", "by_kind", "top", "server_detail",
+        }
 
     def test_every_tool_has_input_schema(self):
         m = render_api.render_manifest(make_index())
@@ -311,6 +314,70 @@ class TestAlternatives:
         ]
         result = render_api.render_alternatives(idx_servers[0], idx_servers)
         assert result["alternatives"] == []
+
+
+class TestRenderToolsIndex:
+    """Bug #6 follow-up: a flat searchable index of every extracted tool
+    across every server. Lets agents go from intent → specific tool → server
+    in one fetch instead of N server-detail roundtrips.
+    """
+
+    def test_basic_shape(self):
+        # Per-server JSONs include "tools" summary with names
+        full_servers = {
+            "x__a": {"repo": "x/a", "tools": {
+                "tool_count": 2,
+                "tool_names_preview": ["read_file", "write_file"],
+                "extraction_method": "regex_typescript",
+            }},
+            "x__b": {"repo": "x/b", "tools": {
+                "tool_count": 1,
+                "tool_names_preview": ["browser_navigate"],
+                "extraction_method": "regex_typescript",
+            }},
+        }
+        idx = make_index(
+            make_index_entry(slug="x__a", repo="x/a", composite=80),
+            make_index_entry(slug="x__b", repo="x/b", composite=70),
+        )
+        result = render_api.render_tools_index(idx, full_servers)
+        assert result["total_tools"] == 3
+        # Each tool entry must include name + repo + slug + composite
+        for entry in result["tools"]:
+            for key in ("name", "repo", "slug", "composite"):
+                assert key in entry
+
+    def test_dedupes_identical_names_across_servers(self):
+        # Multiple servers can expose `read_file`. We keep both rows so an
+        # agent can compare quality, but ensure the schema supports it.
+        full_servers = {
+            "a__one": {"repo": "a/one", "tools": {"tool_count": 1, "tool_names_preview": ["read_file"], "extraction_method": "regex_typescript"}},
+            "b__two": {"repo": "b/two", "tools": {"tool_count": 1, "tool_names_preview": ["read_file"], "extraction_method": "regex_typescript"}},
+        }
+        idx = make_index(
+            make_index_entry(slug="a__one", repo="a/one", composite=90),
+            make_index_entry(slug="b__two", repo="b/two", composite=70),
+        )
+        result = render_api.render_tools_index(idx, full_servers)
+        # Both entries present
+        names = [t["name"] for t in result["tools"]]
+        assert names.count("read_file") == 2
+        # Sorted by composite desc — agent reading top-K gets best provider first
+        for_read_file = [t for t in result["tools"] if t["name"] == "read_file"]
+        assert for_read_file[0]["composite"] >= for_read_file[1]["composite"]
+
+    def test_servers_without_tools_skipped(self):
+        full_servers = {
+            "x__a": {"repo": "x/a", "tools": {"tool_count": 0, "tool_names_preview": [], "extraction_method": "none"}},
+            "x__b": {"repo": "x/b", "tools": {"tool_count": 1, "tool_names_preview": ["foo"], "extraction_method": "regex_typescript"}},
+        }
+        idx = make_index(
+            make_index_entry(slug="x__a", repo="x/a"),
+            make_index_entry(slug="x__b", repo="x/b"),
+        )
+        result = render_api.render_tools_index(idx, full_servers)
+        assert result["total_tools"] == 1
+        assert result["tools"][0]["repo"] == "x/b"
 
 
 class TestAlternativesRankingQuality:

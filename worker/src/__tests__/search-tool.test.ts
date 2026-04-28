@@ -172,6 +172,42 @@ describe("Bug #6: search tool", () => {
     });
   });
 
+  describe("matches against extracted tool names (Phase A4)", () => {
+    it("query='browser_navigate' finds the server exposing that tool", async () => {
+      mockUpstream("/index.json", {
+        servers: [
+          {
+            repo: "microsoft/playwright-mcp",
+            slug: "microsoft__playwright-mcp",
+            composite: 100,
+            description: "Playwright MCP",  // no 'browser' literal
+            capabilities: ["web", "ai"],
+            kind: "server",
+            tool_count: 16,
+            // index entry now carries tool_names_preview (Phase A4)
+            tool_names_preview: [
+              "browser_navigate", "browser_click", "browser_screenshot",
+            ],
+          },
+          {
+            repo: "x/notes",
+            slug: "x__notes",
+            composite: 70,
+            description: "Notes",
+            capabilities: ["memory"],
+            kind: "server",
+            tool_count: 0,
+            tool_names_preview: [],
+          },
+        ],
+      });
+      const { body } = await callTool("search", { query: "browser_navigate" });
+      const payload = unwrap(body);
+      const slugs = payload.servers.map((s: any) => s.slug);
+      expect(slugs).toContain("microsoft__playwright-mcp");
+    });
+  });
+
   // Schema declares minLength: 2 for query — server must enforce.
   describe("minLength enforcement on query", () => {
     it("query of length 1 → -32602 with minLength message", async () => {

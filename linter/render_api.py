@@ -134,6 +134,17 @@ def render_manifest(idx: dict) -> dict:
                 "description": "Full lint output for one server: every signal, every reason, every flag.",
             },
             {
+                "name": "tools_index",
+                "url": "/api/v1/tools-index.json",
+                "description": "Flat list of every extracted tool across every server. Use to find a tool by name when you don't know which server exposes it.",
+            },
+            {
+                "name": "tools_detail",
+                "url_template": "/tools/{slug}.json",
+                "params": {"slug": "<owner>__<repo>"},
+                "description": "Full extracted tool inventory for one server (names, descriptions, input keys).",
+            },
+            {
                 "name": "index",
                 "url": "/index.json",
                 "description": "The full catalog as one document. Use shards for targeted queries.",
@@ -159,7 +170,7 @@ def render_manifest(idx: dict) -> dict:
             },
             {
                 "name": "search",
-                "description": "Free-text search when 'find_server' enum doesn't fit. Matches repo name + description + capabilities, ranked by relevance × quality.",
+                "description": "Free-text search when 'find_server' enum doesn't fit. Matches repo name + description + capabilities + extracted tool names, ranked by relevance × quality.",
                 "inputSchema": {
                     "type": "object",
                     "properties": {
@@ -167,6 +178,18 @@ def render_manifest(idx: dict) -> dict:
                         "limit": {"type": "integer", "default": 10, "minimum": 1, "maximum": 25},
                     },
                     "required": ["query"],
+                },
+            },
+            {
+                "name": "find_tool",
+                "description": "Find a specific MCP tool by name or intent. Searches the flat tools-index across every server. Use this when the agent needs a specific capability at the tool level (e.g., 'browser_navigate', 'read_file', 'send_message') rather than choosing a whole server.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                        "intent": {"type": "string", "minLength": 2, "description": "Tool name or natural-language intent."},
+                        "limit": {"type": "integer", "default": 10, "minimum": 1, "maximum": 25},
+                    },
+                    "required": ["intent"],
                 },
             },
             {
@@ -364,6 +387,50 @@ def render_alternatives(idx_entry: dict, all_entries: list) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# render_tools_index — flat searchable index of every extracted tool
+# ---------------------------------------------------------------------------
+
+def render_tools_index(idx: dict, full_servers: dict[str, dict]) -> dict:
+    """Flatten per-server tool extractions into one searchable list.
+
+    Why flat: agents asking find_tool(intent="read postgres tables") want a
+    direct answer, not a tree to traverse. Servers without extracted tools
+    are skipped — including them would just add noise.
+
+    Each entry carries: tool name, owning server (repo + slug), composite
+    (so agents can prefer high-quality providers when multiple expose the
+    same tool name), and the extraction method (so agents know whether the
+    name is from AST analysis or a regex best-guess).
+    """
+    out_tools = []
+    for entry in idx.get("servers", []):
+        slug = entry["slug"]
+        full = full_servers.get(slug, {})
+        tools_summary = full.get("tools") or {}
+        tool_names = tools_summary.get("tool_names_preview") or []
+        if not tool_names:
+            continue
+        for name in tool_names:
+            out_tools.append({
+                "name": name,
+                "repo": entry["repo"],
+                "slug": slug,
+                "composite": entry["composite"],
+                "kind": entry.get("kind"),
+                "subkind": entry.get("subkind") or "",
+                "capabilities": entry.get("capabilities") or [],
+                "extraction_method": tools_summary.get("extraction_method", "none"),
+            })
+    out_tools.sort(key=lambda t: (-t["composite"], t["name"]))
+    return {
+        "rule_set_version": idx.get("rule_set_version"),
+        "generated_at": idx.get("generated_at"),
+        "total_tools": len(out_tools),
+        "tools": out_tools,
+    }
+
+
+# ---------------------------------------------------------------------------
 # Driver
 # ---------------------------------------------------------------------------
 
@@ -422,6 +489,12 @@ def main() -> int:
     # top
     (out_dir / "top.json").write_text(
         json.dumps(render_top(idx, full_servers), ensure_ascii=False, indent=2)
+    )
+    written += 1
+
+    # tools-index — flat searchable list across all servers
+    (out_dir / "tools-index.json").write_text(
+        json.dumps(render_tools_index(idx, full_servers), ensure_ascii=False, indent=2)
     )
     written += 1
 

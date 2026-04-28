@@ -29,7 +29,7 @@ describe("MCP handshake", () => {
     });
   });
 
-  it("tools/list returns the seven declared tools", async () => {
+  it("tools/list returns the eight declared tools", async () => {
     const { body } = await rpc("tools/list");
     const result = (body as any).result;
     const names = result.tools.map((t: any) => t.name).sort();
@@ -37,6 +37,7 @@ describe("MCP handshake", () => {
       "alternatives",
       "by_kind",
       "find_server",
+      "find_tool",
       "search",
       "server_detail",
       "top",

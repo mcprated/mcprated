@@ -589,6 +589,7 @@ def main():
             "capabilities": result["capabilities"],
             "distribution": result["distribution"],
             "tool_count": (result.get("tools") or {}).get("tool_count", 0),
+            "tool_names_preview": (result.get("tools") or {}).get("tool_names_preview", []),
             "hard_flags": [f["key"] for f in result["hard_flags"]],
         })
     index.sort(key=lambda x: -x["composite"])
