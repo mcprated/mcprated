@@ -48,6 +48,9 @@ jobs:
       - name: Render landing page (HTML + llms.txt)
         run: python linter/render_pages.py --data build --out build/site
 
+      - name: Render agent API (/api/v1/*)
+        run: python linter/render_api.py --data build --out build/site
+
       - name: Render SVG badges (composite, latest)
         run: python linter/render_badges.py --data build --out build/site/badges
 

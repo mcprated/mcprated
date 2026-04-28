@@ -73,6 +73,7 @@ def render_index(idx: dict, repo_url: str) -> str:
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://mcprated.github.io/mcprated/">
   <link rel="alternate" type="application/json" title="Catalog index (JSON)" href="./index.json">
+  <link rel="alternate" type="application/json" title="Agent API manifest" href="./api/v1/manifest.json">
   <link rel="alternate" type="text/plain" title="LLM-friendly summary" href="./llms.txt">
   <style>
     :root {{
@@ -456,6 +457,17 @@ def render_llms_txt(idx: dict, repo_url: str) -> str:
 
 ## API (static JSON, public, free, no auth)
 
+**Start here:**
+- [Manifest](https://mcprated.github.io/mcprated/api/v1/manifest.json): endpoint map, valid enum values (capabilities, kinds), MCP tool definitions. **Fetch this first to learn the shape.**
+
+**Sharded answers (one question per file, agent-friendly):**
+- `/api/v1/by-capability/<cap>.json` — servers tagged with capability X (database, web, search, ...)
+- `/api/v1/by-kind/<kind>.json` — server / client / framework / tool / ambiguous
+- `/api/v1/top.json` — top-by-composite, top-by-stars, top-by-recency (25 each)
+- `/api/v1/vet/<owner>__<repo>.json` — trust-focused subset + verdict (verified / caution / low_quality)
+- `/api/v1/alternatives/<owner>__<repo>.json` — capability-similar servers, ranked
+
+**Full views:**
 - [Catalog index](https://mcprated.github.io/mcprated/index.json): every server with composite, axes, `kind`, `subkind`, `capabilities`, `distribution`
 - [Per-server detail](https://mcprated.github.io/mcprated/servers/microsoft__playwright-mcp.json): full lint output for one repo (replace path with `<owner>__<repo>.json`)
 - [Excluded list](https://mcprated.github.io/mcprated/excluded.json): repos filtered out by prefilter, with reason — transparency
