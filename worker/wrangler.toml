@@ -1,0 +1,17 @@
+name = "mcp"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Workers free tier — no Durable Objects, no KV needed for stateless catalog
+# proxy. We use the per-edge Cache API for outbound fetches to gh-pages.
+
+[observability]
+enabled = true
+
+[vars]
+CATALOG_BASE = "https://mcprated.github.io/mcprated"
+SERVER_VERSION = "0.1.0"
+
+# Custom domain: add later when mcprated.dev is registered.
+#   routes = [{ pattern = "mcp.mcprated.dev/*", zone_name = "mcprated.dev" }]
