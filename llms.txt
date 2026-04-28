@@ -3,9 +3,9 @@
 > Open, daily-updated quality ratings for Model Context Protocol servers. Every MCP server on GitHub is lint-checked across four axes: Reliability, Documentation, Trust, Community. Composite score 0–100, fully transparent ruleset.
 
 ## Stats
-- Servers rated: 125
+- Servers rated: 17
 - Rule set: v1.0.0
-- Last update: 2026-04-27T20:55:42+00:00
+- Last update: 2026-04-28T06:38:40+00:00
 
 ## API (static JSON, public, free, no auth)
 

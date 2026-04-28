@@ -1,10 +1,10 @@
 {
   "repo": "microsoft/playwright-mcp",
-  "stars": 31510,
+  "stars": 31534,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Playwright MCP server",
-  "pushed_at": "2026-04-27T19:24:12Z",
+  "pushed_at": "2026-04-27T20:52:22Z",
   "composite": 100,
   "composite_raw": 100,
   "axes": {
@@ -31,11 +31,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 26d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: v0.0.70"
+          "note": "latest tag: v0.0.71"
         },
         "release_communication": {
           "pass": true,
@@ -119,5 +119,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.0.0",
-  "scored_at": "2026-04-27T20:55:42+00:00"
+  "scored_at": "2026-04-28T06:38:40+00:00"
 }
