@@ -28,6 +28,7 @@ TAXONOMY_VERSION = "1.0"
 # Local imports kept after the version constant so external callers that
 # `from lint import RULE_SET_VERSION` still work without triggering classify load.
 from classify import classify_kind, classify_capabilities  # noqa: E402
+from extractor import extract_from_repo, summarize_for_index  # noqa: E402
 
 
 # =====================================================================
@@ -473,6 +474,8 @@ def lint(repo_data: dict) -> dict:
     repo = repo_data["repo"]
     kind, subkind, kind_conf, kind_reason = classify_kind(repo_data)
     capabilities = classify_capabilities(repo_data)
+    extraction = extract_from_repo(repo_data)
+    tools_summary = summarize_for_index(extraction)
     return {
         "repo": f"{repo.get('owner', {}).get('login', repo.get('full_name', '?').split('/')[0])}/{repo.get('name', '?')}",
         "stars": repo.get("stargazers_count"),
@@ -487,6 +490,8 @@ def lint(repo_data: dict) -> dict:
         "capabilities": capabilities,
         "distribution": "repo",
         "taxonomy_version": TAXONOMY_VERSION,
+        "tools": tools_summary,
+        "tools_extraction": extraction,
         "composite": composite,
         "composite_raw": composite_raw,
         "axes": out_axes,
@@ -524,6 +529,8 @@ def main():
     servers_dir.mkdir(exist_ok=True)
     excluded_dir = out_dir / "excluded"
     excluded_dir.mkdir(exist_ok=True)
+    tools_dir = out_dir / "tools"
+    tools_dir.mkdir(exist_ok=True)
 
     repos = load_cache_dir(cache_dir)
     if not repos:
@@ -559,6 +566,13 @@ def main():
             continue
 
         result = lint(r)
+        # Tools extraction lives in result["tools_extraction"] but is also
+        # mirrored to data/tools/<slug>.json for direct agent fetch.
+        extraction = result.pop("tools_extraction", None)
+        if extraction and extraction.get("source_files_scanned"):
+            (tools_dir / f"{slug}.json").write_text(
+                json.dumps(extraction, ensure_ascii=False, indent=2)
+            )
         (servers_dir / f"{slug}.json").write_text(
             json.dumps(result, ensure_ascii=False, indent=2)
         )
@@ -574,6 +588,7 @@ def main():
             "subkind": result["subkind"],
             "capabilities": result["capabilities"],
             "distribution": result["distribution"],
+            "tool_count": (result.get("tools") or {}).get("tool_count", 0),
             "hard_flags": [f["key"] for f in result["hard_flags"]],
         })
     index.sort(key=lambda x: -x["composite"])
