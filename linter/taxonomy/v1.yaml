@@ -1,0 +1,86 @@
+# MCPRated capability taxonomy v1.0
+#
+# Versioned controlled vocabulary used to tag MCP servers with what they DO,
+# not how they're built. Matched against `description + topics + readme[:2000]`
+# with word-boundary regex (single tokens) or literal phrase match (multi-word).
+#
+# Bumping rules:
+#   - Adding a category or keyword: minor bump (v1.1, v1.2, ...)
+#   - Renaming or removing a category: major bump (v2.0)
+# Server JSON includes `taxonomy_version` so historical data stays interpretable.
+#
+# Authoritative source for `_TAXONOMY` dict in linter/classify.py — keep in sync.
+
+version: "1.0"
+
+categories:
+  database:
+    keywords: [postgres, postgresql, mysql, sqlite, mongodb, mongo, redis, neo4j,
+               sql, duckdb, supabase, firestore, dynamodb, clickhouse, bigquery,
+               snowflake, database, rdbms]
+    description: "Read/write structured data stores."
+
+  filesystem:
+    keywords: [filesystem, "file system", "read files", "write files",
+               "local files", "directory access", "file operations"]
+    description: "Local file and directory operations."
+
+  web:
+    keywords: [browser, "web scraping", playwright, puppeteer, "fetch url",
+               "http client", "web automation", "page snapshot",
+               "headless browser", "browser automation", chromium]
+    description: "Browser automation, HTTP fetching, web scraping."
+
+  search:
+    keywords: ["full-text search", "vector search", "semantic search",
+               "search engine", retrieval, "embeddings index", elasticsearch,
+               "search api", rag]
+    description: "Search engines, retrieval, RAG components."
+
+  productivity:
+    keywords: [notion, todoist, "linear app", asana, jira, "google calendar",
+               gmail, outlook, "google docs", "google sheets", confluence,
+               airtable, "monday.com"]
+    description: "Productivity / task / docs / calendar tools."
+
+  comms:
+    keywords: [slack, discord, telegram, whatsapp, twilio, email, smtp, imap,
+               "matrix protocol", mattermost, "send message", messaging]
+    description: "Messaging, chat, email, SMS."
+
+  devtools:
+    keywords: [github, gitlab, bitbucket, sentry, datadog, "ci/cd", docker,
+               kubernetes, terraform, ansible, deployment, "code review",
+               "git operations"]
+    description: "Developer tooling — VCS, CI/CD, observability, infra."
+
+  cloud:
+    keywords: [aws, gcp, azure, cloudflare, vercel, netlify, "fly.io", heroku,
+               "google cloud", lambda, s3, "cloudflare workers"]
+    description: "Cloud provider service ops."
+
+  ai:
+    keywords: [openai, anthropic, llm, embeddings, "image generation",
+               transcription, whisper, "stable diffusion", replicate,
+               huggingface, "gemini api"]
+    description: "AI / ML model invocation, image gen, transcription."
+
+  memory:
+    keywords: ["knowledge graph", "memory store", "notes app", journal,
+               vault, obsidian, "second brain", "personal knowledge", anki,
+               "long-term memory"]
+    description: "Persistent memory / notes / knowledge graph for agents."
+
+  finance:
+    keywords: [stripe, plaid, payments, blockchain, ethereum, bitcoin, defi,
+               "trading api", coinbase, "banking api"]
+    description: "Payments, banking, crypto, finance APIs."
+
+  media:
+    keywords: [ffmpeg, ocr, "image processing", "video editing",
+               "speech to text", "audio processing", "video processing"]
+    description: "Image, video, audio processing."
+
+# Servers matching no keyword get capabilities=[] and are surfaced under
+# `capability=unknown` in agent endpoints (V1.1). Deliberate fallback,
+# not a hard error.

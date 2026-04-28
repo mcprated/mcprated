@@ -1,22 +1,46 @@
 # MCPRated reference seed list — used for regression testing + initial catalog seed.
 #
-# Tier A: known-good, used as gold-standard regression targets.
+# Tier A: known-good. Quality gold-standard, must score well; regression
+#         must not silently drop these below their baseline grade.
 # Tier B: low-quality / sample / abandoned, used to verify downside differentiation.
+# Tier C: borderline (frameworks-that-ship-a-server, agent-products) — useful to
+#         keep classifier honest about kind/subkind, not strict grade targets.
 # Format: owner/repo, one per line. Comments with #.
 
-# Tier A — known-good (regression must not drop these below their baseline grades)
+# =============================================================================
+# Tier A — known-good (regression must not drop these below their baseline grade)
+# =============================================================================
+
+# Anthropic-maintained reference servers (active monorepo)
 modelcontextprotocol/servers
-cloudflare/mcp-server-cloudflare
+
+# First-party vendor servers (high adoption per research 2026-04-28)
 github/github-mcp-server
-sooperset/mcp-atlassian
-executeautomation/mcp-playwright
 microsoft/playwright-mcp
+cloudflare/mcp-server-cloudflare
 supabase-community/supabase-mcp
+sooperset/mcp-atlassian
+brave/brave-search-mcp-server
+exa-labs/exa-mcp-server
+googleapis/genai-toolbox
+awslabs/mcp
+
+# Community high-adoption (cross-referenced Smithery + best-of-mcp lists)
+upstash/context7
+wonderwhy-er/DesktopCommander
+oraios/serena
 qdrant/mcp-server-qdrant
 runekaagaard/mcp-alchemy
 zcaceres/fetch-mcp
+rusiaaman/wcgw
+GLips/Figma-Context-MCP
 
-# Tier B — low quality / sample / abandoned (must score ≤ Tier A)
+# Earlier reference (kept for continuity even though microsoft/playwright-mcp now leads)
+executeautomation/mcp-playwright
+
+# =============================================================================
+# Tier B — low quality / sample / abandoned (must score <= Tier A)
+# =============================================================================
 jithinolickal/mcp-client-server
 nikolaypavlov/mcp-myip
 mddaniya1/weather
@@ -25,3 +49,13 @@ bsmi021/sticky-notes-server
 gbti-network/mcp-whats-the-passphrase
 dandeliongold/mcp-time
 ogulcanarbc/mock-assistant-mcp-server
+
+# =============================================================================
+# Tier C — borderline kind/subkind cases (classifier honesty checks)
+# =============================================================================
+# Classifier should mark these as kind=server, subkind=agent-product
+eyaltoledano/claude-task-master
+
+# Microsoft's parent project is a CLI/library; subdirectory exposes a server.
+# Currently scored as repo-level — keep as data point for future suite handling.
+microsoft/markitdown

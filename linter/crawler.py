@@ -33,16 +33,27 @@ def gh_get(path: str, params: dict | None = None) -> dict | list | None:
     if tok:
         headers["Authorization"] = f"Bearer {tok}"
     req = urllib.request.Request(url, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=20) as r:
-            return json.loads(r.read())
-    except urllib.error.HTTPError as e:
-        if e.code in (404, 451):
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            if e.code in (404, 451):
+                return None
+            if e.code == 403:
+                print(f"  rate-limited or forbidden: {url}", file=sys.stderr)
+                return None
+            if e.code >= 500 and attempt < 2:
+                time.sleep(2 * (attempt + 1))
+                continue
+            print(f"  http {e.code} on {url} (giving up)", file=sys.stderr)
             return None
-        if e.code == 403:
-            print(f"  rate-limited or forbidden: {url}", file=sys.stderr)
+        except (urllib.error.URLError, TimeoutError) as e:
+            if attempt < 2:
+                time.sleep(2 * (attempt + 1))
+                continue
+            print(f"  network error on {url}: {e} (giving up)", file=sys.stderr)
             return None
-        raise
 
 
 def fetch_file(owner: str, name: str, path: str) -> str | None:
@@ -69,10 +80,33 @@ def fetch_repo(owner: str, name: str) -> dict | None:
             readme = ""
 
     pkg_meta = {}
-    for fn in ("package.json", "pyproject.toml", "Cargo.toml", "go.mod"):
+    for fn in ("package.json", "pyproject.toml", "Cargo.toml", "go.mod", "setup.py", "setup.cfg"):
         body = fetch_file(owner, name, fn)
         if body:
             pkg_meta[fn] = body
+
+    # Layer 2 (rule_set v1.1) — fetch likely server-entry source files so the
+    # classifier can detect server-run patterns (new Server(...).run, @mcp.tool,
+    # FastMCP(...).run, etc.) without false positives from name/desc heuristics.
+    # We cap at 8 candidate paths, ~30KB each, total ~250KB per repo. Anything
+    # beyond is server-specific and out of scope for v1.1.
+    source_files: dict[str, str] = {}
+    source_candidates = [
+        "index.ts", "src/index.ts", "src/server.ts", "src/main.ts",
+        "index.js", "src/index.js",
+        "main.py", "server.py", "src/main.py", "src/server.py",
+        f"src/{name.replace('-', '_')}/server.py",
+        f"src/{name.replace('-', '_')}/__main__.py",
+        f"{name.replace('-', '_')}/server.py",
+        "main.go", "cmd/server/main.go", "server/main.go",
+        "src/main.rs", "src/server.rs",
+    ]
+    for path in source_candidates:
+        if len(source_files) >= 4:
+            break
+        body = fetch_file(owner, name, path)
+        if body:
+            source_files[path] = body[:30_000]
 
     license_text = None
     spdx = (repo.get("license") or {}).get("spdx_id")
@@ -120,6 +154,7 @@ def fetch_repo(owner: str, name: str) -> dict | None:
         "repo": repo,
         "readme": readme,
         "pkg": pkg_meta,
+        "source_files": source_files,
         "license_text": license_text,
         "releases_count": len(releases) if isinstance(releases, list) else 0,
         "tags_count": len(tags) if isinstance(tags, list) else 0,

@@ -1,6 +1,59 @@
 # MCPRated Methodology
 
-This document describes exactly how MCP servers are scored. The full ruleset is published as YAML in [`linter/rules/v1.0/`](linter/rules/v1.0). Every score result includes a `rule_set_version` field for audit traceability.
+This document describes exactly how MCP servers are scored, and — equally important — what we count as an MCP server in the first place. The full ruleset is published as YAML in [`linter/rules/v1.0/`](linter/rules/v1.0). The capability vocabulary is at [`linter/taxonomy/v1.yaml`](linter/taxonomy/v1.yaml). Every score result includes `rule_set_version` and `taxonomy_version` for audit traceability.
+
+## What we catalog
+
+We are agent-first. The catalog must let an LLM agent answer "is this a server", "what does it do", and "should I trust it" without re-reading the README. So we draw the line precisely.
+
+### Operational definition (v1.1)
+
+An **MCP server** is a runnable artifact that implements the Model Context Protocol (stdio / SSE / streamable HTTP), exposes ≥1 of `tools` / `resources` / `prompts`, and is distributed as a product for use by an MCP client.
+
+We do **not** catalog:
+
+- **Frameworks for building MCP servers** — FastMCP, the official `@modelcontextprotocol/sdk`, `mcp-go`, `rmcp`. Tools to build servers, not servers themselves.
+- **MCP clients / inspectors / debuggers** — `@modelcontextprotocol/inspector`, MCP-aware UIs, host apps. They consume MCP, they don't expose it.
+- **End-user apps that happen to speak MCP** — gemini-cli, n8n, LibreChat, LocalAI. Their primary purpose is something else; MCP support is a feature.
+- **Standalone CLIs that don't implement MCP** — a CLI tool that has no MCP surface stays out, even if it's adjacent. (CLIs *wrapped* as MCP servers — `wcgw`, Desktop Commander — are in.)
+
+### kind / subkind classification
+
+Every cataloged repo gets a `kind` and (when `kind=server`) a `subkind`. Both live in per-server JSON and in `index.json`. See [`linter/classify.py`](linter/classify.py) for the deterministic logic.
+
+| `kind` | Meaning |
+|---|---|
+| `server` | Matches the operational definition above. The thing we actually rate. |
+| `client` | MCP host / client / proxy / UI — consumes MCP. |
+| `framework` | Library or SDK for building MCP servers. |
+| `tool` | Inspector / debugger / dev-tool for MCP. |
+| `ambiguous` | Could not classify with confidence — human review may be useful. |
+
+For `kind=server`, `subkind` carries an extra honest signal:
+
+| `subkind` | Meaning | Example |
+|---|---|---|
+| `integration` | Default. Bridges to an external system or capability. | github, supabase, playwright |
+| `aggregator` | Gateway to many sub-tools — one entry hides thousands. | Zapier MCP, Pipedream |
+| `prompt-tool` | In-context reasoning aid; no external integration. | sequential-thinking, dice-roller |
+| `agent-product` | A product whose MCP surface is one of several. | serena, claude-task-master, awslabs/mcp suite |
+
+Default catalog views and the composite ranking show `kind=server`. `client` / `framework` / `tool` / `ambiguous` are kept in `excluded.json` (auditable) and reachable via planned `/api/v1/by-kind/<kind>.json`.
+
+### Capability taxonomy (v1.0)
+
+Each `kind=server` is tagged with up to 3 `capabilities` from a versioned vocabulary: `database`, `filesystem`, `web`, `search`, `productivity`, `comms`, `devtools`, `cloud`, `ai`, `memory`, `finance`, `media`. Servers matching no keyword get an empty list and surface under `capability=unknown` (deliberate fallback, not an error).
+
+Tagging is heuristic: case-insensitive keyword match against `description + topics + readme[:2000]`. Cheap, deterministic, transparent. Future versions will add AST-extracted tool inventories for finer-grained matching.
+
+Bumping rules: adding a category or keyword is a minor bump (taxonomy v1.1, v1.2, …); renaming or removing is major (v2.0). Server JSON includes `taxonomy_version` so historical data stays interpretable.
+
+### Scope (v1.x)
+
+- **GitHub-hosted only.** Hosted-only / remote MCP endpoints (`mcp.notion.com`, `mcp.linear.app`, etc.) are not crawled in v1.x. We reserve `distribution: hosted` in the schema for a v1.2 ingest pipeline.
+- **One repo = one entry.** Mono-repo suites like `awslabs/mcp` and `modelcontextprotocol/servers` are scored at the repo level for v1.x. Sub-server listings are a v1.2 goal.
+
+
 
 ## Score model
 
@@ -137,4 +190,4 @@ This document is authoritative. If code disagrees, code is wrong.
 
 ---
 
-*MCPRated rule_set version: 1.0.0*
+*MCPRated rule_set version: 1.1.0 · taxonomy version: 1.0*

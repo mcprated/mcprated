@@ -64,10 +64,10 @@ def render_index(idx: dict, repo_url: str) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MCPRated — Quality ratings for Model Context Protocol servers</title>
-  <meta name="description" content="Open, daily-updated quality ratings for every MCP server on GitHub. Four axes: Reliability, Documentation, Trust, Community.">
-  <meta property="og:title" content="MCPRated">
-  <meta property="og:description" content="Quality ratings for Model Context Protocol servers — open, transparent, daily.">
+  <title>MCPRated — Agent-readable index of every MCP server</title>
+  <meta name="description" content="Agent-readable index of every MCP server. Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic.">
+  <meta property="og:title" content="MCPRated — agent-first MCP catalog">
+  <meta property="og:description" content="Built for LLMs to discover, vet, and choose MCP servers at runtime. Open ruleset, daily-updated, deterministic.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mcprated.github.io/mcprated/">
   <meta name="twitter:card" content="summary_large_image">
@@ -251,8 +251,8 @@ def render_index(idx: dict, repo_url: str) -> str:
 
 <header>
   <span class="brand">mcprated</span>
-  <h1>Quality ratings for<br>Model Context Protocol servers.</h1>
-  <p class="tagline">Open, daily-updated, deterministic. Every MCP server on GitHub, lint-checked across four axes. No magic. Read the rules, fork the linter, run it yourself.</p>
+  <h1>Agent-readable index of<br>every MCP server.</h1>
+  <p class="tagline">Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. Trust scores today; capability index and <code>@mcprated/mcp-server</code> next.</p>
 
   <div class="stats">
     <div class="stat">
@@ -361,24 +361,31 @@ def render_index(idx: dict, repo_url: str) -> str:
 
 <section>
   <h2>For agents</h2>
-  <p class="lead">MCPRated is built agent-first. The site is a UI; the API is JSON files served from GitHub's CDN.</p>
+  <p class="lead">MCPRated is built agent-first. The site is a UI; the API is JSON files served from GitHub's CDN. No auth, stable URLs, daily refresh.</p>
 
   <div class="agent-block">
-    <pre><code># Catalog index — minimal list of all servers with composite + axis scores</code>
+    <pre><code># Discovery — start here. Lists every endpoint and what it contains.</code>
+GET https://mcprated.github.io/mcprated/llms.txt
+
+<code># Catalog index — every server with composite, axes, kind, capabilities, distribution</code>
 GET https://mcprated.github.io/mcprated/index.json
 
-<code># Per-server full lint detail</code>
+<code># Per-server full lint detail (kind, subkind, capabilities, all signal results)</code>
 GET https://mcprated.github.io/mcprated/servers/&lt;owner&gt;__&lt;repo&gt;.json
 
-<code># LLM-friendly summary (Anthropic /llms.txt convention)</code>
-GET https://mcprated.github.io/mcprated/llms.txt
+<code># Transparency: what we filtered out and why</code>
+GET https://mcprated.github.io/mcprated/excluded.json
 
 <code># Daily snapshot archive (full history)</code>
 GET https://github.com/{repo_url}/releases</pre>
   </div>
 
   <p style="margin-top:1.5rem;color:var(--fg-mute);">
-    Coming in v2.x: <code>@mcprated/mcp-server</code> as an npm package — stdio MCP server you install once, queries the catalog directly from your agent. Until then, fetch the JSON.
+    Each server JSON carries <code>kind</code> (server / client / framework / tool / ambiguous), <code>subkind</code> (integration / aggregator / prompt-tool / agent-product), <code>capabilities[]</code> from a versioned <a href="https://github.com/{repo_url}/blob/main/linter/taxonomy/v1.yaml">taxonomy</a>, and <code>distribution</code>. Use these to answer "what does this server do" and "is it actually a server" without re-reading the README.
+  </p>
+
+  <p style="margin-top:1rem;color:var(--fg-mute);">
+    Coming next: agent-shaped endpoints (<code>/api/v1/find?capability=…</code>, <code>/vet/&lt;slug&gt;</code>, <code>/by-capability/&lt;cap&gt;.json</code>) and <code>@mcprated/mcp-server</code> as an installable npm package — query the catalog directly from your agent.
   </p>
 </section>
 
@@ -408,7 +415,7 @@ GET https://github.com/{repo_url}/releases</pre>
 
 <section>
   <h2>Status</h2>
-  <p>v0.1 — pre-launch. Linter works, daily snapshots running, {count} reference servers indexed. Full topic-search crawl, embeddable badges, and search UI shipping in upcoming sessions.</p>
+  <p>v0.2 — agent-first core. Linter + classifier + capability taxonomy live, daily snapshots running, {count} servers indexed. Coming next: agent-shaped endpoints (<code>find</code>, <code>vet</code>, <code>by-capability</code>) and <code>@mcprated/mcp-server</code> npm package.</p>
 
   <div class="links">
     <a href="https://github.com/{repo_url}">GitHub →</a>
@@ -434,21 +441,33 @@ def render_llms_txt(idx: dict, repo_url: str) -> str:
     """Anthropic /llms.txt convention — minimal, agent-readable site summary."""
     count = len(idx.get("servers", []))
     rule_set = idx.get("rule_set_version", "?")
+    taxonomy = idx.get("taxonomy_version", "1.0")
     generated = idx.get("generated_at", "")
     return f"""# MCPRated
 
-> Open, daily-updated quality ratings for Model Context Protocol servers. Every MCP server on GitHub is lint-checked across four axes: Reliability, Documentation, Trust, Community. Composite score 0–100, fully transparent ruleset.
+> Agent-readable index of every MCP server. Built for LLMs to discover, vet, and choose tools at runtime — not for humans to browse. Open ruleset, daily-updated, deterministic. We catalog runnable artifacts that implement Model Context Protocol; we do not catalog frameworks for building MCP servers, MCP clients/inspectors, or end-user apps that consume MCP without exposing it.
 
 ## Stats
+
 - Servers rated: {count}
 - Rule set: v{rule_set}
+- Taxonomy: v{taxonomy}
 - Last update: {generated}
 
 ## API (static JSON, public, free, no auth)
 
-- [Catalog index](https://mcprated.github.io/mcprated/index.json): list of all servers with composite + per-axis scores
+- [Catalog index](https://mcprated.github.io/mcprated/index.json): every server with composite, axes, `kind`, `subkind`, `capabilities`, `distribution`
 - [Per-server detail](https://mcprated.github.io/mcprated/servers/microsoft__playwright-mcp.json): full lint output for one repo (replace path with `<owner>__<repo>.json`)
+- [Excluded list](https://mcprated.github.io/mcprated/excluded.json): repos filtered out by prefilter, with reason — transparency
 - [Daily snapshot archive](https://github.com/{repo_url}/releases): tarballs of historical state, retained forever
+
+## Per-server fields agents care about
+
+- `kind`: server | client | framework | tool | ambiguous
+- `subkind` (when `kind=server`): integration | aggregator | prompt-tool | agent-product
+- `capabilities[]`: top tags from taxonomy v{taxonomy}: database, filesystem, web, search, productivity, comms, devtools, cloud, ai, memory, finance, media (or empty if no match)
+- `distribution`: how the artifact reaches a client (`repo` for v1; `npm`/`pypi`/`docker`/`hosted` reserved for upcoming ingest)
+- `composite` 0–100 + 4 axis scores; `hard_flags[]` for caps (archived → 30, etc.)
 
 ## Score model
 
@@ -457,11 +476,17 @@ def render_llms_txt(idx: dict, repo_url: str) -> str:
 - Hard flags cap composite (archived → 30, empty_description → 75, etc.)
 - Color hints: 90+ green, 50–89 yellow, <50 red
 
+## Coming next (planned)
+
+- Agent-shaped endpoints: `/api/v1/find?capability=<cap>`, `/vet/<slug>`, `/by-capability/<cap>.json`, `/api/v1/manifest.json`
+- `@mcprated/mcp-server` (npm) — installable MCP server that queries the catalog from your client
+
 ## Source
 
 - Repo: https://github.com/{repo_url}
-- Methodology: https://github.com/{repo_url}/blob/main/methodology.md
+- Methodology + operational definition of "MCP server": https://github.com/{repo_url}/blob/main/methodology.md
 - Ruleset (YAML, MIT): https://github.com/{repo_url}/tree/main/linter/rules/v1.0
+- Capability taxonomy: https://github.com/{repo_url}/blob/main/linter/taxonomy/v1.yaml
 - Changelog: https://github.com/{repo_url}/blob/main/CHANGELOG.md
 
 ## License

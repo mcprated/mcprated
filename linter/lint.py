@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 """MCPRated linter — 4 axes × 20 signals → composite 0-100.
 
-Axes (rule_set v1.0.0):
+Agent-first catalog: per-server JSON now also carries `kind`, `subkind`,
+`capabilities`, `distribution` (rule_set v1.1.0) so an LLM client can answer
+"what does this server do" and "is it actually a server" without re-reading
+the README. See `linter/classify.py` and `linter/taxonomy/v1.yaml`.
+
+Axes (rule_set v1.1.0):
   Reliability    Will it work and keep working?
   Documentation  Can a stranger figure this out?
   Trust          Safe to depend on?
@@ -17,7 +22,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-RULE_SET_VERSION = "1.0.0"
+RULE_SET_VERSION = "1.1.0"
+TAXONOMY_VERSION = "1.0"
+
+# Local imports kept after the version constant so external callers that
+# `from lint import RULE_SET_VERSION` still work without triggering classify load.
+from classify import classify_kind, classify_capabilities  # noqa: E402
 
 
 # =====================================================================
@@ -52,30 +62,33 @@ _MCP_DESC_RX = __import__("re").compile(
 
 
 def is_mcp_server(d: dict) -> tuple[bool, str]:
-    """Return (is_mcp, reason). Used to filter topic-search false positives."""
-    # A — MCP SDK in package metadata
-    pkg_blob = "\n".join(d.get("pkg", {}).values()).lower() if d.get("pkg") else ""
-    if pkg_blob:
-        for hint in _MCP_SDK_HINTS:
-            if hint.lower() in pkg_blob:
-                return True, f"sdk_dep: {hint}"
+    """Return (is_mcp, reason). Used to filter topic-search false positives.
 
-    # B — README config block
+    Pass = ANY of:
+      A) MCP SDK dep across npm / PyPI / Go / Cargo (delegates to classify._has_sdk_dep
+         which understands PEP 621 list-style + Poetry + Go imports in source files)
+      B) README config block ("mcpServers" or claude_desktop_config)
+      C) Description regex match
+      D) Source files contain server-run pattern (covers repos that don't pin
+         the SDK formally but DO instantiate a server — caught at Layer 2)
+      E) Name pattern (widened: *-mcp-*, *-mcp-server, etc.)
+    """
+    from classify import _has_sdk_dep, _has_run_pattern, _name_matches_mcp
+
+    if _has_sdk_dep(d):
+        return True, "sdk_dep"
     readme = d.get("readme", "")
     if '"mcpservers"' in readme.lower() or "claude_desktop_config" in readme.lower():
         return True, "readme_mentions_mcp_config"
-
-    # C — Description explicitly says MCP server
     desc = (d["repo"].get("description") or "")
     if _MCP_DESC_RX.search(desc):
         return True, f"description: '{desc[:60]}'"
-
-    # Repo name as last resort (very loose, but catches obvious like "*-mcp", "mcp-*")
+    if _has_run_pattern(d):
+        return True, "server_run_pattern_in_source"
     name = (d["repo"].get("name") or "").lower()
-    if name.startswith("mcp-") or name.endswith("-mcp") or "/mcp-" in name or name == "mcp":
+    if _name_matches_mcp(name):
         return True, f"name_pattern: {name}"
-
-    return False, "no MCP SDK dep, no mcpServers in README, no MCP in description/name"
+    return False, "no MCP SDK dep, no mcpServers in README, no MCP in desc, no server-run pattern, no name match"
 
 GH = "https://api.github.com"
 HEADERS = {"User-Agent": "mcprated-linter/0.1", "Accept": "application/vnd.github+json"}
@@ -458,6 +471,8 @@ def lint(repo_data: dict) -> dict:
     flag_keys = {k for k, _ in flags}
     composite = apply_caps(composite_raw, flag_keys)
     repo = repo_data["repo"]
+    kind, subkind, kind_conf, kind_reason = classify_kind(repo_data)
+    capabilities = classify_capabilities(repo_data)
     return {
         "repo": f"{repo.get('owner', {}).get('login', repo.get('full_name', '?').split('/')[0])}/{repo.get('name', '?')}",
         "stars": repo.get("stargazers_count"),
@@ -465,6 +480,13 @@ def lint(repo_data: dict) -> dict:
         "license": (repo.get("license") or {}).get("spdx_id"),
         "description": repo.get("description"),
         "pushed_at": repo.get("pushed_at"),
+        "kind": kind,
+        "subkind": subkind,
+        "kind_confidence": kind_conf,
+        "kind_reason": kind_reason,
+        "capabilities": capabilities,
+        "distribution": "repo",
+        "taxonomy_version": TAXONOMY_VERSION,
         "composite": composite,
         "composite_raw": composite_raw,
         "axes": out_axes,
@@ -547,12 +569,17 @@ def main():
             "axes": {a: result["axes"][a]["score"] for a in result["axes"]},
             "stars": result["stars"],
             "language": result["language"],
+            "kind": result["kind"],
+            "subkind": result["subkind"],
+            "capabilities": result["capabilities"],
+            "distribution": result["distribution"],
             "hard_flags": [f["key"] for f in result["hard_flags"]],
         })
     index.sort(key=lambda x: -x["composite"])
     (out_dir / "index.json").write_text(json.dumps({
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "rule_set_version": RULE_SET_VERSION,
+        "taxonomy_version": TAXONOMY_VERSION,
         "count": len(index),
         "servers": index,
     }, ensure_ascii=False, indent=2))
