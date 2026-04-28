@@ -334,21 +334,39 @@ def render_vet(idx_entry: dict, full: dict) -> dict:
     }
 
 
-def _alt_score(similarity: float, composite: int) -> float:
+# Capabilities so broad they appear in many unrelated servers. When the
+# ONLY shared capability between target and candidate is one of these,
+# the similarity is downweighted — overlap on `ai` between a browser MCP
+# and a notes MCP isn't a fallback, it's coincidence.
+_BROAD_CAPABILITIES = {"ai", "devtools"}
+
+
+def _alt_score(similarity: float, composite: int, shared: list[str] | None = None) -> float:
     """Composite-weighted similarity for alternatives ranking.
 
-    Pure Jaccard (v1.0) ranked junk repos with perfect tag overlap above
-    high-quality fallbacks with partial overlap. v1.0.1 multiplies similarity
-    by the square root of normalized composite — keeps similarity dominant
-    (we still want capability fit) but penalizes low-quality alternatives.
+    v1.0 was pure Jaccard — junk repos with perfect tag overlap outranked
+    high-quality fallbacks with partial overlap.
+    v1.0.1 added quality weight: similarity × sqrt(composite/100).
+    v1.0.2 (this) adds a broad-capability penalty: if the only shared
+    capability is `ai` or `devtools` (which appear on many unrelated
+    servers), similarity is multiplied by 0.4. Specific shared capabilities
+    (web, database, comms, search) keep full weight.
 
     Examples:
-      sim=1.00, comp=30  ->  0.55
-      sim=0.67, comp=88  ->  0.63   (preferred — quality fallback)
-      sim=0.50, comp=100 ->  0.50
+      sim=1.00, comp=30,  shared=[web]   ->  0.55  (specific, low quality)
+      sim=0.67, comp=88,  shared=[web]   ->  0.63  (specific, fallback choice)
+      sim=0.50, comp=100, shared=[ai]    ->  0.20  (broad-only — penalized)
+      sim=0.50, comp=100, shared=[web,ai]->  0.50  (specific present, no penalty)
     """
     quality = (max(0, min(100, composite)) / 100.0) ** 0.5
-    return similarity * quality
+    score = similarity * quality
+    if shared is not None:
+        shared_set = set(shared)
+        # Penalty only fires when EVERY shared capability is broad.
+        # If any specific capability is in the overlap, we trust the match.
+        if shared_set and shared_set.issubset(_BROAD_CAPABILITIES):
+            score *= 0.4
+    return score
 
 
 def render_alternatives(idx_entry: dict, all_entries: list) -> dict:
@@ -367,10 +385,12 @@ def render_alternatives(idx_entry: dict, all_entries: list) -> dict:
             continue
         if s.get("kind") != "server":
             continue
-        sim = _jaccard(target_caps, s.get("capabilities") or [])
+        s_caps = s.get("capabilities") or []
+        sim = _jaccard(target_caps, s_caps)
         if sim <= 0:
             continue
-        score = _alt_score(sim, s.get("composite", 0))
+        shared = sorted(set(target_caps) & set(s_caps))
+        score = _alt_score(sim, s.get("composite", 0), shared)
         candidates.append((score, sim, s))
 
     candidates.sort(key=lambda x: (-x[0], -x[2]["composite"]))

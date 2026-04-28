@@ -407,3 +407,52 @@ class TestAlternativesRankingQuality:
             assert "score" in alt
             assert 0.0 <= alt["score"] <= 1.0
             assert "similarity" in alt
+
+
+class TestAlternativesBroadCapPenalty:
+    """E3: cross-LLM testing flagged that alternatives sharing only a
+    broad capability (`ai` or `devtools`) get high similarity scores
+    despite being unrelated. Opus quote: 'overlap on a single mega-capability
+    treats a shell agent (wcgw) and a docs server (context7) as alternatives
+    to a browser automation server.'
+
+    Penalty: when the only shared capability is one of the broad/common
+    ones (ai, devtools), score is reduced. Specific shared capabilities
+    (web, database, comms) keep full weight.
+    """
+
+    def test_only_broad_overlap_ranks_below_specific_overlap(self):
+        # Target: capabilities=[web, ai]
+        target = make_index_entry(slug="target", capabilities=["web", "ai"], composite=92)
+
+        # Bad alternative: shares only `ai` (broad). Composite high but
+        # capability fit is shallow — agent shouldn't see this as fallback.
+        ai_only = make_index_entry(slug="ai_only", capabilities=["ai", "memory"], composite=92)
+
+        # Good alternative: shares `web` (specific). Lower composite.
+        web_only = make_index_entry(slug="web_only", capabilities=["web", "search"], composite=70)
+
+        result = render_api.render_alternatives(target, [target, ai_only, web_only])
+        slugs = [a["slug"] for a in result["alternatives"]]
+        assert slugs[0] == "web_only", (
+            f"Specific-capability overlap (web) should rank above broad-only (ai). "
+            f"Got order: {slugs}"
+        )
+
+    def test_devtools_only_overlap_penalized(self):
+        target = make_index_entry(slug="t", capabilities=["devtools", "comms"], composite=80)
+        devtools_only = make_index_entry(slug="d", capabilities=["devtools", "ai"], composite=90)
+        comms_overlap = make_index_entry(slug="c", capabilities=["comms"], composite=70)
+        result = render_api.render_alternatives(target, [target, devtools_only, comms_overlap])
+        # comms-overlap (specific) should rank above devtools-only (broad)
+        slugs = [a["slug"] for a in result["alternatives"]]
+        assert slugs[0] == "c"
+
+    def test_specific_overlap_rewarded_normally(self):
+        # Sanity: when no broad-only overlap is involved, ranking is unchanged.
+        target = make_index_entry(slug="t", capabilities=["database"], composite=80)
+        a1 = make_index_entry(slug="a1", capabilities=["database"], composite=90)
+        a2 = make_index_entry(slug="a2", capabilities=["database"], composite=70)
+        result = render_api.render_alternatives(target, [target, a1, a2])
+        slugs = [a["slug"] for a in result["alternatives"]]
+        assert slugs == ["a1", "a2"]
