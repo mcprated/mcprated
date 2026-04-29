@@ -404,6 +404,65 @@ def s_no_dangerous_workflow(d: dict) -> tuple[bool, str]:
 # Phase I-2: OSV.dev critical CVE hard flag
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Phase M: npm/PyPI registry signals (rule_set v1.3+)
+#
+# Free APIs, no auth. Reads d['registry'] populated by crawler when a
+# package.json or pyproject.toml or Cargo.toml declares a name and that
+# package actually exists in its registry.
+#
+# Signal axes:
+#   Reliability: published_to_registry, recent_publish, not_deprecated
+#   Trust:       weekly_downloads_meaningful
+# ---------------------------------------------------------------------------
+
+def _registry(d: dict) -> dict | None:
+    r = d.get("registry")
+    return r if isinstance(r, dict) else None
+
+
+def s_published_to_registry(d: dict) -> tuple[bool, str]:
+    r = _registry(d)
+    if not r:
+        return False, "no registry data (package not declared or not detected)"
+    if not r.get("exists"):
+        return False, f"declared as {r.get('package')} on {r.get('ecosystem')} but not found"
+    return True, f"published as {r.get('package')} on {r.get('ecosystem')}"
+
+
+def s_recent_publish(d: dict) -> tuple[bool, str]:
+    r = _registry(d)
+    if not r or not r.get("latest_published_at"):
+        return False, "no registry data"
+    try:
+        when = datetime.fromisoformat(r["latest_published_at"].replace("Z", "+00:00"))
+    except (ValueError, TypeError):
+        return False, "registry timestamp unparseable"
+    days = (datetime.now(timezone.utc) - when).days
+    return days <= 365, f"last published {days}d ago"
+
+
+def s_not_deprecated(d: dict) -> tuple[bool, str]:
+    r = _registry(d)
+    if not r:
+        return False, "no registry data"
+    if r.get("deprecated"):
+        return False, "registry flags this package as deprecated"
+    return True, "not deprecated on registry"
+
+
+def s_weekly_downloads_meaningful(d: dict) -> tuple[bool, str]:
+    """≥10 downloads/week as the floor for 'real users beyond the maintainer'.
+    Conservative — npm packages with under 10/week may be private/abandoned."""
+    r = _registry(d)
+    if not r:
+        return False, "no registry data"
+    dl = r.get("weekly_downloads")
+    if dl is None:
+        return False, "registry returned no download stats"
+    return dl >= 10, f"{dl} weekly downloads"
+
+
 def _has_critical_cve_flag(d: dict) -> tuple[str, str] | None:
     """Return (flag_key, message) when any HIGH/CRITICAL OSV advisory is
     associated with the repo's published packages, else None.
@@ -497,6 +556,9 @@ AXES: dict[str, dict[str, Any]] = {
             ("tagged_release_recent", s_tagged_release_recent),
             ("version_follows_semver", s_version_follows_semver),
             ("release_communication", s_release_communication),
+            ("published_to_registry", s_published_to_registry),
+            ("recent_publish", s_recent_publish),
+            ("not_deprecated", s_not_deprecated),
         ],
     },
     "documentation": {
@@ -522,6 +584,7 @@ AXES: dict[str, dict[str, Any]] = {
             ("token_permissions", s_token_permissions),
             ("dependency_update_tool", s_dependency_update_tool),
             ("no_dangerous_workflow", s_no_dangerous_workflow),
+            ("weekly_downloads_meaningful", s_weekly_downloads_meaningful),
         ],
     },
     "community": {

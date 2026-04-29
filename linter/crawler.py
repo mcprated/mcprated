@@ -275,9 +275,11 @@ def fetch_repo(owner: str, name: str) -> dict | None:
     # Phase I (rule_set v1.3) — fetch external trust data:
     #   - OpenSSF Scorecard: per-repo security posture (free, no auth)
     #   - OSV.dev advisories: per-package vulnerability list (free, no auth)
-    # Both are best-effort; failures don't break the lint pipeline.
+    # Phase M (v1.3+) — npm/PyPI registry adoption signals (free, no auth)
+    # All best-effort; failures don't break the lint pipeline.
     scorecard = _fetch_scorecard(owner, name)
     osv_advisories = _fetch_osv_advisories(pkg_meta)
+    registry = _fetch_registry(pkg_meta)
 
     return {
         "repo": repo,
@@ -286,6 +288,7 @@ def fetch_repo(owner: str, name: str) -> dict | None:
         "source_files": source_files,
         "scorecard": scorecard,
         "osv_advisories": osv_advisories,
+        "registry": registry,
         "license_text": license_text,
         "releases_count": len(releases) if isinstance(releases, list) else 0,
         "tags_count": len(tags) if isinstance(tags, list) else 0,
@@ -390,6 +393,81 @@ def _fetch_osv_advisories(pkg_meta: dict) -> list[dict]:
                 "ecosystem": ecosystem,
             })
     return advisories
+
+
+def _fetch_registry(pkg_meta: dict) -> dict | None:
+    """First detected published package's registry data, or None.
+
+    Phase M signals require:
+      exists, weekly_downloads, latest_published_at, deprecated
+    Each registry has its own API; we query just the first detected package
+    (suite repos with multiple packages are V1.4 sub-server work).
+    """
+    pkgs = _detect_published_packages(pkg_meta)
+    if not pkgs:
+        return None
+    ecosystem, package = pkgs[0]
+    if ecosystem == "npm":
+        return _fetch_npm_registry(package)
+    if ecosystem == "PyPI":
+        return _fetch_pypi_registry(package)
+    return {"ecosystem": ecosystem, "package": package, "exists": False,
+            "weekly_downloads": None, "latest_published_at": None, "deprecated": False}
+
+
+def _fetch_npm_registry(package: str) -> dict:
+    """npm registry + downloads. https://registry.npmjs.org + api.npmjs.org."""
+    base = {"ecosystem": "npm", "package": package, "exists": False,
+            "weekly_downloads": None, "latest_published_at": None, "deprecated": False}
+    meta = _fetch_json(f"https://registry.npmjs.org/{package}", timeout=15)
+    if not isinstance(meta, dict) or "error" in meta:
+        return base
+    base["exists"] = True
+    times = (meta.get("time") or {})
+    latest = meta.get("dist-tags", {}).get("latest")
+    if latest and isinstance(times.get(latest), str):
+        base["latest_published_at"] = times[latest]
+    # `deprecated` is per-version; treat as deprecated if latest version is.
+    if latest:
+        ver = (meta.get("versions") or {}).get(latest) or {}
+        if ver.get("deprecated"):
+            base["deprecated"] = True
+    # Weekly downloads: separate endpoint
+    dl = _fetch_json(f"https://api.npmjs.org/downloads/point/last-week/{package}", timeout=10)
+    if isinstance(dl, dict) and "downloads" in dl:
+        base["weekly_downloads"] = int(dl["downloads"])
+    return base
+
+
+def _fetch_pypi_registry(package: str) -> dict:
+    """PyPI JSON API + pypistats for downloads."""
+    base = {"ecosystem": "PyPI", "package": package, "exists": False,
+            "weekly_downloads": None, "latest_published_at": None, "deprecated": False}
+    meta = _fetch_json(f"https://pypi.org/pypi/{package}/json", timeout=15)
+    if not isinstance(meta, dict):
+        return base
+    base["exists"] = True
+    info = meta.get("info") or {}
+    # Latest publish: highest release version's upload_time
+    releases = meta.get("releases") or {}
+    latest_ver = info.get("version")
+    if latest_ver and releases.get(latest_ver):
+        files = releases[latest_ver]
+        if files and isinstance(files, list):
+            ts = files[0].get("upload_time_iso_8601") or files[0].get("upload_time")
+            base["latest_published_at"] = ts
+    # PyPI doesn't expose deprecation as a field; check classifiers for legacy/deprecated.
+    classifiers = info.get("classifiers") or []
+    if any("Inactive" in c or "deprecated" in c.lower() for c in classifiers):
+        base["deprecated"] = True
+    # pypistats — best-effort weekly average from recent stats
+    stats = _fetch_json(f"https://pypistats.org/api/packages/{package}/recent", timeout=10)
+    if isinstance(stats, dict):
+        data = stats.get("data") or {}
+        weekly = data.get("last_week")
+        if isinstance(weekly, int):
+            base["weekly_downloads"] = weekly
+    return base
 
 
 def search_topic(topic: str, limit: int = 100) -> list[str]:

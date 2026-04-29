@@ -301,6 +301,103 @@ class TestOSVHardFlag:
         assert flag is None
 
 
+class TestRegistrySignals:
+    """Phase M: free signals from npm + PyPI registries (no auth required).
+
+    Registry data is fetched by crawler into cache_entry["registry"]:
+        {
+          "ecosystem": "npm" | "PyPI" | "crates.io",
+          "package": "...",
+          "weekly_downloads": int | None,
+          "latest_published_at": ISO8601 | None,
+          "deprecated": bool,
+          "exists": bool,
+        }
+
+    Signal mapping (cross-axis):
+      Reliability:
+        - published_to_registry  — exists == True
+        - recent_publish         — latest_published_at within 365d
+        - not_deprecated         — deprecated != True
+      Trust:
+        - weekly_downloads_meaningful — >= 10 downloads/week
+    """
+
+    def _registry(self, **fields):
+        base = {"ecosystem": "npm", "package": "x", "exists": True,
+                "weekly_downloads": 0, "latest_published_at": None,
+                "deprecated": False}
+        base.update(fields)
+        return base
+
+    def test_published_to_registry_pass(self, make_repo):
+        d = make_repo()
+        d["registry"] = self._registry(exists=True)
+        ok, _ = lint.s_published_to_registry(d)
+        assert ok
+
+    def test_published_to_registry_fail_when_missing(self, make_repo):
+        d = make_repo()  # no registry data
+        ok, _ = lint.s_published_to_registry(d)
+        assert not ok
+
+    def test_published_to_registry_fail_when_404(self, make_repo):
+        d = make_repo()
+        d["registry"] = self._registry(exists=False)
+        ok, _ = lint.s_published_to_registry(d)
+        assert not ok
+
+    def test_recent_publish_pass(self, make_repo):
+        from datetime import datetime, timedelta, timezone
+        recent = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+        d = make_repo()
+        d["registry"] = self._registry(latest_published_at=recent)
+        ok, _ = lint.s_recent_publish(d)
+        assert ok
+
+    def test_recent_publish_fail_old(self, make_repo):
+        from datetime import datetime, timedelta, timezone
+        old = (datetime.now(timezone.utc) - timedelta(days=400)).isoformat()
+        d = make_repo()
+        d["registry"] = self._registry(latest_published_at=old)
+        ok, _ = lint.s_recent_publish(d)
+        assert not ok
+
+    def test_recent_publish_fail_no_data(self, make_repo):
+        d = make_repo()
+        ok, _ = lint.s_recent_publish(d)
+        assert not ok
+
+    def test_not_deprecated_pass(self, make_repo):
+        d = make_repo()
+        d["registry"] = self._registry(deprecated=False)
+        ok, _ = lint.s_not_deprecated(d)
+        assert ok
+
+    def test_not_deprecated_fail_when_flagged(self, make_repo):
+        d = make_repo()
+        d["registry"] = self._registry(deprecated=True)
+        ok, _ = lint.s_not_deprecated(d)
+        assert not ok
+
+    def test_weekly_downloads_meaningful_pass(self, make_repo):
+        d = make_repo()
+        d["registry"] = self._registry(weekly_downloads=50)
+        ok, _ = lint.s_weekly_downloads_meaningful(d)
+        assert ok
+
+    def test_weekly_downloads_meaningful_fail_low(self, make_repo):
+        d = make_repo()
+        d["registry"] = self._registry(weekly_downloads=3)
+        ok, _ = lint.s_weekly_downloads_meaningful(d)
+        assert not ok
+
+    def test_weekly_downloads_fail_no_data(self, make_repo):
+        d = make_repo()
+        ok, _ = lint.s_weekly_downloads_meaningful(d)
+        assert not ok
+
+
 # ---------------------------------------------------------------------------
 # Community axis (5 signals)
 # ---------------------------------------------------------------------------
