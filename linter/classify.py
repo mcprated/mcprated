@@ -97,6 +97,69 @@ def _compile_taxonomy(taxonomy: dict[str, list[str]]) -> dict[str, list[re.Patte
 
 _TAXONOMY_RX = _compile_taxonomy(_TAXONOMY)
 
+
+# ---------------------------------------------------------------------------
+# Taxonomy v2 (rule_set v1.3+) — hierarchical subcategories
+#
+# Phase N: agents asking find_server(database) get postgres + redis + qdrant
+# in the same bucket, even though those serve very different needs. v2
+# adds subcategories under the highest-density top-level cats:
+#
+#   database  -> relational | document | kv | analytics | vector | graph
+#   web       -> browser-automation | http-fetch | scraping
+#   ai        -> llm | embeddings | image | transcription
+#   productivity -> notes | tasks | docs | calendar
+#
+# Top-level cats unchanged for backwards compat. capabilities[] stays flat;
+# new capabilities_v2[] emits dotted-path tags. Top-of-v2 always echoes
+# something present in v1 — the two views are consistent.
+# ---------------------------------------------------------------------------
+
+_TAXONOMY_V2: dict[str, list[str]] = {
+    "database.relational":   ["postgres", "postgresql", "mysql", "sqlite",
+                              "mariadb", "supabase"],
+    "database.document":     ["mongodb", "mongo", "firestore"],
+    "database.kv":           ["redis", "dynamodb"],
+    "database.analytics":    ["bigquery", "clickhouse", "snowflake", "duckdb"],
+    "database.vector":       ["qdrant", "pinecone", "weaviate", "vector search",
+                              "vector database", "embeddings index"],
+    "database.graph":        ["neo4j"],
+    "web.browser-automation": ["playwright", "puppeteer", "browser automation",
+                               "headless browser", "chromium"],
+    "web.http-fetch":        ["fetch url", "http client"],
+    "web.scraping":          ["web scraping", "page snapshot"],
+    "ai.llm":                ["openai", "anthropic", "llm", "gemini api"],
+    "ai.embeddings":         ["embeddings"],
+    "ai.image":              ["image generation", "stable diffusion"],
+    "ai.transcription":      ["transcription", "whisper", "speech to text"],
+    "productivity.notes":    ["notion", "obsidian"],
+    "productivity.tasks":    ["todoist", "linear app", "asana", "jira",
+                              "monday.com", "airtable"],
+    "productivity.docs":     ["google docs", "google sheets", "confluence"],
+    "productivity.calendar": ["google calendar", "gmail", "outlook"],
+}
+
+_TAXONOMY_V2_RX = _compile_taxonomy(_TAXONOMY_V2)
+
+
+def classify_capabilities_v2(d: dict, top_n: int = 5) -> list[str]:
+    """Return up to top_n hierarchical capability tags (dotted paths) ranked
+    by keyword hit count.
+
+    Invariant: every entry's top-level segment must also be present in the
+    v1 classify_capabilities output for the same input. Tests pin this.
+    """
+    hay = _haystack(d)
+    if not hay.strip():
+        return []
+    scores: dict[str, int] = {}
+    for cat, patterns in _TAXONOMY_V2_RX.items():
+        hits = sum(1 for p in patterns if p.search(hay))
+        if hits:
+            scores[cat] = hits
+    ranked = sorted(scores.items(), key=lambda kv: (-kv[1], kv[0]))
+    return [cat for cat, _ in ranked[:top_n]]
+
 # ---------------------------------------------------------------------------
 # kind classification
 # ---------------------------------------------------------------------------

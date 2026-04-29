@@ -27,7 +27,7 @@ TAXONOMY_VERSION = "1.0"
 
 # Local imports kept after the version constant so external callers that
 # `from lint import RULE_SET_VERSION` still work without triggering classify load.
-from classify import classify_kind, classify_capabilities  # noqa: E402
+from classify import classify_kind, classify_capabilities, classify_capabilities_v2  # noqa: E402
 from extractor import extract_from_repo, summarize_for_index, detect_sub_servers  # noqa: E402
 
 
@@ -676,6 +676,7 @@ def lint(repo_data: dict) -> dict:
     repo = repo_data["repo"]
     kind, subkind, kind_conf, kind_reason = classify_kind(repo_data)
     capabilities = classify_capabilities(repo_data)
+    capabilities_v2 = classify_capabilities_v2(repo_data)
     extraction = extract_from_repo(repo_data)
     tools_summary = summarize_for_index(extraction)
     # Phase K: agent-product suite repos enumerate sub-servers under
@@ -693,6 +694,7 @@ def lint(repo_data: dict) -> dict:
         "kind_confidence": kind_conf,
         "kind_reason": kind_reason,
         "capabilities": capabilities,
+        "capabilities_v2": capabilities_v2,
         "distribution": "repo",
         "taxonomy_version": TAXONOMY_VERSION,
         "tools": tools_summary,

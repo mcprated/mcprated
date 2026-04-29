@@ -203,3 +203,68 @@ class TestReadmeNoiseStripping:
             readme="This server connects to Discord channels and posts messages.",
         )
         assert "comms" in caps(d)
+
+
+class TestTaxonomyV2Hierarchical:
+    """Phase N: hierarchical capability taxonomy. Top-level categories
+    keep working (backwards compat), but subcategories let agents
+    distinguish e.g. database.relational from database.vector.
+
+    classify_capabilities_v2 returns dotted paths like 'database.relational'.
+    classify_capabilities still returns ['database', ...] (unchanged shape).
+    """
+
+    def caps_v2(self, d):
+        return classify.classify_capabilities_v2(d)
+
+    def test_postgres_gets_database_relational(self, make_repo):
+        d = make_repo(description="MCP for Postgres databases", topics=["mcp"])
+        result = self.caps_v2(d)
+        assert "database.relational" in result
+
+    def test_redis_gets_database_kv(self, make_repo):
+        d = make_repo(description="Redis cache MCP server")
+        result = self.caps_v2(d)
+        assert "database.kv" in result
+
+    def test_qdrant_gets_database_vector(self, make_repo):
+        d = make_repo(description="Vector database via Qdrant")
+        result = self.caps_v2(d)
+        assert "database.vector" in result
+
+    def test_bigquery_gets_database_analytics(self, make_repo):
+        d = make_repo(description="BigQuery analytics warehouse")
+        result = self.caps_v2(d)
+        assert "database.analytics" in result
+
+    def test_playwright_gets_web_browser_automation(self, make_repo):
+        d = make_repo(description="Browser automation via Playwright")
+        result = self.caps_v2(d)
+        assert "web.browser-automation" in result
+
+    def test_top_level_still_present(self, make_repo):
+        # If a server matches database.relational, the top-level 'database'
+        # tag from v1 must STILL appear — backwards compat.
+        d = make_repo(description="Postgres database integration")
+        v1 = classify.classify_capabilities(d)
+        v2 = self.caps_v2(d)
+        assert "database" in v1
+        assert any(c.startswith("database") for c in v2)
+
+    def test_v1_unchanged_shape(self, make_repo):
+        # Existing classify_capabilities output is untouched.
+        d = make_repo(description="Postgres database")
+        result = classify.classify_capabilities(d)
+        # Single-segment top-level keys (no dots)
+        for cap in result:
+            assert "." not in cap, f"v1 result must stay flat; got {cap}"
+
+    def test_v2_top_level_subset_of_v1_results(self, make_repo):
+        # Every v2 prefix should also appear as a v1 top-level — invariant
+        # that lets agents reason about both shapes consistently.
+        d = make_repo(description="Postgres MCP for Slack and OpenAI")
+        v1 = set(classify.classify_capabilities(d, top_n=10))
+        v2 = self.caps_v2(d)
+        for cap in v2:
+            top = cap.split(".", 1)[0]
+            assert top in v1, f"v2 emitted {cap} but v1 doesn't include top-level {top}"
