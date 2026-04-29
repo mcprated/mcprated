@@ -123,6 +123,73 @@ class Server:
         tools = extractor.extract_python("def broken(:")
         assert tools == []
 
+    def test_variable_receiver_fastmcp_pattern(self):
+        # G3 (Opus finding): real FastMCP code does
+        #   my_mcp = FastMCP("Foo")
+        #   @my_mcp.tool()
+        #   def thing(): ...
+        # Our hardcoded receiver list (mcp/server/app/fastmcp) misses 'my_mcp'.
+        # Detect by tracing assignments to FastMCP() / Server() / etc.
+        src = '''
+from mcp.server.fastmcp import FastMCP
+
+my_mcp = FastMCP("MyServer")
+
+@my_mcp.tool()
+def custom_tool(query: str):
+    """Run a custom query."""
+    return query
+'''
+        tools = extractor.extract_python(src)
+        assert len(tools) == 1
+        assert tools[0]["name"] == "custom_tool"
+        assert tools[0]["description"] == "Run a custom query."
+
+    def test_variable_receiver_with_aliased_import(self):
+        src = '''
+from mcp.server.fastmcp import FastMCP as _MCP
+srv = _MCP("X")
+
+@srv.tool()
+def aliased():
+    """Aliased server tool."""
+    pass
+'''
+        tools = extractor.extract_python(src)
+        assert len(tools) == 1
+        assert tools[0]["name"] == "aliased"
+
+    def test_variable_receiver_via_server_constructor(self):
+        # Same pattern using `Server` from sdk
+        src = '''
+from mcp.server import Server
+the_server = Server("foo")
+
+@the_server.tool()
+def foo_tool():
+    """Foo."""
+    pass
+'''
+        tools = extractor.extract_python(src)
+        assert len(tools) == 1
+        assert tools[0]["name"] == "foo_tool"
+
+    def test_unrelated_variable_decorator_still_ignored(self):
+        # Regression: don't flip and start matching every @x.tool decorator.
+        # If the variable wasn't assigned to a known MCP class, no match.
+        src = '''
+class Cache:
+    def tool(self): pass
+random = Cache()
+
+@random.tool()
+def not_a_tool():
+    """Not an MCP tool."""
+    pass
+'''
+        tools = extractor.extract_python(src)
+        assert tools == []
+
 
 # ---------------------------------------------------------------------------
 # TypeScript regex extractor
@@ -177,6 +244,58 @@ const meta = [{ name: "foo", description: "Foo tool" }];
         tools = extractor.extract_typescript(src)
         assert len(tools) == 1
         assert tools[0]["description"] == "Foo tool"
+
+    def test_real_world_inputSchema_with_nested_braces(self):
+        # G2 (Opus finding): EVERY real MCP TS server uses nested {} in
+        # inputSchema. Form 2 regex disallowed nested braces, silently
+        # missing all of them. This is the catch.
+        src = '''
+const TOOLS = [
+  {
+    name: "browser_navigate",
+    description: "Navigate to a URL",
+    inputSchema: {
+      type: "object",
+      properties: { url: { type: "string" } },
+      required: ["url"]
+    }
+  },
+  {
+    name: "browser_click",
+    description: "Click an element",
+    inputSchema: { type: "object", properties: { selector: { type: "string" } } }
+  }
+];
+'''
+        tools = extractor.extract_typescript(src)
+        names = sorted(t["name"] for t in tools)
+        assert names == ["browser_click", "browser_navigate"]
+        descs = {t["name"]: t["description"] for t in tools}
+        assert descs["browser_navigate"] == "Navigate to a URL"
+        assert descs["browser_click"] == "Click an element"
+
+    def test_object_form_with_setRequestHandler_array(self):
+        # The other common pattern — tools/list returns an array of
+        # tool descriptors, each with nested inputSchema.
+        src = '''
+server.setRequestHandler(ListToolsRequestSchema, async () => ({
+  tools: [
+    {
+      name: "read_file",
+      description: "Read file contents",
+      inputSchema: {
+        type: "object",
+        properties: { path: { type: "string", description: "absolute path" } },
+        required: ["path"]
+      }
+    }
+  ]
+}));
+'''
+        tools = extractor.extract_typescript(src)
+        assert len(tools) == 1
+        assert tools[0]["name"] == "read_file"
+        assert tools[0]["description"] == "Read file contents"
 
 
 # ---------------------------------------------------------------------------

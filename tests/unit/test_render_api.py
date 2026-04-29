@@ -199,6 +199,25 @@ class TestByCapability:
         assert result["count"] == 1
         assert result["servers"][0]["slug"] == "untagged"
 
+    def test_only_kind_server_returned(self):
+        # G1 (Codex finding): manifest text says by_capability returns
+        # "Servers tagged with given capability" but render_by_capability
+        # was filtering only by tag, not by kind. Clients/frameworks/tools
+        # tagged with the same capability would leak through.
+        idx = make_index(
+            make_index_entry(slug="real-server", kind="server", capabilities=["database"]),
+            make_index_entry(slug="some-client", kind="client", capabilities=["database"]),
+            make_index_entry(slug="a-framework", kind="framework", capabilities=["database"]),
+            make_index_entry(slug="a-tool", kind="tool", capabilities=["database"]),
+            make_index_entry(slug="ambiguous-thing", kind="ambiguous", capabilities=["database"]),
+        )
+        result = render_api.render_by_capability(idx, "database")
+        slugs = {s["slug"] for s in result["servers"]}
+        assert slugs == {"real-server"}, (
+            f"by_capability must only return kind=server. Got: {slugs}"
+        )
+        assert result["count"] == 1
+
 
 # ---------------------------------------------------------------------------
 # render_by_kind — filtering by classifier kind
@@ -378,6 +397,53 @@ class TestRenderToolsIndex:
         result = render_api.render_tools_index(idx, full_servers)
         assert result["total_tools"] == 1
         assert result["tools"][0]["repo"] == "x/b"
+
+    # G4 (Opus + Codex consensus): tools-index lossy. Currently flattens
+    # only `tool_names_preview` (capped at 10 names). Drops descriptions
+    # and input_keys that the extractor already produces. find_tool can't
+    # rank by intent because there's no intent-bearing text.
+    def test_includes_full_tool_records_with_descriptions(self):
+        full_servers = {
+            "x__a": {
+                "repo": "x/a",
+                "tools": {"tool_count": 1, "tool_names_preview": ["read_file"], "extraction_method": "ast_python"},
+            }
+        }
+        # The full extraction is in `tools_extraction` on the per-server JSON
+        # — render_tools_index reads it directly to recover descriptions.
+        full_servers["x__a"]["tools_extraction"] = {
+            "tools": [
+                {"name": "read_file", "description": "Read a file from disk by path", "input_keys": ["path"]},
+            ]
+        }
+        idx = make_index(make_index_entry(slug="x__a", repo="x/a", composite=80))
+        result = render_api.render_tools_index(idx, full_servers)
+        assert result["total_tools"] == 1
+        entry = result["tools"][0]
+        assert entry["name"] == "read_file"
+        assert entry["description"] == "Read a file from disk by path"
+        assert entry["input_keys"] == ["path"]
+
+    def test_no_silent_truncation_for_aggregator_servers(self):
+        # G4 (Opus): tool_names_preview was capped at [:10]. For awslabs/mcp
+        # with 30+ tools the catalog silently dropped them, degrading
+        # find_tool recall. tools-index now uses tools_extraction (full list),
+        # not the preview cap.
+        many_tools = [{"name": f"tool_{i}", "description": f"Tool {i}", "input_keys": []}
+                      for i in range(30)]
+        full_servers = {
+            "x__suite": {
+                "repo": "x/suite",
+                "tools": {"tool_count": 30, "tool_names_preview": [f"tool_{i}" for i in range(10)],
+                          "extraction_method": "regex_typescript"},
+                "tools_extraction": {"tools": many_tools},
+            }
+        }
+        idx = make_index(make_index_entry(slug="x__suite", repo="x/suite", composite=90))
+        result = render_api.render_tools_index(idx, full_servers)
+        assert result["total_tools"] == 30, (
+            f"all 30 tools must be in tools-index, not capped at preview length"
+        )
 
 
 class TestAlternativesRankingQuality:

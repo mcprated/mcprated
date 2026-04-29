@@ -2,6 +2,60 @@
 
 All notable changes to the MCPRated rule set are documented here. The format follows [Keep a Changelog](https://keepachangelog.com).
 
+## [v1.2.0] — 2026-04-29 (cross-LLM-driven trust expansion + recall fixes)
+
+Driven by an architectural review by two independent LLMs (OpenAI Codex source review + Anthropic Opus deep review). 10 systemic findings consensus, 6 fixed this release.
+
+### Trust axis expansion
+
+  - DROPPED: `has_repo_topics` — both reviewers flagged as cosmetic (GitHub
+    discoverability proxy, not a trust signal). Trust axis got 33% of its
+    weight from a setting that any maintainer can flip in 30 seconds.
+  - ADDED: `org_owned` — `repo.owner.type == "Organization"`. Strong prior
+    that there's a code review process and the project survives a single
+    maintainer departure.
+  - ADDED: `has_codeowners` — CODEOWNERS file at root, `.github/`, or `docs/`.
+    Triggers GitHub's review-request automation; signals an actual ownership
+    model.
+  - Trust axis now: license_commercial, has_security_policy, org_owned,
+    has_codeowners (4 signals, was 3).
+  - V1.3 planned: OpenSSF Scorecard import, OSV.dev advisory hard flag.
+
+### Extraction recall (Python + TypeScript)
+
+  - Python AST extractor now handles **variable-receiver patterns**:
+    `my_mcp = FastMCP("X")` followed by `@my_mcp.tool()`. Tracks both
+    direct-name decorators (legacy) and runtime-bound MCP class instances.
+    Also handles aliased imports (`from x import FastMCP as _MCP`).
+    Realistic Python coverage: ~50% → ~85%.
+  - TypeScript extractor's Form 2 (object-literal pattern) now walks
+    **balanced braces at every nesting depth** instead of disallowing
+    nested braces. Real MCP servers ship `inputSchema: { type: 'object', ... }`
+    in every tool descriptor — the previous regex silently missed all of
+    them. Realistic TS coverage: ~40% → significantly higher.
+
+### tools-index richness
+
+  - `/api/v1/tools-index.json` now carries full per-tool records including
+    `description` and `input_keys`, not just `tool_names_preview`. The
+    previous `[:10]` cap silently dropped 20+ tools per aggregator.
+  - Worker `find_tool` now searches `name + description + input_keys +
+    capabilities`, with a 0.3 weight bonus when the query matches the
+    tool name itself. Intent-based queries ("read postgres tables") now
+    resolve to specific tool names instead of returning empty.
+
+### Bug fixes
+
+  - `render_by_capability` now filters `kind == "server"`. Capability
+    shards previously leaked clients/frameworks/tools that happened to
+    share a capability tag (Codex finding).
+  - taxonomy YAML/Python sync drift test added — fails CI if
+    `linter/taxonomy/v1.yaml` and `classify._TAXONOMY` diverge.
+
+### Test infrastructure
+
+  - 207 pytest + 55 vitest = 262 tests, all green on hard CI gate.
+
 ## [v1.1.0] — 2026-04-28 (agent-first core)
 
 Additive — score scale, axes, and composite formula unchanged. Existing `v1.0.0` consumers keep working; new fields are documented and optional from a reader's perspective.

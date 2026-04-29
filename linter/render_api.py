@@ -248,10 +248,15 @@ def render_manifest(idx: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def render_by_capability(idx: dict, cap: str) -> dict:
+    # G1 (Codex finding): manifest text says these shards return "Servers
+    # tagged with given capability". Without the kind=server filter,
+    # clients/frameworks/tools sharing a capability tag leaked through —
+    # an agent calling find_server then trying to install one would fail.
+    servers_only = [s for s in idx["servers"] if s.get("kind") == "server"]
     if cap == "unknown":
-        servers = [s for s in idx["servers"] if not (s.get("capabilities") or [])]
+        servers = [s for s in servers_only if not (s.get("capabilities") or [])]
     else:
-        servers = [s for s in idx["servers"] if cap in (s.get("capabilities") or [])]
+        servers = [s for s in servers_only if cap in (s.get("capabilities") or [])]
     servers.sort(key=lambda s: -s["composite"])
     return {
         "capability": cap,
@@ -413,33 +418,50 @@ def render_alternatives(idx_entry: dict, all_entries: list) -> dict:
 def render_tools_index(idx: dict, full_servers: dict[str, dict]) -> dict:
     """Flatten per-server tool extractions into one searchable list.
 
-    Why flat: agents asking find_tool(intent="read postgres tables") want a
-    direct answer, not a tree to traverse. Servers without extracted tools
-    are skipped — including them would just add noise.
+    G4 (Opus + Codex consensus): v1.0 only carried `tool_names_preview`
+    (capped at 10 names) which silently dropped 20+ tools from aggregator
+    servers and gave find_tool no intent-bearing text to rank against.
+    v1.0.1 reads the full `tools_extraction` block when present and
+    propagates name + description + input_keys per tool.
 
-    Each entry carries: tool name, owning server (repo + slug), composite
-    (so agents can prefer high-quality providers when multiple expose the
-    same tool name), and the extraction method (so agents know whether the
-    name is from AST analysis or a regex best-guess).
+    Each entry carries:
+      name                — tool name
+      description         — tool docstring or descriptor (when extracted)
+      input_keys          — argument names (Python AST) for find_tool ranking
+      repo, slug          — owning server
+      composite           — quality (sort key + tie-breaker)
+      capabilities        — server-level tags (best-effort tool-level proxy)
+      extraction_method   — ast_python | regex_typescript | regex_go | none
     """
     out_tools = []
     for entry in idx.get("servers", []):
         slug = entry["slug"]
         full = full_servers.get(slug, {})
         tools_summary = full.get("tools") or {}
-        tool_names = tools_summary.get("tool_names_preview") or []
-        if not tool_names:
-            continue
-        for name in tool_names:
+        method = tools_summary.get("extraction_method", "none")
+
+        # Prefer full extraction when present (post-G4); fall back to preview.
+        tools_full = (full.get("tools_extraction") or {}).get("tools") or []
+        if tools_full:
+            tool_records = tools_full
+        else:
+            tool_records = [
+                {"name": n, "description": None, "input_keys": []}
+                for n in (tools_summary.get("tool_names_preview") or [])
+            ]
+
+        for t in tool_records:
             out_tools.append({
-                "name": name,
+                "name": t.get("name", "?"),
+                "description": t.get("description"),
+                "input_keys": t.get("input_keys") or [],
                 "repo": entry["repo"],
                 "slug": slug,
                 "composite": entry["composite"],
                 "kind": entry.get("kind"),
                 "subkind": entry.get("subkind") or "",
                 "capabilities": entry.get("capabilities") or [],
-                "extraction_method": tools_summary.get("extraction_method", "none"),
+                "extraction_method": method,
             })
     out_tools.sort(key=lambda t: (-t["composite"], t["name"]))
     return {
@@ -481,6 +503,20 @@ def main() -> int:
                 full_servers[slug] = d
             except Exception as e:
                 print(f"  skip {f.name}: {e}", file=sys.stderr)
+
+    # G4: merge data/tools/<slug>.json (full extraction) into the same dict.
+    # render_tools_index pulls tool descriptions + input_keys from there
+    # rather than the truncated `tool_names_preview` summary.
+    tools_dir = data_dir / "tools"
+    if tools_dir.exists():
+        for f in tools_dir.glob("*.json"):
+            slug = f.stem
+            if slug not in full_servers:
+                continue
+            try:
+                full_servers[slug]["tools_extraction"] = json.loads(f.read_text())
+            except Exception as e:
+                print(f"  skip tools/{f.name}: {e}", file=sys.stderr)
 
     written = 0
 

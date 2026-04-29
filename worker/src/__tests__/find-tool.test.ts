@@ -93,4 +93,73 @@ describe("find_tool — agent searches at the tool level", () => {
     expect(payload.matches).toEqual([]);
     expect(payload.total_indexed).toBe(1);
   });
+
+  // G4: tools-index now carries description + input_keys. find_tool must
+  // search those too — that's the whole point of "intent-based" lookup.
+  describe("intent matching against descriptions (G4)", () => {
+    it("matches tool whose description contains query but name does not", async () => {
+      mockUpstream("/api/v1/tools-index.json", {
+        total_tools: 2,
+        tools: [
+          {
+            name: "query",
+            description: "List all rows in a Postgres table",
+            input_keys: ["table_name"],
+            repo: "x/db", slug: "x__db", composite: 80, capabilities: ["database"],
+          },
+          {
+            name: "ping",
+            description: "Health check",
+            input_keys: [],
+            repo: "y/util", slug: "y__util", composite: 70, capabilities: [],
+          },
+        ],
+      });
+      const { body } = await callTool("find_tool", { intent: "postgres" });
+      const payload = unwrap(body);
+      expect(payload.matches[0].name).toBe("query");
+    });
+
+    it("name match outranks description match for same query", async () => {
+      mockUpstream("/api/v1/tools-index.json", {
+        total_tools: 2,
+        tools: [
+          {
+            name: "browser_click",
+            description: "Click an element",
+            input_keys: ["selector"],
+            repo: "x/play", slug: "x__play", composite: 100, capabilities: ["web"],
+          },
+          {
+            name: "scrape",
+            description: "Fetch a page in a headless browser",
+            input_keys: ["url"],
+            repo: "y/scraper", slug: "y__scraper", composite: 100, capabilities: ["web"],
+          },
+        ],
+      });
+      const { body } = await callTool("find_tool", { intent: "browser" });
+      const payload = unwrap(body);
+      // Both match (name vs description). Name match should rank higher
+      // because of the 0.3 nameHits bonus on top of 0.7 directHits.
+      expect(payload.matches[0].name).toBe("browser_click");
+    });
+
+    it("input_keys are searchable too", async () => {
+      mockUpstream("/api/v1/tools-index.json", {
+        total_tools: 1,
+        tools: [
+          {
+            name: "execute",
+            description: "Run code",
+            input_keys: ["sql_query", "limit"],
+            repo: "x/db", slug: "x__db", composite: 80, capabilities: ["database"],
+          },
+        ],
+      });
+      const { body } = await callTool("find_tool", { intent: "sql_query" });
+      const payload = unwrap(body);
+      expect(payload.matches).toHaveLength(1);
+    });
+  });
 });

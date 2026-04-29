@@ -35,8 +35,9 @@ def _parse_yaml_keywords() -> dict[str, list[str]]:
             buf = line.strip()
         else:
             continue
-        # Pull each comma-separated keyword (handles quoted + bare)
-        items = re.findall(r'"([^"]+)"|([a-z_/\.\- ]+)', buf)
+        # Pull each comma-separated keyword (handles quoted + bare).
+        # Bare tokens can include digits (e.g. neo4j, fly.io, monday.com).
+        items = re.findall(r'"([^"]+)"|([a-z0-9_/\.\- ]+)', buf)
         kws = [a or b for a, b in items if (a or b).strip(", ")]
         kws = [k.strip(", ") for k in kws if k.strip(", ")]
         out.setdefault(current, []).extend(kws)
@@ -70,3 +71,34 @@ class TestTaxonomyIntegrity:
 
     def test_taxonomy_version_matches(self):
         assert classify.TAXONOMY_VERSION == "1.0"
+
+
+class TestYamlPythonSync:
+    """G6 (Codex finding): the taxonomy lives in BOTH linter/taxonomy/v1.yaml
+    (human-readable doc) and classify._TAXONOMY (runtime dict). The comment
+    says YAML is authoritative, but they're maintained by hand. They WILL
+    drift unless we fail loudly when they do.
+
+    These tests check keyword-level equivalence per category. The tiny
+    custom YAML parser in test_taxonomy_integrity is reused; its limits
+    (rigid format) are acceptable because we control both files.
+    """
+
+    def test_keywords_per_category_match(self):
+        py = classify._TAXONOMY
+        yaml_kw = _parse_yaml_keywords()
+        for cat in py:
+            py_set = {k.lower().strip() for k in py[cat]}
+            yaml_set = {k.lower().strip() for k in yaml_kw.get(cat, [])}
+            # Allow YAML to have extra commentary entries we strip out, but
+            # every Python keyword MUST be in YAML (the source of truth).
+            missing_in_yaml = py_set - yaml_set
+            assert not missing_in_yaml, (
+                f"category {cat}: keywords present in classify.py dict but "
+                f"missing in v1.yaml: {sorted(missing_in_yaml)}"
+            )
+            extra_in_yaml = yaml_set - py_set
+            assert not extra_in_yaml, (
+                f"category {cat}: keywords present in v1.yaml but missing in "
+                f"classify.py dict (will not match at runtime!): {sorted(extra_in_yaml)}"
+            )

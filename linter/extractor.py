@@ -53,15 +53,28 @@ from typing import Any
 # Python AST extractor — uses stdlib `ast` for full structural fidelity
 # ---------------------------------------------------------------------------
 
+# Class names whose constructed instances expose `.tool()` as MCP registration.
+# Imported (potentially aliased) at module level — see _PyToolVisitor.visit_ImportFrom
+# for how aliases are tracked.
+_MCP_CLASS_NAMES = {"FastMCP", "Server", "MCPServer", "McpServer"}
+
+
 class _PyToolVisitor(pyast.NodeVisitor):
     """Walk a Python AST collecting MCP tool registrations.
 
-    Recognized patterns (most common first):
-      @mcp.tool(...)            decorator on a function
-      @mcp.tool                 same, no parens
+    Recognized patterns:
+      @mcp.tool(...)            classic — fixed receiver name
       @server.tool(...)         alternate handle name
       @app.tool(...)            FastMCP convention
-      mcp.tool(...)(func)       (rare — programmatic decoration)
+      @<var>.tool(...)          where <var> = FastMCP(...) | Server(...) | ...
+
+    G3 (Opus finding): real FastMCP code does
+        my_mcp = FastMCP("Foo")
+        @my_mcp.tool()
+        def thing(): ...
+    The hardcoded receiver list missed 'my_mcp'. Now we trace assignments
+    to MCP-class constructors AND import aliases (`from x import FastMCP as _MCP`)
+    so any variable bound to such an instance is treated as a tool receiver.
 
     For each match we record the function name, its docstring (description),
     and the parameter names (input_keys) inferred from the signature.
@@ -69,15 +82,44 @@ class _PyToolVisitor(pyast.NodeVisitor):
 
     def __init__(self):
         self.tools: list[dict[str, Any]] = []
+        # Receiver names that act as MCP servers. Seeded with the legacy
+        # hardcoded list for backward compatibility; extended dynamically
+        # via assignments to MCP-class constructors.
+        self.mcp_vars: set[str] = {"mcp", "server", "app", "fastmcp"}
+        # Local names that resolve to MCP classes — e.g. with `from x import FastMCP`
+        # the local name is "FastMCP"; with `import ... as _MCP` it's "_MCP".
+        self.mcp_class_locals: set[str] = set(_MCP_CLASS_NAMES)
+
+    def visit_ImportFrom(self, node):  # noqa: N802
+        if node.module and node.module.startswith("mcp"):
+            for alias in node.names or []:
+                if alias.name in _MCP_CLASS_NAMES:
+                    self.mcp_class_locals.add(alias.asname or alias.name)
+        self.generic_visit(node)
+
+    def visit_Assign(self, node):  # noqa: N802
+        # Track `var = FastMCP(...)` etc. — the `var` then acts like `mcp` does.
+        if isinstance(node.value, pyast.Call):
+            func = node.value.func
+            ctor_name: str | None = None
+            if isinstance(func, pyast.Name):
+                ctor_name = func.id
+            elif isinstance(func, pyast.Attribute):
+                ctor_name = func.attr
+            if ctor_name and ctor_name in self.mcp_class_locals:
+                for target in node.targets:
+                    if isinstance(target, pyast.Name):
+                        self.mcp_vars.add(target.id)
+        self.generic_visit(node)
 
     def _is_tool_decorator(self, dec: pyast.expr) -> bool:
-        # @mcp.tool  or  @mcp.tool(...)
+        # @<receiver>.tool  or  @<receiver>.tool(...)
         node = dec.func if isinstance(dec, pyast.Call) else dec
         return (
             isinstance(node, pyast.Attribute)
             and node.attr == "tool"
             and isinstance(node.value, pyast.Name)
-            and node.value.id in ("mcp", "server", "app", "fastmcp")
+            and node.value.id in self.mcp_vars
         )
 
     def _extract_decorator_name(self, dec: pyast.expr, fallback: str) -> str:
@@ -151,21 +193,60 @@ _TS_TOOL_REGISTER_RX = re.compile(
     re.VERBOSE,
 )
 
-# Matches `{ ... }` blocks at most 1500 chars long with no nested braces —
-# good enough for a single tool descriptor object in an array literal.
-_TS_BRACE_BLOCK_RX = re.compile(r"\{([^{}]{0,1500})\}", re.DOTALL)
 _TS_NAME_RX = re.compile(r"""\bname\s*:\s*["']([\w\-.]+)["']""")
 _TS_DESC_RX = re.compile(r"""\bdescription\s*:\s*["']([^"']{0,200})["']""")
+
+
+def _balanced_brace_blocks(text: str, max_block_size: int = 8000):
+    """Yield bodies of every balanced `{...}` block at every nesting level.
+
+    G2 (Opus finding): real MCP TS code wraps tool descriptors in arbitrarily
+    nested structures — `setRequestHandler(..., () => ({ tools: [{ name: ..., inputSchema: {...} }] }))`
+    puts the descriptor at depth 2. Yielding only depth-0 blocks misses it.
+    Yielding every level keeps the work proportional to brace count
+    (cheap), and the per-block name/description regex naturally filters
+    non-descriptor blocks.
+
+    Stack-based walk so blocks come out as they close (innermost first).
+    max_block_size guards against pathological inputs.
+    """
+    stack: list[int] = []
+    for i, c in enumerate(text):
+        if c == "{":
+            stack.append(i)
+        elif c == "}" and stack:
+            start = stack.pop()
+            body = text[start + 1 : i]
+            if len(body) <= max_block_size:
+                yield body
+
+
+def _strip_nested_braces(body: str) -> str:
+    """Drop everything inside `{...}` nested levels of `body`.
+
+    Keeps only top-level content of an object literal — so we can apply
+    `name:` / `description:` regex without accidentally matching inner
+    schema fields like `properties.path.description`.
+    """
+    out = []
+    depth = 0
+    for c in body:
+        if c == "{":
+            depth += 1
+            continue
+        if c == "}":
+            if depth > 0:
+                depth -= 1
+            continue
+        if depth == 0:
+            out.append(c)
+    return "".join(out)
 
 
 def extract_typescript(source: str) -> list[dict[str, Any]]:
     """Best-effort. Returns deduplicated tool list across two patterns:
     direct `server.tool('name', ...)` calls AND inline `{ name: 'x', description: 'y' }`
     objects in tools/list array returns.
-
-    Strategy: name and description are extracted SEPARATELY per `{...}` block,
-    not in one regex. An optional capture in a single non-greedy regex
-    misses descriptions whenever the matcher can satisfy the pattern earlier.
     """
     seen: dict[str, dict[str, Any]] = {}
 
@@ -174,14 +255,15 @@ def extract_typescript(source: str) -> list[dict[str, Any]]:
         name = m.group(1)
         seen.setdefault(name, {"name": name, "description": None, "input_keys": []})
 
-    # Form 2: object literals with name + (optional) description
-    for block in _TS_BRACE_BLOCK_RX.finditer(source):
-        body = block.group(1)
-        name_m = _TS_NAME_RX.search(body)
+    # Form 2: object literals with name + (optional) description.
+    # Walk balanced braces so nested `inputSchema: {...}` doesn't break us.
+    for body in _balanced_brace_blocks(source):
+        top = _strip_nested_braces(body)
+        name_m = _TS_NAME_RX.search(top)
         if not name_m:
             continue
         name = name_m.group(1)
-        desc_m = _TS_DESC_RX.search(body)
+        desc_m = _TS_DESC_RX.search(top)
         desc = desc_m.group(1).strip() if desc_m else None
         if name in seen:
             if desc and not seen[name]["description"]:

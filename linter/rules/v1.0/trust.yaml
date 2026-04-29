@@ -4,8 +4,14 @@ description: |
   Signals the project is legally usable, security-conscious, and properly
   positioned within the ecosystem. The "should I take this seriously" axis.
 
-  V1.0 has only 3 signals here — V1.1+ will expand with: signed releases,
-  CODEOWNERS, organization-owned, OpenSSF Scorecard integration.
+  v1.2.0 dropped `has_repo_topics` (cosmetic) and added `org_owned` +
+  `has_codeowners` based on cross-LLM architectural review (Codex + Opus
+  both flagged Trust as the weakest axis with 1/3 of its weight on a
+  GitHub-discoverability cosmetic).
+
+  v1.3+ planned: OpenSSF Scorecard import (signed-releases, pinned-deps,
+  branch-protection, token-permissions), OSV.dev advisory check.
+
 weight: 1.0
 since_rule_version: "1.0.0"
 
@@ -15,9 +21,9 @@ signals:
     description: |
       SPDX is one of {MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause, MPL-2.0,
       ISC, Unlicense, CC0-1.0, 0BSD}. Fallback: LICENSE file with recognizable
-      permissive language. GPL/AGPL/proprietary → fail (still usable for
-      hobbyists; this signal flags commercial-deployment friction).
+      permissive language. GPL/AGPL/proprietary → fail.
     fix_link: https://choosealicense.com
+    since_rule_version: "1.0.0"
 
   - id: has_security_policy
     title: Security policy declared
@@ -25,10 +31,27 @@ signals:
       SECURITY.md present in root or .github/, OR README has a section titled
       Security/Permissions/Auth/Trust/Risk.
     fix_link: https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository
+    since_rule_version: "1.0.0"
 
-  - id: has_repo_topics
-    title: Repo properly tagged (≥2 topics)
+  - id: org_owned
+    title: Owned by a GitHub Organization
     description: |
-      `topics` array on the repo contains at least 2 tags. Indicates author
-      cares about discoverability and categorization.
-    fix_link: https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics
+      The repo's owner.type is "Organization" (vs "User"). Strong prior
+      that there's a review process, more than one maintainer, and that
+      the project survives a single-person departure. Personal-account
+      repos can still be excellent — but at population scale, org ownership
+      shifts trust upward.
+    fix_link: https://docs.github.com/organizations/collaborating-with-groups-in-organizations/about-organizations
+    since_rule_version: "1.2.0"
+
+  - id: has_codeowners
+    title: CODEOWNERS file present
+    description: |
+      CODEOWNERS at root, .github/CODEOWNERS, or docs/CODEOWNERS. Triggers
+      GitHub's automated review-request routing. Indicates the project has
+      a code-review ownership model, not just push-and-pray.
+    fix_link: https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+    since_rule_version: "1.2.0"
+
+# Removed in v1.2.0:
+#   - has_repo_topics (cosmetic — re-discoverability proxy, not trust)

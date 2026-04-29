@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-RULE_SET_VERSION = "1.1.0"
+RULE_SET_VERSION = "1.2.0"
 TAXONOMY_VERSION = "1.0"
 
 # Local imports kept after the version constant so external callers that
@@ -298,9 +298,34 @@ def s_has_security_policy(d: dict) -> tuple[bool, str]:
     return False, "no SECURITY.md, no security section"
 
 
-def s_has_repo_topics(d: dict) -> tuple[bool, str]:
-    topics = d["repo"].get("topics") or []
-    return len(topics) >= 2, f"{len(topics)} topics: {topics[:5]}"
+def s_org_owned(d: dict) -> tuple[bool, str]:
+    """Organization-owned repo. Strong trust signal.
+
+    G5 (Codex+Opus): Trust axis previously gave 33% weight to has_repo_topics
+    (cosmetic). Org-ownership is a much stronger signal — orgs typically have
+    review processes, multiple maintainers, and survive single-maintainer
+    departure. Personal-account repos can still be excellent (many seed Tier A
+    are), but at population level, org ownership shifts the prior.
+    """
+    owner_type = (d["repo"].get("owner") or {}).get("type") or ""
+    if owner_type == "Organization":
+        return True, f"owner is an Organization"
+    return False, f"owner type: {owner_type or 'unknown'} (not Organization)"
+
+
+def s_has_codeowners(d: dict) -> tuple[bool, str]:
+    """CODEOWNERS file present.
+
+    G5: indicates the repo has a code-review ownership model — even a stub
+    CODEOWNERS triggers GitHub's review-request automation. Stronger signal
+    than 'has at least 2 topics'.
+    """
+    paths = [p.lower() for p in (d.get("top_paths") or [])]
+    if "codeowners" in paths:
+        return True, "CODEOWNERS at root"
+    if ".github/codeowners" in paths or "docs/codeowners" in paths:
+        return True, "CODEOWNERS at canonical path"
+    return False, "no CODEOWNERS file"
 
 
 # =====================================================================
@@ -388,7 +413,8 @@ AXES: dict[str, dict[str, Any]] = {
         "signals": [
             ("license_commercial", s_license_commercial),
             ("has_security_policy", s_has_security_policy),
-            ("has_repo_topics", s_has_repo_topics),
+            ("org_owned", s_org_owned),
+            ("has_codeowners", s_has_codeowners),
         ],
     },
     "community": {

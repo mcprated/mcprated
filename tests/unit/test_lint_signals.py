@@ -139,14 +139,51 @@ class TestTrust:
         ok, _ = lint.s_has_security_policy(d)
         assert not ok
 
-    def test_has_repo_topics_pass(self, make_repo):
-        d = make_repo(topics=["mcp", "database"])
-        ok, _ = lint.s_has_repo_topics(d)
+    # G5: has_repo_topics retired in rule_set v1.2 (cosmetic, not a real
+    # trust signal per cross-LLM review). Replaced by org_owned + has_codeowners.
+
+    def test_org_owned_pass(self, make_repo):
+        d = make_repo(owner="microsoft")
+        d["repo"]["owner"]["type"] = "Organization"
+        ok, _ = lint.s_org_owned(d)
         assert ok
 
-    def test_has_repo_topics_fail_empty(self, make_repo):
-        d = make_repo(topics=[])
-        ok, _ = lint.s_has_repo_topics(d)
+    def test_org_owned_fail_user_account(self, make_repo):
+        d = make_repo(owner="some-dev")
+        d["repo"]["owner"]["type"] = "User"
+        ok, _ = lint.s_org_owned(d)
+        assert not ok
+
+    def test_org_owned_handles_missing_type(self, make_repo):
+        # Some old crawler caches don't include owner.type — treat as User
+        # (conservative: don't credit ambiguous repos).
+        d = make_repo()
+        # owner.type not set
+        ok, _ = lint.s_org_owned(d)
+        assert not ok
+
+    def test_has_codeowners_root(self, make_repo):
+        d = make_repo(top_paths=["README.md", "CODEOWNERS"])
+        ok, _ = lint.s_has_codeowners(d)
+        assert ok
+
+    def test_has_codeowners_in_dotgithub(self, make_repo):
+        d = make_repo(top_paths=["README.md", ".github"])
+        # CODEOWNERS at .github/CODEOWNERS — crawler doesn't fetch nested,
+        # but we can recognize a .github dir with the codeowners convention
+        # ONLY when explicitly listed as ".github/CODEOWNERS" in top_paths.
+        # Here we assume it ISN'T fetched; should fail.
+        ok, _ = lint.s_has_codeowners(d)
+        assert not ok
+
+    def test_has_codeowners_explicit_dotgithub_path(self, make_repo):
+        d = make_repo(top_paths=["README.md", ".github/CODEOWNERS"])
+        ok, _ = lint.s_has_codeowners(d)
+        assert ok
+
+    def test_has_codeowners_fail(self, make_repo):
+        d = make_repo(top_paths=["README.md", "LICENSE"])
+        ok, _ = lint.s_has_codeowners(d)
         assert not ok
 
 

@@ -596,14 +596,31 @@ async function callTool(
 
         const scored = (data.tools ?? [])
           .map((t: any) => {
-            const hay = [t.name, ...(t.capabilities ?? [])]
-              .filter(Boolean).join(" ").toLowerCase();
+            // G4: also search description + input_keys when present. The
+            // description is what makes intent-based queries possible —
+            // "read postgres tables" can match a tool described as "List
+            // all rows in a Postgres table" even if the tool name is just
+            // `query`.
+            const hay = [
+              t.name,
+              t.description,
+              ...(t.input_keys ?? []),
+              ...(t.capabilities ?? []),
+            ].filter(Boolean).join(" ").toLowerCase();
             const directHits = tokens.reduce(
               (n, tok) => n + (hay.includes(tok) ? 1 : 0), 0
             );
-            const relevance = tokens.length ? directHits / tokens.length : 0;
+            // Bonus weight when the tool NAME itself contains a token —
+            // "browser_navigate" should rank above a tool whose only
+            // mention of "browser" is in its description.
+            const nameHits = tokens.reduce(
+              (n, tok) => n + ((t.name || "").toLowerCase().includes(tok) ? 1 : 0), 0
+            );
+            const relevance = tokens.length
+              ? (directHits / tokens.length) * 0.7 + (nameHits / tokens.length) * 0.3
+              : 0;
             const quality = Math.sqrt((t.composite ?? 0) / 100);
-            return { t, score: relevance * quality, hits: directHits };
+            return { t, score: relevance * quality, hits: directHits, nameHits };
           })
           .filter((x: any) => x.hits > 0)
           .sort((a: any, b: any) => b.score - a.score || b.t.composite - a.t.composite)
@@ -612,6 +629,7 @@ async function callTool(
             ...x.t,
             match_score: Number(x.score.toFixed(3)),
             token_hits: x.hits,
+            name_hits: x.nameHits,
           }));
         return contentEnvelope({
           intent,
