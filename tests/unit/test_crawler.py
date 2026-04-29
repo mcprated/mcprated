@@ -95,3 +95,30 @@ class TestSubdirsToExplore:
         a = crawler._subdirs_to_explore(["src", "cmd", "packages"])
         b = crawler._subdirs_to_explore(["packages", "cmd", "src"])
         assert a == b
+
+
+class TestDetectPublishedPackages:
+    """Regression: crawler used `re` without importing it. Caught only by
+    the smoke harness, missing from unit coverage. Pin the helper now."""
+
+    def test_npm_package_name_extracted(self):
+        pj = '{"name": "@scope/foo-bar", "version": "1.0.0"}'
+        result = crawler._detect_published_packages({"package.json": pj})
+        assert ("npm", "@scope/foo-bar") in result
+
+    def test_pypi_package_name_extracted(self):
+        py = '[project]\nname = "my-mcp-server"\nversion = "1.0"\n'
+        result = crawler._detect_published_packages({"pyproject.toml": py})
+        assert ("PyPI", "my-mcp-server") in result
+
+    def test_cargo_package_name_extracted(self):
+        cargo = '[package]\nname = "foo-mcp"\nversion = "0.1"\n'
+        result = crawler._detect_published_packages({"Cargo.toml": cargo})
+        assert ("crates.io", "foo-mcp") in result
+
+    def test_no_packages_when_metadata_empty(self):
+        assert crawler._detect_published_packages({}) == []
+
+    def test_handles_malformed_json_gracefully(self):
+        # Degraded input shouldn't crash the crawler.
+        assert crawler._detect_published_packages({"package.json": "{not json"}) == []

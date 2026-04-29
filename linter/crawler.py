@@ -9,7 +9,7 @@ Discovery sources (in order):
 Auth: requires GITHUB_TOKEN env (5000/h) — unauthenticated 60/h is too low.
 """
 from __future__ import annotations
-import base64, json, os, sys, time, urllib.error, urllib.parse, urllib.request
+import base64, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
