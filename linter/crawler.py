@@ -277,9 +277,15 @@ def fetch_repo(owner: str, name: str) -> dict | None:
     #   - OSV.dev advisories: per-package vulnerability list (free, no auth)
     # Phase M (v1.3+) — npm/PyPI registry adoption signals (free, no auth)
     # All best-effort; failures don't break the lint pipeline.
+    #
+    # Order matters: registry first (gives us latest_version), then OSV
+    # filtered to only advisories that affect that latest version.
     scorecard = _fetch_scorecard(owner, name)
-    osv_advisories = _fetch_osv_advisories(pkg_meta)
     registry = _fetch_registry(pkg_meta)
+    latest_versions = {}
+    if isinstance(registry, dict) and registry.get("latest_version"):
+        latest_versions[registry["package"]] = registry["latest_version"]
+    osv_advisories = _fetch_osv_advisories(pkg_meta, latest_versions=latest_versions)
 
     return {
         "repo": repo,
@@ -355,10 +361,105 @@ def _detect_published_packages(pkg_meta: dict) -> list[tuple[str, str]]:
     return out
 
 
-def _fetch_osv_advisories(pkg_meta: dict) -> list[dict]:
-    """OSV.dev advisories for each declared package. Returns flat list with
-    severity normalized to upper-case (HIGH/CRITICAL/MEDIUM/LOW). Empty list
-    on no packages or no advisories."""
+# ---------------------------------------------------------------------------
+# Version-aware OSV filter — keep only advisories that affect the LATEST
+# published version of the package. Without this filter, a popular SDK
+# whose v0.x had a CVE patched in v1.0 stays flagged forever — destroys
+# catalog credibility on widely-used packages.
+# ---------------------------------------------------------------------------
+
+_SEMVER_RX = re.compile(r"^v?(\d+)(?:\.(\d+))?(?:\.(\d+))?")
+
+
+def _semver_tuple(v: str) -> tuple[int, int, int]:
+    """Parse '1.2.3', '1.2', 'v1.0', '1.2.3-rc1' to (major, minor, patch).
+    Returns (0, 0, 0) on garbage — caller must decide what that means."""
+    if not isinstance(v, str):
+        return (0, 0, 0)
+    m = _SEMVER_RX.match(v.strip())
+    if not m:
+        return (0, 0, 0)
+    return (int(m.group(1)), int(m.group(2) or 0), int(m.group(3) or 0))
+
+
+def _is_version_affected(version: str, affected: list[dict]) -> bool:
+    """Decide whether `version` is affected by any entry in OSV `affected[]`.
+
+    OSV shape per affected entry:
+        {
+          "package": {...},
+          "ranges": [{"events": [{"introduced": "X"}, {"fixed": "Y"}, ...]}],
+          "versions": [...]   # optional explicit list
+        }
+
+    Convention: a version V is affected by a range with introduced=I, fixed=F
+    iff I <= V < F. Open-ended (no fixed) means "still affected at HEAD".
+    Multiple ranges are OR'd. Explicit `versions[]` membership wins.
+
+    Conservative fallback: if the entry has no decidable shape (no versions,
+    no ranges with events) — return True. Better to over-flag than to miss a
+    real CVE.
+    """
+    # No data at all -> can't decide, err on the side of "affected"
+    if not version:
+        return True
+    if not affected:
+        return True
+
+    v_tup = _semver_tuple(version)
+    # If parsing the input version failed, also conservative
+    if v_tup == (0, 0, 0) and version not in ("0", "0.0", "0.0.0"):
+        return True
+
+    decided = False
+    for entry in affected:
+        if not isinstance(entry, dict):
+            continue
+
+        # Explicit versions list
+        explicit = entry.get("versions") or []
+        if explicit:
+            decided = True
+            if version in explicit:
+                return True
+
+        ranges = entry.get("ranges") or []
+        for rng in ranges:
+            events = (rng.get("events") if isinstance(rng, dict) else None) or []
+            introduced: tuple[int, int, int] | None = None
+            for e in events:
+                if not isinstance(e, dict):
+                    continue
+                if "introduced" in e:
+                    raw = e["introduced"]
+                    introduced = (0, 0, 0) if raw == "0" else _semver_tuple(raw)
+                    decided = True
+                elif "fixed" in e:
+                    if introduced is not None:
+                        fixed = _semver_tuple(e["fixed"])
+                        if introduced <= v_tup < fixed:
+                            return True
+                    introduced = None  # range closed
+            # Open-ended range (introduced but never fixed)
+            if introduced is not None and introduced <= v_tup:
+                return True
+
+    # If we found ranges/versions but `version` doesn't match any → safe.
+    # If no entries had decidable data → conservative true.
+    return not decided
+
+
+def _fetch_osv_advisories(pkg_meta: dict, latest_versions: dict[str, str] | None = None) -> list[dict]:
+    """OSV.dev advisories for each declared package, FILTERED to those that
+    affect the package's currently-latest published version when known.
+
+    `latest_versions`: {package_name: "1.2.3"} keyed by package name from
+    the npm/PyPI registry. When None or missing for a package, every
+    advisory is kept (conservative — we can't decide).
+
+    Returns flat list with normalized severity (HIGH/CRITICAL/MEDIUM/LOW).
+    """
+    latest_versions = latest_versions or {}
     advisories: list[dict] = []
     for ecosystem, package in _detect_published_packages(pkg_meta):
         body = json.dumps({"package": {"ecosystem": ecosystem, "name": package}}).encode()
@@ -373,7 +474,11 @@ def _fetch_osv_advisories(pkg_meta: dict) -> list[dict]:
                 payload = json.loads(r.read())
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError):
             continue
+
+        latest = latest_versions.get(package)
+
         for vuln in payload.get("vulns") or []:
+            # Severity normalization (unchanged)
             sev = "UNKNOWN"
             for sev_entry in vuln.get("severity") or []:
                 if isinstance(sev_entry, dict):
@@ -382,15 +487,28 @@ def _fetch_osv_advisories(pkg_meta: dict) -> list[dict]:
                         sev = "CRITICAL"; break
                     if "HIGH" in s.upper():
                         sev = "HIGH"; break
-            # Fallback: sniff `database_specific.severity` (GH advisory shape)
             db_sev = ((vuln.get("database_specific") or {}).get("severity") or "").upper()
             if db_sev in ("CRITICAL", "HIGH", "MODERATE", "LOW") and sev == "UNKNOWN":
                 sev = db_sev if db_sev != "MODERATE" else "MEDIUM"
+
+            # Phase I-2 fix: filter by latest version. Match `affected[]`
+            # entries whose package matches our query (some advisories list
+            # multiple packages; we only care about the one we asked about).
+            affected_for_pkg = [
+                a for a in (vuln.get("affected") or [])
+                if isinstance(a, dict)
+                and (a.get("package") or {}).get("name") == package
+            ]
+            if latest and affected_for_pkg:
+                if not _is_version_affected(latest, affected_for_pkg):
+                    continue  # already patched in current release
+
             advisories.append({
                 "id": vuln.get("id"),
                 "severity": sev,
                 "package": package,
                 "ecosystem": ecosystem,
+                "checked_against_version": latest,
             })
     return advisories
 
@@ -418,15 +536,18 @@ def _fetch_registry(pkg_meta: dict) -> dict | None:
 def _fetch_npm_registry(package: str) -> dict:
     """npm registry + downloads. https://registry.npmjs.org + api.npmjs.org."""
     base = {"ecosystem": "npm", "package": package, "exists": False,
-            "weekly_downloads": None, "latest_published_at": None, "deprecated": False}
+            "weekly_downloads": None, "latest_published_at": None,
+            "latest_version": None, "deprecated": False}
     meta = _fetch_json(f"https://registry.npmjs.org/{package}", timeout=15)
     if not isinstance(meta, dict) or "error" in meta:
         return base
     base["exists"] = True
     times = (meta.get("time") or {})
     latest = meta.get("dist-tags", {}).get("latest")
-    if latest and isinstance(times.get(latest), str):
-        base["latest_published_at"] = times[latest]
+    if latest:
+        base["latest_version"] = latest
+        if isinstance(times.get(latest), str):
+            base["latest_published_at"] = times[latest]
     # `deprecated` is per-version; treat as deprecated if latest version is.
     if latest:
         ver = (meta.get("versions") or {}).get(latest) or {}
@@ -442,7 +563,8 @@ def _fetch_npm_registry(package: str) -> dict:
 def _fetch_pypi_registry(package: str) -> dict:
     """PyPI JSON API + pypistats for downloads."""
     base = {"ecosystem": "PyPI", "package": package, "exists": False,
-            "weekly_downloads": None, "latest_published_at": None, "deprecated": False}
+            "weekly_downloads": None, "latest_published_at": None,
+            "latest_version": None, "deprecated": False}
     meta = _fetch_json(f"https://pypi.org/pypi/{package}/json", timeout=15)
     if not isinstance(meta, dict):
         return base
@@ -451,11 +573,13 @@ def _fetch_pypi_registry(package: str) -> dict:
     # Latest publish: highest release version's upload_time
     releases = meta.get("releases") or {}
     latest_ver = info.get("version")
-    if latest_ver and releases.get(latest_ver):
-        files = releases[latest_ver]
-        if files and isinstance(files, list):
-            ts = files[0].get("upload_time_iso_8601") or files[0].get("upload_time")
-            base["latest_published_at"] = ts
+    if latest_ver:
+        base["latest_version"] = latest_ver
+        if releases.get(latest_ver):
+            files = releases[latest_ver]
+            if files and isinstance(files, list):
+                ts = files[0].get("upload_time_iso_8601") or files[0].get("upload_time")
+                base["latest_published_at"] = ts
     # PyPI doesn't expose deprecation as a field; check classifiers for legacy/deprecated.
     classifiers = info.get("classifiers") or []
     if any("Inactive" in c or "deprecated" in c.lower() for c in classifiers):

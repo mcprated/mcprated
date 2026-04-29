@@ -122,3 +122,85 @@ class TestDetectPublishedPackages:
     def test_handles_malformed_json_gracefully(self):
         # Degraded input shouldn't crash the crawler.
         assert crawler._detect_published_packages({"package.json": "{not json"}) == []
+
+
+class TestSemverCompare:
+    """Pure helpers for the OSV version-aware filter."""
+
+    @pytest.mark.parametrize("v, expected", [
+        ("1.2.3", (1, 2, 3)),
+        ("0", (0, 0, 0)),
+        ("1", (1, 0, 0)),
+        ("1.2", (1, 2, 0)),
+        ("1.2.3-rc1", (1, 2, 3)),  # pre-release tag stripped
+        ("v1.2.3", (1, 2, 3)),     # leading v tolerated
+    ])
+    def test_semver_tuple(self, v, expected):
+        assert crawler._semver_tuple(v) == expected
+
+    def test_garbage_returns_zero(self):
+        assert crawler._semver_tuple("not a version") == (0, 0, 0)
+
+
+class TestIsVersionAffected:
+    """Phase I-2 fix: only flag advisories that actually affect the
+    latest published version. Avoid the 'package once had a CVE in v0.x,
+    fixed in v1.0' false positive that capped popular SDKs unfairly."""
+
+    def test_simple_introduced_fixed_range_affected(self):
+        affected = [{
+            "ranges": [{"events": [{"introduced": "0"}, {"fixed": "1.5.0"}]}],
+        }]
+        assert crawler._is_version_affected("1.0.0", affected) is True
+
+    def test_simple_introduced_fixed_range_safe(self):
+        affected = [{
+            "ranges": [{"events": [{"introduced": "0"}, {"fixed": "1.5.0"}]}],
+        }]
+        assert crawler._is_version_affected("2.0.0", affected) is False
+        assert crawler._is_version_affected("1.5.0", affected) is False  # fix is exclusive lower bound for safety
+
+    def test_introduced_after_zero(self):
+        # Bug introduced in 1.0, fixed in 1.5
+        affected = [{
+            "ranges": [{"events": [{"introduced": "1.0.0"}, {"fixed": "1.5.0"}]}],
+        }]
+        assert crawler._is_version_affected("0.9.0", affected) is False
+        assert crawler._is_version_affected("1.2.0", affected) is True
+        assert crawler._is_version_affected("1.5.0", affected) is False
+
+    def test_open_ended_range_no_fix(self):
+        # Vulnerability disclosed but never fixed — every version >= introduced affected
+        affected = [{
+            "ranges": [{"events": [{"introduced": "0"}]}],
+        }]
+        assert crawler._is_version_affected("1.0.0", affected) is True
+        assert crawler._is_version_affected("99.0.0", affected) is True
+
+    def test_explicit_versions_list_match(self):
+        affected = [{
+            "versions": ["1.0.0", "1.0.1", "1.0.2"],
+        }]
+        assert crawler._is_version_affected("1.0.1", affected) is True
+        assert crawler._is_version_affected("1.0.3", affected) is False
+
+    def test_multiple_ranges_branches(self):
+        # 0.x and 1.x both had the bug; both fixed in their own branches.
+        affected = [{
+            "ranges": [
+                {"events": [{"introduced": "0"}, {"fixed": "0.5.0"}]},
+                {"events": [{"introduced": "1.0.0"}, {"fixed": "1.2.0"}]},
+            ],
+        }]
+        assert crawler._is_version_affected("0.3.0", affected) is True
+        assert crawler._is_version_affected("0.7.0", affected) is False
+        assert crawler._is_version_affected("1.1.0", affected) is True
+        assert crawler._is_version_affected("1.5.0", affected) is False
+
+    def test_no_data_returns_true_conservatively(self):
+        # If we can't decide, fall back to "treat as affected" — better to
+        # over-flag than silently mark vulnerable repo as safe.
+        assert crawler._is_version_affected("1.0.0", []) is True
+        assert crawler._is_version_affected("1.0.0", [{}]) is True
+        # Also when version itself is missing/garbage
+        assert crawler._is_version_affected("", [{"ranges": [{"events": [{"fixed": "1.0"}]}]}]) is True
