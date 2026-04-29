@@ -71,7 +71,27 @@ claude mcp add --transport http mcprated-local http://localhost:8787
 npx @modelcontextprotocol/inspector@latest http://localhost:8787
 ```
 
-The local Worker uses the same source as production. Test changes locally; auto-deploy fires on push to `main` (gated by 230+ tests).
+The local Worker uses the same source as production. Test changes locally; auto-deploy fires on push to `main` (gated by 260+ tests).
+
+## Smoke harness — see what your change did, before push
+
+After every scoring/extractor change, run the local smoke harness. It lints every entry in `tests/regression/seed.txt` and prints a diff against the last snapshot — no judgment, just data.
+
+```bash
+python3 linter/smoke.py            # first run — snapshot only
+# ... make changes to linter/ ...
+python3 linter/smoke.py            # second run — diff vs last snapshot
+```
+
+Output: a current-state table (composite, kind, capabilities, tool_count, hard_flags per server) and a diff section listing only what changed. Last 10 snapshots are kept under `.local/smoke/`.
+
+Use cases:
+- Verify a taxonomy keyword change didn't shift unrelated capabilities
+- Confirm an extractor patch raises tool_count for the targeted servers
+- Catch trust-axis regressions when adding/removing signals
+- Check the Tier B junk repos still score low
+
+The script reuses the shared `.cache/` so it's fast (~30s after warm cache). Add `GITHUB_TOKEN=$(gh auth token)` to fetch missing entries authenticated.
 
 ## What we catalog
 
