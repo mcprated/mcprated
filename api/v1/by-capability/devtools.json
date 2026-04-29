@@ -1,14 +1,14 @@
 {
   "capability": "devtools",
-  "rule_set_version": "1.1.0",
+  "rule_set_version": "1.2.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T20:09:44+00:00",
+  "generated_at": "2026-04-29T06:39:20+00:00",
   "count": 7,
   "servers": [
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
-      "composite": 100,
+      "composite": 94,
       "description": "Official MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
@@ -17,26 +17,26 @@
         "database",
         "devtools"
       ],
-      "stars": 8901,
+      "stars": 8903,
       "language": "Python"
     },
     {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
-      "composite": 100,
+      "composite": 94,
       "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "devtools"
       ],
-      "stars": 29327,
+      "stars": 29347,
       "language": "Go"
     },
     {
       "repo": "mcprated/mcprated",
       "slug": "mcprated__mcprated",
-      "composite": 86,
+      "composite": 80,
       "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
       "kind": "server",
       "subkind": "integration",
@@ -49,7 +49,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -57,13 +57,13 @@
         "database",
         "devtools"
       ],
-      "stars": 2650,
+      "stars": 2653,
       "language": "Python"
     },
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
+      "composite": 40,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -72,19 +72,6 @@
       ],
       "stars": 1,
       "language": "JavaScript"
-    },
-    {
-      "repo": "boysoai/Claude-Code-MCP",
-      "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
-      "description": "Claude Code MCP servers",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 0,
-      "language": null
     },
     {
       "repo": "modelcontextprotocol/servers-archived",
@@ -100,6 +87,19 @@
       ],
       "stars": 254,
       "language": "JavaScript"
+    },
+    {
+      "repo": "boysoai/Claude-Code-MCP",
+      "slug": "boysoai__Claude-Code-MCP",
+      "composite": 24,
+      "description": "Claude Code MCP servers",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
+      "language": null
     }
   ]
 }

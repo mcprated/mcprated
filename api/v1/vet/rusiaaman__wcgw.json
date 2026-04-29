@@ -1,13 +1,13 @@
 {
   "repo": "rusiaaman/wcgw",
   "slug": "rusiaaman__wcgw",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 78,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00",
+  "composite": 68,
   "axes": {
     "reliability": 86,
     "documentation": 80,
-    "trust": 67,
+    "trust": 25,
     "community": 80
   },
   "kind": "server",
@@ -17,7 +17,7 @@
   ],
   "license": "Apache-2.0",
   "stars": 661,
-  "pushed_at": "2026-04-07T13:49:48Z",
+  "pushed_at": "2026-04-29T06:34:32Z",
   "language": "Python",
   "hard_flags": [],
   "trust_signals": {
@@ -29,9 +29,13 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
-      "passed": true,
-      "note": "16 topics: ['agent', 'ai-agent', 'ai-coding', 'anthropic', 'chatgpt']"
+    "org_owned": {
+      "passed": false,
+      "note": "owner type: User (not Organization)"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "caution",

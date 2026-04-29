@@ -1,21 +1,21 @@
 {
   "repo": "exa-labs/exa-mcp-server",
   "slug": "exa-labs__exa-mcp-server",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00",
-  "composite": 69,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 65,
   "axes": {
     "reliability": 29,
     "documentation": 100,
-    "trust": 67,
+    "trust": 50,
     "community": 80
   },
   "kind": "server",
   "subkind": "integration",
   "capabilities": [],
   "license": "MIT",
-  "stars": 4351,
-  "pushed_at": "2026-04-28T17:24:10Z",
+  "stars": 4354,
+  "pushed_at": "2026-04-29T00:57:28Z",
   "language": "TypeScript",
   "hard_flags": [],
   "trust_signals": {
@@ -27,9 +27,13 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
+    "org_owned": {
       "passed": true,
-      "note": "8 topics: ['code-search', 'codesearch', 'crawling', 'mcp', 'mcp-server']"
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "caution",

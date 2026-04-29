@@ -1,13 +1,13 @@
 {
   "repo": "googleapis/mcp-toolbox",
   "slug": "googleapis__mcp-toolbox",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 100,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 94,
   "axes": {
     "reliability": 100,
     "documentation": 100,
-    "trust": 100,
+    "trust": 75,
     "community": 100
   },
   "kind": "server",
@@ -18,8 +18,8 @@
     "search"
   ],
   "license": "Apache-2.0",
-  "stars": 14855,
-  "pushed_at": "2026-04-28T18:04:37Z",
+  "stars": 14858,
+  "pushed_at": "2026-04-29T06:10:44Z",
   "language": "Go",
   "hard_flags": [],
   "trust_signals": {
@@ -31,9 +31,13 @@
       "passed": true,
       "note": "SECURITY.md present"
     },
-    "has_repo_topics": {
+    "org_owned": {
       "passed": true,
-      "note": "20 topics: ['agent', 'agents', 'ai', 'bigquery', 'clickhouse']"
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "verified",

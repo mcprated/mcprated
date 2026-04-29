@@ -22,8 +22,8 @@
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
-  "composite": 22,
-  "composite_raw": 22,
+  "composite": 14,
+  "composite_raw": 14,
   "axes": {
     "reliability": {
       "score": 14,
@@ -88,9 +88,9 @@
       }
     },
     "trust": {
-      "score": 33,
-      "passing": 1,
-      "total": 3,
+      "score": 0,
+      "passing": 0,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": false,
@@ -100,9 +100,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
-          "pass": true,
-          "note": "2 topics: ['ai', 'mcp-server']"
+        "org_owned": {
+          "pass": false,
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -135,6 +139,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

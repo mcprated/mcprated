@@ -1,20 +1,20 @@
 {
   "repo": "modelcontextprotocol/python-sdk",
   "slug": "modelcontextprotocol__python-sdk",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 92,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 94,
   "axes": {
     "reliability": 100,
     "documentation": 100,
-    "trust": 67,
+    "trust": 75,
     "community": 100
   },
   "kind": "framework",
   "subkind": "",
   "capabilities": [],
   "license": "MIT",
-  "stars": 22809,
+  "stars": 22814,
   "pushed_at": "2026-04-25T22:14:31Z",
   "language": "Python",
   "hard_flags": [],
@@ -27,9 +27,13 @@
       "passed": true,
       "note": "SECURITY.md present"
     },
-    "has_repo_topics": {
+    "org_owned": {
+      "passed": true,
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
       "passed": false,
-      "note": "0 topics: []"
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "verified",

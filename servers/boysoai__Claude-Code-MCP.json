@@ -20,8 +20,8 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 32,
-  "composite_raw": 32,
+  "composite": 24,
+  "composite_raw": 24,
   "axes": {
     "reliability": {
       "score": 14,
@@ -86,9 +86,9 @@
       }
     },
     "trust": {
-      "score": 33,
-      "passing": 1,
-      "total": 3,
+      "score": 0,
+      "passing": 0,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": false,
@@ -98,9 +98,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
-          "pass": true,
-          "note": "3 topics: ['claude', 'mcp', 'mcp-server']"
+        "org_owned": {
+          "pass": false,
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -133,6 +137,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

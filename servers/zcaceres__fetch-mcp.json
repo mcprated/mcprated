@@ -1,6 +1,6 @@
 {
   "repo": "zcaceres/fetch-mcp",
-  "stars": 744,
+  "stars": 743,
   "language": "TypeScript",
   "license": "MIT",
   "description": "A flexible HTTP fetching Model Context Protocol server.",
@@ -13,13 +13,20 @@
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
-    "tool_count": 0,
-    "tool_names_preview": [],
+    "tool_count": 6,
+    "tool_names_preview": [
+      "fetch_html",
+      "fetch_markdown",
+      "fetch_txt",
+      "fetch_json",
+      "fetch_readable",
+      "fetch_youtube_transcript"
+    ],
     "extraction_method": "regex_typescript",
-    "extraction_confidence": 0.3
+    "extraction_confidence": 0.7
   },
-  "composite": 50,
-  "composite_raw": 50,
+  "composite": 48,
+  "composite_raw": 48,
   "axes": {
     "reliability": {
       "score": 29,
@@ -84,9 +91,9 @@
       }
     },
     "trust": {
-      "score": 33,
+      "score": 25,
       "passing": 1,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -96,9 +103,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": false,
-          "note": "0 topics: []"
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -131,6 +142,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

@@ -1,10 +1,10 @@
 {
   "repo": "awslabs/mcp",
-  "stars": 8901,
+  "stars": 8903,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "Official MCP Servers for AWS",
-  "pushed_at": "2026-04-28T16:29:22Z",
+  "pushed_at": "2026-04-29T00:13:00Z",
   "kind": "server",
   "subkind": "agent-product",
   "kind_confidence": 1.0,
@@ -22,8 +22,8 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 100,
-  "composite_raw": 100,
+  "composite": 94,
+  "composite_raw": 94,
   "axes": {
     "reliability": {
       "score": 100,
@@ -88,9 +88,9 @@
       }
     },
     "trust": {
-      "score": 100,
+      "score": 75,
       "passing": 3,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -100,9 +100,13 @@
           "pass": true,
           "note": "security section in README"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "9 topics: ['aws', 'mcp', 'mcp-client', 'mcp-clients', 'mcp-host']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -121,11 +125,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 9 merged PRs in 90d"
+          "note": "active: 30 commits, 11 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "9 merged PR(s) in 90d"
+          "note": "11 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -135,6 +139,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

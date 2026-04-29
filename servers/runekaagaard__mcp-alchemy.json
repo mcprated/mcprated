@@ -26,8 +26,8 @@
     "extraction_method": "ast_python",
     "extraction_confidence": 0.9
   },
-  "composite": 42,
-  "composite_raw": 42,
+  "composite": 40,
+  "composite_raw": 40,
   "axes": {
     "reliability": {
       "score": 14,
@@ -92,9 +92,9 @@
       }
     },
     "trust": {
-      "score": 33,
+      "score": 25,
       "passing": 1,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -104,9 +104,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": false,
-          "note": "0 topics: []"
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -139,6 +143,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

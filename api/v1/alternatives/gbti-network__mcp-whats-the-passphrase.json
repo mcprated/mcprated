@@ -8,17 +8,17 @@
     {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
-      "composite": 100,
+      "composite": 94,
       "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "devtools"
       ],
-      "stars": 29327,
+      "stars": 29347,
       "language": "Go",
       "similarity": 1.0,
-      "score": 0.4,
+      "score": 0.388,
       "shared_capabilities": [
         "devtools"
       ]
@@ -26,7 +26,7 @@
     {
       "repo": "mcprated/mcprated",
       "slug": "mcprated__mcprated",
-      "composite": 86,
+      "composite": 80,
       "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
       "kind": "server",
       "subkind": "integration",
@@ -36,7 +36,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.371,
+      "score": 0.358,
       "shared_capabilities": [
         "devtools"
       ]
@@ -44,7 +44,7 @@
     {
       "repo": "boysoai/Claude-Code-MCP",
       "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
+      "composite": 24,
       "description": "Claude Code MCP servers",
       "kind": "server",
       "subkind": "integration",
@@ -54,7 +54,7 @@
       "stars": 0,
       "language": null,
       "similarity": 1.0,
-      "score": 0.226,
+      "score": 0.196,
       "shared_capabilities": [
         "devtools"
       ]
@@ -62,7 +62,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -70,10 +70,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2650,
+      "stars": 2653,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.139,
+      "score": 0.144,
       "shared_capabilities": [
         "devtools"
       ]
@@ -81,7 +81,7 @@
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
-      "composite": 100,
+      "composite": 94,
       "description": "Official MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
@@ -90,10 +90,10 @@
         "database",
         "devtools"
       ],
-      "stars": 8901,
+      "stars": 8903,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.133,
+      "score": 0.129,
       "shared_capabilities": [
         "devtools"
       ]

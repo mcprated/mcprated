@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-28T20:09:44+00:00",
-  "rule_set_version": "1.1.0",
+  "generated_at": "2026-04-29T06:39:20+00:00",
+  "rule_set_version": "1.2.0",
   "taxonomy_version": "1.0",
   "count": 32,
   "servers": [
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
-      "composite": 100,
+      "composite": 94,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 100,
+        "trust": 75,
         "community": 100
       },
-      "stars": 8901,
+      "stars": 8903,
       "language": "Python",
       "description": "Official MCP Servers for AWS",
       "kind": "server",
@@ -32,14 +32,14 @@
     {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
-      "composite": 100,
+      "composite": 94,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 100,
+        "trust": 75,
         "community": 100
       },
-      "stars": 29327,
+      "stars": 29347,
       "language": "Go",
       "description": "GitHub's official MCP Server",
       "kind": "server",
@@ -55,14 +55,14 @@
     {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
-      "composite": 100,
+      "composite": 94,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 100,
+        "trust": 75,
         "community": 100
       },
-      "stars": 14855,
+      "stars": 14858,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -80,14 +80,14 @@
     {
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
-      "composite": 100,
+      "composite": 94,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 100,
+        "trust": 75,
         "community": 100
       },
-      "stars": 31651,
+      "stars": 31733,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -102,60 +102,16 @@
       "hard_flags": []
     },
     {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 95,
-      "axes": {
-        "reliability": 100,
-        "documentation": 80,
-        "trust": 100,
-        "community": 100
-      },
-      "stars": 5054,
-      "language": "Python",
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 14550,
-      "language": "TypeScript",
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
       "repo": "modelcontextprotocol/python-sdk",
       "slug": "modelcontextprotocol__python-sdk",
-      "composite": 92,
+      "composite": 94,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 67,
+        "trust": 75,
         "community": 100
       },
-      "stars": 22809,
+      "stars": 22814,
       "language": "Python",
       "description": "The official Python SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -167,40 +123,16 @@
       "hard_flags": []
     },
     {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 92,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 23545,
-      "language": "Python",
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
       "repo": "supabase-community/supabase-mcp",
       "slug": "supabase-community__supabase-mcp",
-      "composite": 92,
+      "composite": 94,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 67,
+        "trust": 75,
         "community": 100
       },
-      "stars": 2652,
+      "stars": 2654,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "server",
@@ -215,60 +147,16 @@
       "hard_flags": []
     },
     {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 92,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 100,
-        "community": 80
-      },
-      "stars": 54006,
-      "language": "TypeScript",
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 88,
-      "axes": {
-        "reliability": 86,
-        "documentation": 100,
-        "trust": 67,
-        "community": 100
-      },
-      "stars": 26917,
-      "language": "JavaScript",
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
       "repo": "modelcontextprotocol/typescript-sdk",
       "slug": "modelcontextprotocol__typescript-sdk",
-      "composite": 88,
+      "composite": 90,
       "axes": {
         "reliability": 86,
         "documentation": 100,
-        "trust": 67,
+        "trust": 75,
         "community": 100
       },
-      "stars": 12301,
+      "stars": 12302,
       "language": "TypeScript",
       "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -284,14 +172,14 @@
     {
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 67,
+        "trust": 75,
         "community": 80
       },
-      "stars": 84717,
+      "stars": 84744,
       "language": "TypeScript",
       "description": "Model Context Protocol Servers",
       "kind": "server",
@@ -314,13 +202,106 @@
       "hard_flags": []
     },
     {
-      "repo": "mcprated/mcprated",
-      "slug": "mcprated__mcprated",
-      "composite": 86,
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 88,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 50,
+        "community": 100
+      },
+      "stars": 23560,
+      "language": "Python",
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 85,
       "axes": {
         "reliability": 86,
         "documentation": 100,
-        "trust": 100,
+        "trust": 75,
+        "community": 80
+      },
+      "stars": 54032,
+      "language": "TypeScript",
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 80,
+        "trust": 50,
+        "community": 100
+      },
+      "stars": 5059,
+      "language": "Python",
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 81,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 25,
+        "community": 100
+      },
+      "stars": 14557,
+      "language": "TypeScript",
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "figma-developer-mcp"
+      ],
+      "hard_flags": []
+    },
+    {
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "axes": {
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 75,
         "community": 60
       },
       "stars": 0,
@@ -332,32 +313,36 @@
         "devtools"
       ],
       "distribution": "repo",
-      "tool_count": 1,
+      "tool_count": 9,
       "tool_names_preview": [
+        "find_server",
+        "search",
+        "vet",
+        "alternatives",
+        "by_kind",
+        "top",
+        "server_detail",
+        "find_tool",
         "mcprated"
       ],
       "hard_flags": []
     },
     {
-      "repo": "korotovsky/slack-mcp-server",
-      "slug": "korotovsky__slack-mcp-server",
-      "composite": 85,
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 78,
       "axes": {
-        "reliability": 100,
-        "documentation": 60,
-        "trust": 100,
-        "community": 80
+        "reliability": 86,
+        "documentation": 100,
+        "trust": 25,
+        "community": 100
       },
-      "stars": 1562,
-      "language": "Go",
-      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "stars": 26926,
+      "language": "JavaScript",
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "comms",
-        "web"
-      ],
+      "capabilities": [],
       "distribution": "repo",
       "tool_count": 0,
       "tool_names_preview": [],
@@ -366,11 +351,11 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 82,
+      "composite": 78,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 67,
+        "trust": 50,
         "community": 60
       },
       "stars": 1373,
@@ -389,39 +374,16 @@
       "hard_flags": []
     },
     {
-      "repo": "rusiaaman/wcgw",
-      "slug": "rusiaaman__wcgw",
-      "composite": 78,
-      "axes": {
-        "reliability": 86,
-        "documentation": 80,
-        "trust": 67,
-        "community": 80
-      },
-      "stars": 661,
-      "language": "Python",
-      "description": "Shell and coding agent on mcp clients",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 73,
+      "composite": 75,
       "axes": {
         "reliability": 100,
         "documentation": 80,
-        "trust": 33,
+        "trust": 50,
         "community": 80
       },
-      "stars": 949,
+      "stars": 951,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -442,14 +404,14 @@
     {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 70,
+      "composite": 74,
       "axes": {
         "reliability": 86,
         "documentation": 60,
-        "trust": 33,
+        "trust": 50,
         "community": 100
       },
-      "stars": 3667,
+      "stars": 3669,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -465,16 +427,64 @@
       ]
     },
     {
+      "repo": "korotovsky/slack-mcp-server",
+      "slug": "korotovsky__slack-mcp-server",
+      "composite": 72,
+      "axes": {
+        "reliability": 100,
+        "documentation": 60,
+        "trust": 50,
+        "community": 80
+      },
+      "stars": 1563,
+      "language": "Go",
+      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "web"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 68,
+      "axes": {
+        "reliability": 86,
+        "documentation": 80,
+        "trust": 25,
+        "community": 80
+      },
+      "stars": 661,
+      "language": "Python",
+      "description": "Shell and coding agent on mcp clients",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "axes": {
         "reliability": 29,
         "documentation": 100,
-        "trust": 67,
+        "trust": 50,
         "community": 80
       },
-      "stars": 4351,
+      "stars": 4354,
       "language": "TypeScript",
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
@@ -496,85 +506,16 @@
       "hard_flags": []
     },
     {
-      "repo": "dandeliongold/mcp-time",
-      "slug": "dandeliongold__mcp-time",
-      "composite": 50,
-      "axes": {
-        "reliability": 14,
-        "documentation": 80,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 2,
-      "language": "TypeScript",
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "distribution": "repo",
-      "tool_count": 1,
-      "tool_names_preview": [
-        "time-server"
-      ],
-      "hard_flags": [
-        "empty_description"
-      ]
-    },
-    {
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 50,
-      "axes": {
-        "reliability": 29,
-        "documentation": 80,
-        "trust": 33,
-        "community": 60
-      },
-      "stars": 744,
-      "language": "TypeScript",
-      "description": "A flexible HTTP fetching Model Context Protocol server.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
-      "repo": "executeautomation/mcp-playwright",
-      "slug": "executeautomation__mcp-playwright",
-      "composite": 49,
-      "axes": {
-        "reliability": 43,
-        "documentation": 100,
-        "trust": 33,
-        "community": 20
-      },
-      "stars": 5475,
-      "language": "TypeScript",
-      "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "web"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "axes": {
         "reliability": 57,
         "documentation": 80,
-        "trust": 33,
+        "trust": 50,
         "community": 20
       },
-      "stars": 2650,
+      "stars": 2653,
       "language": "Python",
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
@@ -598,28 +539,87 @@
       "hard_flags": []
     },
     {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 46,
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
       "axes": {
         "reliability": 29,
         "documentation": 80,
-        "trust": 33,
-        "community": 40
+        "trust": 25,
+        "community": 60
       },
-      "stars": 1,
-      "language": "JavaScript",
-      "description": null,
+      "stars": 743,
+      "language": "TypeScript",
+      "description": "A flexible HTTP fetching Model Context Protocol server.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "distribution": "repo",
+      "tool_count": 6,
+      "tool_names_preview": [
+        "fetch_html",
+        "fetch_markdown",
+        "fetch_txt",
+        "fetch_json",
+        "fetch_readable",
+        "fetch_youtube_transcript"
+      ],
+      "hard_flags": []
+    },
+    {
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "axes": {
+        "reliability": 43,
+        "documentation": 100,
+        "trust": 25,
+        "community": 20
+      },
+      "stars": 5477,
+      "language": "TypeScript",
+      "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "database",
-        "search"
+        "web"
       ],
+      "distribution": "repo",
+      "tool_count": 34,
+      "tool_names_preview": [
+        "playwright-mcp",
+        "start_codegen_session",
+        "end_codegen_session",
+        "get_codegen_session",
+        "clear_codegen_session",
+        "playwright_navigate",
+        "playwright_screenshot",
+        "playwright_click",
+        "playwright_iframe_click",
+        "playwright_iframe_fill"
+      ],
+      "hard_flags": []
+    },
+    {
+      "repo": "dandeliongold/mcp-time",
+      "slug": "dandeliongold__mcp-time",
+      "composite": 40,
+      "axes": {
+        "reliability": 14,
+        "documentation": 80,
+        "trust": 25,
+        "community": 40
+      },
+      "stars": 2,
+      "language": "TypeScript",
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
       "distribution": "repo",
       "tool_count": 1,
       "tool_names_preview": [
-        "sticky-notes-server"
+        "time-server"
       ],
       "hard_flags": [
         "empty_description"
@@ -628,11 +628,11 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
+      "composite": 40,
       "axes": {
         "reliability": 14,
         "documentation": 80,
-        "trust": 33,
+        "trust": 25,
         "community": 40
       },
       "stars": 1,
@@ -644,8 +644,9 @@
         "devtools"
       ],
       "distribution": "repo",
-      "tool_count": 1,
+      "tool_count": 2,
       "tool_names_preview": [
+        "getSecretPassphrase",
         "super-secret-server"
       ],
       "hard_flags": []
@@ -653,11 +654,11 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 40,
       "axes": {
         "reliability": 14,
         "documentation": 80,
-        "trust": 33,
+        "trust": 25,
         "community": 40
       },
       "stars": 401,
@@ -680,13 +681,79 @@
       "hard_flags": []
     },
     {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 37,
+      "axes": {
+        "reliability": 29,
+        "documentation": 80,
+        "trust": 0,
+        "community": 40
+      },
+      "stars": 1,
+      "language": "JavaScript",
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "sticky-notes-server"
+      ],
+      "hard_flags": [
+        "empty_description"
+      ]
+    },
+    {
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "axes": {
+        "reliability": 29,
+        "documentation": 40,
+        "trust": 75,
+        "community": 40
+      },
+      "stars": 254,
+      "language": "JavaScript",
+      "description": "Reference MCP servers that are no longer maintained",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "distribution": "repo",
+      "tool_count": 58,
+      "tool_names_preview": [
+        "retrieve_from_aws_kb",
+        "aws-kb-retrieval-server",
+        "brave_web_search",
+        "brave_local_search",
+        "generate_image",
+        "search",
+        "github-mcp-server",
+        "create_or_update_file",
+        "search_repositories",
+        "create_repository"
+      ],
+      "hard_flags": [
+        "archived"
+      ]
+    },
+    {
       "repo": "boysoai/Claude-Code-MCP",
       "slug": "boysoai__Claude-Code-MCP",
-      "composite": 32,
+      "composite": 24,
       "axes": {
         "reliability": 14,
         "documentation": 40,
-        "trust": 33,
+        "trust": 0,
         "community": 40
       },
       "stars": 0,
@@ -705,11 +772,11 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 32,
+      "composite": 24,
       "axes": {
         "reliability": 14,
         "documentation": 40,
-        "trust": 33,
+        "trust": 0,
         "community": 40
       },
       "stars": 0,
@@ -728,51 +795,13 @@
       "hard_flags": []
     },
     {
-      "repo": "modelcontextprotocol/servers-archived",
-      "slug": "modelcontextprotocol__servers-archived",
-      "composite": 30,
-      "axes": {
-        "reliability": 29,
-        "documentation": 40,
-        "trust": 67,
-        "community": 40
-      },
-      "stars": 254,
-      "language": "JavaScript",
-      "description": "Reference MCP servers that are no longer maintained",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools",
-        "cloud"
-      ],
-      "distribution": "repo",
-      "tool_count": 30,
-      "tool_names_preview": [
-        "aws-kb-retrieval-server",
-        "github-mcp-server",
-        "create_or_update_file",
-        "search_repositories",
-        "create_repository",
-        "get_file_contents",
-        "push_files",
-        "create_issue",
-        "create_pull_request",
-        "fork_repository"
-      ],
-      "hard_flags": [
-        "archived"
-      ]
-    },
-    {
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
+      "composite": 14,
       "axes": {
         "reliability": 14,
         "documentation": 0,
-        "trust": 33,
+        "trust": 0,
         "community": 40
       },
       "stars": 0,
@@ -793,11 +822,11 @@
     {
       "repo": "jithinolickal/mcp-client-server",
       "slug": "jithinolickal__mcp-client-server",
-      "composite": 17,
+      "composite": 8,
       "axes": {
         "reliability": 14,
         "documentation": 0,
-        "trust": 33,
+        "trust": 0,
         "community": 20
       },
       "stars": 0,

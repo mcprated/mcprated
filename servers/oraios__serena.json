@@ -1,10 +1,10 @@
 {
   "repo": "oraios/serena",
-  "stars": 23545,
+  "stars": 23560,
   "language": "Python",
   "license": "MIT",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-  "pushed_at": "2026-04-28T20:07:48Z",
+  "pushed_at": "2026-04-28T20:54:43Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.95,
@@ -21,8 +21,8 @@
     "extraction_method": "ast_python",
     "extraction_confidence": 0.4
   },
-  "composite": 92,
-  "composite_raw": 92,
+  "composite": 88,
+  "composite_raw": 88,
   "axes": {
     "reliability": {
       "score": 100,
@@ -87,9 +87,9 @@
       }
     },
     "trust": {
-      "score": 67,
+      "score": 50,
       "passing": 2,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -99,9 +99,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "12 topics: ['agent', 'ai', 'ai-coding', 'claude', 'claude-code']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -134,6 +138,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

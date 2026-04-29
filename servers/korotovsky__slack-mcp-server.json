@@ -1,6 +1,6 @@
 {
   "repo": "korotovsky/slack-mcp-server",
-  "stars": 1562,
+  "stars": 1563,
   "language": "Go",
   "license": "MIT",
   "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
@@ -22,8 +22,8 @@
     "extraction_method": "regex_go",
     "extraction_confidence": 0.3
   },
-  "composite": 85,
-  "composite_raw": 85,
+  "composite": 72,
+  "composite_raw": 72,
   "axes": {
     "reliability": {
       "score": 100,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 55d ago"
+          "note": "latest release 56d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -88,9 +88,9 @@
       }
     },
     "trust": {
-      "score": 100,
-      "passing": 3,
-      "total": 3,
+      "score": 50,
+      "passing": 2,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -100,9 +100,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
-          "pass": true,
-          "note": "7 topics: ['assistants', 'govslack', 'llm', 'mcp', 'mcp-server']"
+        "org_owned": {
+          "pass": false,
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -135,6 +139,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

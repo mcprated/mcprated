@@ -1,13 +1,13 @@
 {
   "repo": "dandeliongold/mcp-time",
   "slug": "dandeliongold__mcp-time",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00",
-  "composite": 50,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 40,
   "axes": {
     "reliability": 14,
     "documentation": 80,
-    "trust": 67,
+    "trust": 25,
     "community": 40
   },
   "kind": "server",
@@ -29,12 +29,16 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
-      "passed": true,
-      "note": "5 topics: ['claude', 'claude-ai', 'mcp', 'mcp-server', 'model-context-protocol']"
+    "org_owned": {
+      "passed": false,
+      "note": "owner type: User (not Organization)"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
-  "verdict": "caution",
+  "verdict": "low_quality",
   "url": "https://github.com/dandeliongold/mcp-time",
   "detail_url": "/servers/dandeliongold__mcp-time.json"
 }

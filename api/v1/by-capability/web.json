@@ -1,14 +1,14 @@
 {
   "capability": "web",
-  "rule_set_version": "1.1.0",
+  "rule_set_version": "1.2.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T20:09:44+00:00",
+  "generated_at": "2026-04-29T06:39:20+00:00",
   "count": 3,
   "servers": [
     {
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
-      "composite": 100,
+      "composite": 94,
       "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
@@ -16,13 +16,13 @@
         "web",
         "ai"
       ],
-      "stars": 31651,
+      "stars": 31733,
       "language": "TypeScript"
     },
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 85,
+      "composite": 72,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -31,20 +31,20 @@
         "comms",
         "web"
       ],
-      "stars": 1562,
+      "stars": 1563,
       "language": "Go"
     },
     {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
-      "composite": 49,
+      "composite": 47,
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web"
       ],
-      "stars": 5475,
+      "stars": 5477,
       "language": "TypeScript"
     }
   ]

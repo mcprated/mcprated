@@ -8,7 +8,7 @@
     {
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
-      "composite": 100,
+      "composite": 94,
       "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
@@ -16,10 +16,10 @@
         "web",
         "ai"
       ],
-      "stars": 31651,
+      "stars": 31733,
       "language": "TypeScript",
       "similarity": 0.5,
-      "score": 0.5,
+      "score": 0.485,
       "shared_capabilities": [
         "web"
       ]
@@ -27,7 +27,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 85,
+      "composite": 72,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -36,10 +36,10 @@
         "comms",
         "web"
       ],
-      "stars": 1562,
+      "stars": 1563,
       "language": "Go",
       "similarity": 0.333,
-      "score": 0.307,
+      "score": 0.283,
       "shared_capabilities": [
         "web"
       ]

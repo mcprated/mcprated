@@ -1,10 +1,10 @@
 {
   "repo": "brave/brave-search-mcp-server",
-  "stars": 949,
+  "stars": 951,
   "language": "TypeScript",
   "license": "MIT",
   "description": null,
-  "pushed_at": "2026-04-27T01:16:39Z",
+  "pushed_at": "2026-04-29T01:27:41Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -23,8 +23,8 @@
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
-  "composite": 73,
-  "composite_raw": 73,
+  "composite": 75,
+  "composite_raw": 78,
   "axes": {
     "reliability": {
       "score": 100,
@@ -41,7 +41,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -89,9 +89,9 @@
       }
     },
     "trust": {
-      "score": 33,
-      "passing": 1,
-      "total": 3,
+      "score": 50,
+      "passing": 2,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -101,9 +101,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
+        "org_owned": {
+          "pass": true,
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
           "pass": false,
-          "note": "0 topics: []"
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -141,6 +145,6 @@
       "msg": "Repo has no description"
     }
   ],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

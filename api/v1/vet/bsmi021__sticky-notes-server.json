@@ -1,13 +1,13 @@
 {
   "repo": "bsmi021/sticky-notes-server",
   "slug": "bsmi021__sticky-notes-server",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00",
-  "composite": 46,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 37,
   "axes": {
     "reliability": 29,
     "documentation": 80,
-    "trust": 33,
+    "trust": 0,
     "community": 40
   },
   "kind": "server",
@@ -32,9 +32,13 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
-      "passed": true,
-      "note": "6 topics: ['cool-stuff', 'mcp', 'mcp-server', 'mcp-servers', 'modelcontextprotocol']"
+    "org_owned": {
+      "passed": false,
+      "note": "owner type: User (not Organization)"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "low_quality",

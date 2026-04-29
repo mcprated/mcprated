@@ -1,13 +1,87 @@
 {
-  "rule_set_version": "1.1.0",
-  "generated_at": "2026-04-28T20:09:44+00:00",
-  "total_tools": 50,
+  "rule_set_version": "1.2.0",
+  "generated_at": "2026-04-29T06:39:20+00:00",
+  "total_tools": 165,
   "tools": [
     {
-      "name": "create_directory",
+      "name": "add_observations",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_directory",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_entities",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_relations",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "delete_entities",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "delete_observations",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "delete_relations",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -15,9 +89,11 @@
     },
     {
       "name": "directory_tree",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -25,9 +101,35 @@
     },
     {
       "name": "edit_file",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_file_info",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "list_allowed_directories",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -35,9 +137,11 @@
     },
     {
       "name": "list_directory",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -45,9 +149,47 @@
     },
     {
       "name": "list_directory_with_sizes",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "memory-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "move_file",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "open_nodes",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -55,9 +197,23 @@
     },
     {
       "name": "read_file",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "read_graph",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -65,9 +221,11 @@
     },
     {
       "name": "read_media_file",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -75,9 +233,11 @@
     },
     {
       "name": "read_multiple_files",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -85,9 +245,71 @@
     },
     {
       "name": "read_text_file",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "search_files",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "search_nodes",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "secure-filesystem-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "sequential-thinking-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "sequentialthinking",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
@@ -95,19 +317,147 @@
     },
     {
       "name": "write_file",
+      "description": null,
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
       "extraction_method": "regex_typescript"
     },
     {
-      "name": "mcprated",
+      "name": "figma-developer-mcp",
+      "description": null,
+      "input_keys": [],
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 81,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "alternatives",
+      "description": "Find MCP servers with overlapping capabilities to a given one. Useful for fallback when a primary choice is unavailable, or for comparison.",
+      "input_keys": [],
       "repo": "mcprated/mcprated",
       "slug": "mcprated__mcprated",
-      "composite": 86,
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "by_kind",
+      "description": "List entries by classifier kind. server | client | framework | tool | ambiguous. The default catalog ranking shows kind=server; use this to inspect classifier output for the other kinds.",
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "find_server",
+      "description": "Find MCP servers tagged with a controlled capability category. Use when you can map your need to one of the 12 categories below; if you can",
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "find_tool",
+      "description": null,
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "mcprated",
+      "description": null,
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "search",
+      "description": "Free-text search across the catalog when",
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "server_detail",
+      "description": "Full lint output for one MCP server: every signal pass/fail with reason, all four axes, hard flags. Use when an agent needs evidence-level detail beyond the trust verdict.",
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "top",
+      "description": "Top MCP servers by ranking. Three orderings: composite score (quality), stars (popularity), recency (last push).",
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "vet",
+      "description": null,
+      "input_keys": [],
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 80,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -117,9 +467,11 @@
     },
     {
       "name": "brave-search-mcp-server",
+      "description": null,
+      "input_keys": [],
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 73,
+      "composite": 75,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -130,9 +482,11 @@
     },
     {
       "name": "company_research_exa",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -140,9 +494,11 @@
     },
     {
       "name": "deep_researcher_check",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -150,9 +506,11 @@
     },
     {
       "name": "deep_researcher_start",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -160,9 +518,11 @@
     },
     {
       "name": "deep_search_exa",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -170,9 +530,11 @@
     },
     {
       "name": "exa-search-server",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -180,9 +542,11 @@
     },
     {
       "name": "get_code_context_exa",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -190,9 +554,11 @@
     },
     {
       "name": "linkedin_search_exa",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -200,9 +566,11 @@
     },
     {
       "name": "people_search_exa",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -210,19 +578,11 @@
     },
     {
       "name": "web_search_advanced_exa",
+      "description": null,
+      "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "time-server",
-      "repo": "dandeliongold/mcp-time",
-      "slug": "dandeliongold__mcp-time",
-      "composite": 50,
+      "composite": 65,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -230,9 +590,13 @@
     },
     {
       "name": "analyze_db_health",
+      "description": "Analyze database health for specified components.",
+      "input_keys": [
+        "health_type"
+      ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -243,9 +607,15 @@
     },
     {
       "name": "analyze_query_indexes",
+      "description": "Analyze a list of SQL queries and recommend optimal indexes.",
+      "input_keys": [
+        "queries",
+        "max_index_size_mb",
+        "method"
+      ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -256,9 +626,14 @@
     },
     {
       "name": "analyze_workload_indexes",
+      "description": "Analyze frequently executed queries in the database and recommend optimal indexes.",
+      "input_keys": [
+        "max_index_size_mb",
+        "method"
+      ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -269,9 +644,15 @@
     },
     {
       "name": "explain_query",
+      "description": "Explains the execution plan for a SQL query.",
+      "input_keys": [
+        "sql",
+        "analyze",
+        "hypothetical_indexes"
+      ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -282,9 +663,15 @@
     },
     {
       "name": "get_object_details",
+      "description": "Get detailed information about a database object.",
+      "input_keys": [
+        "schema_name",
+        "object_name",
+        "object_type"
+      ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -295,9 +682,14 @@
     },
     {
       "name": "get_top_queries",
+      "description": null,
+      "input_keys": [
+        "sort_by",
+        "limit"
+      ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -308,9 +700,14 @@
     },
     {
       "name": "list_objects",
+      "description": "List objects of a given type in a schema.",
+      "input_keys": [
+        "schema_name",
+        "object_type"
+      ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -321,9 +718,11 @@
     },
     {
       "name": "list_schemas",
+      "description": "List all schemas in the database.",
+      "input_keys": [],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 48,
+      "composite": 52,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -333,23 +732,560 @@
       "extraction_method": "ast_python"
     },
     {
-      "name": "sticky-notes-server",
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 46,
+      "name": "fetch_html",
+      "description": "Fetch a website and return its unmodified contents as HTML",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_json",
+      "description": "Fetch a JSON file from a URL",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_markdown",
+      "description": "Fetch a website and return its contents converted to Markdown",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_readable",
+      "description": "Fetch a website and return its main content parsed by Mozilla Readability, converted to Markdown. Strips away navigation, ads, and boilerplate. Ideal for articles and blog posts.",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_txt",
+      "description": "Fetch a website, convert the content to plain text (no HTML)",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_youtube_transcript",
+      "description": "Fetch a YouTube video page and extract its captions/transcript",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "clear_codegen_session",
+      "description": "Clear a code generation session without generating a test",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "database",
-        "search"
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "end_codegen_session",
+      "description": "End a code generation session and generate the test file",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_codegen_session",
+      "description": "Get information about a code generation session",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright-mcp",
+      "description": null,
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_assert_response",
+      "description": "Wait for and validate a previously initiated HTTP response wait operation.",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_click",
+      "description": "Click an element on the page",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_click_and_switch_tab",
+      "description": "Click a link and switch to the newly opened tab",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_close",
+      "description": "Close the browser and release all resources",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_console_logs",
+      "description": "Retrieve console logs from the browser with filtering options",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_custom_user_agent",
+      "description": "Set a custom User Agent for the browser",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_delete",
+      "description": "Perform an HTTP DELETE request",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_drag",
+      "description": "Drag an element to a target location",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_evaluate",
+      "description": "Execute JavaScript in the browser console",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_expect_response",
+      "description": "Ask Playwright to start waiting for a HTTP response. This tool initiates the wait operation but does not wait for its completion.",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_fill",
+      "description": "fill out an input field",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_get",
+      "description": "Perform an HTTP GET request",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_get_visible_html",
+      "description": "Get the HTML content of the current page. By default, all <script> tags are removed from the output unless removeScripts is explicitly set to false.",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_get_visible_text",
+      "description": "Get the visible text content of the current page",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_go_back",
+      "description": "Navigate back in browser history",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_go_forward",
+      "description": "Navigate forward in browser history",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_hover",
+      "description": "Hover an element on the page",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_iframe_click",
+      "description": "Click an element in an iframe on the page",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_iframe_fill",
+      "description": "Fill an element in an iframe on the page",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_navigate",
+      "description": "Navigate to a URL",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_patch",
+      "description": "Perform an HTTP PATCH request",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_post",
+      "description": "Perform an HTTP POST request",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_press_key",
+      "description": "Press a keyboard key",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_put",
+      "description": "Perform an HTTP PUT request",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_resize",
+      "description": null,
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_save_as_pdf",
+      "description": "Save the current page as a PDF file",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_screenshot",
+      "description": "Take a screenshot of the current page or a specific element",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_select",
+      "description": "Select an element on the page with Select tag",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "playwright_upload_file",
+      "description": "Upload a file to an input[type=",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "start_codegen_session",
+      "description": "Start a new code generation session to record Playwright actions",
+      "input_keys": [],
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
       ],
       "extraction_method": "regex_typescript"
     },
     {
       "name": "all_table_names",
+      "description": null,
+      "input_keys": [],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 40,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -360,9 +1296,14 @@
     },
     {
       "name": "execute_query",
+      "description": null,
+      "input_keys": [
+        "query",
+        "params"
+      ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 40,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -373,9 +1314,13 @@
     },
     {
       "name": "filter_table_names",
+      "description": null,
+      "input_keys": [
+        "q"
+      ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 40,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -385,10 +1330,28 @@
       "extraction_method": "ast_python"
     },
     {
+      "name": "getSecretPassphrase",
+      "description": "What\\s the password?",
+      "input_keys": [],
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 40,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
       "name": "schema_definitions",
+      "description": null,
+      "input_keys": [
+        "table_names"
+      ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 40,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -399,9 +1362,11 @@
     },
     {
       "name": "super-secret-server",
+      "description": null,
+      "input_keys": [],
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
+      "composite": 40,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -410,19 +1375,100 @@
       "extraction_method": "regex_typescript"
     },
     {
-      "name": "GetIP",
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 32,
+      "name": "time-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "dandeliongold/mcp-time",
+      "slug": "dandeliongold__mcp-time",
+      "composite": 40,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "sticky-notes-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 37,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai"
+        "database",
+        "search"
       ],
-      "extraction_method": "ast_python"
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "add_issue_comment",
+      "description": "Add a comment to an existing issue",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
     },
     {
       "name": "aws-kb-retrieval-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "brave_local_search",
+      "description": "Searches for local businesses and places using Brave",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "brave_web_search",
+      "description": "Performs a web search using the Brave Search API, ideal for general queries, news, articles, and online content.",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_branch",
+      "description": "Create a new branch in a GitHub repository",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -437,6 +1483,24 @@
     },
     {
       "name": "create_issue",
+      "description": "Create a new issue in a GitHub repository",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_merge_request",
+      "description": "Create a new merge request in a GitLab project",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -451,6 +1515,8 @@
     },
     {
       "name": "create_or_update_file",
+      "description": "Create or update a single file in a GitHub repository",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -465,6 +1531,24 @@
     },
     {
       "name": "create_pull_request",
+      "description": "Create a new pull request in a GitHub repository",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "create_pull_request_review",
+      "description": "Create a review on a pull request",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -479,6 +1563,8 @@
     },
     {
       "name": "create_repository",
+      "description": "Create a new GitHub repository in your account",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -493,6 +1579,24 @@
     },
     {
       "name": "fork_repository",
+      "description": "Fork a GitHub repository to your account or specified organization",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "generate_image",
+      "description": "Generate images using EverArt Models and returns a clickable link to view the generated image.",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -507,6 +1611,104 @@
     },
     {
       "name": "get_file_contents",
+      "description": "Get the contents of a file or directory from a GitHub repository",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_issue",
+      "description": "Get details of a specific issue in a GitHub repository.",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_pull_request",
+      "description": "Get details of a specific pull request",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_pull_request_comments",
+      "description": "Get the review comments on a pull request",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_pull_request_files",
+      "description": "Get the list of files changed in a pull request",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_pull_request_reviews",
+      "description": "Get the reviews on a pull request",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "get_pull_request_status",
+      "description": "Get the combined status of all status checks for a pull request",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -521,6 +1723,312 @@
     },
     {
       "name": "github-mcp-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "gitlab-mcp-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "list_commits",
+      "description": "Get list of commits of a branch in a GitHub repository",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "list_issues",
+      "description": "List issues in a GitHub repository with filtering options",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "list_pull_requests",
+      "description": "List and filter repository pull requests",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "maps_directions",
+      "description": "Get directions between two points",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "maps_distance_matrix",
+      "description": "Calculate travel distance and time for multiple origins and destinations",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "maps_elevation",
+      "description": "Get elevation data for locations on the earth",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "maps_geocode",
+      "description": "Convert an address into geographic coordinates",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "maps_place_details",
+      "description": "Get detailed information about a specific place",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "maps_reverse_geocode",
+      "description": "Convert coordinates into an address",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "maps_search_places",
+      "description": "Search for places using Google Places API",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "merge_pull_request",
+      "description": "Merge a pull request",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "puppeteer_click",
+      "description": "Click an element on the page",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "puppeteer_evaluate",
+      "description": "Execute JavaScript in the browser console",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "puppeteer_fill",
+      "description": "Fill out an input field",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "puppeteer_hover",
+      "description": "Hover an element on the page",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "puppeteer_navigate",
+      "description": "Navigate to a URL",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "puppeteer_screenshot",
+      "description": "Take a screenshot of the current page or a specific element",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "puppeteer_select",
+      "description": "Select an element on the page with Select tag",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -535,6 +2043,88 @@
     },
     {
       "name": "push_files",
+      "description": "Push multiple files to a GitHub repository in a single commit",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "query",
+      "description": "Run a read-only SQL query",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "retrieve_from_aws_kb",
+      "description": "Performs retrieval from the AWS Knowledge Base using the provided query and Knowledge Base ID.",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "search",
+      "description": "Search for files in Google Drive",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "search_code",
+      "description": "Search for code across GitHub repositories",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "search_issues",
+      "description": "Search for issues and pull requests across GitHub repositories",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -549,6 +2139,8 @@
     },
     {
       "name": "search_repositories",
+      "description": "Search for GitHub repositories",
+      "input_keys": [],
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -562,10 +2154,202 @@
       "extraction_method": "regex_typescript"
     },
     {
+      "name": "search_users",
+      "description": "Search for users on GitHub",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_add_reaction",
+      "description": "Add a reaction emoji to a message",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_get_channel_history",
+      "description": "Get recent messages from a channel",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_get_thread_replies",
+      "description": "Get all replies in a message thread",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_get_user_profile",
+      "description": "Get detailed profile information for a specific user",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_get_users",
+      "description": "Get a list of all users in the workspace with their basic profile information",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_list_channels",
+      "description": "List public or pre-defined channels in the workspace with pagination",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_post_message",
+      "description": "Post a new message to a Slack channel",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "slack_reply_to_thread",
+      "description": "Reply to a specific message thread in Slack",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "update_issue",
+      "description": "Update an existing issue in a GitHub repository",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "update_pull_request_branch",
+      "description": "Update a pull request branch with the latest changes from the base branch",
+      "input_keys": [],
+      "repo": "modelcontextprotocol/servers-archived",
+      "slug": "modelcontextprotocol__servers-archived",
+      "composite": 30,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools",
+        "cloud"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "GetIP",
+      "description": "Get my IP information from ifconfig.me",
+      "input_keys": [],
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 24,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
       "name": "get-deliveries-in-journey",
+      "description": null,
+      "input_keys": [],
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
+      "composite": 14,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -573,9 +2357,11 @@
     },
     {
       "name": "get-incident-owner-team",
+      "description": null,
+      "input_keys": [],
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
+      "composite": 14,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -583,9 +2369,11 @@
     },
     {
       "name": "mock-delivery-support-assistant",
+      "description": null,
+      "input_keys": [],
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
+      "composite": 14,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],

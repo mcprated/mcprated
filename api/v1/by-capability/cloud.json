@@ -1,14 +1,14 @@
 {
   "capability": "cloud",
-  "rule_set_version": "1.1.0",
+  "rule_set_version": "1.2.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T20:09:44+00:00",
+  "generated_at": "2026-04-29T06:39:20+00:00",
   "count": 3,
   "servers": [
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
-      "composite": 100,
+      "composite": 94,
       "description": "Official MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
@@ -17,20 +17,20 @@
         "database",
         "devtools"
       ],
-      "stars": 8901,
+      "stars": 8903,
       "language": "Python"
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 70,
+      "composite": 74,
       "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "cloud"
       ],
-      "stars": 3667,
+      "stars": 3669,
       "language": "TypeScript"
     },
     {

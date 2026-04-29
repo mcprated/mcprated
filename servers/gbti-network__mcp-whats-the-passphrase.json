@@ -15,15 +15,16 @@
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
-    "tool_count": 1,
+    "tool_count": 2,
     "tool_names_preview": [
+      "getSecretPassphrase",
       "super-secret-server"
     ],
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
-  "composite": 42,
-  "composite_raw": 42,
+  "composite": 40,
+  "composite_raw": 40,
   "axes": {
     "reliability": {
       "score": 14,
@@ -40,7 +41,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 430d ago"
+          "note": "pushed 431d ago"
         },
         "has_releases": {
           "pass": false,
@@ -88,9 +89,9 @@
       }
     },
     "trust": {
-      "score": 33,
+      "score": 25,
       "passing": 1,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": false,
@@ -100,9 +101,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "5 topics: ['boilerplate', 'mcp', 'mcp-server', 'model-context-protocol', 'node-js']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -135,6 +140,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

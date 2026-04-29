@@ -1,13 +1,13 @@
 {
   "repo": "gbti-network/mcp-whats-the-passphrase",
   "slug": "gbti-network__mcp-whats-the-passphrase",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00",
-  "composite": 42,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 40,
   "axes": {
     "reliability": 14,
     "documentation": 80,
-    "trust": 33,
+    "trust": 25,
     "community": 40
   },
   "kind": "server",
@@ -29,9 +29,13 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
+    "org_owned": {
       "passed": true,
-      "note": "5 topics: ['boilerplate', 'mcp', 'mcp-server', 'model-context-protocol', 'node-js']"
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "low_quality",

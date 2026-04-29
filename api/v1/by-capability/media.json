@@ -1,8 +1,8 @@
 {
   "capability": "media",
-  "rule_set_version": "1.1.0",
+  "rule_set_version": "1.2.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T20:09:44+00:00",
+  "generated_at": "2026-04-29T06:39:20+00:00",
   "count": 0,
   "servers": []
 }

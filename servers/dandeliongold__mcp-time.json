@@ -20,8 +20,8 @@
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
-  "composite": 50,
-  "composite_raw": 50,
+  "composite": 40,
+  "composite_raw": 40,
   "axes": {
     "reliability": {
       "score": 14,
@@ -38,7 +38,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 421d ago"
+          "note": "pushed 422d ago"
         },
         "has_releases": {
           "pass": false,
@@ -86,9 +86,9 @@
       }
     },
     "trust": {
-      "score": 67,
-      "passing": 2,
-      "total": 3,
+      "score": 25,
+      "passing": 1,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -98,9 +98,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
-          "pass": true,
-          "note": "5 topics: ['claude', 'claude-ai', 'mcp', 'mcp-server', 'model-context-protocol']"
+        "org_owned": {
+          "pass": false,
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -138,6 +142,6 @@
       "msg": "Repo has no description"
     }
   ],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

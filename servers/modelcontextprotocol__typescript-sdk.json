@@ -1,10 +1,10 @@
 {
   "repo": "modelcontextprotocol/typescript-sdk",
-  "stars": 12301,
+  "stars": 12302,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
-  "pushed_at": "2026-04-28T19:33:26Z",
+  "pushed_at": "2026-04-28T20:49:08Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 1.0,
@@ -20,8 +20,8 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 88,
-  "composite_raw": 88,
+  "composite": 90,
+  "composite_raw": 90,
   "axes": {
     "reliability": {
       "score": 86,
@@ -86,9 +86,9 @@
       }
     },
     "trust": {
-      "score": 67,
-      "passing": 2,
-      "total": 3,
+      "score": 75,
+      "passing": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -98,9 +98,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
+        "org_owned": {
+          "pass": true,
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
           "pass": false,
-          "note": "0 topics: []"
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -133,6 +137,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

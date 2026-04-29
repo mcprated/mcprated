@@ -1,6 +1,6 @@
 {
   "repo": "modelcontextprotocol/python-sdk",
-  "stars": 22809,
+  "stars": 22814,
   "language": "Python",
   "license": "MIT",
   "description": "The official Python SDK for Model Context Protocol servers and clients",
@@ -18,8 +18,8 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 92,
-  "composite_raw": 92,
+  "composite": 94,
+  "composite_raw": 94,
   "axes": {
     "reliability": {
       "score": 100,
@@ -36,7 +36,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 2d ago"
+          "note": "pushed 3d ago"
         },
         "has_releases": {
           "pass": true,
@@ -84,9 +84,9 @@
       }
     },
     "trust": {
-      "score": 67,
-      "passing": 2,
-      "total": 3,
+      "score": 75,
+      "passing": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -96,9 +96,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
+        "org_owned": {
+          "pass": true,
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
           "pass": false,
-          "note": "0 topics: []"
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -131,6 +135,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

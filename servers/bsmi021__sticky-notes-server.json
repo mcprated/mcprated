@@ -23,8 +23,8 @@
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
-  "composite": 46,
-  "composite_raw": 46,
+  "composite": 37,
+  "composite_raw": 37,
   "axes": {
     "reliability": {
       "score": 29,
@@ -89,9 +89,9 @@
       }
     },
     "trust": {
-      "score": 33,
-      "passing": 1,
-      "total": 3,
+      "score": 0,
+      "passing": 0,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": false,
@@ -101,9 +101,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
-          "pass": true,
-          "note": "6 topics: ['cool-stuff', 'mcp', 'mcp-server', 'mcp-servers', 'modelcontextprotocol']"
+        "org_owned": {
+          "pass": false,
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -141,6 +145,6 @@
       "msg": "Repo has no description"
     }
   ],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

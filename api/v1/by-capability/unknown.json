@@ -1,69 +1,69 @@
 {
   "capability": "unknown",
-  "rule_set_version": "1.1.0",
+  "rule_set_version": "1.2.0",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-28T20:09:44+00:00",
-  "count": 9,
+  "generated_at": "2026-04-29T06:39:20+00:00",
+  "count": 7,
   "servers": [
-    {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 92,
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 14550,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/python-sdk",
-      "slug": "modelcontextprotocol__python-sdk",
-      "composite": 92,
-      "description": "The official Python SDK for Model Context Protocol servers and clients",
-      "kind": "framework",
-      "subkind": "",
-      "capabilities": [],
-      "stars": 22809,
-      "language": "Python"
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 88,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 26917,
-      "language": "JavaScript"
-    },
     {
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 87,
+      "composite": 89,
       "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84717,
+      "stars": 84744,
       "language": "TypeScript"
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 81,
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 14557,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 78,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 26926,
+      "language": "JavaScript"
     },
     {
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
+      "composite": 65,
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4351,
+      "stars": 4354,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 48,
+      "description": "A flexible HTTP fetching Model Context Protocol server.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 743,
       "language": "TypeScript"
     },
     {
       "repo": "dandeliongold/mcp-time",
       "slug": "dandeliongold__mcp-time",
-      "composite": 50,
+      "composite": 40,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -72,37 +72,15 @@
       "language": "TypeScript"
     },
     {
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 50,
-      "description": "A flexible HTTP fetching Model Context Protocol server.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 744,
-      "language": "TypeScript"
-    },
-    {
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
+      "composite": 14,
       "description": "mcp server assistant for mock data",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
       "stars": 0,
       "language": "TypeScript"
-    },
-    {
-      "repo": "jithinolickal/mcp-client-server",
-      "slug": "jithinolickal__mcp-client-server",
-      "composite": 17,
-      "description": "Sample on how mcp client and server can be created and used using python.",
-      "kind": "client",
-      "subkind": "",
-      "capabilities": [],
-      "stars": 0,
-      "language": "Python"
     }
   ]
 }

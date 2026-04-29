@@ -4,7 +4,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "description": "Shell and coding agent on mcp clients",
-  "pushed_at": "2026-04-07T13:49:48Z",
+  "pushed_at": "2026-04-29T06:34:32Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -20,8 +20,8 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 78,
-  "composite_raw": 78,
+  "composite": 68,
+  "composite_raw": 68,
   "axes": {
     "reliability": {
       "score": 86,
@@ -38,7 +38,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 21d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -46,11 +46,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 91d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: 5.6.1"
+          "note": "latest tag: 5.6.2"
         },
         "release_communication": {
           "pass": false,
@@ -86,9 +86,9 @@
       }
     },
     "trust": {
-      "score": 67,
-      "passing": 2,
-      "total": 3,
+      "score": 25,
+      "passing": 1,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -98,9 +98,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
-          "pass": true,
-          "note": "16 topics: ['agent', 'ai-agent', 'ai-coding', 'anthropic', 'chatgpt']"
+        "org_owned": {
+          "pass": false,
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -133,6 +137,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

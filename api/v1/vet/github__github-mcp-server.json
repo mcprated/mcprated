@@ -1,13 +1,13 @@
 {
   "repo": "github/github-mcp-server",
   "slug": "github__github-mcp-server",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 100,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 94,
   "axes": {
     "reliability": 100,
     "documentation": 100,
-    "trust": 100,
+    "trust": 75,
     "community": 100
   },
   "kind": "server",
@@ -16,7 +16,7 @@
     "devtools"
   ],
   "license": "MIT",
-  "stars": 29327,
+  "stars": 29347,
   "pushed_at": "2026-04-28T17:43:55Z",
   "language": "Go",
   "hard_flags": [],
@@ -29,9 +29,13 @@
       "passed": true,
       "note": "SECURITY.md present"
     },
-    "has_repo_topics": {
+    "org_owned": {
       "passed": true,
-      "note": "3 topics: ['github', 'mcp', 'mcp-server']"
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "verified",

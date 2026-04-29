@@ -1,13 +1,13 @@
 {
   "repo": "ogulcanarbc/mock-assistant-mcp-server",
   "slug": "ogulcanarbc__mock-assistant-mcp-server",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 22,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00",
+  "composite": 14,
   "axes": {
     "reliability": 14,
     "documentation": 0,
-    "trust": 33,
+    "trust": 0,
     "community": 40
   },
   "kind": "server",
@@ -27,9 +27,13 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
-      "passed": true,
-      "note": "2 topics: ['ai', 'mcp-server']"
+    "org_owned": {
+      "passed": false,
+      "note": "owner type: User (not Organization)"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "low_quality",

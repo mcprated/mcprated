@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-28T20:09:44+00:00",
-  "rule_set_version": "1.1.0",
+  "generated_at": "2026-04-29T06:39:20+00:00",
+  "rule_set_version": "1.2.0",
   "count": 2,
   "reason_summary": "Tagged with mcp-server / mcp topic but failed prefilter (no SDK dep, no mcpServers config in README, no MCP in description/name).",
   "servers": [
@@ -9,7 +9,7 @@
       "slug": "microsoft__markitdown",
       "reason": "not_mcp_server",
       "detail": "no MCP SDK dep, no mcpServers in README, no MCP in desc, no server-run pattern, no name match",
-      "stars": 118319,
+      "stars": 118457,
       "description": "Python tool for converting files and office documents to Markdown.",
       "language": "Python"
     },

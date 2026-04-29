@@ -1,13 +1,13 @@
 {
   "repo": "nikolaypavlov/mcp-myip",
   "slug": "nikolaypavlov__mcp-myip",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 32,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00",
+  "composite": 24,
   "axes": {
     "reliability": 14,
     "documentation": 40,
-    "trust": 33,
+    "trust": 0,
     "community": 40
   },
   "kind": "server",
@@ -29,9 +29,13 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
-      "passed": true,
-      "note": "3 topics: ['llm', 'mcp', 'mcp-server']"
+    "org_owned": {
+      "passed": false,
+      "note": "owner type: User (not Organization)"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "low_quality",

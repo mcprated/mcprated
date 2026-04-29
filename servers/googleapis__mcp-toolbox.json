@@ -1,10 +1,10 @@
 {
   "repo": "googleapis/mcp-toolbox",
-  "stars": 14855,
+  "stars": 14858,
   "language": "Go",
   "license": "Apache-2.0",
   "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-  "pushed_at": "2026-04-28T18:04:37Z",
+  "pushed_at": "2026-04-29T06:10:44Z",
   "kind": "server",
   "subkind": "agent-product",
   "kind_confidence": 1.0,
@@ -22,8 +22,8 @@
     "extraction_method": "regex_go",
     "extraction_confidence": 0.3
   },
-  "composite": 100,
-  "composite_raw": 100,
+  "composite": 94,
+  "composite_raw": 94,
   "axes": {
     "reliability": {
       "score": 100,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 14d ago"
+          "note": "latest release 15d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -88,9 +88,9 @@
       }
     },
     "trust": {
-      "score": 100,
+      "score": 75,
       "passing": 3,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -100,9 +100,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "20 topics: ['agent', 'agents', 'ai', 'bigquery', 'clickhouse']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -121,11 +125,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 13 merged PRs in 90d"
+          "note": "active: 30 commits, 9 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "13 merged PR(s) in 90d"
+          "note": "9 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -135,6 +139,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

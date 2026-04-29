@@ -1,10 +1,10 @@
 {
   "repo": "GLips/Figma-Context-MCP",
-  "stars": 14550,
+  "stars": 14557,
   "language": "TypeScript",
   "license": "MIT",
   "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-  "pushed_at": "2026-04-26T13:45:55Z",
+  "pushed_at": "2026-04-29T06:07:13Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -13,13 +13,15 @@
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
-    "tool_count": 0,
-    "tool_names_preview": [],
+    "tool_count": 1,
+    "tool_names_preview": [
+      "figma-developer-mcp"
+    ],
     "extraction_method": "regex_typescript",
-    "extraction_confidence": 0.3
+    "extraction_confidence": 0.7
   },
-  "composite": 92,
-  "composite_raw": 92,
+  "composite": 81,
+  "composite_raw": 81,
   "axes": {
     "reliability": {
       "score": 100,
@@ -36,7 +38,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 2d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -44,7 +46,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 7d ago"
+          "note": "latest release 8d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -84,9 +86,9 @@
       }
     },
     "trust": {
-      "score": 67,
-      "passing": 2,
-      "total": 3,
+      "score": 25,
+      "passing": 1,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -96,9 +98,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
-          "pass": true,
-          "note": "5 topics: ['ai', 'cursor', 'figma', 'mcp', 'typescript']"
+        "org_owned": {
+          "pass": false,
+          "note": "owner type: User (not Organization)"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -131,6 +137,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

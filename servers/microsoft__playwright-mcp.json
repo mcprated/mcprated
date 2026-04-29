@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/playwright-mcp",
-  "stars": 31651,
+  "stars": 31733,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Playwright MCP server",
@@ -21,8 +21,8 @@
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.3
   },
-  "composite": 100,
-  "composite_raw": 100,
+  "composite": 94,
+  "composite_raw": 94,
   "axes": {
     "reliability": {
       "score": 100,
@@ -39,7 +39,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 0d ago"
+          "note": "pushed 1d ago"
         },
         "has_releases": {
           "pass": true,
@@ -47,7 +47,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 0d ago"
+          "note": "latest release 1d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -87,9 +87,9 @@
       }
     },
     "trust": {
-      "score": 100,
+      "score": 75,
       "passing": 3,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -99,9 +99,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "2 topics: ['mcp', 'playwright']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -134,6 +138,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

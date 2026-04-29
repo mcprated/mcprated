@@ -22,8 +22,8 @@
     "extraction_method": "ast_python",
     "extraction_confidence": 0.4
   },
-  "composite": 82,
-  "composite_raw": 82,
+  "composite": 78,
+  "composite_raw": 78,
   "axes": {
     "reliability": {
       "score": 100,
@@ -88,9 +88,9 @@
       }
     },
     "trust": {
-      "score": 67,
+      "score": 50,
       "passing": 2,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -100,9 +100,13 @@
           "pass": false,
           "note": "no SECURITY.md, no security section"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "7 topics: ['claude', 'cursor', 'llm', 'mcp', 'mcp-server']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -135,6 +139,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

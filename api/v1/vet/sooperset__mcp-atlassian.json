@@ -1,13 +1,13 @@
 {
   "repo": "sooperset/mcp-atlassian",
   "slug": "sooperset__mcp-atlassian",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 95,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00",
+  "composite": 82,
   "axes": {
     "reliability": 100,
     "documentation": 80,
-    "trust": 100,
+    "trust": 50,
     "community": 100
   },
   "kind": "server",
@@ -16,7 +16,7 @@
     "productivity"
   ],
   "license": "MIT",
-  "stars": 5054,
+  "stars": 5059,
   "pushed_at": "2026-04-10T09:37:10Z",
   "language": "Python",
   "hard_flags": [],
@@ -29,12 +29,16 @@
       "passed": true,
       "note": "SECURITY.md present"
     },
-    "has_repo_topics": {
-      "passed": true,
-      "note": "4 topics: ['atlassian', 'confluence', 'jira', 'mcp']"
+    "org_owned": {
+      "passed": false,
+      "note": "owner type: User (not Organization)"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
-  "verdict": "verified",
+  "verdict": "caution",
   "url": "https://github.com/sooperset/mcp-atlassian",
   "detail_url": "/servers/sooperset__mcp-atlassian.json"
 }

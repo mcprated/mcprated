@@ -1,13 +1,13 @@
 {
   "repo": "upstash/context7",
   "slug": "upstash__context7",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 92,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00",
+  "composite": 85,
   "axes": {
     "reliability": 86,
     "documentation": 100,
-    "trust": 100,
+    "trust": 75,
     "community": 80
   },
   "kind": "server",
@@ -16,8 +16,8 @@
     "ai"
   ],
   "license": "MIT",
-  "stars": 54006,
-  "pushed_at": "2026-04-28T13:39:13Z",
+  "stars": 54032,
+  "pushed_at": "2026-04-28T21:18:49Z",
   "language": "TypeScript",
   "hard_flags": [],
   "trust_signals": {
@@ -29,12 +29,16 @@
       "passed": true,
       "note": "SECURITY.md present"
     },
-    "has_repo_topics": {
+    "org_owned": {
       "passed": true,
-      "note": "4 topics: ['llm', 'mcp', 'mcp-server', 'vibe-coding']"
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
-  "verdict": "verified",
+  "verdict": "caution",
   "url": "https://github.com/upstash/context7",
   "detail_url": "/servers/upstash__context7.json"
 }

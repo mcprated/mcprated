@@ -1,20 +1,20 @@
 {
   "repo": "modelcontextprotocol/servers",
   "slug": "modelcontextprotocol__servers",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 87,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00",
+  "composite": 89,
   "axes": {
     "reliability": 100,
     "documentation": 100,
-    "trust": 67,
+    "trust": 75,
     "community": 80
   },
   "kind": "server",
   "subkind": "agent-product",
   "capabilities": [],
   "license": "NOASSERTION",
-  "stars": 84717,
+  "stars": 84744,
   "pushed_at": "2026-04-17T22:59:54Z",
   "language": "TypeScript",
   "hard_flags": [],
@@ -27,9 +27,13 @@
       "passed": true,
       "note": "SECURITY.md present"
     },
-    "has_repo_topics": {
+    "org_owned": {
+      "passed": true,
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
       "passed": false,
-      "note": "0 topics: []"
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "caution",

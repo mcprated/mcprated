@@ -17,24 +17,24 @@
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
-    "tool_count": 30,
+    "tool_count": 58,
     "tool_names_preview": [
+      "retrieve_from_aws_kb",
       "aws-kb-retrieval-server",
+      "brave_web_search",
+      "brave_local_search",
+      "generate_image",
+      "search",
       "github-mcp-server",
       "create_or_update_file",
       "search_repositories",
-      "create_repository",
-      "get_file_contents",
-      "push_files",
-      "create_issue",
-      "create_pull_request",
-      "fork_repository"
+      "create_repository"
     ],
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
   "composite": 30,
-  "composite_raw": 44,
+  "composite_raw": 46,
   "axes": {
     "reliability": {
       "score": 29,
@@ -99,9 +99,9 @@
       }
     },
     "trust": {
-      "score": 67,
-      "passing": 2,
-      "total": 3,
+      "score": 75,
+      "passing": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -111,9 +111,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
+        "org_owned": {
+          "pass": true,
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
           "pass": false,
-          "note": "0 topics: []"
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -151,6 +155,6 @@
       "msg": "Repo is archived (read-only)"
     }
   ],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

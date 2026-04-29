@@ -1,10 +1,10 @@
 {
   "repo": "upstash/context7",
-  "stars": 54006,
+  "stars": 54032,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-  "pushed_at": "2026-04-28T13:39:13Z",
+  "pushed_at": "2026-04-28T21:18:49Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -20,8 +20,8 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 92,
-  "composite_raw": 92,
+  "composite": 85,
+  "composite_raw": 85,
   "axes": {
     "reliability": {
       "score": 86,
@@ -46,11 +46,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 1d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": false,
-          "note": "latest tag: @upstash/context7-mcp@2.2.1"
+          "note": "latest tag: @upstash/context7-mcp@2.2.2"
         },
         "release_communication": {
           "pass": true,
@@ -86,9 +86,9 @@
       }
     },
     "trust": {
-      "score": 100,
+      "score": 75,
       "passing": 3,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -98,9 +98,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "4 topics: ['llm', 'mcp', 'mcp-server', 'vibe-coding']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -133,6 +137,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

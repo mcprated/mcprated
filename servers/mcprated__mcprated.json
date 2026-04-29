@@ -4,7 +4,7 @@
   "language": "Python",
   "license": "MIT",
   "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
-  "pushed_at": "2026-04-28T20:05:43Z",
+  "pushed_at": "2026-04-29T06:29:33Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.55,
@@ -15,15 +15,23 @@
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
-    "tool_count": 1,
+    "tool_count": 9,
     "tool_names_preview": [
+      "find_server",
+      "search",
+      "vet",
+      "alternatives",
+      "by_kind",
+      "top",
+      "server_detail",
+      "find_tool",
       "mcprated"
     ],
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
-  "composite": 86,
-  "composite_raw": 86,
+  "composite": 80,
+  "composite_raw": 80,
   "axes": {
     "reliability": {
       "score": 86,
@@ -48,7 +56,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 0d ago"
+          "note": "latest release 1d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -88,9 +96,9 @@
       }
     },
     "trust": {
-      "score": 100,
+      "score": 75,
       "passing": 3,
-      "total": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -100,9 +108,13 @@
           "pass": true,
           "note": "SECURITY.md present"
         },
-        "has_repo_topics": {
+        "org_owned": {
           "pass": true,
-          "note": "5 topics: ['catalog', 'mcp', 'mcp-server', 'mcprated', 'model-context-protocol']"
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -121,7 +133,7 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 21 commits, 0 merged PRs in 90d"
+          "note": "active: 23 commits, 0 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": false,
@@ -135,6 +147,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00"
 }

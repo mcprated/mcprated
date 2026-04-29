@@ -1,10 +1,10 @@
 {
   "repo": "supabase-community/supabase-mcp",
-  "stars": 2652,
+  "stars": 2654,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Connect Supabase to your AI assistants",
-  "pushed_at": "2026-04-28T18:57:59Z",
+  "pushed_at": "2026-04-28T22:12:24Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.55,
@@ -21,8 +21,8 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 92,
-  "composite_raw": 92,
+  "composite": 94,
+  "composite_raw": 94,
   "axes": {
     "reliability": {
       "score": 100,
@@ -87,9 +87,9 @@
       }
     },
     "trust": {
-      "score": 67,
-      "passing": 2,
-      "total": 3,
+      "score": 75,
+      "passing": 3,
+      "total": 4,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -99,9 +99,13 @@
           "pass": true,
           "note": "security section in README"
         },
-        "has_repo_topics": {
+        "org_owned": {
+          "pass": true,
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
           "pass": false,
-          "note": "0 topics: []"
+          "note": "no CODEOWNERS file"
         }
       }
     },
@@ -134,6 +138,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00"
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:20+00:00"
 }

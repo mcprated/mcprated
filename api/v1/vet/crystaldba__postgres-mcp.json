@@ -1,13 +1,13 @@
 {
   "repo": "crystaldba/postgres-mcp",
   "slug": "crystaldba__postgres-mcp",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:43+00:00",
-  "composite": 48,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 52,
   "axes": {
     "reliability": 57,
     "documentation": 80,
-    "trust": 33,
+    "trust": 50,
     "community": 20
   },
   "kind": "server",
@@ -17,7 +17,7 @@
     "devtools"
   ],
   "license": "MIT",
-  "stars": 2650,
+  "stars": 2653,
   "pushed_at": "2026-01-22T16:24:36Z",
   "language": "Python",
   "hard_flags": [],
@@ -30,12 +30,16 @@
       "passed": false,
       "note": "no SECURITY.md, no security section"
     },
-    "has_repo_topics": {
+    "org_owned": {
+      "passed": true,
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
       "passed": false,
-      "note": "0 topics: []"
+      "note": "no CODEOWNERS file"
     }
   },
-  "verdict": "low_quality",
+  "verdict": "caution",
   "url": "https://github.com/crystaldba/postgres-mcp",
   "detail_url": "/servers/crystaldba__postgres-mcp.json"
 }

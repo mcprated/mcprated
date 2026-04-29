@@ -1,13 +1,13 @@
 {
   "repo": "mcprated/mcprated",
   "slug": "mcprated__mcprated",
-  "rule_set_version": "1.1.0",
-  "scored_at": "2026-04-28T20:09:44+00:00",
-  "composite": 86,
+  "rule_set_version": "1.2.0",
+  "scored_at": "2026-04-29T06:39:19+00:00",
+  "composite": 80,
   "axes": {
     "reliability": 86,
     "documentation": 100,
-    "trust": 100,
+    "trust": 75,
     "community": 60
   },
   "kind": "server",
@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "stars": 0,
-  "pushed_at": "2026-04-28T20:05:43Z",
+  "pushed_at": "2026-04-29T06:29:33Z",
   "language": "Python",
   "hard_flags": [],
   "trust_signals": {
@@ -29,9 +29,13 @@
       "passed": true,
       "note": "SECURITY.md present"
     },
-    "has_repo_topics": {
+    "org_owned": {
       "passed": true,
-      "note": "5 topics: ['catalog', 'mcp', 'mcp-server', 'mcprated', 'model-context-protocol']"
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
     }
   },
   "verdict": "caution",
