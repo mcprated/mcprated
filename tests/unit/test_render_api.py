@@ -404,6 +404,111 @@ class TestAlternatives:
         assert result["alternatives"] == []
 
 
+class TestExpandSubServers:
+    """Phase K2: pure function that takes an index + full per-server JSONs
+    and returns an extended index with one virtual entry per detected
+    sub-server (inheriting parent composite/license, own capabilities/tools)."""
+
+    def _full_with_subs(self, slug, sub_servers):
+        return {
+            "repo": slug.replace("__", "/"),
+            "kind": "server", "subkind": "agent-product",
+            "composite": 90,
+            "capabilities": ["devtools"],
+            "license": "Apache-2.0",
+            "language": "Python",
+            "stars": 8000,
+            "sub_servers": sub_servers,
+        }
+
+    def test_no_subs_returns_unchanged_index(self):
+        idx = make_index(make_index_entry(slug="x__a"))
+        full = {"x__a": {"sub_servers": []}}
+        out = render_api._expand_sub_servers(idx, full)
+        assert len(out["servers"]) == 1
+        assert out["servers"][0]["slug"] == "x__a"
+
+    def test_sub_servers_appended_as_virtual_entries(self):
+        idx = make_index(make_index_entry(slug="awslabs__mcp", repo="awslabs/mcp",
+                                          kind="server", subkind="agent-product",
+                                          composite=94, capabilities=["devtools", "cloud"]))
+        full = {"awslabs__mcp": self._full_with_subs("awslabs__mcp", [
+            {"name": "dynamodb-mcp-server", "subpath": "packages/dynamodb-mcp-server",
+             "tools_count": 3, "tools": [
+                 {"name": "get_item", "description": "Get DynamoDB item", "input_keys": ["table"]},
+             ],
+             "extraction_method": "ast_python"},
+            {"name": "s3-mcp-server", "subpath": "packages/s3-mcp-server",
+             "tools_count": 2, "tools": [
+                 {"name": "list_buckets", "description": "List S3 buckets", "input_keys": []},
+             ],
+             "extraction_method": "ast_python"},
+        ])}
+        out = render_api._expand_sub_servers(idx, full)
+        slugs = sorted(s["slug"] for s in out["servers"])
+        assert slugs == ["awslabs__mcp", "awslabs__mcp__dynamodb-mcp-server",
+                         "awslabs__mcp__s3-mcp-server"]
+
+    def test_virtual_entry_has_parent_slug_field(self):
+        idx = make_index(make_index_entry(slug="awslabs__mcp", repo="awslabs/mcp"))
+        full = {"awslabs__mcp": self._full_with_subs("awslabs__mcp", [
+            {"name": "ec2", "subpath": "packages/ec2", "tools_count": 1,
+             "tools": [{"name": "describe", "description": "", "input_keys": []}],
+             "extraction_method": "ast_python"},
+        ])}
+        out = render_api._expand_sub_servers(idx, full)
+        sub = next(s for s in out["servers"] if s["slug"] == "awslabs__mcp__ec2")
+        assert sub.get("parent_slug") == "awslabs__mcp"
+        assert sub.get("subpath") == "packages/ec2"
+
+    def test_virtual_entry_inherits_composite_and_license(self):
+        idx = make_index(make_index_entry(slug="awslabs__mcp", composite=94))
+        full = {"awslabs__mcp": self._full_with_subs("awslabs__mcp", [
+            {"name": "x", "subpath": "packages/x", "tools_count": 1,
+             "tools": [{"name": "t", "description": "", "input_keys": []}],
+             "extraction_method": "regex_typescript"},
+        ])}
+        out = render_api._expand_sub_servers(idx, full)
+        sub = next(s for s in out["servers"] if s["slug"].endswith("__x"))
+        assert sub["composite"] == 94
+        assert sub["language"] == "Python"
+        # subkind on the virtual entry is `integration` — only the parent is
+        # the agent-product (the suite). Each sub IS an integration server.
+        assert sub["subkind"] == "integration"
+
+    def test_virtual_tool_count_is_sub_specific(self):
+        idx = make_index(make_index_entry(slug="parent", composite=80))
+        full = {"parent": self._full_with_subs("parent", [
+            {"name": "small", "subpath": "p/small", "tools_count": 2,
+             "tools": [{"name": "a", "description": "", "input_keys": []},
+                       {"name": "b", "description": "", "input_keys": []}],
+             "extraction_method": "ast_python"},
+            {"name": "big", "subpath": "p/big", "tools_count": 50,
+             "tools": [{"name": f"t{i}", "description": "", "input_keys": []} for i in range(50)],
+             "extraction_method": "ast_python"},
+        ])}
+        out = render_api._expand_sub_servers(idx, full)
+        small = next(s for s in out["servers"] if s["slug"].endswith("__small"))
+        big = next(s for s in out["servers"] if s["slug"].endswith("__big"))
+        assert small["tool_count"] == 2
+        assert big["tool_count"] == 50
+
+    def test_capabilities_inherit_when_sub_lacks_them(self):
+        # If sub-server's tools don't carry capability metadata, inherit
+        # from parent. Sub-specific capability reasoning is a future
+        # enhancement; for now consistency with parent is the safe default.
+        idx = make_index(make_index_entry(slug="parent", capabilities=["cloud", "devtools"]))
+        full = {"parent": self._full_with_subs("parent", [
+            {"name": "x", "subpath": "p/x", "tools_count": 1,
+             "tools": [{"name": "t", "description": "", "input_keys": []}],
+             "extraction_method": "ast_python"},
+        ])}
+        full["parent"]["capabilities"] = ["cloud", "devtools"]
+        out = render_api._expand_sub_servers(idx, full)
+        sub = next(s for s in out["servers"] if s["slug"].endswith("__x"))
+        assert "cloud" in sub["capabilities"]
+
+
 class TestRenderToolsIndex:
     """Bug #6 follow-up: a flat searchable index of every extracted tool
     across every server. Lets agents go from intent → specific tool → server
@@ -513,6 +618,44 @@ class TestRenderToolsIndex:
         assert result["total_tools"] == 30, (
             f"all 30 tools must be in tools-index, not capped at preview length"
         )
+
+    # K2-3: sub-server tools surface in tools-index with virtual slug + parent_slug
+    def test_sub_server_tools_appear_in_index(self):
+        full_servers = {
+            "awslabs__mcp": {
+                "repo": "awslabs/mcp",
+                "tools": {"tool_count": 0, "tool_names_preview": [],
+                          "extraction_method": "none"},
+                "tools_extraction": {"tools": []},
+                "sub_servers": [
+                    {"name": "dynamodb-mcp-server", "subpath": "packages/dynamodb-mcp-server",
+                     "tools_count": 2, "extraction_method": "ast_python",
+                     "tools": [
+                         {"name": "get_item", "description": "Get item", "input_keys": ["table"]},
+                         {"name": "put_item", "description": "Put item", "input_keys": ["table"]},
+                     ]},
+                ],
+            }
+        }
+        idx = make_index(make_index_entry(slug="awslabs__mcp", repo="awslabs/mcp",
+                                          kind="server", subkind="agent-product",
+                                          composite=94))
+        # tools-index is called on EXPANDED idx — simulate that
+        idx_exp = render_api._expand_sub_servers(idx, full_servers)
+        # Need full_servers entry for the virtual slug too — main() does this
+        # by injecting tools_extraction equivalent. Our render_tools_index
+        # reads full_servers[slug].tools_extraction. For virtual slugs,
+        # the tools come from sub_servers — render_tools_index must look
+        # them up by parent_slug + subpath. Test pins this contract.
+        result = render_api.render_tools_index(idx_exp, full_servers)
+        names = {t["name"] for t in result["tools"]}
+        assert "get_item" in names
+        assert "put_item" in names
+        # Virtual entry slugs carry through
+        get_item = next(t for t in result["tools"] if t["name"] == "get_item")
+        assert get_item["slug"] == "awslabs__mcp__dynamodb-mcp-server"
+        # Sub-server tool entries also carry parent_slug
+        assert get_item.get("parent_slug") == "awslabs__mcp"
 
 
 class TestAlternativesRankingQuality:

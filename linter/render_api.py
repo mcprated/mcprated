@@ -454,6 +454,66 @@ def render_alternatives(idx_entry: dict, all_entries: list) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Phase K2: sub-server expansion
+#
+# Suite repos (awslabs/mcp, modelcontextprotocol/servers, googleapis/mcp-toolbox)
+# bundle multiple independent MCP servers under packages/<x>/ or src/<x>/.
+# Phase K1 surfaced these only inside the parent's `sub_servers[]` field —
+# agents querying find_server / by_capability / find_tool didn't see them.
+#
+# Phase K2 generates one virtual index entry per sub-server with slug
+# `<owner>__<repo>__<sub-name>`. Each virtual entry inherits parent
+# composite, license, language, capabilities (sub-specific capability
+# inference is future work), but carries its own tools_count + tool list.
+# Parent stays in the index alongside as `subkind=agent-product`.
+# ---------------------------------------------------------------------------
+
+def _expand_sub_servers(idx: dict, full_servers: dict[str, dict]) -> dict:
+    """Return a copy of `idx` whose `servers` list is extended with one
+    virtual entry per detected sub-server.
+
+    Pure function: no I/O. Deterministic insertion order (parent-first,
+    then sub-servers alphabetical by name).
+    """
+    out_servers = []
+    for entry in idx.get("servers", []):
+        out_servers.append(entry)
+        slug = entry["slug"]
+        full = full_servers.get(slug) or {}
+        subs = full.get("sub_servers") or []
+        if not subs:
+            continue
+        for sub in subs:
+            sub_name = sub.get("name") or "?"
+            virtual_slug = f"{slug}__{sub_name}"
+            virtual_entry = {
+                # Identity
+                "slug": virtual_slug,
+                "repo": entry["repo"],  # parent repo string
+                "parent_slug": slug,
+                "subpath": sub.get("subpath", ""),
+                # Inherited from parent (suite-level signals)
+                "composite": entry.get("composite", 0),
+                "axes": entry.get("axes") or {},
+                "stars": entry.get("stars"),
+                "language": full.get("language") or entry.get("language"),
+                "license": full.get("license"),
+                "description": (entry.get("description") or "") + f" / sub-server: {sub_name}",
+                "capabilities": entry.get("capabilities") or [],
+                "distribution": entry.get("distribution", "repo"),
+                "hard_flags": entry.get("hard_flags") or [],
+                # Sub-server own
+                "kind": "server",
+                "subkind": "integration",
+                "tool_count": sub.get("tools_count", 0),
+                "tool_names_preview": [t.get("name") for t in (sub.get("tools") or [])[:10]],
+            }
+            out_servers.append(virtual_entry)
+    expanded = {**idx, "servers": out_servers, "count": len(out_servers)}
+    return expanded
+
+
+# ---------------------------------------------------------------------------
 # render_tools_index — flat searchable index of every extracted tool
 # ---------------------------------------------------------------------------
 
@@ -478,22 +538,34 @@ def render_tools_index(idx: dict, full_servers: dict[str, dict]) -> dict:
     out_tools = []
     for entry in idx.get("servers", []):
         slug = entry["slug"]
-        full = full_servers.get(slug, {})
-        tools_summary = full.get("tools") or {}
-        method = tools_summary.get("extraction_method", "none")
-
-        # Prefer full extraction when present (post-G4); fall back to preview.
-        tools_full = (full.get("tools_extraction") or {}).get("tools") or []
-        if tools_full:
-            tool_records = tools_full
+        parent_slug = entry.get("parent_slug")
+        if parent_slug:
+            # Virtual sub-server entry. Tools live inside the parent's
+            # `sub_servers[]` block, identified by name == sub-name.
+            sub_name = slug[len(parent_slug) + 2:]  # strip "<parent>__"
+            parent = full_servers.get(parent_slug) or {}
+            sub_match = next(
+                (s for s in (parent.get("sub_servers") or [])
+                 if s.get("name") == sub_name), None
+            )
+            tool_records = (sub_match or {}).get("tools") or []
+            method = (sub_match or {}).get("extraction_method", "none")
         else:
-            tool_records = [
-                {"name": n, "description": None, "input_keys": []}
-                for n in (tools_summary.get("tool_names_preview") or [])
-            ]
+            full = full_servers.get(slug, {})
+            tools_summary = full.get("tools") or {}
+            method = tools_summary.get("extraction_method", "none")
+            # Prefer full extraction (post-G4); fall back to preview.
+            tools_full = (full.get("tools_extraction") or {}).get("tools") or []
+            if tools_full:
+                tool_records = tools_full
+            else:
+                tool_records = [
+                    {"name": n, "description": None, "input_keys": []}
+                    for n in (tools_summary.get("tool_names_preview") or [])
+                ]
 
         for t in tool_records:
-            out_tools.append({
+            record = {
                 "name": t.get("name", "?"),
                 "description": t.get("description"),
                 "input_keys": t.get("input_keys") or [],
@@ -504,7 +576,10 @@ def render_tools_index(idx: dict, full_servers: dict[str, dict]) -> dict:
                 "subkind": entry.get("subkind") or "",
                 "capabilities": entry.get("capabilities") or [],
                 "extraction_method": method,
-            })
+            }
+            if parent_slug:
+                record["parent_slug"] = parent_slug
+            out_tools.append(record)
     out_tools.sort(key=lambda t: (-t["composite"], t["name"]))
     return {
         "rule_set_version": idx.get("rule_set_version"),
@@ -560,18 +635,29 @@ def main() -> int:
             except Exception as e:
                 print(f"  skip tools/{f.name}: {e}", file=sys.stderr)
 
+    # Phase K2: expand suite parents into virtual sub-server entries so
+    # they appear in by_capability / by_kind / top / vet shards. The
+    # original idx is untouched (preserved at /index.json), but every
+    # downstream shard reads `idx_expanded`.
+    idx_expanded = _expand_sub_servers(idx, full_servers)
+
     written = 0
 
     # manifest
     (out_dir / "manifest.json").write_text(json.dumps(render_manifest(idx), ensure_ascii=False, indent=2))
     written += 1
 
+    # All downstream shards read `idx_expanded` so virtual sub-server
+    # entries surface in by_capability / by_kind / top / vet / alternatives /
+    # tools-index. Manifest reads the original `idx` (its enums + version
+    # info don't depend on entries).
+
     # by-capability
     cap_dir = out_dir / "by-capability"
     cap_dir.mkdir(exist_ok=True)
     for cap in CAPABILITIES + ["unknown"]:
         (cap_dir / f"{cap}.json").write_text(
-            json.dumps(render_by_capability(idx, cap), ensure_ascii=False, indent=2)
+            json.dumps(render_by_capability(idx_expanded, cap), ensure_ascii=False, indent=2)
         )
         written += 1
 
@@ -580,28 +666,28 @@ def main() -> int:
     kind_dir.mkdir(exist_ok=True)
     for kind in KINDS:
         (kind_dir / f"{kind}.json").write_text(
-            json.dumps(render_by_kind(idx, kind), ensure_ascii=False, indent=2)
+            json.dumps(render_by_kind(idx_expanded, kind), ensure_ascii=False, indent=2)
         )
         written += 1
 
     # top
     (out_dir / "top.json").write_text(
-        json.dumps(render_top(idx, full_servers), ensure_ascii=False, indent=2)
+        json.dumps(render_top(idx_expanded, full_servers), ensure_ascii=False, indent=2)
     )
     written += 1
 
-    # tools-index — flat searchable list across all servers
+    # tools-index — flat searchable list across all servers + sub-servers
     (out_dir / "tools-index.json").write_text(
-        json.dumps(render_tools_index(idx, full_servers), ensure_ascii=False, indent=2)
+        json.dumps(render_tools_index(idx_expanded, full_servers), ensure_ascii=False, indent=2)
     )
     written += 1
 
-    # vet + alternatives — one file per server
+    # vet + alternatives — one file per server (incl. virtual sub-servers)
     vet_dir = out_dir / "vet"
     vet_dir.mkdir(exist_ok=True)
     alt_dir = out_dir / "alternatives"
     alt_dir.mkdir(exist_ok=True)
-    all_entries = idx["servers"]
+    all_entries = idx_expanded["servers"]
     for entry in all_entries:
         slug = entry["slug"]
         full = full_servers.get(slug, {"repo": entry["repo"], "composite": entry["composite"], "axes": {}})

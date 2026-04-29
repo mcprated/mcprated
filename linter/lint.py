@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-RULE_SET_VERSION = "1.3.1"
+RULE_SET_VERSION = "1.3.2"
 TAXONOMY_VERSION = "1.0"
 
 # Local imports kept after the version constant so external callers that
@@ -784,6 +784,44 @@ def main():
         (servers_dir / f"{slug}.json").write_text(
             json.dumps(result, ensure_ascii=False, indent=2)
         )
+
+        # Phase K2: also write per-sub-server virtual files so vet/<vslug>.json
+        # and server_detail/<vslug>.json resolve. Each virtual entry inherits
+        # parent quality fields and adds sub-specific tools + identity.
+        for sub in result.get("sub_servers") or []:
+            vslug = f"{slug}__{sub.get('name', '?')}"
+            virtual = {
+                "repo": result["repo"],
+                "slug": vslug,
+                "parent_slug": slug,
+                "subpath": sub.get("subpath", ""),
+                # Inherited (suite-level signals)
+                "composite": result["composite"],
+                "axes": result.get("axes") or {},
+                "stars": result.get("stars"),
+                "language": result.get("language"),
+                "license": result.get("license"),
+                "description": (result.get("description") or "")
+                                + f" / sub-server: {sub.get('name')}",
+                "capabilities": result.get("capabilities") or [],
+                "capabilities_v2": result.get("capabilities_v2") or [],
+                "distribution": result.get("distribution", "repo"),
+                "rule_set_version": result.get("rule_set_version"),
+                "scored_at": result.get("scored_at"),
+                "hard_flags": result.get("hard_flags") or [],
+                # Sub-server own
+                "kind": "server",
+                "subkind": "integration",
+                "tools": {
+                    "tool_count": sub.get("tools_count", 0),
+                    "tool_names_preview": [t.get("name") for t in (sub.get("tools") or [])[:10]],
+                    "extraction_method": sub.get("extraction_method", "none"),
+                    "extraction_confidence": 0.7,  # regex-based extraction confidence
+                },
+            }
+            (servers_dir / f"{vslug}.json").write_text(
+                json.dumps(virtual, ensure_ascii=False, indent=2)
+            )
         index.append({
             "repo": full_name,
             "slug": slug,
