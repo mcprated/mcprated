@@ -365,6 +365,55 @@ def extract_from_repo(cache_entry: dict) -> dict[str, Any]:
 # Public helper used by lint.py to enrich per-server JSON output
 # ---------------------------------------------------------------------------
 
+def detect_sub_servers(cache_entry: dict) -> list[dict[str, Any]]:
+    """Phase K: enumerate sub-servers inside a suite repo.
+
+    Suite repos (awslabs/mcp, modelcontextprotocol/servers, googleapis/mcp-toolbox)
+    bundle multiple independent MCP servers in `packages/<x>/` or `src/<x>/`.
+    For each subdir that contains tool registrations, return:
+        {name, subpath, tools_count, tools[], extraction_method}
+
+    Detection: group cached source_files by their first-two-path-segments
+    when those start with `packages/` or `src/`; run extractor over each
+    group's source files; emit only groups with tools_count > 0 (utility
+    subdirs without tool registrations aren't sub-servers).
+    """
+    sources = cache_entry.get("source_files") or {}
+    if not sources:
+        return []
+
+    # Group source files by sub-server root (first two path segments
+    # when prefix is packages/ or src/)
+    groups: dict[str, dict[str, str]] = {}
+    for path, body in sources.items():
+        if not isinstance(path, str) or not isinstance(body, str):
+            continue
+        parts = path.split("/", 2)
+        if len(parts) < 3:
+            continue
+        if parts[0] not in ("packages", "src"):
+            continue
+        sub_root = f"{parts[0]}/{parts[1]}"
+        groups.setdefault(sub_root, {})[path] = body
+
+    out: list[dict[str, Any]] = []
+    for sub_root, sub_sources in sorted(groups.items()):
+        # Run the same extractor logic on this sub-group
+        fake_entry = {"repo": cache_entry.get("repo", {}), "source_files": sub_sources}
+        extraction = extract_from_repo(fake_entry)
+        if extraction["tools_count"] == 0:
+            continue
+        sub_name = sub_root.split("/", 1)[1]
+        out.append({
+            "name": sub_name,
+            "subpath": sub_root,
+            "tools_count": extraction["tools_count"],
+            "tools": extraction["tools"],
+            "extraction_method": extraction["extraction_method"],
+        })
+    return out
+
+
 def summarize_for_index(extraction: dict) -> dict[str, Any]:
     """Compact view embeddable in index.json / per-server JSON.
     Just the count + first few tool names — full list lives in data/tools/."""

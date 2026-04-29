@@ -22,13 +22,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-RULE_SET_VERSION = "1.3.0"
+RULE_SET_VERSION = "1.3.1"
 TAXONOMY_VERSION = "1.0"
 
 # Local imports kept after the version constant so external callers that
 # `from lint import RULE_SET_VERSION` still work without triggering classify load.
 from classify import classify_kind, classify_capabilities  # noqa: E402
-from extractor import extract_from_repo, summarize_for_index  # noqa: E402
+from extractor import extract_from_repo, summarize_for_index, detect_sub_servers  # noqa: E402
 
 
 # =====================================================================
@@ -678,6 +678,9 @@ def lint(repo_data: dict) -> dict:
     capabilities = classify_capabilities(repo_data)
     extraction = extract_from_repo(repo_data)
     tools_summary = summarize_for_index(extraction)
+    # Phase K: agent-product suite repos enumerate sub-servers under
+    # packages/<x>/ or src/<x>/. Empty list for non-suite repos.
+    sub_servers = detect_sub_servers(repo_data) if subkind == "agent-product" else []
     return {
         "repo": f"{repo.get('owner', {}).get('login', repo.get('full_name', '?').split('/')[0])}/{repo.get('name', '?')}",
         "stars": repo.get("stargazers_count"),
@@ -694,6 +697,7 @@ def lint(repo_data: dict) -> dict:
         "taxonomy_version": TAXONOMY_VERSION,
         "tools": tools_summary,
         "tools_extraction": extraction,
+        "sub_servers": sub_servers,
         "composite": composite,
         "composite_raw": composite_raw,
         "axes": out_axes,

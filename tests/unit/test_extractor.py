@@ -380,3 +380,81 @@ class TestExtractFromRepo:
         assert summary["tool_count"] == 15
         assert len(summary["tool_names_preview"]) == 10  # capped
         assert summary["extraction_method"] == "ast_python"
+
+
+class TestDetectSubServers:
+    """Phase K: suite repos (awslabs/mcp, modelcontextprotocol/servers,
+    googleapis/mcp-toolbox) bundle multiple MCP servers in subdirectories
+    like packages/<svc>/ or src/<svc>/. Parent gets a sub_servers[] field
+    so an agent calling vet on the parent learns about each sub-server."""
+
+    def test_no_subdirs_returns_empty(self, make_repo):
+        d = make_repo(top_paths=["README.md", "LICENSE", "package.json"])
+        subs = extractor.detect_sub_servers(d)
+        assert subs == []
+
+    def test_packages_dir_with_subpackages(self, make_repo):
+        d = make_repo(
+            top_paths=["packages", "README.md"],
+            source_files={
+                "packages/aws-cdk-mcp-server/server.py": (
+                    "@mcp.tool()\ndef cdk_synth():\n    '''Synth CDK.'''\n    pass\n"
+                ),
+                "packages/dynamodb-mcp-server/server.py": (
+                    "@mcp.tool()\ndef get_item():\n    '''Get DynamoDB item.'''\n    pass\n"
+                    "@mcp.tool()\ndef put_item():\n    '''Put DynamoDB item.'''\n    pass\n"
+                ),
+            },
+        )
+        subs = extractor.detect_sub_servers(d)
+        assert len(subs) == 2
+        names = sorted(s["name"] for s in subs)
+        assert names == ["aws-cdk-mcp-server", "dynamodb-mcp-server"]
+
+    def test_sub_servers_have_tools_extracted(self, make_repo):
+        d = make_repo(
+            top_paths=["packages"],
+            source_files={
+                "packages/foo-server/server.py": (
+                    "@mcp.tool()\ndef alpha():\n    '''A.'''\n    pass\n"
+                    "@mcp.tool()\ndef beta():\n    '''B.'''\n    pass\n"
+                ),
+            },
+        )
+        subs = extractor.detect_sub_servers(d)
+        assert len(subs) == 1
+        sub = subs[0]
+        assert sub["name"] == "foo-server"
+        assert sub["subpath"] == "packages/foo-server"
+        assert sub["tools_count"] == 2
+        # Should include the actual tool names
+        tool_names = sorted(t["name"] for t in sub["tools"])
+        assert tool_names == ["alpha", "beta"]
+
+    def test_src_dir_pattern(self, make_repo):
+        # modelcontextprotocol/servers uses src/<server>/ layout
+        d = make_repo(
+            top_paths=["src"],
+            source_files={
+                "src/filesystem/index.ts": (
+                    "server.tool('read_file', schema, h);\n"
+                    "server.tool('write_file', schema, h);\n"
+                ),
+                "src/git/index.ts": "server.tool('clone', schema, h);\n",
+            },
+        )
+        subs = extractor.detect_sub_servers(d)
+        names = sorted(s["name"] for s in subs)
+        assert names == ["filesystem", "git"]
+
+    def test_sub_with_zero_tools_skipped(self, make_repo):
+        # A subdir without any tool registration shouldn't be treated as a
+        # sub-server — just a utility/lib directory.
+        d = make_repo(
+            top_paths=["packages"],
+            source_files={
+                "packages/utils/helper.py": "def some_helper(): pass\n",
+            },
+        )
+        subs = extractor.detect_sub_servers(d)
+        assert subs == []
