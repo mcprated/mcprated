@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-RULE_SET_VERSION = "1.2.0"
+RULE_SET_VERSION = "1.3.0"
 TAXONOMY_VERSION = "1.0"
 
 # Local imports kept after the version constant so external callers that
@@ -328,6 +328,107 @@ def s_has_codeowners(d: dict) -> tuple[bool, str]:
     return False, "no CODEOWNERS file"
 
 
+# ---------------------------------------------------------------------------
+# Phase I-1: OpenSSF Scorecard signals (rule_set v1.3.0)
+#
+# Scorecard analyzes ~18 security checks per repo, scores each 0-10. We
+# adopt 6 checks as Trust signals — these are the ones with highest signal
+# density for "should I trust this in production":
+#   Signed-Releases, Pinned-Dependencies, Branch-Protection,
+#   Token-Permissions, Dependency-Update-Tool, Dangerous-Workflow
+#
+# Conservative thresholds: pass when Scorecard reports >= 5 (Branch-Protection,
+# Signed-Releases, Dependency-Update-Tool) or >= 7 (Pinned-Dependencies,
+# Token-Permissions) or == 10 (Dangerous-Workflow — binary safety check).
+#
+# Missing scorecard → fail-closed. Don't credit repos Scorecard hasn't analyzed.
+# ---------------------------------------------------------------------------
+
+def _scorecard_check(d: dict, name: str) -> int | None:
+    """Return Scorecard check score by name (0-10), or None if missing."""
+    sc = d.get("scorecard")
+    if not isinstance(sc, dict):
+        return None
+    for check in sc.get("checks") or []:
+        if isinstance(check, dict) and check.get("name") == name:
+            score = check.get("score")
+            if isinstance(score, (int, float)):
+                return int(score)
+    return None
+
+
+def s_signed_releases(d: dict) -> tuple[bool, str]:
+    s = _scorecard_check(d, "Signed-Releases")
+    if s is None:
+        return False, "no Scorecard data"
+    return s >= 5, f"Scorecard Signed-Releases={s}/10"
+
+
+def s_pinned_dependencies(d: dict) -> tuple[bool, str]:
+    s = _scorecard_check(d, "Pinned-Dependencies")
+    if s is None:
+        return False, "no Scorecard data"
+    return s >= 7, f"Scorecard Pinned-Dependencies={s}/10"
+
+
+def s_branch_protection(d: dict) -> tuple[bool, str]:
+    s = _scorecard_check(d, "Branch-Protection")
+    if s is None:
+        return False, "no Scorecard data"
+    return s >= 5, f"Scorecard Branch-Protection={s}/10"
+
+
+def s_token_permissions(d: dict) -> tuple[bool, str]:
+    s = _scorecard_check(d, "Token-Permissions")
+    if s is None:
+        return False, "no Scorecard data"
+    return s >= 7, f"Scorecard Token-Permissions={s}/10"
+
+
+def s_dependency_update_tool(d: dict) -> tuple[bool, str]:
+    s = _scorecard_check(d, "Dependency-Update-Tool")
+    if s is None:
+        return False, "no Scorecard data"
+    return s >= 5, f"Scorecard Dependency-Update-Tool={s}/10"
+
+
+def s_no_dangerous_workflow(d: dict) -> tuple[bool, str]:
+    s = _scorecard_check(d, "Dangerous-Workflow")
+    if s is None:
+        return False, "no Scorecard data"
+    # Binary check: 10 = clean, anything else means a dangerous CI pattern.
+    return s == 10, f"Scorecard Dangerous-Workflow={s}/10"
+
+
+# ---------------------------------------------------------------------------
+# Phase I-2: OSV.dev critical CVE hard flag
+# ---------------------------------------------------------------------------
+
+def _has_critical_cve_flag(d: dict) -> tuple[str, str] | None:
+    """Return (flag_key, message) when any HIGH/CRITICAL OSV advisory is
+    associated with the repo's published packages, else None.
+
+    Caps composite at 50 — same severity as `fork_low_signal`. Below the
+    `archived` cap of 30 because a maintained-but-vulnerable repo is more
+    actionable (patch coming) than an archived one.
+    """
+    advisories = d.get("osv_advisories") or []
+    if not isinstance(advisories, list):
+        return None
+    critical = [a for a in advisories
+                if isinstance(a, dict)
+                and (a.get("severity") or "").upper() in ("HIGH", "CRITICAL")]
+    if not critical:
+        return None
+    ids = [a.get("id", "?") for a in critical[:3]]
+    pkgs = sorted({a.get("package") for a in critical if a.get("package")})
+    detail = f"{len(critical)} open HIGH/CRITICAL advisor{'y' if len(critical)==1 else 'ies'}"
+    if pkgs:
+        detail += f" ({', '.join(pkgs[:3])})"
+    detail += f": {', '.join(ids)}"
+    return "has_critical_cve", detail
+
+
 # =====================================================================
 # COMMUNITY axis (5 signals) — Are people caring for it?
 # =====================================================================
@@ -415,6 +516,12 @@ AXES: dict[str, dict[str, Any]] = {
             ("has_security_policy", s_has_security_policy),
             ("org_owned", s_org_owned),
             ("has_codeowners", s_has_codeowners),
+            ("signed_releases", s_signed_releases),
+            ("pinned_dependencies", s_pinned_dependencies),
+            ("branch_protection", s_branch_protection),
+            ("token_permissions", s_token_permissions),
+            ("dependency_update_tool", s_dependency_update_tool),
+            ("no_dangerous_workflow", s_no_dangerous_workflow),
         ],
     },
     "community": {
@@ -449,6 +556,11 @@ def hard_flags(d: dict) -> list[tuple[str, str]]:
         flags.append(("weak_description", f"Description: '{desc[:40]}' (no community validation)"))
     if repo.get("fork") and stars < 5:
         flags.append(("fork_low_signal", "Fork with no traction"))
+    # Phase I-2 (rule_set v1.3): HIGH/CRITICAL OSV advisories on declared
+    # packages cap composite at 50 — between fork_low_signal and archived.
+    cve_flag = _has_critical_cve_flag(d)
+    if cve_flag is not None:
+        flags.append(cve_flag)
     return flags
 
 
@@ -456,6 +568,7 @@ COMPOSITE_CAPS = {
     "archived": 30,
     "disabled": 30,
     "fork_low_signal": 50,
+    "has_critical_cve": 50,
     "empty_description": 75,
     "weak_description": 80,
 }

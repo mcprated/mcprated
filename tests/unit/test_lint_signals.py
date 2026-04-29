@@ -187,6 +187,120 @@ class TestTrust:
         assert not ok
 
 
+class TestScorecardSignals:
+    """Phase I-1: OpenSSF Scorecard signals — strongest deterministic Trust
+    expansion possible without runtime probing or auth-required APIs.
+
+    Each signal reads d['scorecard']['checks'] which is a list populated by
+    crawler.fetch_repo from https://api.securityscorecards.dev. When Scorecard
+    has not analyzed the repo, signals fail-closed (don't credit the absence).
+    """
+
+    def _scorecard(self, **scores):
+        # Helper: build a scorecard dict matching the public API shape.
+        return {"score": 5, "checks": [
+            {"name": name, "score": score} for name, score in scores.items()
+        ]}
+
+    def test_signed_releases_pass(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Signed-Releases": 7})
+        ok, _ = lint.s_signed_releases(d)
+        assert ok
+
+    def test_signed_releases_fail_low_score(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Signed-Releases": 2})
+        ok, _ = lint.s_signed_releases(d)
+        assert not ok
+
+    def test_signed_releases_fail_no_scorecard(self, make_repo):
+        # Conservative: missing data → don't credit the repo.
+        d = make_repo()  # no scorecard key
+        ok, _ = lint.s_signed_releases(d)
+        assert not ok
+
+    def test_pinned_dependencies_pass(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Pinned-Dependencies": 8})
+        ok, _ = lint.s_pinned_dependencies(d)
+        assert ok
+
+    def test_branch_protection_pass(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Branch-Protection": 6})
+        ok, _ = lint.s_branch_protection(d)
+        assert ok
+
+    def test_branch_protection_fail_threshold(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Branch-Protection": 4})
+        ok, _ = lint.s_branch_protection(d)
+        assert not ok
+
+    def test_token_permissions_pass(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Token-Permissions": 8})
+        ok, _ = lint.s_token_permissions(d)
+        assert ok
+
+    def test_dependency_update_tool_pass(self, make_repo):
+        # Score 10 = Dependabot or Renovate active
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Dependency-Update-Tool": 10})
+        ok, _ = lint.s_dependency_update_tool(d)
+        assert ok
+
+    def test_no_dangerous_workflow_pass(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Dangerous-Workflow": 10})
+        ok, _ = lint.s_no_dangerous_workflow(d)
+        assert ok
+
+    def test_no_dangerous_workflow_fail_low(self, make_repo):
+        d = make_repo()
+        d["scorecard"] = self._scorecard(**{"Dangerous-Workflow": 5})
+        ok, _ = lint.s_no_dangerous_workflow(d)
+        assert not ok
+
+
+class TestOSVHardFlag:
+    """Phase I-2: any HIGH/CRITICAL open advisory across the server's
+    declared packages caps composite at 50."""
+
+    def test_critical_cve_triggers_flag(self, make_repo):
+        d = make_repo()
+        d["osv_advisories"] = [
+            {"id": "GHSA-xxx", "severity": "CRITICAL",
+             "package": "lodash", "ecosystem": "npm"}
+        ]
+        flag = lint._has_critical_cve_flag(d)
+        assert flag is not None
+        key, msg = flag
+        assert key == "has_critical_cve"
+
+    def test_high_cve_triggers_flag(self, make_repo):
+        d = make_repo()
+        d["osv_advisories"] = [
+            {"id": "CVE-2024-x", "severity": "HIGH"}
+        ]
+        flag = lint._has_critical_cve_flag(d)
+        assert flag is not None
+
+    def test_low_cve_does_not_trigger(self, make_repo):
+        d = make_repo()
+        d["osv_advisories"] = [
+            {"id": "GHSA-yyy", "severity": "LOW"}
+        ]
+        flag = lint._has_critical_cve_flag(d)
+        assert flag is None
+
+    def test_no_advisories_no_flag(self, make_repo):
+        d = make_repo()  # no osv_advisories key
+        flag = lint._has_critical_cve_flag(d)
+        assert flag is None
+
+
 # ---------------------------------------------------------------------------
 # Community axis (5 signals)
 # ---------------------------------------------------------------------------

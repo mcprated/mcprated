@@ -97,7 +97,7 @@ const TOOLS = [
   {
     name: "vet",
     description:
-      "Trust-focused summary of one MCP server: composite score, four axis scores, license, hard flags, plus a derived verdict (verified | caution | low_quality). Use before recommending a server for production.",
+      "Trust-focused summary of one MCP server. Returns composite score, four axis scores, license, hard flags, and a 2D verdict: quality_tier (excellent | solid | acceptable | poor) × flag_status (clean | caution | archived). Use before recommending a server for production. Legacy single-string `verdict` field is also returned for backwards compatibility.",
     inputSchema: {
       type: "object",
       properties: {

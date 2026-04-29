@@ -272,11 +272,20 @@ def fetch_repo(owner: str, name: str) -> dict | None:
         for r in releases if isinstance(r, dict)
     ]
 
+    # Phase I (rule_set v1.3) — fetch external trust data:
+    #   - OpenSSF Scorecard: per-repo security posture (free, no auth)
+    #   - OSV.dev advisories: per-package vulnerability list (free, no auth)
+    # Both are best-effort; failures don't break the lint pipeline.
+    scorecard = _fetch_scorecard(owner, name)
+    osv_advisories = _fetch_osv_advisories(pkg_meta)
+
     return {
         "repo": repo,
         "readme": readme,
         "pkg": pkg_meta,
         "source_files": source_files,
+        "scorecard": scorecard,
+        "osv_advisories": osv_advisories,
         "license_text": license_text,
         "releases_count": len(releases) if isinstance(releases, list) else 0,
         "tags_count": len(tags) if isinstance(tags, list) else 0,
@@ -288,6 +297,99 @@ def fetch_repo(owner: str, name: str) -> dict | None:
         "closed_pulls_recent": closed_pulls_recent,
         "releases_full": releases_full,
     }
+
+
+# ---------------------------------------------------------------------------
+# External trust signal fetches — Phase I (rule_set v1.3)
+# ---------------------------------------------------------------------------
+
+def _fetch_json(url: str, timeout: int = 15) -> dict | list | None:
+    """Best-effort fetch returning parsed JSON. Never raises; returns None
+    on any failure (so a missing scorecard doesn't break the lint run)."""
+    headers = {"User-Agent": "mcprated-crawler/0.1", "Accept": "application/json"}
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read())
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+        return None
+
+
+def _fetch_scorecard(owner: str, name: str) -> dict | None:
+    """OpenSSF Scorecard for github.com/<owner>/<name>. No auth required.
+
+    Returns the full Scorecard JSON or None when Scorecard hasn't analyzed
+    the repo (404). Cached between runs via the standard crawler cache file
+    — re-fetched naturally each crawl, since Scorecard updates weekly.
+    """
+    url = f"https://api.securityscorecards.dev/projects/github.com/{owner}/{name}"
+    payload = _fetch_json(url, timeout=20)
+    return payload if isinstance(payload, dict) else None
+
+
+def _detect_published_packages(pkg_meta: dict) -> list[tuple[str, str]]:
+    """From package.json / pyproject.toml etc, extract (ecosystem, package_name)
+    pairs we should query OSV for. Best-effort string matching; OSV ignores
+    unknown packages so false positives don't poison the result."""
+    out: list[tuple[str, str]] = []
+    pj = pkg_meta.get("package.json") or ""
+    if pj:
+        # Crude but effective: top-level "name" in package.json
+        m = re.search(r'"name"\s*:\s*"([^"]+)"', pj)
+        if m:
+            out.append(("npm", m.group(1)))
+    py = pkg_meta.get("pyproject.toml") or ""
+    if py:
+        # PEP 621: [project] / name = "..."
+        m = re.search(r'(?ms)^\s*name\s*=\s*"([^"]+)"', py)
+        if m:
+            out.append(("PyPI", m.group(1)))
+    cargo = pkg_meta.get("Cargo.toml") or ""
+    if cargo:
+        m = re.search(r'(?ms)^\[package\].*?^\s*name\s*=\s*"([^"]+)"', cargo)
+        if m:
+            out.append(("crates.io", m.group(1)))
+    return out
+
+
+def _fetch_osv_advisories(pkg_meta: dict) -> list[dict]:
+    """OSV.dev advisories for each declared package. Returns flat list with
+    severity normalized to upper-case (HIGH/CRITICAL/MEDIUM/LOW). Empty list
+    on no packages or no advisories."""
+    advisories: list[dict] = []
+    for ecosystem, package in _detect_published_packages(pkg_meta):
+        body = json.dumps({"package": {"ecosystem": ecosystem, "name": package}}).encode()
+        req = urllib.request.Request(
+            "https://api.osv.dev/v1/query",
+            data=body,
+            headers={"Content-Type": "application/json", "User-Agent": "mcprated-crawler/0.1"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=15) as r:
+                payload = json.loads(r.read())
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+            continue
+        for vuln in payload.get("vulns") or []:
+            sev = "UNKNOWN"
+            for sev_entry in vuln.get("severity") or []:
+                if isinstance(sev_entry, dict):
+                    s = sev_entry.get("type") or ""
+                    if "CRITICAL" in s.upper():
+                        sev = "CRITICAL"; break
+                    if "HIGH" in s.upper():
+                        sev = "HIGH"; break
+            # Fallback: sniff `database_specific.severity` (GH advisory shape)
+            db_sev = ((vuln.get("database_specific") or {}).get("severity") or "").upper()
+            if db_sev in ("CRITICAL", "HIGH", "MODERATE", "LOW") and sev == "UNKNOWN":
+                sev = db_sev if db_sev != "MODERATE" else "MEDIUM"
+            advisories.append({
+                "id": vuln.get("id"),
+                "severity": sev,
+                "package": package,
+                "ecosystem": ecosystem,
+            })
+    return advisories
 
 
 def search_topic(topic: str, limit: int = 100) -> list[str]:

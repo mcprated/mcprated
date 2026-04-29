@@ -2,6 +2,53 @@
 
 All notable changes to the MCPRated rule set are documented here. The format follows [Keep a Changelog](https://keepachangelog.com).
 
+## [v1.3.0] — 2026-04-29 (real Trust signals + 2D verdict)
+
+### Trust axis: 4 → 10 signals
+
+OpenSSF Scorecard imported. Per-repo Scorecard JSON cached in crawler
+output (`scorecard` key). Six new Trust signals reading from it:
+
+  - `signed_releases` — Scorecard ≥5/10 (cryptographically signed releases)
+  - `pinned_dependencies` — Scorecard ≥7/10 (lockfile pins exact versions)
+  - `branch_protection` — Scorecard ≥5/10 (default branch requires review)
+  - `token_permissions` — Scorecard ≥7/10 (CI workflows scope minimum)
+  - `dependency_update_tool` — Scorecard ≥5/10 (Dependabot/Renovate active)
+  - `no_dangerous_workflow` — Scorecard ==10/10 (binary safety check)
+
+Conservative thresholds; missing Scorecard → fail-closed (don't credit).
+
+### Critical CVE hard flag
+
+OSV.dev queried per declared package (npm/PyPI/Cargo). Any HIGH/CRITICAL
+open advisory triggers `has_critical_cve` hard flag, capping composite ≤50.
+Surfaced in `vet` payload as `hard_flags[]` and (planned) full vulnerability
+list under `vulnerabilities` for post-V1.3 work.
+
+### 2D verdict
+
+Replaced 3-bucket verdict (verified | caution | low_quality) with two
+orthogonal dimensions, addressing both reviewers' "the 89-and-clean
+collapses with the 51-and-flagged into the same `caution` bucket":
+
+  - `quality_tier`: `excellent` (90+) | `solid` (75-89) | `acceptable` (50-74) | `poor` (<50)
+  - `flag_status`: `clean` | `caution` (any non-archived flag) | `archived`
+
+Both fields present in `vet` response. Legacy `verdict` derived field kept
+for backwards compat. Worker tool description updated.
+
+### Tests
+
+  +14 lint signal tests (Scorecard 6 signals × 2-3 cases + OSV 4 cases)
+  +18 render_api verdict tests (quality_tier × 8 buckets, flag_status × 8 cases, render_vet × 2 integration)
+  Total: 254 pytest + 55 vitest = 309 tests, all green.
+
+### Deferred (next sessions)
+
+  - Phase K: Sub-server listings for suite repos (awslabs/mcp packages/, modelcontextprotocol/servers src/)
+  - Phase M: npm/PyPI registry signals (downloads, deprecation)
+  - Phase N: Hierarchical capability taxonomy v2
+
 ## [v1.2.0] — 2026-04-29 (cross-LLM-driven trust expansion + recall fixes)
 
 Driven by an architectural review by two independent LLMs (OpenAI Codex source review + Anthropic Opus deep review). 10 systemic findings consensus, 6 fixed this release.

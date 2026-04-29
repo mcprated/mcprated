@@ -105,7 +105,76 @@ class TestVerdict:
         (40,  ["archived"],  "low_quality"), # low score wins over flag
     ])
     def test_verdict_buckets(self, composite, flags, expected):
+        # Backwards-compat: legacy 3-bucket verdict still derived correctly.
         assert render_api._verdict(composite, flags) == expected
+
+
+class TestVerdict2D:
+    """Phase I-3: 2D verdict — quality_tier × flag_status. The legacy 3-bucket
+    verdict was too coarse: composite 89 with no flags collapsed into the
+    same `caution` as composite 51 with weak_description. Agents lost
+    actionable distinction.
+
+    Quality tiers:  excellent (90+) | solid (75-89) | acceptable (50-74) | poor (<50)
+    Flag statuses:  clean | caution (any non-archived hard_flag) | archived (special)
+    """
+
+    @pytest.mark.parametrize("composite, expected", [
+        (100, "excellent"),
+        (90,  "excellent"),
+        (89,  "solid"),
+        (75,  "solid"),
+        (74,  "acceptable"),
+        (50,  "acceptable"),
+        (49,  "poor"),
+        (0,   "poor"),
+    ])
+    def test_quality_tier(self, composite, expected):
+        assert render_api._quality_tier(composite) == expected
+
+    @pytest.mark.parametrize("flags, expected", [
+        ([], "clean"),
+        (["empty_description"], "caution"),
+        (["weak_description"], "caution"),
+        (["fork_low_signal"], "caution"),
+        (["has_critical_cve"], "caution"),
+        (["archived"], "archived"),  # archived gets its own bucket
+        (["disabled"], "archived"),  # disabled is the same end-state
+        (["archived", "empty_description"], "archived"),  # archived dominates
+    ])
+    def test_flag_status(self, flags, expected):
+        assert render_api._flag_status(flags) == expected
+
+    def test_render_vet_includes_both_dimensions(self):
+        full = {
+            "repo": "x/y",
+            "composite": 92,
+            "axes": {
+                "reliability": {"score": 90}, "documentation": {"score": 90},
+                "trust": {"score": 90}, "community": {"score": 90},
+            },
+            "hard_flags": [],
+        }
+        entry = make_index_entry(slug="x__y", composite=92)
+        result = render_api.render_vet(entry, full)
+        assert result["quality_tier"] == "excellent"
+        assert result["flag_status"] == "clean"
+        # Legacy verdict still present for backwards compat
+        assert result["verdict"] == "verified"
+
+    def test_render_vet_archived_dominates(self):
+        # In the real pipeline, hard_flag caps are applied before render_vet
+        # runs, so full.composite is already the post-cap value (30 for archived).
+        full = {
+            "repo": "x/y", "composite": 30,  # post-cap from archived flag
+            "axes": {a: {"score": 90} for a in
+                     ("reliability", "documentation", "trust", "community")},
+            "hard_flags": [{"key": "archived", "msg": "..."}],
+        }
+        entry = make_index_entry(slug="x__y", composite=30)
+        result = render_api.render_vet(entry, full)
+        assert result["flag_status"] == "archived"
+        assert result["quality_tier"] == "poor"
 
 
 # ---------------------------------------------------------------------------

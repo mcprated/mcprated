@@ -55,16 +55,52 @@ def _slim(s: dict) -> dict:
 
 
 def _verdict(composite: int, hard_flags: list) -> str:
-    """Three-bucket trust verdict for vet endpoint.
-
-    Rules are deliberately simple: agent can override with axis breakdown if
-    it disagrees, but most callers want one signal.
-    """
+    """Legacy 3-bucket verdict — kept for backwards-compat. Derived from the
+    2D shape (`_quality_tier × _flag_status`) introduced in v1.3.0."""
     if composite >= 90 and not hard_flags:
         return "verified"
     if composite < 50:
         return "low_quality"
     return "caution"
+
+
+# ---------------------------------------------------------------------------
+# Phase I-3: 2D verdict (rule_set v1.3.0)
+#
+# Codex + Opus consensus: 3-bucket verdict collapses informative distinctions
+# (composite 89 with no flags = composite 51 with weak_description = both
+# "caution"). Splitting into quality_tier × flag_status gives agents an
+# unambiguous payload without forcing them to re-interpret axes.
+# ---------------------------------------------------------------------------
+
+def _quality_tier(composite: int) -> str:
+    """Quality tier from composite score, ignoring flags."""
+    if composite >= 90:
+        return "excellent"
+    if composite >= 75:
+        return "solid"
+    if composite >= 50:
+        return "acceptable"
+    return "poor"
+
+
+# Flags whose presence flips status to `archived` (special bucket — even a
+# high-quality archived repo is a dead-end).
+_ARCHIVED_FLAGS = {"archived", "disabled"}
+
+
+def _flag_status(hard_flags: list) -> str:
+    """Flag status from the hard_flags list. Three buckets:
+       clean    — no hard flags
+       caution  — any non-archived hard flag
+       archived — archived/disabled (these dominate even with other flags)
+    """
+    keys = set(hard_flags) if hard_flags else set()
+    if keys & _ARCHIVED_FLAGS:
+        return "archived"
+    if keys:
+        return "caution"
+    return "clean"
 
 
 def _jaccard(a: list, b: list) -> float:
@@ -316,12 +352,13 @@ def render_vet(idx_entry: dict, full: dict) -> dict:
             }
 
     hard_flags = [f["key"] for f in (full.get("hard_flags") or [])]
+    composite = full.get("composite", 0)
     return {
         "repo": full.get("repo"),
         "slug": idx_entry["slug"],
         "rule_set_version": full.get("rule_set_version"),
         "scored_at": full.get("scored_at"),
-        "composite": full.get("composite"),
+        "composite": composite,
         "axes": {a: (full.get("axes") or {}).get(a, {}).get("score")
                  for a in ("reliability", "documentation", "trust", "community")},
         "kind": full.get("kind"),
@@ -333,7 +370,12 @@ def render_vet(idx_entry: dict, full: dict) -> dict:
         "language": full.get("language"),
         "hard_flags": hard_flags,
         "trust_signals": trust_signals,
-        "verdict": _verdict(full.get("composite", 0), hard_flags),
+        # 2D verdict (v1.3+): agent reads quality_tier and flag_status separately,
+        # avoiding the legacy 3-bucket collapse. `verdict` is kept as a
+        # backwards-compat derivation.
+        "quality_tier": _quality_tier(composite),
+        "flag_status": _flag_status(hard_flags),
+        "verdict": _verdict(composite, hard_flags),
         "url": f"https://github.com/{full.get('repo', '')}",
         "detail_url": f"/servers/{idx_entry['slug']}.json",
     }
