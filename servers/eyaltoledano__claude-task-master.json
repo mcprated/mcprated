@@ -1,6 +1,6 @@
 {
   "repo": "eyaltoledano/claude-task-master",
-  "stars": 26926,
+  "stars": 26939,
   "language": "JavaScript",
   "license": "NOASSERTION",
   "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
@@ -10,6 +10,7 @@
   "kind_confidence": 0.95,
   "kind_reason": "server-run pattern in source (default)",
   "capabilities": [],
+  "capabilities_v2": [],
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
@@ -18,13 +19,14 @@
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.3
   },
-  "composite": 78,
-  "composite_raw": 78,
+  "sub_servers": [],
+  "composite": 77,
+  "composite_raw": 77,
   "axes": {
     "reliability": {
-      "score": 86,
-      "passing": 6,
-      "total": 7,
+      "score": 90,
+      "passing": 9,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": true,
@@ -36,7 +38,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 0d ago"
+          "note": "pushed 1d ago"
         },
         "has_releases": {
           "pass": true,
@@ -44,7 +46,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 28d ago"
+          "note": "latest release 29d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -53,6 +55,18 @@
         "release_communication": {
           "pass": true,
           "note": "CHANGELOG file present"
+        },
+        "published_to_registry": {
+          "pass": true,
+          "note": "published as task-master-ai on npm"
+        },
+        "recent_publish": {
+          "pass": true,
+          "note": "last published 29d ago"
+        },
+        "not_deprecated": {
+          "pass": true,
+          "note": "not deprecated on registry"
         }
       }
     },
@@ -84,9 +98,9 @@
       }
     },
     "trust": {
-      "score": 25,
-      "passing": 1,
-      "total": 4,
+      "score": 18,
+      "passing": 2,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -103,6 +117,34 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": true,
+          "note": "16431 weekly downloads"
         }
       }
     },
@@ -135,6 +177,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:19+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00"
 }

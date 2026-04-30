@@ -1,7 +1,7 @@
 {
   "kind": "client",
-  "rule_set_version": "1.2.0",
-  "generated_at": "2026-04-29T06:39:20+00:00",
+  "rule_set_version": "1.3.2",
+  "generated_at": "2026-04-30T06:42:29+00:00",
   "count": 1,
   "servers": [
     {

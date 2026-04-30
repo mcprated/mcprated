@@ -1,10 +1,10 @@
 {
   "repo": "oraios/serena",
-  "stars": 23560,
+  "stars": 23610,
   "language": "Python",
   "license": "MIT",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-  "pushed_at": "2026-04-28T20:54:43Z",
+  "pushed_at": "2026-04-29T23:11:57Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.95,
@@ -12,6 +12,9 @@
   "capabilities": [
     "ai",
     "search"
+  ],
+  "capabilities_v2": [
+    "ai.llm"
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
@@ -21,13 +24,14 @@
     "extraction_method": "ast_python",
     "extraction_confidence": 0.4
   },
-  "composite": 88,
-  "composite_raw": 88,
+  "sub_servers": [],
+  "composite": 82,
+  "composite_raw": 82,
   "axes": {
     "reliability": {
       "score": 100,
-      "passing": 7,
-      "total": 7,
+      "passing": 10,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": true,
@@ -47,7 +51,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 1d ago"
+          "note": "latest release 2d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -56,6 +60,18 @@
         "release_communication": {
           "pass": true,
           "note": "CHANGELOG file present"
+        },
+        "published_to_registry": {
+          "pass": true,
+          "note": "published as serena-agent on PyPI"
+        },
+        "recent_publish": {
+          "pass": true,
+          "note": "last published 2d ago"
+        },
+        "not_deprecated": {
+          "pass": true,
+          "note": "not deprecated on registry"
         }
       }
     },
@@ -66,7 +82,7 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 14073 chars (need ≥500)"
+          "note": "README 14062 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
@@ -87,9 +103,9 @@
       }
     },
     "trust": {
-      "score": 50,
-      "passing": 2,
-      "total": 4,
+      "score": 27,
+      "passing": 3,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -106,6 +122,34 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": true,
+          "note": "16963 weekly downloads"
         }
       }
     },
@@ -138,6 +182,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:20+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:29+00:00"
 }

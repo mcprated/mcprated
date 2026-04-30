@@ -9,7 +9,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 72,
+      "composite": 52,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "comms",
         "web"
       ],
-      "stars": 1563,
+      "stars": 1568,
       "language": "Go",
       "similarity": 0.667,
-      "score": 0.566,
+      "score": 0.481,
       "shared_capabilities": [
         "ai",
         "web"
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5477,
+      "stars": 5479,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.343,
@@ -48,17 +48,17 @@
     {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
-      "composite": 85,
+      "composite": 69,
       "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 54032,
+      "stars": 54148,
       "language": "TypeScript",
       "similarity": 0.5,
-      "score": 0.184,
+      "score": 0.166,
       "shared_capabilities": [
         "ai"
       ]
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 68,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,26 +76,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.165,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 94,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2654,
-      "language": "TypeScript",
-      "similarity": 0.333,
-      "score": 0.129,
+      "score": 0.164,
       "shared_capabilities": [
         "ai"
       ]
@@ -103,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 88,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -111,26 +92,26 @@
         "ai",
         "search"
       ],
-      "stars": 23560,
+      "stars": 23610,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.125,
+      "score": 0.121,
       "shared_capabilities": [
         "ai"
       ]
     },
     {
-      "repo": "brave/brave-search-mcp-server",
-      "slug": "brave__brave-search-mcp-server",
-      "composite": 75,
-      "description": null,
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 74,
+      "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
-        "search"
+        "database"
       ],
-      "stars": 951,
+      "stars": 2656,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.115,
@@ -139,9 +120,28 @@
       ]
     },
     {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 72,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 952,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.113,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 24,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -151,7 +151,26 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.098,
+      "score": 0.11,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 42,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 401,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.086,
       "shared_capabilities": [
         "ai"
       ]
@@ -159,7 +178,7 @@
     {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
-      "composite": 94,
+      "composite": 74,
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
@@ -168,30 +187,10 @@
         "ai",
         "search"
       ],
-      "stars": 14858,
+      "stars": 14874,
       "language": "Go",
       "similarity": 0.25,
-      "score": 0.097,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 78,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1373,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.088,
+      "score": 0.086,
       "shared_capabilities": [
         "ai"
       ]

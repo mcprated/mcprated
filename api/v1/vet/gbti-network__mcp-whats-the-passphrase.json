@@ -1,13 +1,13 @@
 {
   "repo": "gbti-network/mcp-whats-the-passphrase",
   "slug": "gbti-network__mcp-whats-the-passphrase",
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:19+00:00",
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00",
   "composite": 40,
   "axes": {
-    "reliability": 14,
+    "reliability": 30,
     "documentation": 80,
-    "trust": 25,
+    "trust": 9,
     "community": 40
   },
   "kind": "server",
@@ -36,8 +36,38 @@
     "has_codeowners": {
       "passed": false,
       "note": "no CODEOWNERS file"
+    },
+    "signed_releases": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "pinned_dependencies": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "branch_protection": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "token_permissions": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "dependency_update_tool": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "no_dangerous_workflow": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "weekly_downloads_meaningful": {
+      "passed": false,
+      "note": "5 weekly downloads"
     }
   },
+  "quality_tier": "poor",
+  "flag_status": "clean",
   "verdict": "low_quality",
   "url": "https://github.com/gbti-network/mcp-whats-the-passphrase",
   "detail_url": "/servers/gbti-network__mcp-whats-the-passphrase.json"

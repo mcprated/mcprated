@@ -1,0 +1,72 @@
+{
+  "repo": "modelcontextprotocol/servers",
+  "slug": "modelcontextprotocol__servers__sequentialthinking",
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00",
+  "composite": 72,
+  "axes": {
+    "reliability": 80,
+    "documentation": 100,
+    "trust": 27,
+    "community": 80
+  },
+  "kind": "server",
+  "subkind": "integration",
+  "capabilities": [],
+  "license": "NOASSERTION",
+  "stars": 84797,
+  "pushed_at": null,
+  "language": "TypeScript",
+  "hard_flags": [],
+  "trust_signals": {
+    "license_commercial": {
+      "passed": true,
+      "note": "LICENSE file (mit license)"
+    },
+    "has_security_policy": {
+      "passed": true,
+      "note": "SECURITY.md present"
+    },
+    "org_owned": {
+      "passed": true,
+      "note": "owner is an Organization"
+    },
+    "has_codeowners": {
+      "passed": false,
+      "note": "no CODEOWNERS file"
+    },
+    "signed_releases": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "pinned_dependencies": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "branch_protection": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "token_permissions": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "dependency_update_tool": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "no_dangerous_workflow": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "weekly_downloads_meaningful": {
+      "passed": false,
+      "note": "registry returned no download stats"
+    }
+  },
+  "quality_tier": "acceptable",
+  "flag_status": "clean",
+  "verdict": "caution",
+  "url": "https://github.com/modelcontextprotocol/servers",
+  "detail_url": "/servers/modelcontextprotocol__servers__sequentialthinking.json"
+}

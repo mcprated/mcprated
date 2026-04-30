@@ -1,16 +1,19 @@
 {
   "repo": "modelcontextprotocol/typescript-sdk",
-  "stars": 12302,
+  "stars": 12305,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
-  "pushed_at": "2026-04-28T20:49:08Z",
+  "pushed_at": "2026-04-29T19:00:58Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 1.0,
   "kind_reason": "official MCP SDK repo",
   "capabilities": [
     "ai"
+  ],
+  "capabilities_v2": [
+    "ai.llm"
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
@@ -20,13 +23,14 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 90,
-  "composite_raw": 90,
+  "sub_servers": [],
+  "composite": 82,
+  "composite_raw": 82,
   "axes": {
     "reliability": {
-      "score": 86,
-      "passing": 6,
-      "total": 7,
+      "score": 90,
+      "passing": 9,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": true,
@@ -46,7 +50,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 27d ago"
+          "note": "latest release 28d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -55,6 +59,18 @@
         "release_communication": {
           "pass": true,
           "note": "5 releases with notes"
+        },
+        "published_to_registry": {
+          "pass": true,
+          "note": "published as @modelcontextprotocol/sdk on npm"
+        },
+        "recent_publish": {
+          "pass": true,
+          "note": "last published 30d ago"
+        },
+        "not_deprecated": {
+          "pass": true,
+          "note": "not deprecated on registry"
         }
       }
     },
@@ -65,7 +81,7 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 7022 chars (need ≥500)"
+          "note": "README 7075 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
@@ -86,9 +102,9 @@
       }
     },
     "trust": {
-      "score": 75,
-      "passing": 3,
-      "total": 4,
+      "score": 36,
+      "passing": 4,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -105,6 +121,34 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": true,
+          "note": "33912904 weekly downloads"
         }
       }
     },
@@ -119,15 +163,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "10 unique committers in 90d"
+          "note": "9 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 3 merged PRs in 90d"
+          "note": "active: 30 commits, 4 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "3 merged PR(s) in 90d"
+          "note": "4 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -137,6 +181,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:20+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:29+00:00"
 }

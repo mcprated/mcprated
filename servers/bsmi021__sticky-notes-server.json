@@ -13,6 +13,9 @@
     "database",
     "search"
   ],
+  "capabilities_v2": [
+    "database.relational"
+  ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
@@ -23,13 +26,14 @@
     "extraction_method": "regex_typescript",
     "extraction_confidence": 0.7
   },
-  "composite": 37,
-  "composite_raw": 37,
+  "sub_servers": [],
+  "composite": 40,
+  "composite_raw": 40,
   "axes": {
     "reliability": {
-      "score": 29,
-      "passing": 2,
-      "total": 7,
+      "score": 40,
+      "passing": 4,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": false,
@@ -41,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 434d ago"
+          "note": "pushed 435d ago"
         },
         "has_releases": {
           "pass": false,
@@ -58,6 +62,18 @@
         "release_communication": {
           "pass": true,
           "note": "CHANGELOG file present"
+        },
+        "published_to_registry": {
+          "pass": true,
+          "note": "published as sticky-notes-server on npm"
+        },
+        "recent_publish": {
+          "pass": false,
+          "note": "last published 422d ago"
+        },
+        "not_deprecated": {
+          "pass": true,
+          "note": "not deprecated on registry"
         }
       }
     },
@@ -91,7 +107,7 @@
     "trust": {
       "score": 0,
       "passing": 0,
-      "total": 4,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": false,
@@ -108,6 +124,34 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": false,
+          "note": "0 weekly downloads"
         }
       }
     },
@@ -145,6 +189,6 @@
       "msg": "Repo has no description"
     }
   ],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:19+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00"
 }

@@ -1,10 +1,10 @@
 {
   "repo": "awslabs/mcp",
-  "stars": 8903,
+  "stars": 8913,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "Official MCP Servers for AWS",
-  "pushed_at": "2026-04-29T00:13:00Z",
+  "pushed_at": "2026-04-30T06:04:42Z",
   "kind": "server",
   "subkind": "agent-product",
   "kind_confidence": 1.0,
@@ -14,6 +14,7 @@
     "database",
     "devtools"
   ],
+  "capabilities_v2": [],
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
@@ -22,13 +23,14 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 94,
-  "composite_raw": 94,
+  "sub_servers": [],
+  "composite": 86,
+  "composite_raw": 86,
   "axes": {
     "reliability": {
-      "score": 100,
+      "score": 70,
       "passing": 7,
-      "total": 7,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": true,
@@ -48,15 +50,27 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 7d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: 2026.04.20260421081720"
+          "note": "latest tag: 2026.04.20260429105543"
         },
         "release_communication": {
           "pass": true,
           "note": "5 releases with notes"
+        },
+        "published_to_registry": {
+          "pass": false,
+          "note": "no registry data (package not declared or not detected)"
+        },
+        "recent_publish": {
+          "pass": false,
+          "note": "no registry data"
+        },
+        "not_deprecated": {
+          "pass": false,
+          "note": "no registry data"
         }
       }
     },
@@ -88,9 +102,9 @@
       }
     },
     "trust": {
-      "score": 75,
-      "passing": 3,
-      "total": 4,
+      "score": 73,
+      "passing": 8,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -107,6 +121,34 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "Scorecard Signed-Releases=-1/10"
+        },
+        "pinned_dependencies": {
+          "pass": true,
+          "note": "Scorecard Pinned-Dependencies=10/10"
+        },
+        "branch_protection": {
+          "pass": true,
+          "note": "Scorecard Branch-Protection=10/10"
+        },
+        "token_permissions": {
+          "pass": true,
+          "note": "Scorecard Token-Permissions=10/10"
+        },
+        "dependency_update_tool": {
+          "pass": true,
+          "note": "Scorecard Dependency-Update-Tool=10/10"
+        },
+        "no_dangerous_workflow": {
+          "pass": true,
+          "note": "Scorecard Dangerous-Workflow=10/10"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": false,
+          "note": "no registry data"
         }
       }
     },
@@ -121,7 +163,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "20 unique committers in 90d"
+          "note": "18 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -139,6 +181,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:19+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00"
 }

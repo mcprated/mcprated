@@ -10,7 +10,7 @@
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
-      "composite": 94,
+      "composite": 86,
       "description": "Official MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
@@ -19,10 +19,10 @@
         "database",
         "devtools"
       ],
-      "stars": 8903,
+      "stars": 8913,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.97,
+      "score": 0.927,
       "shared_capabilities": [
         "cloud",
         "database",
@@ -32,7 +32,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -40,10 +40,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2653,
+      "stars": 2660,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.481,
+      "score": 0.457,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -52,17 +52,17 @@
     {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 74,
+      "composite": 67,
       "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "cloud"
       ],
-      "stars": 3669,
+      "stars": 3673,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.287,
+      "score": 0.273,
       "shared_capabilities": [
         "cloud"
       ]
@@ -70,7 +70,7 @@
     {
       "repo": "supabase-community/supabase-mcp",
       "slug": "supabase-community__supabase-mcp",
-      "composite": 94,
+      "composite": 74,
       "description": "Connect Supabase to your AI assistants",
       "kind": "server",
       "subkind": "integration",
@@ -78,10 +78,10 @@
         "ai",
         "database"
       ],
-      "stars": 2654,
+      "stars": 2656,
       "language": "TypeScript",
       "similarity": 0.25,
-      "score": 0.242,
+      "score": 0.215,
       "shared_capabilities": [
         "database"
       ]
@@ -89,7 +89,7 @@
     {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
-      "composite": 94,
+      "composite": 74,
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
@@ -98,10 +98,10 @@
         "ai",
         "search"
       ],
-      "stars": 14858,
+      "stars": 14874,
       "language": "Go",
       "similarity": 0.2,
-      "score": 0.194,
+      "score": 0.172,
       "shared_capabilities": [
         "database"
       ]
@@ -109,7 +109,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 78,
+      "composite": 70,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -118,10 +118,10 @@
         "ai",
         "database"
       ],
-      "stars": 1373,
+      "stars": 1376,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.177,
+      "score": 0.167,
       "shared_capabilities": [
         "database"
       ]
@@ -129,7 +129,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 40,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -140,7 +140,7 @@
       "stars": 401,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.158,
+      "score": 0.162,
       "shared_capabilities": [
         "database"
       ]
@@ -148,7 +148,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 37,
+      "composite": 40,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -159,7 +159,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.25,
-      "score": 0.152,
+      "score": 0.158,
       "shared_capabilities": [
         "database"
       ]
@@ -167,17 +167,17 @@
     {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
-      "composite": 94,
+      "composite": 74,
       "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "devtools"
       ],
-      "stars": 29347,
+      "stars": 29376,
       "language": "Go",
       "similarity": 0.333,
-      "score": 0.129,
+      "score": 0.115,
       "shared_capabilities": [
         "devtools"
       ]
@@ -185,7 +185,7 @@
     {
       "repo": "mcprated/mcprated",
       "slug": "mcprated__mcprated",
-      "composite": 80,
+      "composite": 62,
       "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
       "kind": "server",
       "subkind": "integration",
@@ -195,7 +195,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.119,
+      "score": 0.105,
       "shared_capabilities": [
         "devtools"
       ]

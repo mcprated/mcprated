@@ -1,14 +1,28 @@
 {
   "capability": "search",
-  "rule_set_version": "1.2.0",
+  "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-29T06:39:20+00:00",
+  "generated_at": "2026-04-30T06:42:29+00:00",
   "count": 5,
   "servers": [
     {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 23610,
+      "language": "Python"
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
-      "composite": 94,
+      "composite": 74,
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
       "subkind": "agent-product",
@@ -17,27 +31,27 @@
         "ai",
         "search"
       ],
-      "stars": 14858,
+      "stars": 14874,
       "language": "Go"
     },
     {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 88,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 72,
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
         "search"
       ],
-      "stars": 23560,
-      "language": "Python"
+      "stars": 952,
+      "language": "TypeScript"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 78,
+      "composite": 70,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -46,27 +60,13 @@
         "ai",
         "database"
       ],
-      "stars": 1373,
+      "stars": 1376,
       "language": "Python"
-    },
-    {
-      "repo": "brave/brave-search-mcp-server",
-      "slug": "brave__brave-search-mcp-server",
-      "composite": 75,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 951,
-      "language": "TypeScript"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 37,
+      "composite": 40,
       "description": null,
       "kind": "server",
       "subkind": "integration",

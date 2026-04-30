@@ -10,7 +10,7 @@
     {
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
-      "composite": 94,
+      "composite": 84,
       "description": "Playwright MCP server",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "web",
         "ai"
       ],
-      "stars": 31733,
+      "stars": 31817,
       "language": "TypeScript",
       "similarity": 0.667,
-      "score": 0.646,
+      "score": 0.611,
       "shared_capabilities": [
         "ai",
         "web"
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5477,
+      "stars": 5479,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.229,
@@ -48,17 +48,17 @@
     {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
-      "composite": 85,
+      "composite": 69,
       "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 54032,
+      "stars": 54148,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.123,
+      "score": 0.111,
       "shared_capabilities": [
         "ai"
       ]
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 68,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,26 +76,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.11,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 94,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2654,
-      "language": "TypeScript",
-      "similarity": 0.25,
-      "score": 0.097,
+      "score": 0.109,
       "shared_capabilities": [
         "ai"
       ]
@@ -103,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 88,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -111,10 +92,29 @@
         "ai",
         "search"
       ],
-      "stars": 23560,
+      "stars": 23610,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.094,
+      "score": 0.091,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 74,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2656,
+      "language": "TypeScript",
+      "similarity": 0.25,
+      "score": 0.086,
       "shared_capabilities": [
         "ai"
       ]
@@ -122,7 +122,7 @@
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 75,
+      "composite": 72,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -130,50 +130,10 @@
         "ai",
         "search"
       ],
-      "stars": 951,
+      "stars": 952,
       "language": "TypeScript",
       "similarity": 0.25,
-      "score": 0.087,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "googleapis/mcp-toolbox",
-      "slug": "googleapis__mcp-toolbox",
-      "composite": 94,
-      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "database",
-        "ai",
-        "search"
-      ],
-      "stars": 14858,
-      "language": "Go",
-      "similarity": 0.2,
-      "score": 0.078,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 78,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1373,
-      "language": "Python",
-      "similarity": 0.2,
-      "score": 0.071,
+      "score": 0.085,
       "shared_capabilities": [
         "ai"
       ]
@@ -181,7 +141,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 24,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -191,7 +151,47 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.065,
+      "score": 0.073,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 74,
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "search"
+      ],
+      "stars": 14874,
+      "language": "Go",
+      "similarity": 0.2,
+      "score": 0.069,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 70,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1376,
+      "language": "Python",
+      "similarity": 0.2,
+      "score": 0.067,
       "shared_capabilities": [
         "ai"
       ]

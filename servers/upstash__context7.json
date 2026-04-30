@@ -1,16 +1,19 @@
 {
   "repo": "upstash/context7",
-  "stars": 54032,
+  "stars": 54148,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-  "pushed_at": "2026-04-28T21:18:49Z",
+  "pushed_at": "2026-04-29T15:09:39Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
   "kind_reason": "sdk dep in package metadata (default)",
   "capabilities": [
     "ai"
+  ],
+  "capabilities_v2": [
+    "ai.llm"
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
@@ -20,13 +23,14 @@
     "extraction_method": "none",
     "extraction_confidence": 0.0
   },
-  "composite": 85,
-  "composite_raw": 85,
+  "sub_servers": [],
+  "composite": 69,
+  "composite_raw": 69,
   "axes": {
     "reliability": {
-      "score": 86,
-      "passing": 6,
-      "total": 7,
+      "score": 70,
+      "passing": 7,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": true,
@@ -50,11 +54,23 @@
         },
         "version_follows_semver": {
           "pass": false,
-          "note": "latest tag: @upstash/context7-mcp@2.2.2"
+          "note": "latest tag: @upstash/context7-mcp@2.2.3"
         },
         "release_communication": {
           "pass": true,
           "note": "5 releases with notes"
+        },
+        "published_to_registry": {
+          "pass": false,
+          "note": "declared as @upstash/context7 on npm but not found"
+        },
+        "recent_publish": {
+          "pass": false,
+          "note": "no registry data"
+        },
+        "not_deprecated": {
+          "pass": true,
+          "note": "not deprecated on registry"
         }
       }
     },
@@ -86,9 +102,9 @@
       }
     },
     "trust": {
-      "score": 75,
+      "score": 27,
       "passing": 3,
-      "total": 4,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -105,6 +121,34 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": false,
+          "note": "registry returned no download stats"
         }
       }
     },
@@ -137,6 +181,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:20+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:29+00:00"
 }

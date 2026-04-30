@@ -1,6 +1,6 @@
 {
   "repo": "korotovsky/slack-mcp-server",
-  "stars": 1563,
+  "stars": 1568,
   "language": "Go",
   "license": "MIT",
   "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
@@ -14,6 +14,9 @@
     "comms",
     "web"
   ],
+  "capabilities_v2": [
+    "ai.llm"
+  ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
@@ -22,13 +25,14 @@
     "extraction_method": "regex_go",
     "extraction_confidence": 0.3
   },
-  "composite": 72,
-  "composite_raw": 72,
+  "sub_servers": [],
+  "composite": 52,
+  "composite_raw": 52,
   "axes": {
     "reliability": {
-      "score": 100,
+      "score": 70,
       "passing": 7,
-      "total": 7,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": true,
@@ -40,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 12d ago"
+          "note": "pushed 13d ago"
         },
         "has_releases": {
           "pass": true,
@@ -48,7 +52,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 56d ago"
+          "note": "latest release 57d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -57,6 +61,18 @@
         "release_communication": {
           "pass": true,
           "note": "5 releases with notes"
+        },
+        "published_to_registry": {
+          "pass": false,
+          "note": "no registry data (package not declared or not detected)"
+        },
+        "recent_publish": {
+          "pass": false,
+          "note": "no registry data"
+        },
+        "not_deprecated": {
+          "pass": false,
+          "note": "no registry data"
         }
       }
     },
@@ -88,9 +104,9 @@
       }
     },
     "trust": {
-      "score": 50,
+      "score": 18,
       "passing": 2,
-      "total": 4,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": true,
@@ -107,12 +123,40 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": false,
+          "note": "no registry data"
         }
       }
     },
     "community": {
-      "score": 80,
-      "passing": 4,
+      "score": 60,
+      "passing": 3,
       "total": 5,
       "signals": {
         "has_contributing": {
@@ -125,11 +169,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 1 merged PRs in 90d"
+          "note": "active: 30 commits, 0 merged PRs in 90d"
         },
         "merged_prs_recent": {
-          "pass": true,
-          "note": "1 merged PR(s) in 90d"
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -139,6 +183,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:19+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00"
 }

@@ -1,0 +1,182 @@
+{
+  "repo": "modelcontextprotocol/servers",
+  "slug": "modelcontextprotocol__servers__sequentialthinking",
+  "parent_slug": "modelcontextprotocol__servers",
+  "subpath": "src/sequentialthinking",
+  "composite": 72,
+  "axes": {
+    "reliability": {
+      "score": 80,
+      "passing": 8,
+      "total": 10,
+      "signals": {
+        "has_ci": {
+          "pass": true,
+          "note": "GH Actions workflows present"
+        },
+        "no_floating_sdk": {
+          "pass": true,
+          "note": "workspace mono-repo, 4 internal `*` deps (ok)"
+        },
+        "recently_maintained": {
+          "pass": true,
+          "note": "pushed 12d ago"
+        },
+        "has_releases": {
+          "pass": true,
+          "note": "5 GH release(s)"
+        },
+        "tagged_release_recent": {
+          "pass": true,
+          "note": "latest release 92d ago"
+        },
+        "version_follows_semver": {
+          "pass": true,
+          "note": "latest tag: 2026.1.26"
+        },
+        "release_communication": {
+          "pass": true,
+          "note": "5 releases with notes"
+        },
+        "published_to_registry": {
+          "pass": false,
+          "note": "declared as @modelcontextprotocol/servers on npm but not found"
+        },
+        "recent_publish": {
+          "pass": false,
+          "note": "no registry data"
+        },
+        "not_deprecated": {
+          "pass": true,
+          "note": "not deprecated on registry"
+        }
+      }
+    },
+    "documentation": {
+      "score": 100,
+      "passing": 5,
+      "total": 5,
+      "signals": {
+        "readme_substantive": {
+          "pass": true,
+          "note": "README 24552 chars (need ≥500)"
+        },
+        "install_instructions": {
+          "pass": true,
+          "note": "needles=['mcpservers', '\"mcpservers\"', 'npx ', 'uvx ']…"
+        },
+        "tools_documented": {
+          "pass": true,
+          "note": "5 sub-sections (overview README)"
+        },
+        "examples": {
+          "pass": true,
+          "note": "5 code blocks"
+        },
+        "external_docs": {
+          "pass": true,
+          "note": "homepage: https://modelcontextprotocol.io"
+        }
+      }
+    },
+    "trust": {
+      "score": 27,
+      "passing": 3,
+      "total": 11,
+      "signals": {
+        "license_commercial": {
+          "pass": true,
+          "note": "LICENSE file (mit license)"
+        },
+        "has_security_policy": {
+          "pass": true,
+          "note": "SECURITY.md present"
+        },
+        "org_owned": {
+          "pass": true,
+          "note": "owner is an Organization"
+        },
+        "has_codeowners": {
+          "pass": false,
+          "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": false,
+          "note": "registry returned no download stats"
+        }
+      }
+    },
+    "community": {
+      "score": 80,
+      "passing": 4,
+      "total": 5,
+      "signals": {
+        "has_contributing": {
+          "pass": true,
+          "note": "CONTRIBUTING file present"
+        },
+        "multiple_contributors": {
+          "pass": true,
+          "note": "12 unique committers in 90d"
+        },
+        "responsive_issues": {
+          "pass": true,
+          "note": "active: 30 commits, 0 merged PRs in 90d"
+        },
+        "merged_prs_recent": {
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
+        },
+        "not_solo_initial": {
+          "pass": true,
+          "note": "≥2 commits in history"
+        }
+      }
+    }
+  },
+  "stars": 84797,
+  "language": "TypeScript",
+  "license": "NOASSERTION",
+  "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
+  "capabilities": [],
+  "capabilities_v2": [],
+  "distribution": "repo",
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00",
+  "hard_flags": [],
+  "kind": "server",
+  "subkind": "integration",
+  "tools": {
+    "tool_count": 2,
+    "tool_names_preview": [
+      "sequentialthinking",
+      "sequential-thinking-server"
+    ],
+    "extraction_method": "regex_typescript",
+    "extraction_confidence": 0.7
+  }
+}

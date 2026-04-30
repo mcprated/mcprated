@@ -20,9 +20,9 @@ claude mcp add --transport http mcprated https://mcp.mcprated.workers.dev
 ## Stats
 
 - Servers rated: 32
-- Rule set: v1.2.0
+- Rule set: v1.3.2
 - Taxonomy: v1.0
-- Last update: 2026-04-29T06:39:20+00:00
+- Last update: 2026-04-30T06:42:29+00:00
 
 ## API (static JSON, public, free, no auth)
 

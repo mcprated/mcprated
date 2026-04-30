@@ -1,14 +1,14 @@
 {
   "repo": "korotovsky/slack-mcp-server",
   "slug": "korotovsky__slack-mcp-server",
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:19+00:00",
-  "composite": 72,
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:28+00:00",
+  "composite": 52,
   "axes": {
-    "reliability": 100,
+    "reliability": 70,
     "documentation": 60,
-    "trust": 50,
-    "community": 80
+    "trust": 18,
+    "community": 60
   },
   "kind": "server",
   "subkind": "integration",
@@ -18,7 +18,7 @@
     "web"
   ],
   "license": "MIT",
-  "stars": 1563,
+  "stars": 1568,
   "pushed_at": "2026-04-16T17:16:15Z",
   "language": "Go",
   "hard_flags": [],
@@ -38,8 +38,38 @@
     "has_codeowners": {
       "passed": false,
       "note": "no CODEOWNERS file"
+    },
+    "signed_releases": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "pinned_dependencies": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "branch_protection": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "token_permissions": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "dependency_update_tool": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "no_dangerous_workflow": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "weekly_downloads_meaningful": {
+      "passed": false,
+      "note": "no registry data"
     }
   },
+  "quality_tier": "acceptable",
+  "flag_status": "clean",
   "verdict": "caution",
   "url": "https://github.com/korotovsky/slack-mcp-server",
   "detail_url": "/servers/korotovsky__slack-mcp-server.json"

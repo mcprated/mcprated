@@ -12,6 +12,9 @@
   "capabilities": [
     "ai"
   ],
+  "capabilities_v2": [
+    "ai.llm"
+  ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
@@ -22,13 +25,14 @@
     "extraction_method": "ast_python",
     "extraction_confidence": 0.9
   },
-  "composite": 24,
-  "composite_raw": 24,
+  "sub_servers": [],
+  "composite": 30,
+  "composite_raw": 30,
   "axes": {
     "reliability": {
-      "score": 14,
-      "passing": 1,
-      "total": 7,
+      "score": 30,
+      "passing": 3,
+      "total": 10,
       "signals": {
         "has_ci": {
           "pass": false,
@@ -40,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 435d ago"
+          "note": "pushed 436d ago"
         },
         "has_releases": {
           "pass": false,
@@ -57,6 +61,18 @@
         "release_communication": {
           "pass": false,
           "note": "no CHANGELOG, no release-notes substitute"
+        },
+        "published_to_registry": {
+          "pass": true,
+          "note": "published as mcp-myip on PyPI"
+        },
+        "recent_publish": {
+          "pass": false,
+          "note": "last published 436d ago"
+        },
+        "not_deprecated": {
+          "pass": true,
+          "note": "not deprecated on registry"
         }
       }
     },
@@ -88,9 +104,9 @@
       }
     },
     "trust": {
-      "score": 0,
-      "passing": 0,
-      "total": 4,
+      "score": 9,
+      "passing": 1,
+      "total": 11,
       "signals": {
         "license_commercial": {
           "pass": false,
@@ -107,6 +123,34 @@
         "has_codeowners": {
           "pass": false,
           "note": "no CODEOWNERS file"
+        },
+        "signed_releases": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "pinned_dependencies": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "branch_protection": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "token_permissions": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "dependency_update_tool": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "no_dangerous_workflow": {
+          "pass": false,
+          "note": "no Scorecard data"
+        },
+        "weekly_downloads_meaningful": {
+          "pass": true,
+          "note": "12 weekly downloads"
         }
       }
     },
@@ -139,6 +183,6 @@
     }
   },
   "hard_flags": [],
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:20+00:00"
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:29+00:00"
 }

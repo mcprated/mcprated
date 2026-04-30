@@ -1,13 +1,13 @@
 {
   "repo": "oraios/serena",
   "slug": "oraios__serena",
-  "rule_set_version": "1.2.0",
-  "scored_at": "2026-04-29T06:39:20+00:00",
-  "composite": 88,
+  "rule_set_version": "1.3.2",
+  "scored_at": "2026-04-30T06:42:29+00:00",
+  "composite": 82,
   "axes": {
     "reliability": 100,
     "documentation": 100,
-    "trust": 50,
+    "trust": 27,
     "community": 100
   },
   "kind": "server",
@@ -17,8 +17,8 @@
     "search"
   ],
   "license": "MIT",
-  "stars": 23560,
-  "pushed_at": "2026-04-28T20:54:43Z",
+  "stars": 23610,
+  "pushed_at": "2026-04-29T23:11:57Z",
   "language": "Python",
   "hard_flags": [],
   "trust_signals": {
@@ -37,8 +37,38 @@
     "has_codeowners": {
       "passed": false,
       "note": "no CODEOWNERS file"
+    },
+    "signed_releases": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "pinned_dependencies": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "branch_protection": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "token_permissions": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "dependency_update_tool": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "no_dangerous_workflow": {
+      "passed": false,
+      "note": "no Scorecard data"
+    },
+    "weekly_downloads_meaningful": {
+      "passed": true,
+      "note": "16963 weekly downloads"
     }
   },
+  "quality_tier": "solid",
+  "flag_status": "clean",
   "verdict": "caution",
   "url": "https://github.com/oraios/serena",
   "detail_url": "/servers/oraios__serena.json"
