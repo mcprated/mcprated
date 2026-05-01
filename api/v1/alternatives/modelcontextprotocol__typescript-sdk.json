@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54148,
+      "stars": 54218,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -26,7 +26,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -36,7 +36,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.327,
+      "score": 0.322,
       "shared_capabilities": [
         "ai"
       ]
@@ -70,7 +70,7 @@
         "web",
         "ai"
       ],
-      "stars": 31817,
+      "stars": 31863,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -81,7 +81,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -89,29 +89,10 @@
         "ai",
         "search"
       ],
-      "stars": 23610,
+      "stars": 23658,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.181,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 74,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2656,
-      "language": "TypeScript",
-      "similarity": 0.5,
-      "score": 0.172,
+      "score": 0.179,
       "shared_capabilities": [
         "ai"
       ]
@@ -127,7 +108,26 @@
         "ai",
         "search"
       ],
-      "stars": 952,
+      "stars": 957,
+      "language": "TypeScript",
+      "similarity": 0.5,
+      "score": 0.17,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2659,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -138,7 +138,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -146,10 +146,10 @@
         "database",
         "ai"
       ],
-      "stars": 401,
+      "stars": 400,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.13,
+      "score": 0.133,
       "shared_capabilities": [
         "ai"
       ]
@@ -166,7 +166,7 @@
         "ai",
         "search"
       ],
-      "stars": 14874,
+      "stars": 14889,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -186,7 +186,7 @@
         "ai",
         "database"
       ],
-      "stars": 1376,
+      "stars": 1377,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.112,

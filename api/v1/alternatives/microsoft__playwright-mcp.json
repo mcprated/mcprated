@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1568,
+      "stars": 1572,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.481,
@@ -30,17 +30,17 @@
     {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
-      "composite": 47,
+      "composite": 50,
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web"
       ],
-      "stars": 5479,
+      "stars": 5483,
       "language": "TypeScript",
       "similarity": 0.5,
-      "score": 0.343,
+      "score": 0.354,
       "shared_capabilities": [
         "web"
       ]
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54148,
+      "stars": 54218,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,29 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 23610,
+      "stars": 23658,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 74,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2656,
-      "language": "TypeScript",
-      "similarity": 0.333,
-      "score": 0.115,
+      "score": 0.119,
       "shared_capabilities": [
         "ai"
       ]
@@ -130,7 +111,26 @@
         "ai",
         "search"
       ],
-      "stars": 952,
+      "stars": 957,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.113,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2659,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -159,7 +159,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -167,10 +167,10 @@
         "database",
         "ai"
       ],
-      "stars": 401,
+      "stars": 400,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.086,
+      "score": 0.088,
       "shared_capabilities": [
         "ai"
       ]
@@ -187,7 +187,7 @@
         "ai",
         "search"
       ],
-      "stars": 14874,
+      "stars": 14889,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,

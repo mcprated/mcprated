@@ -1,10 +1,10 @@
 {
   "repo": "exa-labs/exa-mcp-server",
-  "stars": 4358,
+  "stars": 4364,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Exa MCP for web search and web crawling!",
-  "pushed_at": "2026-04-30T03:24:26Z",
+  "pushed_at": "2026-04-30T19:05:55Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.95,
@@ -30,8 +30,8 @@
     "extraction_confidence": 0.7
   },
   "sub_servers": [],
-  "composite": 64,
-  "composite_raw": 64,
+  "composite": 67,
+  "composite_raw": 67,
   "axes": {
     "reliability": {
       "score": 60,
@@ -72,7 +72,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 6d ago"
+          "note": "last published 7d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -108,8 +108,8 @@
       }
     },
     "trust": {
-      "score": 18,
-      "passing": 2,
+      "score": 27,
+      "passing": 3,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -153,8 +153,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "21764 weekly downloads"
         }
       }
     },
@@ -169,15 +169,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "8 unique committers in 90d"
+          "note": "9 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 12 merged PRs in 90d"
+          "note": "active: 30 commits, 11 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "12 merged PR(s) in 90d"
+          "note": "11 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -188,5 +188,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-04-30T06:42:28+00:00"
+  "scored_at": "2026-05-01T06:45:47+00:00"
 }

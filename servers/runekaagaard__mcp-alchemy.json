@@ -1,6 +1,6 @@
 {
   "repo": "runekaagaard/mcp-alchemy",
-  "stars": 401,
+  "stars": 400,
   "language": "Python",
   "license": "MPL-2.0",
   "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
@@ -31,8 +31,8 @@
     "extraction_confidence": 0.9
   },
   "sub_servers": [],
-  "composite": 42,
-  "composite_raw": 42,
+  "composite": 44,
+  "composite_raw": 44,
   "axes": {
     "reliability": {
       "score": 40,
@@ -49,7 +49,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 257d ago"
+          "note": "pushed 258d ago"
         },
         "has_releases": {
           "pass": false,
@@ -73,7 +73,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 257d ago"
+          "note": "last published 258d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -109,8 +109,8 @@
       }
     },
     "trust": {
-      "score": 9,
-      "passing": 1,
+      "score": 18,
+      "passing": 2,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -154,8 +154,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "801 weekly downloads"
         }
       }
     },
@@ -189,5 +189,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-04-30T06:42:29+00:00"
+  "scored_at": "2026-05-01T06:45:48+00:00"
 }

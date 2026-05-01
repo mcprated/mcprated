@@ -1,10 +1,10 @@
 {
   "repo": "microsoft/playwright-mcp",
-  "stars": 31817,
+  "stars": 31863,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Playwright MCP server",
-  "pushed_at": "2026-04-27T20:52:22Z",
+  "pushed_at": "2026-05-01T00:19:05Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -44,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 2d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -52,11 +52,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 2d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: v0.0.71"
+          "note": "latest tag: v0.0.72"
         },
         "release_communication": {
           "pass": true,
@@ -68,7 +68,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 2d ago"
+          "note": "last published 0d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -83,7 +83,7 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 56468 chars (need ≥500)"
+          "note": "README 57513 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
@@ -150,7 +150,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "1827282 weekly downloads"
+          "note": "1885276 weekly downloads"
         }
       }
     },
@@ -165,15 +165,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "5 unique committers in 90d"
+          "note": "4 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 9 merged PRs in 90d"
+          "note": "active: 30 commits, 10 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "9 merged PR(s) in 90d"
+          "note": "10 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-04-30T06:42:28+00:00"
+  "scored_at": "2026-05-01T06:45:48+00:00"
 }

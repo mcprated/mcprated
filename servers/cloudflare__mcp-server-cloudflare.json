@@ -1,10 +1,10 @@
 {
   "repo": "cloudflare/mcp-server-cloudflare",
-  "stars": 3673,
+  "stars": 3677,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": null,
-  "pushed_at": "2026-04-23T20:48:16Z",
+  "pushed_at": "2026-04-30T14:50:05Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.55,
@@ -40,7 +40,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 6d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -48,11 +48,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 29d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": false,
-          "note": "latest tag: workers-observability@0.4.6"
+          "note": "latest tag: workers-observability@0.4.7"
         },
         "release_communication": {
           "pass": true,
@@ -64,7 +64,7 @@
         },
         "recent_publish": {
           "pass": false,
-          "note": "last published 411d ago"
+          "note": "last published 412d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -146,7 +146,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "4571 weekly downloads"
+          "note": "4418 weekly downloads"
         }
       }
     },
@@ -161,11 +161,11 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "10 unique committers in 90d"
+          "note": "11 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 19 commits, 8 merged PRs in 90d"
+          "note": "active: 21 commits, 8 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -185,5 +185,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-04-30T06:42:28+00:00"
+  "scored_at": "2026-05-01T06:45:47+00:00"
 }

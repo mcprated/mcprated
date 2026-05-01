@@ -2,7 +2,7 @@
   "capability": "web",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-30T06:42:29+00:00",
+  "generated_at": "2026-05-01T06:45:48+00:00",
   "count": 3,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 31817,
+      "stars": 31863,
       "language": "TypeScript"
     },
     {
@@ -31,20 +31,20 @@
         "comms",
         "web"
       ],
-      "stars": 1568,
+      "stars": 1572,
       "language": "Go"
     },
     {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
-      "composite": 47,
+      "composite": 50,
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web"
       ],
-      "stars": 5479,
+      "stars": 5483,
       "language": "TypeScript"
     }
   ]

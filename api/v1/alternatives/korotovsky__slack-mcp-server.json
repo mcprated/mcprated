@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 31817,
+      "stars": 31863,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -30,17 +30,17 @@
     {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
-      "composite": 47,
+      "composite": 50,
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web"
       ],
-      "stars": 5479,
+      "stars": 5483,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.229,
+      "score": 0.236,
       "shared_capabilities": [
         "web"
       ]
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54148,
+      "stars": 54218,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.109,
+      "score": 0.107,
       "shared_capabilities": [
         "ai"
       ]
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,29 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 23610,
+      "stars": 23658,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.091,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 74,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2656,
-      "language": "TypeScript",
-      "similarity": 0.25,
-      "score": 0.086,
+      "score": 0.089,
       "shared_capabilities": [
         "ai"
       ]
@@ -130,7 +111,26 @@
         "ai",
         "search"
       ],
-      "stars": 952,
+      "stars": 957,
+      "language": "TypeScript",
+      "similarity": 0.25,
+      "score": 0.085,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2659,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 14874,
+      "stars": 14889,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -188,7 +188,7 @@
         "ai",
         "database"
       ],
-      "stars": 1376,
+      "stars": 1377,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.067,

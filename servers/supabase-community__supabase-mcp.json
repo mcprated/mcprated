@@ -1,10 +1,10 @@
 {
   "repo": "supabase-community/supabase-mcp",
-  "stars": 2656,
+  "stars": 2659,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Connect Supabase to your AI assistants",
-  "pushed_at": "2026-04-28T22:12:24Z",
+  "pushed_at": "2026-04-30T22:53:52Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.55,
@@ -26,12 +26,12 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 74,
-  "composite_raw": 74,
+  "composite": 72,
+  "composite_raw": 72,
   "axes": {
     "reliability": {
-      "score": 70,
-      "passing": 7,
+      "score": 60,
+      "passing": 6,
       "total": 10,
       "signals": {
         "has_ci": {
@@ -44,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -52,11 +52,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 58d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
-          "pass": true,
-          "note": "latest tag: v0.7.0"
+          "pass": false,
+          "note": "latest tag: mcp-utils-v0.5.0"
         },
         "release_communication": {
           "pass": true,
@@ -165,11 +165,11 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "4 unique committers in 90d"
+          "note": "5 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 23 commits, 11 merged PRs in 90d"
+          "note": "active: 30 commits, 11 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-04-30T06:42:29+00:00"
+  "scored_at": "2026-05-01T06:45:48+00:00"
 }

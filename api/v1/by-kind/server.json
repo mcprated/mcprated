@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-04-30T06:42:29+00:00",
+  "generated_at": "2026-05-01T06:45:48+00:00",
   "count": 32,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8913,
+      "stars": 8921,
       "language": "Python"
     },
     {
@@ -30,22 +30,8 @@
         "web",
         "ai"
       ],
-      "stars": 31817,
+      "stars": 31863,
       "language": "TypeScript"
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 82,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 23610,
-      "language": "Python"
     },
     {
       "repo": "GLips/Figma-Context-MCP",
@@ -55,8 +41,22 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14569,
+      "stars": 14576,
       "language": "TypeScript"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 80,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 23658,
+      "language": "Python"
     },
     {
       "repo": "eyaltoledano/claude-task-master",
@@ -66,8 +66,21 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26939,
+      "stars": 26951,
       "language": "JavaScript"
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 77,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "stars": 5083,
+      "language": "Python"
     },
     {
       "repo": "github/github-mcp-server",
@@ -79,7 +92,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29376,
+      "stars": 29409,
       "language": "Go"
     },
     {
@@ -94,35 +107,8 @@
         "ai",
         "search"
       ],
-      "stars": 14874,
+      "stars": 14889,
       "language": "Go"
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 74,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "stars": 5074,
-      "language": "Python"
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 74,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2656,
-      "language": "TypeScript"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -135,7 +121,7 @@
         "ai",
         "search"
       ],
-      "stars": 952,
+      "stars": 957,
       "language": "TypeScript"
     },
     {
@@ -146,7 +132,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84797,
+      "stars": 84855,
       "language": "TypeScript"
     },
     {
@@ -157,7 +143,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84797,
+      "stars": 84855,
       "language": "TypeScript"
     },
     {
@@ -168,7 +154,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84797,
+      "stars": 84855,
       "language": "TypeScript"
     },
     {
@@ -179,7 +165,21 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84797,
+      "stars": 84855,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "supabase-community/supabase-mcp",
+      "slug": "supabase-community__supabase-mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2659,
       "language": "TypeScript"
     },
     {
@@ -194,7 +194,7 @@
         "ai",
         "database"
       ],
-      "stars": 1376,
+      "stars": 1377,
       "language": "Python"
     },
     {
@@ -207,7 +207,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54148,
+      "stars": 54218,
       "language": "TypeScript"
     },
     {
@@ -220,13 +220,24 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3673,
+      "stars": 3677,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 67,
+      "description": "Exa MCP for web search and web crawling!",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 4364,
       "language": "TypeScript"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -235,17 +246,6 @@
       ],
       "stars": 661,
       "language": "Python"
-    },
-    {
-      "repo": "exa-labs/exa-mcp-server",
-      "slug": "exa-labs__exa-mcp-server",
-      "composite": 64,
-      "description": "Exa MCP for web search and web crawling!",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 4358,
-      "language": "TypeScript"
     },
     {
       "repo": "mcprated/mcprated",
@@ -272,7 +272,7 @@
         "comms",
         "web"
       ],
-      "stars": 1568,
+      "stars": 1572,
       "language": "Go"
     },
     {
@@ -287,6 +287,19 @@
       "language": "TypeScript"
     },
     {
+      "repo": "executeautomation/mcp-playwright",
+      "slug": "executeautomation__mcp-playwright",
+      "composite": 50,
+      "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web"
+      ],
+      "stars": 5483,
+      "language": "TypeScript"
+    },
+    {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
       "composite": 47,
@@ -297,26 +310,13 @@
         "database",
         "devtools"
       ],
-      "stars": 2660,
+      "stars": 2669,
       "language": "Python"
-    },
-    {
-      "repo": "executeautomation/mcp-playwright",
-      "slug": "executeautomation__mcp-playwright",
-      "composite": 47,
-      "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "web"
-      ],
-      "stars": 5479,
-      "language": "TypeScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -324,7 +324,7 @@
         "database",
         "ai"
       ],
-      "stars": 401,
+      "stars": 400,
       "language": "Python"
     },
     {

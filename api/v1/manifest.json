@@ -2,7 +2,7 @@
   "version": "1.0",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-04-30T06:42:29+00:00",
+  "generated_at": "2026-05-01T06:45:48+00:00",
   "base_url": "https://mcprated.github.io/mcprated",
   "description": "Agent-readable index of MCP servers. Static JSON, no auth, daily refresh. Each endpoint answers one question; agents should fetch the relevant shard rather than the full index.json.",
   "enums": {
