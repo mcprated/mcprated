@@ -9,7 +9,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -20,7 +20,7 @@
       "stars": 400,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.663,
+      "score": 0.648,
       "shared_capabilities": [
         "ai",
         "database"
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 14889,
+      "stars": 14904,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1377,
+      "stars": 1378,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.558,
@@ -80,7 +80,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8921,
+      "stars": 8926,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.232,
@@ -99,7 +99,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2669,
+      "stars": 2673,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.229,
@@ -136,7 +136,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54218,
+      "stars": 54257,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -154,7 +154,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 661,
+      "stars": 660,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.161,
@@ -193,7 +193,7 @@
         "web",
         "ai"
       ],
-      "stars": 31863,
+      "stars": 31896,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,

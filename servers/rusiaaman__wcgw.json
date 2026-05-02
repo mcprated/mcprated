@@ -1,6 +1,6 @@
 {
   "repo": "rusiaaman/wcgw",
-  "stars": 661,
+  "stars": 660,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "Shell and coding agent on mcp clients",
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-01T06:45:48+00:00"
+  "scored_at": "2026-05-02T06:24:18+00:00"
 }

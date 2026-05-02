@@ -1,10 +1,10 @@
 {
   "repo": "modelcontextprotocol/typescript-sdk",
-  "stars": 12316,
+  "stars": 12324,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
-  "pushed_at": "2026-04-30T15:16:23Z",
+  "pushed_at": "2026-05-01T13:52:23Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 1.0,
@@ -50,7 +50,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 29d ago"
+          "note": "latest release 30d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -66,7 +66,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 31d ago"
+          "note": "last published 32d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -148,7 +148,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "34244755 weekly downloads"
+          "note": "34592836 weekly downloads"
         }
       }
     },
@@ -167,11 +167,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 5 merged PRs in 90d"
+          "note": "active: 30 commits, 4 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "5 merged PR(s) in 90d"
+          "note": "4 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-01T06:45:48+00:00"
+  "scored_at": "2026-05-02T06:24:18+00:00"
 }

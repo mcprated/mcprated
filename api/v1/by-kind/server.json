@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-05-01T06:45:48+00:00",
+  "generated_at": "2026-05-02T06:24:18+00:00",
   "count": 32,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8921,
+      "stars": 8926,
       "language": "Python"
     },
     {
@@ -30,8 +30,22 @@
         "web",
         "ai"
       ],
-      "stars": 31863,
+      "stars": 31896,
       "language": "TypeScript"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 23700,
+      "language": "Python"
     },
     {
       "repo": "GLips/Figma-Context-MCP",
@@ -41,22 +55,8 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14576,
+      "stars": 14587,
       "language": "TypeScript"
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 80,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 23658,
-      "language": "Python"
     },
     {
       "repo": "eyaltoledano/claude-task-master",
@@ -66,21 +66,8 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26951,
+      "stars": 26961,
       "language": "JavaScript"
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 77,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "stars": 5083,
-      "language": "Python"
     },
     {
       "repo": "github/github-mcp-server",
@@ -92,7 +79,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29409,
+      "stars": 29435,
       "language": "Go"
     },
     {
@@ -107,8 +94,21 @@
         "ai",
         "search"
       ],
-      "stars": 14889,
+      "stars": 14904,
       "language": "Go"
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 74,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "stars": 5086,
+      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -121,7 +121,7 @@
         "ai",
         "search"
       ],
-      "stars": 957,
+      "stars": 962,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84855,
+      "stars": 84902,
       "language": "TypeScript"
     },
     {
@@ -143,7 +143,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84855,
+      "stars": 84902,
       "language": "TypeScript"
     },
     {
@@ -154,7 +154,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84855,
+      "stars": 84902,
       "language": "TypeScript"
     },
     {
@@ -165,7 +165,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84855,
+      "stars": 84902,
       "language": "TypeScript"
     },
     {
@@ -179,7 +179,7 @@
         "ai",
         "database"
       ],
-      "stars": 2659,
+      "stars": 2661,
       "language": "TypeScript"
     },
     {
@@ -194,7 +194,7 @@
         "ai",
         "database"
       ],
-      "stars": 1377,
+      "stars": 1378,
       "language": "Python"
     },
     {
@@ -207,7 +207,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54218,
+      "stars": 54257,
       "language": "TypeScript"
     },
     {
@@ -220,7 +220,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3677,
+      "stars": 3680,
       "language": "TypeScript"
     },
     {
@@ -231,7 +231,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4364,
+      "stars": 4368,
       "language": "TypeScript"
     },
     {
@@ -244,7 +244,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 661,
+      "stars": 660,
       "language": "Python"
     },
     {
@@ -272,7 +272,7 @@
         "comms",
         "web"
       ],
-      "stars": 1572,
+      "stars": 1576,
       "language": "Go"
     },
     {
@@ -283,7 +283,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 743,
+      "stars": 745,
       "language": "TypeScript"
     },
     {
@@ -296,7 +296,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5483,
+      "stars": 5485,
       "language": "TypeScript"
     },
     {
@@ -310,13 +310,13 @@
         "database",
         "devtools"
       ],
-      "stars": 2669,
+      "stars": 2673,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -383,7 +383,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
