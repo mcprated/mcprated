@@ -1,6 +1,6 @@
 {
   "repo": "cloudflare/mcp-server-cloudflare",
-  "stars": 3680,
+  "stars": 3682,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": null,
@@ -40,7 +40,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 2d ago"
         },
         "has_releases": {
           "pass": true,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 1d ago"
+          "note": "latest release 2d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -64,7 +64,7 @@
         },
         "recent_publish": {
           "pass": false,
-          "note": "last published 413d ago"
+          "note": "last published 414d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -146,7 +146,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "4271 weekly downloads"
+          "note": "3907 weekly downloads"
         }
       }
     },
@@ -185,5 +185,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-02T06:24:17+00:00"
+  "scored_at": "2026-05-03T06:39:57+00:00"
 }

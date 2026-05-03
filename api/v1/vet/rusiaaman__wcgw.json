@@ -2,12 +2,12 @@
   "repo": "rusiaaman/wcgw",
   "slug": "rusiaaman__wcgw",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-02T06:24:18+00:00",
-  "composite": 65,
+  "scored_at": "2026-05-03T06:39:57+00:00",
+  "composite": 67,
   "axes": {
     "reliability": 90,
     "documentation": 80,
-    "trust": 9,
+    "trust": 18,
     "community": 80
   },
   "kind": "server",
@@ -62,8 +62,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": false,
-      "note": "registry returned no download stats"
+      "passed": true,
+      "note": "937 weekly downloads"
     }
   },
   "quality_tier": "acceptable",

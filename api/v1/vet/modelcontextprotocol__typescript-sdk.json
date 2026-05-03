@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/typescript-sdk",
   "slug": "modelcontextprotocol__typescript-sdk",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-02T06:24:18+00:00",
+  "scored_at": "2026-05-03T06:39:57+00:00",
   "composite": 82,
   "axes": {
     "reliability": 90,
@@ -16,7 +16,7 @@
     "ai"
   ],
   "license": "NOASSERTION",
-  "stars": 12324,
+  "stars": 12335,
   "pushed_at": "2026-05-01T13:52:23Z",
   "language": "TypeScript",
   "hard_flags": [],
@@ -63,7 +63,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "34592836 weekly downloads"
+      "note": "34473132 weekly downloads"
     }
   },
   "quality_tier": "solid",
