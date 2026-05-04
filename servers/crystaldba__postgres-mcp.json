@@ -1,6 +1,6 @@
 {
   "repo": "crystaldba/postgres-mcp",
-  "stars": 2674,
+  "stars": 2678,
   "language": "Python",
   "license": "MIT",
   "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
@@ -34,8 +34,8 @@
     "extraction_confidence": 0.9
   },
   "sub_servers": [],
-  "composite": 47,
-  "composite_raw": 47,
+  "composite": 49,
+  "composite_raw": 49,
   "axes": {
     "reliability": {
       "score": 70,
@@ -52,7 +52,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 100d ago"
+          "note": "pushed 101d ago"
         },
         "has_releases": {
           "pass": true,
@@ -60,7 +60,7 @@
         },
         "tagged_release_recent": {
           "pass": false,
-          "note": "latest release 351d ago"
+          "note": "latest release 352d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -76,7 +76,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 351d ago"
+          "note": "last published 352d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -112,8 +112,8 @@
       }
     },
     "trust": {
-      "score": 18,
-      "passing": 2,
+      "score": 27,
+      "passing": 3,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -157,8 +157,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "25132 weekly downloads"
         }
       }
     },
@@ -192,5 +192,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-03T06:39:57+00:00"
+  "scored_at": "2026-05-04T06:52:19+00:00"
 }

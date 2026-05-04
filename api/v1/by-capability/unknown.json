@@ -2,7 +2,7 @@
   "capability": "unknown",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-05-03T06:39:57+00:00",
+  "generated_at": "2026-05-04T06:52:19+00:00",
   "count": 10,
   "servers": [
     {
@@ -13,7 +13,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14594,
+      "stars": 14604,
       "language": "TypeScript"
     },
     {
@@ -24,7 +24,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26965,
+      "stars": 26972,
       "language": "JavaScript"
     },
     {
@@ -35,7 +35,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -46,7 +46,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -57,7 +57,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -68,7 +68,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -79,7 +79,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4371,
+      "stars": 4374,
       "language": "TypeScript"
     },
     {
@@ -90,13 +90,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 745,
+      "stars": 747,
       "language": "TypeScript"
     },
     {
       "repo": "dandeliongold/mcp-time",
       "slug": "dandeliongold__mcp-time",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",

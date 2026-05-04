@@ -17,7 +17,7 @@
         "ai",
         "database"
       ],
-      "stars": 2662,
+      "stars": 2663,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.849,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 14914,
+      "stars": 14927,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,12 +59,31 @@
         "ai",
         "database"
       ],
-      "stars": 1382,
+      "stars": 1383,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.558,
       "shared_capabilities": [
         "ai",
+        "database"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 49,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 2678,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.233,
+      "shared_capabilities": [
         "database"
       ]
     },
@@ -80,29 +99,10 @@
         "database",
         "devtools"
       ],
-      "stars": 8934,
+      "stars": 8942,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.232,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "stars": 2674,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.229,
       "shared_capabilities": [
         "database"
       ]
@@ -136,7 +136,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54321,
+      "stars": 54386,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -193,7 +193,7 @@
         "web",
         "ai"
       ],
-      "stars": 31921,
+      "stars": 31964,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,

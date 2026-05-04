@@ -1,6 +1,6 @@
 {
   "repo": "qdrant/mcp-server-qdrant",
-  "stars": 1382,
+  "stars": 1383,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
@@ -45,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 5d ago"
+          "note": "pushed 6d ago"
         },
         "has_releases": {
           "pass": true,
@@ -53,7 +53,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 143d ago"
+          "note": "latest release 144d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -69,7 +69,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 143d ago"
+          "note": "last published 144d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -185,5 +185,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-03T06:39:57+00:00"
+  "scored_at": "2026-05-04T06:52:19+00:00"
 }

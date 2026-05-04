@@ -2,7 +2,7 @@
   "capability": "database",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-05-03T06:39:57+00:00",
+  "generated_at": "2026-05-04T06:52:19+00:00",
   "count": 8,
   "servers": [
     {
@@ -17,7 +17,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8934,
+      "stars": 8942,
       "language": "Python"
     },
     {
@@ -32,7 +32,7 @@
         "ai",
         "search"
       ],
-      "stars": 14914,
+      "stars": 14927,
       "language": "Go"
     },
     {
@@ -46,7 +46,7 @@
         "ai",
         "database"
       ],
-      "stars": 2662,
+      "stars": 2663,
       "language": "TypeScript"
     },
     {
@@ -61,13 +61,13 @@
         "ai",
         "database"
       ],
-      "stars": 1382,
+      "stars": 1383,
       "language": "Python"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 49,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -75,13 +75,13 @@
         "database",
         "devtools"
       ],
-      "stars": 2674,
+      "stars": 2678,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",

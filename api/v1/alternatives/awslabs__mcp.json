@@ -32,7 +32,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 49,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -40,10 +40,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2674,
+      "stars": 2678,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.457,
+      "score": 0.467,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -59,7 +59,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3682,
+      "stars": 3687,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.273,
@@ -78,7 +78,7 @@
         "ai",
         "database"
       ],
-      "stars": 2662,
+      "stars": 2663,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.212,
@@ -98,7 +98,7 @@
         "ai",
         "search"
       ],
-      "stars": 14914,
+      "stars": 14927,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -118,7 +118,7 @@
         "ai",
         "database"
       ],
-      "stars": 1382,
+      "stars": 1383,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.167,
@@ -129,7 +129,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -140,7 +140,7 @@
       "stars": 401,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.166,
+      "score": 0.162,
       "shared_capabilities": [
         "database"
       ]
@@ -174,7 +174,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29460,
+      "stars": 29487,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

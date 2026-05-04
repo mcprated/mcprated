@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-05-03T06:39:57+00:00",
+  "generated_at": "2026-05-04T06:52:19+00:00",
   "count": 32,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "database",
         "devtools"
       ],
-      "stars": 8934,
+      "stars": 8942,
       "language": "Python"
     },
     {
@@ -30,7 +30,7 @@
         "web",
         "ai"
       ],
-      "stars": 31921,
+      "stars": 31964,
       "language": "TypeScript"
     },
     {
@@ -44,7 +44,7 @@
         "ai",
         "search"
       ],
-      "stars": 23750,
+      "stars": 23792,
       "language": "Python"
     },
     {
@@ -55,7 +55,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14594,
+      "stars": 14604,
       "language": "TypeScript"
     },
     {
@@ -66,7 +66,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 26965,
+      "stars": 26972,
       "language": "JavaScript"
     },
     {
@@ -79,7 +79,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5089,
+      "stars": 5090,
       "language": "Python"
     },
     {
@@ -92,7 +92,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29460,
+      "stars": 29487,
       "language": "Go"
     },
     {
@@ -107,7 +107,7 @@
         "ai",
         "search"
       ],
-      "stars": 14914,
+      "stars": 14927,
       "language": "Go"
     },
     {
@@ -121,7 +121,7 @@
         "ai",
         "search"
       ],
-      "stars": 965,
+      "stars": 971,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -143,7 +143,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -154,7 +154,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -165,7 +165,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 84939,
+      "stars": 84982,
       "language": "TypeScript"
     },
     {
@@ -179,7 +179,7 @@
         "ai",
         "database"
       ],
-      "stars": 2662,
+      "stars": 2663,
       "language": "TypeScript"
     },
     {
@@ -194,7 +194,7 @@
         "ai",
         "database"
       ],
-      "stars": 1382,
+      "stars": 1383,
       "language": "Python"
     },
     {
@@ -207,7 +207,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54321,
+      "stars": 54386,
       "language": "TypeScript"
     },
     {
@@ -220,7 +220,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3682,
+      "stars": 3687,
       "language": "TypeScript"
     },
     {
@@ -231,7 +231,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4371,
+      "stars": 4374,
       "language": "TypeScript"
     },
     {
@@ -283,7 +283,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 745,
+      "stars": 747,
       "language": "TypeScript"
     },
     {
@@ -296,13 +296,13 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5488,
+      "stars": 5486,
       "language": "TypeScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 49,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -310,13 +310,24 @@
         "database",
         "devtools"
       ],
-      "stars": 2674,
+      "stars": 2678,
       "language": "Python"
+    },
+    {
+      "repo": "dandeliongold/mcp-time",
+      "slug": "dandeliongold__mcp-time",
+      "composite": 42,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 2,
+      "language": "TypeScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -340,17 +351,6 @@
       ],
       "stars": 1,
       "language": "JavaScript"
-    },
-    {
-      "repo": "dandeliongold/mcp-time",
-      "slug": "dandeliongold__mcp-time",
-      "composite": 40,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 2,
-      "language": "TypeScript"
     },
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
@@ -383,7 +383,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
