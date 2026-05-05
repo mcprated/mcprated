@@ -2,13 +2,13 @@
   "capability": "search",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-05-04T06:52:19+00:00",
+  "generated_at": "2026-05-05T06:29:12+00:00",
   "count": 5,
   "servers": [
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -16,7 +16,7 @@
         "ai",
         "search"
       ],
-      "stars": 23792,
+      "stars": 23828,
       "language": "Python"
     },
     {
@@ -31,7 +31,7 @@
         "ai",
         "search"
       ],
-      "stars": 14927,
+      "stars": 14936,
       "language": "Go"
     },
     {
@@ -45,13 +45,13 @@
         "ai",
         "search"
       ],
-      "stars": 971,
+      "stars": 976,
       "language": "TypeScript"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 70,
+      "composite": 72,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -60,7 +60,7 @@
         "ai",
         "database"
       ],
-      "stars": 1383,
+      "stars": 1385,
       "language": "Python"
     },
     {

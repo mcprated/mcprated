@@ -2,12 +2,12 @@
   "repo": "runekaagaard/mcp-alchemy",
   "slug": "runekaagaard__mcp-alchemy",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-04T06:52:19+00:00",
-  "composite": 42,
+  "scored_at": "2026-05-05T06:29:12+00:00",
+  "composite": 44,
   "axes": {
     "reliability": 40,
     "documentation": 80,
-    "trust": 9,
+    "trust": 18,
     "community": 40
   },
   "kind": "server",
@@ -63,8 +63,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": false,
-      "note": "registry returned no download stats"
+      "passed": true,
+      "note": "751 weekly downloads"
     }
   },
   "quality_tier": "poor",

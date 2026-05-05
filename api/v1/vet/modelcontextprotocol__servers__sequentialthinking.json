@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/servers",
   "slug": "modelcontextprotocol__servers__sequentialthinking",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-04T06:52:19+00:00",
+  "scored_at": "2026-05-05T06:29:12+00:00",
   "composite": 72,
   "axes": {
     "reliability": 80,
@@ -14,7 +14,7 @@
   "subkind": "integration",
   "capabilities": [],
   "license": "NOASSERTION",
-  "stars": 84982,
+  "stars": 85032,
   "pushed_at": null,
   "language": "TypeScript",
   "hard_flags": [],

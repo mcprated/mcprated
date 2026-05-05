@@ -2,12 +2,12 @@
   "repo": "nikolaypavlov/mcp-myip",
   "slug": "nikolaypavlov__mcp-myip",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-04T06:52:19+00:00",
-  "composite": 28,
+  "scored_at": "2026-05-05T06:29:12+00:00",
+  "composite": 30,
   "axes": {
     "reliability": 30,
     "documentation": 40,
-    "trust": 0,
+    "trust": 9,
     "community": 40
   },
   "kind": "server",
@@ -62,8 +62,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": false,
-      "note": "registry returned no download stats"
+      "passed": true,
+      "note": "14 weekly downloads"
     }
   },
   "quality_tier": "poor",
