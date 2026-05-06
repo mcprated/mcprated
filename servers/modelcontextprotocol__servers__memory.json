@@ -20,7 +20,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 17d ago"
+          "note": "pushed 18d ago"
         },
         "has_releases": {
           "pass": true,
@@ -28,7 +28,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 97d ago"
+          "note": "latest release 98d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -158,7 +158,7 @@
       }
     }
   },
-  "stars": 85032,
+  "stars": 85116,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers / sub-server: memory",
@@ -166,7 +166,7 @@
   "capabilities_v2": [],
   "distribution": "repo",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-05T06:29:12+00:00",
+  "scored_at": "2026-05-06T06:46:38+00:00",
   "hard_flags": [],
   "kind": "server",
   "subkind": "integration",
