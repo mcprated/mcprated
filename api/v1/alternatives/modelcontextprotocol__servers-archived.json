@@ -8,28 +8,6 @@
   ],
   "alternatives": [
     {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 86,
-      "description": "Official MCP Servers for AWS",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "cloud",
-        "database",
-        "devtools"
-      ],
-      "stars": 8971,
-      "language": "Python",
-      "similarity": 1.0,
-      "score": 0.927,
-      "shared_capabilities": [
-        "cloud",
-        "database",
-        "devtools"
-      ]
-    },
-    {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
       "composite": 49,
@@ -40,13 +18,31 @@
         "database",
         "devtools"
       ],
-      "stars": 2690,
+      "stars": 2694,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.467,
       "shared_capabilities": [
         "database",
         "devtools"
+      ]
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 86,
+      "description": "Open source MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "cloud"
+      ],
+      "stars": 8978,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.309,
+      "shared_capabilities": [
+        "cloud"
       ]
     },
     {
@@ -59,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3703,
+      "stars": 3710,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.273,
@@ -98,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 14975,
+      "stars": 14987,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -118,7 +114,7 @@
         "ai",
         "database"
       ],
-      "stars": 1385,
+      "stars": 1384,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.17,
@@ -174,7 +170,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29537,
+      "stars": 29557,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

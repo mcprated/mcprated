@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 14975,
+      "stars": 14987,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1385,
+      "stars": 1384,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.566,
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 23869,
+      "stars": 23907,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.302,
@@ -78,7 +78,7 @@
         "ai",
         "search"
       ],
-      "stars": 985,
+      "stars": 990,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -116,30 +116,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2690,
+      "stars": 2694,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.233,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 86,
-      "description": "Official MCP Servers for AWS",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "cloud",
-        "database",
-        "devtools"
-      ],
-      "stars": 8971,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.232,
       "shared_capabilities": [
         "database"
       ]
@@ -175,7 +155,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 254,
+      "stars": 255,
       "language": "JavaScript",
       "similarity": 0.25,
       "score": 0.137,
