@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1580,
+      "stars": 1583,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.481,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5496,
+      "stars": 5498,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.354,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54638,
+      "stars": 54732,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,10 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 23907,
+      "stars": 23959,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
+      "score": 0.119,
       "shared_capabilities": [
         "ai"
       ]
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 990,
+      "stars": 993,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -130,7 +130,7 @@
         "ai",
         "database"
       ],
-      "stars": 2666,
+      "stars": 2669,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -187,7 +187,7 @@
         "ai",
         "search"
       ],
-      "stars": 14987,
+      "stars": 15022,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,

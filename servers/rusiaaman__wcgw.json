@@ -148,7 +148,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "530 weekly downloads"
+          "note": "429 weekly downloads"
         }
       }
     },
@@ -167,11 +167,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 7 commits, 5 merged PRs in 90d"
+          "note": "active: 5 commits, 4 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "5 merged PR(s) in 90d"
+          "note": "4 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-07T06:50:58+00:00"
+  "scored_at": "2026-05-08T06:11:36+00:00"
 }
