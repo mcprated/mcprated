@@ -1,10 +1,10 @@
 {
   "repo": "modelcontextprotocol/typescript-sdk",
-  "stars": 12374,
+  "stars": 12383,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
-  "pushed_at": "2026-05-08T05:01:08Z",
+  "pushed_at": "2026-05-09T05:04:38Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 1.0,
@@ -50,7 +50,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 36d ago"
+          "note": "latest release 37d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -66,7 +66,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 38d ago"
+          "note": "last published 39d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -148,7 +148,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "34021288 weekly downloads"
+          "note": "34084541 weekly downloads"
         }
       }
     },
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-08T06:11:36+00:00"
+  "scored_at": "2026-05-09T06:26:54+00:00"
 }

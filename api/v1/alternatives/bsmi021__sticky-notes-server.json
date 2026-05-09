@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 15022,
+      "stars": 15067,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1386,
+      "stars": 1389,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.566,
@@ -51,7 +51,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "search"
       ],
-      "stars": 23959,
+      "stars": 23989,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.298,
+      "score": 0.302,
       "shared_capabilities": [
         "search"
       ]
@@ -78,7 +78,7 @@
         "ai",
         "search"
       ],
-      "stars": 993,
+      "stars": 997,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -97,7 +97,7 @@
         "ai",
         "database"
       ],
-      "stars": 2669,
+      "stars": 2670,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -108,7 +108,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 49,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -116,10 +116,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2704,
+      "stars": 2711,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.233,
+      "score": 0.229,
       "shared_capabilities": [
         "database"
       ]
@@ -135,7 +135,7 @@
         "database",
         "ai"
       ],
-      "stars": 401,
+      "stars": 402,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.221,
