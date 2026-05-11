@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 24021,
+      "stars": 24064,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.906,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15101,
+      "stars": 15131,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1390,
+      "stars": 1391,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.566,
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 54901,
+      "stars": 54980,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -108,7 +108,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -118,7 +118,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 32280,
+      "stars": 32338,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -153,7 +153,7 @@
         "ai",
         "database"
       ],
-      "stars": 2672,
+      "stars": 2680,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -182,7 +182,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -193,7 +193,7 @@
       "stars": 402,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.088,
+      "score": 0.086,
       "shared_capabilities": [
         "ai"
       ]
