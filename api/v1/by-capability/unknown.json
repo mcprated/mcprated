@@ -2,7 +2,7 @@
   "capability": "unknown",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-05-12T06:51:43+00:00",
+  "generated_at": "2026-05-13T07:00:43+00:00",
   "count": 10,
   "servers": [
     {
@@ -13,7 +13,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14717,
+      "stars": 14731,
       "language": "TypeScript"
     },
     {
@@ -24,51 +24,51 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27104,
+      "stars": 27117,
       "language": "JavaScript"
     },
     {
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers",
-      "composite": 72,
+      "composite": 77,
       "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 85485,
+      "stars": 85549,
       "language": "TypeScript"
     },
     {
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers__filesystem",
-      "composite": 72,
+      "composite": 77,
       "description": "Model Context Protocol Servers / sub-server: filesystem",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85485,
+      "stars": 85549,
       "language": "TypeScript"
     },
     {
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers__memory",
-      "composite": 72,
+      "composite": 77,
       "description": "Model Context Protocol Servers / sub-server: memory",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85485,
+      "stars": 85549,
       "language": "TypeScript"
     },
     {
       "repo": "modelcontextprotocol/servers",
       "slug": "modelcontextprotocol__servers__sequentialthinking",
-      "composite": 72,
+      "composite": 77,
       "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85485,
+      "stars": 85549,
       "language": "TypeScript"
     },
     {
@@ -79,7 +79,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4413,
+      "stars": 4418,
       "language": "TypeScript"
     },
     {
