@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-05-14T06:55:08+00:00",
+  "generated_at": "2026-05-15T07:34:04+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -12,7 +12,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9041,
+      "stars": 9053,
       "language": "Python"
     },
     {
@@ -26,7 +26,7 @@
         "web",
         "ai"
       ],
-      "stars": 32480,
+      "stars": 32530,
       "language": "TypeScript"
     },
     {
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 24179,
+      "stars": 24242,
       "language": "Python"
     },
     {
@@ -51,7 +51,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14743,
+      "stars": 14751,
       "language": "TypeScript"
     },
     {
@@ -62,7 +62,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27132,
+      "stars": 27141,
       "language": "JavaScript"
     },
     {
@@ -73,7 +73,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -84,7 +84,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -95,7 +95,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -106,7 +106,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5175,
+      "stars": 5184,
       "language": "Python"
     },
     {
@@ -132,7 +132,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29814,
+      "stars": 29837,
       "language": "Go"
     },
     {
@@ -147,7 +147,7 @@
         "ai",
         "search"
       ],
-      "stars": 15202,
+      "stars": 15225,
       "language": "Go"
     },
     {
@@ -161,7 +161,7 @@
         "ai",
         "search"
       ],
-      "stars": 1013,
+      "stars": 1012,
       "language": "TypeScript"
     },
     {
@@ -176,7 +176,7 @@
         "ai",
         "database"
       ],
-      "stars": 1395,
+      "stars": 1396,
       "language": "Python"
     },
     {
@@ -203,7 +203,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 55270,
+      "stars": 55338,
       "language": "TypeScript"
     },
     {
@@ -216,7 +216,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3739,
+      "stars": 3740,
       "language": "TypeScript"
     },
     {
@@ -227,7 +227,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4424,
+      "stars": 4431,
       "language": "TypeScript"
     },
     {
@@ -240,7 +240,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 661,
+      "stars": 660,
       "language": "Python"
     },
     {
@@ -259,7 +259,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 52,
+      "composite": 57,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -268,7 +268,7 @@
         "comms",
         "web"
       ],
-      "stars": 1594,
+      "stars": 1597,
       "language": "Go"
     },
     {
@@ -279,7 +279,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 754,
+      "stars": 757,
       "language": "TypeScript"
     },
     {
@@ -292,7 +292,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5509,
+      "stars": 5511,
       "language": "TypeScript"
     },
     {
@@ -306,22 +306,19 @@
         "database",
         "devtools"
       ],
-      "stars": 2735,
+      "stars": 2745,
       "language": "Python"
     },
     {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "repo": "dandeliongold/mcp-time",
+      "slug": "dandeliongold__mcp-time",
+      "composite": 42,
+      "description": null,
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 402,
-      "language": "Python"
+      "capabilities": [],
+      "stars": 3,
+      "language": "TypeScript"
     }
   ],
   "by_stars": [
@@ -333,7 +330,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -344,7 +341,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -355,7 +352,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -366,7 +363,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
     },
     {
@@ -379,7 +376,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 55270,
+      "stars": 55338,
       "language": "TypeScript"
     },
     {
@@ -393,7 +390,7 @@
         "web",
         "ai"
       ],
-      "stars": 32480,
+      "stars": 32530,
       "language": "TypeScript"
     },
     {
@@ -406,7 +403,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29814,
+      "stars": 29837,
       "language": "Go"
     },
     {
@@ -417,7 +414,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27132,
+      "stars": 27141,
       "language": "JavaScript"
     },
     {
@@ -431,7 +428,7 @@
         "ai",
         "search"
       ],
-      "stars": 24179,
+      "stars": 24242,
       "language": "Python"
     },
     {
@@ -446,7 +443,7 @@
         "ai",
         "search"
       ],
-      "stars": 15202,
+      "stars": 15225,
       "language": "Go"
     },
     {
@@ -457,7 +454,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14743,
+      "stars": 14751,
       "language": "TypeScript"
     },
     {
@@ -470,7 +467,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9041,
+      "stars": 9053,
       "language": "Python"
     },
     {
@@ -483,7 +480,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5509,
+      "stars": 5511,
       "language": "TypeScript"
     },
     {
@@ -496,7 +493,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5175,
+      "stars": 5184,
       "language": "Python"
     },
     {
@@ -507,7 +504,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4424,
+      "stars": 4431,
       "language": "TypeScript"
     },
     {
@@ -520,7 +517,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3739,
+      "stars": 3740,
       "language": "TypeScript"
     },
     {
@@ -534,7 +531,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2735,
+      "stars": 2745,
       "language": "Python"
     },
     {
@@ -554,7 +551,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 52,
+      "composite": 57,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -563,7 +560,7 @@
         "comms",
         "web"
       ],
-      "stars": 1594,
+      "stars": 1597,
       "language": "Go"
     },
     {
@@ -578,7 +575,7 @@
         "ai",
         "database"
       ],
-      "stars": 1395,
+      "stars": 1396,
       "language": "Python"
     },
     {
@@ -592,7 +589,7 @@
         "ai",
         "search"
       ],
-      "stars": 1013,
+      "stars": 1012,
       "language": "TypeScript"
     },
     {
@@ -603,7 +600,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 754,
+      "stars": 757,
       "language": "TypeScript"
     },
     {
@@ -616,13 +613,13 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 661,
+      "stars": 660,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -630,7 +627,7 @@
         "database",
         "ai"
       ],
-      "stars": 402,
+      "stars": 403,
       "language": "Python"
     },
     {
@@ -645,7 +642,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 257,
+      "stars": 259,
       "language": "JavaScript"
     }
   ],
@@ -662,7 +659,7 @@
         "ai",
         "search"
       ],
-      "stars": 15202,
+      "stars": 15225,
       "language": "Go"
     },
     {
@@ -675,45 +672,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9041,
-      "language": "Python"
-    },
-    {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 74,
-      "description": "GitHub's official MCP Server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 29814,
-      "language": "Go"
-    },
-    {
-      "repo": "exa-labs/exa-mcp-server",
-      "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
-      "description": "Exa MCP for web search and web crawling!",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 4424,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 82,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 24179,
+      "stars": 9053,
       "language": "Python"
     },
     {
@@ -727,21 +686,50 @@
         "ai",
         "search"
       ],
-      "stars": 1013,
+      "stars": 1012,
       "language": "TypeScript"
     },
     {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "repo": "korotovsky/slack-mcp-server",
+      "slug": "korotovsky__slack-mcp-server",
+      "composite": 57,
+      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai"
+        "ai",
+        "comms",
+        "web"
       ],
-      "stars": 55270,
-      "language": "TypeScript"
+      "stars": 1597,
+      "language": "Go"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 24242,
+      "language": "Python"
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 74,
+      "description": "GitHub's official MCP Server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 29837,
+      "language": "Go"
     },
     {
       "repo": "mcprated/mcprated",
@@ -755,6 +743,30 @@
       ],
       "stars": 0,
       "language": "Python"
+    },
+    {
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 67,
+      "description": "Exa MCP for web search and web crawling!",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 4431,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 69,
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 55338,
+      "language": "TypeScript"
     },
     {
       "repo": "supabase-community/supabase-mcp",
@@ -781,7 +793,7 @@
         "web",
         "ai"
       ],
-      "stars": 32480,
+      "stars": 32530,
       "language": "TypeScript"
     },
     {
@@ -792,23 +804,8 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 85606,
+      "stars": 85681,
       "language": "TypeScript"
-    },
-    {
-      "repo": "korotovsky/slack-mcp-server",
-      "slug": "korotovsky__slack-mcp-server",
-      "composite": 52,
-      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "comms",
-        "web"
-      ],
-      "stars": 1594,
-      "language": "Go"
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -820,7 +817,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3739,
+      "stars": 3740,
       "language": "TypeScript"
     },
     {
@@ -831,7 +828,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14743,
+      "stars": 14751,
       "language": "TypeScript"
     },
     {
@@ -844,7 +841,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 661,
+      "stars": 660,
       "language": "Python"
     },
     {
@@ -855,7 +852,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27132,
+      "stars": 27141,
       "language": "JavaScript"
     },
     {
@@ -870,7 +867,7 @@
         "ai",
         "database"
       ],
-      "stars": 1395,
+      "stars": 1396,
       "language": "Python"
     },
     {
@@ -883,7 +880,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5175,
+      "stars": 5184,
       "language": "Python"
     },
     {
@@ -894,7 +891,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 754,
+      "stars": 757,
       "language": "TypeScript"
     },
     {
@@ -908,7 +905,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2735,
+      "stars": 2745,
       "language": "Python"
     },
     {
@@ -921,13 +918,13 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5509,
+      "stars": 5511,
       "language": "TypeScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -935,7 +932,7 @@
         "database",
         "ai"
       ],
-      "stars": 402,
+      "stars": 403,
       "language": "Python"
     },
     {
@@ -950,7 +947,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 257,
+      "stars": 259,
       "language": "JavaScript"
     },
     {

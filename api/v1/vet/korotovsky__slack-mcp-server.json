@@ -2,13 +2,13 @@
   "repo": "korotovsky/slack-mcp-server",
   "slug": "korotovsky__slack-mcp-server",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-14T06:55:08+00:00",
-  "composite": 52,
+  "scored_at": "2026-05-15T07:34:04+00:00",
+  "composite": 57,
   "axes": {
     "reliability": 70,
     "documentation": 60,
     "trust": 18,
-    "community": 60
+    "community": 80
   },
   "kind": "server",
   "subkind": "integration",
@@ -18,8 +18,8 @@
     "web"
   ],
   "license": "MIT",
-  "stars": 1594,
-  "pushed_at": "2026-04-30T17:16:40Z",
+  "stars": 1597,
+  "pushed_at": "2026-05-14T22:52:35Z",
   "language": "Go",
   "hard_flags": [],
   "trust_signals": {
