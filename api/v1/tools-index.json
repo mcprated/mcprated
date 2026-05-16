@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-05-15T07:34:04+00:00",
+  "generated_at": "2026-05-16T06:32:29+00:00",
   "total_tools": 191,
   "tools": [
     {
@@ -1669,6 +1669,20 @@
       "extraction_method": "ast_python"
     },
     {
+      "name": "getSecretPassphrase",
+      "description": "What\\s the password?",
+      "input_keys": [],
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
       "name": "schema_definitions",
       "description": null,
       "input_keys": [
@@ -1686,6 +1700,20 @@
       "extraction_method": "ast_python"
     },
     {
+      "name": "super-secret-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
       "name": "time-server",
       "description": null,
       "input_keys": [],
@@ -1695,20 +1723,6 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "getSecretPassphrase",
-      "description": "What\\s the password?",
-      "input_keys": [],
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
       "extraction_method": "regex_typescript"
     },
     {
@@ -1723,20 +1737,6 @@
       "capabilities": [
         "database",
         "search"
-      ],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "super-secret-server",
-      "description": null,
-      "input_keys": [],
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
       ],
       "extraction_method": "regex_typescript"
     },

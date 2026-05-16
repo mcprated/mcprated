@@ -18,7 +18,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 259,
+      "stars": 260,
       "language": "JavaScript",
       "similarity": 0.667,
       "score": 0.365,
@@ -38,7 +38,7 @@
         "ai",
         "database"
       ],
-      "stars": 2684,
+      "stars": 2688,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -77,30 +77,10 @@
         "ai",
         "search"
       ],
-      "stars": 15225,
+      "stars": 15242,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1396,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.212,
       "shared_capabilities": [
         "database"
       ]
@@ -125,6 +105,26 @@
       ]
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 70,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1397,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.209,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 74,
@@ -134,7 +134,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29837,
+      "stars": 29869,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -163,7 +163,7 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
+      "composite": 42,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -173,7 +173,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.5,
-      "score": 0.126,
+      "score": 0.13,
       "shared_capabilities": [
         "devtools"
       ]

@@ -20,7 +20,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 2d ago"
+          "note": "pushed 3d ago"
         },
         "has_releases": {
           "pass": true,
@@ -28,7 +28,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 107d ago"
+          "note": "latest release 108d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -158,7 +158,7 @@
       }
     }
   },
-  "stars": 85681,
+  "stars": 85725,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
@@ -166,7 +166,7 @@
   "capabilities_v2": [],
   "distribution": "repo",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-15T07:34:04+00:00",
+  "scored_at": "2026-05-16T06:32:28+00:00",
   "hard_flags": [],
   "kind": "server",
   "subkind": "integration",

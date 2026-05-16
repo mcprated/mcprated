@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-05-15T07:34:04+00:00",
+  "generated_at": "2026-05-16T06:32:29+00:00",
   "count": 32,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9053,
+      "stars": 9064,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 32530,
+      "stars": 32569,
       "language": "TypeScript"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 24242,
+      "stars": 24276,
       "language": "Python"
     },
     {
@@ -53,7 +53,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14751,
+      "stars": 14760,
       "language": "TypeScript"
     },
     {
@@ -64,7 +64,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27141,
+      "stars": 27151,
       "language": "JavaScript"
     },
     {
@@ -75,7 +75,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 85681,
+      "stars": 85725,
       "language": "TypeScript"
     },
     {
@@ -86,7 +86,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85681,
+      "stars": 85725,
       "language": "TypeScript"
     },
     {
@@ -97,7 +97,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85681,
+      "stars": 85725,
       "language": "TypeScript"
     },
     {
@@ -108,21 +108,8 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 85681,
+      "stars": 85725,
       "language": "TypeScript"
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 77,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "stars": 5184,
-      "language": "Python"
     },
     {
       "repo": "github/github-mcp-server",
@@ -134,7 +121,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29837,
+      "stars": 29869,
       "language": "Go"
     },
     {
@@ -149,8 +136,21 @@
         "ai",
         "search"
       ],
-      "stars": 15225,
+      "stars": 15242,
       "language": "Go"
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 74,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "stars": 5191,
+      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -163,23 +163,8 @@
         "ai",
         "search"
       ],
-      "stars": 1012,
+      "stars": 1029,
       "language": "TypeScript"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1396,
-      "language": "Python"
     },
     {
       "repo": "supabase-community/supabase-mcp",
@@ -192,8 +177,23 @@
         "ai",
         "database"
       ],
-      "stars": 2684,
+      "stars": 2688,
       "language": "TypeScript"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 70,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1397,
+      "language": "Python"
     },
     {
       "repo": "upstash/context7",
@@ -205,7 +205,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 55338,
+      "stars": 55404,
       "language": "TypeScript"
     },
     {
@@ -218,7 +218,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3740,
+      "stars": 3746,
       "language": "TypeScript"
     },
     {
@@ -229,7 +229,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4431,
+      "stars": 4434,
       "language": "TypeScript"
     },
     {
@@ -270,7 +270,7 @@
         "comms",
         "web"
       ],
-      "stars": 1597,
+      "stars": 1601,
       "language": "Go"
     },
     {
@@ -281,7 +281,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 757,
+      "stars": 758,
       "language": "TypeScript"
     },
     {
@@ -294,7 +294,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5511,
+      "stars": 5515,
       "language": "TypeScript"
     },
     {
@@ -308,7 +308,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2745,
+      "stars": 2752,
       "language": "Python"
     },
     {
@@ -321,6 +321,19 @@
       "capabilities": [],
       "stars": 3,
       "language": "TypeScript"
+    },
+    {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
@@ -351,19 +364,6 @@
       "language": "JavaScript"
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
       "repo": "modelcontextprotocol/servers-archived",
       "slug": "modelcontextprotocol__servers-archived",
       "composite": 30,
@@ -375,7 +375,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 259,
+      "stars": 260,
       "language": "JavaScript"
     },
     {
