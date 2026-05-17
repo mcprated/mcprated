@@ -2,7 +2,7 @@
   "repo": "dandeliongold/mcp-time",
   "slug": "dandeliongold__mcp-time",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-16T06:32:28+00:00",
+  "scored_at": "2026-05-17T06:56:17+00:00",
   "composite": 42,
   "axes": {
     "reliability": 30,
@@ -63,7 +63,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "45 weekly downloads"
+      "note": "38 weekly downloads"
     }
   },
   "quality_tier": "poor",

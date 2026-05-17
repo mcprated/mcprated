@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2752,
+      "stars": 2753,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.467,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9064,
+      "stars": 9069,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3746,
+      "stars": 3748,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.273,
@@ -74,7 +74,7 @@
         "ai",
         "database"
       ],
-      "stars": 2688,
+      "stars": 2694,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.212,
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 15242,
+      "stars": 15248,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -105,7 +105,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 70,
+      "composite": 72,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -114,10 +114,10 @@
         "ai",
         "database"
       ],
-      "stars": 1397,
+      "stars": 1398,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.167,
+      "score": 0.17,
       "shared_capabilities": [
         "database"
       ]
@@ -125,7 +125,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -136,7 +136,7 @@
       "stars": 403,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.162,
+      "score": 0.166,
       "shared_capabilities": [
         "database"
       ]
@@ -170,7 +170,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29869,
+      "stars": 29903,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
