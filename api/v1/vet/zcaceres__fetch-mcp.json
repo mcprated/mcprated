@@ -2,7 +2,7 @@
   "repo": "zcaceres/fetch-mcp",
   "slug": "zcaceres__fetch-mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-17T06:56:18+00:00",
+  "scored_at": "2026-05-18T08:20:24+00:00",
   "composite": 52,
   "axes": {
     "reliability": 50,
@@ -14,7 +14,7 @@
   "subkind": "integration",
   "capabilities": [],
   "license": "MIT",
-  "stars": 758,
+  "stars": 759,
   "pushed_at": "2026-03-12T17:17:24Z",
   "language": "TypeScript",
   "hard_flags": [],
@@ -61,7 +61,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "2811 weekly downloads"
+      "note": "2661 weekly downloads"
     }
   },
   "quality_tier": "acceptable",

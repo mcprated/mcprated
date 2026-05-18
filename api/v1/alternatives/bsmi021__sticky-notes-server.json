@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 15248,
+      "stars": 15257,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -30,7 +30,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 70,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -39,10 +39,10 @@
         "ai",
         "database"
       ],
-      "stars": 1398,
+      "stars": 1399,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.566,
+      "score": 0.558,
       "shared_capabilities": [
         "database",
         "search"
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 24298,
+      "stars": 24324,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.302,
@@ -78,7 +78,7 @@
         "ai",
         "search"
       ],
-      "stars": 1033,
+      "stars": 1042,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -97,7 +97,7 @@
         "ai",
         "database"
       ],
-      "stars": 2694,
+      "stars": 2696,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -108,7 +108,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 49,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -116,10 +116,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2753,
+      "stars": 2754,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.233,
+      "score": 0.229,
       "shared_capabilities": [
         "database"
       ]
