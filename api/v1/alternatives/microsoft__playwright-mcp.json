@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1607,
+      "stars": 1609,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.503,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5519,
+      "stars": 5522,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.354,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 55532,
+      "stars": 55605,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 24324,
+      "stars": 24353,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1042,
+      "stars": 1049,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -130,7 +130,7 @@
         "ai",
         "database"
       ],
-      "stars": 2696,
+      "stars": 2697,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -187,7 +187,7 @@
         "ai",
         "search"
       ],
-      "stars": 15257,
+      "stars": 15266,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,
