@@ -18,7 +18,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 261,
+      "stars": 263,
       "language": "JavaScript",
       "similarity": 0.667,
       "score": 0.365,
@@ -77,10 +77,30 @@
         "ai",
         "search"
       ],
-      "stars": 15266,
+      "stars": 15289,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 72,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1402,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.212,
       "shared_capabilities": [
         "database"
       ]
@@ -105,26 +125,6 @@
       ]
     },
     {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 70,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1399,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.209,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 74,
@@ -134,7 +134,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 29967,
+      "stars": 29990,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -163,7 +163,7 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
+      "composite": 42,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -173,7 +173,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.5,
-      "score": 0.126,
+      "score": 0.13,
       "shared_capabilities": [
         "devtools"
       ]
