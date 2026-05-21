@@ -1,6 +1,6 @@
 {
   "repo": "cloudflare/mcp-server-cloudflare",
-  "stars": 3757,
+  "stars": 3762,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": null,
@@ -40,7 +40,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 19d ago"
+          "note": "pushed 20d ago"
         },
         "has_releases": {
           "pass": true,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 19d ago"
+          "note": "latest release 20d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -64,7 +64,7 @@
         },
         "recent_publish": {
           "pass": false,
-          "note": "last published 431d ago"
+          "note": "last published 432d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -146,7 +146,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "3043 weekly downloads"
+          "note": "3124 weekly downloads"
         }
       }
     },
@@ -161,11 +161,11 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "11 unique committers in 90d"
+          "note": "10 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 21 commits, 7 merged PRs in 90d"
+          "note": "active: 19 commits, 7 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -185,5 +185,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-20T08:02:08+00:00"
+  "scored_at": "2026-05-21T08:04:50+00:00"
 }

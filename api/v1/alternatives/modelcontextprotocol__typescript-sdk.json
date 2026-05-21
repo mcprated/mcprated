@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 55688,
+      "stars": 55769,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -70,7 +70,7 @@
         "web",
         "ai"
       ],
-      "stars": 32748,
+      "stars": 32796,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -81,7 +81,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -89,10 +89,10 @@
         "ai",
         "search"
       ],
-      "stars": 24407,
+      "stars": 24446,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.179,
+      "score": 0.181,
       "shared_capabilities": [
         "ai"
       ]
@@ -108,7 +108,7 @@
         "ai",
         "search"
       ],
-      "stars": 1055,
+      "stars": 1059,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -127,7 +127,7 @@
         "ai",
         "database"
       ],
-      "stars": 2697,
+      "stars": 2696,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -166,7 +166,7 @@
         "ai",
         "search"
       ],
-      "stars": 15289,
+      "stars": 15294,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -177,7 +177,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -186,10 +186,10 @@
         "ai",
         "database"
       ],
-      "stars": 1402,
+      "stars": 1404,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.113,
+      "score": 0.115,
       "shared_capabilities": [
         "ai"
       ]
