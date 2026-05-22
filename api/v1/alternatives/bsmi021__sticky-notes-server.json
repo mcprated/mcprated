@@ -7,6 +7,27 @@
   ],
   "alternatives": [
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1404,
+      "language": "Python",
+      "similarity": 0.667,
+      "score": 0.585,
+      "shared_capabilities": [
+        "database",
+        "search"
+      ]
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -18,29 +39,8 @@
         "ai",
         "search"
       ],
-      "stars": 15294,
+      "stars": 15301,
       "language": "Go",
-      "similarity": 0.667,
-      "score": 0.573,
-      "shared_capabilities": [
-        "database",
-        "search"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1404,
-      "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
       "shared_capabilities": [
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 24446,
+      "stars": 24486,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.302,
@@ -78,7 +78,7 @@
         "ai",
         "search"
       ],
-      "stars": 1059,
+      "stars": 1062,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -97,7 +97,7 @@
         "ai",
         "database"
       ],
-      "stars": 2696,
+      "stars": 2698,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -116,7 +116,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2769,
+      "stars": 2777,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.229,

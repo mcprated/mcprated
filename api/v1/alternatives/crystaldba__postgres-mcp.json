@@ -38,7 +38,7 @@
         "ai",
         "database"
       ],
-      "stars": 2696,
+      "stars": 2698,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -66,6 +66,26 @@
       ]
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1404,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.219,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -77,28 +97,8 @@
         "ai",
         "search"
       ],
-      "stars": 15294,
+      "stars": 15301,
       "language": "Go",
-      "similarity": 0.25,
-      "score": 0.215,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1404,
-      "language": "Python",
       "similarity": 0.25,
       "score": 0.215,
       "shared_capabilities": [
@@ -134,7 +134,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 30032,
+      "stars": 30064,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -163,7 +163,7 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
+      "composite": 40,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -173,7 +173,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.5,
-      "score": 0.13,
+      "score": 0.126,
       "shared_capabilities": [
         "devtools"
       ]
