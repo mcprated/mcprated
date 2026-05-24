@@ -1,6 +1,6 @@
 {
   "repo": "modelcontextprotocol/servers",
-  "stars": 86076,
+  "stars": 86149,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers",
@@ -209,7 +209,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 0d ago"
+          "note": "pushed 2d ago"
         },
         "has_releases": {
           "pass": true,
@@ -217,7 +217,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 114d ago"
+          "note": "latest release 116d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -349,5 +349,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-22T08:00:22+00:00"
+  "scored_at": "2026-05-24T07:33:36+00:00"
 }

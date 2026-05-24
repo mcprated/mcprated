@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 660,
+      "stars": 661,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.327,
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 32855,
+      "stars": 32939,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -71,7 +71,7 @@
         "ai",
         "search"
       ],
-      "stars": 24486,
+      "stars": 24548,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.181,
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1062,
+      "stars": 1067,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -109,7 +109,7 @@
         "ai",
         "database"
       ],
-      "stars": 2698,
+      "stars": 2702,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -120,7 +120,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -128,30 +128,10 @@
         "database",
         "ai"
       ],
-      "stars": 403,
+      "stars": 404,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.133,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 77,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1404,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.117,
+      "score": 0.13,
       "shared_capabilities": [
         "ai"
       ]
@@ -168,8 +148,28 @@
         "ai",
         "search"
       ],
-      "stars": 15301,
+      "stars": 15325,
       "language": "Go",
+      "similarity": 0.333,
+      "score": 0.115,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 74,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1406,
+      "language": "Python",
       "similarity": 0.333,
       "score": 0.115,
       "shared_capabilities": [
@@ -188,7 +188,7 @@
         "comms",
         "web"
       ],
-      "stars": 1618,
+      "stars": 1619,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.101,

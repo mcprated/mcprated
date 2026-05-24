@@ -1,10 +1,10 @@
 {
   "repo": "awslabs/mcp",
-  "stars": 9107,
+  "stars": 9116,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "Open source MCP Servers for AWS",
-  "pushed_at": "2026-05-22T07:29:50Z",
+  "pushed_at": "2026-05-23T06:06:27Z",
   "kind": "server",
   "subkind": "agent-product",
   "kind_confidence": 1.0,
@@ -40,7 +40,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 0d ago"
+          "note": "pushed 1d ago"
         },
         "has_releases": {
           "pass": true,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 1d ago"
+          "note": "latest release 3d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -161,7 +161,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "17 unique committers in 90d"
+          "note": "15 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -180,5 +180,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-22T08:00:22+00:00"
+  "scored_at": "2026-05-24T07:33:36+00:00"
 }
