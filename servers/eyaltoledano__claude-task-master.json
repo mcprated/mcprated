@@ -1,6 +1,6 @@
 {
   "repo": "eyaltoledano/claude-task-master",
-  "stars": 27231,
+  "stars": 27242,
   "language": "JavaScript",
   "license": "NOASSERTION",
   "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
@@ -38,7 +38,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 25d ago"
+          "note": "pushed 26d ago"
         },
         "has_releases": {
           "pass": true,
@@ -46,7 +46,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 53d ago"
+          "note": "latest release 54d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -62,7 +62,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 53d ago"
+          "note": "last published 54d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -144,7 +144,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "15902 weekly downloads"
+          "note": "15329 weekly downloads"
         }
       }
     },
@@ -163,11 +163,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 4 commits, 10 merged PRs in 90d"
+          "note": "active: 4 commits, 8 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "10 merged PR(s) in 90d"
+          "note": "8 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -178,5 +178,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-24T07:33:36+00:00"
+  "scored_at": "2026-05-25T08:31:55+00:00"
 }
