@@ -1,10 +1,10 @@
 {
   "repo": "upstash/context7",
-  "stars": 56032,
+  "stars": 56106,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-  "pushed_at": "2026-05-22T16:20:09Z",
+  "pushed_at": "2026-05-25T12:32:51Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -42,7 +42,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 2d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -50,11 +50,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 2d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": false,
-          "note": "latest tag: ctx7@0.4.4"
+          "note": "latest tag: @upstash/context7-pi@0.1.0"
         },
         "release_communication": {
           "pass": true,
@@ -81,7 +81,7 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 9173 chars (need ≥500)"
+          "note": "README 9651 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
@@ -163,15 +163,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "7 unique committers in 90d"
+          "note": "8 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 15 merged PRs in 90d"
+          "note": "active: 30 commits, 13 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "15 merged PR(s) in 90d"
+          "note": "13 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-25T08:31:55+00:00"
+  "scored_at": "2026-05-26T08:06:42+00:00"
 }
