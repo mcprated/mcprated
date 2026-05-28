@@ -2,7 +2,7 @@
   "capability": "search",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-05-27T08:18:34+00:00",
+  "generated_at": "2026-05-28T08:15:26+00:00",
   "count": 5,
   "servers": [
     {
@@ -16,7 +16,22 @@
         "ai",
         "search"
       ],
-      "stars": 24664,
+      "stars": 24705,
+      "language": "Python"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1414,
       "language": "Python"
     },
     {
@@ -31,23 +46,8 @@
         "ai",
         "search"
       ],
-      "stars": 15359,
+      "stars": 15374,
       "language": "Go"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1411,
-      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1088,
+      "stars": 1092,
       "language": "TypeScript"
     },
     {

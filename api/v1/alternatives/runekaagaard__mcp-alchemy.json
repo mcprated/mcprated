@@ -17,10 +17,31 @@
         "ai",
         "database"
       ],
-      "stars": 2708,
+      "stars": 2709,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.849,
+      "shared_capabilities": [
+        "ai",
+        "database"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1414,
+      "language": "Python",
+      "similarity": 0.667,
+      "score": 0.585,
       "shared_capabilities": [
         "ai",
         "database"
@@ -38,29 +59,8 @@
         "ai",
         "search"
       ],
-      "stars": 15359,
+      "stars": 15374,
       "language": "Go",
-      "similarity": 0.667,
-      "score": 0.573,
-      "shared_capabilities": [
-        "ai",
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1411,
-      "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
       "shared_capabilities": [
@@ -79,7 +79,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2806,
+      "stars": 2812,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.229,
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56176,
+      "stars": 56268,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -127,7 +127,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -137,7 +137,7 @@
       "stars": 660,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 33078,
+      "stars": 33131,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -192,7 +192,7 @@
         "ai",
         "search"
       ],
-      "stars": 24664,
+      "stars": 24705,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,

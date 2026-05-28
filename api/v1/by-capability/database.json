@@ -2,9 +2,24 @@
   "capability": "database",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-05-27T08:18:34+00:00",
+  "generated_at": "2026-05-28T08:15:26+00:00",
   "count": 7,
   "servers": [
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1414,
+      "language": "Python"
+    },
     {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
@@ -17,23 +32,8 @@
         "ai",
         "search"
       ],
-      "stars": 15359,
+      "stars": 15374,
       "language": "Go"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1411,
-      "language": "Python"
     },
     {
       "repo": "supabase-community/supabase-mcp",
@@ -46,7 +46,7 @@
         "ai",
         "database"
       ],
-      "stars": 2708,
+      "stars": 2709,
       "language": "TypeScript"
     },
     {
@@ -60,13 +60,13 @@
         "database",
         "devtools"
       ],
-      "stars": 2806,
+      "stars": 2812,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
