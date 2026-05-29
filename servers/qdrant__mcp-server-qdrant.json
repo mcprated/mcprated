@@ -1,6 +1,6 @@
 {
   "repo": "qdrant/mcp-server-qdrant",
-  "stars": 1414,
+  "stars": 1417,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
@@ -27,8 +27,8 @@
     "extraction_confidence": 0.4
   },
   "sub_servers": [],
-  "composite": 77,
-  "composite_raw": 77,
+  "composite": 74,
+  "composite_raw": 74,
   "axes": {
     "reliability": {
       "score": 100,
@@ -45,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 7d ago"
+          "note": "pushed 8d ago"
         },
         "has_releases": {
           "pass": true,
@@ -53,7 +53,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 168d ago"
+          "note": "latest release 169d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -69,7 +69,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 168d ago"
+          "note": "last published 169d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -105,8 +105,8 @@
       }
     },
     "trust": {
-      "score": 27,
-      "passing": 3,
+      "score": 18,
+      "passing": 2,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -150,8 +150,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": true,
-          "note": "401547 weekly downloads"
+          "pass": false,
+          "note": "registry returned no download stats"
         }
       }
     },
@@ -185,5 +185,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-28T08:15:26+00:00"
+  "scored_at": "2026-05-29T08:08:37+00:00"
 }
