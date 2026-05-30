@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-05-29T08:08:37+00:00",
+  "generated_at": "2026-05-30T07:00:04+00:00",
   "count": 11,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 33188,
+      "stars": 33220,
       "language": "TypeScript"
     },
     {
@@ -30,7 +30,22 @@
         "ai",
         "search"
       ],
-      "stars": 24733,
+      "stars": 24750,
+      "language": "Python"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1418,
       "language": "Python"
     },
     {
@@ -45,23 +60,8 @@
         "ai",
         "search"
       ],
-      "stars": 15383,
+      "stars": 15392,
       "language": "Go"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1417,
-      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -74,7 +74,7 @@
         "ai",
         "search"
       ],
-      "stars": 1100,
+      "stars": 1105,
       "language": "TypeScript"
     },
     {
@@ -88,7 +88,7 @@
         "ai",
         "database"
       ],
-      "stars": 2709,
+      "stars": 2711,
       "language": "TypeScript"
     },
     {
@@ -101,13 +101,13 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56340,
+      "stars": 56397,
       "language": "TypeScript"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -129,7 +129,7 @@
         "comms",
         "web"
       ],
-      "stars": 1634,
+      "stars": 1635,
       "language": "Go"
     },
     {
@@ -143,7 +143,7 @@
         "database",
         "ai"
       ],
-      "stars": 404,
+      "stars": 405,
       "language": "Python"
     },
     {

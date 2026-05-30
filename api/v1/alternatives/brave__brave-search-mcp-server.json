@@ -17,10 +17,31 @@
         "ai",
         "search"
       ],
-      "stars": 24733,
+      "stars": 24750,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.894,
+      "shared_capabilities": [
+        "ai",
+        "search"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1418,
+      "language": "Python",
+      "similarity": 0.667,
+      "score": 0.585,
       "shared_capabilities": [
         "ai",
         "search"
@@ -38,29 +59,8 @@
         "ai",
         "search"
       ],
-      "stars": 15383,
+      "stars": 15392,
       "language": "Go",
-      "similarity": 0.667,
-      "score": 0.573,
-      "shared_capabilities": [
-        "ai",
-        "search"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1417,
-      "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
       "shared_capabilities": [
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56340,
+      "stars": 56397,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -108,7 +108,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -118,7 +118,7 @@
       "stars": 660,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.161,
+      "score": 0.164,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 33188,
+      "stars": 33220,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -153,7 +153,7 @@
         "ai",
         "database"
       ],
-      "stars": 2709,
+      "stars": 2711,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -190,7 +190,7 @@
         "database",
         "ai"
       ],
-      "stars": 404,
+      "stars": 405,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.086,

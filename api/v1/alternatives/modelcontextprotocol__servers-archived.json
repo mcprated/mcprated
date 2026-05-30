@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2815,
+      "stars": 2818,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.457,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9148,
+      "stars": 9154,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3794,
+      "stars": 3799,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.273,
@@ -74,10 +74,30 @@
         "ai",
         "database"
       ],
-      "stars": 2709,
+      "stars": 2711,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.212,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1418,
+      "language": "Python",
+      "similarity": 0.2,
+      "score": 0.175,
       "shared_capabilities": [
         "database"
       ]
@@ -94,28 +114,8 @@
         "ai",
         "search"
       ],
-      "stars": 15383,
+      "stars": 15392,
       "language": "Go",
-      "similarity": 0.2,
-      "score": 0.172,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1417,
-      "language": "Python",
       "similarity": 0.2,
       "score": 0.172,
       "shared_capabilities": [
@@ -133,7 +133,7 @@
         "database",
         "ai"
       ],
-      "stars": 404,
+      "stars": 405,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.162,
@@ -170,7 +170,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 30254,
+      "stars": 30280,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

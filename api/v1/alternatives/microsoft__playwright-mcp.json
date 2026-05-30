@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1634,
+      "stars": 1635,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.503,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5535,
+      "stars": 5537,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.354,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56340,
+      "stars": 56397,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 660,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.161,
+      "score": 0.164,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 24733,
+      "stars": 24750,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1100,
+      "stars": 1105,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -130,7 +130,7 @@
         "ai",
         "database"
       ],
-      "stars": 2709,
+      "stars": 2711,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -157,6 +157,26 @@
       ]
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1418,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.088,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
       "composite": 42,
@@ -167,29 +187,9 @@
         "database",
         "ai"
       ],
-      "stars": 404,
+      "stars": 405,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.086,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "googleapis/mcp-toolbox",
-      "slug": "googleapis__mcp-toolbox",
-      "composite": 74,
-      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "database",
-        "ai",
-        "search"
-      ],
-      "stars": 15383,
-      "language": "Go",
-      "similarity": 0.25,
       "score": 0.086,
       "shared_capabilities": [
         "ai"

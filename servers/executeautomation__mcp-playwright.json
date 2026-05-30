@@ -1,6 +1,6 @@
 {
   "repo": "executeautomation/mcp-playwright",
-  "stars": 5535,
+  "stars": 5537,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
@@ -53,7 +53,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 167d ago"
+          "note": "pushed 168d ago"
         },
         "has_releases": {
           "pass": false,
@@ -159,7 +159,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "44399 weekly downloads"
+          "note": "44230 weekly downloads"
         }
       }
     },
@@ -193,5 +193,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-29T08:08:37+00:00"
+  "scored_at": "2026-05-30T07:00:04+00:00"
 }
