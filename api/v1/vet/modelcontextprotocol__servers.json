@@ -2,11 +2,11 @@
   "repo": "modelcontextprotocol/servers",
   "slug": "modelcontextprotocol__servers",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-05-30T07:00:04+00:00",
-  "composite": 77,
+  "scored_at": "2026-05-31T07:53:13+00:00",
+  "composite": 72,
   "axes": {
     "reliability": 80,
-    "documentation": 100,
+    "documentation": 80,
     "trust": 27,
     "community": 100
   },
@@ -14,8 +14,8 @@
   "subkind": "agent-product",
   "capabilities": [],
   "license": "NOASSERTION",
-  "stars": 86464,
-  "pushed_at": "2026-05-30T04:27:03Z",
+  "stars": 86498,
+  "pushed_at": "2026-05-30T18:35:21Z",
   "language": "TypeScript",
   "hard_flags": [],
   "trust_signals": {
@@ -64,7 +64,7 @@
       "note": "registry returned no download stats"
     }
   },
-  "quality_tier": "solid",
+  "quality_tier": "acceptable",
   "flag_status": "clean",
   "verdict": "caution",
   "url": "https://github.com/modelcontextprotocol/servers",

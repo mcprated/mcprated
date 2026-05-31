@@ -18,7 +18,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 266,
+      "stars": 269,
       "language": "JavaScript",
       "similarity": 0.667,
       "score": 0.365,
@@ -47,6 +47,25 @@
       ]
     },
     {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 44,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 405,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.221,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
       "composite": 77,
@@ -67,25 +86,6 @@
       ]
     },
     {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 405,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.216,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -97,7 +97,7 @@
         "ai",
         "search"
       ],
-      "stars": 15392,
+      "stars": 15396,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -134,7 +134,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 30280,
+      "stars": 30299,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,

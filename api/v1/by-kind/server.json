@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-05-30T07:00:04+00:00",
+  "generated_at": "2026-05-31T07:53:13+00:00",
   "count": 32,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9154,
+      "stars": 9163,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 33220,
+      "stars": 33246,
       "language": "TypeScript"
     },
     {
@@ -39,7 +39,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 14916,
+      "stars": 14925,
       "language": "TypeScript"
     },
     {
@@ -53,7 +53,7 @@
         "ai",
         "search"
       ],
-      "stars": 24750,
+      "stars": 24773,
       "language": "Python"
     },
     {
@@ -64,52 +64,8 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27292,
+      "stars": 27295,
       "language": "JavaScript"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 77,
-      "description": "Model Context Protocol Servers",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [],
-      "stars": 86464,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers__filesystem",
-      "composite": 77,
-      "description": "Model Context Protocol Servers / sub-server: filesystem",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 86464,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers__memory",
-      "composite": 77,
-      "description": "Model Context Protocol Servers / sub-server: memory",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 86464,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers__sequentialthinking",
-      "composite": 77,
-      "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 86464,
-      "language": "TypeScript"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
@@ -127,19 +83,6 @@
       "language": "Python"
     },
     {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 77,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "stars": 5301,
-      "language": "Python"
-    },
-    {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 74,
@@ -149,7 +92,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 30280,
+      "stars": 30299,
       "language": "Go"
     },
     {
@@ -164,7 +107,7 @@
         "ai",
         "search"
       ],
-      "stars": 15392,
+      "stars": 15396,
       "language": "Go"
     },
     {
@@ -178,8 +121,65 @@
         "ai",
         "search"
       ],
-      "stars": 1105,
+      "stars": 1110,
       "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 72,
+      "description": "Model Context Protocol Servers",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "stars": 86498,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers__filesystem",
+      "composite": 72,
+      "description": "Model Context Protocol Servers / sub-server: filesystem",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 86498,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers__memory",
+      "composite": 72,
+      "description": "Model Context Protocol Servers / sub-server: memory",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 86498,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers__sequentialthinking",
+      "composite": 72,
+      "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 86498,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 72,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "stars": 5302,
+      "language": "Python"
     },
     {
       "repo": "supabase-community/supabase-mcp",
@@ -205,7 +205,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56397,
+      "stars": 56446,
       "language": "TypeScript"
     },
     {
@@ -218,7 +218,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3799,
+      "stars": 3803,
       "language": "TypeScript"
     },
     {
@@ -229,13 +229,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4497,
+      "stars": 4502,
       "language": "TypeScript"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -294,13 +294,13 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5537,
+      "stars": 5539,
       "language": "TypeScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -308,13 +308,13 @@
         "database",
         "devtools"
       ],
-      "stars": 2818,
+      "stars": 2826,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -375,13 +375,13 @@
         "devtools",
         "cloud"
       ],
-      "stars": 266,
+      "stars": 269,
       "language": "JavaScript"
     },
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
