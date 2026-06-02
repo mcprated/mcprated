@@ -19,7 +19,7 @@
         "ai",
         "database"
       ],
-      "stars": 1419,
+      "stars": 1421,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.877,
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 24805,
+      "stars": 24839,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.604,
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1122,
+      "stars": 1131,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -132,7 +132,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -140,10 +140,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2831,
+      "stars": 2832,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.166,
+      "score": 0.171,
       "shared_capabilities": [
         "database"
       ]
@@ -158,7 +158,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56520,
+      "stars": 56562,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -178,7 +178,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 270,
+      "stars": 271,
       "language": "JavaScript",
       "similarity": 0.2,
       "score": 0.11,
