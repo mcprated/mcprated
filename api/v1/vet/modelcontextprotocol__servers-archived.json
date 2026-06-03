@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/servers-archived",
   "slug": "modelcontextprotocol__servers-archived",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-02T08:46:45+00:00",
+  "scored_at": "2026-06-03T09:05:14+00:00",
   "composite": 30,
   "axes": {
     "reliability": 30,
@@ -18,7 +18,7 @@
     "cloud"
   ],
   "license": "MIT",
-  "stars": 271,
+  "stars": 274,
   "pushed_at": "2025-05-28T17:57:12Z",
   "language": "JavaScript",
   "hard_flags": [
