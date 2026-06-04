@@ -1,8 +1,8 @@
 {
-  "repo": "supabase-community/supabase-mcp",
-  "slug": "supabase-community__supabase-mcp",
+  "repo": "supabase/mcp",
+  "slug": "supabase__mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-03T09:05:14+00:00",
+  "scored_at": "2026-06-04T08:28:52+00:00",
   "composite": 72,
   "axes": {
     "reliability": 60,
@@ -10,14 +10,14 @@
     "trust": 27,
     "community": 100
   },
-  "kind": "server",
-  "subkind": "integration",
+  "kind": "framework",
+  "subkind": "",
   "capabilities": [
     "ai",
     "database"
   ],
   "license": "Apache-2.0",
-  "stars": 2710,
+  "stars": 2713,
   "pushed_at": "2026-06-02T02:07:30Z",
   "language": "TypeScript",
   "hard_flags": [],
@@ -70,6 +70,6 @@
   "quality_tier": "acceptable",
   "flag_status": "clean",
   "verdict": "caution",
-  "url": "https://github.com/supabase-community/supabase-mcp",
-  "detail_url": "/servers/supabase-community__supabase-mcp.json"
+  "url": "https://github.com/supabase/mcp",
+  "detail_url": "/servers/supabase__mcp.json"
 }

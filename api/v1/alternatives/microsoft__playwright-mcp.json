@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1640,
+      "stars": 1642,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.503,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56633,
+      "stars": 56700,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -73,7 +73,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 660,
+      "stars": 661,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.164,
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 24880,
+      "stars": 24910,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,
@@ -111,26 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1133,
-      "language": "TypeScript",
-      "similarity": 0.333,
-      "score": 0.113,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 72,
-      "description": "Connect Supabase to your AI assistants",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "database"
-      ],
-      "stars": 2710,
+      "stars": 1140,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -141,7 +122,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -151,7 +132,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.106,
+      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -176,6 +157,26 @@
       ]
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1422,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.088,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -187,7 +188,7 @@
         "ai",
         "search"
       ],
-      "stars": 15458,
+      "stars": 15474,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,

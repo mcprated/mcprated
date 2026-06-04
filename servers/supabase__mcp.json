@@ -1,129 +1,124 @@
 {
-  "repo": "runekaagaard/mcp-alchemy",
-  "stars": 406,
-  "language": "Python",
-  "license": "MPL-2.0",
-  "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-  "pushed_at": "2025-08-15T07:18:27Z",
-  "kind": "server",
-  "subkind": "integration",
-  "kind_confidence": 0.95,
-  "kind_reason": "server-run pattern in source (default)",
+  "repo": "supabase/mcp",
+  "stars": 2713,
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "description": "Connect Supabase to your AI assistants",
+  "pushed_at": "2026-06-02T02:07:30Z",
+  "kind": "framework",
+  "subkind": "",
+  "kind_confidence": 0.85,
+  "kind_reason": "framework name: mcp",
   "capabilities": [
-    "database",
-    "ai"
+    "ai",
+    "database"
   ],
   "capabilities_v2": [
-    "database.relational",
-    "ai.llm"
+    "ai.llm",
+    "database.relational"
   ],
   "distribution": "repo",
   "taxonomy_version": "1.0",
   "tools": {
-    "tool_count": 4,
-    "tool_names_preview": [
-      "all_table_names",
-      "filter_table_names",
-      "schema_definitions",
-      "execute_query"
-    ],
-    "extraction_method": "ast_python",
-    "extraction_confidence": 0.9
+    "tool_count": 0,
+    "tool_names_preview": [],
+    "extraction_method": "none",
+    "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 44,
-  "composite_raw": 44,
+  "composite": 72,
+  "composite_raw": 72,
   "axes": {
     "reliability": {
-      "score": 40,
-      "passing": 4,
+      "score": 60,
+      "passing": 6,
       "total": 10,
       "signals": {
         "has_ci": {
-          "pass": false,
-          "note": "no .github/workflows/"
+          "pass": true,
+          "note": "GH Actions workflows present"
         },
         "no_floating_sdk": {
           "pass": true,
-          "note": "1 MCP dep(s), all pinned"
+          "note": "no MCP SDK dep tracked here (n/a)"
         },
         "recently_maintained": {
-          "pass": false,
-          "note": "pushed 293d ago"
+          "pass": true,
+          "note": "pushed 2d ago"
         },
         "has_releases": {
-          "pass": false,
-          "note": "no releases, no tags"
+          "pass": true,
+          "note": "5 GH release(s)"
         },
         "tagged_release_recent": {
-          "pass": false,
-          "note": "no GH release"
+          "pass": true,
+          "note": "latest release 33d ago"
         },
         "version_follows_semver": {
           "pass": false,
-          "note": "no releases"
+          "note": "latest tag: mcp-server-supabase-v0.8.1"
         },
         "release_communication": {
-          "pass": false,
-          "note": "no CHANGELOG, no release-notes substitute"
+          "pass": true,
+          "note": "5 releases with notes"
         },
         "published_to_registry": {
-          "pass": true,
-          "note": "published as mcp-alchemy on PyPI"
+          "pass": false,
+          "note": "no registry data (package not declared or not detected)"
         },
         "recent_publish": {
-          "pass": true,
-          "note": "last published 293d ago"
+          "pass": false,
+          "note": "no registry data"
         },
         "not_deprecated": {
-          "pass": true,
-          "note": "not deprecated on registry"
+          "pass": false,
+          "note": "no registry data"
         }
       }
     },
     "documentation": {
-      "score": 80,
-      "passing": 4,
+      "score": 100,
+      "passing": 5,
       "total": 5,
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 9387 chars (need ≥500)"
+          "note": "README 16221 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
-          "note": "needles=['claude_desktop_config', 'mcpservers', '\"mcpservers\"', 'pip install']…"
+          "note": "needles=['mcpservers', '\"mcpservers\"']"
         },
         "tools_documented": {
           "pass": true,
-          "note": "sections=['## API', '### Tools']"
+          "note": "sections=['### Feature groups', '## Tools']"
         },
         "examples": {
           "pass": true,
-          "note": "15 code blocks"
+          "note": "6 code blocks"
         },
         "external_docs": {
-          "pass": false,
-          "note": "no homepage, no docs link"
+          "pass": true,
+          "note": "homepage: https://supabase.com/mcp"
         }
       }
     },
     "trust": {
-      "score": 18,
-      "passing": 2,
+      "score": 27,
+      "passing": 3,
       "total": 11,
       "signals": {
         "license_commercial": {
           "pass": true,
-          "note": "SPDX=MPL-2.0"
+          "note": "SPDX=Apache-2.0"
         },
         "has_security_policy": {
-          "pass": false,
-          "note": "no SECURITY.md, no security section"
+          "pass": true,
+          "note": "security section in README"
         },
         "org_owned": {
-          "pass": false,
-          "note": "owner type: User (not Organization)"
+          "pass": true,
+          "note": "owner is an Organization"
         },
         "has_codeowners": {
           "pass": false,
@@ -154,31 +149,31 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": true,
-          "note": "1444 weekly downloads"
+          "pass": false,
+          "note": "no registry data"
         }
       }
     },
     "community": {
-      "score": 40,
-      "passing": 2,
+      "score": 100,
+      "passing": 5,
       "total": 5,
       "signals": {
         "has_contributing": {
-          "pass": false,
-          "note": "no CONTRIBUTING file"
+          "pass": true,
+          "note": "CONTRIBUTING file present"
         },
         "multiple_contributors": {
-          "pass": false,
-          "note": "0 unique committers in 90d"
+          "pass": true,
+          "note": "8 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "no recent commits, 0 open issues"
+          "note": "active: 27 commits, 11 merged PRs in 90d"
         },
         "merged_prs_recent": {
-          "pass": false,
-          "note": "0 merged PR(s) in 90d"
+          "pass": true,
+          "note": "11 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,

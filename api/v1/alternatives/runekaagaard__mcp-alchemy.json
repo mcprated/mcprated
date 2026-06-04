@@ -7,20 +7,21 @@
   ],
   "alternatives": [
     {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 72,
-      "description": "Connect Supabase to your AI assistants",
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
+        "search",
         "ai",
         "database"
       ],
-      "stars": 2710,
-      "language": "TypeScript",
-      "similarity": 1.0,
-      "score": 0.849,
+      "stars": 1422,
+      "language": "Python",
+      "similarity": 0.667,
+      "score": 0.585,
       "shared_capabilities": [
         "ai",
         "database"
@@ -38,29 +39,8 @@
         "ai",
         "search"
       ],
-      "stars": 15458,
+      "stars": 15474,
       "language": "Go",
-      "similarity": 0.667,
-      "score": 0.573,
-      "shared_capabilities": [
-        "ai",
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1423,
-      "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
       "shared_capabilities": [
@@ -71,7 +51,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -79,10 +59,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2834,
+      "stars": 2843,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.221,
+      "score": 0.229,
       "shared_capabilities": [
         "database"
       ]
@@ -116,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56633,
+      "stars": 56700,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -134,7 +114,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 660,
+      "stars": 661,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.164,
@@ -173,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 33393,
+      "stars": 33466,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -192,10 +172,29 @@
         "ai",
         "search"
       ],
-      "stars": 24880,
+      "stars": 24910,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 72,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 1140,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.113,
       "shared_capabilities": [
         "ai"
       ]

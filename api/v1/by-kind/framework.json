@@ -1,18 +1,18 @@
 {
   "kind": "framework",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-06-03T09:05:14+00:00",
-  "count": 2,
+  "generated_at": "2026-06-04T08:28:52+00:00",
+  "count": 3,
   "servers": [
     {
       "repo": "modelcontextprotocol/python-sdk",
       "slug": "modelcontextprotocol__python-sdk",
-      "composite": 84,
+      "composite": 82,
       "description": "The official Python SDK for Model Context Protocol servers and clients",
       "kind": "framework",
       "subkind": "",
       "capabilities": [],
-      "stars": 23212,
+      "stars": 23230,
       "language": "Python"
     },
     {
@@ -23,7 +23,21 @@
       "kind": "framework",
       "subkind": "",
       "capabilities": [],
-      "stars": 12593,
+      "stars": 12602,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "supabase/mcp",
+      "slug": "supabase__mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "framework",
+      "subkind": "",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 2713,
       "language": "TypeScript"
     }
   ]

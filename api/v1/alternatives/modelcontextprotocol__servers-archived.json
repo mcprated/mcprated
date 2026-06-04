@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2834,
+      "stars": 2843,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.442,
+      "score": 0.457,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9189,
+      "stars": 9195,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3814,
+      "stars": 3820,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.273,
@@ -64,20 +64,21 @@
       ]
     },
     {
-      "repo": "supabase-community/supabase-mcp",
-      "slug": "supabase-community__supabase-mcp",
-      "composite": 72,
-      "description": "Connect Supabase to your AI assistants",
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 77,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
+        "search",
         "ai",
         "database"
       ],
-      "stars": 2710,
-      "language": "TypeScript",
-      "similarity": 0.25,
-      "score": 0.212,
+      "stars": 1422,
+      "language": "Python",
+      "similarity": 0.2,
+      "score": 0.175,
       "shared_capabilities": [
         "database"
       ]
@@ -94,28 +95,8 @@
         "ai",
         "search"
       ],
-      "stars": 15458,
+      "stars": 15474,
       "language": "Go",
-      "similarity": 0.2,
-      "score": 0.172,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1423,
-      "language": "Python",
       "similarity": 0.2,
       "score": 0.172,
       "shared_capabilities": [
@@ -170,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 30386,
+      "stars": 30414,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -192,6 +173,24 @@
       "language": "Python",
       "similarity": 0.333,
       "score": 0.105,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 40,
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.084,
       "shared_capabilities": [
         "devtools"
       ]
