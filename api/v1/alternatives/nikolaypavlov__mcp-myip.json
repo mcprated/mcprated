@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 56700,
+      "stars": 56776,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -26,17 +26,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 661,
+      "stars": 662,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.327,
+      "score": 0.322,
       "shared_capabilities": [
         "ai"
       ]
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 33466,
+      "stars": 33515,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -63,7 +63,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -71,10 +71,10 @@
         "ai",
         "search"
       ],
-      "stars": 24910,
+      "stars": 24952,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.179,
+      "score": 0.181,
       "shared_capabilities": [
         "ai"
       ]
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1140,
+      "stars": 1147,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -109,7 +109,7 @@
         "database",
         "ai"
       ],
-      "stars": 406,
+      "stars": 407,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.133,
@@ -129,7 +129,7 @@
         "ai",
         "database"
       ],
-      "stars": 1422,
+      "stars": 1424,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.117,
@@ -149,7 +149,7 @@
         "ai",
         "search"
       ],
-      "stars": 15474,
+      "stars": 15484,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -169,7 +169,7 @@
         "comms",
         "web"
       ],
-      "stars": 1642,
+      "stars": 1644,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.101,
