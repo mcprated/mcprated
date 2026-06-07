@@ -2,7 +2,7 @@
   "capability": "unknown",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-06-06T07:24:30+00:00",
+  "generated_at": "2026-06-07T08:02:00+00:00",
   "count": 10,
   "servers": [
     {
@@ -13,7 +13,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15005,
+      "stars": 15012,
       "language": "TypeScript"
     },
     {
@@ -24,7 +24,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27332,
+      "stars": 27342,
       "language": "JavaScript"
     },
     {
@@ -35,7 +35,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 86799,
+      "stars": 86849,
       "language": "TypeScript"
     },
     {
@@ -46,7 +46,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 86799,
+      "stars": 86849,
       "language": "TypeScript"
     },
     {
@@ -57,7 +57,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 86799,
+      "stars": 86849,
       "language": "TypeScript"
     },
     {
@@ -68,7 +68,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 86799,
+      "stars": 86849,
       "language": "TypeScript"
     },
     {
@@ -79,7 +79,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4534,
+      "stars": 4546,
       "language": "TypeScript"
     },
     {
@@ -90,7 +90,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 777,
+      "stars": 778,
       "language": "TypeScript"
     },
     {
