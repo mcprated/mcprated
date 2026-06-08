@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-06-07T08:02:00+00:00",
+  "generated_at": "2026-06-08T09:05:38+00:00",
   "total_tools": 191,
   "tools": [
     {
@@ -928,78 +928,6 @@
       "extraction_method": "regex_typescript"
     },
     {
-      "name": "fetch_html",
-      "description": "Fetch a website and return its unmodified contents as HTML",
-      "input_keys": [],
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 52,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "fetch_json",
-      "description": "Fetch a JSON file from a URL",
-      "input_keys": [],
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 52,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "fetch_markdown",
-      "description": "Fetch a website and return its contents converted to Markdown",
-      "input_keys": [],
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 52,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "fetch_readable",
-      "description": "Fetch a website and return its main content parsed by Mozilla Readability, converted to Markdown. Strips away navigation, ads, and boilerplate. Ideal for articles and blog posts.",
-      "input_keys": [],
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 52,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "fetch_txt",
-      "description": "Fetch a website, convert the content to plain text (no HTML)",
-      "input_keys": [],
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 52,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "fetch_youtube_transcript",
-      "description": "Fetch a YouTube video page and extract its captions/transcript",
-      "input_keys": [],
-      "repo": "zcaceres/fetch-mcp",
-      "slug": "zcaceres__fetch-mcp",
-      "composite": 52,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
       "name": "clear_codegen_session",
       "description": "Clear a code generation session without generating a test",
       "input_keys": [],
@@ -1483,7 +1411,7 @@
       ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1502,7 +1430,7 @@
       ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1520,7 +1448,7 @@
       ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1539,7 +1467,7 @@
       ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1547,6 +1475,78 @@
         "devtools"
       ],
       "extraction_method": "ast_python"
+    },
+    {
+      "name": "fetch_html",
+      "description": "Fetch a website and return its unmodified contents as HTML",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_json",
+      "description": "Fetch a JSON file from a URL",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_markdown",
+      "description": "Fetch a website and return its contents converted to Markdown",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_readable",
+      "description": "Fetch a website and return its main content parsed by Mozilla Readability, converted to Markdown. Strips away navigation, ads, and boilerplate. Ideal for articles and blog posts.",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_txt",
+      "description": "Fetch a website, convert the content to plain text (no HTML)",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "fetch_youtube_transcript",
+      "description": "Fetch a YouTube video page and extract its captions/transcript",
+      "input_keys": [],
+      "repo": "zcaceres/fetch-mcp",
+      "slug": "zcaceres__fetch-mcp",
+      "composite": 47,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "extraction_method": "regex_typescript"
     },
     {
       "name": "get_object_details",
@@ -1558,7 +1558,7 @@
       ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1576,7 +1576,7 @@
       ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1594,7 +1594,7 @@
       ],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1609,7 +1609,7 @@
       "input_keys": [],
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1624,7 +1624,7 @@
       "input_keys": [],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1642,7 +1642,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1659,7 +1659,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1676,7 +1676,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [

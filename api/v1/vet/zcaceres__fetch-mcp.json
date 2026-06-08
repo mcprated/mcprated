@@ -2,13 +2,13 @@
   "repo": "zcaceres/fetch-mcp",
   "slug": "zcaceres__fetch-mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-07T08:02:00+00:00",
-  "composite": 52,
+  "scored_at": "2026-06-08T09:05:38+00:00",
+  "composite": 47,
   "axes": {
     "reliability": 50,
     "documentation": 80,
     "trust": 18,
-    "community": 60
+    "community": 40
   },
   "kind": "server",
   "subkind": "integration",
@@ -64,9 +64,9 @@
       "note": "2678 weekly downloads"
     }
   },
-  "quality_tier": "acceptable",
+  "quality_tier": "poor",
   "flag_status": "clean",
-  "verdict": "caution",
+  "verdict": "low_quality",
   "url": "https://github.com/zcaceres/fetch-mcp",
   "detail_url": "/servers/zcaceres__fetch-mcp.json"
 }

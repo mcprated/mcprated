@@ -2,7 +2,7 @@
   "capability": "unknown",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-06-07T08:02:00+00:00",
+  "generated_at": "2026-06-08T09:05:38+00:00",
   "count": 10,
   "servers": [
     {
@@ -13,7 +13,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15012,
+      "stars": 15028,
       "language": "TypeScript"
     },
     {
@@ -24,7 +24,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27342,
+      "stars": 27349,
       "language": "JavaScript"
     },
     {
@@ -35,7 +35,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 86849,
+      "stars": 86888,
       "language": "TypeScript"
     },
     {
@@ -46,7 +46,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 86849,
+      "stars": 86888,
       "language": "TypeScript"
     },
     {
@@ -57,7 +57,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 86849,
+      "stars": 86888,
       "language": "TypeScript"
     },
     {
@@ -68,7 +68,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 86849,
+      "stars": 86888,
       "language": "TypeScript"
     },
     {
@@ -79,13 +79,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4546,
+      "stars": 4550,
       "language": "TypeScript"
     },
     {
       "repo": "zcaceres/fetch-mcp",
       "slug": "zcaceres__fetch-mcp",
-      "composite": 52,
+      "composite": 47,
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
