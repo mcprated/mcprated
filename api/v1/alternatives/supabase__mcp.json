@@ -17,7 +17,7 @@
         "database",
         "ai"
       ],
-      "stars": 408,
+      "stars": 409,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.648,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15526,
+      "stars": 15548,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1429,
+      "stars": 1431,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
@@ -71,7 +71,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -79,10 +79,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2871,
+      "stars": 2874,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.229,
+      "score": 0.221,
       "shared_capabilities": [
         "database"
       ]
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57034,
+      "stars": 57100,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -127,17 +127,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 662,
+      "stars": 661,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 33667,
+      "stars": 33714,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -184,7 +184,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -192,10 +192,10 @@
         "ai",
         "search"
       ],
-      "stars": 25142,
+      "stars": 25180,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
+      "score": 0.119,
       "shared_capabilities": [
         "ai"
       ]

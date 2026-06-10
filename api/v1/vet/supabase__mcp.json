@@ -2,7 +2,7 @@
   "repo": "supabase/mcp",
   "slug": "supabase__mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-09T08:02:53+00:00",
+  "scored_at": "2026-06-10T08:21:28+00:00",
   "composite": 72,
   "axes": {
     "reliability": 60,
@@ -17,8 +17,8 @@
     "database"
   ],
   "license": "Apache-2.0",
-  "stars": 2727,
-  "pushed_at": "2026-06-08T22:20:32Z",
+  "stars": 2729,
+  "pushed_at": "2026-06-10T03:09:28Z",
   "language": "TypeScript",
   "hard_flags": [],
   "trust_signals": {

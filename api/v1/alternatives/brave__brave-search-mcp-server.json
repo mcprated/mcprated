@@ -9,7 +9,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -17,10 +17,10 @@
         "ai",
         "search"
       ],
-      "stars": 25142,
+      "stars": 25180,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.906,
+      "score": 0.894,
       "shared_capabilities": [
         "ai",
         "search"
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15526,
+      "stars": 15548,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1429,
+      "stars": 1431,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57034,
+      "stars": 57100,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -108,17 +108,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 662,
+      "stars": 661,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 33667,
+      "stars": 33714,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -145,7 +145,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -155,7 +155,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.11,
+      "score": 0.106,
       "shared_capabilities": [
         "ai"
       ]
@@ -171,7 +171,7 @@
         "database",
         "ai"
       ],
-      "stars": 408,
+      "stars": 409,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.086,
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1653,
+      "stars": 1659,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.075,
