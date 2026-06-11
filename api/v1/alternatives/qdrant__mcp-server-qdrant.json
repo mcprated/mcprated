@@ -19,7 +19,7 @@
         "ai",
         "search"
       ],
-      "stars": 15548,
+      "stars": 15578,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.86,
@@ -32,7 +32,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -40,10 +40,10 @@
         "ai",
         "search"
       ],
-      "stars": 25180,
+      "stars": 25225,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.596,
+      "score": 0.604,
       "shared_capabilities": [
         "ai",
         "search"
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1169,
+      "stars": 1173,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -72,7 +72,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -83,7 +83,7 @@
       "stars": 409,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.432,
+      "score": 0.442,
       "shared_capabilities": [
         "ai",
         "database"
@@ -112,7 +112,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -120,10 +120,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2874,
+      "stars": 2879,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.166,
+      "score": 0.171,
       "shared_capabilities": [
         "database"
       ]
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57100,
+      "stars": 57160,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -158,7 +158,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 275,
+      "stars": 276,
       "language": "JavaScript",
       "similarity": 0.2,
       "score": 0.11,
@@ -169,7 +169,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -179,7 +179,7 @@
       "stars": 661,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.107,
+      "score": 0.109,
       "shared_capabilities": [
         "ai"
       ]
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 33714,
+      "stars": 33761,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,

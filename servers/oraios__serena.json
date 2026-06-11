@@ -1,10 +1,10 @@
 {
   "repo": "oraios/serena",
-  "stars": 25180,
+  "stars": 25225,
   "language": "Python",
   "license": "MIT",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-  "pushed_at": "2026-06-09T10:17:52Z",
+  "pushed_at": "2026-06-10T13:57:36Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.95,
@@ -25,8 +25,8 @@
     "extraction_confidence": 0.4
   },
   "sub_servers": [],
-  "composite": 80,
-  "composite_raw": 80,
+  "composite": 82,
+  "composite_raw": 82,
   "axes": {
     "reliability": {
       "score": 100,
@@ -51,7 +51,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 14d ago"
+          "note": "latest release 15d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -67,7 +67,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 14d ago"
+          "note": "last published 15d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -103,8 +103,8 @@
       }
     },
     "trust": {
-      "score": 18,
-      "passing": 2,
+      "score": 27,
+      "passing": 3,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -148,8 +148,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "13542 weekly downloads"
         }
       }
     },
@@ -168,11 +168,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 11 merged PRs in 90d"
+          "note": "active: 30 commits, 10 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "11 merged PR(s) in 90d"
+          "note": "10 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-10T08:21:28+00:00"
+  "scored_at": "2026-06-11T08:55:11+00:00"
 }

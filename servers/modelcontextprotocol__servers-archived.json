@@ -1,6 +1,6 @@
 {
   "repo": "modelcontextprotocol/servers-archived",
-  "stars": 275,
+  "stars": 276,
   "language": "JavaScript",
   "license": "MIT",
   "description": "Reference MCP servers that are no longer maintained",
@@ -57,7 +57,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 377d ago"
+          "note": "pushed 378d ago"
         },
         "has_releases": {
           "pass": false,
@@ -202,5 +202,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-10T08:21:28+00:00"
+  "scored_at": "2026-06-11T08:55:11+00:00"
 }
