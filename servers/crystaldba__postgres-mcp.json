@@ -1,6 +1,6 @@
 {
   "repo": "crystaldba/postgres-mcp",
-  "stars": 2898,
+  "stars": 2905,
   "language": "Python",
   "license": "MIT",
   "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
@@ -52,7 +52,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 142d ago"
+          "note": "pushed 143d ago"
         },
         "has_releases": {
           "pass": true,
@@ -60,7 +60,7 @@
         },
         "tagged_release_recent": {
           "pass": false,
-          "note": "latest release 393d ago"
+          "note": "latest release 394d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -76,7 +76,7 @@
         },
         "recent_publish": {
           "pass": false,
-          "note": "last published 393d ago"
+          "note": "last published 394d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -158,7 +158,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "33265 weekly downloads"
+          "note": "33639 weekly downloads"
         }
       }
     },
@@ -192,5 +192,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-14T08:22:47+00:00"
+  "scored_at": "2026-06-15T10:33:47+00:00"
 }
