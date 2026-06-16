@@ -2,7 +2,7 @@
   "repo": "runekaagaard/mcp-alchemy",
   "slug": "runekaagaard__mcp-alchemy",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-15T10:33:47+00:00",
+  "scored_at": "2026-06-16T09:41:54+00:00",
   "composite": 44,
   "axes": {
     "reliability": 40,
@@ -17,7 +17,7 @@
     "ai"
   ],
   "license": "MPL-2.0",
-  "stars": 409,
+  "stars": 410,
   "pushed_at": "2025-08-15T07:18:27Z",
   "language": "Python",
   "hard_flags": [],
@@ -64,7 +64,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "1140 weekly downloads"
+      "note": "1424 weekly downloads"
     }
   },
   "quality_tier": "poor",

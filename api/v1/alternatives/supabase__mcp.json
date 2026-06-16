@@ -17,7 +17,7 @@
         "database",
         "ai"
       ],
-      "stars": 409,
+      "stars": 410,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.663,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15621,
+      "stars": 15627,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -71,7 +71,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -79,10 +79,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2905,
+      "stars": 2910,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.229,
+      "score": 0.221,
       "shared_capabilities": [
         "database"
       ]
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57395,
+      "stars": 57470,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -134,7 +134,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 662,
+      "stars": 663,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.164,
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 33936,
+      "stars": 33979,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -184,7 +184,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -192,10 +192,10 @@
         "ai",
         "search"
       ],
-      "stars": 25375,
+      "stars": 25409,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
+      "score": 0.119,
       "shared_capabilities": [
         "ai"
       ]
