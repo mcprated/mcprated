@@ -1,6 +1,6 @@
 {
   "repo": "sooperset/mcp-atlassian",
-  "stars": 5403,
+  "stars": 5414,
   "language": "Python",
   "license": "MIT",
   "description": "MCP server for Atlassian tools (Confluence, Jira)",
@@ -25,8 +25,8 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 64,
-  "composite_raw": 64,
+  "composite": 62,
+  "composite_raw": 62,
   "axes": {
     "reliability": {
       "score": 100,
@@ -51,7 +51,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 67d ago"
+          "note": "latest release 68d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -67,7 +67,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 67d ago"
+          "note": "last published 68d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -103,8 +103,8 @@
       }
     },
     "trust": {
-      "score": 18,
-      "passing": 2,
+      "score": 27,
+      "passing": 3,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -148,14 +148,14 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "343872 weekly downloads"
         }
       }
     },
     "community": {
-      "score": 60,
-      "passing": 3,
+      "score": 40,
+      "passing": 2,
       "total": 5,
       "signals": {
         "has_contributing": {
@@ -168,11 +168,11 @@
         },
         "responsive_issues": {
           "pass": false,
-          "note": "334 open / 2 commits (ratio 167.00)"
+          "note": "337 open / 2 commits (ratio 168.50)"
         },
         "merged_prs_recent": {
-          "pass": true,
-          "note": "1 merged PR(s) in 90d"
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-16T09:41:54+00:00"
+  "scored_at": "2026-06-17T09:11:27+00:00"
 }
