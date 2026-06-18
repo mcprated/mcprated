@@ -19,7 +19,7 @@
         "ai",
         "search"
       ],
-      "stars": 15642,
+      "stars": 15648,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.86,
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 25458,
+      "stars": 25494,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.596,
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1198,
+      "stars": 1200,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -112,7 +112,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -120,10 +120,10 @@
         "database",
         "devtools"
       ],
-      "stars": 2919,
+      "stars": 2930,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.171,
+      "score": 0.166,
       "shared_capabilities": [
         "database"
       ]
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57542,
+      "stars": 57601,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -158,7 +158,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 279,
+      "stars": 280,
       "language": "JavaScript",
       "similarity": 0.2,
       "score": 0.11,
@@ -169,7 +169,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 60,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -179,7 +179,7 @@
       "stars": 664,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.107,
+      "score": 0.103,
       "shared_capabilities": [
         "ai"
       ]
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 34022,
+      "stars": 34068,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,

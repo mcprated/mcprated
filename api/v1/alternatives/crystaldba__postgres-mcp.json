@@ -18,7 +18,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 279,
+      "stars": 280,
       "language": "JavaScript",
       "similarity": 0.667,
       "score": 0.365,
@@ -58,7 +58,7 @@
         "ai",
         "search"
       ],
-      "stars": 15642,
+      "stars": 15648,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -69,7 +69,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
+      "composite": 72,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -78,10 +78,10 @@
         "ai",
         "database"
       ],
-      "stars": 1435,
+      "stars": 1437,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.215,
+      "score": 0.212,
       "shared_capabilities": [
         "database"
       ]
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 30751,
+      "stars": 30780,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -144,7 +144,7 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
+      "composite": 42,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -154,7 +154,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.5,
-      "score": 0.126,
+      "score": 0.13,
       "shared_capabilities": [
         "devtools"
       ]

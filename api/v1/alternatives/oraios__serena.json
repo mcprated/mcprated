@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 1198,
+      "stars": 1200,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.849,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15642,
+      "stars": 15648,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
+      "composite": 72,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "database"
       ],
-      "stars": 1435,
+      "stars": 1437,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.573,
+      "score": 0.566,
       "shared_capabilities": [
         "ai",
         "search"
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57542,
+      "stars": 57601,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -108,7 +108,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 60,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -118,7 +118,7 @@
       "stars": 664,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.161,
+      "score": 0.155,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 34022,
+      "stars": 34068,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -145,7 +145,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -155,7 +155,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.106,
+      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1665,
+      "stars": 1666,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.075,
