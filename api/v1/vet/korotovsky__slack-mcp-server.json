@@ -2,7 +2,7 @@
   "repo": "korotovsky/slack-mcp-server",
   "slug": "korotovsky__slack-mcp-server",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-18T08:56:34+00:00",
+  "scored_at": "2026-06-19T09:15:55+00:00",
   "composite": 57,
   "axes": {
     "reliability": 70,
@@ -18,8 +18,8 @@
     "web"
   ],
   "license": "MIT",
-  "stars": 1666,
-  "pushed_at": "2026-05-21T18:27:43Z",
+  "stars": 1668,
+  "pushed_at": "2026-06-18T17:13:51Z",
   "language": "Go",
   "hard_flags": [],
   "trust_signals": {
