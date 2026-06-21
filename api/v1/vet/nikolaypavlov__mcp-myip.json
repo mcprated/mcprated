@@ -2,7 +2,7 @@
   "repo": "nikolaypavlov/mcp-myip",
   "slug": "nikolaypavlov__mcp-myip",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-20T07:58:17+00:00",
+  "scored_at": "2026-06-21T08:41:51+00:00",
   "composite": 30,
   "axes": {
     "reliability": 30,
@@ -63,7 +63,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "11 weekly downloads"
+      "note": "17 weekly downloads"
     }
   },
   "quality_tier": "poor",

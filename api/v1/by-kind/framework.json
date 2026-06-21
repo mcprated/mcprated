@@ -1,18 +1,18 @@
 {
   "kind": "framework",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-06-20T07:58:17+00:00",
+  "generated_at": "2026-06-21T08:41:51+00:00",
   "count": 3,
   "servers": [
     {
       "repo": "modelcontextprotocol/python-sdk",
       "slug": "modelcontextprotocol__python-sdk",
-      "composite": 82,
+      "composite": 84,
       "description": "The official Python SDK for Model Context Protocol servers and clients",
       "kind": "framework",
       "subkind": "",
       "capabilities": [],
-      "stars": 23377,
+      "stars": 23384,
       "language": "Python"
     },
     {
