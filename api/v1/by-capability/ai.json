@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-06-21T08:41:51+00:00",
+  "generated_at": "2026-06-22T09:59:58+00:00",
   "count": 10,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 34151,
+      "stars": 34192,
       "language": "TypeScript"
     },
     {
@@ -30,7 +30,7 @@
         "ai",
         "search"
       ],
-      "stars": 25595,
+      "stars": 25632,
       "language": "Python"
     },
     {
@@ -45,7 +45,7 @@
         "ai",
         "search"
       ],
-      "stars": 15675,
+      "stars": 15682,
       "language": "Go"
     },
     {
@@ -74,7 +74,7 @@
         "ai",
         "search"
       ],
-      "stars": 1210,
+      "stars": 1211,
       "language": "TypeScript"
     },
     {
@@ -87,7 +87,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57792,
+      "stars": 57848,
       "language": "TypeScript"
     },
     {
@@ -100,7 +100,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 664,
+      "stars": 665,
       "language": "Python"
     },
     {
@@ -115,7 +115,7 @@
         "comms",
         "web"
       ],
-      "stars": 1670,
+      "stars": 1673,
       "language": "Go"
     },
     {
