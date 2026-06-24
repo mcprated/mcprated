@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-06-23T08:03:39+00:00",
+  "generated_at": "2026-06-24T07:56:39+00:00",
   "count": 10,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 34237,
+      "stars": 34274,
       "language": "TypeScript"
     },
     {
@@ -30,7 +30,7 @@
         "ai",
         "search"
       ],
-      "stars": 25669,
+      "stars": 25718,
       "language": "Python"
     },
     {
@@ -45,8 +45,23 @@
         "ai",
         "search"
       ],
-      "stars": 15686,
+      "stars": 15698,
       "language": "Go"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 74,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1441,
+      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -59,23 +74,8 @@
         "ai",
         "search"
       ],
-      "stars": 1222,
+      "stars": 1225,
       "language": "TypeScript"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1440,
-      "language": "Python"
     },
     {
       "repo": "upstash/context7",
@@ -87,7 +87,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 57890,
+      "stars": 57953,
       "language": "TypeScript"
     },
     {
@@ -115,13 +115,13 @@
         "comms",
         "web"
       ],
-      "stars": 1673,
+      "stars": 1675,
       "language": "Go"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",

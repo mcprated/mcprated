@@ -2,7 +2,7 @@
   "capability": "database",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-06-23T08:03:39+00:00",
+  "generated_at": "2026-06-24T07:56:39+00:00",
   "count": 6,
   "servers": [
     {
@@ -17,13 +17,13 @@
         "ai",
         "search"
       ],
-      "stars": 15686,
+      "stars": 15698,
       "language": "Go"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -32,7 +32,7 @@
         "ai",
         "database"
       ],
-      "stars": 1440,
+      "stars": 1441,
       "language": "Python"
     },
     {
@@ -46,13 +46,13 @@
         "database",
         "devtools"
       ],
-      "stars": 2951,
+      "stars": 2961,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",

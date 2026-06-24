@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-06-23T08:03:39+00:00",
+  "generated_at": "2026-06-24T07:56:39+00:00",
   "total_tools": 191,
   "tools": [
     {
@@ -1404,6 +1404,21 @@
       "extraction_method": "regex_typescript"
     },
     {
+      "name": "all_table_names",
+      "description": null,
+      "input_keys": [],
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
       "name": "analyze_db_health",
       "description": "Analyze database health for specified components.",
       "input_keys": [
@@ -1454,6 +1469,24 @@
       "capabilities": [
         "database",
         "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "execute_query",
+      "description": null,
+      "input_keys": [
+        "query",
+        "params"
+      ],
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
       ],
       "extraction_method": "ast_python"
     },
@@ -1549,6 +1582,23 @@
       "extraction_method": "regex_typescript"
     },
     {
+      "name": "filter_table_names",
+      "description": null,
+      "input_keys": [
+        "q"
+      ],
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
       "name": "get_object_details",
       "description": "Get detailed information about a database object.",
       "input_keys": [
@@ -1619,47 +1669,14 @@
       "extraction_method": "ast_python"
     },
     {
-      "name": "all_table_names",
-      "description": null,
-      "input_keys": [],
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "execute_query",
+      "name": "schema_definitions",
       "description": null,
       "input_keys": [
-        "query",
-        "params"
+        "table_names"
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "filter_table_names",
-      "description": null,
-      "input_keys": [
-        "q"
-      ],
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1681,23 +1698,6 @@
         "devtools"
       ],
       "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "schema_definitions",
-      "description": null,
-      "input_keys": [
-        "table_names"
-      ],
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "extraction_method": "ast_python"
     },
     {
       "name": "super-secret-server",
