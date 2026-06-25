@@ -58,7 +58,7 @@
         "ai",
         "search"
       ],
-      "stars": 15698,
+      "stars": 15703,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -78,7 +78,7 @@
         "ai",
         "database"
       ],
-      "stars": 1441,
+      "stars": 1442,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.215,
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 30926,
+      "stars": 30953,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
