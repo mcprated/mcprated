@@ -1,6 +1,6 @@
 {
   "repo": "sooperset/mcp-atlassian",
-  "stars": 5469,
+  "stars": 5472,
   "language": "Python",
   "license": "MIT",
   "description": "MCP server for Atlassian tools (Confluence, Jira)",
@@ -43,7 +43,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 6d ago"
+          "note": "pushed 7d ago"
         },
         "has_releases": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-26T08:03:19+00:00"
+  "scored_at": "2026-06-27T07:31:01+00:00"
 }
