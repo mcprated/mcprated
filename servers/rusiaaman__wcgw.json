@@ -42,7 +42,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 60d ago"
+          "note": "pushed 61d ago"
         },
         "has_releases": {
           "pass": true,
@@ -50,7 +50,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 60d ago"
+          "note": "latest release 61d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -66,7 +66,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 60d ago"
+          "note": "last published 61d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -148,7 +148,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "218 weekly downloads"
+          "note": "216 weekly downloads"
         }
       }
     },
@@ -167,11 +167,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "3 open / 2 commits (ratio 1.50)"
+          "note": "3 open / 1 commits (ratio 3.00)"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "2 merged PR(s) in 90d"
+          "note": "1 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-28T08:03:33+00:00"
+  "scored_at": "2026-06-29T09:07:49+00:00"
 }

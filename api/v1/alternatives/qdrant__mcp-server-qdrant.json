@@ -19,7 +19,7 @@
         "ai",
         "search"
       ],
-      "stars": 15727,
+      "stars": 15738,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.86,
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 25850,
+      "stars": 25885,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.604,
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1246,
+      "stars": 1249,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -120,7 +120,7 @@
         "database",
         "devtools"
       ],
-      "stars": 2977,
+      "stars": 2980,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.171,
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58213,
+      "stars": 58280,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 34442,
+      "stars": 34492,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,
