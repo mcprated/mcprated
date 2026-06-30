@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-06-29T09:07:50+00:00",
+  "generated_at": "2026-06-30T08:04:51+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9351,
+      "stars": 9355,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 34492,
+      "stars": 34522,
       "language": "TypeScript"
     },
     {
@@ -39,7 +39,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15248,
+      "stars": 15259,
       "language": "TypeScript"
     },
     {
@@ -53,19 +53,8 @@
         "ai",
         "search"
       ],
-      "stars": 25885,
+      "stars": 25920,
       "language": "Python"
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 77,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 27718,
-      "language": "JavaScript"
     },
     {
       "repo": "github/github-mcp-server",
@@ -77,7 +66,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31049,
+      "stars": 31076,
       "language": "Go"
     },
     {
@@ -92,8 +81,23 @@
         "ai",
         "search"
       ],
-      "stars": 15738,
+      "stars": 15750,
       "language": "Go"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 74,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1449,
+      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -106,7 +110,7 @@
         "ai",
         "search"
       ],
-      "stars": 1249,
+      "stars": 1250,
       "language": "TypeScript"
     },
     {
@@ -117,7 +121,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 87822,
+      "stars": 87873,
       "language": "TypeScript"
     },
     {
@@ -128,7 +132,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 87822,
+      "stars": 87873,
       "language": "TypeScript"
     },
     {
@@ -139,7 +143,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 87822,
+      "stars": 87873,
       "language": "TypeScript"
     },
     {
@@ -150,23 +154,8 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 87822,
+      "stars": 87873,
       "language": "TypeScript"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1448,
-      "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
@@ -178,7 +167,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5478,
+      "stars": 5481,
       "language": "Python"
     },
     {
@@ -191,7 +180,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58280,
+      "stars": 58331,
       "language": "TypeScript"
     },
     {
@@ -204,7 +193,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3903,
+      "stars": 3905,
       "language": "TypeScript"
     },
     {
@@ -215,8 +204,19 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4644,
+      "stars": 4646,
       "language": "TypeScript"
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 67,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 27735,
+      "language": "JavaScript"
     },
     {
       "repo": "mcprated/mcprated",
@@ -256,7 +256,7 @@
         "comms",
         "web"
       ],
-      "stars": 1692,
+      "stars": 1693,
       "language": "Go"
     },
     {
@@ -283,7 +283,21 @@
         "database",
         "devtools"
       ],
-      "stars": 2980,
+      "stars": 2988,
+      "language": "Python"
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 44,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 411,
       "language": "Python"
     },
     {
@@ -294,7 +308,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 791,
+      "stars": 792,
       "language": "TypeScript"
     },
     {
@@ -322,20 +336,6 @@
       "language": "JavaScript"
     },
     {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 411,
-      "language": "Python"
-    },
-    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 40,
@@ -361,7 +361,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 283,
+      "stars": 284,
       "language": "JavaScript"
     },
     {

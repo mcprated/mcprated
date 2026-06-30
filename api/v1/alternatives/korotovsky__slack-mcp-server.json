@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 34492,
+      "stars": 34522,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58280,
+      "stars": 58331,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 25885,
+      "stars": 25920,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.091,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1249,
+      "stars": 1250,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -149,7 +149,7 @@
         "ai",
         "search"
       ],
-      "stars": 15738,
+      "stars": 15750,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -160,7 +160,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -169,10 +169,10 @@
         "ai",
         "database"
       ],
-      "stars": 1448,
+      "stars": 1449,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.068,
+      "score": 0.069,
       "shared_capabilities": [
         "ai"
       ]
@@ -180,7 +180,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -191,7 +191,7 @@
       "stars": 411,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.065,
+      "score": 0.066,
       "shared_capabilities": [
         "ai"
       ]
