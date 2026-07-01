@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/servers",
   "slug": "modelcontextprotocol__servers__filesystem",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-06-30T08:04:51+00:00",
+  "scored_at": "2026-07-01T08:22:35+00:00",
   "composite": 72,
   "axes": {
     "reliability": 80,
@@ -14,7 +14,7 @@
   "subkind": "integration",
   "capabilities": [],
   "license": "NOASSERTION",
-  "stars": 87873,
+  "stars": 87905,
   "pushed_at": null,
   "language": "TypeScript",
   "hard_flags": [],
