@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58397,
+      "stars": 58450,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -26,17 +26,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 664,
+      "stars": 665,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.31,
+      "score": 0.315,
       "shared_capabilities": [
         "ai"
       ]
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 34554,
+      "stars": 34587,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -71,7 +71,7 @@
         "ai",
         "search"
       ],
-      "stars": 25962,
+      "stars": 25993,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.181,
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1250,
+      "stars": 1255,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -101,7 +101,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -112,7 +112,7 @@
       "stars": 411,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.13,
+      "score": 0.133,
       "shared_capabilities": [
         "ai"
       ]
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 15775,
+      "stars": 15803,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -149,7 +149,7 @@
         "ai",
         "database"
       ],
-      "stars": 1450,
+      "stars": 1452,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.115,
@@ -169,7 +169,7 @@
         "comms",
         "web"
       ],
-      "stars": 1694,
+      "stars": 1698,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.101,
