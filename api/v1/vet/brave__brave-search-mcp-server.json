@@ -2,7 +2,7 @@
   "repo": "brave/brave-search-mcp-server",
   "slug": "brave__brave-search-mcp-server",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-03T07:34:36+00:00",
+  "scored_at": "2026-07-04T07:02:47+00:00",
   "composite": 72,
   "axes": {
     "reliability": 100,
@@ -17,8 +17,8 @@
     "search"
   ],
   "license": "MIT",
-  "stars": 1259,
-  "pushed_at": "2026-06-29T21:12:14Z",
+  "stars": 1261,
+  "pushed_at": "2026-07-03T18:31:48Z",
   "language": "TypeScript",
   "hard_flags": [
     "empty_description"
@@ -66,7 +66,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "10814 weekly downloads"
+      "note": "14296 weekly downloads"
     }
   },
   "quality_tier": "acceptable",
