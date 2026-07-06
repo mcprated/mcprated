@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 15854,
+      "stars": 15868,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1454,
+      "stars": 1456,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3005,
+      "stars": 3012,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.229,
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58592,
+      "stars": 58647,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -107,7 +107,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 62,
+      "composite": 60,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -117,7 +117,7 @@
       "stars": 665,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.157,
+      "score": 0.155,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 286,
+      "stars": 287,
       "language": "JavaScript",
       "similarity": 0.25,
       "score": 0.137,
@@ -153,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 34717,
+      "stars": 34764,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -164,7 +164,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -172,10 +172,10 @@
         "ai",
         "search"
       ],
-      "stars": 26103,
+      "stars": 26136,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
+      "score": 0.119,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "ai",
         "search"
       ],
-      "stars": 1263,
+      "stars": 1265,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
