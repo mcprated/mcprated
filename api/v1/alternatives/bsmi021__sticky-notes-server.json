@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 15868,
+      "stars": 15885,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -30,7 +30,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
+      "composite": 72,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -39,10 +39,10 @@
         "ai",
         "database"
       ],
-      "stars": 1456,
+      "stars": 1457,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.573,
+      "score": 0.566,
       "shared_capabilities": [
         "database",
         "search"
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 26136,
+      "stars": 26164,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.298,
@@ -78,7 +78,7 @@
         "ai",
         "search"
       ],
-      "stars": 1265,
+      "stars": 1268,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -89,7 +89,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -97,10 +97,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3012,
+      "stars": 3015,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.229,
+      "score": 0.221,
       "shared_capabilities": [
         "database"
       ]
@@ -108,7 +108,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -116,10 +116,10 @@
         "database",
         "ai"
       ],
-      "stars": 413,
+      "stars": 412,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.216,
+      "score": 0.221,
       "shared_capabilities": [
         "database"
       ]
@@ -136,7 +136,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 287,
+      "stars": 286,
       "language": "JavaScript",
       "similarity": 0.25,
       "score": 0.137,
