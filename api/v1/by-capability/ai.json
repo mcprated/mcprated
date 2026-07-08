@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-07-07T07:53:19+00:00",
+  "generated_at": "2026-07-08T06:39:10+00:00",
   "count": 10,
   "servers": [
     {
@@ -16,13 +16,13 @@
         "web",
         "ai"
       ],
-      "stars": 34788,
+      "stars": 34822,
       "language": "TypeScript"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -30,7 +30,7 @@
         "ai",
         "search"
       ],
-      "stars": 26164,
+      "stars": 26202,
       "language": "Python"
     },
     {
@@ -45,7 +45,7 @@
         "ai",
         "search"
       ],
-      "stars": 15885,
+      "stars": 15897,
       "language": "Go"
     },
     {
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 1268,
+      "stars": 1271,
       "language": "TypeScript"
     },
     {
@@ -87,7 +87,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58696,
+      "stars": 58744,
       "language": "TypeScript"
     },
     {
@@ -102,7 +102,7 @@
         "comms",
         "web"
       ],
-      "stars": 1708,
+      "stars": 1710,
       "language": "Go"
     },
     {
@@ -121,7 +121,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
