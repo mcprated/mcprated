@@ -19,7 +19,7 @@
         "ai",
         "search"
       ],
-      "stars": 15897,
+      "stars": 15910,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.86,
@@ -32,7 +32,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -40,10 +40,10 @@
         "ai",
         "search"
       ],
-      "stars": 26202,
+      "stars": 26249,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.604,
+      "score": 0.596,
       "shared_capabilities": [
         "ai",
         "search"
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1271,
+      "stars": 1275,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -112,7 +112,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -120,10 +120,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3018,
+      "stars": 3024,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.166,
+      "score": 0.171,
       "shared_capabilities": [
         "database"
       ]
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58744,
+      "stars": 58789,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 34822,
+      "stars": 34857,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,

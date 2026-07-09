@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15897,
+      "stars": 15910,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "database"
       ],
-      "stars": 1457,
+      "stars": 1459,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.566,
+      "score": 0.573,
       "shared_capabilities": [
         "ai",
         "database"
@@ -71,7 +71,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -79,10 +79,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3018,
+      "stars": 3024,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.221,
+      "score": 0.229,
       "shared_capabilities": [
         "database"
       ]
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58744,
+      "stars": 58789,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 34822,
+      "stars": 34857,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -184,7 +184,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -192,10 +192,10 @@
         "ai",
         "search"
       ],
-      "stars": 26202,
+      "stars": 26249,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
+      "score": 0.119,
       "shared_capabilities": [
         "ai"
       ]
