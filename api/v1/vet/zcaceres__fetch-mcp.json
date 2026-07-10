@@ -2,7 +2,7 @@
   "repo": "zcaceres/fetch-mcp",
   "slug": "zcaceres__fetch-mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-09T07:52:02+00:00",
+  "scored_at": "2026-07-10T08:11:18+00:00",
   "composite": 44,
   "axes": {
     "reliability": 40,
@@ -61,7 +61,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "2908 weekly downloads"
+      "note": "2513 weekly downloads"
     }
   },
   "quality_tier": "poor",
