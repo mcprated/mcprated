@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-07-11T06:37:18+00:00",
+  "generated_at": "2026-07-12T06:47:59+00:00",
   "count": 10,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 34937,
+      "stars": 34973,
       "language": "TypeScript"
     },
     {
@@ -30,7 +30,7 @@
         "ai",
         "search"
       ],
-      "stars": 26311,
+      "stars": 26348,
       "language": "Python"
     },
     {
@@ -45,7 +45,7 @@
         "ai",
         "search"
       ],
-      "stars": 15927,
+      "stars": 15933,
       "language": "Go"
     },
     {
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 1282,
+      "stars": 1286,
       "language": "TypeScript"
     },
     {
@@ -74,7 +74,7 @@
         "ai",
         "database"
       ],
-      "stars": 1460,
+      "stars": 1461,
       "language": "Python"
     },
     {
@@ -87,7 +87,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58896,
+      "stars": 58950,
       "language": "TypeScript"
     },
     {
@@ -102,7 +102,7 @@
         "comms",
         "web"
       ],
-      "stars": 1718,
+      "stars": 1720,
       "language": "Go"
     },
     {
@@ -121,7 +121,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",

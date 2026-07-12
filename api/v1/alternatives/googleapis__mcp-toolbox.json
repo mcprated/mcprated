@@ -19,7 +19,7 @@
         "ai",
         "database"
       ],
-      "stars": 1460,
+      "stars": 1461,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.849,
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 26311,
+      "stars": 26348,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.596,
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1282,
+      "stars": 1286,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -72,7 +72,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -83,7 +83,7 @@
       "stars": 413,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.442,
+      "score": 0.432,
       "shared_capabilities": [
         "ai",
         "database"
@@ -112,7 +112,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -120,10 +120,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3038,
+      "stars": 3045,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.171,
+      "score": 0.166,
       "shared_capabilities": [
         "database"
       ]
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 58896,
+      "stars": 58950,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 34937,
+      "stars": 34973,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,
