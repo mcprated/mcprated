@@ -18,7 +18,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 286,
+      "stars": 287,
       "language": "JavaScript",
       "similarity": 0.667,
       "score": 0.365,
@@ -38,7 +38,7 @@
         "database",
         "ai"
       ],
-      "stars": 413,
+      "stars": 414,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.216,
@@ -58,7 +58,7 @@
         "ai",
         "search"
       ],
-      "stars": 15933,
+      "stars": 15944,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31374,
+      "stars": 31398,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
