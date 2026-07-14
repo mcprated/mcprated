@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1725,
+      "stars": 1726,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.503,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5573,
+      "stars": 5577,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.354,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59010,
+      "stars": 59073,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 55,
+      "composite": 57,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 666,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.148,
+      "score": 0.151,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 26382,
+      "stars": 26432,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1290,
+      "stars": 1292,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -122,7 +122,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -132,7 +132,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.106,
+      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -148,7 +148,7 @@
         "database",
         "ai"
       ],
-      "stars": 414,
+      "stars": 413,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.086,
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 15944,
+      "stars": 15951,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,
@@ -179,7 +179,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -191,7 +191,7 @@
       "stars": 1461,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.085,
+      "score": 0.086,
       "shared_capabilities": [
         "ai"
       ]

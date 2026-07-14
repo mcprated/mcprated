@@ -10,7 +10,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -22,7 +22,7 @@
       "stars": 1461,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.849,
+      "score": 0.86,
       "shared_capabilities": [
         "ai",
         "database",
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 26382,
+      "stars": 26432,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.596,
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1290,
+      "stars": 1292,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -80,7 +80,7 @@
         "database",
         "ai"
       ],
-      "stars": 414,
+      "stars": 413,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.432,
@@ -120,7 +120,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3048,
+      "stars": 3052,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.166,
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59010,
+      "stars": 59073,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -169,7 +169,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 55,
+      "composite": 57,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -179,7 +179,7 @@
       "stars": 666,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.099,
+      "score": 0.101,
       "shared_capabilities": [
         "ai"
       ]
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 35008,
+      "stars": 35045,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,

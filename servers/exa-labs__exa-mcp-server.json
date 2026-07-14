@@ -1,10 +1,10 @@
 {
   "repo": "exa-labs/exa-mcp-server",
-  "stars": 4700,
+  "stars": 4709,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Exa MCP for web search and web crawling!",
-  "pushed_at": "2026-07-12T19:44:57Z",
+  "pushed_at": "2026-07-14T03:55:55Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.95,
@@ -73,7 +73,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 80d ago"
+          "note": "last published 81d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -189,5 +189,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-13T08:04:02+00:00"
+  "scored_at": "2026-07-14T06:27:12+00:00"
 }
