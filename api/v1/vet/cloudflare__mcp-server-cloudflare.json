@@ -2,7 +2,7 @@
   "repo": "cloudflare/mcp-server-cloudflare",
   "slug": "cloudflare__mcp-server-cloudflare",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-14T06:27:12+00:00",
+  "scored_at": "2026-07-15T06:30:38+00:00",
   "composite": 67,
   "axes": {
     "reliability": 80,
@@ -16,7 +16,7 @@
     "cloud"
   ],
   "license": "Apache-2.0",
-  "stars": 3940,
+  "stars": 3941,
   "pushed_at": "2026-07-01T13:36:20Z",
   "language": "TypeScript",
   "hard_flags": [
@@ -65,7 +65,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "1854 weekly downloads"
+      "note": "1764 weekly downloads"
     }
   },
   "quality_tier": "acceptable",

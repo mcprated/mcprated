@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 35045,
+      "stars": 35092,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5577,
+      "stars": 5578,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.236,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59073,
+      "stars": 59122,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -66,17 +66,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 57,
+      "composite": 55,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 666,
+      "stars": 667,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.101,
+      "score": 0.099,
       "shared_capabilities": [
         "ai"
       ]
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,10 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 26432,
+      "stars": 26466,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.089,
+      "score": 0.091,
       "shared_capabilities": [
         "ai"
       ]
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1292,
+      "stars": 1297,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -122,7 +122,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -132,7 +132,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.073,
+      "score": 0.071,
       "shared_capabilities": [
         "ai"
       ]
@@ -149,7 +149,7 @@
         "ai",
         "search"
       ],
-      "stars": 15951,
+      "stars": 15953,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -169,7 +169,7 @@
         "ai",
         "database"
       ],
-      "stars": 1461,
+      "stars": 1463,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.069,
@@ -180,7 +180,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
+      "composite": 44,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -191,7 +191,7 @@
       "stars": 413,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.065,
+      "score": 0.066,
       "shared_capabilities": [
         "ai"
       ]
