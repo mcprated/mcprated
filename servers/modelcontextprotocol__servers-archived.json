@@ -57,7 +57,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 412d ago"
+          "note": "pushed 413d ago"
         },
         "has_releases": {
           "pass": false,
@@ -202,5 +202,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-15T06:30:39+00:00"
+  "scored_at": "2026-07-16T06:35:43+00:00"
 }
