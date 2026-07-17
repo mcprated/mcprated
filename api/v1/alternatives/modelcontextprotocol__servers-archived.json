@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3063,
+      "stars": 3071,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.442,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9452,
+      "stars": 9456,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -48,17 +48,17 @@
     {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 67,
+      "composite": 64,
       "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "cloud"
       ],
-      "stars": 3951,
+      "stars": 3952,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.273,
+      "score": 0.267,
       "shared_capabilities": [
         "cloud"
       ]
@@ -75,7 +75,7 @@
         "ai",
         "search"
       ],
-      "stars": 15963,
+      "stars": 15970,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -86,7 +86,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
+      "composite": 72,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -95,10 +95,10 @@
         "ai",
         "database"
       ],
-      "stars": 1465,
+      "stars": 1468,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.172,
+      "score": 0.17,
       "shared_capabilities": [
         "database"
       ]
@@ -106,7 +106,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 44,
+      "composite": 42,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -117,7 +117,7 @@
       "stars": 413,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.166,
+      "score": 0.162,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31476,
+      "stars": 31506,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
