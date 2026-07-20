@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59390,
+      "stars": 59456,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -26,7 +26,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -36,7 +36,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.219,
+      "score": 0.212,
       "shared_capabilities": [
         "ai"
       ]
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 35249,
+      "stars": 35277,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -63,7 +63,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -71,10 +71,10 @@
         "ai",
         "search"
       ],
-      "stars": 26576,
+      "stars": 26597,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.179,
+      "score": 0.181,
       "shared_capabilities": [
         "ai"
       ]
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1309,
+      "stars": 1311,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -109,7 +109,7 @@
         "database",
         "ai"
       ],
-      "stars": 413,
+      "stars": 412,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.13,
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 15978,
+      "stars": 15981,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -149,7 +149,7 @@
         "ai",
         "database"
       ],
-      "stars": 1472,
+      "stars": 1473,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.113,
@@ -169,7 +169,7 @@
         "comms",
         "web"
       ],
-      "stars": 1735,
+      "stars": 1737,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.101,

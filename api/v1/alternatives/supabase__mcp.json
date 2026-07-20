@@ -17,7 +17,7 @@
         "database",
         "ai"
       ],
-      "stars": 413,
+      "stars": 412,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.648,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15978,
+      "stars": 15981,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1472,
+      "stars": 1473,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.566,
@@ -79,7 +79,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3081,
+      "stars": 3082,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.229,
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59390,
+      "stars": 59456,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -127,7 +127,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 55,
+      "composite": 57,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -137,7 +137,7 @@
       "stars": 667,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.148,
+      "score": 0.151,
       "shared_capabilities": [
         "ai"
       ]
@@ -154,7 +154,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 288,
+      "stars": 289,
       "language": "JavaScript",
       "similarity": 0.25,
       "score": 0.137,
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 35249,
+      "stars": 35277,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -184,7 +184,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -192,10 +192,10 @@
         "ai",
         "search"
       ],
-      "stars": 26576,
+      "stars": 26597,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.119,
+      "score": 0.121,
       "shared_capabilities": [
         "ai"
       ]
