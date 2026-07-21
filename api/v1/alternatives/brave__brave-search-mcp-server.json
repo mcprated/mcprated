@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 26597,
+      "stars": 26621,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.906,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 15981,
+      "stars": 15987,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "database"
       ],
-      "stars": 1473,
+      "stars": 1475,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.566,
+      "score": 0.573,
       "shared_capabilities": [
         "ai",
         "search"
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59456,
+      "stars": 59500,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -115,7 +115,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 667,
+      "stars": 668,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.151,
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 35277,
+      "stars": 35326,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -145,7 +145,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -155,7 +155,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.106,
+      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1737,
+      "stars": 1744,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.075,
