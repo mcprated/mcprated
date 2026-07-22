@@ -18,13 +18,32 @@
         "devtools",
         "cloud"
       ],
-      "stars": 289,
+      "stars": 291,
       "language": "JavaScript",
       "similarity": 0.667,
       "score": 0.365,
       "shared_capabilities": [
         "database",
         "devtools"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 42,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.216,
+      "shared_capabilities": [
+        "database"
       ]
     },
     {
@@ -58,7 +77,7 @@
         "ai",
         "search"
       ],
-      "stars": 15987,
+      "stars": 15995,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -78,29 +97,10 @@
         "ai",
         "database"
       ],
-      "stars": 1475,
+      "stars": 1476,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.215,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.333,
-      "score": 0.211,
       "shared_capabilities": [
         "database"
       ]
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31592,
+      "stars": 31614,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,

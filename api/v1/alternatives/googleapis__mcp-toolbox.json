@@ -19,7 +19,7 @@
         "ai",
         "database"
       ],
-      "stars": 1475,
+      "stars": 1476,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.86,
@@ -32,7 +32,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -40,10 +40,10 @@
         "ai",
         "search"
       ],
-      "stars": 26621,
+      "stars": 26678,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.604,
+      "score": 0.596,
       "shared_capabilities": [
         "ai",
         "search"
@@ -60,12 +60,32 @@
         "ai",
         "search"
       ],
-      "stars": 1314,
+      "stars": 1317,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
       "shared_capabilities": [
         "ai",
+        "search"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 42,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.667,
+      "score": 0.432,
+      "shared_capabilities": [
+        "database",
         "search"
       ]
     },
@@ -90,29 +110,9 @@
       ]
     },
     {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.667,
-      "score": 0.422,
-      "shared_capabilities": [
-        "database",
-        "search"
-      ]
-    },
-    {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -120,10 +120,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3087,
+      "stars": 3095,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.166,
+      "score": 0.171,
       "shared_capabilities": [
         "database"
       ]
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59500,
+      "stars": 59566,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -158,7 +158,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 289,
+      "stars": 291,
       "language": "JavaScript",
       "similarity": 0.2,
       "score": 0.11,
@@ -169,7 +169,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 57,
+      "composite": 55,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -179,7 +179,7 @@
       "stars": 668,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.101,
+      "score": 0.099,
       "shared_capabilities": [
         "ai"
       ]
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 35326,
+      "stars": 35375,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,

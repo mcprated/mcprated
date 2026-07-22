@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59500,
+      "stars": 59566,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -26,7 +26,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 57,
+      "composite": 55,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -36,7 +36,7 @@
       "stars": 668,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.302,
+      "score": 0.297,
       "shared_capabilities": [
         "ai"
       ]
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 35326,
+      "stars": 35375,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -63,7 +63,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -71,10 +71,10 @@
         "ai",
         "search"
       ],
-      "stars": 26621,
+      "stars": 26678,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.181,
+      "score": 0.179,
       "shared_capabilities": [
         "ai"
       ]
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1314,
+      "stars": 1317,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 15987,
+      "stars": 15995,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -149,7 +149,7 @@
         "ai",
         "database"
       ],
-      "stars": 1475,
+      "stars": 1476,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.115,
@@ -169,7 +169,7 @@
         "comms",
         "web"
       ],
-      "stars": 1744,
+      "stars": 1745,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.101,

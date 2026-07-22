@@ -2,13 +2,13 @@
   "capability": "search",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-07-21T06:40:04+00:00",
+  "generated_at": "2026-07-22T06:42:19+00:00",
   "count": 5,
   "servers": [
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -16,7 +16,7 @@
         "ai",
         "search"
       ],
-      "stars": 26621,
+      "stars": 26678,
       "language": "Python"
     },
     {
@@ -31,7 +31,7 @@
         "ai",
         "search"
       ],
-      "stars": 15987,
+      "stars": 15995,
       "language": "Go"
     },
     {
@@ -46,7 +46,7 @@
         "ai",
         "database"
       ],
-      "stars": 1475,
+      "stars": 1476,
       "language": "Python"
     },
     {
@@ -60,13 +60,13 @@
         "ai",
         "search"
       ],
-      "stars": 1314,
+      "stars": 1317,
       "language": "TypeScript"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",

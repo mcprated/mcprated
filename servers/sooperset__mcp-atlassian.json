@@ -1,10 +1,10 @@
 {
   "repo": "sooperset/mcp-atlassian",
-  "stars": 5593,
+  "stars": 5596,
   "language": "Python",
   "license": "MIT",
   "description": "MCP server for Atlassian tools (Confluence, Jira)",
-  "pushed_at": "2026-07-19T22:38:23Z",
+  "pushed_at": "2026-07-21T17:08:23Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -43,7 +43,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -51,7 +51,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 3d ago"
+          "note": "latest release 4d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -67,7 +67,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 3d ago"
+          "note": "last published 4d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -149,7 +149,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "601306 weekly downloads"
+          "note": "606581 weekly downloads"
         }
       }
     },
@@ -164,15 +164,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "9 unique committers in 90d"
+          "note": "10 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 11 merged PRs in 90d"
+          "note": "active: 30 commits, 12 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "11 merged PR(s) in 90d"
+          "note": "12 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-21T06:40:04+00:00"
+  "scored_at": "2026-07-22T06:42:19+00:00"
 }

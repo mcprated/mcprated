@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3087,
+      "stars": 3095,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.442,
+      "score": 0.457,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9479,
+      "stars": 9485,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 3963,
+      "stars": 3975,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.267,
@@ -75,7 +75,7 @@
         "ai",
         "search"
       ],
-      "stars": 15987,
+      "stars": 15995,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -95,10 +95,29 @@
         "ai",
         "database"
       ],
-      "stars": 1475,
+      "stars": 1476,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.172,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 42,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.25,
+      "score": 0.162,
       "shared_capabilities": [
         "database"
       ]
@@ -123,25 +142,6 @@
       ]
     },
     {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.25,
-      "score": 0.158,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 74,
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31592,
+      "stars": 31614,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
