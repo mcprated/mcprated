@@ -1,10 +1,10 @@
 {
   "repo": "upstash/context7",
-  "stars": 59566,
+  "stars": 59617,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-  "pushed_at": "2026-07-21T10:19:10Z",
+  "pushed_at": "2026-07-22T13:04:26Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -50,7 +50,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 4d ago"
+          "note": "latest release 5d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-22T06:42:19+00:00"
+  "scored_at": "2026-07-23T06:43:58+00:00"
 }
