@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59617,
+      "stars": 59711,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -26,7 +26,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -36,7 +36,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.219,
+      "score": 0.212,
       "shared_capabilities": [
         "ai"
       ]
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 35423,
+      "stars": 35474,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -63,7 +63,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -71,10 +71,10 @@
         "ai",
         "search"
       ],
-      "stars": 26764,
+      "stars": 26861,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.179,
+      "score": 0.181,
       "shared_capabilities": [
         "ai"
       ]
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1319,
+      "stars": 1322,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 16000,
+      "stars": 16012,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -140,7 +140,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -149,10 +149,10 @@
         "ai",
         "database"
       ],
-      "stars": 1476,
+      "stars": 1479,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.113,
+      "score": 0.115,
       "shared_capabilities": [
         "ai"
       ]
@@ -169,7 +169,7 @@
         "comms",
         "web"
       ],
-      "stars": 1746,
+      "stars": 1752,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.101,
