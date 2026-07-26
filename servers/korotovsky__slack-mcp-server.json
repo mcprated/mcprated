@@ -44,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 8d ago"
+          "note": "pushed 9d ago"
         },
         "has_releases": {
           "pass": true,
@@ -52,7 +52,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 71d ago"
+          "note": "latest release 72d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-25T06:33:35+00:00"
+  "scored_at": "2026-07-26T06:47:27+00:00"
 }

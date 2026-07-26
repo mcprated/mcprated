@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 35474,
+      "stars": 35493,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5616,
+      "stars": 5615,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.236,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59711,
+      "stars": 59756,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 55,
+      "composite": 57,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 669,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.099,
+      "score": 0.101,
       "shared_capabilities": [
         "ai"
       ]
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,10 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 26861,
+      "stars": 26908,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.091,
+      "score": 0.089,
       "shared_capabilities": [
         "ai"
       ]
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1322,
+      "stars": 1323,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -122,7 +122,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -132,7 +132,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.071,
+      "score": 0.073,
       "shared_capabilities": [
         "ai"
       ]
@@ -149,7 +149,7 @@
         "ai",
         "search"
       ],
-      "stars": 16012,
+      "stars": 16021,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -169,7 +169,7 @@
         "ai",
         "database"
       ],
-      "stars": 1479,
+      "stars": 1480,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.069,
