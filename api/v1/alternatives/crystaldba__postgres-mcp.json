@@ -28,6 +28,25 @@
       ]
     },
     {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 47,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 412,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.229,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 42,
@@ -47,25 +66,6 @@
       ]
     },
     {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 42,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 412,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.216,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -77,7 +77,7 @@
         "ai",
         "search"
       ],
-      "stars": 16021,
+      "stars": 16036,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -88,7 +88,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
+      "composite": 69,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -97,10 +97,10 @@
         "ai",
         "database"
       ],
-      "stars": 1480,
+      "stars": 1483,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.215,
+      "score": 0.208,
       "shared_capabilities": [
         "database"
       ]
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31721,
+      "stars": 31780,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,

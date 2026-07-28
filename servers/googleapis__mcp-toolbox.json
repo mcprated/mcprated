@@ -1,10 +1,10 @@
 {
   "repo": "googleapis/mcp-toolbox",
-  "stars": 16021,
+  "stars": 16036,
   "language": "Go",
   "license": "Apache-2.0",
   "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-  "pushed_at": "2026-07-25T05:32:21Z",
+  "pushed_at": "2026-07-28T06:28:26Z",
   "kind": "server",
   "subkind": "agent-product",
   "kind_confidence": 1.0,
@@ -48,7 +48,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -56,11 +56,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 9d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: v1.7.0"
+          "note": "latest tag: v1.8.0"
         },
         "release_communication": {
           "pass": true,
@@ -87,7 +87,7 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 32770 chars (need ≥500)"
+          "note": "README 32930 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
@@ -169,15 +169,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "12 unique committers in 90d"
+          "note": "10 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 13 merged PRs in 90d"
+          "note": "active: 30 commits, 12 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "13 merged PR(s) in 90d"
+          "note": "12 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -188,5 +188,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-26T06:47:27+00:00"
+  "scored_at": "2026-07-28T06:37:59+00:00"
 }
