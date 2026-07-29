@@ -1,6 +1,29 @@
 {
   "for": "modelcontextprotocol/python-sdk",
   "slug": "modelcontextprotocol__python-sdk",
-  "of_capabilities": [],
-  "alternatives": []
+  "of_capabilities": [
+    "comms"
+  ],
+  "alternatives": [
+    {
+      "repo": "korotovsky/slack-mcp-server",
+      "slug": "korotovsky__slack-mcp-server",
+      "composite": 57,
+      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "web"
+      ],
+      "stars": 1758,
+      "language": "Go",
+      "similarity": 0.333,
+      "score": 0.252,
+      "shared_capabilities": [
+        "comms"
+      ]
+    }
+  ]
 }
