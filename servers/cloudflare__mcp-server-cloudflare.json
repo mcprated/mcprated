@@ -1,14 +1,14 @@
 {
   "repo": "cloudflare/mcp-server-cloudflare",
-  "stars": 4004,
+  "stars": 4010,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": null,
-  "pushed_at": "2026-07-28T18:13:54Z",
+  "pushed_at": "2026-07-29T16:43:50Z",
   "kind": "server",
   "subkind": "integration",
-  "kind_confidence": 0.55,
-  "kind_reason": "mcpServers config in README (default)",
+  "kind_confidence": 0.45,
+  "kind_reason": "name pattern: mcp-server-cloudflare (default)",
   "capabilities": [
     "cloud"
   ],
@@ -22,8 +22,8 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 67,
-  "composite_raw": 67,
+  "composite": 62,
+  "composite_raw": 62,
   "axes": {
     "reliability": {
       "score": 80,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 0d ago"
+          "note": "latest release 1d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -64,7 +64,7 @@
         },
         "recent_publish": {
           "pass": false,
-          "note": "last published 501d ago"
+          "note": "last published 502d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -73,17 +73,17 @@
       }
     },
     "documentation": {
-      "score": 60,
-      "passing": 3,
+      "score": 40,
+      "passing": 2,
       "total": 5,
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 9126 chars (need ≥500)"
+          "note": "README 8560 chars (need ≥500)"
         },
         "install_instructions": {
-          "pass": true,
-          "note": "needles=['mcpservers', '\"mcpservers\"']"
+          "pass": false,
+          "note": "no install hints, no install section"
         },
         "tools_documented": {
           "pass": true,
@@ -91,7 +91,7 @@
         },
         "examples": {
           "pass": false,
-          "note": "1 code blocks"
+          "note": "0 code blocks"
         },
         "external_docs": {
           "pass": false,
@@ -146,7 +146,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "57098 weekly downloads"
+          "note": "56317 weekly downloads"
         }
       }
     },
@@ -161,15 +161,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "7 unique committers in 90d"
+          "note": "6 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 18 commits, 15 merged PRs in 90d"
+          "note": "active: 18 commits, 14 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "15 merged PR(s) in 90d"
+          "note": "14 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -185,5 +185,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-29T06:43:44+00:00"
+  "scored_at": "2026-07-30T06:41:18+00:00"
 }
