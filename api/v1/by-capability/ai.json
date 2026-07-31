@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-07-30T06:41:19+00:00",
+  "generated_at": "2026-07-31T07:00:28+00:00",
   "count": 10,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 35624,
+      "stars": 35664,
       "language": "TypeScript"
     },
     {
@@ -30,7 +30,7 @@
         "ai",
         "search"
       ],
-      "stars": 27182,
+      "stars": 27246,
       "language": "Python"
     },
     {
@@ -45,7 +45,7 @@
         "ai",
         "search"
       ],
-      "stars": 16061,
+      "stars": 16086,
       "language": "Go"
     },
     {
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 1335,
+      "stars": 1336,
       "language": "TypeScript"
     },
     {
@@ -74,7 +74,7 @@
         "ai",
         "database"
       ],
-      "stars": 1484,
+      "stars": 1485,
       "language": "Python"
     },
     {
@@ -87,7 +87,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 59989,
+      "stars": 60053,
       "language": "TypeScript"
     },
     {
@@ -102,13 +102,13 @@
         "comms",
         "web"
       ],
-      "stars": 1760,
+      "stars": 1762,
       "language": "Go"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 54,
+      "composite": 57,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",

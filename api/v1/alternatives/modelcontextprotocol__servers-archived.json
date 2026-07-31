@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3135,
+      "stars": 3140,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.457,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9516,
+      "stars": 9519,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -48,7 +48,7 @@
     {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 62,
+      "composite": 59,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -58,7 +58,7 @@
       "stars": 4010,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.262,
+      "score": 0.256,
       "shared_capabilities": [
         "cloud"
       ]
@@ -75,7 +75,7 @@
         "ai",
         "search"
       ],
-      "stars": 16061,
+      "stars": 16086,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -114,7 +114,7 @@
         "ai",
         "database"
       ],
-      "stars": 1484,
+      "stars": 1485,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.166,
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31839,
+      "stars": 31862,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
