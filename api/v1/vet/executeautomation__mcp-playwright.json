@@ -2,7 +2,7 @@
   "repo": "executeautomation/mcp-playwright",
   "slug": "executeautomation__mcp-playwright",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-07-31T07:00:27+00:00",
+  "scored_at": "2026-08-01T06:39:59+00:00",
   "composite": 50,
   "axes": {
     "reliability": 60,
@@ -16,7 +16,7 @@
     "web"
   ],
   "license": "MIT",
-  "stars": 5620,
+  "stars": 5621,
   "pushed_at": "2025-12-13T04:28:38Z",
   "language": "TypeScript",
   "hard_flags": [],
@@ -63,7 +63,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "21993 weekly downloads"
+      "note": "22772 weekly downloads"
     }
   },
   "quality_tier": "acceptable",
