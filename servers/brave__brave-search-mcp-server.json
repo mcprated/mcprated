@@ -1,6 +1,6 @@
 {
   "repo": "brave/brave-search-mcp-server",
-  "stars": 1341,
+  "stars": 1342,
   "language": "TypeScript",
   "license": "MIT",
   "description": null,
@@ -45,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 2d ago"
         },
         "has_releases": {
           "pass": true,
@@ -53,7 +53,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 13d ago"
+          "note": "latest release 14d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -69,7 +69,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 13d ago"
+          "note": "last published 14d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -151,7 +151,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "26881 weekly downloads"
+          "note": "25437 weekly downloads"
         }
       }
     },
@@ -190,5 +190,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-01T06:39:59+00:00"
+  "scored_at": "2026-08-02T06:49:04+00:00"
 }

@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5621,
+      "stars": 5624,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.354,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60096,
+      "stars": 60130,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 55,
+      "composite": 57,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 670,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.148,
+      "score": 0.151,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 27308,
+      "stars": 27388,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1341,
+      "stars": 1342,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -122,7 +122,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -132,7 +132,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.106,
+      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16092,
+      "stars": 16098,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,
