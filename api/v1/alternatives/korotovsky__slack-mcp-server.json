@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 35729,
+      "stars": 35766,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5624,
+      "stars": 5625,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.236,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60130,
+      "stars": 60175,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -66,17 +66,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 57,
+      "composite": 55,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 670,
+      "stars": 669,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.101,
+      "score": 0.099,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 27388,
+      "stars": 27449,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.091,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1342,
+      "stars": 1344,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -122,7 +122,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -132,7 +132,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.073,
+      "score": 0.071,
       "shared_capabilities": [
         "ai"
       ]
@@ -149,7 +149,7 @@
         "ai",
         "search"
       ],
-      "stars": 16098,
+      "stars": 16108,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,

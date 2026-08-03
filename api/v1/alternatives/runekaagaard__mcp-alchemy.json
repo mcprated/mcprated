@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16098,
+      "stars": 16108,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -51,7 +51,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3144,
+      "stars": 3149,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.229,
+      "score": 0.221,
       "shared_capabilities": [
         "database"
       ]
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60130,
+      "stars": 60175,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -107,17 +107,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 57,
+      "composite": 55,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 670,
+      "stars": 669,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.151,
+      "score": 0.148,
       "shared_capabilities": [
         "ai"
       ]
@@ -153,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 35729,
+      "stars": 35766,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -172,7 +172,7 @@
         "ai",
         "search"
       ],
-      "stars": 27388,
+      "stars": 27449,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -191,7 +191,7 @@
         "ai",
         "search"
       ],
-      "stars": 1342,
+      "stars": 1344,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
