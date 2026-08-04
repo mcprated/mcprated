@@ -1,6 +1,6 @@
 {
   "repo": "runekaagaard/mcp-alchemy",
-  "stars": 412,
+  "stars": 413,
   "language": "Python",
   "license": "MPL-2.0",
   "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
@@ -49,7 +49,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 2d ago"
+          "note": "pushed 3d ago"
         },
         "has_releases": {
           "pass": false,
@@ -73,7 +73,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 2d ago"
+          "note": "last published 3d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -155,7 +155,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "6619 weekly downloads"
+          "note": "6197 weekly downloads"
         }
       }
     },
@@ -189,5 +189,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-03T07:44:16+00:00"
+  "scored_at": "2026-08-04T06:43:22+00:00"
 }
