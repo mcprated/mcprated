@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-04T06:43:22+00:00",
+  "generated_at": "2026-08-05T06:39:45+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9544,
+      "stars": 9551,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 35789,
+      "stars": 35816,
       "language": "TypeScript"
     },
     {
@@ -39,13 +39,26 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15582,
+      "stars": 15587,
       "language": "TypeScript"
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 82,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "stars": 5695,
+      "language": "Python"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -53,20 +66,7 @@
         "ai",
         "search"
       ],
-      "stars": 27502,
-      "language": "Python"
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 80,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "stars": 5692,
+      "stars": 27567,
       "language": "Python"
     },
     {
@@ -79,7 +79,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31938,
+      "stars": 31966,
       "language": "Go"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16112,
+      "stars": 16124,
       "language": "Go"
     },
     {
@@ -108,7 +108,7 @@
         "ai",
         "search"
       ],
-      "stars": 1349,
+      "stars": 1350,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89177,
+      "stars": 89225,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89177,
+      "stars": 89225,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89177,
+      "stars": 89225,
       "language": "TypeScript"
     },
     {
@@ -152,7 +152,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89177,
+      "stars": 89225,
       "language": "TypeScript"
     },
     {
@@ -167,7 +167,7 @@
         "ai",
         "database"
       ],
-      "stars": 1486,
+      "stars": 1487,
       "language": "Python"
     },
     {
@@ -180,7 +180,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60218,
+      "stars": 60274,
       "language": "TypeScript"
     },
     {
@@ -191,7 +191,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4814,
+      "stars": 4816,
       "language": "TypeScript"
     },
     {
@@ -215,7 +215,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27937,
+      "stars": 27944,
       "language": "JavaScript"
     },
     {
@@ -228,7 +228,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4024,
+      "stars": 4028,
       "language": "TypeScript"
     },
     {
@@ -269,7 +269,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5626,
+      "stars": 5628,
       "language": "TypeScript"
     },
     {
@@ -283,7 +283,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3152,
+      "stars": 3158,
       "language": "Python"
     },
     {
@@ -299,20 +299,6 @@
       ],
       "stars": 413,
       "language": "Python"
-    },
-    {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
     },
     {
       "repo": "dandeliongold/mcp-time",
@@ -339,6 +325,20 @@
       "language": "JavaScript"
     },
     {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 40,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
+    },
+    {
       "repo": "zcaceres/fetch-mcp",
       "slug": "zcaceres__fetch-mcp",
       "composite": 40,
@@ -346,7 +346,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 807,
+      "stars": 808,
       "language": "TypeScript"
     },
     {
