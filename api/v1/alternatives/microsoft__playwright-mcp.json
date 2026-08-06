@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1766,
+      "stars": 1769,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.503,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60274,
+      "stars": 60329,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 57,
+      "composite": 55,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 669,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.151,
+      "score": 0.148,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 27567,
+      "stars": 27650,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1350,
+      "stars": 1354,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -140,7 +140,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 47,
+      "composite": 45,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -148,10 +148,10 @@
         "database",
         "ai"
       ],
-      "stars": 413,
+      "stars": 414,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.091,
+      "score": 0.089,
       "shared_capabilities": [
         "ai"
       ]
@@ -188,7 +188,7 @@
         "ai",
         "database"
       ],
-      "stars": 1487,
+      "stars": 1488,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.083,

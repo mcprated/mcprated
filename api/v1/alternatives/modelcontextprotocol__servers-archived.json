@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3158,
+      "stars": 3163,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.457,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9551,
+      "stars": 9555,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4028,
+      "stars": 4034,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.256,
@@ -86,7 +86,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 47,
+      "composite": 45,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -94,10 +94,10 @@
         "database",
         "ai"
       ],
-      "stars": 413,
+      "stars": 414,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.171,
+      "score": 0.168,
       "shared_capabilities": [
         "database"
       ]
@@ -114,7 +114,7 @@
         "ai",
         "database"
       ],
-      "stars": 1487,
+      "stars": 1488,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.166,
@@ -125,7 +125,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -136,7 +136,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.25,
-      "score": 0.158,
+      "score": 0.162,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31966,
+      "stars": 31983,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

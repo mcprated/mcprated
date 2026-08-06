@@ -2,7 +2,7 @@
   "capability": "database",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-08-05T06:39:45+00:00",
+  "generated_at": "2026-08-06T06:47:18+00:00",
   "count": 6,
   "servers": [
     {
@@ -32,7 +32,7 @@
         "ai",
         "database"
       ],
-      "stars": 1487,
+      "stars": 1488,
       "language": "Python"
     },
     {
@@ -46,13 +46,13 @@
         "database",
         "devtools"
       ],
-      "stars": 3158,
+      "stars": 3163,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 47,
+      "composite": 45,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -60,13 +60,13 @@
         "database",
         "ai"
       ],
-      "stars": 413,
+      "stars": 414,
       "language": "Python"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",

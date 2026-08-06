@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1487,
+      "stars": 1488,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.554,
@@ -59,7 +59,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3158,
+      "stars": 3163,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.229,
@@ -70,7 +70,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -81,7 +81,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.333,
-      "score": 0.211,
+      "score": 0.216,
       "shared_capabilities": [
         "database"
       ]
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60274,
+      "stars": 60329,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -107,7 +107,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 57,
+      "composite": 55,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -117,7 +117,7 @@
       "stars": 669,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.151,
+      "score": 0.148,
       "shared_capabilities": [
         "ai"
       ]
@@ -153,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 35816,
+      "stars": 35850,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -172,7 +172,7 @@
         "ai",
         "search"
       ],
-      "stars": 27567,
+      "stars": 27650,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,
@@ -191,7 +191,7 @@
         "ai",
         "search"
       ],
-      "stars": 1350,
+      "stars": 1354,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,

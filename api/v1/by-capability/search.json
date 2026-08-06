@@ -2,7 +2,7 @@
   "capability": "search",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-08-05T06:39:45+00:00",
+  "generated_at": "2026-08-06T06:47:18+00:00",
   "count": 5,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "ai",
         "search"
       ],
-      "stars": 27567,
+      "stars": 27650,
       "language": "Python"
     },
     {
@@ -45,7 +45,7 @@
         "ai",
         "search"
       ],
-      "stars": 1350,
+      "stars": 1354,
       "language": "TypeScript"
     },
     {
@@ -60,13 +60,13 @@
         "ai",
         "database"
       ],
-      "stars": 1487,
+      "stars": 1488,
       "language": "Python"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
