@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16124,
+      "stars": 16129,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
+      "composite": 67,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "database"
       ],
-      "stars": 1488,
+      "stars": 1490,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.554,
+      "score": 0.546,
       "shared_capabilities": [
         "ai",
         "database"
@@ -71,7 +71,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -79,10 +79,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3163,
+      "stars": 3166,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.229,
+      "score": 0.221,
       "shared_capabilities": [
         "database"
       ]
@@ -90,7 +90,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
+      "composite": 40,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -101,7 +101,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.333,
-      "score": 0.216,
+      "score": 0.211,
       "shared_capabilities": [
         "database"
       ]
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60329,
+      "stars": 60364,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -127,17 +127,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 55,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 669,
+      "stars": 670,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.148,
+      "score": 0.157,
       "shared_capabilities": [
         "ai"
       ]
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 35850,
+      "stars": 35883,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -192,7 +192,7 @@
         "ai",
         "search"
       ],
-      "stars": 27650,
+      "stars": 27693,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,

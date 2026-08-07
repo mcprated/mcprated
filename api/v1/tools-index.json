@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-06T06:47:18+00:00",
+  "generated_at": "2026-08-07T05:54:53+00:00",
   "total_tools": 191,
   "tools": [
     {
@@ -1404,149 +1404,6 @@
       "extraction_method": "regex_typescript"
     },
     {
-      "name": "analyze_db_health",
-      "description": "Analyze database health for specified components.",
-      "input_keys": [
-        "health_type"
-      ],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "analyze_query_indexes",
-      "description": "Analyze a list of SQL queries and recommend optimal indexes.",
-      "input_keys": [
-        "queries",
-        "max_index_size_mb",
-        "method"
-      ],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "analyze_workload_indexes",
-      "description": "Analyze frequently executed queries in the database and recommend optimal indexes.",
-      "input_keys": [
-        "max_index_size_mb",
-        "method"
-      ],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "explain_query",
-      "description": "Explains the execution plan for a SQL query.",
-      "input_keys": [
-        "sql",
-        "analyze",
-        "hypothetical_indexes"
-      ],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "get_object_details",
-      "description": "Get detailed information about a database object.",
-      "input_keys": [
-        "schema_name",
-        "object_name",
-        "object_type"
-      ],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "get_top_queries",
-      "description": null,
-      "input_keys": [
-        "sort_by",
-        "limit"
-      ],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "list_objects",
-      "description": "List objects of a given type in a schema.",
-      "input_keys": [
-        "schema_name",
-        "object_type"
-      ],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
-      "name": "list_schemas",
-      "description": "List all schemas in the database.",
-      "input_keys": [],
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "extraction_method": "ast_python"
-    },
-    {
       "name": "all_table_names",
       "description": null,
       "input_keys": [],
@@ -1614,6 +1471,149 @@
       "extraction_method": "ast_python"
     },
     {
+      "name": "analyze_db_health",
+      "description": "Analyze database health for specified components.",
+      "input_keys": [
+        "health_type"
+      ],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "analyze_query_indexes",
+      "description": "Analyze a list of SQL queries and recommend optimal indexes.",
+      "input_keys": [
+        "queries",
+        "max_index_size_mb",
+        "method"
+      ],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "analyze_workload_indexes",
+      "description": "Analyze frequently executed queries in the database and recommend optimal indexes.",
+      "input_keys": [
+        "max_index_size_mb",
+        "method"
+      ],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "explain_query",
+      "description": "Explains the execution plan for a SQL query.",
+      "input_keys": [
+        "sql",
+        "analyze",
+        "hypothetical_indexes"
+      ],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "get_object_details",
+      "description": "Get detailed information about a database object.",
+      "input_keys": [
+        "schema_name",
+        "object_name",
+        "object_type"
+      ],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "get_top_queries",
+      "description": null,
+      "input_keys": [
+        "sort_by",
+        "limit"
+      ],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "list_objects",
+      "description": "List objects of a given type in a schema.",
+      "input_keys": [
+        "schema_name",
+        "object_type"
+      ],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
+      "name": "list_schemas",
+      "description": "List all schemas in the database.",
+      "input_keys": [],
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 44,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "extraction_method": "ast_python"
+    },
+    {
       "name": "getSecretPassphrase",
       "description": "What\\s the password?",
       "input_keys": [],
@@ -1624,21 +1624,6 @@
       "subkind": "integration",
       "capabilities": [
         "devtools"
-      ],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "sticky-notes-server",
-      "description": null,
-      "input_keys": [],
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
       ],
       "extraction_method": "regex_typescript"
     },
@@ -1738,6 +1723,21 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
+      "extraction_method": "regex_typescript"
+    },
+    {
+      "name": "sticky-notes-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 40,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
       "extraction_method": "regex_typescript"
     },
     {

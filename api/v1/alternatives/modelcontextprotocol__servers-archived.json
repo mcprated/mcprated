@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3163,
+      "stars": 3166,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.457,
+      "score": 0.442,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9555,
+      "stars": 9567,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4034,
+      "stars": 4036,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.256,
@@ -75,7 +75,7 @@
         "ai",
         "search"
       ],
-      "stars": 16124,
+      "stars": 16129,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -105,7 +105,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
+      "composite": 67,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -114,10 +114,10 @@
         "ai",
         "database"
       ],
-      "stars": 1488,
+      "stars": 1490,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.166,
+      "score": 0.164,
       "shared_capabilities": [
         "database"
       ]
@@ -125,7 +125,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
+      "composite": 40,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -136,7 +136,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.25,
-      "score": 0.162,
+      "score": 0.158,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 31983,
+      "stars": 32017,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

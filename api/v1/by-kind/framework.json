@@ -1,9 +1,22 @@
 {
   "kind": "framework",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-06T06:47:18+00:00",
+  "generated_at": "2026-08-07T05:54:53+00:00",
   "count": 3,
   "servers": [
+    {
+      "repo": "modelcontextprotocol/python-sdk",
+      "slug": "modelcontextprotocol__python-sdk",
+      "composite": 84,
+      "description": "The official Python SDK for Model Context Protocol servers and clients",
+      "kind": "framework",
+      "subkind": "",
+      "capabilities": [
+        "comms"
+      ],
+      "stars": 23921,
+      "language": "Python"
+    },
     {
       "repo": "modelcontextprotocol/typescript-sdk",
       "slug": "modelcontextprotocol__typescript-sdk",
@@ -12,21 +25,8 @@
       "kind": "framework",
       "subkind": "",
       "capabilities": [],
-      "stars": 13081,
+      "stars": 13089,
       "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/python-sdk",
-      "slug": "modelcontextprotocol__python-sdk",
-      "composite": 82,
-      "description": "The official Python SDK for Model Context Protocol servers and clients",
-      "kind": "framework",
-      "subkind": "",
-      "capabilities": [
-        "comms"
-      ],
-      "stars": 23902,
-      "language": "Python"
     },
     {
       "repo": "supabase/mcp",
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 2852,
+      "stars": 2854,
       "language": "TypeScript"
     }
   ]

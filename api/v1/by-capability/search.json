@@ -2,7 +2,7 @@
   "capability": "search",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-08-06T06:47:18+00:00",
+  "generated_at": "2026-08-07T05:54:53+00:00",
   "count": 5,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "ai",
         "search"
       ],
-      "stars": 27650,
+      "stars": 27693,
       "language": "Python"
     },
     {
@@ -31,7 +31,7 @@
         "ai",
         "search"
       ],
-      "stars": 16124,
+      "stars": 16129,
       "language": "Go"
     },
     {
@@ -45,13 +45,13 @@
         "ai",
         "search"
       ],
-      "stars": 1354,
+      "stars": 1355,
       "language": "TypeScript"
     },
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
+      "composite": 67,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -60,13 +60,13 @@
         "ai",
         "database"
       ],
-      "stars": 1488,
+      "stars": 1490,
       "language": "Python"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
+      "composite": 40,
       "description": null,
       "kind": "server",
       "subkind": "integration",
