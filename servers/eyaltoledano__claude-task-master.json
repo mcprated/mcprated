@@ -38,7 +38,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 100d ago"
+          "note": "pushed 101d ago"
         },
         "has_releases": {
           "pass": true,
@@ -46,7 +46,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 128d ago"
+          "note": "latest release 129d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -62,7 +62,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 128d ago"
+          "note": "last published 129d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -144,7 +144,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "27357 weekly downloads"
+          "note": "25898 weekly downloads"
         }
       }
     },
@@ -163,7 +163,7 @@
         },
         "responsive_issues": {
           "pass": false,
-          "note": "no recent commits, 210 open issues"
+          "note": "no recent commits, 209 open issues"
         },
         "merged_prs_recent": {
           "pass": false,
@@ -178,5 +178,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-07T05:54:53+00:00"
+  "scored_at": "2026-08-08T05:08:50+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-07T05:54:53+00:00",
+  "generated_at": "2026-08-08T05:08:50+00:00",
   "total_tools": 191,
   "tools": [
     {
@@ -711,7 +711,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -723,7 +723,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -735,7 +735,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -747,7 +747,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -759,7 +759,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -771,7 +771,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -783,7 +783,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -795,7 +795,7 @@
       "input_keys": [],
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
@@ -1409,7 +1409,7 @@
       "input_keys": [],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1427,7 +1427,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1444,7 +1444,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1461,7 +1461,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1628,6 +1628,21 @@
       "extraction_method": "regex_typescript"
     },
     {
+      "name": "sticky-notes-server",
+      "description": null,
+      "input_keys": [],
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 42,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "extraction_method": "regex_typescript"
+    },
+    {
       "name": "super-secret-server",
       "description": null,
       "input_keys": [],
@@ -1723,21 +1738,6 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "extraction_method": "regex_typescript"
-    },
-    {
-      "name": "sticky-notes-server",
-      "description": null,
-      "input_keys": [],
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
       "extraction_method": "regex_typescript"
     },
     {

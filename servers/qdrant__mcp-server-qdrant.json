@@ -1,6 +1,6 @@
 {
   "repo": "qdrant/mcp-server-qdrant",
-  "stars": 1490,
+  "stars": 1493,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
@@ -27,8 +27,8 @@
     "extraction_confidence": 0.4
   },
   "sub_servers": [],
-  "composite": 67,
-  "composite_raw": 67,
+  "composite": 69,
+  "composite_raw": 69,
   "axes": {
     "reliability": {
       "score": 90,
@@ -45,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 7d ago"
+          "note": "pushed 8d ago"
         },
         "has_releases": {
           "pass": true,
@@ -53,7 +53,7 @@
         },
         "tagged_release_recent": {
           "pass": false,
-          "note": "latest release 239d ago"
+          "note": "latest release 240d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -69,7 +69,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 239d ago"
+          "note": "last published 240d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -105,8 +105,8 @@
       }
     },
     "trust": {
-      "score": 18,
-      "passing": 2,
+      "score": 27,
+      "passing": 3,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -150,8 +150,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "19182 weekly downloads"
         }
       }
     },
@@ -170,7 +170,7 @@
         },
         "responsive_issues": {
           "pass": false,
-          "note": "72 open / 2 commits (ratio 36.00)"
+          "note": "70 open / 2 commits (ratio 35.00)"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -185,5 +185,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-07T05:54:53+00:00"
+  "scored_at": "2026-08-08T05:08:50+00:00"
 }

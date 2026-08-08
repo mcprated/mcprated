@@ -2,7 +2,7 @@
   "capability": "unknown",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-08-07T05:54:53+00:00",
+  "generated_at": "2026-08-08T05:08:50+00:00",
   "count": 10,
   "servers": [
     {
@@ -13,7 +13,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15597,
+      "stars": 15611,
       "language": "TypeScript"
     },
     {
@@ -24,7 +24,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89298,
+      "stars": 89336,
       "language": "TypeScript"
     },
     {
@@ -35,7 +35,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89298,
+      "stars": 89336,
       "language": "TypeScript"
     },
     {
@@ -46,7 +46,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89298,
+      "stars": 89336,
       "language": "TypeScript"
     },
     {
@@ -57,18 +57,18 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89298,
+      "stars": 89336,
       "language": "TypeScript"
     },
     {
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
-      "composite": 67,
+      "composite": 69,
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4826,
+      "stars": 4830,
       "language": "TypeScript"
     },
     {
@@ -101,7 +101,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 809,
+      "stars": 810,
       "language": "TypeScript"
     },
     {

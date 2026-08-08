@@ -9,7 +9,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -20,7 +20,7 @@
       "stars": 414,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.671,
+      "score": 0.686,
       "shared_capabilities": [
         "ai",
         "database"
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16129,
+      "stars": 16136,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 67,
+      "composite": 69,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "database"
       ],
-      "stars": 1490,
+      "stars": 1493,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.546,
+      "score": 0.554,
       "shared_capabilities": [
         "ai",
         "database"
@@ -79,7 +79,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3166,
+      "stars": 3170,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.221,
@@ -90,7 +90,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -101,7 +101,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.333,
-      "score": 0.211,
+      "score": 0.216,
       "shared_capabilities": [
         "database"
       ]
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60364,
+      "stars": 60407,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -134,7 +134,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 670,
+      "stars": 671,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.157,
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 35883,
+      "stars": 35901,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -192,7 +192,7 @@
         "ai",
         "search"
       ],
-      "stars": 27693,
+      "stars": 27727,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.119,

@@ -1,10 +1,10 @@
 {
   "repo": "exa-labs/exa-mcp-server",
-  "stars": 4826,
+  "stars": 4830,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Exa MCP for web search and web crawling!",
-  "pushed_at": "2026-08-07T05:23:52Z",
+  "pushed_at": "2026-08-07T18:31:48Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.95,
@@ -29,8 +29,8 @@
     "extraction_confidence": 0.7
   },
   "sub_servers": [],
-  "composite": 67,
-  "composite_raw": 67,
+  "composite": 69,
+  "composite_raw": 69,
   "axes": {
     "reliability": {
       "score": 60,
@@ -71,7 +71,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 5d ago"
+          "note": "last published 6d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -86,19 +86,19 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 29221 chars (need ≥500)"
+          "note": "README 7635 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
-          "note": "needles=['claude_desktop_config', 'mcpservers', '\"mcpservers\"']"
+          "note": "needles=['mcpservers', '\"mcpservers\"']"
         },
         "tools_documented": {
           "pass": true,
-          "note": "sections=['## Available Tools', '## Tool Restriction (Critical)', '## Tool Restriction (Critical)']"
+          "note": "sections=['## Available Tools']"
         },
         "examples": {
           "pass": true,
-          "note": "49 code blocks"
+          "note": "5 code blocks"
         },
         "external_docs": {
           "pass": true,
@@ -107,8 +107,8 @@
       }
     },
     "trust": {
-      "score": 27,
-      "passing": 3,
+      "score": 36,
+      "passing": 4,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -116,8 +116,8 @@
           "note": "SPDX=MIT"
         },
         "has_security_policy": {
-          "pass": false,
-          "note": "no SECURITY.md, no security section"
+          "pass": true,
+          "note": "security section in README"
         },
         "org_owned": {
           "pass": true,
@@ -153,7 +153,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "31596 weekly downloads"
+          "note": "31844 weekly downloads"
         }
       }
     },
@@ -168,7 +168,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "11 unique committers in 90d"
+          "note": "9 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -187,5 +187,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-07T05:54:53+00:00"
+  "scored_at": "2026-08-08T05:08:50+00:00"
 }
