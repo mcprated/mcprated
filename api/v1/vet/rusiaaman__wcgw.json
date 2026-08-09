@@ -2,12 +2,12 @@
   "repo": "rusiaaman/wcgw",
   "slug": "rusiaaman__wcgw",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-08T05:08:50+00:00",
-  "composite": 62,
+  "scored_at": "2026-08-09T05:15:36+00:00",
+  "composite": 60,
   "axes": {
     "reliability": 90,
     "documentation": 80,
-    "trust": 18,
+    "trust": 9,
     "community": 60
   },
   "kind": "server",
@@ -16,7 +16,7 @@
     "ai"
   ],
   "license": "Apache-2.0",
-  "stars": 671,
+  "stars": 672,
   "pushed_at": "2026-08-07T13:02:37Z",
   "language": "Python",
   "hard_flags": [],
@@ -62,8 +62,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": true,
-      "note": "1000 weekly downloads"
+      "passed": false,
+      "note": "registry returned no download stats"
     }
   },
   "quality_tier": "acceptable",
