@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16138,
+      "stars": 16141,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1493,
+      "stars": 1494,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.554,
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 27761,
+      "stars": 27792,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.298,
@@ -78,12 +78,31 @@
         "ai",
         "search"
       ],
-      "stars": 1361,
+      "stars": 1363,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
       "shared_capabilities": [
         "search"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 47,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 3175,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.229,
+      "shared_capabilities": [
+        "database"
       ]
     },
     {
@@ -101,25 +120,6 @@
       "language": "Python",
       "similarity": 0.333,
       "score": 0.224,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
-      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "stars": 3173,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.221,
       "shared_capabilities": [
         "database"
       ]
