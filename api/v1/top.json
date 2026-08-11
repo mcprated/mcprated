@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-10T05:47:46+00:00",
+  "generated_at": "2026-08-11T05:22:23+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -12,7 +12,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9578,
+      "stars": 9580,
       "language": "Python"
     },
     {
@@ -26,7 +26,7 @@
         "web",
         "ai"
       ],
-      "stars": 35951,
+      "stars": 35979,
       "language": "TypeScript"
     },
     {
@@ -37,8 +37,22 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15622,
+      "stars": 15627,
       "language": "TypeScript"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 27835,
+      "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
@@ -50,21 +64,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5712,
-      "language": "Python"
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 80,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 27792,
+      "stars": 5718,
       "language": "Python"
     },
     {
@@ -77,7 +77,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32102,
+      "stars": 32130,
       "language": "Go"
     },
     {
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 16141,
+      "stars": 16148,
       "language": "Go"
     },
     {
@@ -106,7 +106,7 @@
         "ai",
         "search"
       ],
-      "stars": 1363,
+      "stars": 1366,
       "language": "TypeScript"
     },
     {
@@ -117,7 +117,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -128,7 +128,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -139,7 +139,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -150,7 +150,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -161,7 +161,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4847,
+      "stars": 4851,
       "language": "TypeScript"
     },
     {
@@ -176,7 +176,7 @@
         "ai",
         "database"
       ],
-      "stars": 1494,
+      "stars": 1495,
       "language": "Python"
     },
     {
@@ -189,7 +189,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60509,
+      "stars": 60574,
       "language": "TypeScript"
     },
     {
@@ -206,20 +206,9 @@
       "language": "Python"
     },
     {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 60,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 27948,
-      "language": "JavaScript"
-    },
-    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -228,6 +217,17 @@
       ],
       "stars": 672,
       "language": "Python"
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 60,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 27972,
+      "language": "JavaScript"
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -239,7 +239,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4049,
+      "stars": 4057,
       "language": "TypeScript"
     },
     {
@@ -254,7 +254,7 @@
         "comms",
         "web"
       ],
-      "stars": 1773,
+      "stars": 1779,
       "language": "Go"
     },
     {
@@ -267,7 +267,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5630,
+      "stars": 5633,
       "language": "TypeScript"
     },
     {
@@ -281,13 +281,13 @@
         "database",
         "devtools"
       ],
-      "stars": 3175,
+      "stars": 3179,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -299,6 +299,20 @@
       "language": "Python"
     },
     {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 42,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
+    },
+    {
       "repo": "dandeliongold/mcp-time",
       "slug": "dandeliongold__mcp-time",
       "composite": 42,
@@ -308,19 +322,6 @@
       "capabilities": [],
       "stars": 3,
       "language": "TypeScript"
-    },
-    {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
     }
   ],
   "by_stars": [
@@ -332,7 +333,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -343,7 +344,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -354,7 +355,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -365,7 +366,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -378,7 +379,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60509,
+      "stars": 60574,
       "language": "TypeScript"
     },
     {
@@ -392,7 +393,7 @@
         "web",
         "ai"
       ],
-      "stars": 35951,
+      "stars": 35979,
       "language": "TypeScript"
     },
     {
@@ -405,7 +406,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32102,
+      "stars": 32130,
       "language": "Go"
     },
     {
@@ -416,13 +417,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27948,
+      "stars": 27972,
       "language": "JavaScript"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -430,7 +431,7 @@
         "ai",
         "search"
       ],
-      "stars": 27792,
+      "stars": 27835,
       "language": "Python"
     },
     {
@@ -445,7 +446,7 @@
         "ai",
         "search"
       ],
-      "stars": 16141,
+      "stars": 16148,
       "language": "Go"
     },
     {
@@ -456,7 +457,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15622,
+      "stars": 15627,
       "language": "TypeScript"
     },
     {
@@ -469,7 +470,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9578,
+      "stars": 9580,
       "language": "Python"
     },
     {
@@ -482,7 +483,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5712,
+      "stars": 5718,
       "language": "Python"
     },
     {
@@ -495,7 +496,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5630,
+      "stars": 5633,
       "language": "TypeScript"
     },
     {
@@ -506,7 +507,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4847,
+      "stars": 4851,
       "language": "TypeScript"
     },
     {
@@ -519,7 +520,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4049,
+      "stars": 4057,
       "language": "TypeScript"
     },
     {
@@ -533,7 +534,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3175,
+      "stars": 3179,
       "language": "Python"
     },
     {
@@ -548,7 +549,7 @@
         "comms",
         "web"
       ],
-      "stars": 1773,
+      "stars": 1779,
       "language": "Go"
     },
     {
@@ -563,7 +564,7 @@
         "ai",
         "database"
       ],
-      "stars": 1494,
+      "stars": 1495,
       "language": "Python"
     },
     {
@@ -577,7 +578,7 @@
         "ai",
         "search"
       ],
-      "stars": 1363,
+      "stars": 1366,
       "language": "TypeScript"
     },
     {
@@ -588,13 +589,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 810,
+      "stars": 811,
       "language": "TypeScript"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -607,7 +608,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -630,7 +631,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 293,
+      "stars": 294,
       "language": "JavaScript"
     },
     {
@@ -647,44 +648,6 @@
   ],
   "by_recency": [
     {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 72,
-      "description": "Model Context Protocol Servers",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [],
-      "stars": 89384,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 60509,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 80,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 27792,
-      "language": "Python"
-    },
-    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -696,36 +659,100 @@
         "ai",
         "search"
       ],
-      "stars": 16141,
+      "stars": 16148,
       "language": "Go"
     },
     {
-      "repo": "microsoft/playwright-mcp",
-      "slug": "microsoft__playwright-mcp",
-      "composite": 84,
-      "description": "Playwright MCP server",
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 86,
+      "description": "Open source MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "cloud"
+      ],
+      "stars": 9580,
+      "language": "Python"
+    },
+    {
+      "repo": "exa-labs/exa-mcp-server",
+      "slug": "exa-labs__exa-mcp-server",
+      "composite": 69,
+      "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "web",
-        "ai"
-      ],
-      "stars": 35951,
+      "capabilities": [],
+      "stars": 4851,
       "language": "TypeScript"
     },
     {
-      "repo": "brave/brave-search-mcp-server",
-      "slug": "brave__brave-search-mcp-server",
-      "composite": 72,
+      "repo": "cloudflare/mcp-server-cloudflare",
+      "slug": "cloudflare__mcp-server-cloudflare",
+      "composite": 59,
       "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "cloud"
+      ],
+      "stars": 4057,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
         "search"
       ],
-      "stars": 1363,
+      "stars": 27835,
+      "language": "Python"
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 69,
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 60574,
       "language": "TypeScript"
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 74,
+      "description": "GitHub's official MCP Server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 32130,
+      "language": "Go"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 69,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1495,
+      "language": "Python"
     },
     {
       "repo": "mcprated/mcprated",
@@ -741,17 +768,43 @@
       "language": "Python"
     },
     {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 86,
-      "description": "Open source MCP Servers for AWS",
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 72,
+      "description": "Model Context Protocol Servers",
       "kind": "server",
       "subkind": "agent-product",
+      "capabilities": [],
+      "stars": 89420,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 84,
+      "description": "Playwright MCP server",
+      "kind": "server",
+      "subkind": "integration",
       "capabilities": [
-        "cloud"
+        "web",
+        "ai"
       ],
-      "stars": 9578,
-      "language": "Python"
+      "stars": 35979,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 72,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 1366,
+      "language": "TypeScript"
     },
     {
       "repo": "sooperset/mcp-atlassian",
@@ -763,50 +816,13 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5712,
+      "stars": 5718,
       "language": "Python"
-    },
-    {
-      "repo": "exa-labs/exa-mcp-server",
-      "slug": "exa-labs__exa-mcp-server",
-      "composite": 69,
-      "description": "Exa MCP for web search and web crawling!",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 4847,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 74,
-      "description": "GitHub's official MCP Server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 32102,
-      "language": "Go"
-    },
-    {
-      "repo": "cloudflare/mcp-server-cloudflare",
-      "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 59,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "cloud"
-      ],
-      "stars": 4049,
-      "language": "TypeScript"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -824,13 +840,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15622,
+      "stars": 15627,
       "language": "TypeScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -839,21 +855,6 @@
         "ai"
       ],
       "stars": 414,
-      "language": "Python"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1494,
       "language": "Python"
     },
     {
@@ -868,7 +869,7 @@
         "comms",
         "web"
       ],
-      "stars": 1773,
+      "stars": 1779,
       "language": "Go"
     },
     {
@@ -879,7 +880,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 27948,
+      "stars": 27972,
       "language": "JavaScript"
     },
     {
@@ -890,7 +891,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 810,
+      "stars": 811,
       "language": "TypeScript"
     },
     {
@@ -904,7 +905,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3175,
+      "stars": 3179,
       "language": "Python"
     },
     {
@@ -917,7 +918,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5630,
+      "stars": 5633,
       "language": "TypeScript"
     },
     {
@@ -932,7 +933,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 293,
+      "stars": 294,
       "language": "JavaScript"
     },
     {

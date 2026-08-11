@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-10T05:47:46+00:00",
+  "generated_at": "2026-08-11T05:22:23+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9578,
+      "stars": 9580,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 35951,
+      "stars": 35979,
       "language": "TypeScript"
     },
     {
@@ -39,8 +39,22 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15622,
+      "stars": 15627,
       "language": "TypeScript"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 27835,
+      "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
@@ -52,21 +66,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5712,
-      "language": "Python"
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 80,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 27792,
+      "stars": 5718,
       "language": "Python"
     },
     {
@@ -79,7 +79,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32102,
+      "stars": 32130,
       "language": "Go"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16141,
+      "stars": 16148,
       "language": "Go"
     },
     {
@@ -108,7 +108,7 @@
         "ai",
         "search"
       ],
-      "stars": 1363,
+      "stars": 1366,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -152,7 +152,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89384,
+      "stars": 89420,
       "language": "TypeScript"
     },
     {
@@ -163,7 +163,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4847,
+      "stars": 4851,
       "language": "TypeScript"
     },
     {
@@ -178,7 +178,7 @@
         "ai",
         "database"
       ],
-      "stars": 1494,
+      "stars": 1495,
       "language": "Python"
     },
     {
@@ -191,7 +191,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60509,
+      "stars": 60574,
       "language": "TypeScript"
     },
     {
@@ -208,20 +208,9 @@
       "language": "Python"
     },
     {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 60,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 27948,
-      "language": "JavaScript"
-    },
-    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -230,6 +219,17 @@
       ],
       "stars": 672,
       "language": "Python"
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 60,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 27972,
+      "language": "JavaScript"
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -241,7 +241,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4049,
+      "stars": 4057,
       "language": "TypeScript"
     },
     {
@@ -256,7 +256,7 @@
         "comms",
         "web"
       ],
-      "stars": 1773,
+      "stars": 1779,
       "language": "Go"
     },
     {
@@ -269,7 +269,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5630,
+      "stars": 5633,
       "language": "TypeScript"
     },
     {
@@ -283,13 +283,13 @@
         "database",
         "devtools"
       ],
-      "stars": 3175,
+      "stars": 3179,
       "language": "Python"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -299,6 +299,20 @@
       ],
       "stars": 414,
       "language": "Python"
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 42,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
     },
     {
       "repo": "dandeliongold/mcp-time",
@@ -325,20 +339,6 @@
       "language": "JavaScript"
     },
     {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
       "repo": "zcaceres/fetch-mcp",
       "slug": "zcaceres__fetch-mcp",
       "composite": 40,
@@ -346,7 +346,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 810,
+      "stars": 811,
       "language": "TypeScript"
     },
     {
@@ -361,7 +361,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 293,
+      "stars": 294,
       "language": "JavaScript"
     },
     {

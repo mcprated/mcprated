@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3175,
+      "stars": 3179,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.457,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9578,
+      "stars": 9580,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4049,
+      "stars": 4057,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.256,
@@ -75,7 +75,7 @@
         "ai",
         "search"
       ],
-      "stars": 16141,
+      "stars": 16148,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -86,7 +86,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -97,7 +97,7 @@
       "stars": 414,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.168,
+      "score": 0.171,
       "shared_capabilities": [
         "database"
       ]
@@ -114,7 +114,7 @@
         "ai",
         "database"
       ],
-      "stars": 1494,
+      "stars": 1495,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.166,
@@ -125,7 +125,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -136,7 +136,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.25,
-      "score": 0.158,
+      "score": 0.162,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32102,
+      "stars": 32130,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

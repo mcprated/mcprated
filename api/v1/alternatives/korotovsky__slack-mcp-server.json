@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 35951,
+      "stars": 35979,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5630,
+      "stars": 5633,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.236,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60509,
+      "stars": 60574,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 672,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.103,
+      "score": 0.105,
       "shared_capabilities": [
         "ai"
       ]
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,10 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 27792,
+      "stars": 27835,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.089,
+      "score": 0.091,
       "shared_capabilities": [
         "ai"
       ]
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1363,
+      "stars": 1366,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -149,7 +149,7 @@
         "ai",
         "search"
       ],
-      "stars": 16141,
+      "stars": 16148,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -160,7 +160,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -171,7 +171,7 @@
       "stars": 414,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.067,
+      "score": 0.069,
       "shared_capabilities": [
         "ai"
       ]
@@ -188,7 +188,7 @@
         "ai",
         "database"
       ],
-      "stars": 1494,
+      "stars": 1495,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.066,
