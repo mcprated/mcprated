@@ -2,7 +2,7 @@
   "repo": "github/github-mcp-server",
   "slug": "github__github-mcp-server",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-11T05:22:23+00:00",
+  "scored_at": "2026-08-12T05:48:02+00:00",
   "composite": 74,
   "axes": {
     "reliability": 70,
@@ -16,7 +16,7 @@
     "devtools"
   ],
   "license": "MIT",
-  "stars": 32130,
+  "stars": 32164,
   "pushed_at": "2026-08-10T14:13:34Z",
   "language": "Go",
   "hard_flags": [],

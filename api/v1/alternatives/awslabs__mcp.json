@@ -8,17 +8,17 @@
     {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 59,
+      "composite": 62,
       "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "cloud"
       ],
-      "stars": 4057,
+      "stars": 4064,
       "language": "TypeScript",
       "similarity": 1.0,
-      "score": 0.768,
+      "score": 0.787,
       "shared_capabilities": [
         "cloud"
       ]
