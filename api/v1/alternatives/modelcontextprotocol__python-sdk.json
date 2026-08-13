@@ -8,7 +8,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 57,
+      "composite": 42,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -20,7 +20,7 @@
       "stars": 1781,
       "language": "Go",
       "similarity": 0.333,
-      "score": 0.252,
+      "score": 0.216,
       "shared_capabilities": [
         "comms"
       ]
