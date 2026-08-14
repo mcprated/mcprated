@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3186,
+      "stars": 3189,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.442,
+      "score": 0.457,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9589,
+      "stars": 9594,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4066,
+      "stars": 4072,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -75,8 +75,28 @@
         "ai",
         "search"
       ],
-      "stars": 16163,
+      "stars": 16171,
       "language": "Go",
+      "similarity": 0.2,
+      "score": 0.172,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 74,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1499,
+      "language": "Python",
       "similarity": 0.2,
       "score": 0.172,
       "shared_capabilities": [
@@ -98,26 +118,6 @@
       "language": "Python",
       "similarity": 0.25,
       "score": 0.171,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1497,
-      "language": "Python",
-      "similarity": 0.2,
-      "score": 0.17,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32203,
+      "stars": 32230,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

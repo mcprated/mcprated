@@ -1,10 +1,10 @@
 {
   "repo": "supabase/mcp",
-  "stars": 2860,
+  "stars": 2862,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Connect Supabase to your AI assistants",
-  "pushed_at": "2026-08-12T08:30:23Z",
+  "pushed_at": "2026-08-13T15:49:37Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 0.85,
@@ -52,7 +52,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 2d ago"
+          "note": "latest release 3d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -169,7 +169,7 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 24 commits, 13 merged PRs in 90d"
+          "note": "active: 25 commits, 13 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-13T05:49:03+00:00"
+  "scored_at": "2026-08-14T05:51:42+00:00"
 }

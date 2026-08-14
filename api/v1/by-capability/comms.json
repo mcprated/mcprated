@@ -2,7 +2,7 @@
   "capability": "comms",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-08-13T05:49:03+00:00",
+  "generated_at": "2026-08-14T05:51:42+00:00",
   "count": 1,
   "servers": [
     {
@@ -17,7 +17,7 @@
         "comms",
         "web"
       ],
-      "stars": 1781,
+      "stars": 1782,
       "language": "Go"
     }
   ]

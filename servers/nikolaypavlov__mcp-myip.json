@@ -44,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 541d ago"
+          "note": "pushed 542d ago"
         },
         "has_releases": {
           "pass": false,
@@ -68,7 +68,7 @@
         },
         "recent_publish": {
           "pass": false,
-          "note": "last published 541d ago"
+          "note": "last published 542d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -150,7 +150,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "23 weekly downloads"
+          "note": "21 weekly downloads"
         }
       }
     },
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-13T05:49:03+00:00"
+  "scored_at": "2026-08-14T05:51:42+00:00"
 }
