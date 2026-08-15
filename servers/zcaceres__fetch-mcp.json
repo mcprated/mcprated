@@ -1,6 +1,6 @@
 {
   "repo": "zcaceres/fetch-mcp",
-  "stars": 812,
+  "stars": 811,
   "language": "TypeScript",
   "license": "MIT",
   "description": "A flexible HTTP fetching Model Context Protocol server.",
@@ -45,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 154d ago"
+          "note": "pushed 155d ago"
         },
         "has_releases": {
           "pass": false,
@@ -69,7 +69,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 157d ago"
+          "note": "last published 158d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -185,5 +185,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-14T05:51:42+00:00"
+  "scored_at": "2026-08-15T04:42:34+00:00"
 }
