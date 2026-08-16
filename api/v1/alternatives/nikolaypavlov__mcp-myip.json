@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60763,
+      "stars": 60810,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 36135,
+      "stars": 36167,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -71,7 +71,7 @@
         "ai",
         "search"
       ],
-      "stars": 28041,
+      "stars": 28077,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.181,
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1377,
+      "stars": 1380,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 16175,
+      "stars": 16180,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
