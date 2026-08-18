@@ -1,6 +1,6 @@
 {
   "repo": "korotovsky/slack-mcp-server",
-  "stars": 1783,
+  "stars": 1784,
   "language": "Go",
   "license": "MIT",
   "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
@@ -44,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 31d ago"
+          "note": "pushed 32d ago"
         },
         "has_releases": {
           "pass": true,
@@ -52,7 +52,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 94d ago"
+          "note": "latest release 95d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -169,7 +169,7 @@
         },
         "responsive_issues": {
           "pass": false,
-          "note": "no recent commits, 59 open issues"
+          "note": "no recent commits, 62 open issues"
         },
         "merged_prs_recent": {
           "pass": false,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-17T04:57:16+00:00"
+  "scored_at": "2026-08-18T04:49:32+00:00"
 }

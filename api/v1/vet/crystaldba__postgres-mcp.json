@@ -2,12 +2,12 @@
   "repo": "crystaldba/postgres-mcp",
   "slug": "crystaldba__postgres-mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-17T04:57:16+00:00",
-  "composite": 52,
+  "scored_at": "2026-08-18T04:49:31+00:00",
+  "composite": 54,
   "axes": {
     "reliability": 70,
     "documentation": 80,
-    "trust": 18,
+    "trust": 27,
     "community": 40
   },
   "kind": "server",
@@ -17,8 +17,8 @@
     "devtools"
   ],
   "license": "MIT",
-  "stars": 3196,
-  "pushed_at": "2026-08-16T05:33:37Z",
+  "stars": 3197,
+  "pushed_at": "2026-08-17T05:06:35Z",
   "language": "Python",
   "hard_flags": [],
   "trust_signals": {
@@ -63,8 +63,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": false,
-      "note": "registry returned no download stats"
+      "passed": true,
+      "note": "234480 weekly downloads"
     }
   },
   "quality_tier": "acceptable",

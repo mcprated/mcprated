@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-17T04:57:16+00:00",
+  "generated_at": "2026-08-18T04:49:32+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9608,
+      "stars": 9612,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 36190,
+      "stars": 36220,
       "language": "TypeScript"
     },
     {
@@ -39,7 +39,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15668,
+      "stars": 15671,
       "language": "TypeScript"
     },
     {
@@ -53,20 +53,20 @@
         "ai",
         "search"
       ],
-      "stars": 28121,
+      "stars": 28150,
       "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 80,
+      "composite": 82,
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
       ],
-      "stars": 5747,
+      "stars": 5757,
       "language": "Python"
     },
     {
@@ -79,7 +79,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32295,
+      "stars": 32318,
       "language": "Go"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16183,
+      "stars": 16190,
       "language": "Go"
     },
     {
@@ -109,7 +109,7 @@
         "ai",
         "database"
       ],
-      "stars": 1502,
+      "stars": 1504,
       "language": "Python"
     },
     {
@@ -123,7 +123,7 @@
         "ai",
         "search"
       ],
-      "stars": 1382,
+      "stars": 1388,
       "language": "TypeScript"
     },
     {
@@ -134,7 +134,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -145,7 +145,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -156,7 +156,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -167,7 +167,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -178,7 +178,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4877,
+      "stars": 4881,
       "language": "TypeScript"
     },
     {
@@ -191,7 +191,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60849,
+      "stars": 60900,
       "language": "TypeScript"
     },
     {
@@ -204,7 +204,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4081,
+      "stars": 4088,
       "language": "TypeScript"
     },
     {
@@ -241,13 +241,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28003,
+      "stars": 28004,
       "language": "JavaScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -255,7 +255,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3196,
+      "stars": 3197,
       "language": "Python"
     },
     {
@@ -282,7 +282,7 @@
         "database",
         "ai"
       ],
-      "stars": 414,
+      "stars": 415,
       "language": "Python"
     },
     {
@@ -335,7 +335,7 @@
         "comms",
         "web"
       ],
-      "stars": 1783,
+      "stars": 1784,
       "language": "Go"
     },
     {

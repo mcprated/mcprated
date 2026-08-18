@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-17T04:57:16+00:00",
+  "generated_at": "2026-08-18T04:49:32+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -12,7 +12,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9608,
+      "stars": 9612,
       "language": "Python"
     },
     {
@@ -26,7 +26,7 @@
         "web",
         "ai"
       ],
-      "stars": 36190,
+      "stars": 36220,
       "language": "TypeScript"
     },
     {
@@ -37,7 +37,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15668,
+      "stars": 15671,
       "language": "TypeScript"
     },
     {
@@ -51,20 +51,20 @@
         "ai",
         "search"
       ],
-      "stars": 28121,
+      "stars": 28150,
       "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 80,
+      "composite": 82,
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
       ],
-      "stars": 5747,
+      "stars": 5757,
       "language": "Python"
     },
     {
@@ -77,7 +77,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32295,
+      "stars": 32318,
       "language": "Go"
     },
     {
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 16183,
+      "stars": 16190,
       "language": "Go"
     },
     {
@@ -107,7 +107,7 @@
         "ai",
         "database"
       ],
-      "stars": 1502,
+      "stars": 1504,
       "language": "Python"
     },
     {
@@ -121,7 +121,7 @@
         "ai",
         "search"
       ],
-      "stars": 1382,
+      "stars": 1388,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -143,7 +143,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -154,7 +154,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -165,7 +165,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -176,7 +176,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4877,
+      "stars": 4881,
       "language": "TypeScript"
     },
     {
@@ -189,7 +189,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60849,
+      "stars": 60900,
       "language": "TypeScript"
     },
     {
@@ -202,7 +202,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4081,
+      "stars": 4088,
       "language": "TypeScript"
     },
     {
@@ -239,13 +239,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28003,
+      "stars": 28004,
       "language": "JavaScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -253,7 +253,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3196,
+      "stars": 3197,
       "language": "Python"
     },
     {
@@ -280,7 +280,7 @@
         "database",
         "ai"
       ],
-      "stars": 414,
+      "stars": 415,
       "language": "Python"
     },
     {
@@ -331,7 +331,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -342,7 +342,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -353,7 +353,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -364,7 +364,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -377,7 +377,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60849,
+      "stars": 60900,
       "language": "TypeScript"
     },
     {
@@ -391,7 +391,7 @@
         "web",
         "ai"
       ],
-      "stars": 36190,
+      "stars": 36220,
       "language": "TypeScript"
     },
     {
@@ -404,7 +404,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32295,
+      "stars": 32318,
       "language": "Go"
     },
     {
@@ -418,7 +418,7 @@
         "ai",
         "search"
       ],
-      "stars": 28121,
+      "stars": 28150,
       "language": "Python"
     },
     {
@@ -429,7 +429,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28003,
+      "stars": 28004,
       "language": "JavaScript"
     },
     {
@@ -444,7 +444,7 @@
         "ai",
         "search"
       ],
-      "stars": 16183,
+      "stars": 16190,
       "language": "Go"
     },
     {
@@ -455,7 +455,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15668,
+      "stars": 15671,
       "language": "TypeScript"
     },
     {
@@ -468,20 +468,20 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9608,
+      "stars": 9612,
       "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 80,
+      "composite": 82,
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
       ],
-      "stars": 5747,
+      "stars": 5757,
       "language": "Python"
     },
     {
@@ -505,7 +505,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4877,
+      "stars": 4881,
       "language": "TypeScript"
     },
     {
@@ -518,13 +518,13 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4081,
+      "stars": 4088,
       "language": "TypeScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -532,7 +532,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3196,
+      "stars": 3197,
       "language": "Python"
     },
     {
@@ -547,7 +547,7 @@
         "comms",
         "web"
       ],
-      "stars": 1783,
+      "stars": 1784,
       "language": "Go"
     },
     {
@@ -562,7 +562,7 @@
         "ai",
         "database"
       ],
-      "stars": 1502,
+      "stars": 1504,
       "language": "Python"
     },
     {
@@ -576,7 +576,7 @@
         "ai",
         "search"
       ],
-      "stars": 1382,
+      "stars": 1388,
       "language": "TypeScript"
     },
     {
@@ -614,7 +614,7 @@
         "database",
         "ai"
       ],
-      "stars": 414,
+      "stars": 415,
       "language": "Python"
     },
     {
@@ -646,6 +646,61 @@
   ],
   "by_recency": [
     {
+      "repo": "googleapis/mcp-toolbox",
+      "slug": "googleapis__mcp-toolbox",
+      "composite": 74,
+      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "database",
+        "ai",
+        "search"
+      ],
+      "stars": 16190,
+      "language": "Go"
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 82,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "stars": 5757,
+      "language": "Python"
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 86,
+      "description": "Open source MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "cloud"
+      ],
+      "stars": 9612,
+      "language": "Python"
+    },
+    {
+      "repo": "microsoft/playwright-mcp",
+      "slug": "microsoft__playwright-mcp",
+      "composite": 84,
+      "description": "Playwright MCP server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "web",
+        "ai"
+      ],
+      "stars": 36220,
+      "language": "TypeScript"
+    },
+    {
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
       "composite": 69,
@@ -653,35 +708,21 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4877,
+      "stars": 4881,
       "language": "TypeScript"
     },
     {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 82,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 74,
+      "description": "GitHub's official MCP Server",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "search"
+        "devtools"
       ],
-      "stars": 28121,
-      "language": "Python"
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 80,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "stars": 5747,
-      "language": "Python"
+      "stars": 32318,
+      "language": "Go"
     },
     {
       "repo": "upstash/context7",
@@ -693,13 +734,13 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60849,
+      "stars": 60900,
       "language": "TypeScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -707,7 +748,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3196,
+      "stars": 3197,
       "language": "Python"
     },
     {
@@ -724,44 +765,17 @@
       "language": "Python"
     },
     {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 74,
-      "description": "GitHub's official MCP Server",
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "devtools"
-      ],
-      "stars": 32295,
-      "language": "Go"
-    },
-    {
-      "repo": "googleapis/mcp-toolbox",
-      "slug": "googleapis__mcp-toolbox",
-      "composite": 74,
-      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "database",
         "ai",
         "search"
       ],
-      "stars": 16183,
-      "language": "Go"
-    },
-    {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 86,
-      "description": "Open source MCP Servers for AWS",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "cloud"
-      ],
-      "stars": 9608,
+      "stars": 28150,
       "language": "Python"
     },
     {
@@ -775,7 +789,7 @@
         "ai",
         "search"
       ],
-      "stars": 1382,
+      "stars": 1388,
       "language": "TypeScript"
     },
     {
@@ -790,22 +804,8 @@
         "ai",
         "database"
       ],
-      "stars": 1502,
+      "stars": 1504,
       "language": "Python"
-    },
-    {
-      "repo": "microsoft/playwright-mcp",
-      "slug": "microsoft__playwright-mcp",
-      "composite": 84,
-      "description": "Playwright MCP server",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "web",
-        "ai"
-      ],
-      "stars": 36190,
-      "language": "TypeScript"
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -817,7 +817,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4081,
+      "stars": 4088,
       "language": "TypeScript"
     },
     {
@@ -828,7 +828,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89612,
+      "stars": 89645,
       "language": "TypeScript"
     },
     {
@@ -852,7 +852,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15668,
+      "stars": 15671,
       "language": "TypeScript"
     },
     {
@@ -866,7 +866,7 @@
         "database",
         "ai"
       ],
-      "stars": 414,
+      "stars": 415,
       "language": "Python"
     },
     {
@@ -881,7 +881,7 @@
         "comms",
         "web"
       ],
-      "stars": 1783,
+      "stars": 1784,
       "language": "Go"
     },
     {
@@ -892,7 +892,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28003,
+      "stars": 28004,
       "language": "JavaScript"
     },
     {
