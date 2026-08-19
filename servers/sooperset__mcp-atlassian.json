@@ -1,10 +1,10 @@
 {
   "repo": "sooperset/mcp-atlassian",
-  "stars": 5757,
+  "stars": 5765,
   "language": "Python",
   "license": "MIT",
   "description": "MCP server for Atlassian tools (Confluence, Jira)",
-  "pushed_at": "2026-08-18T01:38:15Z",
+  "pushed_at": "2026-08-19T01:25:24Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -25,8 +25,8 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 82,
-  "composite_raw": 82,
+  "composite": 80,
+  "composite_raw": 80,
   "axes": {
     "reliability": {
       "score": 100,
@@ -51,11 +51,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 31d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: v0.23.0"
+          "note": "latest tag: v0.23.1"
         },
         "release_communication": {
           "pass": true,
@@ -67,7 +67,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 31d ago"
+          "note": "last published 0d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -103,8 +103,8 @@
       }
     },
     "trust": {
-      "score": 27,
-      "passing": 3,
+      "score": 18,
+      "passing": 2,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -148,8 +148,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": true,
-          "note": "349510 weekly downloads"
+          "pass": false,
+          "note": "registry returned no download stats"
         }
       }
     },
@@ -168,11 +168,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 10 merged PRs in 90d"
+          "note": "active: 30 commits, 11 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "10 merged PR(s) in 90d"
+          "note": "11 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-18T04:49:32+00:00"
+  "scored_at": "2026-08-19T04:48:16+00:00"
 }
