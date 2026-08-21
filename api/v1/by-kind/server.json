@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-20T04:51:19+00:00",
+  "generated_at": "2026-08-21T04:54:11+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9621,
+      "stars": 9627,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 36285,
+      "stars": 36319,
       "language": "TypeScript"
     },
     {
@@ -39,7 +39,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15681,
+      "stars": 15694,
       "language": "TypeScript"
     },
     {
@@ -53,7 +53,7 @@
         "ai",
         "search"
       ],
-      "stars": 28260,
+      "stars": 28309,
       "language": "Python"
     },
     {
@@ -66,7 +66,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5770,
+      "stars": 5776,
       "language": "Python"
     },
     {
@@ -79,7 +79,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32368,
+      "stars": 32395,
       "language": "Go"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16210,
+      "stars": 16226,
       "language": "Go"
     },
     {
@@ -123,7 +123,7 @@
         "ai",
         "search"
       ],
-      "stars": 1389,
+      "stars": 1390,
       "language": "TypeScript"
     },
     {
@@ -134,7 +134,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89701,
+      "stars": 89728,
       "language": "TypeScript"
     },
     {
@@ -145,7 +145,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89701,
+      "stars": 89728,
       "language": "TypeScript"
     },
     {
@@ -156,7 +156,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89701,
+      "stars": 89728,
       "language": "TypeScript"
     },
     {
@@ -167,7 +167,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89701,
+      "stars": 89728,
       "language": "TypeScript"
     },
     {
@@ -178,7 +178,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4890,
+      "stars": 4893,
       "language": "TypeScript"
     },
     {
@@ -191,7 +191,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 60992,
+      "stars": 61030,
       "language": "TypeScript"
     },
     {
@@ -204,7 +204,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4095,
+      "stars": 4098,
       "language": "TypeScript"
     },
     {
@@ -241,7 +241,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28003,
+      "stars": 28008,
       "language": "JavaScript"
     },
     {
@@ -255,7 +255,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3204,
+      "stars": 3209,
       "language": "Python"
     },
     {
@@ -268,7 +268,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5633,
+      "stars": 5632,
       "language": "TypeScript"
     },
     {
@@ -282,7 +282,7 @@
         "database",
         "ai"
       ],
-      "stars": 415,
+      "stars": 417,
       "language": "Python"
     },
     {
@@ -346,7 +346,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 812,
+      "stars": 813,
       "language": "TypeScript"
     },
     {

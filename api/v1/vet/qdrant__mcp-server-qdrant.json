@@ -2,7 +2,7 @@
   "repo": "qdrant/mcp-server-qdrant",
   "slug": "qdrant__mcp-server-qdrant",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-20T04:51:19+00:00",
+  "scored_at": "2026-08-21T04:54:11+00:00",
   "composite": 74,
   "axes": {
     "reliability": 90,
@@ -65,7 +65,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "20089 weekly downloads"
+      "note": "20452 weekly downloads"
     }
   },
   "quality_tier": "acceptable",

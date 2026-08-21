@@ -4,7 +4,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Connect Supabase to your AI assistants",
-  "pushed_at": "2026-08-19T16:53:37Z",
+  "pushed_at": "2026-08-20T12:58:18Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 0.85,
@@ -52,11 +52,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 9d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": false,
-          "note": "latest tag: mcp-utils-v0.6.0"
+          "note": "latest tag: mcp-utils-v0.7.0"
         },
         "release_communication": {
           "pass": true,
@@ -83,7 +83,7 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 6170 chars (need ≥500)"
+          "note": "README 8084 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
@@ -91,11 +91,11 @@
         },
         "tools_documented": {
           "pass": true,
-          "note": "9 sub-sections (overview README)"
+          "note": "10 sub-sections (overview README)"
         },
         "examples": {
           "pass": true,
-          "note": "3 code blocks"
+          "note": "4 code blocks"
         },
         "external_docs": {
           "pass": true,
@@ -169,7 +169,7 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 26 commits, 13 merged PRs in 90d"
+          "note": "active: 30 commits, 13 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-20T04:51:19+00:00"
+  "scored_at": "2026-08-21T04:54:11+00:00"
 }
