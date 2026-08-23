@@ -2,7 +2,7 @@
   "repo": "GLips/Figma-Context-MCP",
   "slug": "GLips__Figma-Context-MCP",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-22T04:44:14+00:00",
+  "scored_at": "2026-08-23T04:49:05+00:00",
   "composite": 82,
   "axes": {
     "reliability": 100,
@@ -14,7 +14,7 @@
   "subkind": "integration",
   "capabilities": [],
   "license": "MIT",
-  "stars": 15701,
+  "stars": 15703,
   "pushed_at": "2026-08-07T04:58:42Z",
   "language": "TypeScript",
   "hard_flags": [],
@@ -61,7 +61,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "71665 weekly downloads"
+      "note": "84759 weekly downloads"
     }
   },
   "quality_tier": "solid",

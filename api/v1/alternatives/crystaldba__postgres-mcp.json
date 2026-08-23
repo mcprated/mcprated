@@ -77,7 +77,7 @@
         "ai",
         "search"
       ],
-      "stars": 16231,
+      "stars": 16242,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -97,7 +97,7 @@
         "ai",
         "database"
       ],
-      "stars": 1508,
+      "stars": 1511,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.215,
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32421,
+      "stars": 32432,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -144,7 +144,7 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
+      "composite": 42,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -154,7 +154,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.5,
-      "score": 0.126,
+      "score": 0.13,
       "shared_capabilities": [
         "devtools"
       ]
