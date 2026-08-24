@@ -1,6 +1,6 @@
 {
   "repo": "modelcontextprotocol/python-sdk",
-  "stars": 24091,
+  "stars": 24099,
   "language": "Python",
   "license": "MIT",
   "description": "The official Python SDK for Model Context Protocol servers and clients",
@@ -40,7 +40,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 2d ago"
         },
         "has_releases": {
           "pass": true,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 25d ago"
+          "note": "latest release 26d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -64,7 +64,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 25d ago"
+          "note": "last published 26d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -146,7 +146,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "84830760 weekly downloads"
+          "note": "83608495 weekly downloads"
         }
       }
     },
@@ -165,11 +165,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 3 merged PRs in 90d"
+          "note": "active: 30 commits, 1 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "3 merged PR(s) in 90d"
+          "note": "1 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -180,5 +180,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-23T04:49:06+00:00"
+  "scored_at": "2026-08-24T04:57:29+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "repo": "eyaltoledano/claude-task-master",
-  "stars": 28012,
+  "stars": 28015,
   "language": "JavaScript",
   "license": "NOASSERTION",
   "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
@@ -38,7 +38,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 116d ago"
+          "note": "pushed 117d ago"
         },
         "has_releases": {
           "pass": true,
@@ -46,7 +46,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 144d ago"
+          "note": "latest release 145d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -62,7 +62,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 144d ago"
+          "note": "last published 145d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -144,7 +144,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "18444 weekly downloads"
+          "note": "18950 weekly downloads"
         }
       }
     },
@@ -178,5 +178,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-23T04:49:06+00:00"
+  "scored_at": "2026-08-24T04:57:29+00:00"
 }

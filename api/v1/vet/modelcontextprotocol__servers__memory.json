@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/servers",
   "slug": "modelcontextprotocol__servers__memory",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-23T04:49:06+00:00",
+  "scored_at": "2026-08-24T04:57:29+00:00",
   "composite": 72,
   "axes": {
     "reliability": 80,
@@ -14,7 +14,7 @@
   "subkind": "integration",
   "capabilities": [],
   "license": "NOASSERTION",
-  "stars": 89785,
+  "stars": 89812,
   "pushed_at": null,
   "language": "TypeScript",
   "hard_flags": [],
