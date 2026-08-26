@@ -2,7 +2,7 @@
   "repo": "qdrant/mcp-server-qdrant",
   "slug": "qdrant__mcp-server-qdrant",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-25T04:50:31+00:00",
+  "scored_at": "2026-08-26T04:55:03+00:00",
   "composite": 74,
   "axes": {
     "reliability": 90,
@@ -18,7 +18,7 @@
     "database"
   ],
   "license": "Apache-2.0",
-  "stars": 1514,
+  "stars": 1515,
   "pushed_at": "2026-08-14T00:13:56Z",
   "language": "Python",
   "hard_flags": [],
@@ -65,7 +65,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "18742 weekly downloads"
+      "note": "16322 weekly downloads"
     }
   },
   "quality_tier": "acceptable",

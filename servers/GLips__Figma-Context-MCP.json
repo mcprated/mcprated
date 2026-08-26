@@ -1,6 +1,6 @@
 {
   "repo": "GLips/Figma-Context-MCP",
-  "stars": 15708,
+  "stars": 15714,
   "language": "TypeScript",
   "license": "MIT",
   "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
@@ -40,7 +40,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 17d ago"
+          "note": "pushed 18d ago"
         },
         "has_releases": {
           "pass": true,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 67d ago"
+          "note": "latest release 68d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -64,7 +64,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 67d ago"
+          "note": "last published 68d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -146,7 +146,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "83465 weekly downloads"
+          "note": "82366 weekly downloads"
         }
       }
     },
@@ -161,11 +161,11 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "7 unique committers in 90d"
+          "note": "6 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 28 commits, 10 merged PRs in 90d"
+          "note": "active: 22 commits, 10 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -180,5 +180,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-25T04:50:30+00:00"
+  "scored_at": "2026-08-26T04:55:03+00:00"
 }

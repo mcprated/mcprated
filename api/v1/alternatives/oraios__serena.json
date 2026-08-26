@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 1401,
+      "stars": 1403,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.849,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16250,
+      "stars": 16259,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1514,
+      "stars": 1515,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61171,
+      "stars": 61224,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -108,7 +108,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 62,
+      "composite": 60,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -118,7 +118,7 @@
       "stars": 673,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.157,
+      "score": 0.155,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 36437,
+      "stars": 36474,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -145,7 +145,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
+      "composite": 28,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
@@ -155,7 +155,7 @@
       "stars": 0,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.11,
+      "score": 0.106,
       "shared_capabilities": [
         "ai"
       ]
@@ -163,7 +163,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 47,
+      "composite": 45,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -171,10 +171,10 @@
         "database",
         "ai"
       ],
-      "stars": 417,
+      "stars": 418,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.091,
+      "score": 0.089,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1793,
+      "stars": 1795,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.065,
