@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16259,
+      "stars": 16264,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1515,
+      "stars": 1516,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.573,
@@ -51,7 +51,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "search"
       ],
-      "stars": 28500,
+      "stars": 28540,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.298,
+      "score": 0.302,
       "shared_capabilities": [
         "search"
       ]
@@ -78,7 +78,7 @@
         "ai",
         "search"
       ],
-      "stars": 1403,
+      "stars": 1402,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -97,7 +97,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3219,
+      "stars": 3230,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.245,
@@ -108,7 +108,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -119,7 +119,7 @@
       "stars": 418,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.224,
+      "score": 0.229,
       "shared_capabilities": [
         "database"
       ]
@@ -136,7 +136,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 295,
+      "stars": 294,
       "language": "JavaScript",
       "similarity": 0.25,
       "score": 0.137,

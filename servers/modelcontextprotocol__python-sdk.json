@@ -1,10 +1,10 @@
 {
   "repo": "modelcontextprotocol/python-sdk",
-  "stars": 24125,
+  "stars": 24134,
   "language": "Python",
   "license": "MIT",
   "description": "The official Python SDK for Model Context Protocol servers and clients",
-  "pushed_at": "2026-08-25T15:58:20Z",
+  "pushed_at": "2026-08-26T17:16:00Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 1.0,
@@ -22,8 +22,8 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 82,
-  "composite_raw": 82,
+  "composite": 84,
+  "composite_raw": 84,
   "axes": {
     "reliability": {
       "score": 100,
@@ -48,11 +48,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 0d ago"
+          "note": "latest release 1d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: v2.1.1"
+          "note": "latest tag: v2.0.1"
         },
         "release_communication": {
           "pass": true,
@@ -64,7 +64,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 0d ago"
+          "note": "last published 1d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -100,8 +100,8 @@
       }
     },
     "trust": {
-      "score": 27,
-      "passing": 3,
+      "score": 36,
+      "passing": 4,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -145,8 +145,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "70095160 weekly downloads"
         }
       }
     },
@@ -165,11 +165,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 5 merged PRs in 90d"
+          "note": "active: 30 commits, 4 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "5 merged PR(s) in 90d"
+          "note": "4 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -180,5 +180,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-26T04:55:03+00:00"
+  "scored_at": "2026-08-27T15:11:21+00:00"
 }

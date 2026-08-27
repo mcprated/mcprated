@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-26T04:55:03+00:00",
+  "generated_at": "2026-08-27T15:11:21+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9637,
+      "stars": 9642,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 36474,
+      "stars": 36531,
       "language": "TypeScript"
     },
     {
@@ -39,13 +39,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15714,
+      "stars": 15723,
       "language": "TypeScript"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -53,20 +53,20 @@
         "ai",
         "search"
       ],
-      "stars": 28500,
+      "stars": 28540,
       "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 80,
+      "composite": 82,
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
       ],
-      "stars": 5791,
+      "stars": 5801,
       "language": "Python"
     },
     {
@@ -79,7 +79,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32504,
+      "stars": 32551,
       "language": "Go"
     },
     {
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16259,
+      "stars": 16264,
       "language": "Go"
     },
     {
@@ -109,7 +109,7 @@
         "ai",
         "database"
       ],
-      "stars": 1515,
+      "stars": 1516,
       "language": "Python"
     },
     {
@@ -123,7 +123,7 @@
         "ai",
         "search"
       ],
-      "stars": 1403,
+      "stars": 1402,
       "language": "TypeScript"
     },
     {
@@ -134,7 +134,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89864,
+      "stars": 89908,
       "language": "TypeScript"
     },
     {
@@ -145,7 +145,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89864,
+      "stars": 89908,
       "language": "TypeScript"
     },
     {
@@ -156,7 +156,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89864,
+      "stars": 89908,
       "language": "TypeScript"
     },
     {
@@ -167,7 +167,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89864,
+      "stars": 89908,
       "language": "TypeScript"
     },
     {
@@ -178,7 +178,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4926,
+      "stars": 4931,
       "language": "TypeScript"
     },
     {
@@ -191,7 +191,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61224,
+      "stars": 61295,
       "language": "TypeScript"
     },
     {
@@ -204,7 +204,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4113,
+      "stars": 4120,
       "language": "TypeScript"
     },
     {
@@ -255,7 +255,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3219,
+      "stars": 3230,
       "language": "Python"
     },
     {
@@ -268,13 +268,13 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5634,
+      "stars": 5637,
       "language": "TypeScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -335,7 +335,7 @@
         "comms",
         "web"
       ],
-      "stars": 1795,
+      "stars": 1799,
       "language": "Go"
     },
     {
@@ -346,7 +346,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 815,
+      "stars": 816,
       "language": "TypeScript"
     },
     {
@@ -361,7 +361,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 295,
+      "stars": 294,
       "language": "JavaScript"
     },
     {

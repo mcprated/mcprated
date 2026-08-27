@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-26T04:55:03+00:00",
+  "generated_at": "2026-08-27T15:11:21+00:00",
   "total_tools": 191,
   "tools": [
     {
@@ -1552,7 +1552,7 @@
       "input_keys": [],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1570,7 +1570,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1587,7 +1587,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
@@ -1604,7 +1604,7 @@
       ],
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
