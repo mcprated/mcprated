@@ -2,7 +2,7 @@
   "repo": "upstash/context7",
   "slug": "upstash__context7",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-27T15:11:21+00:00",
+  "scored_at": "2026-08-28T16:40:03+00:00",
   "composite": 69,
   "axes": {
     "reliability": 70,
@@ -16,8 +16,8 @@
     "ai"
   ],
   "license": "MIT",
-  "stars": 61295,
-  "pushed_at": "2026-08-27T13:18:20Z",
+  "stars": 61348,
+  "pushed_at": "2026-08-28T12:52:17Z",
   "language": "TypeScript",
   "hard_flags": [],
   "trust_signals": {
