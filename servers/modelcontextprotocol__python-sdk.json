@@ -1,10 +1,10 @@
 {
   "repo": "modelcontextprotocol/python-sdk",
-  "stars": 24146,
+  "stars": 24152,
   "language": "Python",
   "license": "MIT",
   "description": "The official Python SDK for Model Context Protocol servers and clients",
-  "pushed_at": "2026-08-28T14:54:52Z",
+  "pushed_at": "2026-08-28T19:22:17Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 1.0,
@@ -22,8 +22,8 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 84,
-  "composite_raw": 84,
+  "composite": 82,
+  "composite_raw": 82,
   "axes": {
     "reliability": {
       "score": 100,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 2d ago"
+          "note": "latest release 3d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -100,8 +100,8 @@
       }
     },
     "trust": {
-      "score": 36,
-      "passing": 4,
+      "score": 27,
+      "passing": 3,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -145,8 +145,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": true,
-          "note": "64501281 weekly downloads"
+          "pass": false,
+          "note": "registry returned no download stats"
         }
       }
     },
@@ -165,11 +165,11 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 4 merged PRs in 90d"
+          "note": "active: 30 commits, 3 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "4 merged PR(s) in 90d"
+          "note": "3 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -180,5 +180,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-28T16:40:02+00:00"
+  "scored_at": "2026-08-29T11:08:07+00:00"
 }

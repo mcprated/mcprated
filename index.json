@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T16:40:03+00:00",
+  "generated_at": "2026-08-29T11:08:07+00:00",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
   "count": 32,
@@ -14,7 +14,7 @@
         "trust": 73,
         "community": 100
       },
-      "stars": 9642,
+      "stars": 9643,
       "language": "Python",
       "description": "Open source MCP Servers for AWS",
       "kind": "server",
@@ -37,7 +37,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 36578,
+      "stars": 36596,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -45,29 +45,6 @@
       "capabilities": [
         "web",
         "ai"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
-      "repo": "modelcontextprotocol/python-sdk",
-      "slug": "modelcontextprotocol__python-sdk",
-      "composite": 84,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 36,
-        "community": 100
-      },
-      "stars": 24146,
-      "language": "Python",
-      "description": "The official Python SDK for Model Context Protocol servers and clients",
-      "kind": "framework",
-      "subkind": "",
-      "capabilities": [
-        "comms"
       ],
       "distribution": "repo",
       "tool_count": 0,
@@ -84,7 +61,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 13266,
+      "stars": 13269,
       "language": "TypeScript",
       "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -105,7 +82,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 15730,
+      "stars": 15732,
       "language": "TypeScript",
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
@@ -119,6 +96,29 @@
       "hard_flags": []
     },
     {
+      "repo": "modelcontextprotocol/python-sdk",
+      "slug": "modelcontextprotocol__python-sdk",
+      "composite": 82,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 27,
+        "community": 100
+      },
+      "stars": 24152,
+      "language": "Python",
+      "description": "The official Python SDK for Model Context Protocol servers and clients",
+      "kind": "framework",
+      "subkind": "",
+      "capabilities": [
+        "comms"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
       "composite": 82,
@@ -128,7 +128,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 28573,
+      "stars": 28594,
       "language": "Python",
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
@@ -145,14 +145,14 @@
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 82,
+      "composite": 80,
       "axes": {
         "reliability": 100,
         "documentation": 100,
-        "trust": 27,
+        "trust": 18,
         "community": 100
       },
-      "stars": 5808,
+      "stars": 5810,
       "language": "Python",
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
@@ -175,7 +175,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 32581,
+      "stars": 32591,
       "language": "Go",
       "description": "GitHub's official MCP Server",
       "kind": "server",
@@ -198,7 +198,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 16272,
+      "stars": 16274,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -248,7 +248,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 1406,
+      "stars": 1408,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -267,38 +267,6 @@
       ]
     },
     {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 72,
-      "axes": {
-        "reliability": 80,
-        "documentation": 80,
-        "trust": 27,
-        "community": 100
-      },
-      "stars": 89932,
-      "language": "TypeScript",
-      "description": "Model Context Protocol Servers",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [],
-      "distribution": "repo",
-      "tool_count": 27,
-      "tool_names_preview": [
-        "read_file",
-        "read_text_file",
-        "read_media_file",
-        "read_multiple_files",
-        "write_file",
-        "edit_file",
-        "create_directory",
-        "list_directory",
-        "list_directory_with_sizes",
-        "directory_tree"
-      ],
-      "hard_flags": []
-    },
-    {
       "repo": "supabase/mcp",
       "slug": "supabase__mcp",
       "composite": 70,
@@ -308,7 +276,7 @@
         "trust": 18,
         "community": 100
       },
-      "stars": 2877,
+      "stars": 2880,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "framework",
@@ -332,7 +300,7 @@
         "trust": 36,
         "community": 80
       },
-      "stars": 4938,
+      "stars": 4941,
       "language": "TypeScript",
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
@@ -362,7 +330,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 61348,
+      "stars": 61375,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
@@ -376,6 +344,38 @@
       "hard_flags": []
     },
     {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 67,
+      "axes": {
+        "reliability": 80,
+        "documentation": 80,
+        "trust": 27,
+        "community": 80
+      },
+      "stars": 89947,
+      "language": "TypeScript",
+      "description": "Model Context Protocol Servers",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "distribution": "repo",
+      "tool_count": 27,
+      "tool_names_preview": [
+        "read_file",
+        "read_text_file",
+        "read_media_file",
+        "read_multiple_files",
+        "write_file",
+        "edit_file",
+        "create_directory",
+        "list_directory",
+        "list_directory_with_sizes",
+        "directory_tree"
+      ],
+      "hard_flags": []
+    },
+    {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
       "composite": 62,
@@ -385,7 +385,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 4122,
+      "stars": 4124,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -434,13 +434,34 @@
       "hard_flags": []
     },
     {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 60,
+      "axes": {
+        "reliability": 80,
+        "documentation": 100,
+        "trust": 18,
+        "community": 40
+      },
+      "stars": 28033,
+      "language": "JavaScript",
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 62,
+      "composite": 60,
       "axes": {
         "reliability": 90,
         "documentation": 80,
-        "trust": 18,
+        "trust": 9,
         "community": 60
       },
       "stars": 673,
@@ -451,27 +472,6 @@
       "capabilities": [
         "ai"
       ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 60,
-      "axes": {
-        "reliability": 80,
-        "documentation": 100,
-        "trust": 18,
-        "community": 40
-      },
-      "stars": 28031,
-      "language": "JavaScript",
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
       "distribution": "repo",
       "tool_count": 0,
       "tool_names_preview": [],
@@ -662,7 +662,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 1801,
+      "stars": 1802,
       "language": "Go",
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",

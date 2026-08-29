@@ -52,7 +52,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 11d ago"
+          "note": "pushed 12d ago"
         },
         "has_releases": {
           "pass": true,
@@ -177,7 +177,7 @@
         },
         "responsive_issues": {
           "pass": false,
-          "note": "87 open / 1 commits (ratio 87.00)"
+          "note": "89 open / 1 commits (ratio 89.00)"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -192,5 +192,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-28T16:40:02+00:00"
+  "scored_at": "2026-08-29T11:08:07+00:00"
 }
