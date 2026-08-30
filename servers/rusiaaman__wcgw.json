@@ -24,8 +24,8 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 60,
-  "composite_raw": 60,
+  "composite": 62,
+  "composite_raw": 62,
   "axes": {
     "reliability": {
       "score": 90,
@@ -42,7 +42,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 21d ago"
+          "note": "pushed 22d ago"
         },
         "has_releases": {
           "pass": true,
@@ -102,8 +102,8 @@
       }
     },
     "trust": {
-      "score": 9,
-      "passing": 1,
+      "score": 18,
+      "passing": 2,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -147,8 +147,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": false,
-          "note": "registry returned no download stats"
+          "pass": true,
+          "note": "603 weekly downloads"
         }
       }
     },
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-29T11:08:07+00:00"
+  "scored_at": "2026-08-30T09:59:06+00:00"
 }

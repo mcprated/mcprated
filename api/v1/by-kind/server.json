@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-08-29T11:08:07+00:00",
+  "generated_at": "2026-08-30T09:59:06+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9643,
+      "stars": 9645,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 36596,
+      "stars": 36616,
       "language": "TypeScript"
     },
     {
@@ -39,7 +39,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15732,
+      "stars": 15734,
       "language": "TypeScript"
     },
     {
@@ -53,7 +53,7 @@
         "ai",
         "search"
       ],
-      "stars": 28594,
+      "stars": 28637,
       "language": "Python"
     },
     {
@@ -66,7 +66,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5810,
+      "stars": 5813,
       "language": "Python"
     },
     {
@@ -79,7 +79,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32591,
+      "stars": 32603,
       "language": "Go"
     },
     {
@@ -94,23 +94,8 @@
         "ai",
         "search"
       ],
-      "stars": 16274,
+      "stars": 16276,
       "language": "Go"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1517,
-      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -123,8 +108,23 @@
         "ai",
         "search"
       ],
-      "stars": 1408,
+      "stars": 1409,
       "language": "TypeScript"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 72,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1515,
+      "language": "Python"
     },
     {
       "repo": "exa-labs/exa-mcp-server",
@@ -134,7 +134,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 4941,
+      "stars": 4946,
       "language": "TypeScript"
     },
     {
@@ -147,7 +147,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61375,
+      "stars": 61403,
       "language": "TypeScript"
     },
     {
@@ -158,7 +158,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 89947,
+      "stars": 89963,
       "language": "TypeScript"
     },
     {
@@ -169,7 +169,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89947,
+      "stars": 89963,
       "language": "TypeScript"
     },
     {
@@ -180,7 +180,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89947,
+      "stars": 89963,
       "language": "TypeScript"
     },
     {
@@ -191,7 +191,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 89947,
+      "stars": 89963,
       "language": "TypeScript"
     },
     {
@@ -204,7 +204,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4124,
+      "stars": 4127,
       "language": "TypeScript"
     },
     {
@@ -221,20 +221,9 @@
       "language": "Python"
     },
     {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 60,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 28033,
-      "language": "JavaScript"
-    },
-    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -245,9 +234,20 @@
       "language": "Python"
     },
     {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 60,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 28038,
+      "language": "JavaScript"
+    },
+    {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -255,7 +255,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3235,
+      "stars": 3238,
       "language": "Python"
     },
     {
@@ -274,7 +274,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 47,
+      "composite": 45,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -335,7 +335,7 @@
         "comms",
         "web"
       ],
-      "stars": 1802,
+      "stars": 1803,
       "language": "Go"
     },
     {
@@ -346,7 +346,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 816,
+      "stars": 817,
       "language": "TypeScript"
     },
     {
@@ -361,7 +361,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 294,
+      "stars": 295,
       "language": "JavaScript"
     },
     {

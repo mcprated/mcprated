@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/servers",
   "slug": "modelcontextprotocol__servers",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-29T11:08:07+00:00",
+  "scored_at": "2026-08-30T09:59:06+00:00",
   "composite": 67,
   "axes": {
     "reliability": 80,
@@ -14,7 +14,7 @@
   "subkind": "agent-product",
   "capabilities": [],
   "license": "NOASSERTION",
-  "stars": 89947,
+  "stars": 89963,
   "pushed_at": "2026-08-28T17:58:20Z",
   "language": "TypeScript",
   "hard_flags": [],
