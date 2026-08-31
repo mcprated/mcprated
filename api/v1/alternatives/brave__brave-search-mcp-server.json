@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 28637,
+      "stars": 28680,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.906,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16276,
+      "stars": 16281,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "database"
       ],
-      "stars": 1515,
+      "stars": 1516,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.566,
+      "score": 0.573,
       "shared_capabilities": [
         "ai",
         "search"
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61403,
+      "stars": 61437,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 36616,
+      "stars": 36650,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -163,7 +163,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
+      "composite": 47,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -174,7 +174,7 @@
       "stars": 418,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.089,
+      "score": 0.091,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1803,
+      "stars": 1805,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.065,

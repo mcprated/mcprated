@@ -3,7 +3,7 @@
   "slug": "modelcontextprotocol__servers__filesystem",
   "parent_slug": "modelcontextprotocol__servers",
   "subpath": "src/filesystem",
-  "composite": 67,
+  "composite": 72,
   "axes": {
     "reliability": {
       "score": 80,
@@ -20,7 +20,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -28,7 +28,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 11d ago"
+          "note": "latest release 12d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -131,8 +131,8 @@
       }
     },
     "community": {
-      "score": 80,
-      "passing": 4,
+      "score": 100,
+      "passing": 5,
       "total": 5,
       "signals": {
         "has_contributing": {
@@ -141,15 +141,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "14 unique committers in 90d"
+          "note": "16 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 0 merged PRs in 90d"
+          "note": "active: 30 commits, 1 merged PRs in 90d"
         },
         "merged_prs_recent": {
-          "pass": false,
-          "note": "0 merged PR(s) in 90d"
+          "pass": true,
+          "note": "1 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -158,7 +158,7 @@
       }
     }
   },
-  "stars": 89963,
+  "stars": 89986,
   "language": "TypeScript",
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers / sub-server: filesystem",
@@ -166,7 +166,7 @@
   "capabilities_v2": [],
   "distribution": "repo",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-08-30T09:59:06+00:00",
+  "scored_at": "2026-08-31T10:51:46+00:00",
   "hard_flags": [],
   "kind": "server",
   "subkind": "integration",

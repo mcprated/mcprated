@@ -2,7 +2,7 @@
   "capability": "unknown",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-08-30T09:59:06+00:00",
+  "generated_at": "2026-08-31T10:51:46+00:00",
   "count": 10,
   "servers": [
     {
@@ -13,7 +13,51 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15734,
+      "stars": 15742,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers",
+      "composite": 72,
+      "description": "Model Context Protocol Servers",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [],
+      "stars": 89986,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers__filesystem",
+      "composite": 72,
+      "description": "Model Context Protocol Servers / sub-server: filesystem",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 89986,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers__memory",
+      "composite": 72,
+      "description": "Model Context Protocol Servers / sub-server: memory",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 89986,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "slug": "modelcontextprotocol__servers__sequentialthinking",
+      "composite": 72,
+      "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 89986,
       "language": "TypeScript"
     },
     {
@@ -28,50 +72,6 @@
       "language": "TypeScript"
     },
     {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers",
-      "composite": 67,
-      "description": "Model Context Protocol Servers",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [],
-      "stars": 89963,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers__filesystem",
-      "composite": 67,
-      "description": "Model Context Protocol Servers / sub-server: filesystem",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 89963,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers__memory",
-      "composite": 67,
-      "description": "Model Context Protocol Servers / sub-server: memory",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 89963,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "slug": "modelcontextprotocol__servers__sequentialthinking",
-      "composite": 67,
-      "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 89963,
-      "language": "TypeScript"
-    },
-    {
       "repo": "eyaltoledano/claude-task-master",
       "slug": "eyaltoledano__claude-task-master",
       "composite": 60,
@@ -79,7 +79,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28038,
+      "stars": 28037,
       "language": "JavaScript"
     },
     {
@@ -101,7 +101,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 817,
+      "stars": 819,
       "language": "TypeScript"
     },
     {
