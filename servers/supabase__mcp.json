@@ -4,7 +4,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "description": "Connect Supabase to your AI assistants",
-  "pushed_at": "2026-09-04T06:23:14Z",
+  "pushed_at": "2026-09-05T06:20:38Z",
   "kind": "framework",
   "subkind": "",
   "kind_confidence": 0.85,
@@ -52,11 +52,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 14d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": false,
-          "note": "latest tag: mcp-utils-v0.7.0"
+          "note": "latest tag: mcp-utils-v0.8.0"
         },
         "release_communication": {
           "pass": true,
@@ -165,15 +165,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "10 unique committers in 90d"
+          "note": "8 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 11 merged PRs in 90d"
+          "note": "active: 30 commits, 12 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "11 merged PR(s) in 90d"
+          "note": "12 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-04T08:50:21+00:00"
+  "scored_at": "2026-09-05T08:23:07+00:00"
 }

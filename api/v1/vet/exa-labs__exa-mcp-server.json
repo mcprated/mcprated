@@ -2,7 +2,7 @@
   "repo": "exa-labs/exa-mcp-server",
   "slug": "exa-labs__exa-mcp-server",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-04T08:50:21+00:00",
+  "scored_at": "2026-09-05T08:23:06+00:00",
   "composite": 69,
   "axes": {
     "reliability": 60,
@@ -14,7 +14,7 @@
   "subkind": "integration",
   "capabilities": [],
   "license": "MIT",
-  "stars": 4963,
+  "stars": 4969,
   "pushed_at": "2026-08-21T04:44:51Z",
   "language": "TypeScript",
   "hard_flags": [],
