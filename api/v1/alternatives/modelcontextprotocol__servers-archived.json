@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9661,
+      "stars": 9665,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,12 +55,31 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4145,
+      "stars": 4153,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
       "shared_capabilities": [
         "cloud"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 52,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 419,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.18,
+      "shared_capabilities": [
+        "database"
       ]
     },
     {
@@ -75,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16318,
+      "stars": 16320,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -86,7 +105,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -95,29 +114,10 @@
         "ai",
         "database"
       ],
-      "stars": 1521,
+      "stars": 1520,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.17,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 419,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.168,
+      "score": 0.172,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32722,
+      "stars": 32742,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 36813,
+      "stars": 36841,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5642,
+      "stars": 5644,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.236,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61644,
+      "stars": 61682,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,10 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 28847,
+      "stars": 28884,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.089,
+      "score": 0.091,
       "shared_capabilities": [
         "ai"
       ]
@@ -115,6 +115,25 @@
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 52,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 419,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.072,
       "shared_capabilities": [
         "ai"
       ]
@@ -149,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16318,
+      "stars": 16320,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -160,7 +179,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -169,29 +188,10 @@
         "ai",
         "database"
       ],
-      "stars": 1521,
+      "stars": 1520,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.068,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 45,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 419,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.067,
+      "score": 0.069,
       "shared_capabilities": [
         "ai"
       ]
