@@ -27,8 +27,8 @@
     "extraction_confidence": 0.4
   },
   "sub_servers": [],
-  "composite": 74,
-  "composite_raw": 74,
+  "composite": 62,
+  "composite_raw": 62,
   "axes": {
     "reliability": {
       "score": 90,
@@ -45,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 3d ago"
+          "note": "pushed 4d ago"
         },
         "has_releases": {
           "pass": true,
@@ -53,7 +53,7 @@
         },
         "tagged_release_recent": {
           "pass": false,
-          "note": "latest release 270d ago"
+          "note": "latest release 271d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -69,7 +69,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 270d ago"
+          "note": "last published 271d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -105,8 +105,8 @@
       }
     },
     "trust": {
-      "score": 27,
-      "passing": 3,
+      "score": 18,
+      "passing": 2,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -150,14 +150,14 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": true,
-          "note": "3731 weekly downloads"
+          "pass": false,
+          "note": "registry returned no download stats"
         }
       }
     },
     "community": {
-      "score": 80,
-      "passing": 4,
+      "score": 40,
+      "passing": 2,
       "total": 5,
       "signals": {
         "has_contributing": {
@@ -165,16 +165,16 @@
           "note": "no CONTRIBUTING file"
         },
         "multiple_contributors": {
-          "pass": true,
-          "note": "2 unique committers in 90d"
+          "pass": false,
+          "note": "1 unique committers in 90d"
         },
         "responsive_issues": {
-          "pass": true,
-          "note": "active: 2 commits, 3 merged PRs in 90d"
+          "pass": false,
+          "note": "79 open / 1 commits (ratio 79.00)"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "3 merged PR(s) in 90d"
+          "note": "2 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -185,5 +185,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-07T09:20:56+00:00"
+  "scored_at": "2026-09-08T08:57:13+00:00"
 }

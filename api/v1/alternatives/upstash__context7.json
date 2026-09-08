@@ -8,17 +8,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 62,
+      "composite": 60,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 673,
+      "stars": 674,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.315,
+      "score": 0.31,
       "shared_capabilities": [
         "ai"
       ]
@@ -52,7 +52,7 @@
         "web",
         "ai"
       ],
-      "stars": 36865,
+      "stars": 36886,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -63,7 +63,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -71,10 +71,10 @@
         "ai",
         "search"
       ],
-      "stars": 28930,
+      "stars": 29015,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.179,
+      "score": 0.181,
       "shared_capabilities": [
         "ai"
       ]
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1427,
+      "stars": 1428,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 16326,
+      "stars": 16332,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -140,7 +140,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
+      "composite": 62,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -152,7 +152,7 @@
       "stars": 1522,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.115,
+      "score": 0.105,
       "shared_capabilities": [
         "ai"
       ]
@@ -169,7 +169,7 @@
         "comms",
         "web"
       ],
-      "stars": 1815,
+      "stars": 1819,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.086,

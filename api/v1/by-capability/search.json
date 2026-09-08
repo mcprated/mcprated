@@ -2,13 +2,13 @@
   "capability": "search",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-09-07T09:20:56+00:00",
+  "generated_at": "2026-09-08T08:57:13+00:00",
   "count": 5,
   "servers": [
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -16,7 +16,7 @@
         "ai",
         "search"
       ],
-      "stars": 28930,
+      "stars": 29015,
       "language": "Python"
     },
     {
@@ -31,23 +31,8 @@
         "ai",
         "search"
       ],
-      "stars": 16326,
+      "stars": 16332,
       "language": "Go"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1522,
-      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -60,8 +45,23 @@
         "ai",
         "search"
       ],
-      "stars": 1427,
+      "stars": 1428,
       "language": "TypeScript"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 62,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1522,
+      "language": "Python"
     },
     {
       "repo": "bsmi021/sticky-notes-server",

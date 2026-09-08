@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3271,
+      "stars": 3277,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.481,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9668,
+      "stars": 9675,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4157,
+      "stars": 4162,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -94,28 +94,8 @@
         "ai",
         "search"
       ],
-      "stars": 16326,
+      "stars": 16332,
       "language": "Go",
-      "similarity": 0.2,
-      "score": 0.172,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1522,
-      "language": "Python",
       "similarity": 0.2,
       "score": 0.172,
       "shared_capabilities": [
@@ -142,6 +122,26 @@
       ]
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 62,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1522,
+      "language": "Python",
+      "similarity": 0.2,
+      "score": 0.157,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 74,
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32773,
+      "stars": 32802,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
