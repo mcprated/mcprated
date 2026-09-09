@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-09-08T08:57:13+00:00",
+  "generated_at": "2026-09-09T09:00:51+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -12,7 +12,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9675,
+      "stars": 9676,
       "language": "Python"
     },
     {
@@ -26,7 +26,7 @@
         "web",
         "ai"
       ],
-      "stars": 36886,
+      "stars": 36908,
       "language": "TypeScript"
     },
     {
@@ -37,13 +37,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15797,
+      "stars": 15808,
       "language": "TypeScript"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -51,20 +51,20 @@
         "ai",
         "search"
       ],
-      "stars": 29015,
+      "stars": 29063,
       "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 82,
+      "composite": 80,
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
       ],
-      "stars": 5866,
+      "stars": 5877,
       "language": "Python"
     },
     {
@@ -77,7 +77,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32802,
+      "stars": 32817,
       "language": "Go"
     },
     {
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 16332,
+      "stars": 16341,
       "language": "Go"
     },
     {
@@ -106,7 +106,7 @@
         "ai",
         "search"
       ],
-      "stars": 1428,
+      "stars": 1433,
       "language": "TypeScript"
     },
     {
@@ -117,7 +117,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -128,7 +128,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -139,7 +139,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -150,7 +150,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -174,7 +174,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61770,
+      "stars": 61804,
       "language": "TypeScript"
     },
     {
@@ -187,7 +187,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4162,
+      "stars": 4172,
       "language": "TypeScript"
     },
     {
@@ -219,20 +219,9 @@
       "language": "Python"
     },
     {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 60,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 28059,
-      "language": "JavaScript"
-    },
-    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -241,6 +230,17 @@
       ],
       "stars": 674,
       "language": "Python"
+    },
+    {
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 60,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 28063,
+      "language": "JavaScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
@@ -253,7 +253,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3277,
+      "stars": 3279,
       "language": "Python"
     },
     {
@@ -331,7 +331,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -342,7 +342,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -353,7 +353,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -364,7 +364,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -377,7 +377,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61770,
+      "stars": 61804,
       "language": "TypeScript"
     },
     {
@@ -391,7 +391,7 @@
         "web",
         "ai"
       ],
-      "stars": 36886,
+      "stars": 36908,
       "language": "TypeScript"
     },
     {
@@ -404,13 +404,13 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32802,
+      "stars": 32817,
       "language": "Go"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -418,7 +418,7 @@
         "ai",
         "search"
       ],
-      "stars": 29015,
+      "stars": 29063,
       "language": "Python"
     },
     {
@@ -429,7 +429,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28059,
+      "stars": 28063,
       "language": "JavaScript"
     },
     {
@@ -444,7 +444,7 @@
         "ai",
         "search"
       ],
-      "stars": 16332,
+      "stars": 16341,
       "language": "Go"
     },
     {
@@ -455,7 +455,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15797,
+      "stars": 15808,
       "language": "TypeScript"
     },
     {
@@ -468,20 +468,20 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9675,
+      "stars": 9676,
       "language": "Python"
     },
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 82,
+      "composite": 80,
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
       ],
-      "stars": 5866,
+      "stars": 5877,
       "language": "Python"
     },
     {
@@ -518,7 +518,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4162,
+      "stars": 4172,
       "language": "TypeScript"
     },
     {
@@ -532,7 +532,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3277,
+      "stars": 3279,
       "language": "Python"
     },
     {
@@ -547,7 +547,7 @@
         "comms",
         "web"
       ],
-      "stars": 1819,
+      "stars": 1821,
       "language": "Go"
     },
     {
@@ -576,7 +576,7 @@
         "ai",
         "search"
       ],
-      "stars": 1428,
+      "stars": 1433,
       "language": "TypeScript"
     },
     {
@@ -587,13 +587,13 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 823,
+      "stars": 824,
       "language": "TypeScript"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -646,6 +646,19 @@
   ],
   "by_recency": [
     {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 69,
+      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 61804,
+      "language": "TypeScript"
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -657,7 +670,7 @@
         "ai",
         "search"
       ],
-      "stars": 16332,
+      "stars": 16341,
       "language": "Go"
     },
     {
@@ -670,34 +683,18 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9675,
+      "stars": 9676,
       "language": "Python"
     },
     {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 82,
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 61770,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "brave/brave-search-mcp-server",
-      "slug": "brave__brave-search-mcp-server",
-      "composite": 72,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 1428,
+      "capabilities": [],
+      "stars": 15808,
       "language": "TypeScript"
     },
     {
@@ -710,8 +707,22 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32802,
+      "stars": 32817,
       "language": "Go"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 80,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 29063,
+      "language": "Python"
     },
     {
       "repo": "mcprated/mcprated",
@@ -727,29 +738,18 @@
       "language": "Python"
     },
     {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 82,
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 15797,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 82,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 72,
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai",
         "search"
       ],
-      "stars": 29015,
-      "language": "Python"
+      "stars": 1433,
+      "language": "TypeScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
@@ -768,14 +768,14 @@
     {
       "repo": "sooperset/mcp-atlassian",
       "slug": "sooperset__mcp-atlassian",
-      "composite": 82,
+      "composite": 80,
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
       ],
-      "stars": 5866,
+      "stars": 5877,
       "language": "Python"
     },
     {
@@ -789,7 +789,7 @@
         "web",
         "ai"
       ],
-      "stars": 36886,
+      "stars": 36908,
       "language": "TypeScript"
     },
     {
@@ -815,7 +815,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 90150,
+      "stars": 90180,
       "language": "TypeScript"
     },
     {
@@ -828,7 +828,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4162,
+      "stars": 4172,
       "language": "TypeScript"
     },
     {
@@ -853,13 +853,13 @@
         "database",
         "devtools"
       ],
-      "stars": 3277,
+      "stars": 3279,
       "language": "Python"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 60,
+      "composite": 62,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -881,7 +881,7 @@
         "comms",
         "web"
       ],
-      "stars": 1819,
+      "stars": 1821,
       "language": "Go"
     },
     {
@@ -892,7 +892,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28059,
+      "stars": 28063,
       "language": "JavaScript"
     },
     {
@@ -903,7 +903,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 823,
+      "stars": 824,
       "language": "TypeScript"
     },
     {
