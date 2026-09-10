@@ -2,12 +2,12 @@
   "repo": "oraios/serena",
   "slug": "oraios__serena",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-09T09:00:51+00:00",
-  "composite": 80,
+  "scored_at": "2026-09-10T08:57:07+00:00",
+  "composite": 82,
   "axes": {
     "reliability": 100,
     "documentation": 100,
-    "trust": 18,
+    "trust": 27,
     "community": 100
   },
   "kind": "server",
@@ -17,7 +17,7 @@
     "search"
   ],
   "license": "MIT",
-  "stars": 29063,
+  "stars": 29122,
   "pushed_at": "2026-09-08T11:26:10Z",
   "language": "Python",
   "hard_flags": [],
@@ -63,8 +63,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": false,
-      "note": "registry returned no download stats"
+      "passed": true,
+      "note": "34927 weekly downloads"
     }
   },
   "quality_tier": "solid",

@@ -9,7 +9,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -17,10 +17,10 @@
         "ai",
         "search"
       ],
-      "stars": 29063,
+      "stars": 29122,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.894,
+      "score": 0.906,
       "shared_capabilities": [
         "ai",
         "search"
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16341,
+      "stars": 16359,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1522,
+      "stars": 1526,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.525,
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61804,
+      "stars": 61831,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -108,7 +108,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 62,
+      "composite": 60,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -118,7 +118,7 @@
       "stars": 674,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.157,
+      "score": 0.155,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 36908,
+      "stars": 36952,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1821,
+      "stars": 1823,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.065,
