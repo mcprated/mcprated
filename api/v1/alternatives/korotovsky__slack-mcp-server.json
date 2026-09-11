@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 36952,
+      "stars": 37003,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61831,
+      "stars": 61869,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -84,7 +84,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -92,10 +92,10 @@
         "ai",
         "search"
       ],
-      "stars": 29122,
+      "stars": 29168,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.091,
+      "score": 0.089,
       "shared_capabilities": [
         "ai"
       ]
@@ -122,7 +122,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 52,
+      "composite": 50,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -133,7 +133,7 @@
       "stars": 419,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.072,
+      "score": 0.071,
       "shared_capabilities": [
         "ai"
       ]
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16359,
+      "stars": 16366,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -179,7 +179,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 62,
+      "composite": 64,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -191,7 +191,7 @@
       "stars": 1526,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.063,
+      "score": 0.064,
       "shared_capabilities": [
         "ai"
       ]

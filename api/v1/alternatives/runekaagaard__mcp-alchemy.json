@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16359,
+      "stars": 16366,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -30,7 +30,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 62,
+      "composite": 64,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -42,7 +42,7 @@
       "stars": 1526,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.525,
+      "score": 0.533,
       "shared_capabilities": [
         "ai",
         "database"
@@ -51,7 +51,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 54,
+      "composite": 52,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3284,
+      "stars": 3286,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.245,
+      "score": 0.24,
       "shared_capabilities": [
         "database"
       ]
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61831,
+      "stars": 61869,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -153,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 36952,
+      "stars": 37003,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -164,7 +164,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -172,10 +172,10 @@
         "ai",
         "search"
       ],
-      "stars": 29122,
+      "stars": 29168,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
+      "score": 0.119,
       "shared_capabilities": [
         "ai"
       ]
