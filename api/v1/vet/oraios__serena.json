@@ -2,12 +2,12 @@
   "repo": "oraios/serena",
   "slug": "oraios__serena",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-14T09:55:19+00:00",
-  "composite": 80,
+  "scored_at": "2026-09-15T09:27:32+00:00",
+  "composite": 82,
   "axes": {
     "reliability": 100,
     "documentation": 100,
-    "trust": 18,
+    "trust": 27,
     "community": 100
   },
   "kind": "server",
@@ -16,15 +16,15 @@
     "ai",
     "search"
   ],
-  "license": "MIT",
-  "stars": 29293,
-  "pushed_at": "2026-09-12T21:16:52Z",
+  "license": "NOASSERTION",
+  "stars": 29357,
+  "pushed_at": "2026-09-14T19:35:31Z",
   "language": "Python",
   "hard_flags": [],
   "trust_signals": {
     "license_commercial": {
       "passed": true,
-      "note": "SPDX=MIT"
+      "note": "LICENSE file (mit license)"
     },
     "has_security_policy": {
       "passed": false,
@@ -63,8 +63,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": false,
-      "note": "registry returned no download stats"
+      "passed": true,
+      "note": "47543 weekly downloads"
     }
   },
   "quality_tier": "solid",

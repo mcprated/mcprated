@@ -19,7 +19,7 @@
         "ai",
         "search"
       ],
-      "stars": 16399,
+      "stars": 16404,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.86,
@@ -32,7 +32,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -40,10 +40,10 @@
         "ai",
         "search"
       ],
-      "stars": 29293,
+      "stars": 29357,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.596,
+      "score": 0.604,
       "shared_capabilities": [
         "ai",
         "search"
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1438,
+      "stars": 1439,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -72,7 +72,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 50,
+      "composite": 52,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -83,7 +83,7 @@
       "stars": 419,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.471,
+      "score": 0.481,
       "shared_capabilities": [
         "ai",
         "database"
@@ -120,7 +120,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3295,
+      "stars": 3298,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.184,
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 61982,
+      "stars": 62034,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -176,7 +176,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 674,
+      "stars": 675,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.107,
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 37080,
+      "stars": 37127,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,
