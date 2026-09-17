@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-09-16T09:17:53+00:00",
+  "generated_at": "2026-09-17T09:31:23+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9696,
+      "stars": 9701,
       "language": "Python"
     },
     {
@@ -28,24 +28,13 @@
         "web",
         "ai"
       ],
-      "stars": 37160,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 82,
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 15870,
+      "stars": 37195,
       "language": "TypeScript"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 80,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -53,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 29444,
+      "stars": 29505,
       "language": "Python"
     },
     {
@@ -66,7 +55,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5908,
+      "stars": 5911,
       "language": "Python"
     },
     {
@@ -79,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32958,
+      "stars": 32992,
       "language": "Go"
     },
     {
@@ -94,8 +83,19 @@
         "ai",
         "search"
       ],
-      "stars": 16431,
+      "stars": 16544,
       "language": "Go"
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 72,
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 15871,
+      "language": "TypeScript"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -108,7 +108,7 @@
         "ai",
         "search"
       ],
-      "stars": 1443,
+      "stars": 1446,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 90371,
+      "stars": 90408,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90371,
+      "stars": 90408,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90371,
+      "stars": 90408,
       "language": "TypeScript"
     },
     {
@@ -152,7 +152,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90371,
+      "stars": 90408,
       "language": "TypeScript"
     },
     {
@@ -163,7 +163,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5008,
+      "stars": 5013,
       "language": "TypeScript"
     },
     {
@@ -176,7 +176,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62074,
+      "stars": 62106,
       "language": "TypeScript"
     },
     {
@@ -202,7 +202,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4200,
+      "stars": 4205,
       "language": "TypeScript"
     },
     {
@@ -241,7 +241,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28076,
+      "stars": 28081,
       "language": "JavaScript"
     },
     {
@@ -255,21 +255,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3303,
-      "language": "Python"
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 52,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 419,
+      "stars": 3311,
       "language": "Python"
     },
     {
@@ -282,8 +268,22 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5644,
+      "stars": 5646,
       "language": "TypeScript"
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 50,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 419,
+      "language": "Python"
     },
     {
       "repo": "bsmi021/sticky-notes-server",
@@ -335,7 +335,7 @@
         "comms",
         "web"
       ],
-      "stars": 1828,
+      "stars": 1832,
       "language": "Go"
     },
     {
@@ -346,7 +346,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 825,
+      "stars": 826,
       "language": "TypeScript"
     },
     {
