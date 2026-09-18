@@ -30,7 +30,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 50,
+      "composite": 52,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -41,26 +41,7 @@
       "stars": 419,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.236,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.333,
-      "score": 0.216,
+      "score": 0.24,
       "shared_capabilities": [
         "database"
       ]
@@ -77,10 +58,29 @@
         "ai",
         "search"
       ],
-      "stars": 16544,
+      "stars": 16449,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 40,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.211,
       "shared_capabilities": [
         "database"
       ]
@@ -97,7 +97,7 @@
         "ai",
         "database"
       ],
-      "stars": 1530,
+      "stars": 1531,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.197,
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 32992,
+      "stars": 33015,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,

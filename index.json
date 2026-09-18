@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T09:31:23+00:00",
+  "generated_at": "2026-09-18T09:01:31+00:00",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
   "count": 32,
@@ -14,7 +14,7 @@
         "trust": 73,
         "community": 100
       },
-      "stars": 9701,
+      "stars": 9705,
       "language": "Python",
       "description": "Open source MCP Servers for AWS",
       "kind": "server",
@@ -37,7 +37,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 37195,
+      "stars": 37231,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -61,35 +61,12 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 13415,
+      "stars": 13419,
       "language": "TypeScript",
       "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
       "kind": "framework",
       "subkind": "",
       "capabilities": [],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
-      "repo": "modelcontextprotocol/python-sdk",
-      "slug": "modelcontextprotocol__python-sdk",
-      "composite": 82,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 27,
-        "community": 100
-      },
-      "stars": 24317,
-      "language": "Python",
-      "description": "The official Python SDK for Model Context Protocol servers and clients",
-      "kind": "framework",
-      "subkind": "",
-      "capabilities": [
-        "comms"
-      ],
       "distribution": "repo",
       "tool_count": 0,
       "tool_names_preview": [],
@@ -105,7 +82,7 @@
         "trust": 18,
         "community": 100
       },
-      "stars": 29505,
+      "stars": 29561,
       "language": "Python",
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
@@ -129,13 +106,36 @@
         "trust": 18,
         "community": 100
       },
-      "stars": 5911,
+      "stars": 5914,
       "language": "Python",
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "productivity"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
+      "repo": "modelcontextprotocol/python-sdk",
+      "slug": "modelcontextprotocol__python-sdk",
+      "composite": 79,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 36,
+        "community": 80
+      },
+      "stars": 24325,
+      "language": "Python",
+      "description": "The official Python SDK for Model Context Protocol servers and clients",
+      "kind": "framework",
+      "subkind": "",
+      "capabilities": [
+        "comms"
       ],
       "distribution": "repo",
       "tool_count": 0,
@@ -152,7 +152,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 32992,
+      "stars": 33015,
       "language": "Go",
       "description": "GitHub's official MCP Server",
       "kind": "server",
@@ -175,7 +175,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 16544,
+      "stars": 16449,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -200,7 +200,7 @@
         "trust": 27,
         "community": 60
       },
-      "stars": 15871,
+      "stars": 15875,
       "language": "TypeScript",
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
@@ -223,7 +223,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 1446,
+      "stars": 1450,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -251,7 +251,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 90408,
+      "stars": 90431,
       "language": "TypeScript",
       "description": "Model Context Protocol Servers",
       "kind": "server",
@@ -283,7 +283,7 @@
         "trust": 18,
         "community": 100
       },
-      "stars": 2910,
+      "stars": 2913,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "framework",
@@ -307,7 +307,7 @@
         "trust": 36,
         "community": 80
       },
-      "stars": 5013,
+      "stars": 5023,
       "language": "TypeScript",
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
@@ -337,7 +337,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 62106,
+      "stars": 62152,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
       "kind": "server",
@@ -383,7 +383,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 4205,
+      "stars": 4208,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -441,7 +441,7 @@
         "trust": 18,
         "community": 40
       },
-      "stars": 1530,
+      "stars": 1531,
       "language": "Python",
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
@@ -466,7 +466,7 @@
         "trust": 18,
         "community": 40
       },
-      "stars": 28081,
+      "stars": 28084,
       "language": "JavaScript",
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
@@ -480,14 +480,14 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "axes": {
         "reliability": 70,
         "documentation": 80,
-        "trust": 18,
+        "trust": 27,
         "community": 40
       },
-      "stars": 3311,
+      "stars": 3313,
       "language": "Python",
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
@@ -507,6 +507,35 @@
         "analyze_query_indexes",
         "analyze_db_health",
         "get_top_queries"
+      ],
+      "hard_flags": []
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 52,
+      "axes": {
+        "reliability": 70,
+        "documentation": 80,
+        "trust": 18,
+        "community": 40
+      },
+      "stars": 419,
+      "language": "Python",
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "distribution": "repo",
+      "tool_count": 4,
+      "tool_names_preview": [
+        "all_table_names",
+        "filter_table_names",
+        "schema_definitions",
+        "execute_query"
       ],
       "hard_flags": []
     },
@@ -543,63 +572,6 @@
         "playwright_iframe_fill"
       ],
       "hard_flags": []
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 50,
-      "axes": {
-        "reliability": 70,
-        "documentation": 80,
-        "trust": 9,
-        "community": 40
-      },
-      "stars": 419,
-      "language": "Python",
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "distribution": "repo",
-      "tool_count": 4,
-      "tool_names_preview": [
-        "all_table_names",
-        "filter_table_names",
-        "schema_definitions",
-        "execute_query"
-      ],
-      "hard_flags": []
-    },
-    {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
-      "axes": {
-        "reliability": 40,
-        "documentation": 80,
-        "trust": 9,
-        "community": 40
-      },
-      "stars": 1,
-      "language": "JavaScript",
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "distribution": "repo",
-      "tool_count": 1,
-      "tool_names_preview": [
-        "sticky-notes-server"
-      ],
-      "hard_flags": [
-        "empty_description"
-      ]
     },
     {
       "repo": "dandeliongold/mcp-time",
@@ -662,7 +634,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 1832,
+      "stars": 1835,
       "language": "Go",
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
@@ -676,6 +648,34 @@
       "tool_count": 0,
       "tool_names_preview": [],
       "hard_flags": []
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 40,
+      "axes": {
+        "reliability": 40,
+        "documentation": 80,
+        "trust": 0,
+        "community": 40
+      },
+      "stars": 1,
+      "language": "JavaScript",
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "sticky-notes-server"
+      ],
+      "hard_flags": [
+        "empty_description"
+      ]
     },
     {
       "repo": "zcaceres/fetch-mcp",
