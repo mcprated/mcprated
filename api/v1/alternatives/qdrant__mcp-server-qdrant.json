@@ -19,7 +19,7 @@
         "ai",
         "search"
       ],
-      "stars": 16449,
+      "stars": 16455,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.86,
@@ -32,7 +32,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -40,10 +40,10 @@
         "ai",
         "search"
       ],
-      "stars": 29561,
+      "stars": 29597,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.596,
+      "score": 0.604,
       "shared_capabilities": [
         "ai",
         "search"
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1450,
+      "stars": 1452,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -80,7 +80,7 @@
         "database",
         "ai"
       ],
-      "stars": 419,
+      "stars": 420,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.481,
@@ -112,7 +112,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 54,
+      "composite": 52,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -120,10 +120,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3313,
+      "stars": 3316,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.184,
+      "score": 0.18,
       "shared_capabilities": [
         "database"
       ]
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62152,
+      "stars": 62189,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 37231,
+      "stars": 37310,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,
