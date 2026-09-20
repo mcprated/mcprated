@@ -1,7 +1,7 @@
 {
   "kind": "framework",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-09-19T08:49:45+00:00",
+  "generated_at": "2026-09-20T09:18:25+00:00",
   "count": 3,
   "servers": [
     {
@@ -12,7 +12,7 @@
       "kind": "framework",
       "subkind": "",
       "capabilities": [],
-      "stars": 13428,
+      "stars": 13433,
       "language": "TypeScript"
     },
     {
@@ -25,7 +25,7 @@
       "capabilities": [
         "comms"
       ],
-      "stars": 24340,
+      "stars": 24348,
       "language": "Python"
     },
     {
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 2914,
+      "stars": 2915,
       "language": "TypeScript"
     }
   ]
