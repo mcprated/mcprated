@@ -2,7 +2,7 @@
   "capability": "productivity",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-09-20T09:18:25+00:00",
+  "generated_at": "2026-09-21T09:54:47+00:00",
   "count": 1,
   "servers": [
     {
@@ -15,7 +15,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5920,
+      "stars": 5926,
       "language": "Python"
     }
   ]
