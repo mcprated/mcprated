@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16470,
+      "stars": 16475,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -30,7 +30,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 64,
+      "composite": 62,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -39,10 +39,10 @@
         "ai",
         "database"
       ],
-      "stars": 1533,
+      "stars": 1535,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.533,
+      "score": 0.525,
       "shared_capabilities": [
         "ai",
         "database"
@@ -59,7 +59,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3327,
+      "stars": 3333,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.245,
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62264,
+      "stars": 62306,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -107,7 +107,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -117,7 +117,7 @@
       "stars": 676,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -153,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 37423,
+      "stars": 37465,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -164,7 +164,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -172,10 +172,10 @@
         "ai",
         "search"
       ],
-      "stars": 29662,
+      "stars": 29701,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.119,
+      "score": 0.121,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "ai",
         "search"
       ],
-      "stars": 1456,
+      "stars": 1458,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,

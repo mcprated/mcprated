@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-09-21T09:54:47+00:00",
+  "generated_at": "2026-09-22T09:21:15+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9716,
+      "stars": 9719,
       "language": "Python"
     },
     {
@@ -28,26 +28,13 @@
         "web",
         "ai"
       ],
-      "stars": 37423,
+      "stars": 37465,
       "language": "TypeScript"
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 82,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity"
-      ],
-      "stars": 5926,
-      "language": "Python"
     },
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -55,7 +42,20 @@
         "ai",
         "search"
       ],
-      "stars": 29662,
+      "stars": 29701,
+      "language": "Python"
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 80,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity"
+      ],
+      "stars": 5928,
       "language": "Python"
     },
     {
@@ -68,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33097,
+      "stars": 33118,
       "language": "Go"
     },
     {
@@ -83,7 +83,7 @@
         "ai",
         "search"
       ],
-      "stars": 16470,
+      "stars": 16475,
       "language": "Go"
     },
     {
@@ -94,7 +94,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15888,
+      "stars": 15892,
       "language": "TypeScript"
     },
     {
@@ -108,7 +108,7 @@
         "ai",
         "search"
       ],
-      "stars": 1456,
+      "stars": 1458,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 90515,
+      "stars": 90545,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90515,
+      "stars": 90545,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90515,
+      "stars": 90545,
       "language": "TypeScript"
     },
     {
@@ -152,7 +152,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90515,
+      "stars": 90545,
       "language": "TypeScript"
     },
     {
@@ -163,7 +163,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5035,
+      "stars": 5039,
       "language": "TypeScript"
     },
     {
@@ -176,13 +176,13 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62264,
+      "stars": 62306,
       "language": "TypeScript"
     },
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -190,21 +190,6 @@
         "ai"
       ],
       "stars": 676,
-      "language": "Python"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 64,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1533,
       "language": "Python"
     },
     {
@@ -217,7 +202,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4262,
+      "stars": 4272,
       "language": "TypeScript"
     },
     {
@@ -234,6 +219,21 @@
       "language": "Python"
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 62,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1535,
+      "language": "Python"
+    },
+    {
       "repo": "eyaltoledano/claude-task-master",
       "slug": "eyaltoledano__claude-task-master",
       "composite": 60,
@@ -241,7 +241,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28085,
+      "stars": 28088,
       "language": "JavaScript"
     },
     {
@@ -255,21 +255,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3327,
-      "language": "Python"
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 52,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 420,
+      "stars": 3333,
       "language": "Python"
     },
     {
@@ -282,8 +268,22 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5651,
+      "stars": 5653,
       "language": "TypeScript"
+    },
+    {
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 50,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "ai"
+      ],
+      "stars": 420,
+      "language": "Python"
     },
     {
       "repo": "dandeliongold/mcp-time",
@@ -321,7 +321,7 @@
         "comms",
         "web"
       ],
-      "stars": 1839,
+      "stars": 1840,
       "language": "Go"
     },
     {

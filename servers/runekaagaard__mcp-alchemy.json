@@ -31,8 +31,8 @@
     "extraction_confidence": 0.9
   },
   "sub_servers": [],
-  "composite": 52,
-  "composite_raw": 52,
+  "composite": 50,
+  "composite_raw": 50,
   "axes": {
     "reliability": {
       "score": 70,
@@ -49,7 +49,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 3d ago"
+          "note": "pushed 4d ago"
         },
         "has_releases": {
           "pass": true,
@@ -73,7 +73,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 15d ago"
+          "note": "last published 16d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -109,8 +109,8 @@
       }
     },
     "trust": {
-      "score": 18,
-      "passing": 2,
+      "score": 9,
+      "passing": 1,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -154,8 +154,8 @@
           "note": "no Scorecard data"
         },
         "weekly_downloads_meaningful": {
-          "pass": true,
-          "note": "3071 weekly downloads"
+          "pass": false,
+          "note": "registry returned no download stats"
         }
       }
     },
@@ -189,5 +189,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-21T09:54:47+00:00"
+  "scored_at": "2026-09-22T09:21:15+00:00"
 }
