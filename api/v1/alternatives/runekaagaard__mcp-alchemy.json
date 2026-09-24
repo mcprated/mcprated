@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16475,
+      "stars": 16486,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -30,7 +30,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 62,
+      "composite": 64,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -39,10 +39,10 @@
         "ai",
         "database"
       ],
-      "stars": 1535,
+      "stars": 1537,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.525,
+      "score": 0.533,
       "shared_capabilities": [
         "ai",
         "database"
@@ -51,7 +51,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 54,
+      "composite": 52,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3333,
+      "stars": 3339,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.245,
+      "score": 0.24,
       "shared_capabilities": [
         "database"
       ]
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62306,
+      "stars": 62381,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -107,7 +107,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -117,7 +117,7 @@
       "stars": 676,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.161,
+      "score": 0.164,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +134,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 303,
+      "stars": 304,
       "language": "JavaScript",
       "similarity": 0.25,
       "score": 0.137,
@@ -153,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 37465,
+      "stars": 37530,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -172,7 +172,7 @@
         "ai",
         "search"
       ],
-      "stars": 29701,
+      "stars": 29762,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -191,7 +191,7 @@
         "ai",
         "search"
       ],
-      "stars": 1458,
+      "stars": 1466,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,

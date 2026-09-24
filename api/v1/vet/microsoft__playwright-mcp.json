@@ -2,7 +2,7 @@
   "repo": "microsoft/playwright-mcp",
   "slug": "microsoft__playwright-mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-22T09:21:15+00:00",
+  "scored_at": "2026-09-24T09:20:20+00:00",
   "composite": 84,
   "axes": {
     "reliability": 100,
@@ -17,7 +17,7 @@
     "ai"
   ],
   "license": "Apache-2.0",
-  "stars": 37465,
+  "stars": 37530,
   "pushed_at": "2026-09-18T23:35:04Z",
   "language": "TypeScript",
   "hard_flags": [],
@@ -64,7 +64,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "5247752 weekly downloads"
+      "note": "5425474 weekly downloads"
     }
   },
   "quality_tier": "solid",
