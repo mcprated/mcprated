@@ -2,7 +2,7 @@
   "capability": "unknown",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-09-25T09:38:28+00:00",
+  "generated_at": "2026-09-26T09:24:56+00:00",
   "count": 10,
   "servers": [
     {
@@ -13,7 +13,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 90583,
+      "stars": 90604,
       "language": "TypeScript"
     },
     {
@@ -24,7 +24,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90583,
+      "stars": 90604,
       "language": "TypeScript"
     },
     {
@@ -35,7 +35,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90583,
+      "stars": 90604,
       "language": "TypeScript"
     },
     {
@@ -46,7 +46,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 90583,
+      "stars": 90604,
       "language": "TypeScript"
     },
     {
@@ -57,7 +57,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5048,
+      "stars": 5053,
       "language": "TypeScript"
     },
     {
@@ -68,7 +68,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15909,
+      "stars": 15915,
       "language": "TypeScript"
     },
     {
@@ -79,7 +79,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28086,
+      "stars": 28090,
       "language": "JavaScript"
     },
     {
@@ -107,7 +107,7 @@
     {
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 20,
+      "composite": 22,
       "description": "mcp server assistant for mock data",
       "kind": "server",
       "subkind": "integration",

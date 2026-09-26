@@ -2,12 +2,12 @@
   "repo": "ogulcanarbc/mock-assistant-mcp-server",
   "slug": "ogulcanarbc__mock-assistant-mcp-server",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-25T09:38:28+00:00",
-  "composite": 20,
+  "scored_at": "2026-09-26T09:24:56+00:00",
+  "composite": 22,
   "axes": {
     "reliability": 40,
     "documentation": 0,
-    "trust": 0,
+    "trust": 9,
     "community": 40
   },
   "kind": "server",
@@ -60,8 +60,8 @@
       "note": "no Scorecard data"
     },
     "weekly_downloads_meaningful": {
-      "passed": false,
-      "note": "registry returned no download stats"
+      "passed": true,
+      "note": "416 weekly downloads"
     }
   },
   "quality_tier": "poor",

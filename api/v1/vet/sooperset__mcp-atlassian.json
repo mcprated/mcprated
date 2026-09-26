@@ -2,7 +2,7 @@
   "repo": "sooperset/mcp-atlassian",
   "slug": "sooperset__mcp-atlassian",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-25T09:38:28+00:00",
+  "scored_at": "2026-09-26T09:24:56+00:00",
   "composite": 82,
   "axes": {
     "reliability": 100,
@@ -16,7 +16,7 @@
     "productivity"
   ],
   "license": "MIT",
-  "stars": 5937,
+  "stars": 5941,
   "pushed_at": "2026-09-19T10:20:14Z",
   "language": "Python",
   "hard_flags": [],
@@ -63,7 +63,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "165192 weekly downloads"
+      "note": "167283 weekly downloads"
     }
   },
   "quality_tier": "solid",
