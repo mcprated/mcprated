@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16492,
+      "stars": 16494,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 62,
+      "composite": 64,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -62,7 +62,7 @@
       "stars": 1539,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.525,
+      "score": 0.533,
       "shared_capabilities": [
         "ai",
         "database"
@@ -71,7 +71,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -82,7 +82,7 @@
       "stars": 3342,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.24,
+      "score": 0.245,
       "shared_capabilities": [
         "database"
       ]
@@ -90,7 +90,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -101,7 +101,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.333,
-      "score": 0.211,
+      "score": 0.216,
       "shared_capabilities": [
         "database"
       ]
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62432,
+      "stars": 62463,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 37579,
+      "stars": 37607,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -192,7 +192,7 @@
         "ai",
         "search"
       ],
-      "stars": 29812,
+      "stars": 29831,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,

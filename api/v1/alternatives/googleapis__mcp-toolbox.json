@@ -10,7 +10,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 62,
+      "composite": 64,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -22,7 +22,7 @@
       "stars": 1539,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.787,
+      "score": 0.8,
       "shared_capabilities": [
         "ai",
         "database",
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 29812,
+      "stars": 29831,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.604,
@@ -60,7 +60,7 @@
         "ai",
         "search"
       ],
-      "stars": 1472,
+      "stars": 1473,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.566,
@@ -92,7 +92,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -103,7 +103,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.667,
-      "score": 0.422,
+      "score": 0.432,
       "shared_capabilities": [
         "database",
         "search"
@@ -112,7 +112,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
+      "composite": 54,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -123,7 +123,7 @@
       "stars": 3342,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.18,
+      "score": 0.184,
       "shared_capabilities": [
         "database"
       ]
@@ -138,7 +138,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62432,
+      "stars": 62463,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -195,7 +195,7 @@
         "web",
         "ai"
       ],
-      "stars": 37579,
+      "stars": 37607,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,
