@@ -2,10 +2,10 @@
   "repo": "eyaltoledano/claude-task-master",
   "slug": "eyaltoledano__claude-task-master",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-09-28T10:56:43+00:00",
-  "composite": 60,
+  "scored_at": "2026-09-29T10:41:17+00:00",
+  "composite": 57,
   "axes": {
-    "reliability": 80,
+    "reliability": 70,
     "documentation": 100,
     "trust": 18,
     "community": 40
@@ -14,7 +14,7 @@
   "subkind": "integration",
   "capabilities": [],
   "license": "NOASSERTION",
-  "stars": 28098,
+  "stars": 28109,
   "pushed_at": "2026-04-28T13:27:12Z",
   "language": "JavaScript",
   "hard_flags": [],
