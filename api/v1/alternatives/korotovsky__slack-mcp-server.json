@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 37826,
+      "stars": 37856,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62698,
+      "stars": 62730,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -66,7 +66,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -76,7 +76,7 @@
       "stars": 677,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.107,
+      "score": 0.109,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 29998,
+      "stars": 30043,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.089,
@@ -122,7 +122,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 52,
+      "composite": 55,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -133,7 +133,7 @@
       "stars": 419,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.072,
+      "score": 0.074,
       "shared_capabilities": [
         "ai"
       ]
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16584,
+      "stars": 16600,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -188,7 +188,7 @@
         "ai",
         "database"
       ],
-      "stars": 1541,
+      "stars": 1542,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.064,

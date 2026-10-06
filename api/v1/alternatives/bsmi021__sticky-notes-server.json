@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16584,
+      "stars": 16600,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1541,
+      "stars": 1542,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.533,
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 29998,
+      "stars": 30043,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.298,
@@ -87,28 +87,9 @@
       ]
     },
     {
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 52,
-      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "stars": 3370,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.24,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 52,
+      "composite": 55,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -119,7 +100,26 @@
       "stars": 419,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.24,
+      "score": 0.247,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 54,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 3375,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.245,
       "shared_capabilities": [
         "database"
       ]

@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62698,
+      "stars": 62730,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -26,7 +26,7 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 65,
+      "composite": 67,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
@@ -36,7 +36,7 @@
       "stars": 677,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.322,
+      "score": 0.327,
       "shared_capabilities": [
         "ai"
       ]
@@ -70,7 +70,7 @@
         "web",
         "ai"
       ],
-      "stars": 37826,
+      "stars": 37856,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -89,7 +89,7 @@
         "ai",
         "search"
       ],
-      "stars": 29998,
+      "stars": 30043,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.179,
@@ -119,7 +119,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 52,
+      "composite": 55,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -130,7 +130,7 @@
       "stars": 419,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.144,
+      "score": 0.148,
       "shared_capabilities": [
         "ai"
       ]
@@ -147,7 +147,7 @@
         "ai",
         "search"
       ],
-      "stars": 16584,
+      "stars": 16600,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -167,7 +167,7 @@
         "ai",
         "database"
       ],
-      "stars": 1541,
+      "stars": 1542,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.107,
@@ -187,7 +187,7 @@
         "comms",
         "web"
       ],
-      "stars": 1855,
+      "stars": 1857,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.086,
