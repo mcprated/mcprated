@@ -9,7 +9,7 @@
     {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
-      "composite": 55,
+      "composite": 57,
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
@@ -20,7 +20,7 @@
       "stars": 419,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.742,
+      "score": 0.755,
       "shared_capabilities": [
         "ai",
         "database"
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16600,
+      "stars": 16609,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -79,7 +79,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3375,
+      "stars": 3376,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.245,
@@ -116,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62730,
+      "stars": 62758,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -127,17 +127,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 677,
+      "stars": 678,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -173,7 +173,7 @@
         "web",
         "ai"
       ],
-      "stars": 37856,
+      "stars": 37892,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -184,7 +184,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -192,10 +192,10 @@
         "ai",
         "search"
       ],
-      "stars": 30043,
+      "stars": 30072,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.119,
+      "score": 0.121,
       "shared_capabilities": [
         "ai"
       ]

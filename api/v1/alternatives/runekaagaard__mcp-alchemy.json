@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16600,
+      "stars": 16609,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3375,
+      "stars": 3376,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.245,
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62730,
+      "stars": 62758,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -107,17 +107,17 @@
     {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
-      "composite": 67,
+      "composite": 65,
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 677,
+      "stars": 678,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.164,
+      "score": 0.161,
       "shared_capabilities": [
         "ai"
       ]
@@ -153,7 +153,7 @@
         "web",
         "ai"
       ],
-      "stars": 37856,
+      "stars": 37892,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -164,7 +164,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 80,
+      "composite": 82,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -172,10 +172,10 @@
         "ai",
         "search"
       ],
-      "stars": 30043,
+      "stars": 30072,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.119,
+      "score": 0.121,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "ai",
         "search"
       ],
-      "stars": 1486,
+      "stars": 1485,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
