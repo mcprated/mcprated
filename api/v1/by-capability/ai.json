@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-10-09T11:19:39+00:00",
+  "generated_at": "2026-10-10T10:36:46+00:00",
   "count": 10,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 37957,
+      "stars": 37988,
       "language": "TypeScript"
     },
     {
@@ -30,7 +30,7 @@
         "ai",
         "search"
       ],
-      "stars": 30120,
+      "stars": 30147,
       "language": "Python"
     },
     {
@@ -45,7 +45,7 @@
         "ai",
         "search"
       ],
-      "stars": 16631,
+      "stars": 16637,
       "language": "Go"
     },
     {
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 1490,
+      "stars": 1491,
       "language": "TypeScript"
     },
     {
@@ -72,7 +72,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62827,
+      "stars": 62850,
       "language": "TypeScript"
     },
     {
@@ -100,7 +100,7 @@
         "ai",
         "database"
       ],
-      "stars": 1545,
+      "stars": 1546,
       "language": "Python"
     },
     {
@@ -129,13 +129,13 @@
         "comms",
         "web"
       ],
-      "stars": 1862,
+      "stars": 1863,
       "language": "Go"
     },
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",

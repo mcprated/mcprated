@@ -2,7 +2,7 @@
   "capability": "web",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-10-09T11:19:39+00:00",
+  "generated_at": "2026-10-10T10:36:46+00:00",
   "count": 3,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 37957,
+      "stars": 37988,
       "language": "TypeScript"
     },
     {
@@ -29,7 +29,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5665,
+      "stars": 5664,
       "language": "TypeScript"
     },
     {
@@ -44,7 +44,7 @@
         "comms",
         "web"
       ],
-      "stars": 1862,
+      "stars": 1863,
       "language": "Go"
     }
   ]

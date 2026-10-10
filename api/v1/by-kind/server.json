@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-10-09T11:19:39+00:00",
+  "generated_at": "2026-10-10T10:36:46+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9763,
+      "stars": 9764,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 37957,
+      "stars": 37988,
       "language": "TypeScript"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 30120,
+      "stars": 30147,
       "language": "Python"
     },
     {
@@ -55,7 +55,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5982,
+      "stars": 5984,
       "language": "Python"
     },
     {
@@ -68,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33468,
+      "stars": 33487,
       "language": "Go"
     },
     {
@@ -83,7 +83,7 @@
         "ai",
         "search"
       ],
-      "stars": 16631,
+      "stars": 16637,
       "language": "Go"
     },
     {
@@ -97,7 +97,7 @@
         "ai",
         "search"
       ],
-      "stars": 1490,
+      "stars": 1491,
       "language": "TypeScript"
     },
     {
@@ -108,7 +108,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91092,
+      "stars": 91111,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91092,
+      "stars": 91111,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91092,
+      "stars": 91111,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91092,
+      "stars": 91111,
       "language": "TypeScript"
     },
     {
@@ -152,7 +152,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5098,
+      "stars": 5102,
       "language": "TypeScript"
     },
     {
@@ -165,7 +165,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62827,
+      "stars": 62850,
       "language": "TypeScript"
     },
     {
@@ -176,7 +176,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15967,
+      "stars": 15966,
       "language": "TypeScript"
     },
     {
@@ -204,7 +204,7 @@
         "ai",
         "database"
       ],
-      "stars": 1545,
+      "stars": 1546,
       "language": "Python"
     },
     {
@@ -217,7 +217,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4363,
+      "stars": 4366,
       "language": "TypeScript"
     },
     {
@@ -241,7 +241,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28188,
+      "stars": 28185,
       "language": "JavaScript"
     },
     {
@@ -269,7 +269,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3384,
+      "stars": 3386,
       "language": "Python"
     },
     {
@@ -282,7 +282,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5665,
+      "stars": 5664,
       "language": "TypeScript"
     },
     {
@@ -322,7 +322,7 @@
         "comms",
         "web"
       ],
-      "stars": 1862,
+      "stars": 1863,
       "language": "Go"
     },
     {
@@ -367,7 +367,7 @@
     {
       "repo": "nikolaypavlov/mcp-myip",
       "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
+      "composite": 30,
       "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
       "kind": "server",
       "subkind": "integration",
