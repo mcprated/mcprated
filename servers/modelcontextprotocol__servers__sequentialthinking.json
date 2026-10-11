@@ -3,7 +3,7 @@
   "slug": "modelcontextprotocol__servers__sequentialthinking",
   "parent_slug": "modelcontextprotocol__servers",
   "subpath": "src/sequentialthinking",
-  "composite": 72,
+  "composite": 67,
   "axes": {
     "reliability": {
       "score": 80,
@@ -28,11 +28,11 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 39d ago"
+          "note": "latest release 0d ago"
         },
         "version_follows_semver": {
           "pass": true,
-          "note": "latest tag: 2026.8.31"
+          "note": "latest tag: v1.0.0"
         },
         "release_communication": {
           "pass": true,
@@ -131,8 +131,8 @@
       }
     },
     "community": {
-      "score": 100,
-      "passing": 5,
+      "score": 80,
+      "passing": 4,
       "total": 5,
       "signals": {
         "has_contributing": {
@@ -140,16 +140,16 @@
           "note": "CONTRIBUTING file present"
         },
         "multiple_contributors": {
-          "pass": true,
-          "note": "23 unique committers in 90d"
+          "pass": false,
+          "note": "1 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 14 merged PRs in 90d"
+          "note": "active: 30 commits, 13 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "14 merged PR(s) in 90d"
+          "note": "13 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -158,15 +158,15 @@
       }
     }
   },
-  "stars": 91111,
-  "language": "TypeScript",
+  "stars": 91136,
+  "language": "JavaScript",
   "license": "NOASSERTION",
   "description": "Model Context Protocol Servers / sub-server: sequentialthinking",
   "capabilities": [],
   "capabilities_v2": [],
   "distribution": "repo",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-10T10:36:45+00:00",
+  "scored_at": "2026-10-11T10:53:02+00:00",
   "hard_flags": [],
   "kind": "server",
   "subkind": "integration",
