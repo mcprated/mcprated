@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-10-11T10:53:02+00:00",
+  "generated_at": "2026-10-12T11:57:27+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9765,
+      "stars": 9770,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 38012,
+      "stars": 38049,
       "language": "TypeScript"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 30180,
+      "stars": 30197,
       "language": "Python"
     },
     {
@@ -55,7 +55,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 5985,
+      "stars": 5987,
       "language": "Python"
     },
     {
@@ -68,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33506,
+      "stars": 33547,
       "language": "Go"
     },
     {
@@ -83,7 +83,7 @@
         "ai",
         "search"
       ],
-      "stars": 16643,
+      "stars": 16650,
       "language": "Go"
     },
     {
@@ -97,7 +97,7 @@
         "ai",
         "search"
       ],
-      "stars": 1492,
+      "stars": 1493,
       "language": "TypeScript"
     },
     {
@@ -108,7 +108,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5104,
+      "stars": 5109,
       "language": "TypeScript"
     },
     {
@@ -121,7 +121,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62893,
+      "stars": 62924,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15968,
+      "stars": 15972,
       "language": "TypeScript"
     },
     {
@@ -143,7 +143,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91136,
+      "stars": 91166,
       "language": "JavaScript"
     },
     {
@@ -154,7 +154,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91136,
+      "stars": 91166,
       "language": "JavaScript"
     },
     {
@@ -165,7 +165,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91136,
+      "stars": 91166,
       "language": "JavaScript"
     },
     {
@@ -176,7 +176,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91136,
+      "stars": 91166,
       "language": "JavaScript"
     },
     {
@@ -204,7 +204,7 @@
         "ai",
         "database"
       ],
-      "stars": 1546,
+      "stars": 1547,
       "language": "Python"
     },
     {
@@ -217,7 +217,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4367,
+      "stars": 4369,
       "language": "TypeScript"
     },
     {
@@ -241,7 +241,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28197,
+      "stars": 28204,
       "language": "JavaScript"
     },
     {
@@ -269,7 +269,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3388,
+      "stars": 3389,
       "language": "Python"
     },
     {
@@ -282,7 +282,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5662,
+      "stars": 5664,
       "language": "TypeScript"
     },
     {
@@ -311,6 +311,19 @@
       "language": "TypeScript"
     },
     {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
+    },
+    {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
       "composite": 42,
@@ -322,21 +335,8 @@
         "comms",
         "web"
       ],
-      "stars": 1863,
+      "stars": 1864,
       "language": "Go"
-    },
-    {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
     },
     {
       "repo": "zcaceres/fetch-mcp",
