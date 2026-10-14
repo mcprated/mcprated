@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16656,
+      "stars": 16658,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 30222,
+      "stars": 30251,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.302,
@@ -70,7 +70,7 @@
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 72,
+      "composite": 70,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -78,10 +78,10 @@
         "ai",
         "search"
       ],
-      "stars": 1496,
+      "stars": 1497,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.283,
+      "score": 0.279,
       "shared_capabilities": [
         "search"
       ]
@@ -116,7 +116,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3395,
+      "stars": 3396,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.245,

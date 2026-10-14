@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1865,
+      "stars": 1863,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.432,
@@ -30,17 +30,17 @@
     {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
-      "composite": 50,
+      "composite": 47,
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web"
       ],
-      "stars": 5666,
+      "stars": 5665,
       "language": "TypeScript",
       "similarity": 0.5,
-      "score": 0.354,
+      "score": 0.343,
       "shared_capabilities": [
         "web"
       ]
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62973,
+      "stars": 63015,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 30222,
+      "stars": 30251,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -103,7 +103,7 @@
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 72,
+      "composite": 70,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -111,10 +111,10 @@
         "ai",
         "search"
       ],
-      "stars": 1496,
+      "stars": 1497,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.113,
+      "score": 0.112,
       "shared_capabilities": [
         "ai"
       ]
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16656,
+      "stars": 16658,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,

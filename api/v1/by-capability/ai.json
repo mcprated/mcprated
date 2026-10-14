@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-10-13T11:46:04+00:00",
+  "generated_at": "2026-10-14T09:32:00+00:00",
   "count": 10,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 38088,
+      "stars": 38118,
       "language": "TypeScript"
     },
     {
@@ -30,7 +30,7 @@
         "ai",
         "search"
       ],
-      "stars": 30222,
+      "stars": 30251,
       "language": "Python"
     },
     {
@@ -45,13 +45,13 @@
         "ai",
         "search"
       ],
-      "stars": 16656,
+      "stars": 16658,
       "language": "Go"
     },
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 72,
+      "composite": 70,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -59,7 +59,7 @@
         "ai",
         "search"
       ],
-      "stars": 1496,
+      "stars": 1497,
       "language": "TypeScript"
     },
     {
@@ -72,7 +72,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 62973,
+      "stars": 63015,
       "language": "TypeScript"
     },
     {
@@ -129,7 +129,7 @@
         "comms",
         "web"
       ],
-      "stars": 1865,
+      "stars": 1863,
       "language": "Go"
     },
     {

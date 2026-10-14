@@ -47,25 +47,6 @@
       ]
     },
     {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 42,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.333,
-      "score": 0.216,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -77,10 +58,29 @@
         "ai",
         "search"
       ],
-      "stars": 16656,
+      "stars": 16658,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 40,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.333,
+      "score": 0.211,
       "shared_capabilities": [
         "database"
       ]
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33576,
+      "stars": 33603,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -144,7 +144,7 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
+      "composite": 40,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -154,7 +154,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.5,
-      "score": 0.13,
+      "score": 0.126,
       "shared_capabilities": [
         "devtools"
       ]
