@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1863,
+      "stars": 1866,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.432,
@@ -30,17 +30,17 @@
     {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
-      "composite": 47,
+      "composite": 50,
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web"
       ],
-      "stars": 5665,
+      "stars": 5666,
       "language": "TypeScript",
       "similarity": 0.5,
-      "score": 0.343,
+      "score": 0.354,
       "shared_capabilities": [
         "web"
       ]
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 63015,
+      "stars": 63061,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 30251,
+      "stars": 30277,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -103,7 +103,7 @@
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 70,
+      "composite": 72,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -111,10 +111,10 @@
         "ai",
         "search"
       ],
-      "stars": 1497,
+      "stars": 1499,
       "language": "TypeScript",
       "similarity": 0.333,
-      "score": 0.112,
+      "score": 0.113,
       "shared_capabilities": [
         "ai"
       ]
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16658,
+      "stars": 16665,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,
@@ -188,7 +188,7 @@
         "ai",
         "database"
       ],
-      "stars": 1548,
+      "stars": 1549,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.08,

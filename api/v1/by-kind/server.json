@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-10-14T09:32:00+00:00",
+  "generated_at": "2026-10-15T09:14:32+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9777,
+      "stars": 9782,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 38118,
+      "stars": 38169,
       "language": "TypeScript"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 30251,
+      "stars": 30277,
       "language": "Python"
     },
     {
@@ -55,7 +55,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6001,
+      "stars": 6002,
       "language": "Python"
     },
     {
@@ -68,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33603,
+      "stars": 33627,
       "language": "Go"
     },
     {
@@ -83,13 +83,13 @@
         "ai",
         "search"
       ],
-      "stars": 16658,
+      "stars": 16665,
       "language": "Go"
     },
     {
       "repo": "brave/brave-search-mcp-server",
       "slug": "brave__brave-search-mcp-server",
-      "composite": 70,
+      "composite": 72,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -97,7 +97,7 @@
         "ai",
         "search"
       ],
-      "stars": 1497,
+      "stars": 1499,
       "language": "TypeScript"
     },
     {
@@ -108,7 +108,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5126,
+      "stars": 5130,
       "language": "TypeScript"
     },
     {
@@ -121,7 +121,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 63015,
+      "stars": 63061,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15982,
+      "stars": 15989,
       "language": "TypeScript"
     },
     {
@@ -143,7 +143,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91240,
+      "stars": 91277,
       "language": "JavaScript"
     },
     {
@@ -154,7 +154,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91240,
+      "stars": 91277,
       "language": "JavaScript"
     },
     {
@@ -165,7 +165,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91240,
+      "stars": 91277,
       "language": "JavaScript"
     },
     {
@@ -176,7 +176,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91240,
+      "stars": 91277,
       "language": "JavaScript"
     },
     {
@@ -204,8 +204,21 @@
         "ai",
         "database"
       ],
-      "stars": 1548,
+      "stars": 1549,
       "language": "Python"
+    },
+    {
+      "repo": "cloudflare/mcp-server-cloudflare",
+      "slug": "cloudflare__mcp-server-cloudflare",
+      "composite": 62,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "cloud"
+      ],
+      "stars": 4380,
+      "language": "TypeScript"
     },
     {
       "repo": "mcprated/mcprated",
@@ -221,17 +234,15 @@
       "language": "Python"
     },
     {
-      "repo": "cloudflare/mcp-server-cloudflare",
-      "slug": "cloudflare__mcp-server-cloudflare",
-      "composite": 60,
-      "description": null,
+      "repo": "eyaltoledano/claude-task-master",
+      "slug": "eyaltoledano__claude-task-master",
+      "composite": 57,
+      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
       "subkind": "integration",
-      "capabilities": [
-        "cloud"
-      ],
-      "stars": 4378,
-      "language": "TypeScript"
+      "capabilities": [],
+      "stars": 28227,
+      "language": "JavaScript"
     },
     {
       "repo": "runekaagaard/mcp-alchemy",
@@ -248,17 +259,6 @@
       "language": "Python"
     },
     {
-      "repo": "eyaltoledano/claude-task-master",
-      "slug": "eyaltoledano__claude-task-master",
-      "composite": 55,
-      "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 28221,
-      "language": "JavaScript"
-    },
-    {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
       "composite": 54,
@@ -269,20 +269,20 @@
         "database",
         "devtools"
       ],
-      "stars": 3396,
+      "stars": 3398,
       "language": "Python"
     },
     {
       "repo": "executeautomation/mcp-playwright",
       "slug": "executeautomation__mcp-playwright",
-      "composite": 47,
+      "composite": 50,
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "web"
       ],
-      "stars": 5665,
+      "stars": 5666,
       "language": "TypeScript"
     },
     {
@@ -297,6 +297,19 @@
       "language": "TypeScript"
     },
     {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
+    },
+    {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
       "composite": 42,
@@ -308,7 +321,7 @@
         "comms",
         "web"
       ],
-      "stars": 1863,
+      "stars": 1866,
       "language": "Go"
     },
     {
@@ -326,27 +339,14 @@
       "language": "JavaScript"
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
       "repo": "zcaceres/fetch-mcp",
       "slug": "zcaceres__fetch-mcp",
-      "composite": 37,
+      "composite": 40,
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 827,
+      "stars": 826,
       "language": "TypeScript"
     },
     {
@@ -393,7 +393,7 @@
     {
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 20,
+      "composite": 22,
       "description": "mcp server assistant for mock data",
       "kind": "server",
       "subkind": "integration",
