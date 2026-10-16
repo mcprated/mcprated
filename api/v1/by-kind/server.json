@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-10-15T09:14:32+00:00",
+  "generated_at": "2026-10-16T09:02:40+00:00",
   "count": 31,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9782,
+      "stars": 9783,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 38169,
+      "stars": 38224,
       "language": "TypeScript"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 30277,
+      "stars": 30309,
       "language": "Python"
     },
     {
@@ -55,7 +55,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6002,
+      "stars": 6006,
       "language": "Python"
     },
     {
@@ -68,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33627,
+      "stars": 33658,
       "language": "Go"
     },
     {
@@ -83,7 +83,7 @@
         "ai",
         "search"
       ],
-      "stars": 16665,
+      "stars": 16670,
       "language": "Go"
     },
     {
@@ -97,7 +97,7 @@
         "ai",
         "search"
       ],
-      "stars": 1499,
+      "stars": 1503,
       "language": "TypeScript"
     },
     {
@@ -108,20 +108,20 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5130,
+      "stars": 5135,
       "language": "TypeScript"
     },
     {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 63061,
+      "stars": 63123,
       "language": "TypeScript"
     },
     {
@@ -132,7 +132,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15989,
+      "stars": 15998,
       "language": "TypeScript"
     },
     {
@@ -143,7 +143,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -154,7 +154,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -165,7 +165,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -176,7 +176,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -204,7 +204,7 @@
         "ai",
         "database"
       ],
-      "stars": 1549,
+      "stars": 1548,
       "language": "Python"
     },
     {
@@ -217,7 +217,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4380,
+      "stars": 4384,
       "language": "TypeScript"
     },
     {
@@ -241,7 +241,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28227,
+      "stars": 28230,
       "language": "JavaScript"
     },
     {
@@ -269,7 +269,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3398,
+      "stars": 3401,
       "language": "Python"
     },
     {
@@ -310,21 +310,6 @@
       "language": "JavaScript"
     },
     {
-      "repo": "korotovsky/slack-mcp-server",
-      "slug": "korotovsky__slack-mcp-server",
-      "composite": 42,
-      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "comms",
-        "web"
-      ],
-      "stars": 1866,
-      "language": "Go"
-    },
-    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 40,
@@ -339,6 +324,21 @@
       "language": "JavaScript"
     },
     {
+      "repo": "korotovsky/slack-mcp-server",
+      "slug": "korotovsky__slack-mcp-server",
+      "composite": 40,
+      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "comms",
+        "web"
+      ],
+      "stars": 1869,
+      "language": "Go"
+    },
+    {
       "repo": "zcaceres/fetch-mcp",
       "slug": "zcaceres__fetch-mcp",
       "composite": 40,
@@ -346,7 +346,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 826,
+      "stars": 825,
       "language": "TypeScript"
     },
     {

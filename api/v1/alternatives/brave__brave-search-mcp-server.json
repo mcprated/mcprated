@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 30277,
+      "stars": 30309,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.906,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16665,
+      "stars": 16670,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1549,
+      "stars": 1548,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.533,
@@ -91,13 +91,13 @@
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 63061,
+      "stars": 63123,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 38169,
+      "stars": 38224,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -182,7 +182,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 42,
+      "composite": 40,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -191,10 +191,10 @@
         "comms",
         "web"
       ],
-      "stars": 1866,
+      "stars": 1869,
       "language": "Go",
       "similarity": 0.25,
-      "score": 0.065,
+      "score": 0.063,
       "shared_capabilities": [
         "ai"
       ]

@@ -2,7 +2,7 @@
   "capability": "web",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-10-15T09:14:32+00:00",
+  "generated_at": "2026-10-16T09:02:40+00:00",
   "count": 3,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "web",
         "ai"
       ],
-      "stars": 38169,
+      "stars": 38224,
       "language": "TypeScript"
     },
     {
@@ -35,7 +35,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 42,
+      "composite": 40,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -44,7 +44,7 @@
         "comms",
         "web"
       ],
-      "stars": 1866,
+      "stars": 1869,
       "language": "Go"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-10-15T09:14:32+00:00",
+  "generated_at": "2026-10-16T09:02:40+00:00",
   "by_composite": [
     {
       "repo": "awslabs/mcp",
@@ -12,7 +12,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9782,
+      "stars": 9783,
       "language": "Python"
     },
     {
@@ -26,7 +26,7 @@
         "web",
         "ai"
       ],
-      "stars": 38169,
+      "stars": 38224,
       "language": "TypeScript"
     },
     {
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 30277,
+      "stars": 30309,
       "language": "Python"
     },
     {
@@ -53,7 +53,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6002,
+      "stars": 6006,
       "language": "Python"
     },
     {
@@ -66,7 +66,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33627,
+      "stars": 33658,
       "language": "Go"
     },
     {
@@ -81,7 +81,7 @@
         "ai",
         "search"
       ],
-      "stars": 16665,
+      "stars": 16670,
       "language": "Go"
     },
     {
@@ -95,7 +95,7 @@
         "ai",
         "search"
       ],
-      "stars": 1499,
+      "stars": 1503,
       "language": "TypeScript"
     },
     {
@@ -106,20 +106,20 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5130,
+      "stars": 5135,
       "language": "TypeScript"
     },
     {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 63061,
+      "stars": 63123,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15989,
+      "stars": 15998,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -152,7 +152,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -163,7 +163,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -174,7 +174,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -202,7 +202,7 @@
         "ai",
         "database"
       ],
-      "stars": 1549,
+      "stars": 1548,
       "language": "Python"
     },
     {
@@ -215,7 +215,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4380,
+      "stars": 4384,
       "language": "TypeScript"
     },
     {
@@ -239,7 +239,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28227,
+      "stars": 28230,
       "language": "JavaScript"
     },
     {
@@ -267,7 +267,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3398,
+      "stars": 3401,
       "language": "Python"
     },
     {
@@ -308,19 +308,18 @@
       "language": "JavaScript"
     },
     {
-      "repo": "korotovsky/slack-mcp-server",
-      "slug": "korotovsky__slack-mcp-server",
-      "composite": 42,
-      "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 40,
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "comms",
-        "web"
+        "database",
+        "search"
       ],
-      "stars": 1866,
-      "language": "Go"
+      "stars": 1,
+      "language": "JavaScript"
     }
   ],
   "by_stars": [
@@ -332,7 +331,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -343,7 +342,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -354,7 +353,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
@@ -365,20 +364,20 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
     },
     {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
         "ai"
       ],
-      "stars": 63061,
+      "stars": 63123,
       "language": "TypeScript"
     },
     {
@@ -392,7 +391,7 @@
         "web",
         "ai"
       ],
-      "stars": 38169,
+      "stars": 38224,
       "language": "TypeScript"
     },
     {
@@ -405,7 +404,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33627,
+      "stars": 33658,
       "language": "Go"
     },
     {
@@ -419,7 +418,7 @@
         "ai",
         "search"
       ],
-      "stars": 30277,
+      "stars": 30309,
       "language": "Python"
     },
     {
@@ -430,7 +429,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28227,
+      "stars": 28230,
       "language": "JavaScript"
     },
     {
@@ -445,7 +444,7 @@
         "ai",
         "search"
       ],
-      "stars": 16665,
+      "stars": 16670,
       "language": "Go"
     },
     {
@@ -456,7 +455,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 15989,
+      "stars": 15998,
       "language": "TypeScript"
     },
     {
@@ -469,7 +468,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9782,
+      "stars": 9783,
       "language": "Python"
     },
     {
@@ -482,7 +481,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6002,
+      "stars": 6006,
       "language": "Python"
     },
     {
@@ -506,7 +505,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5130,
+      "stars": 5135,
       "language": "TypeScript"
     },
     {
@@ -519,7 +518,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4380,
+      "stars": 4384,
       "language": "TypeScript"
     },
     {
@@ -533,13 +532,13 @@
         "database",
         "devtools"
       ],
-      "stars": 3398,
+      "stars": 3401,
       "language": "Python"
     },
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 42,
+      "composite": 40,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -548,7 +547,7 @@
         "comms",
         "web"
       ],
-      "stars": 1866,
+      "stars": 1869,
       "language": "Go"
     },
     {
@@ -563,7 +562,7 @@
         "ai",
         "database"
       ],
-      "stars": 1549,
+      "stars": 1548,
       "language": "Python"
     },
     {
@@ -577,7 +576,7 @@
         "ai",
         "search"
       ],
-      "stars": 1499,
+      "stars": 1503,
       "language": "TypeScript"
     },
     {
@@ -588,7 +587,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 826,
+      "stars": 825,
       "language": "TypeScript"
     },
     {
@@ -647,18 +646,17 @@
   ],
   "by_recency": [
     {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 82,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 69,
+      "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "ai",
-        "search"
+        "ai"
       ],
-      "stars": 30277,
-      "language": "Python"
+      "stars": 63123,
+      "language": "TypeScript"
     },
     {
       "repo": "awslabs/mcp",
@@ -670,7 +668,45 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9782,
+      "stars": 9783,
+      "language": "Python"
+    },
+    {
+      "repo": "GLips/Figma-Context-MCP",
+      "slug": "GLips__Figma-Context-MCP",
+      "composite": 67,
+      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [],
+      "stars": 15998,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "slug": "github__github-mcp-server",
+      "composite": 74,
+      "description": "GitHub's official MCP Server",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 33658,
+      "language": "Go"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 82,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 30309,
       "language": "Python"
     },
     {
@@ -685,45 +721,22 @@
         "ai",
         "search"
       ],
-      "stars": 16665,
+      "stars": 16670,
       "language": "Go"
     },
     {
-      "repo": "GLips/Figma-Context-MCP",
-      "slug": "GLips__Figma-Context-MCP",
-      "composite": 67,
-      "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [],
-      "stars": 15989,
-      "language": "TypeScript"
-    },
-    {
-      "repo": "github/github-mcp-server",
-      "slug": "github__github-mcp-server",
-      "composite": 74,
-      "description": "GitHub's official MCP Server",
+      "repo": "runekaagaard/mcp-alchemy",
+      "slug": "runekaagaard__mcp-alchemy",
+      "composite": 57,
+      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "devtools"
-      ],
-      "stars": 33627,
-      "language": "Go"
-    },
-    {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 69,
-      "description": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
+        "database",
         "ai"
       ],
-      "stars": 63061,
-      "language": "TypeScript"
+      "stars": 420,
+      "language": "Python"
     },
     {
       "repo": "mcprated/mcprated",
@@ -749,7 +762,7 @@
         "ai",
         "search"
       ],
-      "stars": 1499,
+      "stars": 1503,
       "language": "TypeScript"
     },
     {
@@ -760,22 +773,8 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91277,
+      "stars": 91302,
       "language": "JavaScript"
-    },
-    {
-      "repo": "runekaagaard/mcp-alchemy",
-      "slug": "runekaagaard__mcp-alchemy",
-      "composite": 57,
-      "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "ai"
-      ],
-      "stars": 420,
-      "language": "Python"
     },
     {
       "repo": "cloudflare/mcp-server-cloudflare",
@@ -787,7 +786,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4380,
+      "stars": 4384,
       "language": "TypeScript"
     },
     {
@@ -801,7 +800,7 @@
         "web",
         "ai"
       ],
-      "stars": 38169,
+      "stars": 38224,
       "language": "TypeScript"
     },
     {
@@ -812,7 +811,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5130,
+      "stars": 5135,
       "language": "TypeScript"
     },
     {
@@ -825,7 +824,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6002,
+      "stars": 6006,
       "language": "Python"
     },
     {
@@ -853,7 +852,7 @@
         "ai",
         "database"
       ],
-      "stars": 1549,
+      "stars": 1548,
       "language": "Python"
     },
     {
@@ -867,13 +866,13 @@
         "database",
         "devtools"
       ],
-      "stars": 3398,
+      "stars": 3401,
       "language": "Python"
     },
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 42,
+      "composite": 40,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -882,7 +881,7 @@
         "comms",
         "web"
       ],
-      "stars": 1866,
+      "stars": 1869,
       "language": "Go"
     },
     {
@@ -893,7 +892,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28227,
+      "stars": 28230,
       "language": "JavaScript"
     },
     {
@@ -904,7 +903,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 826,
+      "stars": 825,
       "language": "TypeScript"
     },
     {
