@@ -45,7 +45,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 217d ago"
+          "note": "pushed 218d ago"
         },
         "has_releases": {
           "pass": false,
@@ -69,7 +69,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 220d ago"
+          "note": "last published 221d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -185,5 +185,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-16T09:02:40+00:00"
+  "scored_at": "2026-10-17T08:32:07+00:00"
 }
