@@ -2,7 +2,7 @@
   "capability": "database",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-10-19T09:51:47+00:00",
+  "generated_at": "2026-10-20T09:24:29+00:00",
   "count": 6,
   "servers": [
     {
@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 16680,
+      "stars": 16687,
       "language": "Go"
     },
     {
@@ -60,7 +60,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3404,
+      "stars": 3409,
       "language": "Python"
     },
     {

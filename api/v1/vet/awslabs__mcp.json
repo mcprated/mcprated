@@ -2,7 +2,7 @@
   "repo": "awslabs/mcp",
   "slug": "awslabs__mcp",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-19T09:51:46+00:00",
+  "scored_at": "2026-10-20T09:24:29+00:00",
   "composite": 86,
   "axes": {
     "reliability": 70,
@@ -16,8 +16,8 @@
     "cloud"
   ],
   "license": "Apache-2.0",
-  "stars": 9794,
-  "pushed_at": "2026-10-16T20:30:35Z",
+  "stars": 9796,
+  "pushed_at": "2026-10-20T00:04:06Z",
   "language": "Python",
   "hard_flags": [],
   "trust_signals": {
