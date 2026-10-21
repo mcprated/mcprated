@@ -1,10 +1,10 @@
 {
   "repo": "github/github-mcp-server",
-  "stars": 33782,
+  "stars": 33811,
   "language": "Go",
   "license": "MIT",
   "description": "GitHub's official MCP Server",
-  "pushed_at": "2026-10-19T15:23:31Z",
+  "pushed_at": "2026-10-21T09:06:26Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -48,7 +48,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 11d ago"
+          "note": "latest release 12d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -180,5 +180,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-20T09:24:29+00:00"
+  "scored_at": "2026-10-21T09:21:12+00:00"
 }
