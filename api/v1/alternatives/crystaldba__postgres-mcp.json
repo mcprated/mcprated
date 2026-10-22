@@ -58,7 +58,7 @@
         "ai",
         "search"
       ],
-      "stars": 16700,
+      "stars": 16706,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33811,
+      "stars": 33843,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
