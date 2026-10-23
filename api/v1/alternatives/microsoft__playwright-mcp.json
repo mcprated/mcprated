@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1871,
+      "stars": 1872,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.422,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5670,
+      "stars": 5672,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.354,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 63475,
+      "stars": 63533,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -92,7 +92,7 @@
         "ai",
         "search"
       ],
-      "stars": 30596,
+      "stars": 30640,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -111,7 +111,7 @@
         "ai",
         "search"
       ],
-      "stars": 1520,
+      "stars": 1521,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16706,
+      "stars": 16709,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,
