@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 30673,
+      "stars": 30691,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.906,
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 63567,
+      "stars": 63630,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -134,7 +134,7 @@
         "web",
         "ai"
       ],
-      "stars": 38568,
+      "stars": 38603,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,

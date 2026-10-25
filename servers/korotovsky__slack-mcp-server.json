@@ -44,7 +44,7 @@
         },
         "recently_maintained": {
           "pass": false,
-          "note": "pushed 99d ago"
+          "note": "pushed 100d ago"
         },
         "has_releases": {
           "pass": true,
@@ -52,7 +52,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 162d ago"
+          "note": "latest release 163d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -169,7 +169,7 @@
         },
         "responsive_issues": {
           "pass": false,
-          "note": "no recent commits, 87 open issues"
+          "note": "no recent commits, 89 open issues"
         },
         "merged_prs_recent": {
           "pass": false,
@@ -184,5 +184,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-24T08:54:59+00:00"
+  "scored_at": "2026-10-25T09:13:28+00:00"
 }
