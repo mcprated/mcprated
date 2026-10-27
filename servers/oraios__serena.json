@@ -1,10 +1,10 @@
 {
   "repo": "oraios/serena",
-  "stars": 30725,
+  "stars": 30750,
   "language": "Python",
   "license": "NOASSERTION",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-  "pushed_at": "2026-10-20T08:47:27Z",
+  "pushed_at": "2026-10-26T23:02:19Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -43,7 +43,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 6d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -51,7 +51,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 6d ago"
+          "note": "latest release 7d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -67,7 +67,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 6d ago"
+          "note": "last published 7d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -82,7 +82,7 @@
       "signals": {
         "readme_substantive": {
           "pass": true,
-          "note": "README 15298 chars (need ≥500)"
+          "note": "README 15307 chars (need ≥500)"
         },
         "install_instructions": {
           "pass": true,
@@ -149,7 +149,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "48136 weekly downloads"
+          "note": "43883 weekly downloads"
         }
       }
     },
@@ -164,7 +164,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "8 unique committers in 90d"
+          "note": "7 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-26T10:07:43+00:00"
+  "scored_at": "2026-10-27T09:51:19+00:00"
 }

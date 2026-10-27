@@ -2,7 +2,7 @@
   "repo": "modelcontextprotocol/python-sdk",
   "slug": "modelcontextprotocol__python-sdk",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-26T10:07:43+00:00",
+  "scored_at": "2026-10-27T09:51:19+00:00",
   "composite": 84,
   "axes": {
     "reliability": 100,
@@ -16,7 +16,7 @@
     "ai"
   ],
   "license": "MIT",
-  "stars": 24671,
+  "stars": 24684,
   "pushed_at": "2026-10-25T13:05:36Z",
   "language": "Python",
   "hard_flags": [],
@@ -63,7 +63,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "70182218 weekly downloads"
+      "note": "70936966 weekly downloads"
     }
   },
   "quality_tier": "solid",

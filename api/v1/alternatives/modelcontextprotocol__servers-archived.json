@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3425,
+      "stars": 3429,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.49,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9835,
+      "stars": 9836,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4418,
+      "stars": 4420,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16728,
+      "stars": 16731,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -114,7 +114,7 @@
         "ai",
         "database"
       ],
-      "stars": 1553,
+      "stars": 1556,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.16,
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 33966,
+      "stars": 33995,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

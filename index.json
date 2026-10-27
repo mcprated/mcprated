@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T10:07:43+00:00",
+  "generated_at": "2026-10-27T09:51:19+00:00",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
   "count": 32,
@@ -14,7 +14,7 @@
         "trust": 73,
         "community": 100
       },
-      "stars": 9835,
+      "stars": 9836,
       "language": "Python",
       "description": "Open source MCP Servers for AWS",
       "kind": "server",
@@ -37,7 +37,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 38643,
+      "stars": 38686,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -61,7 +61,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 24671,
+      "stars": 24684,
       "language": "Python",
       "description": "The official Python SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -84,7 +84,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 13653,
+      "stars": 13662,
       "language": "TypeScript",
       "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -105,7 +105,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 30725,
+      "stars": 30750,
       "language": "Python",
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
@@ -129,7 +129,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 6048,
+      "stars": 6053,
       "language": "Python",
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
@@ -152,7 +152,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 33966,
+      "stars": 33995,
       "language": "Go",
       "description": "GitHub's official MCP Server",
       "kind": "server",
@@ -175,7 +175,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 16728,
+      "stars": 16731,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -200,7 +200,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 1533,
+      "stars": 1536,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -228,7 +228,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 91574,
+      "stars": 91597,
       "language": "TypeScript",
       "description": "Model Context Protocol Servers",
       "kind": "server",
@@ -260,7 +260,7 @@
         "trust": 18,
         "community": 100
       },
-      "stars": 2971,
+      "stars": 2976,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "framework",
@@ -284,7 +284,7 @@
         "trust": 36,
         "community": 80
       },
-      "stars": 5170,
+      "stars": 5178,
       "language": "TypeScript",
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
@@ -314,7 +314,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 63701,
+      "stars": 63753,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
@@ -337,7 +337,7 @@
         "trust": 27,
         "community": 40
       },
-      "stars": 16070,
+      "stars": 16077,
       "language": "TypeScript",
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
@@ -360,7 +360,7 @@
         "trust": 18,
         "community": 80
       },
-      "stars": 678,
+      "stars": 677,
       "language": "Python",
       "description": "Shell and coding agent on mcp clients",
       "kind": "server",
@@ -383,7 +383,7 @@
         "trust": 27,
         "community": 40
       },
-      "stars": 1553,
+      "stars": 1556,
       "language": "Python",
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
@@ -408,7 +408,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 4418,
+      "stars": 4420,
       "language": "TypeScript",
       "description": "Product specific Cloudflare MCP servers",
       "kind": "server",
@@ -464,7 +464,7 @@
         "trust": 18,
         "community": 40
       },
-      "stars": 28275,
+      "stars": 28273,
       "language": "JavaScript",
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
@@ -514,7 +514,7 @@
         "trust": 27,
         "community": 40
       },
-      "stars": 3425,
+      "stars": 3429,
       "language": "Python",
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
@@ -547,7 +547,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 5674,
+      "stars": 5673,
       "language": "TypeScript",
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
@@ -660,7 +660,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 1872,
+      "stars": 1875,
       "language": "Go",
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
@@ -685,7 +685,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 834,
+      "stars": 835,
       "language": "TypeScript",
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
@@ -713,7 +713,7 @@
         "trust": 27,
         "community": 40
       },
-      "stars": 306,
+      "stars": 305,
       "language": "JavaScript",
       "description": "Reference MCP servers that are no longer maintained",
       "kind": "server",
@@ -792,11 +792,11 @@
     {
       "repo": "ogulcanarbc/mock-assistant-mcp-server",
       "slug": "ogulcanarbc__mock-assistant-mcp-server",
-      "composite": 22,
+      "composite": 20,
       "axes": {
         "reliability": 40,
         "documentation": 0,
-        "trust": 9,
+        "trust": 0,
         "community": 40
       },
       "stars": 0,
