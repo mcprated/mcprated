@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 1536,
+      "stars": 1538,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.849,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16731,
+      "stars": 16744,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1556,
+      "stars": 1558,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.533,
@@ -97,28 +97,10 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 63753,
+      "stars": 63816,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "rusiaaman/wcgw",
-      "slug": "rusiaaman__wcgw",
-      "composite": 67,
-      "description": "Shell and coding agent on mcp clients",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 677,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.164,
       "shared_capabilities": [
         "ai"
       ]
@@ -134,7 +116,7 @@
         "web",
         "ai"
       ],
-      "stars": 38686,
+      "stars": 38747,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -153,6 +135,24 @@
         "ai"
       ],
       "stars": 0,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.11,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 30,
+      "description": "Shell and coding agent on mcp clients",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 677,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.11,
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1875,
+      "stars": 1878,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.063,

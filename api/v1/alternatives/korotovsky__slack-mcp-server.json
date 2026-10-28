@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 38686,
+      "stars": 38747,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5673,
+      "stars": 5675,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.236,
@@ -55,28 +55,10 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 63753,
+      "stars": 63816,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "rusiaaman/wcgw",
-      "slug": "rusiaaman__wcgw",
-      "composite": 67,
-      "description": "Shell and coding agent on mcp clients",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 677,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.109,
       "shared_capabilities": [
         "ai"
       ]
@@ -92,7 +74,7 @@
         "ai",
         "search"
       ],
-      "stars": 30750,
+      "stars": 30798,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.091,
@@ -111,7 +93,7 @@
         "ai",
         "search"
       ],
-      "stars": 1536,
+      "stars": 1538,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -157,6 +139,24 @@
       ]
     },
     {
+      "repo": "rusiaaman/wcgw",
+      "slug": "rusiaaman__wcgw",
+      "composite": 30,
+      "description": "Shell and coding agent on mcp clients",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 677,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.073,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16731,
+      "stars": 16744,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.069,
@@ -188,7 +188,7 @@
         "ai",
         "database"
       ],
-      "stars": 1556,
+      "stars": 1558,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.064,

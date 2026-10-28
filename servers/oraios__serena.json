@@ -1,10 +1,10 @@
 {
   "repo": "oraios/serena",
-  "stars": 30750,
+  "stars": 30798,
   "language": "Python",
   "license": "NOASSERTION",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-  "pushed_at": "2026-10-26T23:02:19Z",
+  "pushed_at": "2026-10-28T10:30:27Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -51,7 +51,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 7d ago"
+          "note": "latest release 8d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -67,7 +67,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 7d ago"
+          "note": "last published 8d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -164,15 +164,15 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "7 unique committers in 90d"
+          "note": "3 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
-          "note": "active: 30 commits, 14 merged PRs in 90d"
+          "note": "active: 30 commits, 13 merged PRs in 90d"
         },
         "merged_prs_recent": {
           "pass": true,
-          "note": "14 merged PR(s) in 90d"
+          "note": "13 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-27T09:51:19+00:00"
+  "scored_at": "2026-10-28T10:37:34+00:00"
 }
