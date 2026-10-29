@@ -1,7 +1,7 @@
 {
   "kind": "framework",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-10-28T10:37:34+00:00",
+  "generated_at": "2026-10-29T10:59:30+00:00",
   "count": 3,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 24694,
+      "stars": 24705,
       "language": "Python"
     },
     {
@@ -25,13 +25,13 @@
       "kind": "framework",
       "subkind": "",
       "capabilities": [],
-      "stars": 13669,
+      "stars": 13676,
       "language": "TypeScript"
     },
     {
       "repo": "supabase/mcp",
       "slug": "supabase__mcp",
-      "composite": 70,
+      "composite": 72,
       "description": "Connect Supabase to your AI assistants",
       "kind": "framework",
       "subkind": "",
