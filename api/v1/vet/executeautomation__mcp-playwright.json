@@ -2,7 +2,7 @@
   "repo": "executeautomation/mcp-playwright",
   "slug": "executeautomation__mcp-playwright",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-10-29T10:59:29+00:00",
+  "scored_at": "2026-10-30T10:53:52+00:00",
   "composite": 50,
   "axes": {
     "reliability": 60,
@@ -63,7 +63,7 @@
     },
     "weekly_downloads_meaningful": {
       "passed": true,
-      "note": "10668 weekly downloads"
+      "note": "12730 weekly downloads"
     }
   },
   "quality_tier": "acceptable",
