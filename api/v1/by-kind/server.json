@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-02T12:20:12+00:00",
+  "generated_at": "2026-11-03T11:53:12+00:00",
   "count": 30,
   "servers": [
     {
@@ -14,7 +14,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9862,
+      "stars": 9865,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
         "web",
         "ai"
       ],
-      "stars": 38975,
+      "stars": 39118,
       "language": "TypeScript"
     },
     {
@@ -42,7 +42,7 @@
         "ai",
         "search"
       ],
-      "stars": 31013,
+      "stars": 31051,
       "language": "Python"
     },
     {
@@ -55,7 +55,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6076,
+      "stars": 6080,
       "language": "Python"
     },
     {
@@ -68,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34157,
+      "stars": 34181,
       "language": "Go"
     },
     {
@@ -83,7 +83,7 @@
         "ai",
         "search"
       ],
-      "stars": 16788,
+      "stars": 16794,
       "language": "Go"
     },
     {
@@ -97,7 +97,7 @@
         "ai",
         "search"
       ],
-      "stars": 1553,
+      "stars": 1556,
       "language": "TypeScript"
     },
     {
@@ -108,7 +108,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91743,
+      "stars": 91765,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91743,
+      "stars": 91765,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91743,
+      "stars": 91765,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5208,
+      "stars": 5209,
       "language": "TypeScript"
     },
     {
@@ -154,7 +154,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64073,
+      "stars": 64125,
       "language": "TypeScript"
     },
     {
@@ -165,7 +165,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16134,
+      "stars": 16146,
       "language": "TypeScript"
     },
     {
@@ -217,7 +217,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28289,
+      "stars": 28295,
       "language": "JavaScript"
     },
     {
@@ -245,7 +245,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3449,
+      "stars": 3453,
       "language": "Python"
     },
     {
@@ -258,7 +258,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5675,
+      "stars": 5674,
       "language": "TypeScript"
     },
     {
@@ -273,19 +273,6 @@
       "language": "TypeScript"
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 40,
@@ -295,6 +282,19 @@
       "capabilities": [
         "database",
         "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
+    },
+    {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 40,
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
       ],
       "stars": 1,
       "language": "JavaScript"
@@ -322,7 +322,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 835,
+      "stars": 836,
       "language": "TypeScript"
     },
     {

@@ -2,7 +2,7 @@
   "repo": "googleapis/mcp-toolbox",
   "slug": "googleapis__mcp-toolbox",
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-11-02T12:20:11+00:00",
+  "scored_at": "2026-11-03T11:53:12+00:00",
   "composite": 74,
   "axes": {
     "reliability": 70,
@@ -18,8 +18,8 @@
     "search"
   ],
   "license": "Apache-2.0",
-  "stars": 16788,
-  "pushed_at": "2026-11-02T09:17:08Z",
+  "stars": 16794,
+  "pushed_at": "2026-11-03T09:10:07Z",
   "language": "Go",
   "hard_flags": [],
   "trust_signals": {
