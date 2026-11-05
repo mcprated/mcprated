@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:04:20+00:00",
+  "generated_at": "2026-11-05T12:14:34+00:00",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
   "count": 32,
@@ -14,7 +14,7 @@
         "trust": 73,
         "community": 100
       },
-      "stars": 9875,
+      "stars": 9880,
       "language": "Python",
       "description": "Open source MCP Servers for AWS",
       "kind": "server",
@@ -37,7 +37,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 39163,
+      "stars": 39202,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -61,7 +61,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 24753,
+      "stars": 24769,
       "language": "Python",
       "description": "The official Python SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -84,7 +84,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 13703,
+      "stars": 13711,
       "language": "TypeScript",
       "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -105,7 +105,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 31083,
+      "stars": 31115,
       "language": "Python",
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
@@ -129,7 +129,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 6081,
+      "stars": 6084,
       "language": "Python",
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
@@ -152,7 +152,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 34215,
+      "stars": 34248,
       "language": "Go",
       "description": "GitHub's official MCP Server",
       "kind": "server",
@@ -175,7 +175,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 16799,
+      "stars": 16808,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -200,7 +200,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 1558,
+      "stars": 1561,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -228,25 +228,25 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 91782,
+      "stars": 91808,
       "language": "TypeScript",
-      "description": "Model Context Protocol Servers",
+      "description": "Model Context Protocol Reference Servers",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
       "distribution": "repo",
-      "tool_count": 16,
+      "tool_count": 14,
       "tool_names_preview": [
         "read_file",
         "read_text_file",
         "read_media_file",
         "read_multiple_files",
         "write_file",
+        "append_file",
         "edit_file",
         "create_directory",
         "list_directory",
-        "list_directory_with_sizes",
-        "directory_tree"
+        "list_directory_with_sizes"
       ],
       "hard_flags": []
     },
@@ -260,7 +260,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 2991,
+      "stars": 2993,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "framework",
@@ -284,7 +284,7 @@
         "trust": 36,
         "community": 80
       },
-      "stars": 5209,
+      "stars": 5213,
       "language": "TypeScript",
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
@@ -314,7 +314,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 64175,
+      "stars": 64227,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
@@ -337,7 +337,7 @@
         "trust": 27,
         "community": 40
       },
-      "stars": 16153,
+      "stars": 16165,
       "language": "TypeScript",
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
@@ -385,7 +385,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 4443,
+      "stars": 4446,
       "language": "TypeScript",
       "description": "Product specific Cloudflare MCP servers",
       "kind": "server",
@@ -441,7 +441,7 @@
         "trust": 18,
         "community": 40
       },
-      "stars": 28300,
+      "stars": 28303,
       "language": "JavaScript",
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
@@ -491,7 +491,7 @@
         "trust": 27,
         "community": 40
       },
-      "stars": 3453,
+      "stars": 3455,
       "language": "Python",
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
@@ -524,7 +524,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 5674,
+      "stars": 5676,
       "language": "TypeScript",
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
@@ -574,6 +574,32 @@
       ]
     },
     {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 42,
+      "axes": {
+        "reliability": 30,
+        "documentation": 80,
+        "trust": 18,
+        "community": 40
+      },
+      "stars": 1,
+      "language": "JavaScript",
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "distribution": "repo",
+      "tool_count": 2,
+      "tool_names_preview": [
+        "getSecretPassphrase",
+        "super-secret-server"
+      ],
+      "hard_flags": []
+    },
+    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 40,
@@ -602,32 +628,6 @@
       ]
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
-      "axes": {
-        "reliability": 30,
-        "documentation": 80,
-        "trust": 9,
-        "community": 40
-      },
-      "stars": 1,
-      "language": "JavaScript",
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "distribution": "repo",
-      "tool_count": 2,
-      "tool_names_preview": [
-        "getSecretPassphrase",
-        "super-secret-server"
-      ],
-      "hard_flags": []
-    },
-    {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
       "composite": 40,
@@ -637,7 +637,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 1884,
+      "stars": 1886,
       "language": "Go",
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
