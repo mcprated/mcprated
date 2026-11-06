@@ -1,10 +1,10 @@
 {
   "repo": "upstash/context7",
-  "stars": 64227,
+  "stars": 64273,
   "language": "TypeScript",
   "license": "MIT",
   "description": "Context7 Platform -- Up-to-date docs for AI agents",
-  "pushed_at": "2026-11-05T12:09:02Z",
+  "pushed_at": "2026-11-06T11:31:52Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -50,7 +50,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 2d ago"
+          "note": "latest release 3d ago"
         },
         "version_follows_semver": {
           "pass": false,
@@ -163,7 +163,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "9 unique committers in 90d"
+          "note": "8 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -182,5 +182,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-11-05T12:14:34+00:00"
+  "scored_at": "2026-11-06T12:06:14+00:00"
 }

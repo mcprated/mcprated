@@ -1,7 +1,7 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-05T12:14:34+00:00",
-  "total_tools": 165,
+  "generated_at": "2026-11-06T12:06:14+00:00",
+  "total_tools": 166,
   "tools": [
     {
       "name": "append_file",
@@ -92,6 +92,21 @@
       "capabilities": [],
       "extraction_method": "regex_typescript",
       "parent_slug": "modelcontextprotocol__servers"
+    },
+    {
+      "name": "docker-e2e",
+      "description": null,
+      "input_keys": [],
+      "repo": "brave/brave-search-mcp-server",
+      "slug": "brave__brave-search-mcp-server",
+      "composite": 72,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "extraction_method": "regex_typescript"
     },
     {
       "name": "edit_file",
