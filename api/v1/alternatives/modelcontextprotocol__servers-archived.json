@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3460,
+      "stars": 3461,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.49,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9886,
+      "stars": 9892,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4451,
+      "stars": 4453,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -94,10 +94,29 @@
         "ai",
         "search"
       ],
-      "stars": 16817,
+      "stars": 16822,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 42,
+      "description": null,
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript",
+      "similarity": 0.25,
+      "score": 0.162,
       "shared_capabilities": [
         "database"
       ]
@@ -114,29 +133,10 @@
         "ai",
         "database"
       ],
-      "stars": 1564,
+      "stars": 1565,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.16,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "bsmi021/sticky-notes-server",
-      "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
-      "description": null,
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "search"
-      ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.25,
-      "score": 0.158,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34280,
+      "stars": 34320,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

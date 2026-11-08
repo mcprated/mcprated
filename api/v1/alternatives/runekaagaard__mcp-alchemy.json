@@ -18,7 +18,7 @@
         "ai",
         "search"
       ],
-      "stars": 16817,
+      "stars": 16822,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +39,7 @@
         "ai",
         "database"
       ],
-      "stars": 1564,
+      "stars": 1565,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.533,
@@ -59,7 +59,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3460,
+      "stars": 3461,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.245,
@@ -70,7 +70,7 @@
     {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
-      "composite": 40,
+      "composite": 42,
       "description": null,
       "kind": "server",
       "subkind": "integration",
@@ -81,7 +81,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.333,
-      "score": 0.211,
+      "score": 0.216,
       "shared_capabilities": [
         "database"
       ]
@@ -96,7 +96,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64273,
+      "stars": 64345,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -116,7 +116,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 305,
+      "stars": 306,
       "language": "JavaScript",
       "similarity": 0.25,
       "score": 0.137,
@@ -135,7 +135,7 @@
         "web",
         "ai"
       ],
-      "stars": 39254,
+      "stars": 39321,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -154,7 +154,7 @@
         "ai",
         "search"
       ],
-      "stars": 31144,
+      "stars": 31199,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
@@ -173,7 +173,7 @@
         "ai",
         "search"
       ],
-      "stars": 1562,
+      "stars": 1564,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
