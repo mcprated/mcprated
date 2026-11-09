@@ -1,6 +1,6 @@
 {
   "repo": "crystaldba/postgres-mcp",
-  "stars": 3461,
+  "stars": 3465,
   "language": "Python",
   "license": "MIT",
   "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
@@ -34,8 +34,8 @@
     "extraction_confidence": 0.9
   },
   "sub_servers": [],
-  "composite": 54,
-  "composite_raw": 54,
+  "composite": 49,
+  "composite_raw": 49,
   "axes": {
     "reliability": {
       "score": 70,
@@ -52,7 +52,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 83d ago"
+          "note": "pushed 84d ago"
         },
         "has_releases": {
           "pass": true,
@@ -60,7 +60,7 @@
         },
         "tagged_release_recent": {
           "pass": false,
-          "note": "latest release 540d ago"
+          "note": "latest release 541d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -76,7 +76,7 @@
         },
         "recent_publish": {
           "pass": false,
-          "note": "last published 540d ago"
+          "note": "last published 541d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -158,13 +158,13 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "123061 weekly downloads"
+          "note": "114524 weekly downloads"
         }
       }
     },
     "community": {
-      "score": 40,
-      "passing": 2,
+      "score": 20,
+      "passing": 1,
       "total": 5,
       "signals": {
         "has_contributing": {
@@ -177,11 +177,11 @@
         },
         "responsive_issues": {
           "pass": false,
-          "note": "98 open / 1 commits (ratio 98.00)"
+          "note": "96 open / 1 commits (ratio 96.00)"
         },
         "merged_prs_recent": {
-          "pass": true,
-          "note": "1 merged PR(s) in 90d"
+          "pass": false,
+          "note": "0 merged PR(s) in 90d"
         },
         "not_solo_initial": {
           "pass": true,
@@ -192,5 +192,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-11-08T11:21:14+00:00"
+  "scored_at": "2026-11-09T12:51:33+00:00"
 }
