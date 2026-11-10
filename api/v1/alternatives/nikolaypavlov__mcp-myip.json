@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64408,
+      "stars": 64451,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -33,10 +33,29 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 678,
+      "stars": 679,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.219,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 89,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 31261,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.189,
       "shared_capabilities": [
         "ai"
       ]
@@ -52,29 +71,10 @@
         "web",
         "ai"
       ],
-      "stars": 39370,
+      "stars": 39406,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 82,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 31227,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.181,
       "shared_capabilities": [
         "ai"
       ]
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1565,
+      "stars": 1567,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 16829,
+      "stars": 16832,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -140,7 +140,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 64,
+      "composite": 69,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -152,7 +152,7 @@
       "stars": 1565,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.107,
+      "score": 0.111,
       "shared_capabilities": [
         "ai"
       ]
@@ -169,7 +169,7 @@
         "comms",
         "web"
       ],
-      "stars": 1889,
+      "stars": 1890,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.084,

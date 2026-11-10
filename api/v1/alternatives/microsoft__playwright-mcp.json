@@ -18,7 +18,7 @@
         "comms",
         "web"
       ],
-      "stars": 1889,
+      "stars": 1890,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.422,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5680,
+      "stars": 5681,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.354,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64408,
+      "stars": 64451,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -66,7 +66,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 82,
+      "composite": 89,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -74,10 +74,10 @@
         "ai",
         "search"
       ],
-      "stars": 31227,
+      "stars": 31261,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.121,
+      "score": 0.126,
       "shared_capabilities": [
         "ai"
       ]
@@ -93,28 +93,10 @@
         "ai",
         "search"
       ],
-      "stars": 1565,
+      "stars": 1567,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -129,10 +111,28 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 678,
+      "stars": 679,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.11,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 28,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.106,
       "shared_capabilities": [
         "ai"
       ]
@@ -168,7 +168,7 @@
         "ai",
         "search"
       ],
-      "stars": 16829,
+      "stars": 16832,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.086,
@@ -179,7 +179,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 64,
+      "composite": 69,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -191,7 +191,7 @@
       "stars": 1565,
       "language": "Python",
       "similarity": 0.25,
-      "score": 0.08,
+      "score": 0.083,
       "shared_capabilities": [
         "ai"
       ]

@@ -1,10 +1,10 @@
 {
   "repo": "oraios/serena",
-  "stars": 31227,
+  "stars": 31261,
   "language": "Python",
   "license": "NOASSERTION",
   "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-  "pushed_at": "2026-10-28T10:45:55Z",
+  "pushed_at": "2026-11-09T17:39:00Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.7,
@@ -25,8 +25,8 @@
     "extraction_confidence": 0.4
   },
   "sub_servers": [],
-  "composite": 82,
-  "composite_raw": 82,
+  "composite": 89,
+  "composite_raw": 89,
   "axes": {
     "reliability": {
       "score": 100,
@@ -43,7 +43,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 12d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -51,7 +51,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 20d ago"
+          "note": "latest release 21d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -67,7 +67,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 20d ago"
+          "note": "last published 21d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -103,8 +103,8 @@
       }
     },
     "trust": {
-      "score": 27,
-      "passing": 3,
+      "score": 55,
+      "passing": 6,
       "total": 11,
       "signals": {
         "license_commercial": {
@@ -125,31 +125,31 @@
         },
         "signed_releases": {
           "pass": false,
-          "note": "no Scorecard data"
+          "note": "Scorecard Signed-Releases=-1/10"
         },
         "pinned_dependencies": {
           "pass": false,
-          "note": "no Scorecard data"
+          "note": "Scorecard Pinned-Dependencies=0/10"
         },
         "branch_protection": {
           "pass": false,
-          "note": "no Scorecard data"
+          "note": "Scorecard Branch-Protection=3/10"
         },
         "token_permissions": {
-          "pass": false,
-          "note": "no Scorecard data"
+          "pass": true,
+          "note": "Scorecard Token-Permissions=8/10"
         },
         "dependency_update_tool": {
-          "pass": false,
-          "note": "no Scorecard data"
+          "pass": true,
+          "note": "Scorecard Dependency-Update-Tool=10/10"
         },
         "no_dangerous_workflow": {
-          "pass": false,
-          "note": "no Scorecard data"
+          "pass": true,
+          "note": "Scorecard Dangerous-Workflow=10/10"
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "34792 weekly downloads"
+          "note": "35170 weekly downloads"
         }
       }
     },
@@ -164,7 +164,7 @@
         },
         "multiple_contributors": {
           "pass": true,
-          "note": "4 unique committers in 90d"
+          "note": "5 unique committers in 90d"
         },
         "responsive_issues": {
           "pass": true,
@@ -183,5 +183,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-11-09T12:51:33+00:00"
+  "scored_at": "2026-11-10T12:33:38+00:00"
 }
