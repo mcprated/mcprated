@@ -4,7 +4,7 @@
   "language": null,
   "license": null,
   "description": "Claude Code MCP servers",
-  "pushed_at": "2025-03-02T17:03:44Z",
+  "pushed_at": "2026-11-11T11:13:54Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.45,
@@ -22,12 +22,12 @@
     "extraction_confidence": 0.0
   },
   "sub_servers": [],
-  "composite": 22,
-  "composite_raw": 22,
+  "composite": 25,
+  "composite_raw": 25,
   "axes": {
     "reliability": {
-      "score": 10,
-      "passing": 1,
+      "score": 20,
+      "passing": 2,
       "total": 10,
       "signals": {
         "has_ci": {
@@ -39,8 +39,8 @@
           "note": "no package metadata (n/a)"
         },
         "recently_maintained": {
-          "pass": false,
-          "note": "pushed 617d ago"
+          "pass": true,
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": false,
@@ -165,7 +165,7 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "no recent commits, 0 open issues"
+          "note": "no recent commits, 1 open issues"
         },
         "merged_prs_recent": {
           "pass": false,
@@ -180,5 +180,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-11-10T12:33:37+00:00"
+  "scored_at": "2026-11-11T11:54:46+00:00"
 }

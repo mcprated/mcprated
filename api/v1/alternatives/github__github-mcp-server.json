@@ -44,7 +44,7 @@
     {
       "repo": "boysoai/Claude-Code-MCP",
       "slug": "boysoai__Claude-Code-MCP",
-      "composite": 22,
+      "composite": 25,
       "description": "Claude Code MCP servers",
       "kind": "server",
       "subkind": "integration",
@@ -54,7 +54,7 @@
       "stars": 0,
       "language": null,
       "similarity": 1.0,
-      "score": 0.188,
+      "score": 0.2,
       "shared_capabilities": [
         "devtools"
       ]

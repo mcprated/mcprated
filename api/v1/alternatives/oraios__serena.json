@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16832,
+      "stars": 16836,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -59,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1565,
+      "stars": 1567,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.554,
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64451,
+      "stars": 64582,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -116,10 +116,28 @@
         "web",
         "ai"
       ],
-      "stars": 39406,
+      "stars": 39492,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 30,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -138,24 +156,6 @@
       "language": "Python",
       "similarity": 0.5,
       "score": 0.11,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.106,
       "shared_capabilities": [
         "ai"
       ]
@@ -191,7 +191,7 @@
         "comms",
         "web"
       ],
-      "stars": 1890,
+      "stars": 1892,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.063,
