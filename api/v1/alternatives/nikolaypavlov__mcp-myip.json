@@ -15,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64582,
+      "stars": 64668,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.332,
@@ -33,7 +33,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 679,
+      "stars": 680,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.219,
@@ -44,7 +44,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 89,
+      "composite": 86,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -52,10 +52,10 @@
         "ai",
         "search"
       ],
-      "stars": 31292,
+      "stars": 31320,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.189,
+      "score": 0.185,
       "shared_capabilities": [
         "ai"
       ]
@@ -71,7 +71,7 @@
         "web",
         "ai"
       ],
-      "stars": 39492,
+      "stars": 39545,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1567,
+      "stars": 1570,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -129,7 +129,7 @@
         "ai",
         "search"
       ],
-      "stars": 16836,
+      "stars": 16847,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -140,7 +140,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
+      "composite": 67,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -152,7 +152,7 @@
       "stars": 1567,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.111,
+      "score": 0.109,
       "shared_capabilities": [
         "ai"
       ]
@@ -160,7 +160,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 40,
+      "composite": 37,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -169,10 +169,10 @@
         "comms",
         "web"
       ],
-      "stars": 1892,
+      "stars": 1893,
       "language": "Go",
       "similarity": 0.333,
-      "score": 0.084,
+      "score": 0.081,
       "shared_capabilities": [
         "ai"
       ]

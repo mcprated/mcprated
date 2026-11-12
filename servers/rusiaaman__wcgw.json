@@ -1,6 +1,6 @@
 {
   "repo": "rusiaaman/wcgw",
-  "stars": 679,
+  "stars": 680,
   "language": "Python",
   "license": "Apache-2.0",
   "description": "Shell and coding agent on mcp clients",
@@ -42,7 +42,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 59d ago"
+          "note": "pushed 60d ago"
         },
         "has_releases": {
           "pass": true,
@@ -50,7 +50,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 59d ago"
+          "note": "latest release 60d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -66,7 +66,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 59d ago"
+          "note": "last published 60d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -148,7 +148,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "1203 weekly downloads"
+          "note": "1009 weekly downloads"
         }
       }
     },
@@ -167,7 +167,7 @@
         },
         "responsive_issues": {
           "pass": true,
-          "note": "9 open / 3 commits (ratio 3.00)"
+          "note": "8 open / 3 commits (ratio 2.67)"
         },
         "merged_prs_recent": {
           "pass": true,
@@ -187,5 +187,5 @@
     }
   ],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-11-11T11:54:46+00:00"
+  "scored_at": "2026-11-12T12:38:04+00:00"
 }

@@ -9,7 +9,7 @@
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 89,
+      "composite": 86,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -17,10 +17,10 @@
         "ai",
         "search"
       ],
-      "stars": 31292,
+      "stars": 31320,
       "language": "Python",
       "similarity": 1.0,
-      "score": 0.943,
+      "score": 0.927,
       "shared_capabilities": [
         "ai",
         "search"
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16836,
+      "stars": 16847,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
+      "composite": 67,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -62,7 +62,7 @@
       "stars": 1567,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.554,
+      "score": 0.546,
       "shared_capabilities": [
         "ai",
         "search"
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64582,
+      "stars": 64668,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -116,28 +116,10 @@
         "web",
         "ai"
       ],
-      "stars": 39492,
+      "stars": 39545,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]
@@ -152,10 +134,28 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 679,
+      "stars": 680,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.11,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 28,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 0.5,
+      "score": 0.106,
       "shared_capabilities": [
         "ai"
       ]
@@ -182,7 +182,7 @@
     {
       "repo": "korotovsky/slack-mcp-server",
       "slug": "korotovsky__slack-mcp-server",
-      "composite": 40,
+      "composite": 37,
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
       "subkind": "integration",
@@ -191,10 +191,10 @@
         "comms",
         "web"
       ],
-      "stars": 1892,
+      "stars": 1893,
       "language": "Go",
       "similarity": 0.25,
-      "score": 0.063,
+      "score": 0.061,
       "shared_capabilities": [
         "ai"
       ]
