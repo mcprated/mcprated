@@ -1,9 +1,33 @@
 {
-  "generated_at": "2026-11-12T12:38:04+00:00",
+  "generated_at": "2026-11-13T12:12:33+00:00",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
   "count": 32,
   "servers": [
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 89,
+      "axes": {
+        "reliability": 100,
+        "documentation": 100,
+        "trust": 55,
+        "community": 100
+      },
+      "stars": 31346,
+      "language": "Python",
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
@@ -14,37 +38,13 @@
         "trust": 73,
         "community": 100
       },
-      "stars": 9910,
+      "stars": 9913,
       "language": "Python",
       "description": "Open source MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
         "cloud"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 86,
-      "axes": {
-        "reliability": 100,
-        "documentation": 100,
-        "trust": 45,
-        "community": 100
-      },
-      "stars": 31320,
-      "language": "Python",
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
       ],
       "distribution": "repo",
       "tool_count": 0,
@@ -61,7 +61,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 39545,
+      "stars": 39586,
       "language": "TypeScript",
       "description": "Playwright MCP server",
       "kind": "server",
@@ -85,7 +85,7 @@
         "trust": 36,
         "community": 100
       },
-      "stars": 13750,
+      "stars": 13758,
       "language": "TypeScript",
       "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -106,7 +106,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 6114,
+      "stars": 6118,
       "language": "Python",
       "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
@@ -129,7 +129,7 @@
         "trust": 36,
         "community": 80
       },
-      "stars": 24838,
+      "stars": 24843,
       "language": "Python",
       "description": "The official Python SDK for Model Context Protocol servers and clients",
       "kind": "framework",
@@ -152,7 +152,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 34404,
+      "stars": 34430,
       "language": "Go",
       "description": "GitHub's official MCP Server",
       "kind": "server",
@@ -175,7 +175,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 16847,
+      "stars": 16858,
       "language": "Go",
       "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
       "kind": "server",
@@ -200,7 +200,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 1570,
+      "stars": 1577,
       "language": "TypeScript",
       "description": null,
       "kind": "server",
@@ -229,7 +229,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 91944,
+      "stars": 91967,
       "language": "TypeScript",
       "description": "Model Context Protocol Reference Servers",
       "kind": "server",
@@ -261,7 +261,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 3006,
+      "stars": 3008,
       "language": "TypeScript",
       "description": "Connect Supabase to your AI assistants",
       "kind": "framework",
@@ -285,7 +285,7 @@
         "trust": 36,
         "community": 80
       },
-      "stars": 5228,
+      "stars": 5230,
       "language": "TypeScript",
       "description": "Exa MCP for web search and web crawling!",
       "kind": "server",
@@ -306,6 +306,31 @@
       "hard_flags": []
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 69,
+      "axes": {
+        "reliability": 90,
+        "documentation": 100,
+        "trust": 27,
+        "community": 60
+      },
+      "stars": 1568,
+      "language": "Python",
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "distribution": "repo",
+      "tool_count": 0,
+      "tool_names_preview": [],
+      "hard_flags": []
+    },
+    {
       "repo": "upstash/context7",
       "slug": "upstash__context7",
       "composite": 69,
@@ -315,7 +340,7 @@
         "trust": 27,
         "community": 80
       },
-      "stars": 64668,
+      "stars": 64730,
       "language": "TypeScript",
       "description": "Context7 Platform -- Up-to-date docs for AI agents",
       "kind": "server",
@@ -338,7 +363,7 @@
         "trust": 27,
         "community": 40
       },
-      "stars": 16196,
+      "stars": 16202,
       "language": "TypeScript",
       "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
       "kind": "server",
@@ -352,31 +377,6 @@
       "hard_flags": []
     },
     {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 67,
-      "axes": {
-        "reliability": 90,
-        "documentation": 100,
-        "trust": 18,
-        "community": 60
-      },
-      "stars": 1567,
-      "language": "Python",
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "distribution": "repo",
-      "tool_count": 0,
-      "tool_names_preview": [],
-      "hard_flags": []
-    },
-    {
       "repo": "cloudflare/mcp-server-cloudflare",
       "slug": "cloudflare__mcp-server-cloudflare",
       "composite": 62,
@@ -386,7 +386,7 @@
         "trust": 27,
         "community": 100
       },
-      "stars": 4461,
+      "stars": 4464,
       "language": "TypeScript",
       "description": "Product specific Cloudflare MCP servers",
       "kind": "server",
@@ -442,7 +442,7 @@
         "trust": 18,
         "community": 40
       },
-      "stars": 28351,
+      "stars": 28358,
       "language": "JavaScript",
       "description": "An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.",
       "kind": "server",
@@ -463,7 +463,7 @@
         "trust": 18,
         "community": 60
       },
-      "stars": 422,
+      "stars": 420,
       "language": "Python",
       "description": "A MCP (model context protocol) server that gives the LLM access to and knowledge about relational databases like SQLite, Postgresql, MySQL & MariaDB, Oracle, and MS-SQL.",
       "kind": "server",
@@ -492,7 +492,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 5680,
+      "stars": 5679,
       "language": "TypeScript",
       "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
       "kind": "server",
@@ -526,7 +526,7 @@
         "trust": 27,
         "community": 20
       },
-      "stars": 3469,
+      "stars": 3471,
       "language": "Python",
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
@@ -605,11 +605,11 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
+      "composite": 42,
       "axes": {
         "reliability": 30,
         "documentation": 80,
-        "trust": 9,
+        "trust": 18,
         "community": 40
       },
       "stars": 1,
@@ -638,7 +638,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 837,
+      "stars": 836,
       "language": "TypeScript",
       "description": "A flexible HTTP fetching Model Context Protocol server.",
       "kind": "server",
@@ -666,7 +666,7 @@
         "trust": 18,
         "community": 20
       },
-      "stars": 1893,
+      "stars": 1896,
       "language": "Go",
       "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
       "kind": "server",
@@ -720,6 +720,31 @@
       ]
     },
     {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 30,
+      "axes": {
+        "reliability": 30,
+        "documentation": 40,
+        "trust": 9,
+        "community": 40
+      },
+      "stars": 0,
+      "language": "Python",
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "distribution": "repo",
+      "tool_count": 1,
+      "tool_names_preview": [
+        "GetIP"
+      ],
+      "hard_flags": []
+    },
+    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 30,
@@ -743,31 +768,6 @@
       "hard_flags": [
         "archived"
       ]
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
-      "axes": {
-        "reliability": 30,
-        "documentation": 40,
-        "trust": 0,
-        "community": 40
-      },
-      "stars": 0,
-      "language": "Python",
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "distribution": "repo",
-      "tool_count": 1,
-      "tool_names_preview": [
-        "GetIP"
-      ],
-      "hard_flags": []
     },
     {
       "repo": "boysoai/Claude-Code-MCP",

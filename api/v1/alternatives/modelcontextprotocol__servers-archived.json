@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3469,
+      "stars": 3471,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.467,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9910,
+      "stars": 9913,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4461,
+      "stars": 4464,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -74,7 +74,7 @@
         "database",
         "ai"
       ],
-      "stars": 422,
+      "stars": 420,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.189,
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16847,
+      "stars": 16858,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -105,7 +105,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 67,
+      "composite": 69,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -114,10 +114,10 @@
         "ai",
         "database"
       ],
-      "stars": 1567,
+      "stars": 1568,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.164,
+      "score": 0.166,
       "shared_capabilities": [
         "database"
       ]
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34404,
+      "stars": 34430,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -180,7 +180,7 @@
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
+      "composite": 42,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
@@ -190,7 +190,7 @@
       "stars": 1,
       "language": "JavaScript",
       "similarity": 0.333,
-      "score": 0.084,
+      "score": 0.086,
       "shared_capabilities": [
         "devtools"
       ]
