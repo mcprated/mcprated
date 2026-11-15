@@ -1,6 +1,6 @@
 {
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-14T11:26:57+00:00",
+  "generated_at": "2026-11-15T11:59:31+00:00",
   "by_composite": [
     {
       "repo": "oraios/serena",
@@ -13,7 +13,7 @@
         "ai",
         "search"
       ],
-      "stars": 31370,
+      "stars": 31391,
       "language": "Python"
     },
     {
@@ -26,7 +26,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9918,
+      "stars": 9924,
       "language": "Python"
     },
     {
@@ -40,7 +40,7 @@
         "web",
         "ai"
       ],
-      "stars": 39621,
+      "stars": 39666,
       "language": "TypeScript"
     },
     {
@@ -53,7 +53,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6119,
+      "stars": 6122,
       "language": "Python"
     },
     {
@@ -66,7 +66,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34453,
+      "stars": 34477,
       "language": "Go"
     },
     {
@@ -81,7 +81,7 @@
         "ai",
         "search"
       ],
-      "stars": 16869,
+      "stars": 16880,
       "language": "Go"
     },
     {
@@ -95,7 +95,7 @@
         "ai",
         "search"
       ],
-      "stars": 1579,
+      "stars": 1582,
       "language": "TypeScript"
     },
     {
@@ -106,7 +106,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -117,7 +117,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -128,7 +128,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -139,7 +139,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5232,
+      "stars": 5234,
       "language": "TypeScript"
     },
     {
@@ -167,7 +167,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64784,
+      "stars": 64832,
       "language": "TypeScript"
     },
     {
@@ -178,7 +178,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16205,
+      "stars": 16212,
       "language": "TypeScript"
     },
     {
@@ -191,7 +191,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4465,
+      "stars": 4467,
       "language": "TypeScript"
     },
     {
@@ -215,7 +215,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28358,
+      "stars": 28360,
       "language": "JavaScript"
     },
     {
@@ -242,7 +242,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5680,
+      "stars": 5681,
       "language": "TypeScript"
     },
     {
@@ -256,7 +256,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3475,
+      "stars": 3476,
       "language": "Python"
     },
     {
@@ -271,19 +271,6 @@
       "language": "TypeScript"
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 40,
@@ -293,6 +280,19 @@
       "capabilities": [
         "database",
         "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
+    },
+    {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 40,
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
       ],
       "stars": 1,
       "language": "JavaScript"
@@ -320,7 +320,7 @@
         "comms",
         "web"
       ],
-      "stars": 1898,
+      "stars": 1899,
       "language": "Go"
     }
   ],
@@ -333,7 +333,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -344,7 +344,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -355,7 +355,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -368,7 +368,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64784,
+      "stars": 64832,
       "language": "TypeScript"
     },
     {
@@ -382,7 +382,7 @@
         "web",
         "ai"
       ],
-      "stars": 39621,
+      "stars": 39666,
       "language": "TypeScript"
     },
     {
@@ -395,7 +395,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34453,
+      "stars": 34477,
       "language": "Go"
     },
     {
@@ -409,7 +409,7 @@
         "ai",
         "search"
       ],
-      "stars": 31370,
+      "stars": 31391,
       "language": "Python"
     },
     {
@@ -420,7 +420,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28358,
+      "stars": 28360,
       "language": "JavaScript"
     },
     {
@@ -435,7 +435,7 @@
         "ai",
         "search"
       ],
-      "stars": 16869,
+      "stars": 16880,
       "language": "Go"
     },
     {
@@ -446,7 +446,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16205,
+      "stars": 16212,
       "language": "TypeScript"
     },
     {
@@ -459,7 +459,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9918,
+      "stars": 9924,
       "language": "Python"
     },
     {
@@ -472,7 +472,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6119,
+      "stars": 6122,
       "language": "Python"
     },
     {
@@ -485,7 +485,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5680,
+      "stars": 5681,
       "language": "TypeScript"
     },
     {
@@ -496,7 +496,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5232,
+      "stars": 5234,
       "language": "TypeScript"
     },
     {
@@ -509,7 +509,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4465,
+      "stars": 4467,
       "language": "TypeScript"
     },
     {
@@ -523,7 +523,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3475,
+      "stars": 3476,
       "language": "Python"
     },
     {
@@ -538,7 +538,7 @@
         "comms",
         "web"
       ],
-      "stars": 1898,
+      "stars": 1899,
       "language": "Go"
     },
     {
@@ -552,7 +552,7 @@
         "ai",
         "search"
       ],
-      "stars": 1579,
+      "stars": 1582,
       "language": "TypeScript"
     },
     {
@@ -635,14 +635,15 @@
       "language": "TypeScript"
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "repo": "bsmi021/sticky-notes-server",
+      "slug": "bsmi021__sticky-notes-server",
+      "composite": 40,
+      "description": null,
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "devtools"
+        "database",
+        "search"
       ],
       "stars": 1,
       "language": "JavaScript"
@@ -659,7 +660,60 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6119,
+      "stars": 6122,
+      "language": "Python"
+    },
+    {
+      "repo": "awslabs/mcp",
+      "slug": "awslabs__mcp",
+      "composite": 86,
+      "description": "Open source MCP Servers for AWS",
+      "kind": "server",
+      "subkind": "agent-product",
+      "capabilities": [
+        "cloud"
+      ],
+      "stars": 9924,
+      "language": "Python"
+    },
+    {
+      "repo": "upstash/context7",
+      "slug": "upstash__context7",
+      "composite": 69,
+      "description": "Context7 Platform -- Up-to-date docs for AI agents",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 64832,
+      "language": "TypeScript"
+    },
+    {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 89,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 31391,
+      "language": "Python"
+    },
+    {
+      "repo": "mcprated/mcprated",
+      "slug": "mcprated__mcprated",
+      "composite": 62,
+      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
+      ],
+      "stars": 0,
       "language": "Python"
     },
     {
@@ -674,21 +728,8 @@
         "ai",
         "search"
       ],
-      "stars": 16869,
+      "stars": 16880,
       "language": "Go"
-    },
-    {
-      "repo": "awslabs/mcp",
-      "slug": "awslabs__mcp",
-      "composite": 86,
-      "description": "Open source MCP Servers for AWS",
-      "kind": "server",
-      "subkind": "agent-product",
-      "capabilities": [
-        "cloud"
-      ],
-      "stars": 9918,
-      "language": "Python"
     },
     {
       "repo": "github/github-mcp-server",
@@ -700,21 +741,8 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34453,
+      "stars": 34477,
       "language": "Go"
-    },
-    {
-      "repo": "upstash/context7",
-      "slug": "upstash__context7",
-      "composite": 69,
-      "description": "Context7 Platform -- Up-to-date docs for AI agents",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 64784,
-      "language": "TypeScript"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -727,7 +755,7 @@
         "ai",
         "search"
       ],
-      "stars": 1579,
+      "stars": 1582,
       "language": "TypeScript"
     },
     {
@@ -741,21 +769,8 @@
         "web",
         "ai"
       ],
-      "stars": 39621,
+      "stars": 39666,
       "language": "TypeScript"
-    },
-    {
-      "repo": "mcprated/mcprated",
-      "slug": "mcprated__mcprated",
-      "composite": 62,
-      "description": "Open quality ratings for Model Context Protocol servers — daily lint, 4 axes (Reliability/Documentation/Trust/Community), composite 0-100, MIT ruleset.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 0,
-      "language": "Python"
     },
     {
       "repo": "boysoai/Claude-Code-MCP",
@@ -778,7 +793,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -797,20 +812,6 @@
       "language": "Python"
     },
     {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 89,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 31370,
-      "language": "Python"
-    },
-    {
       "repo": "exa-labs/exa-mcp-server",
       "slug": "exa-labs__exa-mcp-server",
       "composite": 69,
@@ -818,7 +819,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5232,
+      "stars": 5234,
       "language": "TypeScript"
     },
     {
@@ -829,7 +830,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16205,
+      "stars": 16212,
       "language": "TypeScript"
     },
     {
@@ -842,7 +843,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4465,
+      "stars": 4467,
       "language": "TypeScript"
     },
     {
@@ -883,7 +884,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3475,
+      "stars": 3476,
       "language": "Python"
     },
     {
@@ -898,7 +899,7 @@
         "comms",
         "web"
       ],
-      "stars": 1898,
+      "stars": 1899,
       "language": "Go"
     },
     {
@@ -909,7 +910,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28358,
+      "stars": 28360,
       "language": "JavaScript"
     },
     {
@@ -933,7 +934,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5680,
+      "stars": 5681,
       "language": "TypeScript"
     },
     {

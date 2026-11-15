@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-14T11:26:57+00:00",
+  "generated_at": "2026-11-15T11:59:31+00:00",
   "count": 30,
   "servers": [
     {
@@ -15,7 +15,7 @@
         "ai",
         "search"
       ],
-      "stars": 31370,
+      "stars": 31391,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9918,
+      "stars": 9924,
       "language": "Python"
     },
     {
@@ -42,7 +42,7 @@
         "web",
         "ai"
       ],
-      "stars": 39621,
+      "stars": 39666,
       "language": "TypeScript"
     },
     {
@@ -55,7 +55,7 @@
       "capabilities": [
         "productivity"
       ],
-      "stars": 6119,
+      "stars": 6122,
       "language": "Python"
     },
     {
@@ -68,7 +68,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34453,
+      "stars": 34477,
       "language": "Go"
     },
     {
@@ -83,7 +83,7 @@
         "ai",
         "search"
       ],
-      "stars": 16869,
+      "stars": 16880,
       "language": "Go"
     },
     {
@@ -97,7 +97,7 @@
         "ai",
         "search"
       ],
-      "stars": 1579,
+      "stars": 1582,
       "language": "TypeScript"
     },
     {
@@ -108,7 +108,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -119,7 +119,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 91981,
+      "stars": 92006,
       "language": "TypeScript"
     },
     {
@@ -141,7 +141,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5232,
+      "stars": 5234,
       "language": "TypeScript"
     },
     {
@@ -169,7 +169,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64784,
+      "stars": 64832,
       "language": "TypeScript"
     },
     {
@@ -180,7 +180,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16205,
+      "stars": 16212,
       "language": "TypeScript"
     },
     {
@@ -193,7 +193,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4465,
+      "stars": 4467,
       "language": "TypeScript"
     },
     {
@@ -217,7 +217,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28358,
+      "stars": 28360,
       "language": "JavaScript"
     },
     {
@@ -244,7 +244,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5680,
+      "stars": 5681,
       "language": "TypeScript"
     },
     {
@@ -258,7 +258,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3475,
+      "stars": 3476,
       "language": "Python"
     },
     {
@@ -273,19 +273,6 @@
       "language": "TypeScript"
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 42,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 1,
-      "language": "JavaScript"
-    },
-    {
       "repo": "bsmi021/sticky-notes-server",
       "slug": "bsmi021__sticky-notes-server",
       "composite": 40,
@@ -295,6 +282,19 @@
       "capabilities": [
         "database",
         "search"
+      ],
+      "stars": 1,
+      "language": "JavaScript"
+    },
+    {
+      "repo": "gbti-network/mcp-whats-the-passphrase",
+      "slug": "gbti-network__mcp-whats-the-passphrase",
+      "composite": 40,
+      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "devtools"
       ],
       "stars": 1,
       "language": "JavaScript"
@@ -322,7 +322,7 @@
         "comms",
         "web"
       ],
-      "stars": 1898,
+      "stars": 1899,
       "language": "Go"
     },
     {
