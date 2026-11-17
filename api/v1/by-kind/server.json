@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-15T11:59:31+00:00",
+  "generated_at": "2026-11-17T13:10:10+00:00",
   "count": 30,
   "servers": [
     {
@@ -15,7 +15,7 @@
         "ai",
         "search"
       ],
-      "stars": 31391,
+      "stars": 31466,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9924,
+      "stars": 9929,
       "language": "Python"
     },
     {
@@ -42,7 +42,7 @@
         "web",
         "ai"
       ],
-      "stars": 39666,
+      "stars": 39776,
       "language": "TypeScript"
     },
     {
@@ -53,9 +53,10 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
-        "productivity"
+        "productivity",
+        "devtools"
       ],
-      "stars": 6122,
+      "stars": 6132,
       "language": "Python"
     },
     {
@@ -68,7 +69,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34477,
+      "stars": 34542,
       "language": "Go"
     },
     {
@@ -83,7 +84,7 @@
         "ai",
         "search"
       ],
-      "stars": 16880,
+      "stars": 16895,
       "language": "Go"
     },
     {
@@ -97,7 +98,7 @@
         "ai",
         "search"
       ],
-      "stars": 1582,
+      "stars": 1584,
       "language": "TypeScript"
     },
     {
@@ -108,7 +109,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 92006,
+      "stars": 92062,
       "language": "TypeScript"
     },
     {
@@ -119,7 +120,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92006,
+      "stars": 92062,
       "language": "TypeScript"
     },
     {
@@ -130,7 +131,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92006,
+      "stars": 92062,
       "language": "TypeScript"
     },
     {
@@ -141,7 +142,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5234,
+      "stars": 5240,
       "language": "TypeScript"
     },
     {
@@ -156,7 +157,7 @@
         "ai",
         "database"
       ],
-      "stars": 1570,
+      "stars": 1571,
       "language": "Python"
     },
     {
@@ -169,7 +170,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64832,
+      "stars": 64980,
       "language": "TypeScript"
     },
     {
@@ -180,7 +181,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16212,
+      "stars": 16226,
       "language": "TypeScript"
     },
     {
@@ -193,7 +194,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4467,
+      "stars": 4473,
       "language": "TypeScript"
     },
     {
@@ -217,7 +218,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28360,
+      "stars": 28362,
       "language": "JavaScript"
     },
     {
@@ -231,7 +232,7 @@
         "database",
         "ai"
       ],
-      "stars": 420,
+      "stars": 421,
       "language": "Python"
     },
     {
@@ -244,13 +245,13 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5681,
+      "stars": 5682,
       "language": "TypeScript"
     },
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 49,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -258,7 +259,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3476,
+      "stars": 3479,
       "language": "Python"
     },
     {
@@ -307,7 +308,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 836,
+      "stars": 837,
       "language": "TypeScript"
     },
     {
@@ -322,7 +323,7 @@
         "comms",
         "web"
       ],
-      "stars": 1899,
+      "stars": 1902,
       "language": "Go"
     },
     {
@@ -337,7 +338,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 306,
+      "stars": 307,
       "language": "JavaScript"
     },
     {

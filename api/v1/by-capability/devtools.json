@@ -2,9 +2,23 @@
   "capability": "devtools",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-11-15T11:59:31+00:00",
-  "count": 6,
+  "generated_at": "2026-11-17T13:10:10+00:00",
+  "count": 7,
   "servers": [
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 82,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity",
+        "devtools"
+      ],
+      "stars": 6132,
+      "language": "Python"
+    },
     {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
@@ -15,7 +29,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34477,
+      "stars": 34542,
       "language": "Go"
     },
     {
@@ -34,7 +48,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 49,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -42,7 +56,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3476,
+      "stars": 3479,
       "language": "Python"
     },
     {
@@ -70,7 +84,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 306,
+      "stars": 307,
       "language": "JavaScript"
     },
     {

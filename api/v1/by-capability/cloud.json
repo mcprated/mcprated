@@ -2,7 +2,7 @@
   "capability": "cloud",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-11-15T11:59:31+00:00",
+  "generated_at": "2026-11-17T13:10:10+00:00",
   "count": 3,
   "servers": [
     {
@@ -15,7 +15,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9924,
+      "stars": 9929,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4467,
+      "stars": 4473,
       "language": "TypeScript"
     },
     {
@@ -43,7 +43,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 306,
+      "stars": 307,
       "language": "JavaScript"
     }
   ]

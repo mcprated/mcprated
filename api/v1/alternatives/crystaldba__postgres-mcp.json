@@ -18,7 +18,7 @@
         "devtools",
         "cloud"
       ],
-      "stars": 306,
+      "stars": 307,
       "language": "JavaScript",
       "similarity": 0.667,
       "score": 0.365,
@@ -38,7 +38,7 @@
         "database",
         "ai"
       ],
-      "stars": 420,
+      "stars": 421,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.252,
@@ -58,7 +58,7 @@
         "ai",
         "search"
       ],
-      "stars": 16880,
+      "stars": 16895,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -97,7 +97,7 @@
         "ai",
         "database"
       ],
-      "stars": 1570,
+      "stars": 1571,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.208,
@@ -115,7 +115,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34477,
+      "stars": 34542,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -155,6 +155,25 @@
       "language": "JavaScript",
       "similarity": 0.5,
       "score": 0.126,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 82,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "productivity",
+        "devtools"
+      ],
+      "stars": 6132,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.121,
       "shared_capabilities": [
         "devtools"
       ]

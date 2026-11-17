@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 49,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3476,
+      "stars": 3479,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.467,
+      "score": 0.457,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9924,
+      "stars": 9929,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4467,
+      "stars": 4473,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -74,7 +74,7 @@
         "database",
         "ai"
       ],
-      "stars": 420,
+      "stars": 421,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.189,
@@ -94,7 +94,7 @@
         "ai",
         "search"
       ],
-      "stars": 16880,
+      "stars": 16895,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -114,7 +114,7 @@
         "ai",
         "database"
       ],
-      "stars": 1570,
+      "stars": 1571,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.166,
@@ -151,7 +151,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34477,
+      "stars": 34542,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -178,19 +178,20 @@
       ]
     },
     {
-      "repo": "gbti-network/mcp-whats-the-passphrase",
-      "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
-      "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
+      "repo": "sooperset/mcp-atlassian",
+      "slug": "sooperset__mcp-atlassian",
+      "composite": 82,
+      "description": "MCP server for Atlassian tools (Confluence, Jira)",
       "kind": "server",
       "subkind": "integration",
       "capabilities": [
+        "productivity",
         "devtools"
       ],
-      "stars": 1,
-      "language": "JavaScript",
-      "similarity": 0.333,
-      "score": 0.084,
+      "stars": 6132,
+      "language": "Python",
+      "similarity": 0.25,
+      "score": 0.091,
       "shared_capabilities": [
         "devtools"
       ]
