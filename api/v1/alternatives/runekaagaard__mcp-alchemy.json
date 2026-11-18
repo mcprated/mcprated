@@ -7,6 +7,26 @@
   ],
   "alternatives": [
     {
+      "repo": "supabase/mcp",
+      "slug": "supabase__mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 3018,
+      "language": "TypeScript",
+      "similarity": 1.0,
+      "score": 0.849,
+      "shared_capabilities": [
+        "ai",
+        "database"
+      ]
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -18,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16895,
+      "stars": 16899,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -39,7 +59,7 @@
         "ai",
         "database"
       ],
-      "stars": 1571,
+      "stars": 1573,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.554,
@@ -59,7 +79,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3479,
+      "stars": 3484,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.229,
@@ -96,7 +116,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64980,
+      "stars": 65056,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -135,7 +155,7 @@
         "ai",
         "search"
       ],
-      "stars": 31466,
+      "stars": 31495,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.126,
@@ -154,7 +174,7 @@
         "web",
         "ai"
       ],
-      "stars": 39776,
+      "stars": 39840,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -177,24 +197,6 @@
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python",
-      "similarity": 0.5,
-      "score": 0.11,
       "shared_capabilities": [
         "ai"
       ]

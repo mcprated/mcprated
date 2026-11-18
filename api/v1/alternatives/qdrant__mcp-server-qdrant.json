@@ -19,7 +19,7 @@
         "ai",
         "search"
       ],
-      "stars": 16895,
+      "stars": 16899,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.86,
@@ -40,7 +40,7 @@
         "ai",
         "search"
       ],
-      "stars": 31466,
+      "stars": 31495,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.629,
@@ -67,6 +67,26 @@
       "shared_capabilities": [
         "ai",
         "search"
+      ]
+    },
+    {
+      "repo": "supabase/mcp",
+      "slug": "supabase__mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 3018,
+      "language": "TypeScript",
+      "similarity": 0.667,
+      "score": 0.566,
+      "shared_capabilities": [
+        "ai",
+        "database"
       ]
     },
     {
@@ -120,7 +140,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3479,
+      "stars": 3484,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.171,
@@ -138,7 +158,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 64980,
+      "stars": 65056,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -177,28 +197,10 @@
         "web",
         "ai"
       ],
-      "stars": 39776,
+      "stars": 39840,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.092,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.073,
       "shared_capabilities": [
         "ai"
       ]

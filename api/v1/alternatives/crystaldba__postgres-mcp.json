@@ -28,6 +28,25 @@
       ]
     },
     {
+      "repo": "supabase/mcp",
+      "slug": "supabase__mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 3018,
+      "language": "TypeScript",
+      "similarity": 0.333,
+      "score": 0.283,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "runekaagaard/mcp-alchemy",
       "slug": "runekaagaard__mcp-alchemy",
       "composite": 57,
@@ -58,7 +77,7 @@
         "ai",
         "search"
       ],
-      "stars": 16895,
+      "stars": 16899,
       "language": "Go",
       "similarity": 0.25,
       "score": 0.215,
@@ -97,7 +116,7 @@
         "ai",
         "database"
       ],
-      "stars": 1571,
+      "stars": 1573,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.208,
@@ -115,7 +134,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34542,
+      "stars": 34560,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -170,28 +189,10 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6132,
+      "stars": 6137,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "boysoai/Claude-Code-MCP",
-      "slug": "boysoai__Claude-Code-MCP",
-      "composite": 25,
-      "description": "Claude Code MCP servers",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "devtools"
-      ],
-      "stars": 0,
-      "language": null,
-      "similarity": 0.5,
-      "score": 0.1,
       "shared_capabilities": [
         "devtools"
       ]

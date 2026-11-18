@@ -18,7 +18,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3479,
+      "stars": 3484,
       "language": "Python",
       "similarity": 0.667,
       "score": 0.457,
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9929,
+      "stars": 9932,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,12 +55,31 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4473,
+      "stars": 4474,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
       "shared_capabilities": [
         "cloud"
+      ]
+    },
+    {
+      "repo": "supabase/mcp",
+      "slug": "supabase__mcp",
+      "composite": 72,
+      "description": "Connect Supabase to your AI assistants",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "database"
+      ],
+      "stars": 3018,
+      "language": "TypeScript",
+      "similarity": 0.25,
+      "score": 0.212,
+      "shared_capabilities": [
+        "database"
       ]
     },
     {
@@ -94,7 +113,7 @@
         "ai",
         "search"
       ],
-      "stars": 16895,
+      "stars": 16899,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -114,7 +133,7 @@
         "ai",
         "database"
       ],
-      "stars": 1571,
+      "stars": 1573,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.166,
@@ -151,7 +170,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34542,
+      "stars": 34560,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -173,25 +192,6 @@
       "language": "Python",
       "similarity": 0.333,
       "score": 0.105,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "sooperset/mcp-atlassian",
-      "slug": "sooperset__mcp-atlassian",
-      "composite": 82,
-      "description": "MCP server for Atlassian tools (Confluence, Jira)",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "productivity",
-        "devtools"
-      ],
-      "stars": 6132,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.091,
       "shared_capabilities": [
         "devtools"
       ]
