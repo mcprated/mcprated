@@ -2,7 +2,7 @@
   "capability": "devtools",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-11-18T13:04:38+00:00",
+  "generated_at": "2026-11-19T12:53:24+00:00",
   "count": 7,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6137,
+      "stars": 6140,
       "language": "Python"
     },
     {
@@ -29,7 +29,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34560,
+      "stars": 34581,
       "language": "Go"
     },
     {
@@ -56,7 +56,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3484,
+      "stars": 3487,
       "language": "Python"
     },
     {

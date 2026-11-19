@@ -15,7 +15,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34560,
+      "stars": 34581,
       "language": "Go",
       "similarity": 1.0,
       "score": 0.344,
@@ -70,7 +70,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6137,
+      "stars": 6140,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.181,
@@ -89,7 +89,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3484,
+      "stars": 3487,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.137,
