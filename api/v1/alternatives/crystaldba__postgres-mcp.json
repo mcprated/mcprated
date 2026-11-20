@@ -38,7 +38,7 @@
         "ai",
         "database"
       ],
-      "stars": 3019,
+      "stars": 3021,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.283,
@@ -77,8 +77,28 @@
         "ai",
         "search"
       ],
-      "stars": 16908,
+      "stars": 16915,
       "language": "Go",
+      "similarity": 0.25,
+      "score": 0.215,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 74,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1575,
+      "language": "Python",
       "similarity": 0.25,
       "score": 0.215,
       "shared_capabilities": [
@@ -105,26 +125,6 @@
       ]
     },
     {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1573,
-      "language": "Python",
-      "similarity": 0.25,
-      "score": 0.208,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
       "repo": "github/github-mcp-server",
       "slug": "github__github-mcp-server",
       "composite": 74,
@@ -134,7 +134,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34581,
+      "stars": 34610,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -189,7 +189,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6140,
+      "stars": 6141,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.121,

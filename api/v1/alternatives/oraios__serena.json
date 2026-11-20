@@ -17,7 +17,7 @@
         "ai",
         "search"
       ],
-      "stars": 1583,
+      "stars": 1585,
       "language": "TypeScript",
       "similarity": 1.0,
       "score": 0.849,
@@ -38,7 +38,7 @@
         "ai",
         "search"
       ],
-      "stars": 16908,
+      "stars": 16915,
       "language": "Go",
       "similarity": 0.667,
       "score": 0.573,
@@ -50,7 +50,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 69,
+      "composite": 74,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -59,10 +59,10 @@
         "ai",
         "database"
       ],
-      "stars": 1573,
+      "stars": 1575,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.554,
+      "score": 0.573,
       "shared_capabilities": [
         "ai",
         "search"
@@ -97,7 +97,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 65107,
+      "stars": 65164,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.166,
@@ -116,7 +116,7 @@
         "web",
         "ai"
       ],
-      "stars": 39889,
+      "stars": 39928,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.122,
@@ -135,7 +135,7 @@
         "ai",
         "database"
       ],
-      "stars": 3019,
+      "stars": 3021,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.113,
@@ -171,7 +171,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 680,
+      "stars": 679,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.11,
