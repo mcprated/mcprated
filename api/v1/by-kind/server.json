@@ -1,23 +1,9 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-20T12:50:10+00:00",
+  "generated_at": "2026-11-21T12:30:02+00:00",
   "count": 31,
   "servers": [
-    {
-      "repo": "oraios/serena",
-      "slug": "oraios__serena",
-      "composite": 89,
-      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai",
-        "search"
-      ],
-      "stars": 31552,
-      "language": "Python"
-    },
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
@@ -32,6 +18,20 @@
       "language": "Python"
     },
     {
+      "repo": "oraios/serena",
+      "slug": "oraios__serena",
+      "composite": 86,
+      "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai",
+        "search"
+      ],
+      "stars": 31567,
+      "language": "Python"
+    },
+    {
       "repo": "microsoft/playwright-mcp",
       "slug": "microsoft__playwright-mcp",
       "composite": 84,
@@ -42,7 +42,7 @@
         "web",
         "ai"
       ],
-      "stars": 39928,
+      "stars": 39961,
       "language": "TypeScript"
     },
     {
@@ -56,7 +56,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6141,
+      "stars": 6140,
       "language": "Python"
     },
     {
@@ -69,7 +69,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34610,
+      "stars": 34639,
       "language": "Go"
     },
     {
@@ -84,23 +84,8 @@
         "ai",
         "search"
       ],
-      "stars": 16915,
+      "stars": 16921,
       "language": "Go"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1575,
-      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -124,7 +109,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 92131,
+      "stars": 92140,
       "language": "TypeScript"
     },
     {
@@ -135,7 +120,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92131,
+      "stars": 92140,
       "language": "TypeScript"
     },
     {
@@ -146,8 +131,23 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92131,
+      "stars": 92140,
       "language": "TypeScript"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 72,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1575,
+      "language": "Python"
     },
     {
       "repo": "supabase/mcp",
@@ -160,7 +160,7 @@
         "ai",
         "database"
       ],
-      "stars": 3021,
+      "stars": 3022,
       "language": "TypeScript"
     },
     {
@@ -171,7 +171,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5247,
+      "stars": 5250,
       "language": "TypeScript"
     },
     {
@@ -184,7 +184,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 65164,
+      "stars": 65214,
       "language": "TypeScript"
     },
     {
@@ -195,7 +195,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16267,
+      "stars": 16270,
       "language": "TypeScript"
     },
     {
@@ -208,7 +208,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4480,
+      "stars": 4484,
       "language": "TypeScript"
     },
     {
@@ -232,7 +232,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28476,
+      "stars": 28505,
       "language": "JavaScript"
     },
     {
@@ -273,7 +273,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3490,
+      "stars": 3492,
       "language": "Python"
     },
     {
@@ -337,7 +337,7 @@
         "comms",
         "web"
       ],
-      "stars": 1903,
+      "stars": 1900,
       "language": "Go"
     },
     {
