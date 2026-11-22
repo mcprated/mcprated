@@ -2,7 +2,7 @@
   "capability": "devtools",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-11-21T12:30:02+00:00",
+  "generated_at": "2026-11-22T12:31:29+00:00",
   "count": 7,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6140,
+      "stars": 6141,
       "language": "Python"
     },
     {
@@ -29,7 +29,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34639,
+      "stars": 34666,
       "language": "Go"
     },
     {
@@ -48,7 +48,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 44,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -56,13 +56,13 @@
         "database",
         "devtools"
       ],
-      "stars": 3492,
+      "stars": 3494,
       "language": "Python"
     },
     {
       "repo": "gbti-network/mcp-whats-the-passphrase",
       "slug": "gbti-network__mcp-whats-the-passphrase",
-      "composite": 40,
+      "composite": 42,
       "description": "Example node MCP server. When a user asks the agent for the passphrase, a special code phase is provided. ",
       "kind": "server",
       "subkind": "integration",
