@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 44,
+      "composite": 47,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3494,
+      "stars": 3495,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.442,
+      "score": 0.457,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -37,7 +37,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9939,
+      "stars": 9943,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.309,
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4486,
+      "stars": 4489,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -74,7 +74,7 @@
         "ai",
         "database"
       ],
-      "stars": 3022,
+      "stars": 3023,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.212,
@@ -113,7 +113,7 @@
         "ai",
         "search"
       ],
-      "stars": 16931,
+      "stars": 16940,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -124,7 +124,7 @@
     {
       "repo": "qdrant/mcp-server-qdrant",
       "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
+      "composite": 72,
       "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
       "subkind": "integration",
@@ -136,7 +136,7 @@
       "stars": 1575,
       "language": "Python",
       "similarity": 0.2,
-      "score": 0.172,
+      "score": 0.17,
       "shared_capabilities": [
         "database"
       ]
@@ -170,7 +170,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34666,
+      "stars": 34690,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
