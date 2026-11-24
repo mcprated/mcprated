@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-23T14:25:32+00:00",
+  "generated_at": "2026-11-24T14:50:06+00:00",
   "count": 31,
   "servers": [
     {
@@ -15,7 +15,7 @@
         "ai",
         "search"
       ],
-      "stars": 31632,
+      "stars": 31665,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9943,
+      "stars": 9947,
       "language": "Python"
     },
     {
@@ -42,7 +42,7 @@
         "web",
         "ai"
       ],
-      "stars": 40049,
+      "stars": 40095,
       "language": "TypeScript"
     },
     {
@@ -56,7 +56,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6146,
+      "stars": 6149,
       "language": "Python"
     },
     {
@@ -69,7 +69,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34690,
+      "stars": 34717,
       "language": "Go"
     },
     {
@@ -84,8 +84,23 @@
         "ai",
         "search"
       ],
-      "stars": 16940,
+      "stars": 16946,
       "language": "Go"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 74,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1577,
+      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -98,7 +113,7 @@
         "ai",
         "search"
       ],
-      "stars": 1587,
+      "stars": 1592,
       "language": "TypeScript"
     },
     {
@@ -109,7 +124,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 92188,
+      "stars": 92209,
       "language": "TypeScript"
     },
     {
@@ -120,7 +135,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92188,
+      "stars": 92209,
       "language": "TypeScript"
     },
     {
@@ -131,23 +146,8 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92188,
+      "stars": 92209,
       "language": "TypeScript"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 72,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1575,
-      "language": "Python"
     },
     {
       "repo": "supabase/mcp",
@@ -160,7 +160,7 @@
         "ai",
         "database"
       ],
-      "stars": 3023,
+      "stars": 3025,
       "language": "TypeScript"
     },
     {
@@ -171,7 +171,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5264,
+      "stars": 5267,
       "language": "TypeScript"
     },
     {
@@ -184,7 +184,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 65327,
+      "stars": 65386,
       "language": "TypeScript"
     },
     {
@@ -195,7 +195,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16287,
+      "stars": 16302,
       "language": "TypeScript"
     },
     {
@@ -208,7 +208,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4489,
+      "stars": 4495,
       "language": "TypeScript"
     },
     {
@@ -232,7 +232,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28529,
+      "stars": 28539,
       "language": "JavaScript"
     },
     {
@@ -273,7 +273,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3495,
+      "stars": 3496,
       "language": "Python"
     },
     {
@@ -337,7 +337,7 @@
         "comms",
         "web"
       ],
-      "stars": 1900,
+      "stars": 1901,
       "language": "Go"
     },
     {
@@ -356,19 +356,6 @@
       "language": "JavaScript"
     },
     {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python"
-    },
-    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 30,
@@ -379,6 +366,19 @@
         "ai"
       ],
       "stars": 679,
+      "language": "Python"
+    },
+    {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 28,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
       "language": "Python"
     },
     {
