@@ -1,7 +1,7 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-24T14:50:06+00:00",
+  "generated_at": "2026-11-25T14:13:11+00:00",
   "count": 31,
   "servers": [
     {
@@ -15,7 +15,7 @@
         "ai",
         "search"
       ],
-      "stars": 31665,
+      "stars": 31694,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9947,
+      "stars": 9950,
       "language": "Python"
     },
     {
@@ -42,7 +42,7 @@
         "web",
         "ai"
       ],
-      "stars": 40095,
+      "stars": 40127,
       "language": "TypeScript"
     },
     {
@@ -56,7 +56,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6149,
+      "stars": 6157,
       "language": "Python"
     },
     {
@@ -69,7 +69,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34717,
+      "stars": 34743,
       "language": "Go"
     },
     {
@@ -84,7 +84,7 @@
         "ai",
         "search"
       ],
-      "stars": 16946,
+      "stars": 16948,
       "language": "Go"
     },
     {
@@ -113,7 +113,7 @@
         "ai",
         "search"
       ],
-      "stars": 1592,
+      "stars": 1594,
       "language": "TypeScript"
     },
     {
@@ -124,7 +124,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 92209,
+      "stars": 92240,
       "language": "TypeScript"
     },
     {
@@ -135,7 +135,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92209,
+      "stars": 92240,
       "language": "TypeScript"
     },
     {
@@ -146,7 +146,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92209,
+      "stars": 92240,
       "language": "TypeScript"
     },
     {
@@ -171,7 +171,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5267,
+      "stars": 5269,
       "language": "TypeScript"
     },
     {
@@ -184,7 +184,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 65386,
+      "stars": 65439,
       "language": "TypeScript"
     },
     {
@@ -195,7 +195,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16302,
+      "stars": 16311,
       "language": "TypeScript"
     },
     {
@@ -208,7 +208,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4495,
+      "stars": 4497,
       "language": "TypeScript"
     },
     {
@@ -232,7 +232,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28539,
+      "stars": 28547,
       "language": "JavaScript"
     },
     {
@@ -259,7 +259,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5682,
+      "stars": 5681,
       "language": "TypeScript"
     },
     {
@@ -273,7 +273,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3496,
+      "stars": 3497,
       "language": "Python"
     },
     {
@@ -337,7 +337,7 @@
         "comms",
         "web"
       ],
-      "stars": 1901,
+      "stars": 1902,
       "language": "Go"
     },
     {
@@ -356,6 +356,19 @@
       "language": "JavaScript"
     },
     {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 30,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python"
+    },
+    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 30,
@@ -366,19 +379,6 @@
         "ai"
       ],
       "stars": 679,
-      "language": "Python"
-    },
-    {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 28,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
       "language": "Python"
     },
     {
