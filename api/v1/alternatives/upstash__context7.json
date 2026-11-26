@@ -6,24 +6,6 @@
   ],
   "alternatives": [
     {
-      "repo": "nikolaypavlov/mcp-myip",
-      "slug": "nikolaypavlov__mcp-myip",
-      "composite": 30,
-      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "ai"
-      ],
-      "stars": 0,
-      "language": "Python",
-      "similarity": 1.0,
-      "score": 0.219,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
       "repo": "rusiaaman/wcgw",
       "slug": "rusiaaman__wcgw",
       "composite": 30,
@@ -33,7 +15,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 679,
+      "stars": 678,
       "language": "Python",
       "similarity": 1.0,
       "score": 0.219,
@@ -42,9 +24,27 @@
       ]
     },
     {
+      "repo": "nikolaypavlov/mcp-myip",
+      "slug": "nikolaypavlov__mcp-myip",
+      "composite": 28,
+      "description": "A Model Context Protocol (MCP) server for providing your public IP to LLMs",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "ai"
+      ],
+      "stars": 0,
+      "language": "Python",
+      "similarity": 1.0,
+      "score": 0.212,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 89,
+      "composite": 86,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -52,10 +52,10 @@
         "ai",
         "search"
       ],
-      "stars": 31694,
+      "stars": 31725,
       "language": "Python",
       "similarity": 0.5,
-      "score": 0.189,
+      "score": 0.185,
       "shared_capabilities": [
         "ai"
       ]
@@ -71,7 +71,7 @@
         "web",
         "ai"
       ],
-      "stars": 40127,
+      "stars": 40164,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1594,
+      "stars": 1597,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -109,7 +109,7 @@
         "ai",
         "database"
       ],
-      "stars": 3025,
+      "stars": 3023,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -128,7 +128,7 @@
         "database",
         "ai"
       ],
-      "stars": 421,
+      "stars": 420,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.151,
@@ -148,7 +148,7 @@
         "ai",
         "search"
       ],
-      "stars": 16948,
+      "stars": 16959,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
@@ -168,7 +168,7 @@
         "ai",
         "database"
       ],
-      "stars": 1577,
+      "stars": 1578,
       "language": "Python",
       "similarity": 0.333,
       "score": 0.115,
@@ -188,7 +188,7 @@
         "comms",
         "web"
       ],
-      "stars": 1902,
+      "stars": 1905,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.081,

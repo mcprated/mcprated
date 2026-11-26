@@ -16,7 +16,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34743,
+      "stars": 34778,
       "language": "Go",
       "similarity": 0.5,
       "score": 0.172,
@@ -61,6 +61,25 @@
       ]
     },
     {
+      "repo": "crystaldba/postgres-mcp",
+      "slug": "crystaldba__postgres-mcp",
+      "composite": 59,
+      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "database",
+        "devtools"
+      ],
+      "stars": 3499,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.102,
+      "shared_capabilities": [
+        "devtools"
+      ]
+    },
+    {
       "repo": "boysoai/Claude-Code-MCP",
       "slug": "boysoai__Claude-Code-MCP",
       "composite": 25,
@@ -74,25 +93,6 @@
       "language": null,
       "similarity": 0.5,
       "score": 0.1,
-      "shared_capabilities": [
-        "devtools"
-      ]
-    },
-    {
-      "repo": "crystaldba/postgres-mcp",
-      "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
-      "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "database",
-        "devtools"
-      ],
-      "stars": 3497,
-      "language": "Python",
-      "similarity": 0.333,
-      "score": 0.091,
       "shared_capabilities": [
         "devtools"
       ]

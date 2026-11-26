@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 47,
+      "composite": 59,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3497,
+      "stars": 3499,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.457,
+      "score": 0.512,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -30,17 +30,17 @@
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
-      "composite": 86,
+      "composite": 84,
       "description": "Open source MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
         "cloud"
       ],
-      "stars": 9950,
+      "stars": 9960,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.309,
+      "score": 0.306,
       "shared_capabilities": [
         "cloud"
       ]
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4497,
+      "stars": 4498,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -74,7 +74,7 @@
         "ai",
         "database"
       ],
-      "stars": 3025,
+      "stars": 3023,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.212,
@@ -93,7 +93,7 @@
         "database",
         "ai"
       ],
-      "stars": 421,
+      "stars": 420,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.189,
@@ -113,7 +113,7 @@
         "ai",
         "search"
       ],
-      "stars": 16948,
+      "stars": 16959,
       "language": "Go",
       "similarity": 0.2,
       "score": 0.172,
@@ -133,7 +133,7 @@
         "ai",
         "database"
       ],
-      "stars": 1577,
+      "stars": 1578,
       "language": "Python",
       "similarity": 0.2,
       "score": 0.172,
@@ -170,7 +170,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34743,
+      "stars": 34778,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,
