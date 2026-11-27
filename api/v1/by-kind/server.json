@@ -1,13 +1,13 @@
 {
   "kind": "server",
   "rule_set_version": "1.3.2",
-  "generated_at": "2026-11-26T13:49:50+00:00",
+  "generated_at": "2026-11-27T13:47:08+00:00",
   "count": 31,
   "servers": [
     {
       "repo": "oraios/serena",
       "slug": "oraios__serena",
-      "composite": 86,
+      "composite": 89,
       "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
       "kind": "server",
       "subkind": "integration",
@@ -15,7 +15,7 @@
         "ai",
         "search"
       ],
-      "stars": 31725,
+      "stars": 31748,
       "language": "Python"
     },
     {
@@ -28,7 +28,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 9960,
+      "stars": 9961,
       "language": "Python"
     },
     {
@@ -42,7 +42,7 @@
         "web",
         "ai"
       ],
-      "stars": 40164,
+      "stars": 40206,
       "language": "TypeScript"
     },
     {
@@ -56,7 +56,7 @@
         "productivity",
         "devtools"
       ],
-      "stars": 6162,
+      "stars": 6166,
       "language": "Python"
     },
     {
@@ -69,7 +69,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34778,
+      "stars": 34800,
       "language": "Go"
     },
     {
@@ -84,7 +84,7 @@
         "ai",
         "search"
       ],
-      "stars": 16959,
+      "stars": 16974,
       "language": "Go"
     },
     {
@@ -99,7 +99,7 @@
         "ai",
         "database"
       ],
-      "stars": 1578,
+      "stars": 1579,
       "language": "Python"
     },
     {
@@ -113,7 +113,7 @@
         "ai",
         "search"
       ],
-      "stars": 1597,
+      "stars": 1598,
       "language": "TypeScript"
     },
     {
@@ -124,7 +124,7 @@
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [],
-      "stars": 92268,
+      "stars": 92298,
       "language": "TypeScript"
     },
     {
@@ -135,7 +135,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92268,
+      "stars": 92298,
       "language": "TypeScript"
     },
     {
@@ -146,7 +146,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 92268,
+      "stars": 92298,
       "language": "TypeScript"
     },
     {
@@ -171,7 +171,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 5271,
+      "stars": 5274,
       "language": "TypeScript"
     },
     {
@@ -184,7 +184,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 65503,
+      "stars": 65538,
       "language": "TypeScript"
     },
     {
@@ -195,7 +195,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 16319,
+      "stars": 16328,
       "language": "TypeScript"
     },
     {
@@ -246,7 +246,7 @@
         "database",
         "devtools"
       ],
-      "stars": 3499,
+      "stars": 3502,
       "language": "Python"
     },
     {
@@ -257,7 +257,7 @@
       "kind": "server",
       "subkind": "integration",
       "capabilities": [],
-      "stars": 28553,
+      "stars": 28563,
       "language": "JavaScript"
     },
     {
@@ -337,7 +337,7 @@
         "comms",
         "web"
       ],
-      "stars": 1905,
+      "stars": 1906,
       "language": "Go"
     },
     {
