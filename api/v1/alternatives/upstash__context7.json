@@ -52,7 +52,7 @@
         "ai",
         "search"
       ],
-      "stars": 31748,
+      "stars": 31778,
       "language": "Python",
       "similarity": 0.5,
       "score": 0.189,
@@ -71,7 +71,7 @@
         "web",
         "ai"
       ],
-      "stars": 40206,
+      "stars": 40236,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.183,
@@ -90,7 +90,7 @@
         "ai",
         "search"
       ],
-      "stars": 1598,
+      "stars": 1601,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -109,7 +109,7 @@
         "ai",
         "database"
       ],
-      "stars": 3023,
+      "stars": 3026,
       "language": "TypeScript",
       "similarity": 0.5,
       "score": 0.17,
@@ -137,6 +137,26 @@
       ]
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 76,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1580,
+      "language": "Python",
+      "similarity": 0.333,
+      "score": 0.116,
+      "shared_capabilities": [
+        "ai"
+      ]
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -148,28 +168,8 @@
         "ai",
         "search"
       ],
-      "stars": 16974,
+      "stars": 16980,
       "language": "Go",
-      "similarity": 0.333,
-      "score": 0.115,
-      "shared_capabilities": [
-        "ai"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1579,
-      "language": "Python",
       "similarity": 0.333,
       "score": 0.115,
       "shared_capabilities": [
@@ -188,7 +188,7 @@
         "comms",
         "web"
       ],
-      "stars": 1906,
+      "stars": 1905,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.081,

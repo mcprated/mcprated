@@ -18,7 +18,7 @@
         "web",
         "ai"
       ],
-      "stars": 40206,
+      "stars": 40236,
       "language": "TypeScript",
       "similarity": 0.667,
       "score": 0.611,
@@ -37,7 +37,7 @@
       "capabilities": [
         "web"
       ],
-      "stars": 5683,
+      "stars": 5682,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.236,
@@ -55,7 +55,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 65538,
+      "stars": 65572,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.111,
@@ -74,7 +74,7 @@
         "ai",
         "search"
       ],
-      "stars": 31748,
+      "stars": 31778,
       "language": "Python",
       "similarity": 0.25,
       "score": 0.094,
@@ -93,7 +93,7 @@
         "ai",
         "search"
       ],
-      "stars": 1598,
+      "stars": 1601,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -112,7 +112,7 @@
         "ai",
         "database"
       ],
-      "stars": 3023,
+      "stars": 3026,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.085,
@@ -176,21 +176,21 @@
       ]
     },
     {
-      "repo": "googleapis/mcp-toolbox",
-      "slug": "googleapis__mcp-toolbox",
-      "composite": 74,
-      "description": "MCP Toolbox for Databases is an open source MCP server for databases.",
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 76,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
       "kind": "server",
-      "subkind": "agent-product",
+      "subkind": "integration",
       "capabilities": [
-        "database",
+        "search",
         "ai",
-        "search"
+        "database"
       ],
-      "stars": 16974,
-      "language": "Go",
+      "stars": 1580,
+      "language": "Python",
       "similarity": 0.2,
-      "score": 0.069,
+      "score": 0.07,
       "shared_capabilities": [
         "ai"
       ]

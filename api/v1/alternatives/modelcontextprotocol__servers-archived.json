@@ -10,7 +10,7 @@
     {
       "repo": "crystaldba/postgres-mcp",
       "slug": "crystaldba__postgres-mcp",
-      "composite": 59,
+      "composite": 62,
       "description": "Postgres MCP Pro provides configurable read/write access and performance analysis for you and your AI agents.",
       "kind": "server",
       "subkind": "integration",
@@ -18,10 +18,10 @@
         "database",
         "devtools"
       ],
-      "stars": 3502,
+      "stars": 3503,
       "language": "Python",
       "similarity": 0.667,
-      "score": 0.512,
+      "score": 0.525,
       "shared_capabilities": [
         "database",
         "devtools"
@@ -30,17 +30,17 @@
     {
       "repo": "awslabs/mcp",
       "slug": "awslabs__mcp",
-      "composite": 84,
+      "composite": 86,
       "description": "Open source MCP Servers for AWS",
       "kind": "server",
       "subkind": "agent-product",
       "capabilities": [
         "cloud"
       ],
-      "stars": 9961,
+      "stars": 9964,
       "language": "Python",
       "similarity": 0.333,
-      "score": 0.306,
+      "score": 0.309,
       "shared_capabilities": [
         "cloud"
       ]
@@ -55,7 +55,7 @@
       "capabilities": [
         "cloud"
       ],
-      "stars": 4498,
+      "stars": 4502,
       "language": "TypeScript",
       "similarity": 0.333,
       "score": 0.262,
@@ -74,7 +74,7 @@
         "ai",
         "database"
       ],
-      "stars": 3023,
+      "stars": 3026,
       "language": "TypeScript",
       "similarity": 0.25,
       "score": 0.212,
@@ -102,6 +102,26 @@
       ]
     },
     {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 76,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1580,
+      "language": "Python",
+      "similarity": 0.2,
+      "score": 0.174,
+      "shared_capabilities": [
+        "database"
+      ]
+    },
+    {
       "repo": "googleapis/mcp-toolbox",
       "slug": "googleapis__mcp-toolbox",
       "composite": 74,
@@ -113,28 +133,8 @@
         "ai",
         "search"
       ],
-      "stars": 16974,
+      "stars": 16980,
       "language": "Go",
-      "similarity": 0.2,
-      "score": 0.172,
-      "shared_capabilities": [
-        "database"
-      ]
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1579,
-      "language": "Python",
       "similarity": 0.2,
       "score": 0.172,
       "shared_capabilities": [
@@ -170,7 +170,7 @@
       "capabilities": [
         "devtools"
       ],
-      "stars": 34800,
+      "stars": 34810,
       "language": "Go",
       "similarity": 0.333,
       "score": 0.115,

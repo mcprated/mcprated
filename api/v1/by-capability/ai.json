@@ -2,7 +2,7 @@
   "capability": "ai",
   "rule_set_version": "1.3.2",
   "taxonomy_version": "1.0",
-  "generated_at": "2026-11-27T13:47:08+00:00",
+  "generated_at": "2026-11-28T12:58:21+00:00",
   "count": 11,
   "servers": [
     {
@@ -16,7 +16,7 @@
         "ai",
         "search"
       ],
-      "stars": 31748,
+      "stars": 31778,
       "language": "Python"
     },
     {
@@ -30,8 +30,23 @@
         "web",
         "ai"
       ],
-      "stars": 40206,
+      "stars": 40236,
       "language": "TypeScript"
+    },
+    {
+      "repo": "qdrant/mcp-server-qdrant",
+      "slug": "qdrant__mcp-server-qdrant",
+      "composite": 76,
+      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
+      "kind": "server",
+      "subkind": "integration",
+      "capabilities": [
+        "search",
+        "ai",
+        "database"
+      ],
+      "stars": 1580,
+      "language": "Python"
     },
     {
       "repo": "googleapis/mcp-toolbox",
@@ -45,23 +60,8 @@
         "ai",
         "search"
       ],
-      "stars": 16974,
+      "stars": 16980,
       "language": "Go"
-    },
-    {
-      "repo": "qdrant/mcp-server-qdrant",
-      "slug": "qdrant__mcp-server-qdrant",
-      "composite": 74,
-      "description": "An official Qdrant Model Context Protocol (MCP) server implementation",
-      "kind": "server",
-      "subkind": "integration",
-      "capabilities": [
-        "search",
-        "ai",
-        "database"
-      ],
-      "stars": 1579,
-      "language": "Python"
     },
     {
       "repo": "brave/brave-search-mcp-server",
@@ -74,7 +74,7 @@
         "ai",
         "search"
       ],
-      "stars": 1598,
+      "stars": 1601,
       "language": "TypeScript"
     },
     {
@@ -88,7 +88,7 @@
         "ai",
         "database"
       ],
-      "stars": 3023,
+      "stars": 3026,
       "language": "TypeScript"
     },
     {
@@ -101,7 +101,7 @@
       "capabilities": [
         "ai"
       ],
-      "stars": 65538,
+      "stars": 65572,
       "language": "TypeScript"
     },
     {
@@ -130,7 +130,7 @@
         "comms",
         "web"
       ],
-      "stars": 1906,
+      "stars": 1905,
       "language": "Go"
     },
     {

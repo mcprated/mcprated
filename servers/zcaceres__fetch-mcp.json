@@ -4,7 +4,7 @@
   "language": "TypeScript",
   "license": "MIT",
   "description": "A flexible HTTP fetching Model Context Protocol server.",
-  "pushed_at": "2026-11-25T21:46:47Z",
+  "pushed_at": "2026-11-28T04:39:11Z",
   "kind": "server",
   "subkind": "integration",
   "kind_confidence": 0.95,
@@ -46,7 +46,7 @@
         },
         "recently_maintained": {
           "pass": true,
-          "note": "pushed 1d ago"
+          "note": "pushed 0d ago"
         },
         "has_releases": {
           "pass": true,
@@ -54,7 +54,7 @@
         },
         "tagged_release_recent": {
           "pass": true,
-          "note": "latest release 1d ago"
+          "note": "latest release 2d ago"
         },
         "version_follows_semver": {
           "pass": true,
@@ -70,7 +70,7 @@
         },
         "recent_publish": {
           "pass": true,
-          "note": "last published 1d ago"
+          "note": "last published 2d ago"
         },
         "not_deprecated": {
           "pass": true,
@@ -152,7 +152,7 @@
         },
         "weekly_downloads_meaningful": {
           "pass": true,
-          "note": "7681 weekly downloads"
+          "note": "8560 weekly downloads"
         }
       }
     },
@@ -186,5 +186,5 @@
   },
   "hard_flags": [],
   "rule_set_version": "1.3.2",
-  "scored_at": "2026-11-27T13:47:08+00:00"
+  "scored_at": "2026-11-28T12:58:21+00:00"
 }
